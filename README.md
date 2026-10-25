@@ -5,6 +5,10 @@
 
 This is a **tracking branch**, not a competing theorem implementation or a declaration that the paper is finished. The comprehensive **45-item gap-by-gap analysis, dependency graph, prioritized proof queue and acceptance gates** are in **[PAPER_GAP_TRACKER.md](docs/PAPER_GAP_TRACKER.md)**.
 
+**Two complementary ledgers:** [PAPER_GAP_TRACKER.md](docs/PAPER_GAP_TRACKER.md) tracks the **45 numbered manuscript items** against both repositories; [PAPER_GAP_REGISTER.md](docs/PAPER_GAP_REGISTER.md) expands them into **64 stable, individually actionable sub-obligations**, with page locations, acceptance tests, known repairs and the failing CI modules. Neither is itself a proof receipt. Keep both synchronized as source branches advance.
+
+**Manuscript fingerprint:** the supplied 52-page PDF (21 October 2026) has SHA-256 `935767c0cda7468f376cd8eadc374077caf6c8a060351d3bea26ac3f838a9d0c`. This tracker is anchored to that exact file; new editions must be compared rather than silently substituted.
+
 ## What is already established in `snditeration`
 
 The pinned [main checkpoint](https://github.com/randogelist/snditeration/blob/c521749190cce9981b0f108a8edc8034420f6420/CHECKPOINT.json) reports **846 audited Lean theorem declarations** (including generated declarations), with [passing CI](https://github.com/randogelist/snditeration/actions/runs/40186793090), Lean **4.33.0** and pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. It includes substantial *actual-family* mathematics, not merely abstract theorem wrappers:
