@@ -62,3 +62,8 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Hyperbolic.coth_partial_fractions
 #print axioms ManuscriptChain.Hyperbolic.pole_scaled_kernel_split_algebra
 #print axioms ManuscriptChain.Hyperbolic.poleIntegralIdentity
+
+#print axioms ManuscriptChain.PartialFractions.tailPoleFactors_pairwise_coprime
+#print axioms ManuscriptChain.PartialFractions.kernelNumerator_partial_fraction_exists
+#print axioms ManuscriptChain.PartialFractions.data_quotient_eq_div
+#print axioms ManuscriptChain.PartialFractions.data_quotient_eq_actual
