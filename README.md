@@ -3,7 +3,7 @@
 **Branch:** `persistent/zetahyperbolic-paper-gap-tracker`  
 **Purpose:** maintain a persistent, source-linked inventory of **what still needs to be proved or corrected** to formalize the original 52-page, 21 October 2026 Zetahyperbolic manuscript in `snditeration`.
 
-This is a **tracking branch**, not a competing theorem implementation or a declaration that the paper is finished. The comprehensive **45-item gap-by-gap analysis, dependency graph, prioritized proof queue and acceptance gates** are in **[PAPER_GAP_TRACKER.md](docs/PAPER_GAP_TRACKER.md)**.
+This is a **tracking branch**, not a competing theorem implementation or a declaration that the paper is finished. The comprehensive **45-item gap-by-gap analysis, dependency graph, prioritized proof queue and acceptance gates** are in **[PAPER_GAP_TRACKER.md](docs/PAPER_GAP_TRACKER.md)**, with exact cross-branch proof closures in [the resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
 **Two complementary ledgers:** [PAPER_GAP_TRACKER.md](docs/PAPER_GAP_TRACKER.md) tracks the **45 numbered manuscript items** against both repositories; [PAPER_GAP_REGISTER.md](docs/PAPER_GAP_REGISTER.md) expands them into **64 stable, individually actionable sub-obligations**, with page locations, acceptance tests, known repairs and the failing CI modules. Neither is itself a proof receipt. Keep both synchronized as source branches advance.
 
@@ -18,6 +18,24 @@ The pinned [main checkpoint](https://github.com/randogelist/snditeration/blob/c5
 - Section 4: a proved **conditional arithmetic transfer**, not its actual-family growth/decay assumptions.
 
 See [the frozen local proof ledger](https://github.com/randogelist/snditeration/blob/c521749190cce9981b0f108a8edc8034420f6420/docs/FORMALIZATION_LEDGER.md). These 846 declarations must not be mistaken for 846 complete printed results.
+
+## Already crossed off — 7 of 45 complete printed items (aggregate)
+
+The following have exact Lean proofs with passing build/transitive axiom evidence in **at least one** of the two repos:
+
+| Crossed manuscript item | Verification | Remaining work |
+|---|---|---|
+| ~~Lemma 2.2~~ | **LOCAL PASS** (`snditeration/main`) | None for printed pullback |
+| ~~Lemma 2.3~~ | **CROSS-REPO PASS** (`zetahyperbolic-axiom/main`) | Port derivative-at-zero proof into `snditeration`; its stronger local all-RatFunc bridge remains separate |
+| ~~Theorem 2.4~~ | **LOCAL PASS** | None for canonical primitive basis invariance |
+| ~~Theorem 2.5~~ | **LOCAL PASS** | None for Lagrange pole diagonalization |
+| ~~Theorem 3.1~~ | **LOCAL PASS** | None for exact odd-weight hyperbolicity/sharp finite disk; this is **not** a quantitative ζ5 measure |
+| ~~Proposition 4.3~~ | **CROSS-REPO PASS** | Port the full `ℂ_p` norm-preserving zero-free disk theorem |
+| ~~Theorem 5.4~~ | **CROSS-REPO PASS** | Port actual even-pole cancellation, including `j=1` |
+
+**Aggregate count:** 7/45 complete printed items, comprising **4 certified locally + 3 additional certified in the companion repo**. Only 4 are currently local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
+
+**More work already finished at subclause level:** corrected Proposition 3.2; all-order Dodgson part of Theorem 3.4; corrected Corollary 3.6; strict Newton components of 3.7; effective *conditional* index selection with explicit onset; `CCᵀ` dual-pencil algebra; `6d_K^7` Beukers denominator; finite central-factorial identities; qualitative odd-beta transcendence; polynomial quotient-degree thresholds. **Do not** cross off their full original printed theorems. Full [source-level cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
 ## Highest-priority missing pieces
 
