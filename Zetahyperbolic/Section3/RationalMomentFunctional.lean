@@ -139,6 +139,7 @@ theorem dataEval_eq_ratFunc_eval (q : ℚ[X]) (c : ℕ →₀ ℚ) {t : ℝ} (ht
     Polynomial.eval₂_X, Polynomial.eval₂_C, squareNode, map_neg, map_pow,
     map_natCast, sub_neg_eq_add]
   field_simp [ne_of_gt (hfactor j)]
+  simp
 
 /-- Exact agreement with `RatFunc.eval`, including at the origin. -/
 theorem realValue_eq_ratFunc_eval (R : RationalDomain) {t : ℝ} (ht : 0 ≤ t) :

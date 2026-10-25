@@ -41,7 +41,7 @@ theorem whitenedMatrix_isHermitian (p : SymmetricAffinePencil n) :
     (whitenedMatrix p).IsHermitian := by
   have h := Matrix.isHermitian_conjTranspose_mul_mul ((CFC.sqrt p.base)⁻¹)
     (Matrix.isHermitian_iff_isSymm.mpr p.direction_symmetric)
-  simpa only [(whiteningSqrt_isHermitian p).inv.eq] using h
+  simpa only [whitenedMatrix, (whiteningSqrt_isHermitian p).inv.eq] using h
 
 theorem whitenedMatrix_det_ne_zero (p : SymmetricAffinePencil n)
     (positive : p.base.PosDef) (direction_nonzero : p.direction.det ≠ 0) :
@@ -137,7 +137,10 @@ theorem actual_complex_root_iff (p : SymmetricAffinePencil n)
   · rintro ⟨i, rfl⟩
     have he := Polynomial.eval₂_at_apply (algebraMap ℝ ℂ) (c.root i)
       (p := p.detPolynomial)
-    simpa only [Complex.coe_algebraMap, c.eval_root, map_zero] using he
+    have hroot : c.root i = p.center - (actualEigenvalues p i)⁻¹ := rfl
+    simp only [Complex.coe_algebraMap, c.eval_root, map_zero] at he
+    rw [hroot] at he
+    exact he
 
 
 /-- Explicit ℓ² operator norm, through the Euclidean-space continuous linear map. -/
@@ -167,7 +170,7 @@ theorem actualOperatorNorm_pos (p : SymmetricAffinePencil n)
 
 theorem actualOperatorNorm_attained (p : SymmetricAffinePencil n) (hn : 0 < n) :
     ∃ i, |actualEigenvalues p i| = actualOperatorNorm p := by
-  letI : Nonempty (Fin n) := ⟨⟨0, hn⟩⟩
+  let : Nonempty (Fin n) := ⟨⟨0, hn⟩⟩
   obtain ⟨i, hi⟩ := (IsGreatest.pi_norm (actualEigenvalues p)).1
   exact ⟨i, by simpa only [actualOperatorNorm_eq_eigenvalueNorm, Real.norm_eq_abs] using hi⟩
 
@@ -227,7 +230,7 @@ theorem ACTUAL_SPECTRAL_ROOTS (p : Real.Parameters) (hp : Real.Admissible p) (z 
         (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)⁻¹ : ℝ) : ℂ) := by
   change Polynomial.eval₂ (algebraMap ℚ ℂ) z (Real.delta p) = 0 ↔ _
   rw [← General.complex_eval_transport]
-  exact Spectral.actual_complex_root_iff _ (GRAM_POSITIVE p hp)
+  exact Spectral.actual_complex_root_iff (Real.manuscriptPencil p) (GRAM_POSITIVE p hp)
     (General.derivative_nonsingular p) z
 
 

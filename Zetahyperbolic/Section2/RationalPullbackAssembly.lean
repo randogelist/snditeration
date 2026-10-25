@@ -43,7 +43,8 @@ lemma dataPullback_realization (k : ℕ) :
     (SimplePole.realize Tau.integerNode).comp (dataPullback k) =
       (scaledSubstitution k).comp (SimplePole.realize Mu.squareNode) := by
   apply LinearMap.prod_ext
-  · ext q
+  · apply LinearMap.ext
+    intro q
     change SimplePole.realize Tau.integerNode (dataPullback k (q,0)) =
       scaledSubstitution k (SimplePole.realize Mu.squareNode (q,0))
     rw [dataPullback_polynomial]
@@ -52,20 +53,21 @@ lemma dataPullback_realization (k : ℕ) :
   · apply Finsupp.lhom_ext
     intro j c
     have hc : Finsupp.single j c = c • Finsupp.single j (1:ℚ) := by simp
-    rw [hc, map_smul, map_smul]
+    rw [hc, LinearMap.map_smul, LinearMap.map_smul]
     congr 1
     change SimplePole.realize Tau.integerNode (dataPullback k (0,Finsupp.single j 1)) =
       scaledSubstitution k (SimplePole.realize Mu.squareNode (0,Finsupp.single j 1))
     rw [dataPullback_pole, poleData_realization]
     simp [SimplePole.realize_apply, scaledSubstitution_apply, Mu.squareNode,
-      sub_eq_add_neg, div_eq_mul_inv]
+      sub_eq_add_neg, div_eq_mul_inv, add_comm]
 
 lemma dataPullback_functional (k : ℕ) (hk : 1 ≤ k) :
     (Tau.rationalFunctional k).comp
         ((SimplePole.realize Tau.integerNode).rangeRestrict.comp (dataPullback k)) =
       (Mu.rationalFunctional k).comp (SimplePole.realize Mu.squareNode).rangeRestrict := by
   apply LinearMap.prod_ext
-  · ext q
+  · apply LinearMap.ext
+    intro q
     change Tau.rationalFunctional k (SimplePole.ofData Tau.integerNode (dataPullback k (q,0))) =
       Mu.rationalFunctional k (SimplePole.ofData Mu.squareNode (q,0))
     rw [dataPullback_polynomial, Tau.rationalFunctional_polynomial,
@@ -74,7 +76,7 @@ lemma dataPullback_functional (k : ℕ) (hk : 1 ≤ k) :
   · apply Finsupp.lhom_ext
     intro j c
     have hc : Finsupp.single j c = c • Finsupp.single j (1:ℚ) := by simp
-    rw [hc, map_smul, map_smul]
+    rw [hc, LinearMap.map_smul, LinearMap.map_smul]
     congr 1
     change Tau.rationalFunctional k
         (SimplePole.ofData Tau.integerNode (dataPullback k (0,Finsupp.single j 1))) =
@@ -105,6 +107,8 @@ theorem pullback_identity (k : ℕ) (hk : 1 ≤ k) (f : Mu.RationalDomain) :
     exact (SimplePole.coordinates Mu.squareNode Mu.squareNode_injective).apply_symm_apply f
   have h := DFunLike.congr_fun (dataPullback_functional k hk) d
   change Tau.rationalFunctional k (SimplePole.ofData Tau.integerNode (dataPullback k d)) = _
-  simpa only [LinearMap.comp_apply, ← SimplePole.ofData, hd] using h
+  change Tau.rationalFunctional k (SimplePole.ofData Tau.integerNode (dataPullback k d)) =
+    Mu.rationalFunctional k (SimplePole.ofData Mu.squareNode d) at h
+  simpa only [hd] using h
 
 end ManuscriptChain.Pullback
