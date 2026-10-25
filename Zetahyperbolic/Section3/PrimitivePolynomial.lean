@@ -35,8 +35,7 @@ theorem primitivePolynomial_complex_eval (p : Real.Parameters) (z : ℂ) :
   have hc : (Rat.castHom ℂ).comp (Int.castRingHom ℚ) = Int.castRingHom ℂ := by
     ext
     simp
-  simpa only [Polynomial.eval₂_map, Polynomial.eval₂_mul, Polynomial.eval₂_C,
-    hc] using he
+  simpa [Polynomial.eval₂_map, hc, primitivePolynomial] using he
 
 theorem primitivePolynomial_root_iff (p : Real.Parameters) (z : ℂ) :
     (primitivePolynomial p).eval₂ (Int.castRingHom ℂ) z = 0 ↔
