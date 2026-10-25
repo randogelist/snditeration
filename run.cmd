@@ -10,5 +10,6 @@ call lake build Zetahyperbolic
 if errorlevel 1 exit /b 1
 call lake env lean Zetahyperbolic\Audit.lean
 if errorlevel 1 exit /b 1
-echo GOODWORKFLOWFRONTIER::GITHUB_FOUNDATION::LEAN_BUILD=PASS
+echo GOODWORKFLOWFRONTIER::GITHUB_SPECTRAL_v0_1_0::AXIOM_AUDIT=PASS
+echo GOODWORKFLOWFRONTIER::GITHUB_SPECTRAL_v0_1_0::LEAN_BUILD=PASS
 exit /b 0
