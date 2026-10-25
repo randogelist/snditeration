@@ -26,3 +26,4 @@ import Zetahyperbolic.Section3.PoleKernelAlgebra
 import Zetahyperbolic.Section3.PoleIntegralIdentity
 import Zetahyperbolic.Section3.PartialFractionsCore
 import Zetahyperbolic.Section3.PartialFractionsQuotient
+import Zetahyperbolic.Section3.PartialFractionsResidues

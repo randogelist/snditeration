@@ -67,3 +67,7 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.PartialFractions.kernelNumerator_partial_fraction_exists
 #print axioms ManuscriptChain.PartialFractions.data_quotient_eq_div
 #print axioms ManuscriptChain.PartialFractions.data_quotient_eq_actual
+
+#print axioms ManuscriptChain.PartialFractions.residueCoeff_eq_formula
+#print axioms ManuscriptChain.PartialFractions.residueCoeff_eq_actual
+#print axioms ManuscriptChain.PartialFractions.rational_kernel_decomposition
