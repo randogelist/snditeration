@@ -2,3 +2,5 @@ import Zetahyperbolic.Section2.Moments
 import Zetahyperbolic.Section2.BasisInvariance
 import Zetahyperbolic.Section2.PoleDiagonalization
 import Zetahyperbolic.Section4.Transfer
+import Zetahyperbolic.Section3.SymmetricAffinePencil
+import Zetahyperbolic.Section3.ConcretePencil

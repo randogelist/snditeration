@@ -19,3 +19,9 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.RealTransfer.RationalMeasure.irrational
 #print axioms ManuscriptChain.RealTransfer.conditional_irrational
 #print axioms ManuscriptChain.RealTransfer.paper_parameter_inequalities
+
+#print axioms ManuscriptChain.Spectral.SymmetricAffinePencil.eval_detPolynomial
+#print axioms ManuscriptChain.Spectral.SymmetricAffinePencil.center_nonvanishing_of_positive
+#print axioms ManuscriptChain.Real.manuscriptPencil_detPolynomial
+#print axioms ManuscriptChain.Real.delta_eval_eq_det_gram
+#print axioms ManuscriptChain.Real.delta_nonzero_of_positive
