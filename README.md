@@ -1,58 +1,65 @@
-# Zetahyperbolic — Lean 4.33.0 formalization
+# ZETAHYPERBOLIC — persistent paper gap tracker
 
-Formalization of *Spectral Theory and Diophantine Bounds for Hankel Determinants
-of Odd Zeta Values* (21 October 2026), using Lean 4.33.0 and Mathlib commit
-`db584cd6d46c92f209a44c0f1c829460d327499d`.
+**Purpose:** This is the permanent, **tracking-only** branch for everything still missing, unproved, incorrectly stated, insufficiently justified, or not yet formalized in the 52-page Zetahyperbolic manuscript. It is **not** another proof-development branch. All new proofs belong on feature branches and are merged into \`main\` only after the required Lean and mathematical audits. This tracker remains available across subsequent proof branches and commits.
 
-Workflow: `YOU_ARE_GOODWORKFLOWFRONTIER`, mode `A_TIER_EXECUTION`.
-Historical ZIP checkpoints remain unchanged. The directly importable project
-is in `Zetahyperbolic/`; archived theorem names are not proof certificates.
+**Source of truth for the paper:** *Spectral Theory and Diophantine Bounds for Hankel Determinants of Odd Zeta Values*, Prince Anand, **21 October 2026**, 52-page PDF supplied in this project, SHA-256 \`935767c0cda7468f376cd8eadc374077caf6c8a060351d3bea26ac3f838a9d0c\`. Page numbers below are **PDF page numbers**. Never silently substitute a revised PDF.
 
-## Build and audit
+**Source of truth for Lean:** \`main\` in [randogelist/snditeration](https://github.com/randogelist/snditeration), particularly [CHECKPOINT.json](https://github.com/randogelist/snditeration/blob/main/CHECKPOINT.json), [FORMALIZATION_LEDGER.md](https://github.com/randogelist/snditeration/blob/main/docs/FORMALIZATION_LEDGER.md), [MANUSCRIPT_REPAIRS.md](https://github.com/randogelist/snditeration/blob/main/docs/MANUSCRIPT_REPAIRS.md), and [NEXT_ENDPOINT.md](https://github.com/randogelist/snditeration/blob/main/docs/NEXT_ENDPOINT.md).
 
-With the pinned dependencies already provisioned:
+**Baseline for this tracker:** \`main@c521749190cce9981b0f108a8edc8034420f6420\`, 2026-10-25. Frozen verified proof checkpoint: PR #14, merge \`1460d455\`, [CI run 40186462123](https://github.com/randogelist/snditeration/actions/runs/40186462123), **846 Lean theorem declarations** checked with allowed axioms \`propext\`, \`Classical.choice\`, \`Quot.sound\`. The count includes generated declarations; it is **not** a count of manuscript theorems or a complete-paper proof. Lean 4.33.0, pinned Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`. No native Windows receipt is inferred from GitHub/Linux.
 
-```sh
-lake build Zetahyperbolic
-lake env lean Zetahyperbolic/Audit.lean
-```
+> **Status rule:** \`VERIFIED\` means a *precise Lean theorem* was built and axiom-audited; it does **not** automatically mean every assertion in a similarly numbered manuscript theorem is proved. \`PARTIAL\` is a strict subset. \`OPEN\` is unverified in this repository. \`REPAIR\` is a printed claim or proof step that must be corrected before formalization. \`CANDIDATE\` is open PR/ZIP material with no qualifying current CI receipt.
 
-On Windows, run `run.cmd` using the installed Lean/Lake and compatible cached
-Mathlib. Lake's dependency traces reuse unchanged project artifacts. A new
-platform, compiler or changed dependency requires a compatible build; Windows
-and Linux proof receipts are not silently treated as interchangeable.
+## Current situation
 
-For first-time provisioning only, `lake update` and `lake exe cache get`
-resolve the pinned dependencies and retrieve Mathlib's cache. Normal verification
-does not change the Mathlib revision.
+| Area | Already certified on \`main\` | Missing before full manuscript closure |
+|---|---|---|
+| §2, pp. 3–7 | Definition 2.1 rational data; full-domain pullback of Lemma 2.2; algebraic reflection/difference; canonical basis invariance (2.4); Lagrange pole algebra (2.5) | **Lemma 2.3:** equality of the canonical finite-difference coefficient with the *actual normalized analytic derivative at zero* under rational regularity |
+| §3 core, pp. 7–14 | **Theorem 3.1:** actual positive Gram realization, hyperbolicity, exact degree, center exclusion and sharp finite spectral disk; primitive polynomial; exact leading sign, pole inertia and root-side counts; reality of principal determinant roots (degree loss allowed) | Arbitrary mixed-minor total positivity and Stieltjes/Carleman (3.3(1)); full compatible interlacing and general Dodgson/Jacobi (3.4); corrected continued fraction (3.5); Newton/Turán equality cases (3.7); Christoffel–Darboux/Laplace-Jacobi (3.8); Hurwitz/Dirichlet families (3.9); real-\`s\` normalization (3.2) |
+| §4, pp. 14–22 | Conditional integer-polynomial arithmetic squeeze (part of 4.1), **not** its unconditional applications | Effective actual-family hypotheses; algebraic/p-adic transfer (4.2–4.3); **ζ(5) exponent 25687** (4.4); linear-form bounds (4.5); determinant heights/root collapse/rational exclusions (4.6–4.8), free-energy and variational assertions (4.9–4.11) |
+| §5, pp. 22–29 | No complete current \`main\`-audited Section 5 theorem | ζ(7) two-variable moments/dual pencil/Krein cones; β(4) analog; even-pole cancellations; weight-seven prime-sum and valuation certificates; double-pole nonvanishing (5.1–5.7) |
+| §6, pp. 29–50 | No complete current \`main\`-audited Section 6 theorem | All the multi-weight, beta, p-adic, two-variable, sign-flip, operator, and dyadic/height theorems (6.1–6.18) |
+| §7, pp. 51–52 | Discussion, not a theorem proving the earlier sections | Resolve claimed dependencies and editorial placeholders before a Leaned Paper is described as manuscript-complete |
 
-## Proof scope
+For the **item-by-item obligations and pass criteria**, use [docs/PAPER_GAP_REGISTER.md](docs/PAPER_GAP_REGISTER.md) on **this branch**. It contains a stable gap ID for each open or repaired endpoint.
 
-The current development constructs the actual hyperbolic moment measure,
-identifies its integrals with the rational Hankel pencil, and discharges the
-positive-definiteness input to the general odd-weight spectral theorem.
-The exact compiled and audited boundary is recorded in
-[the formalization ledger](docs/FORMALIZATION_LEDGER.md).
+## Hard blockers, in execution order
 
-The main endpoints include `ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL` and
-`ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK`: exact degree, real roots avoiding
-ζ(2k+1), and the sharp radius 1/‖B‖₂ attained by a root, for every
-admissible tuple. The primitive integer polynomial inherits these results.
-No assumption of pairwise distinct roots is inserted.
+1. **Correct the manuscript before proving it verbatim.** Proposition **3.2** has a continuous-weight normalization mismatch; Corollary **3.5** has an incorrectly normalized resolvent fraction and unsupported no-breakdown claim; Corollary **3.6** wrongly asserts all-order strict finite-atomic Hankel determinants and reverses its displayed distance bound; the proof of Theorem **3.7** incorrectly infers coefficient nonvanishing from distinct eigenvalues. These are detailed and partly counterexample-certified in [MANUSCRIPT_REPAIRS.md](https://github.com/randogelist/snditeration/blob/main/docs/MANUSCRIPT_REPAIRS.md) and [SECTION3_CORRECTIONS.md](https://github.com/randogelist/snditeration/blob/main/docs/SECTION3_CORRECTIONS.md). Do **not** badge a corrected assertion as proof of the false printed assertion.
+2. **Finish the nearest formal gap:** Lemma **2.3**'s analytic derivative identity. Algebraic difference and regularity are already certified; connect the actual RatFunc evaluation to iterated derivatives on a neighborhood of 0. This is the exact task in \`docs/NEXT_ENDPOINT.md\`.
+3. **Finish §3 before promoting the whole spectral chapter:** arbitrary mixed minors, Carleman growth; interlacing when principal slope can be singular; general Dodgson; repaired J-fraction; Newton/Turán; Christoffel–Darboux and parameter derivatives; continuous-\`s\` correction and Dirichlet/Hurwitz realizations. A determinant being real-rooted **does not imply** its distinct-root, strict-interlacing, or cyclic-Lanczos variants.
+4. **Highest arithmetic blocker: Theorem 4.4.** Supply actual, uniform and effective certificates for the *particular* \`K=30n, N=3n, h=27n, 2m=6\` family: an integer polynomial \`Q_K\`, \`0<Q_K(ζ(5))≤exp(-K²/2500)\`, exact degree \`≤9K/10\`, and **all-root gap** \`|r_{K,j}-ζ(5)|≥exp(-11.411K)\`. Independently prove the p-adic multiplier/local valuations, prime-sum/logarithmic-energy inputs, the Remez/Stirling-potential upper bound and explicit thresholds. The conditional Theorem 4.1 does **not** discharge any of these. The external Fauzan reference [5] is an input to audit, not an automatically imported Lean theorem for these changed parameters.
+5. **Theorem 4.5 and derived arithmetic:** verify the combined positive weight, denominator transfer, rank-loss controls and effective thresholds for \`bζ(5)+aζ(3)\`; then heights, root collapse, algebraic/p-adic and §6.8 consequences. No unconditional \`ζ(5)\` irrationality or the printed exponent is certified *by this repository*.
+6. **§5/§6 arithmetic expansion:** prove the ζ(7) double-variable moment identities and exact Krein decomposition; establish *uniform tail controls* before concluding positive cones from finitely many orthogonality constraints; formalize all claimed q-adic nonvanishing, residue-class basis changes, prime-sum finite certificates, beta character cancellations, multi-pole and multi-weight transfers. These claims are not consequences of §3 hyperbolicity alone.
 
-Section 2 proves full-domain pullback/reflection identities on actual simple-pole
-rational-function domains. Section 3 proves exact Sylvester inertia and root-side
-counts, real-rootedness
-of every principal determinant (allowing singular slopes), and convergence of
-the corrected reciprocal-moment estimator to the exact root radius. Sections 4–6 retain open arithmetic
-and quantitative endpoints;
-this repository does not establish irrationality of ζ(5) or ζ(7).
+## Mathematical corrections / questions requiring independent checking
 
-Some printed corollaries require corrections. See
-[the manuscript repair notes](docs/MANUSCRIPT_REPAIRS.md) before attempting
-those endpoints. A proof of a corrected statement is not reported as a proof
-of the original false statement.
+**Already identified source discrepancies** (see the linked repository repair notes):
+- **Lemma 2.3, p. 5:** the printed Bernoulli reflection argument mishandles the index-one exceptional case and states the vanishing parity backwards; its Lean-corrected reflection identity is verified.
+- **Proposition 3.2, p. 8:** the continuous density's literal prefactor is \`π/2\` times the §3.1 odd-weight density. Correct it to \`2(2π)^(s-1)/Γ(s)\` before claiming the pencils coincide.
+- **Corollary 3.5, pp. 10–11:** distinguish \`(I+tT)^(-1)\` from \`(T+tI)^(-1)\`; include determinant-normalization factors and prove the Lanczos start is cyclic/no breakdown. The rank-one admissible counterexample is in Lean.
+- **Corollary 3.6, p. 11:** finitely many spectral atoms cannot give strictly positive moment determinants of arbitrary order; correct \`h^(-1/(2r))≤S_(2r)^(-1/(2r))/d_min≤1\` and the odd-log-derivative sign. The corrected finite estimate and limit are verified.
+- **Theorem 3.7, pp. 11–12:** \`β=(-1,1)\` is a direct counterexample to the purported implication “distinct real eigenvalues ⇒ every intermediate coefficient nonzero.” Audit the equality cases separately.
 
-The latest proof receipt is [CHECKPOINT.json](CHECKPOINT.json). Continue with
-[the next unfinished endpoint](docs/NEXT_ENDPOINT.md); earlier PASS-ONCE
-receipts and exact audit excerpts are retained under `docs/receipts/`.
+**Additional paper-proof audit targets** (flagged for verification, **not** claimed here to be disproved):
+- **Theorem 5.2(3), pp. 23–24, and Theorem 6.3(2), pp. 32–33:** finitely many conditions annihilate only finitely many negative Krein modes; the series in (5.4) has an infinite tail. Pointwise positivity of a function on a subinterval does not control integrals against an arbitrary sign-changing polynomial. A quantitative negative-tail bound and strict positive lower bound for the specified polynomial subspace are needed.
+- **Theorem 4.1, pp. 14–15, and its uses:** “for sufficiently large \`K\`” and limsup inequalities do not alone make \`b₀\` *effectively computable*. Track explicit computable thresholds and algorithmic constant proofs.
+- **Theorem 4.4, pp. 16–18:** the weight-five parameter specialization and use of estimates attributed to [5] require an exact, independent source-to-parameter derivation and auditable finite certificates.
+- **Remark 4.10, p. 22:** root pinching alone is not sufficient to prove existence of the displayed free-energy limit or a *first-order* singularity; supply the missing thermodynamic-limit and nonanalyticity arguments, or weaken the remark.
+- **Theorem 6.12(2), pp. 42–43:** density of \`ℚ\` proves the existence of rational approximants to a spectral sign-change point, but the assertion of an **explicit** \`r_K\` requires an effective spectral margin/error budget and a constructive selection procedure.
+- **Editorial:** the introduction's “Section ??” and the “Theorem ??” references in §§6.11–6.13 must be replaced by exact labels. Verify all cross-references and theorem numbering.
+
+## Open continuation PR — not verified
+
+[PR #15: Continue manuscript analytic, spectral and arithmetic proofs](https://github.com/randogelist/snditeration/pull/15), head \`0cee4ea2e32b1f476488f92b476c4eb224285160\`, changes **51 files**. Its [CI run 40188938699](https://github.com/randogelist/snditeration/actions/runs/40188938699) is **FAILED** (Lean build fails; subsequent full axiom audit skipped). In particular, error-bearing modules include \`Section3/{MatrixCurveJacobi,LaplaceWeightDerivative,ContinuousPencil,ShiftedMomentPositivity,PrincipalCondensation,ChristoffelDarboux,CauchyInterlacing}.lean\`, \`Section5/{BeukersMomentSeries,RationalIndependence}.lean\`, and \`Section6/CoefficientGramGrowth.lean\`. Do not count the candidate theorems in that PR as A-Tier; individual successful modules are not a clean integrated receipt. Re-evaluate the branch and rerun all gates after each fix.
+
+## Proof acceptance and permanence policy
+
+- Every task must have **paper page/equation**, **exact Lean statement**, its hypotheses, a source path, a stable gap ID, dependencies, and a compiler/axiom receipt.
+- Use statuses **OPEN → CONSTRUCTION → CI_BUILD_PASS → AXIOM_AUDIT_PASS → MANUSCRIPT_MATCHED**. A kernel-clean proof of a weakened, corrected, or conditional theorem **must not be misreported** as completion of a stronger printed one.
+- The only allowed transitive logical axioms are \`propext\`, \`Classical.choice\`, and \`Quot.sound\`, unless an explicitly reviewed repository policy changes this. Reject \`sorryAx\`, custom axioms, hidden assumptions and nonterminating admission/checker shortcuts.
+- This branch stores **tracking documents only**; never overwrite \`main\`'s verified modules or historic archived ZIPs. After each proof PR merge, update the register and README with the exact commit, build receipt and **which subclauses actually closed**. Unmerged candidates stay clearly separate.
+- \`LEAN_ANCHORINGS\` / PASS-ONCE: reuse compatible unchanged cached Mathlib and project artifacts only with source, environment, compiler and dependency fingerprints. A GitHub Linux receipt is not a Windows proof run.
+- Full A-Tier of an endpoint needs manuscript-exact statement matching **and** Lean compilation/axiom audit. **No overall Leaned Paper, finite-witness/S-Tier, RH, or manuscript-complete milestone is asserted here.**
+
+**Working branch:** [persistent/zetahyperbolic-paper-gap-tracker](https://github.com/randogelist/snditeration/tree/persistent/zetahyperbolic-paper-gap-tracker). Do not delete it when feature branches are merged.
