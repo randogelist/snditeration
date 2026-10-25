@@ -1,6 +1,6 @@
 import Zetahyperbolic
 
-/-! Print transitive axiom dependencies for selected manuscript declarations. -/
+/-! Print transitive logical dependencies for selected manuscript declarations. -/
 #print axioms ManuscriptChain.Real.zeta_eq_riemannZeta
 #print axioms ManuscriptChain.Real.zeta_pos
 #print axioms ManuscriptChain.BasisInvariance.det_changeBasisPencil
