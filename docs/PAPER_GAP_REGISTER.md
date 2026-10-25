@@ -1,0 +1,155 @@
+# Manuscript gap register — stable, cross-branch audit ledger
+
+This document is **tracking only**. The [branch README](../README.md) is the quick dashboard. The manuscript itself is the 52-page PDF dated **21 October 2026** (SHA-256 `935767c0cda7468f376cd8eadc374077caf6c8a060351d3bea26ac3f838a9d0c`). Exact PDF page numbers are given; "paper item" refers to that manuscript, not an external paraphrase.
+
+**Checked baseline:** `main@c521749190cce9981b0f108a8edc8034420f6420`; checkpoint `ZETA_HYPERBOLIC_ANCHOR_7`, PR #14 (CI 40186462123, PASS). **Not yet accepted:** PR #15 `0cee4ea2` (CI 40188938699, FAIL). Read `main/docs/FORMALIZATION_LEDGER.md`, `MANUSCRIPT_REPAIRS.md` and `NEXT_ENDPOINT.md` for the exact proof interfaces before modifying a gap.
+
+## Status vocabulary
+
+- `CLOSED_EXACT`: manuscript-matched exact statement has a compiled, axiom-allowlisted Lean declaration and linked receipt.
+- `CLOSED_SUBCLAUSE`: a verified proper subset/auxiliary identity, **not** the whole named item.
+- `OPEN_MATH`: a mathematical proof/certificate remains to be supplied; putting its conclusion in a Lean hypothesis does not close it.
+- `OPEN_LEAN`: a paper argument exists but a complete kernel proof of its exact claim is absent from verified `main`.
+- `REPAIR_REQUIRED`: source text is false as written or its printed argument is invalid; first state the corrected theorem and prove **that**.
+- `IN_REVIEW`: source exists in an unmerged/unverified PR or archive; do not count it as a passed theorem.
+- `CONJECTURE`: deliberately unproved conjecture rather than a theorem promised complete by the manuscript.
+
+The register describes **repository formalization gaps** plus specifically identified **paper-level proof discrepancies**. `OPEN_LEAN` does not declare a paper theorem mathematically false. `REPAIR_REQUIRED` must include a direct reason or counterexample, not just a missing tactic.
+
+## §2 — Rational moment functionals and basis invariance (PDF pp. 3–7)
+
+| ID | Item and status | Remaining exact obligation / acceptance test |
+|---|---|---|
+| `P02.01` | Def. 2.1 / equations (2.1)–(2.3), (2.8)–(2.9): **CLOSED_EXACT** for actual simple-pole rational-domain construction | Maintain direct correspondence between Lean `Real.pencil`, `Mu`/ `Tau` functionals, the rational kernel, and the original polynomial. No replacement by merely abstract finite matrices |
+| `P02.02` | Lemma 2.2 pullback: **CLOSED_EXACT** | Keep the whole rational-function domain; existing `TauGenerators`, `RationalPullbackAssembly` are source and proof receipts |
+| `P02.03a` | Lemma 2.3 reflection and algebraic difference: **CLOSED_EXACT** for the corrected generators/full domain | Preserve the exceptional Bernoulli index and true parity in the proof |
+| `P02.03b` | Lemma 2.3 analytic difference: **OPEN_LEAN**, nearest target | Show `(partialFractionCoefficient (2*k) f : ℝ) = iteratedDeriv (2*k) (fun x => RatFunc.eval (Rat.castHom ℝ) x (f : RatFunc ℚ)) 0 / ((2*k).factorial : ℝ)` under proven nonzero denominator at zero. Use uniqueness of canonical polynomial/pole coordinates; prove derivatives on an actual neighborhood. Review PR #15 `RationalTaylor.lean` only after its CI is green |
+| `P02.04` | Theorem 2.4 canonical primitive normalization: **CLOSED_EXACT** for current definition | Basis changes in `GL_h(ℚ)`; nonzero determinant supplied by §2.5; `BasisInvariance.lean` |
+| `P02.05` | Theorem 2.5 Lagrange diagonalization: **CLOSED_EXACT** for finite pole algebra | Nonzero weights, true Lagrange interpolation coefficients/inverse Vandermonde, determinant degree and transformation; `PoleDiagonalization.lean`, `LagrangeBasis.lean` |
+
+## §3 — Spectral theory (PDF pp. 7–14)
+
+| ID | Item and status | Remaining exact obligation / acceptance test |
+|---|---|---|
+| `P03.01` | Theorem 3.1: **CLOSED_EXACT** for degree, root realness, noncenter roots, actual sharp gap; *not* root simplicity | `Unconditional.lean`, `ActualSpectrum.lean`, `PrimitivePolynomial.lean`. Do not infer pairwise distinctness from this theorem |
+| `P03.02` | Proposition 3.2: **REPAIR_REQUIRED**, then **OPEN_LEAN** | The continuous density needs normalization `2(2π)^(s-1)/Γ(s)`, not the printed `(2π)^s/(2Γ(s))`. Construct real-`s>1` moments, convergence/positive Gram, explicit slope and exact comparison at odd `s`. PR #15 has candidate `Continuous*.lean` but integrated CI fails |
+| `P03.03a` | Theorem 3.3(1): **CLOSED_SUBCLAUSE** (positive definite Gram only) + **OPEN_LEAN** | Prove all **nonprincipal/mixed** minors strictly positive by Andréief/generalized Vandermonde, moment-growth uniformities, Stieltjes Carleman determinacy. For a minor indexed by ordered I,J, prove the integrand has positive sign on ordered positive nodes and integrate with positive weight |
+| `P03.03b` | Theorem 3.3(2): **CLOSED_EXACT** | Weight-five leading sign `(-1)^(n(n-1)/2)`; `PoleSigns.lean` |
+| `P03.03c` | Theorem 3.3(3): **CLOSED_EXACT** for multiplicity-counted root sides | Exact Sylvester spectral inertia and floor/ceil counts; `SpectralInertia.lean`, `PoleSignCounts.lean`. No root simplicity assumption |
+| `P03.04a` | Theorem 3.4(1): **CLOSED_SUBCLAUSE** (principal-root reality) + **OPEN_LEAN** | Prove compatible Cholesky compressions, Cauchy interlacing of whitened eigenvalues, and **correctly** treat singular principal slope / dropped determinant degree before translating reciprocal eigenvalues into root interlacing |
+| `P03.04b` | Theorem 3.4(2): **OPEN_LEAN** | Derive arbitrary-order Jacobi/Dodgson condensation for actual principal determinant and mixed cofactor; recover `Δ_r(x) Δ_(r-2)(x) = -Σ_(r-1)(x)^2` at each root of `Δ_(r-1)`. Distinguish an abstract 3×3 identity from the universal statement |
+| `P03.05` | Corollary 3.5: **REPAIR_REQUIRED** + **OPEN_LEAN** | Exact resolvent J-fraction for `(I+tT)^(-1)`: diagonal `1+t*a_i`, offdiagonal numerators `t²*b_i²`, determinant ratio prefactor `det(G_(h-1))/det(G_h)`. Require cyclic starting vector before claiming all `b_i>0`, and `Δ_h(0)≠0` before rational evaluation there. Concrete rank-one counterexample exists in `ContinuedFractionObstruction.lean` |
+| `P03.06` | Corollary 3.6: **REPAIR_REQUIRED**, corrected estimate **CLOSED_EXACT**, stronger claims **OPEN/false** | Finite h-atom measures have PSD Hankel matrices but cannot have strictly positive minors of *all* orders; rank at most distinct squared distances (≤h). Correct reciprocal bound is `h^(-1/(2r)) ≤ S_(2r)^(-1/(2r))/d_min ≤ 1`. Fix odd-m logarithmic derivative sign and exact finite-Stieltjes claims. `ReciprocalMoments.lean` and `ReciprocalMomentLimit.lean` prove corrected estimator and convergence |
+| `P03.07` | Theorem 3.7: **REPAIR_REQUIRED** in genericity/nonzero-coefficient argument + **OPEN_LEAN** | Prove exact real-root Turán-Wronskians, normalized Newton inequalities, sharp strict/equality cases, and actual shifted coefficients. Do not assume “distinct eigenvalues ⇒ all intermediate coefficients nonzero”; counterexample `β=(-1,1)`. PR #15 `NewtonTuran` and `ActualNewtonTuran` are unmerged candidates |
+| `P03.08a` | Theorem 3.8(1): **OPEN_LEAN** | Orthogonal-polynomial/CD kernel for the *actual positive measure*; identify nonzero spectrum of `B` with weighted pole kernel via precise `AB/BA` and Gram inverse algebra |
+| `P03.08b` | Theorem 3.8(2): **OPEN_LEAN** | Laplace deformation of actual measure with `X=ζ(s)` held fixed; dominated parameter differentiation, invertibility/determinant positivity, `∂_τ log det G = ∫(∂_τ w_s)K_h`. PR #15 derivatives/Jacobi modules are red |
+| `P03.09` | Theorem 3.9: **OPEN_LEAN** | Hurwitz positive weight for rational shifts and Dirichlet character positivity for q∈{3,4,5,8}; exact pole integrals, Fekete polynomial signs and nonsingular Vandermonde slopes |
+| `P03.10` | Remark 3.10: **OPEN_MATH** as printed non-classicality justification | Define a genuine invariant excluding a classical orthogonal-polynomial specialization. “New roots always born at outer edges” is not a general consequence of Favard alone; formal proof must use a precise claim and hypotheses |
+
+## §4 — Irrationality transfer, ζ(5), heights (PDF pp. 14–22)
+
+**Dependency gate for the advertised bound:** for `K=30n, N=3n, h=27n, 2m=6`, simultaneously prove
+`Q_K∈ℤ[X]`, `deg(Q_K)≤(9/10)K`, `0<Q_K(ζ5)≤exp(-K²/2500)`, and
+`∀r: Q_K(r)=0 → |r-ζ5|≥exp(-(11411/1000)K)` for all effectively specified large admissible K.
+Only then apply the exact parameter choice `c=2251`, `μ=25687` to a fully verified version of Theorem 4.1.
+
+| ID | Item and status | Remaining exact obligation / acceptance test |
+|---|---|---|
+| `P04.01` | Theorem 4.1: **CLOSED_SUBCLAUSE** (conditional integer-polynomial squeeze) + **OPEN_LEAN** (printed exponential assumptions → computable bound) | Derive uniform local polynomial comparison from the complete complex-root product, explicit index selection `K=d₀⌊c log b/d₀⌋`, effective `b₀` and strict exponent threshold from precise `λ,ρ,ϵ,d₀`. Actual family inputs **not** assumed proved |
+| `P04.02` | Proposition 4.2: **OPEN_LEAN** | Algebraic minimal polynomial/resultant nonzero, conjugate/height bounds, polynomial coefficient rate and `ϵ>(d-1)Λ_height`; reproduce exact `μ_d` and computable `B₀`. PR #15 algebraic modules unverified |
+| `P04.03` | Proposition 4.3: **OPEN_LEAN** | Realize actual p-adic `ξ_p`, integer polynomial `Q` and strict Gauss bound `|Q(α)|_p=|Q(ξ_p)|_p` inside its open disk. PR #15 ultrametric module unverified |
+| `P04.04a` | Theorem 4.4, p-adic input: **OPEN_MATH/OPEN_LEAN**, **critical** | Construct explicit `m_{K,100000}`, prove `Q_K=m_{K,M} S_KΔ_K∈ℤ[X]`; validate all local allocations, small primes, outer/inner prime valuations with exact integer/rational certificates, **for K=30n and N=3n** (not merely a different external source family) |
+| `P04.04b` | Theorem 4.4, archimedean decay: **OPEN_MATH/OPEN_LEAN**, **critical** | Prove `0<Q_K(ζ5)≤e^(-K²/2500)`, including effective prime-sum exponent `A_M≤-2.32425` and energy bound `U≤2.32380`, with finite symbolic/interval certificates and quantified cutoffs |
+| `P04.04c` | Theorem 4.4, spectral norm: **OPEN_MATH/OPEN_LEAN**, **critical** | Exact residue formula (4.7), uniform Stirling envelopes, Legendre/Remez estimate (4.9), concavity of `Ψ_{1/18,1/3}`, rational interval enclosure for its maximizer and `‖B_K‖₂≤exp(11.411 K)` |
+| `P04.04d` | Theorem 4.4, final measure: **OPEN_LEAN** | Combine `P04.01` + `P04.04a–c`, prove `|ζ(5)-a/b|>b^(-25687)` for all `b≥b₀`, and *Irrational ζ5* as a consequence; audit theorem type for omitted assumptions |
+| `P04.05` | Theorem 4.5: **OPEN_MATH/OPEN_LEAN** | Combined positive weight for `bζ5+aζ3` under `b>0,a<(π²/3)b`; exact common Z-slope, positive Loewner comparison, polynomial integrality and **p-adic rank-loss O(K)** including exceptional outer-prime Bernoulli indices; exponent and irrationality |
+| `P04.06` | Theorem 4.6: **OPEN_LEAN** | Two-sided `K^-2 log|det B_K|` via Euler–Maclaurin determinant, arcsine Jensen energy and *effective* interval estimates; primitive/integer polynomial height `H(P_K),H(Q_K)`; limiting bounds |
+| `P04.07` | Theorem 4.7: **OPEN_LEAN** | Convert spectral log-determinant mass to ≥1.40% exponentially close roots; prove closest-root interval and same-factor discriminant/Mahler separation with all large-K constants |
+| `P04.08` | Proposition 4.8: **OPEN_LEAN** | No rational roots of denominator `b≤e^(K/2251)`, cluster-factor degree bounds and factorization/height results; explicitly reuse proved 4.4, not a guessed ζ5 bound |
+| `P04.09` | Remark 4.9: **OPEN_MATH** for variational envelopes | Validate definition and upper/lower variational estimates; not a proved spectral exponent limit |
+| `P04.10` | Remark 4.10: **REPAIR / OPEN_MATH** | Establish existence of `f(X)=lim (hK)^-1 log|P_K(X)|`, determine differentiability and a true first-order transition; real zeros pinching the center **alone is not sufficient** |
+| `P04.11` | Conjecture 4.11: **CONJECTURE** | Existence of `lim K^-1 log‖B_K‖₂` and identification with `ρ_var`; not a theorem required to be silently assumed |
+
+## §5 — Weight seven and two-variable/double-pole systems (PDF pp. 22–29)
+
+| ID | Item and status | Remaining exact obligation / acceptance test |
+|---|---|---|
+| `P05.01` | Theorem 5.1: **OPEN_LEAN**, candidate PR #15 red | Prove Fubini/nonnegative series/density integrability on (0,1)²; diagonals `ζ7-H_r^(7)`; offdiagonals rational divided differences `(H_r1^(6)-H_r2^(6))/(6(r1-r2))`; use the exact 720 normalization |
+| `P05.02a` | Theorem 5.2(1): **OPEN_LEAN** | For full row-rank rational coefficient matrix, verify `M_A=C Cᵀ ≻0`; actually realize centered rational pencil and construct Hermitian roots `ζ7-γ_i`. Candidate Gram/dual modules in PR #15 must pass |
+| `P05.02b` | Theorem 5.2(2): **OPEN_LEAN** | Justify infinite Krein sum via convergence/interchange on the exact function class; correct `ψ±_{m,ν}`, coefficients and plus/minus pairing |
+| `P05.02c` | Theorem 5.2(3): **OPEN_MATH/OPEN_LEAN**, additional **tail-control audit** | Construct **rational polynomial** strictly positive and negative h-dimensional cones; finite annihilation of negative modes does not automatically control the infinite remainder. Establish estimates and minimum-eigenvalue margins before density approximation |
+| `P05.03` | Proposition 5.3: **OPEN_LEAN** | β(4) two-variable moment integrals/alternating rational divided differences, normalization, coefficient Gram and exact dual spectrum |
+| `P05.04` | Theorem 5.4: **OPEN_LEAN** | Identity `τ_X((x-j)^-1-(x+j)^-1)=j^(-(2k+1))` with correct rational-domain conditions; treat `j=1` separately since the difference formula does not apply there |
+| `P05.05` | Remark 5.5: scope boundary | No higher-order poles are implied by 5.4; do not silently apply its cancellation to r≥2 |
+| `P05.06a` | Theorem 5.6(1): **OPEN_LEAN** after independent rational cross-check | Prove the piecewise definition equals the listed 11 affine pieces, and integrate exactly to `453803/288000`. **Independent small check:** each of the 11 table affine integrals, and their rational sum, were recomputed exactly from the printed table on 2026-10-25; this checks the *table arithmetic*, not that the integrand was correctly partitioned |
+| `P05.06b` | Theorem 5.6(2–3): **OPEN_MATH/OPEN_LEAN** | Bound the inner tail by `-33104/576000`, formalize periodic primitives and errors, prove the pole-ordered basis is q-adically unimodular and saves `6(p-1)` per p / 1/3 in the integral |
+| `P05.07` | Theorem 5.7: **OPEN_MATH/OPEN_LEAN** | Simultaneous double-pole functional with degree/regularity, Hermite interpolation basis, exact `v_q(J_{2m})=-36m` for q≡1 mod9, and all claimed lower bounds on local minors; distinguish conditional starting relation from nonvanishing conclusion |
+
+## §6 — Structural/multi-weight/character extensions (PDF pp. 29–50)
+
+| ID | Item and status | Remaining exact obligation / acceptance test |
+|---|---|---|
+| `P06.01` | Theorem 6.1: **OPEN_LEAN** | The logarithmic-fiber Jacobian, exact divided-difference q-adic valuation, nondegenerate rank-two mod-q block and claimed p^(-6) barrier |
+| `P06.02` | Theorem 6.2: **OPEN_LEAN** | Asymmetric ζ(6)/ζ(7) moments; simultaneous linear forms; verify 6 d_K^7 denominator control with exact rational divided-difference arithmetic |
+| `P06.03a` | Theorem 6.3(1): **OPEN_LEAN** | q-adic diagonal dominance on basis `x^ρ+x^(ρ+q)`, all offblock valuations, `v_q Δ(0)=-7q`, and nonvanishing for rational inputs with q∤denominator |
+| `P06.03b` | Theorem 6.3(2): **OPEN_MATH/OPEN_LEAN**, potential proof gap | h-dimensional rational kernel of the 3h equations in W_K is algebraically plausible; prove **strict positivity for every nonzero polynomial in that subspace**, not just finite negative-mode annihilation. Quantify tail `m≥h` of the exact Krein decomposition; polynomial coefficients can change sign. Then establish `0<det≤(4^-2h h^-6)^h` uniformly |
+| `P06.04` | Theorem 6.4: **OPEN_LEAN** | β(4) monomial and simple odd-square-pole moment formulas, true sign of weight, character/Vandermonde cancellation, exact pole inertia/hyperbolicity |
+| `P06.05` | Theorem 6.5: **OPEN_LEAN** | β(4) q-adic nonvanishing in `q≡1 (mod 8)` family including local unit matrices and small-prime constraints |
+| `P06.06` | Theorem 6.6: **OPEN_LEAN** | Multi-weight shifted rational functional/single-X slope, weight positivity cone, spectral disk comparison, q-adic distribution for all active odd weights |
+| `P06.07` | Theorem 6.7: **OPEN_LEAN** | Signed two-variable Beukers moment pencil with coefficient matrix `C Cᵀ`; full infinite Krein decomposition and positive/negative subspace construction, including tail control |
+| `P06.08` | Corollary 6.8: **OPEN_LEAN** | Three-term nonvanishing `1,ζ3,ζ5` cone and effective q-measure; inherits full unproved 4.5 prerequisites |
+| `P06.09` | Theorem 6.9: **OPEN_LEAN** | Triple-pole residue/derivative jets, consecutive-weight parity and multi-weight q-adic block valuation; ensure highest-weight dominance for every permitted coefficient tuple |
+| `P06.10a` | Theorem 6.10(1): **OPEN_MATH/OPEN_LEAN** | Potential-gap conservation law: exact leading-coefficient/decay identity, existence of limits/equilibrium energies, strictly increasing gap under polynomial reweighting with all hypotheses and strictness, height-vs-decay obstruction |
+| `P06.10b` | Theorem 6.10(2): **OPEN_LEAN** | For full-row-rank integer coefficient matrices `C_K` with entries ≤`K^A`, Cauchy–Binet `1≤det(C_K C_Kᵀ)` and Hadamard upper bound `(K+1)^h K^(2Ah)` implying `K^-2 log det→0`. PR #15 `CoefficientGramGrowth` currently fails |
+| `P06.11` | Theorem 6.11: **OPEN_LEAN** | β(2k) Euler polynomial p-distribution law, odd-prime denominator growth, 2-adic polynomial quotient obstruction and exact valuation bounds |
+| `P06.12` | Theorem 6.12: **OPEN_MATH/OPEN_LEAN** | Multiply sign-changing β(4) weight by `t-r₀²`; prove derivative sign, **construct explicit rational r_K** preserving full-dimensional positive-definite Gram using a quantitative spectral margin, and separately prove every stated q-adic congruence/valuation |
+| `P06.13` | Theorem 6.13: **OPEN_LEAN** | Central-factorial secant operator identity, Laplace-mode cancellation, positivity and unilateral (h,0) root signature for all k |
+| `P06.14` | Theorem 6.14: **OPEN_LEAN** | Even-pole cosh(2πv) scaling, β(2r) functional alignment, positive-definite pencils for ζ5±β and spectral/integrality comparison |
+| `P06.15` | Theorem 6.15: **OPEN_LEAN** | Odd β-values as nonzero rational powers of π (and transcendence/linear independence), cited effective transcendence measure with computable constants, positive 1D measure and rank-one Padé pencil |
+| `P06.16` | Theorem 6.16: **OPEN_LEAN** | General multi-weight ζ–β pencil, exact pole alignment, positive weight cone, strict derivative and q-adic bounds |
+| `P06.17` | Theorem 6.17: **OPEN_LEAN** | Zeta–Beta dual two-variable moments, Krein decomposition and q-adic nonvanishing of specified q-blocks; prove all coefficient/parity conditions |
+| `P06.18` | Theorem 6.18: **OPEN_MATH/OPEN_LEAN** | Principal-minor 2-adic integrality threshold, dyadic height growth and honest effective measure for period-1 cones; explicitly trace dependence on 4.5/6.14/6.16 rather than taking the conclusion as input |
+
+**§7 (PDF pp. 51–52):** discussion/open problems. No additional proved theorem should be inferred from the discussion; check all earlier referenced constants and statements.
+
+## Explicit errors, counterexamples, and manuscript-proof audits
+
+| ID | Severity | Evidence/action |
+|---|---|---|
+| `ERR-2.3-BERNOULLI` | REPAIR | Bernoulli odd-index vanishing was misstated; exceptional index-one case omitted in prose. Corrected proof in `TauGenerators.lean` |
+| `ERR-3.2-NORMALIZATION` | REPAIR | Continuous prefactor `(2π)^s/(2Γ(s))` divided by odd-s prefactor `2(2π)^(s-1)/Γ(s)` equals `π/2`, not 1 |
+| `ERR-3.5-JFRACTION` | REPAIR, concrete checked counterexample | Resolvent and determinant prefactor; starting-vector cyclicity. See `ContinuedFractionObstruction.lean` |
+| `ERR-3.6-FINITE-RANK` | REPAIR, concrete checked counterexample | Finite-atom Hankel determinant rank ≤ h, so arbitrary-order strict positivity is impossible; inverse-distance bound direction and odd log-derivative sign also wrong. See `ContinuedFractionCounterexample.lean` and corrected reciprocal modules |
+| `ERR-3.7-GENERICITY` | REPAIR | `β=(-1,1)` gives `1-Y²` despite distinct real β, refuting alleged coefficient-nonvanishing implication |
+| `AUD-3.10-NONCLASSICALITY` | REVIEW | Favard/orthogonal-root argument needs a precisely stated invariant; current discussion of root "birth" is not a standalone obstruction |
+| `AUD-4.1-EFFECTIVITY` | REVIEW | Explicit error bounds/thresholds are required for "effectively computable" `b₀` |
+| `AUD-4.4-TRANSFER` | CRITICAL | Independently rederive cited Fauzan p-adic/energy bounds at changed K/N family; verify constants via finite exact arithmetic/certified intervals |
+| `AUD-4.10-PHASE` | REVIEW | Pinching real zeros does not imply first-order phase transition without a free-energy limit and singularity proof |
+| `AUD-5.2-KREIN-TAIL` | CRITICAL | Elimination of finitely many negative modes leaves infinitely many; need tail/strictness proof |
+| `AUD-6.3-POSITIVE-CONE` | CRITICAL | Subspace dimensions follow rational linear algebra, but claim of positivity for every vector requires a uniform quadratic-form tail bound, not only location/concentration heuristics |
+| `AUD-6.12-EFFECTIVE-rK` | REVIEW | Spectral-gap stability + density of rationals gives existence but not an explicit algorithm until lower margin/continuity moduli certified |
+| `ERR-EDITORIAL-REFS` | EDITORIAL | "Section ??" in intro and "Theorem ??" near §§6.11–6.13 must be replaced with actual labels |
+| `EXT-FAUZAN-INPUT` | EXTERNAL INPUT | Manuscript reference [5] uses a different determinant construction/parameter normalization; do not transfer its archived certificates without proving the changed-param inequalities |
+
+## Pending continuation branch — compiler-negative evidence
+
+The following is a **negative/current receipt**, not A-Tier:
+- PR [#15](https://github.com/randogelist/snditeration/pull/15), head `0cee4ea2e32b1f476488f92b476c4eb224285160`, attempted 51-file continuation.
+- GitHub Actions [run 40188938699](https://github.com/randogelist/snditeration/actions/runs/40188938699), **FAIL** at `lake build`; full audit not reached.
+- Representative exact failing modules: `Section3/MatrixCurveJacobi.lean:145`; `Section3/LaplaceWeightDerivative.lean:37,46,48`; `Section3/ContinuousPencil.lean:130`; `Section3/ShiftedMomentPositivity.lean:86,128`; `Section3/PrincipalCondensation.lean:49,50,60`; `Section3/ChristoffelDarboux.lean:103,118`; `Section3/CauchyInterlacing.lean:33,140`; `Section5/BeukersMomentSeries.lean:47,80`; `Section5/RationalIndependence.lean:28`; `Section6/CoefficientGramGrowth.lean:126`.
+- Other candidate files from PR #15 are **not promoted** until the new integrated import graph compiles, the declared theorem types match the source and the complete allowlist audit passes.
+- Recommended correction order by dependency: `LaplaceWeightDerivative` → `MatrixCurveJacobi`; `BeukersMomentSeries` → §5 dual spectrum; `ContinuousPencil` → §3 real-s; `CauchyInterlacing` and `PrincipalCondensation` → §3.4; `CoefficientGramGrowth` → §6.10. Fix small independent files first, but don't infer an entire theorem from an individual module's successful compilation.
+
+## Evidence and update checklist
+
+A stable gap closes only when a tracker update supplies:
+
+1. PDF version hash, exact section/page/number and any changed statement.
+2. Lean exact **fully elaborated theorem statement**, source module, proof import graph.
+3. CI build run, commit SHA, compiler/platform/Mathlib and transitive `#print axioms` receipt.
+4. Clear disclosure of any remaining conditions; a theorem with `h : P` proves `P → Q`, not `Q`.
+5. For numeric/p-adic bounds, reproducible **exact** certificate and a Lean soundness/checking theorem when a finite checker is used.
+6. Verification of manuscript equivalence; no promotion of an altered theorem under the original number.
+7. If a later revision breaks a formerly checked theorem, mark it `REGRESSION`, preserve prior pass-once provenance and link the exact invalidating change.
+
+This branch should be advanced on each new verified source checkpoint, **without importing or recompiling application code itself**. Nothing in the gap tracker establishes RH, a finite checker witnessing RH, ζ(5) irrationality from this manuscript, the 25687 exponent, or a full-paper certification.
