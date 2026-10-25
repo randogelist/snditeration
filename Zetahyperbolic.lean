@@ -24,3 +24,5 @@ import Zetahyperbolic.Section3.CothCore
 import Zetahyperbolic.Section3.CothFormula
 import Zetahyperbolic.Section3.PoleKernelAlgebra
 import Zetahyperbolic.Section3.PoleIntegralIdentity
+import Zetahyperbolic.Section3.PartialFractionsCore
+import Zetahyperbolic.Section3.PartialFractionsQuotient
