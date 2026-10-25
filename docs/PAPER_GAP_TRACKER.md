@@ -75,19 +75,19 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 - `zetahyperbolic-axiom/main` commit [`86ca99a`](https://github.com/randogelist/zetahyperbolic-axiom/commit/86ca99a23d65cde4880a9005a49076c43e7bc968); [45-item ledger](https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/docs/FORMALIZATION_STATUS.md) and [successful Actions run](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40188664869). That different codebase reports 219 locally compiled and audited modules; 7 exact printed items complete, 21 partial, 10 absent, 7 blocked. **These are external comparison statuses, not automatic `snditeration` proofs.**
 - `snditeration/feat/zetahyperbolic-continuation-20261025` adds 50 changed files spanning Sections 2–6 but its latest CI [failed](https://github.com/randogelist/snditeration/actions/runs/40188938699); use as **unverified candidate source**, not a new PASS.
 
-## Status semantics
+### Status semantics
 
 `PASS` = exact audited `snditeration/main` statement(s) reported in its ledger; `PARTIAL` = substantial audited local components but printed item incomplete; `CONDITIONAL TRANSFER` = rigorous theorem requiring explicit family-dependent premises; `REPAIR` = printed formula/claim cannot be admitted literally; `CORRECTED ONLY` = a mathematically corrected theorem, not the original print; `OPEN` or `NOT IN MAIN` = no complete local printed theorem certified. The external column refers **only** to the pinned cross-repository review. An archive ZIP, filename, or locally failed candidate never upgrades proof status.
 
 > **Cross-branch closure audit (2026-10-25):** seven **complete printed** items are now crossed off **across the two axiom-audited repositories**: 2.2, 2.3, 2.4, 2.5, 3.1, 4.3, 5.4. A crossed "cross" item is externally verified but **not yet imported to `snditeration/main`**. Other sections have resolved *subclauses* or *corrected counterparts* only, and remain open as printed. Source paths and compiler evidence: [CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md](CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
-## Decisive proof dependencies (not a list of Lean filenames)
+## 4. Decisive proof dependencies (not a list of Lean filenames)
 
 ### A. Structural / spectral closure
 1. **Lemma 2.3, derivative at zero.** Under the proved regularity hypothesis `(RatFunc.denom f).eval 0 ≠ 0`, identify the algebraically defined `partialFractionCoefficient (2*k) f` with the actual `iteratedDeriv (2*k) (fun x : ℝ => RatFunc.eval (Rat.castHom ℝ) x f) 0 / ((2*k).factorial : ℝ)`. Prove on polynomial and nonzero simple-pole generators, preserve rational-function equality near zero, then extend linearly. Reuse the exact local `RationalDifference` and `RationalRegularity`; do not postulate smoothness at a pole.
 2. **Theorem 3.3(1), continuous mixed minors and determinacy.** Positive-definiteness of every principal Gram restriction and exact inertia are already audited. The missing theorem is *strict positivity for nonprincipal minors* via Andreief and ordered generalized Vandermonde signs, with justified moment growth/Carleman divergence.
-3. **Theorem 3.4, corrected rank-sensitive interlacing.** Build one Cholesky normalization compatible across leading principal submatrices, prove Cauchy eigenvalue interlacing with potentially zero slope eigenvalues, transfer reciprocals separately on positive/negative spectra, and prove all-order Dodgson/Jacobi. Never enumerate r finite roots without proving rank r.
-4. **Corollaries 3.5–3.6 and Theorem 3.7.** Use the correct resolvent normalization and finite-atom rank; prove valid corrected Lanczos/no-breakdown hypotheses and Turan/Newton equality cases. Distinct roots alone do not imply coefficient nonvanishing.
+3. **Theorem 3.4, corrected rank-sensitive interlacing.** Build one Cholesky normalization compatible across leading principal submatrices, prove Cauchy eigenvalue interlacing with potentially zero slope eigenvalues, transfer reciprocals separately on positive/negative spectra, and locally integrate the **already companion-audited all-order Dodgson/Jacobi identity**. Never enumerate r finite roots without proving rank r.
+4. **Corollary 3.5 and Theorem 3.7 (with corrected Corollary 3.6 already available).** Prove the normalized Lanczos/no-breakdown theorem and remaining Turan/Newton equality cases; keep the audited finite-atom rank theorem as a corrected replacement, not a gap. Distinct roots alone do not imply coefficient nonvanishing.
 5. **Theorems 3.8–3.9.** Bridge abstract kernel and finite pencil algebra to the actual Christoffel–Darboux/Laplace family and the explicit Hurwitz/character measures. These are not consequences of an arbitrary positive matrix pencil.
 
 ### B. Quantitative / arithmetic closure
@@ -100,19 +100,19 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 10. **5.6:** formally derive the eleven affine floor-function intervals and exact `453803/288000` integral. The external review documents false endpoint continuity, a 25→16 variance-coefficient repair, and an invalid universal survivor-pole `+6` argument. The inner prime bound and valuation improvement require a fresh family-specific proof.
 11. **5.7, 6.1–6.18:** separate true p/q-adic local nonvanishing from analytic infinite-family positivity, effective height/decay, and multiweight transfer. The externally diagnosed `6.3(2)` positivity assertion is refuted by a rational/analytic `h=4` certificate, which is **not yet a Lean kernel proof**. Printed `6.13` series sign and `6.15` exterior asymptotic also require correction.
 
-## Execution queue and measurable acceptance
+## 5. Execution queue and measurable acceptance
 
 | Priority | Deliverable | Acceptance criterion |
 |:---|:---|:---|
 | P0 | Preserve baseline and classify false print | No changed frozen `.lean` files; printed vs corrected statements linked separately |
-| P1 | Lemma 2.3 derivative bridge | Actual RatFunc theorem compiled, named and transitive-axiom audited under local pinned Mathlib |
+| P1 | Local stronger Lemma 2.3 derivative bridge | Printed span identity is already companion-A-Tier; import it, then compile/audit the stronger exact local all-regular-RatFunc coefficient identity |
 | P2 | 3.3 mixed minors + Carleman | Actual weight and generalized Vandermonde + all-order strict minor theorem; not only principal positivity |
-| P3 | 3.4, 3.5, 3.6, 3.7 corrected spectral chain | Rank-sensitive interlacing, all-order Dodgson, normalized J-fraction, valid finite-rank moments, Turan equality proof |
+| P3 | 3.4, 3.5, 3.7 corrected spectral chain | Rank-sensitive interlacing and normalized J-fraction; import already audited all-order Dodgson and corrected 3.6 finite-rank results; complete Turan equality claims |
 | P4 | 3.8, 3.9, 4.2, 4.3, 5.4 cross-base intake | Literal actual-function statements mapped, imported without ad hoc axioms, passing new local audit |
 | P5 | ζ(5) quantitative arithmetic 4.4–4.8 | Explicit multiplier, prime valuations, positive decay, spectral exponential bound, effective thresholds, claimed constants |
 | P6 | ζ(7)/β two-variable Sections 5–6 | Actual infinite measure + tails + p-adic local blocks + corrected positivity/cones + full transfer |
 
-## Updating this persistent branch
+## 6. Updating this persistent branch
 
 Keep this branch as **a tracker**, not an alternate math base. After each accepted native or CI Lean proof, update the affected row with (i) exact original paper clause, (ii) source module/fully qualified theorem, (iii) immutable commit and successful compiler/audit run, (iv) its stated hypotheses and which downstream conclusion actually follows, and (v) any remaining correction. If only a cross-branch theorem or failed candidate exists, leave the `snditeration/main` status unchanged. Do not promote a printed item based on file count or a similarly named lemma.
 
