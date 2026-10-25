@@ -101,9 +101,11 @@ theorem real_direction_factorization (p : Real.Parameters) :
       (realPoleVandermonde p).transpose := by
   have h := congrArg (fun A : Matrix (Fin p.h) (Fin p.h) ℚ => A.map (Rat.castHom ℝ))
     (PoleDiagonalization.rationalDerivativeMatrix_factorization p)
-  simpa only [Matrix.map_mul, Matrix.diagonal_map (map_zero (Rat.castHom ℝ)), Matrix.transpose_map,
-    realPoleVandermonde, PoleDiagonalization.rationalDerivativeMatrix, Real.derivativeMatrix]
-    using h
+  have hd : (PoleDiagonalization.rationalDerivativeMatrix p).map (Rat.castHom ℝ) =
+      Real.derivativeMatrix p := rfl
+  rw [hd] at h
+  simpa only [Matrix.map_mul, Matrix.diagonal_map (map_zero (Rat.castHom ℝ)),
+    Matrix.transpose_map, realPoleVandermonde] using h
 
 theorem direction_signature (p : Real.Parameters) (hm : 0 < p.m) :
     sigPos (Real.derivativeMatrix p).toQuadraticForm' =

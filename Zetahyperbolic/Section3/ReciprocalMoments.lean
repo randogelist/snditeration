@@ -34,9 +34,12 @@ theorem evenSpectralMoment_bounds (p : SymmetricAffinePencil n)
       evenSpectralMoment p r ≤ (n : ℝ) * actualOperatorNorm p ^ (2*r) := by
   constructor
   · obtain ⟨i, hi⟩ := actualOperatorNorm_attained p hn
-    rw [evenSpectralMoment, ← hi]
-    exact Finset.single_le_sum (fun j _ => pow_nonneg (abs_nonneg _) _)
+    have h := Finset.single_le_sum (s := Finset.univ)
+      (f := fun j : Fin n => |actualEigenvalues p j| ^ (2*r))
+      (fun j _ => pow_nonneg (abs_nonneg (actualEigenvalues p j)) (2*r))
       (Finset.mem_univ i)
+    rw [hi] at h
+    exact h
   · calc
       evenSpectralMoment p r ≤ ∑ _ : Fin n, actualOperatorNorm p ^ (2*r) := by
         apply Finset.sum_le_sum
@@ -75,7 +78,8 @@ theorem normalized_inverse_power_bounds {S d : ℝ} {n m : ℕ}
     (n : ℝ) ^ (-((m : ℝ)⁻¹)) ≤ S ^ (-((m : ℝ)⁻¹)) / d ∧
       S ^ (-((m : ℝ)⁻¹)) / d ≤ 1 := by
   have hm0 : (m : ℝ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hm)
-  have ht : -((m : ℝ)⁻¹) ≤ 0 := by positivity
+  have ht : -((m : ℝ)⁻¹) ≤ 0 :=
+    neg_nonpos.mpr (inv_nonneg.mpr (Nat.cast_nonneg m))
   have he : (S * d^m) ^ (-((m : ℝ)⁻¹)) = S ^ (-((m : ℝ)⁻¹)) / d := by
     rw [Real.mul_rpow hS.le (pow_nonneg hd.le _),
       ← Real.rpow_natCast_mul hd.le, mul_neg, mul_inv_cancel₀ hm0, Real.rpow_neg_one]
@@ -115,7 +119,7 @@ theorem ACTUAL_RECIPROCAL_MOMENT_BOUNDS (p : Real.Parameters) (hp : Real.Admissi
         (1 / Spectral.actualOperatorNorm q) ^ (2*r) ∧
       Spectral.reciprocalRootMoment q r *
         (1 / Spectral.actualOperatorNorm q) ^ (2*r) ≤ (p.h : ℝ) :=
-  Spectral.reciprocalRootMoment_radius_bounds _ (GRAM_POSITIVE p hp)
+  Spectral.reciprocalRootMoment_radius_bounds (Real.manuscriptPencil p) (GRAM_POSITIVE p hp)
     (General.derivative_nonsingular p) (Nat.sub_pos_of_lt hp.N_lt_K) r
 
 end ManuscriptChain

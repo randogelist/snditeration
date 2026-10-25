@@ -138,6 +138,9 @@ import Lean.Util.CollectAxioms
 #print axioms ManuscriptChain.Spectral.reciprocalRootMoment_approximation_bounds
 #print axioms ManuscriptChain.ACTUAL_RECIPROCAL_MOMENT_BOUNDS
 
+#print axioms ManuscriptChain.Spectral.reciprocalRootMoment_ratio_tendsto
+#print axioms ManuscriptChain.ACTUAL_RECIPROCAL_MOMENT_LIMIT
+
 run_cmd do
   let env ← Lean.getEnv
   let mut checked : Nat := 0
