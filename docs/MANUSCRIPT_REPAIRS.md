@@ -14,6 +14,13 @@ reflection identity with the exceptional case handled explicitly.
 The pole difference identity is proved for every integer r ≠ 0, which
 also includes the manuscript's stated r ∉ {0,1} range.
 
+## Proposition 3.2 — continuous normalization
+
+At s=2k+1, the printed continuous prefactor is π/2 times the odd-weight
+prefactor in (3.1). Replace it by `2(2π)^(s-1)/Γ(s)` before asserting the
+continuous pencil coincides with (2.8). Positivity of the differently
+normalized pencil does not itself prove that equality.
+
 ## Corollary 3.5 — continued-fraction normalization
 
 For a tridiagonal T with diagonal a_i and adjacent entries b_i, the
@@ -28,7 +35,7 @@ appropriate cyclic-vector or no-breakdown argument. Distinct eigenvalues
 alone do not ensure it for an arbitrary starting vector. The manuscript's
 Theorem 3.1 does not assert that all roots are pairwise distinct.
 
-An exact rank-one instance is being checked in
+An exact rank-one algebraic instance is checked in
 `Section3/ContinuedFractionObstruction.lean`; its audit status is recorded
 in the ledger. Do not promote the printed Corollary 3.5 as proved.
 

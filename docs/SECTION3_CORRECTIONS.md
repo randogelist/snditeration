@@ -5,6 +5,16 @@ invalidate the independently proved hyperbolicity and positive Gram theorems.
 The Lean proof ledger must distinguish a corrected statement from the printed
 statement.
 
+## Proposition 3.2: continuous-weight normalization
+
+At an odd integer `s = 2k+1`, the printed continuous density has prefactor
+`(2π)^s/(2Γ(s))`, whereas (3.1) has `2(2π)^(s-1)/Γ(s)`. The former is
+`π/2` times the latter. Thus exact coincidence with the original odd-weight
+pencil does not follow and is false with these literal normalizations.
+The corrected prefactor is `2(2π)^(s-1)/Γ(s)`. Hyperbolicity of the separately
+defined positive pencil is a different assertion and is not refuted by this
+normalization discrepancy.
+
 ## Corollary 3.5: continued fraction
 
 For `t = X - ζ(s)`, the proof uses the resolvent `(I + t T)⁻¹`. Its finite

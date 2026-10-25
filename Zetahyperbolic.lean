@@ -37,3 +37,9 @@ import Zetahyperbolic.Section3.Unconditional
 import Zetahyperbolic.Section3.PrimitivePolynomial
 import Zetahyperbolic.Section3.PoleSigns
 import Zetahyperbolic.Section3.ContinuedFractionObstruction
+import Zetahyperbolic.Section2.RationalPullback
+import Zetahyperbolic.Section2.RationalPullbackAssembly
+import Zetahyperbolic.Section2.RationalReflection
+import Zetahyperbolic.Section3.RationalMomentFunctional
+import Zetahyperbolic.Section3.ActualSpectrum
+import Zetahyperbolic.Section3.ContinuedFractionCounterexample

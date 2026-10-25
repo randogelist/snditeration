@@ -1,62 +1,60 @@
 # Manuscript-to-Lean ledger — YOU_ARE_GOODWORKFLOWFRONTIER
 
-Manuscript: 52-page paper, dated 21 October 2026.
-Compiler: Lean 4.33.0. Mathlib pin: `db584cd6d46c92f209a44c0f1c829460d327499d`.
-GitHub checkpoint: `ZETA_HYPERBOLIC_ANCHOR_7` (source migration, not a newly
-asserted proof).
+Mode: `A_TIER_EXECUTION`. Checkpoint name: `ZETA_HYPERBOLIC_ANCHOR_7`.
+Compiler: Lean 4.33.0. Mathlib: `db584cd6d46c92f209a44c0f1c829460d327499d`.
+Manuscript: supplied 52-page version dated 21 October 2026.
 
-| Paper item | Source | State / dependency |
+## Verified baseline
+
+PR [#12](https://github.com/randogelist/snditeration/pull/12) merged as
+`57ef44a083a6a6e4e40442a9de4203fb89716a8a` after build and axiom audit
+[run 40184648602](https://github.com/randogelist/snditeration/actions/runs/40184648602)
+on source head `e64d301c64307703a4384a72cba8ba253b3f505d`.
+The guard checked **600 theorem declarations** (including generated declarations),
+allowing only `propext`, `Classical.choice`, and `Quot.sound`.
+This count is not a count of manuscript theorems.
+
+All earlier `.lean` files and historical ZIP archives are preserved. Reuse is
+by Lake source/dependency traces and the pinned toolchain, not by filenames.
+Linux/GitHub verification is recorded as such; no new native Windows receipt
+is inferred from it. The axiom guard was also tested to reject a theorem
+transitively using a deliberately introduced custom axiom in a temporary test.
+
+| Manuscript item | Verified source and scope | Remaining boundary |
 | --- | --- | --- |
-| Definition 2.1 (2.1)-(2.3), (2.8)-(2.9) | `Section2/Moments.lean` | Definitions of D, harmonic numbers, moments, residues and affine pencil integrated. General rational-function linearity/uniqueness not yet established. |
-| Lemma 2.2 (2.5) | — | Open: pullback of full rational function domain. |
-| Lemma 2.3 (2.6)-(2.7) | — | Open: reflection/difference for general rational-function span. |
-| Theorem 2.4 | `Section2/BasisInvariance.lean` | **A-Tier exact source declarations:** generic determinant congruence, primitive normalization and concrete manuscript basis invariance; nonzero determinant is discharged by the Section 2.5 pole algebra. Passed build and transitive dependency audit in PRs #1-#2. |
-| Theorem 2.5 | `Section2/PoleDiagonalization.lean` | **A-Tier algebraic core:** actual residue coefficients, nonzero γ, Vandermonde factorization, invertible slope, exact determinant degree h and affine transformed pencil. Missing from this branch: explicit interpolation-polynomial construction/equality with the rational-function Lagrange basis. PR #2 CI passed. |
-| Theorem 3.1 | `Section3/SymmetricAffinePencil.lean`, `Section3/ConcretePencil.lean` in PR #4 | **In progress / not yet merged:** manuscript determinant evaluation and conditional positive-Gram bridge. Unconditional moment integral identity (3.2), positive definite Gram and full real-root/zero-free radius transfer remain open in GitHub `main`. |
-| Theorem 4.1 | `Section4/Transfer.lean` | **A-Tier conditional arithmetic transfer** (PR #3 CI passed): local comparison + evaluation decay + index budget entail quantitative rational exclusion and irrationality. The paper's asymptotic root-gap → index-budget selection and effective b₀ are not yet proved in GitHub. NOT an unconditional zeta irrationality proof. |
-| Theorems 4.4-4.5 | — | Open: ζ(5) root-norm bound, integrality and complete effective measures. |
-| Theorems 5.1-5.2 | — | Open: ζ(7) Beukers moments and dual pencil. |
-| Section 6 | — | Open: multivariable and character endpoints. |
+| Definition 2.1 | `Section2/Moments.lean`, `RationalDomain.lean`, `RationalFunctionals.lean`: actual rational pencil; injective simple-pole representation and representation-independent linear functionals on RatFunc subspaces. | No arbitrary representation-invariance premise. |
+| Lemma 2.2 | `Section2/TauGenerators.lean`: every polynomial pullback plus exact pole-generator values. | Full actual rational substitution compatibility is the next extension. |
+| Lemma 2.3 | `Section2/TauGenerators.lean`: full polynomial reflection; pole reflection; difference for every integer r ≠ 0. | Full-domain rational reflection is the next extension. |
+| Theorem 2.4 | `Section2/BasisInvariance.lean`, `PoleDiagonalization.lean`: determinant congruence, constructed primitive normalization, concrete basis invariance. | Nonzero determinant is proved, not an open input. |
+| Theorem 2.5 | `Section2/PoleDiagonalization.lean`: actual residues, Vandermonde factorization, nonzero diagonal slope, transformed pencil and exact degree. | Explicit interpolation-polynomial identification with the printed Lagrange functions remains separate. |
+| Equation (3.2), actual pencil | `Section3/ConcreteMomentMeasure.lean`, `RationalIntegralBridge.lean`: integrability, nonzero atomless positive measure and actual original-weight integral identity. | Extension to every rational function is next. |
+| Theorem 3.1 | `Section3/Unconditional.lean`: actual Gram positivity, degree h, real roots avoiding ζ(2k+1), and exact positive zero-free radius attained by a root. Only structural `Admissible` hypotheses remain. | Explicit named B_K and Euclidean operator-norm identification are next. Pairwise distinct roots are not asserted. |
+| Primitive polynomial (2.9) | `Section3/PrimitivePolynomial.lean`: constructed primitive integer polynomial, same degree and complex zero set, inherited exact zero-free disk. | None for these precise declarations. |
+| Proposition 3.2 | Printed continuous-density normalization differs by π/2 at odd weights. | Repair before proving coincidence with (2.8); see correction notes. |
+| Theorem 3.3(1) | Positive definiteness of the actual Hankel Gram is proved. | Strict total positivity of arbitrary mixed minors and Stieltjes determinacy/Carleman are open. |
+| Theorem 3.3(2) | `Section3/PoleSigns.lean`: primitive weight-five leading sign is (-1)^(n(n-1)/2). | None for this exact sign statement. |
+| Theorem 3.3(3) | `Section3/PoleSigns.lean`: actual γ_a has sign (-1)^(a-1), exact parity criteria and general leading sign. | Sylvester inertia and actual eigenvalue/root-side count transfer remain open. |
+| Theorem 3.4 | General principal-minor real-rootedness candidates identified in archives. | Not imported yet; full Cauchy interlacing/Dodgson connection remains open. |
+| Corollaries 3.5–3.6 | `Section3/ContinuedFractionObstruction.lean`: actual rank-one determinant/root, finite-moment Hankel singularity and corrected scalar resolvent algebra. | Literal printed claims require correction; positive-center counterexample assembly is next. |
+| Theorem 3.7 | Distinct real factors do not imply nonzero intermediate coefficients; exact example is checked. | Precise Newton/Turán statements and equality cases require separate proofs. |
+| Theorem 4.1 | `Section4/Transfer.lean`: audited conditional arithmetic transfer to a quantitative rational measure and irrationality. | Concrete growth/decay/comparison/index-budget hypotheses remain open. |
+| Sections 4–6 applications | Archive candidates retained; see source frontier. | No unconditional ζ(5), ζ(7), or linear-form irrationality asserted. |
 
-A-Tier **requires both** a successful Lean build and an axiom audit, with
-no `sorryAx`, new axioms, or unmentioned hypotheses. Passing source parsing
-alone never promotes an open paper theorem to proven status.
+## Continuation policy
 
-Future PRs should follow the manuscript chronology, reuse unchanged
-compiler-certified modules, and preserve the audit/CI evidence.
+Use [ARCHIVE_FRONTIER.md](ARCHIVE_FRONTIER.md) for exact reusable source locations.
+The current open extension work is confined to new modules, preserving the
+verified baseline. The next compile/audit receipt must distinguish these
+extensions from the previously verified 600 declarations.
 
-## Verified GitHub gates (October 25, 2026)
+[MANUSCRIPT_REPAIRS.md](MANUSCRIPT_REPAIRS.md) and
+[SECTION3_CORRECTIONS.md](SECTION3_CORRECTIONS.md) record exact corrections.
+A proof of a corrected formula is not a proof of the original false formula.
+No RH, S-Tier finite-witness admission, or full manuscript closure is claimed.
 
-- PR #1: https://github.com/randogelist/snditeration/pull/1 — build+dependency audit PASS; merged `6faec4c`.
-- PR #2: https://github.com/randogelist/snditeration/pull/2 — build+dependency audit PASS; merged `297cd4f`.
-- PR #3: https://github.com/randogelist/snditeration/pull/3 — build+dependency audit PASS; merged `8e6f44e`.
-- A checkpoint is an exact Lean declaration with a known CI receipt, not a claim that the entire paper theorem is manuscript-equivalent.
+## Candidate extension (not yet verified)
 
-## Current execution candidate — GITHUB_SPECTRAL_v0_1_0
-
-Base: `bf3fdf6970da9f40850d3a056086a524f0ffd055`, PR #11 merged after
-CI build and explicit axiom audit passed (run 40174010799). Main CI run
-40182929099 also passed. All earlier sources and historical archives are retained.
-
-This candidate is under verification; the new source declarations below are
-not promoted to A-Tier until their complete build and dependency audit pass.
-
-| Target | Added source | Exact scope |
-| --- | --- | --- |
-| Lemma 2.2 | `Section2/TauGenerators.lean` | Polynomial pullback and pole-generator identities using actual Definition 2.1 constants. |
-| Lemma 2.3 | `Section2/TauGenerators.lean` | Full polynomial reflection; pole reflection and difference for r ≠ 0. |
-| Rational-function domain | `Section2/RationalDomain.lean`, `RationalFunctionals.lean` | Actual RatFunc subspaces and representation-independent linear μ/τ. General rational substitution compatibility is a subsequent endpoint. |
-| Equation (3.2) on actual pencil | `Section2/DenominatorFactorization.lean`, `Section3/ConcreteMomentMeasure.lean`, `RationalIntegralBridge.lean` | Positive atomless measure, all moment integrability, polynomial/pole evaluation, and equality with original D_N^(2m)/D_K weight. |
-| Theorem 3.1 | `Section3/Unconditional.lean` | Actual Gram positivity, degree h, real roots avoiding ζ, exact positive zero-free radius; only Admissible structural parameters as input. |
-| Primitive polynomial (2.9) | `Section3/PrimitivePolynomial.lean` | Constructed primitive integer normalization, same degree and complex zeros, transferred exact zero-free disk. |
-| Theorem 3.3(2) | `Section3/PoleSigns.lean` | Exact leading sign of the weight-five primitive polynomial. |
-| Theorem 3.3(3) algebra | `Section3/PoleSigns.lean` | Alternating sign of actual γ_a and general determinant leading sign; full eigenvalue inertia/count transfer still open. |
-| Corollaries 3.5–3.6 | `Section3/ContinuedFractionObstruction.lean` | Exact small-instance checks and obstructions to literal printed claims; see manuscript repair notes. |
-
-Next chronological endpoints: rational-function pullback/reflection compatibility,
-explicit interpolation-polynomial identification in 2.5, and Theorem 3.3(1)
-Stieltjes determinacy/strict total positivity. Corrected 3.5–3.6 statements
-must be used; erroneous printed formulas are not target theorems.
-
-No unconditional irrationality of ζ(5), ζ(7), RH, S-Tier finite admission,
-or full manuscript closure is claimed.
+The six new RationalPullback, RationalPullbackAssembly, RationalReflection,
+RationalMomentFunctional, ActualSpectrum, and ContinuedFractionCounterexample
+modules are included in the build and allowlist audit. Their status remains
+construction until an exact GitHub build and audit receipt is recorded.
