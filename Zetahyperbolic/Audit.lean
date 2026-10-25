@@ -25,3 +25,8 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Real.manuscriptPencil_detPolynomial
 #print axioms ManuscriptChain.Real.delta_eval_eq_det_gram
 #print axioms ManuscriptChain.Real.delta_nonzero_of_positive
+
+#print axioms ManuscriptChain.Moments.quadratic_eq_integral_sq
+#print axioms ManuscriptChain.Moments.integral_polynomial_sq_pos
+#print axioms ManuscriptChain.Moments.momentMatrix_posDef
+#print axioms ManuscriptChain.Real.PositiveMomentRealization.gram_posDef
