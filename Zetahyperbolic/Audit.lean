@@ -13,3 +13,9 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.PoleDiagonalization.delta_natDegree
 #print axioms ManuscriptChain.PoleDiagonalization.theorem_2_5_lagrange_pole_diagonalization
 #print axioms ManuscriptChain.BasisInvariance.theorem_2_4_constructed_for_manuscript
+
+#print axioms ManuscriptChain.RealTransfer.polynomial_integer_squeeze
+#print axioms ManuscriptChain.RealTransfer.conditional_measure
+#print axioms ManuscriptChain.RealTransfer.RationalMeasure.irrational
+#print axioms ManuscriptChain.RealTransfer.conditional_irrational
+#print axioms ManuscriptChain.RealTransfer.paper_parameter_inequalities
