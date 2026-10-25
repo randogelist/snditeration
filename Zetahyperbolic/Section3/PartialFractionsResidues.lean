@@ -92,6 +92,9 @@ theorem rational_kernel_decomposition (p : Real.Parameters) (i j : ℕ) :
   apply Finset.sum_congr rfl
   intro a ha
   rw [data_remainder_constant p (i + j) a ha]
-  rw [residueCoeff_eq_actual p i j a ha]
+  simpa only [residueCoeff] using congrArg
+    (fun c : ℚ => C c *
+      ∏ b ∈ (Finset.Icc (p.N + 1) p.K).erase a, (X + C ((b : ℚ) ^ 2)))
+    (residueCoeff_eq_actual p i j a ha)
 
 end ManuscriptChain.PartialFractions
