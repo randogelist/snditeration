@@ -43,3 +43,9 @@ import Zetahyperbolic.Section2.RationalReflection
 import Zetahyperbolic.Section3.RationalMomentFunctional
 import Zetahyperbolic.Section3.ActualSpectrum
 import Zetahyperbolic.Section3.ContinuedFractionCounterexample
+import Zetahyperbolic.Section2.LagrangeBasis
+import Zetahyperbolic.Section2.TauPolynomialDifference
+import Zetahyperbolic.Section2.RationalDifference
+import Zetahyperbolic.Section3.PrincipalPencils
+import Zetahyperbolic.Section3.PoleSignCounts
+import Zetahyperbolic.Section3.SpectralInertia

@@ -34,13 +34,13 @@ positive-definiteness input to the general odd-weight spectral theorem.
 The exact compiled and audited boundary is recorded in
 [the formalization ledger](docs/FORMALIZATION_LEDGER.md).
 
-The main endpoints are `ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL` and
-`ManuscriptChain.EXACT_ZERO_FREE_DISK`: exact degree, real roots avoiding
-ζ(2k+1), and a positive zero-free radius attained by a root, for every
+The main endpoints include `ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL` and
+`ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK`: exact degree, real roots avoiding
+ζ(2k+1), and the sharp radius 1/‖B‖₂ attained by a root, for every
 admissible tuple. The primitive integer polynomial inherits these results.
 No assumption of pairwise distinct roots is inserted.
 
-Section 2 develops pullback/reflection identities and actual simple-pole
+Section 2 proves full-domain pullback/reflection identities on actual simple-pole
 rational-function domains. Section 3 also records the exact alternating pole
 signs. Sections 4–6 retain open arithmetic and quantitative endpoints;
 this repository does not establish irrationality of ζ(5) or ζ(7).

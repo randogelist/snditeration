@@ -111,6 +111,21 @@ import Lean.Util.CollectAxioms
 #print axioms ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK
 #print axioms ManuscriptChain.ContinuedFractionObstruction.literal_corollary_3_5_false
 
+#print axioms ManuscriptChain.PoleDiagonalization.lagrangePolynomial_product
+#print axioms ManuscriptChain.PoleDiagonalization.lagrangeCoefficientMatrix_eq_inverse
+#print axioms ManuscriptChain.PoleDiagonalization.lagrange_changeBasisPencil
+#print axioms ManuscriptChain.Tau.tauPolynomial_difference
+#print axioms ManuscriptChain.Tau.rationalDifference_coe
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference
+#print axioms ManuscriptChain.Principal.principal_base_posDef
+#print axioms ManuscriptChain.Principal.principal_detPolynomial_eq
+#print axioms ManuscriptChain.Principal.rational_principal_roots_real
+#print axioms ManuscriptChain.PoleSignCounts.positive_pole_count
+#print axioms ManuscriptChain.PoleSignCounts.weightFive_positive_pole_count
+#print axioms ManuscriptChain.PoleSignCounts.weightFive_negative_pole_count
+#print axioms ManuscriptChain.SpectralInertia.actual_inertia
+#print axioms ManuscriptChain.SpectralInertia.actual_root_side_counts
+
 run_cmd do
   let env ← Lean.getEnv
   let mut checked : Nat := 0
