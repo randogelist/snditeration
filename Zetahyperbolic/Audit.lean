@@ -50,3 +50,10 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Hyperbolic.integrableOn_monomial_density
 #print axioms ManuscriptChain.Hyperbolic.integral_monomial_density
 #print axioms ManuscriptChain.Hyperbolic.integral_monomial_density_eq_monomialMoment
+
+#print axioms ManuscriptChain.Real.zeta_tail_sum
+#print axioms ManuscriptChain.Real.zeta_tail_pole_value
+#print axioms ManuscriptChain.Hyperbolic.bose_geometric
+#print axioms ManuscriptChain.Hyperbolic.integrableOn_bose_tail
+#print axioms ManuscriptChain.Hyperbolic.integral_bose_tail_tsum
+#print axioms ManuscriptChain.Hyperbolic.integral_bose_tail
