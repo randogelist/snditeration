@@ -1,24 +1,25 @@
 # Manuscript gap register — stable, cross-branch audit ledger
 
-This document is **tracking only**. The [branch README](../README.md) is the quick dashboard. The manuscript itself is the 52-page PDF dated **21 October 2026** (SHA-256 `935767c0cda7468f376cd8eadc374077caf6c8a060351d3bea26ac3f838a9d0c`). Exact PDF page numbers are given; "paper item" refers to that manuscript, not an external paraphrase.
+## 1. Established proof-tier definitions
 
-**Checked baseline:** `main@c521749190cce9981b0f108a8edc8034420f6420`; checkpoint `ZETA_HYPERBOLIC_ANCHOR_7`, PR #14 (CI 40186462123, PASS). **Not yet accepted:** PR #15 `0cee4ea2` (CI 40188938699, FAIL). Read `main/docs/FORMALIZATION_LEDGER.md`, `MANUSCRIPT_REPAIRS.md` and `NEXT_ENDPOINT.md` for the exact proof interfaces before modifying a gap.
+Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. These are **evidence gates**, not subjective priority rankings.
 
-## Status vocabulary
+| Proof marker | Tier | Exact established criterion |
+|---|---|---|
+| `!` | **B-Tier** | An on-paper mathematical derivation conditional on reasoning; **not Lean-verified**. |
+| `!!` | **A-Tier** | Exact Lean statement parsed, elaborated, compiled and transitively axiom-audited without `sorryAx`, custom/hidden axioms or unmentioned assumptions. The *proof may itself be explicitly conditional*; only its exact conclusion under stated hypotheses is certified. |
+| `!!!` | **Formal closure** | An **A-Tier** conditional theorem chain reduces the desired final conclusion to acceptance of a finite witness by a terminating checker; **no concrete accepted witness yet**. This is **not** S-Tier. |
+| `!!!!` | **S-Tier** | A concrete finite witness actually passes the terminating checker/admission, and a Lean-verified, axiom-audited downstream chain proves the final claimed conclusion. |
 
-- `CLOSED_EXACT`: manuscript-matched exact statement has a compiled, axiom-allowlisted Lean declaration and linked receipt.
-- `CLOSED_SUBCLAUSE`: a verified proper subset/auxiliary identity, **not** the whole named item.
-- `OPEN_MATH`: a mathematical proof/certificate remains to be supplied; putting its conclusion in a Lean hypothesis does not close it.
-- `OPEN_LEAN`: a paper argument exists but a complete kernel proof of its exact claim is absent from verified `main`.
-- `REPAIR_REQUIRED`: source text is false as written or its printed argument is invalid; first state the corrected theorem and prove **that**.
-- `IN_REVIEW`: source exists in an unmerged/unverified PR or archive; do not count it as a passed theorem.
-- `CONJECTURE`: deliberately unproved conjecture rather than a theorem promised complete by the manuscript.
+**Ordering:** `B-Tier → A-Tier → Formal closure → S-Tier`. The marker is assigned to a **specific proved statement**, not to the name of a manuscript section. A compiled conditional lemma or corrected replacement does **not** certify the stronger original printed theorem. `—` means no qualifying tier for the **whole printed statement** (even if there are partial or external components). The `!!` labels **subclaim**, **conditional** and **corrected** certify only those narrower exact Lean declarations. `cross-repo` means an audited proof exists at the pinned companion commit but has **not** been locally imported and rebuilt in `snditeration/main`.
 
-The register describes **repository formalization gaps** plus specifically identified **paper-level proof discrepancies**. `OPEN_LEAN` does not declare a paper theorem mathematically false. `REPAIR_REQUIRED` must include a direct reason or counterexample, not just a missing tactic.
+**Separate workflow controls (not proof tiers):** `B_TIER_DERIVATION`, `A_TIER_EXECUTION`, `A_TIER_PLANNING`. Build name-tags `_construction`, `_subcritical`, `_critical` and `_reasonal_assertion` are progress/recheck labels, never proof certificates. **No item here meets `!!!` or `!!!!`;** no unconditional ζ(5)/ζ(7) irrationality or full-paper certification follows from the present receipts.
 
-> **Resolution revision, 2026-10-25.** Compare [the cross-branch audit](CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md). Across the two audited repos, the seven **complete printed** items 2.2, 2.3, 2.4, 2.5, 3.1, 4.3 and 5.4 may be crossed off. `CROSS_VERIFIED` means compiled and audited in the companion repository, **not imported into `snditeration/main`**. Corrected counterparts and subclauses close only the exact narrower claims, never the false literal manuscript statement.
+## 2. Detailed gap items (64 sub-obligations), in the manuscript's original order
 
-## §2 — Rational moment functionals and basis invariance (PDF pp. 3–7)
+Use each item's status and the tiers above together: an A-Tier supporting lemma is not a proof of an unproved or false printed endpoint. See the [45-item annotated tierlist](PAPER_GAP_TRACKER.md).
+
+### §2 — Rational moment functionals and basis invariance (PDF pp. 3–7)
 
 | ID | Item and status | Remaining exact obligation / acceptance test |
 |---|---|---|
@@ -29,7 +30,7 @@ The register describes **repository formalization gaps** plus specifically ident
 | `P02.04` | Theorem 2.4 canonical primitive normalization: **CLOSED_EXACT** for current definition | Basis changes in `GL_h(ℚ)`; nonzero determinant supplied by §2.5; `BasisInvariance.lean` |
 | `P02.05` | Theorem 2.5 Lagrange diagonalization: **CLOSED_EXACT** for finite pole algebra | Nonzero weights, true Lagrange interpolation coefficients/inverse Vandermonde, determinant degree and transformation; `PoleDiagonalization.lean`, `LagrangeBasis.lean` |
 
-## §3 — Spectral theory (PDF pp. 7–14)
+### §3 — Spectral theory (PDF pp. 7–14)
 
 | ID | Item and status | Remaining exact obligation / acceptance test |
 |---|---|---|
@@ -48,7 +49,7 @@ The register describes **repository formalization gaps** plus specifically ident
 | `P03.09` | Theorem 3.9: **OPEN_LEAN** | Hurwitz positive weight for rational shifts and Dirichlet character positivity for q∈{3,4,5,8}; exact pole integrals, Fekete polynomial signs and nonsingular Vandermonde slopes |
 | `P03.10` | Remark 3.10: **OPEN_MATH** as printed non-classicality justification | Define a genuine invariant excluding a classical orthogonal-polynomial specialization. “New roots always born at outer edges” is not a general consequence of Favard alone; formal proof must use a precise claim and hypotheses |
 
-## §4 — Irrationality transfer, ζ(5), heights (PDF pp. 14–22)
+### §4 — Irrationality transfer, ζ(5), heights (PDF pp. 14–22)
 
 **Dependency gate for the advertised bound:** for `K=30n, N=3n, h=27n, 2m=6`, simultaneously prove
 `Q_K∈ℤ[X]`, `deg(Q_K)≤(9/10)K`, `0<Q_K(ζ5)≤exp(-K²/2500)`, and
@@ -72,7 +73,7 @@ Only then apply the exact parameter choice `c=2251`, `μ=25687` to a fully verif
 | `P04.10` | Remark 4.10: **REPAIR / OPEN_MATH** | Establish existence of `f(X)=lim (hK)^-1 log(abs(P_K(X)))`, determine differentiability and a true first-order transition; real zeros pinching the center **alone is not sufficient** |
 | `P04.11` | Conjecture 4.11: **CONJECTURE** | Existence of `lim K^-1 log‖B_K‖₂` and identification with `ρ_var`; not a theorem required to be silently assumed |
 
-## §5 — Weight seven and two-variable/double-pole systems (PDF pp. 22–29)
+### §5 — Weight seven and two-variable/double-pole systems (PDF pp. 22–29)
 
 | ID | Item and status | Remaining exact obligation / acceptance test |
 |---|---|---|
@@ -87,7 +88,7 @@ Only then apply the exact parameter choice `c=2251`, `μ=25687` to a fully verif
 | `P05.06b` | Theorem 5.6(2–3): **OPEN_MATH/OPEN_LEAN** | Bound the inner tail by `-33104/576000`, formalize periodic primitives and errors, prove the pole-ordered basis is q-adically unimodular and saves `6(p-1)` per p / 1/3 in the integral |
 | `P05.07` | Theorem 5.7: **OPEN_MATH/OPEN_LEAN** | Simultaneous double-pole functional with degree/regularity, Hermite interpolation basis, exact `v_q(J_{2m})=-36m` for q≡1 mod9, and all claimed lower bounds on local minors; distinguish conditional starting relation from nonvanishing conclusion |
 
-## §6 — Structural/multi-weight/character extensions (PDF pp. 29–50)
+### §6 — Structural/multi-weight/character extensions (PDF pp. 29–50)
 
 | ID | Item and status | Remaining exact obligation / acceptance test |
 |---|---|---|
@@ -114,7 +115,27 @@ Only then apply the exact parameter choice `c=2251`, `μ=25687` to a fully verif
 
 **§7 (PDF pp. 51–52):** discussion/open problems. No additional proved theorem should be inferred from the discussion; check all earlier referenced constants and statements.
 
-## Explicit errors, counterexamples, and manuscript-proof audits
+## 3. Source scope, evidence and status vocabulary
+
+This document is **tracking only**. The [branch README](../README.md) is the quick dashboard. The manuscript itself is the 52-page PDF dated **21 October 2026** (SHA-256 `935767c0cda7468f376cd8eadc374077caf6c8a060351d3bea26ac3f838a9d0c`). Exact PDF page numbers are given; "paper item" refers to that manuscript, not an external paraphrase.
+
+**Checked baseline:** `main@c521749190cce9981b0f108a8edc8034420f6420`; checkpoint `ZETA_HYPERBOLIC_ANCHOR_7`, PR #14 (CI 40186462123, PASS). **Not yet accepted:** PR #15 `0cee4ea2` (CI 40188938699, FAIL). Read `main/docs/FORMALIZATION_LEDGER.md`, `MANUSCRIPT_REPAIRS.md` and `NEXT_ENDPOINT.md` for the exact proof interfaces before modifying a gap.
+
+## Status vocabulary
+
+- `CLOSED_EXACT`: manuscript-matched exact statement has a compiled, axiom-allowlisted Lean declaration and linked receipt.
+- `CLOSED_SUBCLAUSE`: a verified proper subset/auxiliary identity, **not** the whole named item.
+- `OPEN_MATH`: a mathematical proof/certificate remains to be supplied; putting its conclusion in a Lean hypothesis does not close it.
+- `OPEN_LEAN`: a paper argument exists but a complete kernel proof of its exact claim is absent from verified `main`.
+- `REPAIR_REQUIRED`: source text is false as written or its printed argument is invalid; first state the corrected theorem and prove **that**.
+- `IN_REVIEW`: source exists in an unmerged/unverified PR or archive; do not count it as a passed theorem.
+- `CONJECTURE`: deliberately unproved conjecture rather than a theorem promised complete by the manuscript.
+
+The register describes **repository formalization gaps** plus specifically identified **paper-level proof discrepancies**. `OPEN_LEAN` does not declare a paper theorem mathematically false. `REPAIR_REQUIRED` must include a direct reason or counterexample, not just a missing tactic.
+
+> **Resolution revision, 2026-10-25.** Compare [the cross-branch audit](CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md). Across the two audited repos, the seven **complete printed** items 2.2, 2.3, 2.4, 2.5, 3.1, 4.3 and 5.4 may be crossed off. `CROSS_VERIFIED` means compiled and audited in the companion repository, **not imported into `snditeration/main`**. Corrected counterparts and subclauses close only the exact narrower claims, never the false literal manuscript statement.
+
+## 4. Explicit errors, counterexamples, and manuscript-proof audits
 
 | ID | Severity | Evidence/action |
 |---|---|---|
