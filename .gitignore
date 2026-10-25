@@ -1,7 +1,0 @@
-.lake/
-*.olean
-*.ilean
-*.c
-*.o
-*.log
-.DS_Store
