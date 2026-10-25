@@ -69,6 +69,12 @@ Items follow the original manuscript's order. **A `!!` on a subclaim, corrected 
 
 **Current aggregate:** 7 complete printed items out of 45 (**4 local**, **3 companion-only**); **none** at formal closure (`!!!`) or S-Tier (`!!!!`). The [45-item source/evidence table](docs/PAPER_GAP_TRACKER.md), [64 sub-obligation register](docs/PAPER_GAP_REGISTER.md), and [cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md) contain precise outstanding assumptions, repairs and compiler receipts.
 
+### Additional audited subclaims crossed in repeated reviews
+
+Four audit passes rechecked the merged local project, the independently passing 219-module companion, historical source ZIPs and the literal PDF theorem statements. Beyond the **seven complete printed A-Tier items**, **21 still-incomplete manuscript rows** now explicitly cross off their separately A-Tier-certified components. These include the actual all-order Turán derivative clauses of **3.7(1)**, coefficient Newton criteria **3.7(2)**, strict centered Newton inequality **3.7(3)**, all-order Dodgson **3.4(2)**, conditional algebraic transfer **4.2**, finite spectral clustering **4.7**, finite root-factor product bounds **4.8**, and finite dual/triple-pole algebra in **5–6**. The false or unsupported printed additions remain open/repair-required.
+
+**[Read the four-round exact-source audit](docs/MULTI_ROUND_CROSS_AUDIT_2026-10-25.md)**. It identifies each matching fully qualified Lean declaration and the unproved mathematical dependency. The [45-item tierlist](docs/PAPER_GAP_TRACKER.md) and [64 detailed sub-obligations](docs/PAPER_GAP_REGISTER.md) carry the crossings forward. **Whole printed items remain 7/45; no new S-Tier, finite-witness or unconditional ζ(5) proof was found.**
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
