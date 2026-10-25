@@ -57,3 +57,8 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Hyperbolic.integrableOn_bose_tail
 #print axioms ManuscriptChain.Hyperbolic.integral_bose_tail_tsum
 #print axioms ManuscriptChain.Hyperbolic.integral_bose_tail
+
+#print axioms ManuscriptChain.Hyperbolic.integral_density_div_quadratic
+#print axioms ManuscriptChain.Hyperbolic.coth_partial_fractions
+#print axioms ManuscriptChain.Hyperbolic.pole_scaled_kernel_split_algebra
+#print axioms ManuscriptChain.Hyperbolic.poleIntegralIdentity
