@@ -1,14 +1,15 @@
 import Zetahyperbolic
 
-/-!
-Proof-dependency audit. Compilation of this file prints the Lean axioms on
-the completed Section 2 declarations. Neither text search alone nor an
-uncompiled declaration is evidence of proof closure.
--/
-
+/-! Print transitive logical dependencies for selected manuscript declarations. -/
 #print axioms ManuscriptChain.Real.zeta_eq_riemannZeta
 #print axioms ManuscriptChain.Real.zeta_pos
 #print axioms ManuscriptChain.BasisInvariance.det_changeBasisPencil
 #print axioms ManuscriptChain.BasisInvariance.primitiveNormalization_nonempty
 #print axioms ManuscriptChain.BasisInvariance.theorem_2_4_canonical_basis_invariance
 #print axioms ManuscriptChain.BasisInvariance.theorem_2_4_constructed_canonical_basis_invariance
+#print axioms ManuscriptChain.PoleDiagonalization.poleWeight_ne_zero
+#print axioms ManuscriptChain.PoleDiagonalization.rationalDerivativeMatrix_factorization
+#print axioms ManuscriptChain.PoleDiagonalization.rationalDerivativeMatrix_det_ne_zero
+#print axioms ManuscriptChain.PoleDiagonalization.delta_natDegree
+#print axioms ManuscriptChain.PoleDiagonalization.theorem_2_5_lagrange_pole_diagonalization
+#print axioms ManuscriptChain.BasisInvariance.theorem_2_4_constructed_for_manuscript
