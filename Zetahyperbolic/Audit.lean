@@ -25,3 +25,12 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Real.manuscriptPencil_detPolynomial
 #print axioms ManuscriptChain.Real.delta_eval_eq_det_gram
 #print axioms ManuscriptChain.Real.delta_nonzero_of_positive
+
+#print axioms ManuscriptChain.Spectral.RootFactorization.complex_root_location
+#print axioms ManuscriptChain.Spectral.RootFactorization.eval_ne_zero_of_distance_lt
+#print axioms ManuscriptChain.Spectral.det_one_add_smul_of_hermitian
+#print axioms ManuscriptChain.Spectral.rootFactorization_nonempty_of_posDef
+#print axioms ManuscriptChain.Spectral.theorem_3_1_hyperbolicity_of_posDef
+#print axioms ManuscriptChain.General.complex_root_iff
+#print axioms ManuscriptChain.General.complex_root_on_boundary
+#print axioms ManuscriptChain.General.theorem_3_1_general
