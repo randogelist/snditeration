@@ -99,6 +99,18 @@ import Lean.Util.CollectAxioms
 #print axioms ManuscriptChain.ContinuedFractionObstruction.positive_center_refutes_printed_fraction
 #print axioms ManuscriptChain.ContinuedFractionObstruction.example_reciprocal_hankel_singular
 
+#print axioms ManuscriptChain.Pullback.rationalPullback_coe
+#print axioms ManuscriptChain.Pullback.pullback_identity
+#print axioms ManuscriptChain.Tau.rationalReflection_coe
+#print axioms ManuscriptChain.Tau.rationalFunctional_reflection
+#print axioms ManuscriptChain.Mu.realValue_eq_ratFunc_eval
+#print axioms ManuscriptChain.Mu.integrableOn_rational_density
+#print axioms ManuscriptChain.Mu.integral_rational_density
+#print axioms ManuscriptChain.ACTUAL_SPECTRAL_FACTORIZATION
+#print axioms ManuscriptChain.ACTUAL_SPECTRAL_ROOTS
+#print axioms ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK
+#print axioms ManuscriptChain.ContinuedFractionObstruction.literal_corollary_3_5_false
+
 run_cmd do
   let env ← Lean.getEnv
   let mut checked : Nat := 0
