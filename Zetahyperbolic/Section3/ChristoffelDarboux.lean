@@ -124,7 +124,7 @@ theorem kernel_eq_inverseGram (hG : G.PosDef) (t u : ℝ) :
 
 
 
-variable {n : ℕ} {G : Matrix (Fin n) (Fin n) ℝ}
+
 
 theorem eval_ofFn_mul_eq_sum (c d : Fin n → ℝ) (x : ℝ) :
     (Polynomial.ofFn n c).eval x * (Polynomial.ofFn n d).eval x =

@@ -29,7 +29,7 @@ theorem sigPos_comp_le (Q : QuadraticForm ℝ F) (f : E →ₗ[ℝ] F)
     apply Subtype.ext
     have : y = 0 := congrArg Subtype.val hy0
     simpa [this]
-  have h := le_sigPos_of_posDef hp
+  have h := le_sigPos_of_posDef Q hp
   rw [← (Submodule.equivMapOfInjective f hf V).finrank_eq, hdim] at h
   exact h
 
@@ -49,8 +49,8 @@ theorem sigPos_le_restrict_add_codimension (Q : QuadraticForm ℝ E)
     apply hx
     apply Subtype.ext
     apply Subtype.ext
-    exact congrArg Subtype.val hz
-  have hbound := le_sigPos_of_posDef hp
+    exact congrArg (fun v : V => (v : E)) hz
+  have hbound := le_sigPos_of_posDef (Q.restrict S) hp
   have hTeq := (Submodule.comapSubtypeEquivOfLe hTS).finrank_eq
   rw [hTeq] at hbound
   have hsum := Submodule.finrank_sup_add_finrank_inf_eq V S

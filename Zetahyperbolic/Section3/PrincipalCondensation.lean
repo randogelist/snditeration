@@ -45,8 +45,9 @@ theorem polynomial_condensation
     ext (i | i) (j | j)
     · rfl
     · fin_cases j <;> simp [A, u, v, Matrix.fromBlocks]
-    · fin_cases i <;> simpa [A, u, v, Matrix.fromBlocks] using
-        (hM.apply (Sum.inr _) (Sum.inl j))
+    · fin_cases i
+      · simpa [u, Matrix.fromBlocks] using (hM.apply (Sum.inr 0) (Sum.inl j))
+      · simpa [v, Matrix.fromBlocks] using (hM.apply (Sum.inr 1) (Sum.inl j))
     · fin_cases i <;> fin_cases j <;>
         simp [a, b, c, Matrix.fromBlocks, hM.apply]
   have hb (i j : Fin 2) :
@@ -95,9 +96,9 @@ theorem actualMatrix_eval (p : Real.Parameters) (choose : n ⊕ Fin 2 → Fin p.
       (Real.gram p x).submatrix choose choose := by
   ext i j
   change ((Real.manuscriptPencil p).polynomialMatrix (choose i) (choose j)).eval x = _
-  change ((Real.manuscriptPencil p).base (choose i) (choose j) +
-    (x - (Real.manuscriptPencil p).center) *
-      (Real.manuscriptPencil p).direction (choose i) (choose j)) = _
+  simp only [Spectral.SymmetricAffinePencil.polynomialMatrix,
+    Polynomial.eval_add, Polynomial.eval_mul, Polynomial.eval_sub,
+    Polynomial.eval_X, Polynomial.eval_C]
   change ((Real.manuscriptPencil p).matrixAt x) (choose i) (choose j) = _
   rw [Real.manuscriptPencil_matrixAt]
 

@@ -29,6 +29,47 @@ theorem gram_integral (p : Real.Parameters) {s : ℝ} (hs : 0 < s) (i j : Fin p.
       y ^ (2 * (i.val + j.val)) * weightedDensity p s y :=
   integral_momentMeasure p s hs _
 
+/-- The real-parameter construction uses precisely the original
+`D_N^(2m)/D_K` weight, rather than an assumed positive substitute. -/
+theorem weightedDensity_eq_paper (p : Real.Parameters) (hp : Real.Admissible p)
+    (s : ℝ) {y : ℝ} (hy : 0 < y) :
+    weightedDensity p s y =
+      Real.evalQ (Real.D p.N) (y ^ 2) ^ (2 * p.m) /
+        Real.evalQ (Real.D p.K) (y ^ 2) * density s y := by
+  have hN : Real.evalQ (Real.D p.N) (y ^ 2) ≠ 0 :=
+    ne_of_gt (ConcreteMoment.evalQ_D_pos p.N (by positivity))
+  have hT : Real.evalQ (Real.tailD p) (y ^ 2) ≠ 0 :=
+    ne_of_gt (lt_of_lt_of_le zero_lt_one
+      (ConcreteMoment.evalQ_tailD_ge_one p (sq_nonneg y)))
+  have hfac : Real.evalQ (Real.D p.K) (y ^ 2) =
+      Real.evalQ (Real.D p.N) (y ^ 2) * Real.evalQ (Real.tailD p) (y ^ 2) := by
+    rw [Real.D_factorization p hp.N_lt_K.le]
+    simp [Real.evalQ, Real.realPolynomial]
+  have hexp : 2 * p.m = (2 * p.m - 1) + 1 := by have h := hp.m_pos; omega
+  unfold weightedDensity
+  rw [hfac]
+  simp only [Real.evalQ, Real.realPolynomial, Polynomial.map_pow, Polynomial.eval_pow]
+  conv_rhs => rw [hexp, pow_succ]
+  change Real.evalQ (Real.D p.N) (y ^ 2) ^ (2 * p.m - 1) /
+      Real.evalQ (Real.tailD p) (y ^ 2) * density s y =
+    (Real.evalQ (Real.D p.N) (y ^ 2) ^ (2 * p.m - 1) *
+      Real.evalQ (Real.D p.N) (y ^ 2)) /
+      (Real.evalQ (Real.D p.N) (y ^ 2) * Real.evalQ (Real.tailD p) (y ^ 2)) * density s y
+  field_simp
+
+/-- The Gram matrix of the constructed measure is exactly the displayed
+positive-half-line integral of corrected Proposition 3.2. -/
+theorem gram_eq_paper_integral (p : Real.Parameters) (hp : Real.Admissible p)
+    {s : ℝ} (hs : 0 < s) (i j : Fin p.h) :
+    gram p s i j = ∫ y : ℝ in Ioi 0, y ^ (2 * (i.val + j.val)) *
+      (Real.evalQ (Real.D p.N) (y ^ 2) ^ (2 * p.m) /
+        Real.evalQ (Real.D p.K) (y ^ 2) * density s y) := by
+  rw [gram_integral p hs i j]
+  apply setIntegral_congr_fun measurableSet_Ioi
+  intro y hy
+  dsimp only
+  rw [weightedDensity_eq_paper p hp s hy]
+
 theorem weightedDensity_odd (p : Real.Parameters) (y : ℝ) :
     weightedDensity p (2 * (p.k : ℝ) + 1) y = ConcreteMoment.weightedDensity p y := by
   simp only [weightedDensity, density_odd, ConcreteMoment.weightedDensity]
@@ -65,7 +106,8 @@ theorem direction_symmetric (p : Real.Parameters) (s : ℝ) : (direction p s).Is
 theorem direction_det_ne_zero (p : Real.Parameters) (s : ℝ) :
     (direction p s).det ≠ 0 := by
   have hv : (vandermonde p).det ≠ 0 := by
-    rw [vandermonde, ← RingHom.map_det]
+    change ((poleVandermonde p).map (fun q : ℚ => (q : ℝ))).det ≠ 0
+    rw [← Rat.cast_det]
     exact_mod_cast poleVandermonde_det_ne_zero p
   rw [direction, Matrix.det_mul, Matrix.det_mul, Matrix.det_transpose, Matrix.det_diagonal]
   exact mul_ne_zero (mul_ne_zero hv
@@ -83,7 +125,10 @@ theorem direction_odd (p : Real.Parameters) :
   rw [direction, hw, vandermonde]
   have h := congrArg (fun M : Matrix (Fin p.h) (Fin p.h) ℚ => M.map (Rat.castHom ℝ))
     (rationalDerivativeMatrix_factorization p)
-  simpa only [Matrix.map_mul, Matrix.map_diagonal, Matrix.map_transpose] using h.symm
+  simp only [Matrix.map_mul, Matrix.diagonal_map (map_zero (Rat.castHom ℝ)),
+    Matrix.transpose_map] at h
+  simpa only [Rat.coe_castHom, rationalDerivativeMatrix, Real.derivativeMatrix,
+    Matrix.map] using h.symm
 
 def center (s : ℝ) : ℝ := (riemannZeta (s : ℂ)).re
 

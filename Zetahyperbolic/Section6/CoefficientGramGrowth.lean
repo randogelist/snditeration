@@ -65,10 +65,13 @@ theorem det_upper {h K A : ℕ} (C : Matrix (Fin h) (Fin (K+1)) ℤ)
         intro r _
         rw [abs_mul]
         exact mul_le_mul (hentry i r) (hentry j r) (abs_nonneg _) (by positivity)
-      _ = ((K+1 : ℕ) : ℝ)^(2*A+1) := by simp [pow_add, pow_mul]; ring
+      _ = ((K+1 : ℕ) : ℝ)^(2*A+1) := by
+        simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+        rw [← pow_add, pow_succ, show A+A = 2*A by omega]
+        exact mul_comm _ _
   have hdet : |(realGram C).det| ≤ (h.factorial : ℝ) *
       (((K+1 : ℕ) : ℝ)^(2*A+1))^h := by
-    simpa only [Fintype.card_fin, nsmul_eq_mul] using
+    simpa using
       (Matrix.det_le (abv := AbsoluteValue.abs) hGram)
   have hfac : (h.factorial : ℝ) ≤ (((K+1 : ℕ) : ℝ)^h) := by
     have hh : h.factorial ≤ (K+1)^h :=
@@ -78,7 +81,7 @@ theorem det_upper {h K A : ℕ} (C : Matrix (Fin h) (Fin (K+1)) ℤ)
     (realGram C).det ≤ |(realGram C).det| := le_abs_self _
     _ ≤ (h.factorial : ℝ) * (((K+1 : ℕ) : ℝ)^(2*A+1))^h := hdet
     _ ≤ (((K+1 : ℕ) : ℝ)^h) * (((K+1 : ℕ) : ℝ)^(2*A+1))^h := by gcongr
-    _ = (((K+1 : ℕ) : ℝ)^((2*A+2)*h)) := by rw [← mul_pow, ← pow_succ', ← pow_mul]; congr 1; omega
+    _ = (((K+1 : ℕ) : ℝ)^((2*A+2)*h)) := by rw [← mul_pow, ← pow_succ', ← pow_mul]
     _ ≤ (((K+1 : ℕ) : ℝ)^((2*A+2)*(K+1))) :=
       pow_le_pow_right₀ hbase (Nat.mul_le_mul_left _ hsize)
 
@@ -91,11 +94,11 @@ theorem normalized_log_det_tendsto_zero
     (hentry : ∀ K i j, |(C K i j : ℝ)| ≤ ((K+1 : ℕ) : ℝ)^A) :
     Tendsto (fun K => Real.log (realGram (C K)).det / (K : ℝ)^2) atTop (𝓝 0) := by
   have hlog : Tendsto (fun K : ℕ => Real.log (K : ℝ)/(K : ℝ)) atTop (𝓝 0) := by
-    simpa using (Real.tendsto_pow_log_div_mul_add_atTop 1 0 1 one_ne_zero).comp
+    simpa [Function.comp_def] using (Real.tendsto_pow_log_div_mul_add_atTop 1 0 1 one_ne_zero).comp
       tendsto_natCast_atTop_atTop
   have hconst : Tendsto (fun K : ℕ => Real.log 2/(K : ℝ)) atTop (𝓝 0) :=
     tendsto_const_nhds.div_atTop tendsto_natCast_atTop_atTop
-  have hupper := (hconst.add hlog).const_mul (2 * (2*A+2 : ℕ))
+  have hupper := (hconst.add hlog).const_mul (2 * ((2*A+2 : ℕ) : ℝ))
   simp only [add_zero, mul_zero] at hupper
   apply squeeze_zero' _ _ hupper
   · filter_upwards with K

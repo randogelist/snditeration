@@ -21,12 +21,12 @@ theorem factorial_majorant_le_power {C : ℝ} (hC : 0 ≤ C) (A r : ℕ) (hr : 1
     C * (Nat.factorial (2 * r + A) : ℝ) ≤
       (((C + 1) * ((A : ℝ) + 2) ^ (A + 2) * (2 : ℝ) ^ A) * r) ^ (2 * r) := by
   have hrR : (1 : ℝ) ≤ r := by exact_mod_cast hr
+  have hAR : (0 : ℝ) ≤ A := Nat.cast_nonneg A
   have hb : (1 : ℝ) ≤ (A : ℝ) + 2 := by
-    have hA : (0 : ℝ) ≤ A := Nat.cast_nonneg A
     linarith
   have hbase : ((2 * r + A : ℕ) : ℝ) ≤ ((A : ℝ) + 2) * r := by
     push_cast
-    nlinarith
+    nlinarith [mul_nonneg hAR (sub_nonneg.mpr hrR)]
   have hfact : (Nat.factorial (2 * r + A) : ℝ) ≤
       (((2 * r + A : ℕ) : ℝ)) ^ (2 * r + A) := by
     exact_mod_cast Nat.factorial_le_pow (2 * r + A)
@@ -37,7 +37,8 @@ theorem factorial_majorant_le_power {C : ℝ} (hC : 0 ≤ C) (A r : ℕ) (hr : 1
   have hbpow : ((A : ℝ) + 2) ^ (2 * r + A) ≤
       ((A : ℝ) + 2) ^ ((A + 2) * (2 * r)) := by
     apply pow_le_pow_right₀ hb
-    nlinarith
+    have hAr : A ≤ A * r := by simpa using Nat.mul_le_mul_left A hr
+    nlinarith [Nat.zero_le (A * r)]
   have hrpow : (r : ℝ) ^ A ≤ (2 : ℝ) ^ (A * (2 * r)) := by
     calc
       _ ≤ ((2 : ℝ) ^ r) ^ A := by

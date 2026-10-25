@@ -87,3 +87,16 @@ import Zetahyperbolic.Section5.DualPencilCCT
 import Zetahyperbolic.Section5.PositiveSlopeSpectrum
 import Zetahyperbolic.Section6.CoefficientGramGrowth
 import Zetahyperbolic.Section6.PotentialGap
+import Zetahyperbolic.Section3.CauchyInterlacing
+import Zetahyperbolic.Section3.ChristoffelDarboux
+import Zetahyperbolic.Section3.ContinuousParameter
+import Zetahyperbolic.Section3.LaplaceGramMeasure
+import Zetahyperbolic.Section3.LaplaceJacobiIdentity
+import Zetahyperbolic.Section3.LaplaceMomentDerivative
+import Zetahyperbolic.Section3.LaplaceWeightDerivative
+import Zetahyperbolic.Section3.MatrixCurveJacobi
+import Zetahyperbolic.Section3.PrincipalRadius
+import Zetahyperbolic.Section5.BeukersMomentSeries
+import Zetahyperbolic.Section5.DualCenteredSpectrum
+import Zetahyperbolic.Section5.RationalIndependence
+import Zetahyperbolic.Section5.UnitLogMoments

@@ -89,6 +89,7 @@ theorem polynomial_symmetric_block_condensation
   let f : ℝ[X] →+* RatFunc ℝ := algebraMap ℝ[X] (RatFunc ℝ)
   have hinj : Function.Injective f := RatFunc.algebraMap_injective ℝ
   have hd : (A.map f).det ≠ 0 := by
+    change (f.mapMatrix A).det ≠ 0
     rw [← f.map_det]
     exact fun h => hdet (hinj (by simpa using h))
   letI : Invertible (A.map f) := Matrix.invertibleOfIsUnitDet _
@@ -107,8 +108,8 @@ theorem polynomial_symmetric_block_condensation
         !![f a, f b; f b, f c] := by
     ext (i | i) (j | j)
     · rfl
-    · simp [Matrix.fromBlocks, apply_ite]
-    · simp [Matrix.fromBlocks, apply_ite]
+    · fin_cases j <;> rfl
+    · fin_cases i <;> rfl
     · fin_cases i <;> fin_cases j <;> rfl
   rw [hmap]
   exact symmetric_block_condensation _ (hA.map f) _ _ _ _ _

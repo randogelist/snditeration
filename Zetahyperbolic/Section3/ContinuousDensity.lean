@@ -19,6 +19,21 @@ def exponentialTerm (s : ℝ) (n : ℕ) (y : ℝ) : ℝ :=
 
 def prefactor (s : ℝ) : ℝ := 2 * (2 * Real.pi) ^ (s - 1) / Real.Gamma s
 
+/-- The prefactor printed in Proposition 3.2, retained to state its correction. -/
+def printedPrefactor (s : ℝ) : ℝ := (2 * Real.pi) ^ s / (2 * Real.Gamma s)
+
+/-- The printed continuous normalization is exactly π/2 times the required one. -/
+theorem printedPrefactor_eq (s : ℝ) :
+    printedPrefactor s = (Real.pi / 2) * prefactor s := by
+  unfold printedPrefactor prefactor
+  have hp : (2 * Real.pi) ^ s = (2 * Real.pi) ^ (s-1) * (2 * Real.pi) := by
+    calc
+      _ = (2 * Real.pi) ^ ((s-1)+1) := by congr 1; ring
+      _ = _ := by rw [Real.rpow_add (by positivity), Real.rpow_one]
+  rw [hp]
+  simp only [div_eq_mul_inv, mul_inv_rev]
+  ring
+
 def density (s y : ℝ) : ℝ := prefactor s * y ^ s * ∑' n, exponentialTerm s n y
 
 theorem summable_exponentialTerm (s : ℝ) {y : ℝ} (hy : 0 < y) :

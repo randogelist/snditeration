@@ -71,7 +71,7 @@ theorem integral_shifted_moment (p : Real.Parameters) (a b : ℕ) :
 an arbitrary nonnegative integral shift of the measure. -/
 theorem sparse_shifted_momentMatrix_posDef (p : Real.Parameters) (a : ℕ)
     {r : ℕ} (e : Fin r → ℕ) (he : Function.Injective e) :
-    (fun i j : Fin r => ∫ t, t ^ (a + e i + e j) ∂momentMeasure p).PosDef := by
+    Matrix.PosDef (fun i j : Fin r => ∫ t, t ^ (a + e i + e j) ∂momentMeasure p) := by
   let d := Finset.univ.sup e + 1
   let choose : Fin r → Fin d := fun i =>
     ⟨e i, Nat.lt_succ_of_le (Finset.le_sup (f := e) (Finset.mem_univ i))⟩
@@ -99,11 +99,8 @@ offsets need not coincide, and the order is arbitrary. -/
 theorem solid_moment_det_pos (p : Real.Parameters) (a b r : ℕ) :
     0 < Matrix.det (fun i j : Fin r =>
       ∫ t, t ^ ((a + i.val) + (b + j.val)) ∂momentMeasure p) := by
-  convert sparse_shifted_moment_det_pos p (a + b) (fun i : Fin r => i.val)
-    Fin.val_injective using 1 <;> congr 1
-  ext i j
-  congr 2
-  omega
+  simpa only [Nat.add_assoc, Nat.add_left_comm, Nat.add_comm] using
+    sparse_shifted_moment_det_pos p (a + b) (fun i : Fin r => i.val) Fin.val_injective
 
 end ManuscriptChain.ConcreteMoment
 
@@ -117,6 +114,19 @@ theorem gram_eq_moment (p : Real.Parameters) (hp : Real.Admissible p)
       ∫ t, t ^ (i.val + j.val) ∂ConcreteMoment.momentMeasure p :=
   (Hyperbolic.gram_eq_weighted_integral p hp i j).trans
     (ConcreteMoment.integral_momentMeasure p _).symm
+
+/-- Mixed minors with the same arbitrary sparse pattern at different row and
+column offsets are strictly positive in every order. -/
+theorem GRAM_TRANSLATED_SPARSE_MINOR_POSITIVE
+    (p : Real.Parameters) (hp : Real.Admissible p) (a b : ℕ)
+    {r : ℕ} (e : Fin r → ℕ) (he : Function.Injective e)
+    (ha : ∀ i, a + e i < p.h) (hb : ∀ i, b + e i < p.h) :
+    0 < Matrix.det ((Real.gram p (Real.zeta p.weight)).submatrix
+      (fun i => (⟨a + e i, ha i⟩ : Fin p.h))
+      (fun j => (⟨b + e j, hb j⟩ : Fin p.h))) := by
+  simp only [Matrix.submatrix, gram_eq_moment p hp]
+  simpa only [Nat.add_assoc, Nat.add_left_comm, Nat.add_comm] using
+    ConcreteMoment.sparse_shifted_moment_det_pos p (a + b) e he
 
 /-- Every solid submatrix within the actual pencil has positive determinant.
 No numerical bound on the order or shifts occurs in the proof. -/

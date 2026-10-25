@@ -16,7 +16,8 @@ open scoped BigOperators
 namespace ManuscriptChain.NewtonTuran.Actual
 
 open HigherDerivativeTuran NormalizedNewton DerivativeDistinctRoots
-open StrictNormalizedNewton ConsecutiveDerivativeZeros Core
+open StrictNormalizedNewton ConsecutiveDerivativeZeros
+open ManuscriptChain.NewtonTuran.Core
 theorem spectral_polynomial_splits {n : ℕ}
     {p : Spectral.SymmetricAffinePencil n} (h : Spectral.RootFactorization p) :
     p.detPolynomial.Splits := by
@@ -81,8 +82,8 @@ theorem actual_primitive_hasDistinctRoots
       (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)⁻¹}.ncard := by
     rw [hside.2]
     split_ifs <;> omega
-  obtain ⟨i, hi⟩ := Set.ncard_pos.mp hleft
-  obtain ⟨j, hj⟩ := Set.ncard_pos.mp hright
+  obtain ⟨i, hi⟩ := Set.nonempty_of_ncard_ne_zero (ne_of_gt hleft)
+  obtain ⟨j, hj⟩ := Set.nonempty_of_ncard_ne_zero (ne_of_gt hright)
   let c := Spectral.actualRootFactorization (Real.manuscriptPencil p)
     (GRAM_POSITIVE p hp) (General.derivative_nonsingular p)
   have hroot (l : Fin p.h) : (primitiveRealPolynomial p).IsRoot (c.root l) := by

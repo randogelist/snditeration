@@ -32,7 +32,7 @@ theorem integerMinimalPolynomial_spec (α : ℂ) (hα : IsAlgebraic ℚ α) :
   have hcne : c ≠ 0 := mem_nonZeroDivisors_iff_ne_zero.mp hc0
   have hcQ : (c : ℚ) ≠ 0 := by exact_mod_cast hcne
   have hcmap : rationalPolynomial g = C (c : ℚ)*minpoly ℚ α := by
-    simpa only [rationalPolynomial, g, Algebra.smul_def, Polynomial.algebraMap_apply, eq_intCast] using hc
+    simpa only [rationalPolynomial, g, Algebra.smul_def, Polynomial.algebraMap_apply, eq_intCast, Polynomial.C_eq_intCast] using hc
   have hcu : IsUnit (C (c : ℚ) : ℚ[X]) := Polynomial.isUnit_C.mpr (isUnit_iff_ne_zero.mpr hcQ)
   have hgi : Irreducible (rationalPolynomial g) := by
     rw [hcmap]
@@ -44,7 +44,8 @@ theorem integerMinimalPolynomial_spec (α : ℂ) (hα : IsAlgebraic ℚ α) :
     Polynomial.isUnit_C.mpr (isUnit_iff_ne_zero.mpr hcontQ)
   have hfac : rationalPolynomial g = C (g.content : ℚ)*rationalPolynomial g.primPart := by
     conv_lhs => rw [g.eq_C_content_mul_primPart]
-    simp only [rationalPolynomial, Polynomial.map_mul, Polynomial.map_C, eq_intCast]
+    simp only [rationalPolynomial, Polynomial.map_mul, Polynomial.map_C, eq_intCast,
+      Polynomial.map_intCast, Polynomial.C_eq_intCast]
   have hfi : Irreducible (rationalPolynomial g.primPart) := by
     rw [hfac] at hgi
     exact (irreducible_isUnit_mul hcu').mp hgi
@@ -52,7 +53,7 @@ theorem integerMinimalPolynomial_spec (α : ℂ) (hα : IsAlgebraic ℚ α) :
     rw [← complexPolynomial_from_rational, Polynomial.eval_map_algebraMap, hcmap,
       map_mul, Polynomial.aeval_C, minpoly.aeval, mul_zero]
   have hfeval : (complexPolynomial g.primPart).eval α = 0 := by
-    change Polynomial.eval₂ (algebraMap ℤ ℂ) α g.primPart = 0
+    simp only [complexPolynomial, Polynomial.eval_map] at hgeval ⊢
     apply Polynomial.eval₂_primPart_eq_zero
       (show Function.Injective (algebraMap ℤ ℂ) from Int.cast_injective) hg0
     exact hgeval

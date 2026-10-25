@@ -29,7 +29,7 @@ private theorem norm_pow_sub_pow_le (x y : F) (hx : ‖x‖ ≤ 1) (hy : ‖y‖
     apply (IsUltrametricDist.norm_add_le_max _ _).trans
     apply max_le
     · rw [norm_mul, norm_pow]
-      exact mul_le_of_le_one_left (pow_nonneg (norm_nonneg _) _) (pow_le_one₀ (norm_nonneg _) hx)
+      exact mul_le_of_le_one_left (norm_nonneg _) (pow_le_one₀ (norm_nonneg _) hx)
     · rw [norm_mul]
       exact (mul_le_mul_of_nonneg_right ih (norm_nonneg _)).trans
         (mul_le_of_le_one_right (norm_nonneg _) hy)
@@ -78,8 +78,8 @@ theorem norm_eval_eq_of_mem_disk (Q : ℤ[X]) (x y : F)
   have hsmall := (norm_eval_sub_le Q y x hy hx).trans_lt hclose
   have h := IsUltrametricDist.norm_eq_of_add_norm_lt_max
     (x := Q.eval₂ (Int.castRingHom F) y) (y := -Q.eval₂ (Int.castRingHom F) x)
-    (by simpa only [← sub_eq_add_neg, norm_neg] using hsmall.trans_le
-      (le_max_right ‖Q.eval₂ (Int.castRingHom F) y‖ ‖Q.eval₂ (Int.castRingHom F) x‖))
+    (by simpa only [← sub_eq_add_neg, norm_neg] using (hsmall.trans_le
+      (le_max_right ‖Q.eval₂ (Int.castRingHom F) y‖ ‖Q.eval₂ (Int.castRingHom F) x‖)))
   simpa only [norm_neg] using h
 
 /-- The entire disk is zero-free when its centre value is nonzero. -/
