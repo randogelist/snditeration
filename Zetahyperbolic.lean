@@ -4,3 +4,8 @@ import Zetahyperbolic.Section2.PoleDiagonalization
 import Zetahyperbolic.Section4.Transfer
 import Zetahyperbolic.Section3.SymmetricAffinePencil
 import Zetahyperbolic.Section3.ConcretePencil
+import Zetahyperbolic.Section3.RootFactorization
+import Zetahyperbolic.Section3.RootZeros
+import Zetahyperbolic.Section3.HermitianFactorization
+import Zetahyperbolic.Section3.GeneralRootCore
+import Zetahyperbolic.Section3.GeneralRootGap
