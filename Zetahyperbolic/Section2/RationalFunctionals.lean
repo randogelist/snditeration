@@ -126,6 +126,6 @@ def rationalFunctional (k : ℕ) : RationalDomain →ₗ[ℚ] ℚ[X] :=
 @[simp] theorem rationalFunctional_pole (k j : ℕ) :
     rationalFunctional k (SimplePole.ofData squareNode (0,Finsupp.single j 1)) =
       C (Real.poleConstant k (j+1)) + C (((j+1 : ℕ) : ℚ)^(2*k)) * X := by
-  simp [rationalFunctional, SimplePole.generatorFunctional, Tau.muPolePoly_eq_existing]
+  rw [rationalFunctional, SimplePole.functional_pole, Tau.muPolePoly_eq_existing]
 
 end ManuscriptChain.Mu

@@ -1,4 +1,4 @@
-import Zetahyperbolic.Section3.ConcretePencil
+import Zetahyperbolic.Section2.Moments
 import Mathlib.Tactic
 
 /-!
@@ -31,7 +31,7 @@ theorem example_numerator : Real.numerator exampleParams 0 0 = X + 1 := by
   norm_num [Real.numerator, Real.D, exampleParams, Finset.prod_range_succ]
 
 theorem example_tail : Real.tailD exampleParams = X + C 4 := by
-  norm_num [Real.tailD, exampleParams]
+  norm_num [Real.tailD, exampleParams, Polynomial.C_ofNat]
 
 theorem example_quotient : Real.quotient exampleParams 0 0 = 1 := by
   rw [Real.quotient, example_numerator, example_tail]
@@ -42,25 +42,40 @@ theorem example_quotient : Real.quotient exampleParams 0 0 = 1 := by
   have heq := EuclideanDomain.div_add_mod (X + 1 : ℚ[X]) (X + C 4)
   rw [hrem] at heq
   apply mul_left_cancel₀ (monic_X_add_C (4 : ℚ)).ne_zero
+  have hC4 : (C (4 : ℚ) : ℚ[X]) = 4 := rfl
+  have hCn3 : (C (-3 : ℚ) : ℚ[X]) = -3 := by rw [map_neg]; rfl
+  rw [hC4, hCn3] at heq
+  rw [hC4]
   linear_combination heq
 
 theorem example_residue : Real.residue exampleParams 0 0 2 = -3 := by
   norm_num [Real.residue, example_numerator, example_tail]
 
 theorem example_slope : Real.entryM exampleParams 0 0 = -12 := by
-  norm_num [Real.entryM, exampleParams, example_residue]
+  change (∑ a ∈ Finset.Icc 2 2, Real.residue exampleParams 0 0 a * (a : ℚ) ^ 2) = -12
+  rw [Finset.Icc_self, Finset.sum_singleton, example_residue]
+  norm_num
 
 theorem example_intercept : Real.entryA exampleParams 0 0 = 29 / 2 := by
+  have hm : Real.polynomialMoment 1 1 = 1 / 4 := by
+    have hs : (1 : ℚ[X]).support = {0} :=
+      Polynomial.support_C (one_ne_zero : (1 : ℚ) ≠ 0)
+    unfold Real.polynomialMoment
+    rw [hs, Finset.sum_singleton]
+    norm_num [Polynomial.coeff_one, Real.monomialMoment, bernoulli_two]
   rw [Real.entryA, example_quotient]
-  norm_num [exampleParams, example_residue, Real.polynomialMoment,
-    Real.monomialMoment, Real.poleConstant, Real.harmonic, Finset.sum_range_succ,
-    bernoulli_two]
+  change Real.polynomialMoment 1 1 +
+    (∑ a ∈ Finset.Icc 2 2, Real.residue exampleParams 0 0 a * Real.poleConstant 1 a) = 29 / 2
+  rw [hm, Finset.Icc_self, Finset.sum_singleton, example_residue]
+  norm_num [Real.poleConstant, Real.harmonic, Finset.sum_range_succ]
 
 theorem example_delta : Real.delta exampleParams = C (29 / 2) - C 12 * X := by
-  unfold Real.delta
-  change Matrix.det (fun i j : Fin 1 => Real.pencil exampleParams i j) = _
-  rw [Matrix.det_fin_one]
-  simp only [Real.pencil, Fin.val_zero, example_intercept, example_slope]
+  let i : Fin exampleParams.h := ⟨0, by decide⟩
+  have hdet : Real.delta exampleParams = Real.pencil exampleParams i i :=
+    Matrix.det_fin_one (Real.pencil exampleParams)
+  rw [hdet]
+  change C (Real.entryA exampleParams 0 0) + C (Real.entryM exampleParams 0 0) * X = _
+  rw [example_intercept, example_slope]
   simp only [map_neg]
   ring
 
@@ -74,7 +89,8 @@ at every order in the literal wording of Corollary 3.6. -/
 theorem example_reciprocal_hankel_singular :
     Matrix.det (fun i j : Fin 2 =>
       ((24 / 29 : ℚ) ^ 2) ^ (i.val + j.val)) = 0 := by
-  norm_num [Matrix.det_fin_two]
+  erw [Matrix.det_fin_two]
+  norm_num
 
 /-- The displayed h=1 fraction cannot equal the determinant ratio at a
 positive center for the actual slope `-12`. -/
@@ -99,13 +115,14 @@ def symmetricEvenSum (n : ℕ) : ℚ :=
   1 / ((-1 : ℚ) ^ (2 * n)) + 1 / ((1 : ℚ) ^ (2 * n))
 
 @[simp] theorem symmetricEvenSum_eq_two (n : ℕ) : symmetricEvenSum n = 2 := by
-  simp [symmetricEvenSum, pow_mul]
+  norm_num [symmetricEvenSum, pow_mul]
 
 /-- A positive finite moment sequence need not have strictly positive
 Hankel determinants, even when its underlying roots are distinct. -/
 theorem symmetric_even_hankel_singular :
     Matrix.det (fun i j : Fin 2 => symmetricEvenSum (i.val + j.val)) = 0 := by
-  norm_num [Matrix.det_fin_two]
+  erw [Matrix.det_fin_two]
+  norm_num
 
 /-- Distinct nonzero real factors can have a vanishing intermediate
 coefficient. This does not contradict strict normalized Newton inequalities. -/
@@ -118,6 +135,6 @@ theorem distinct_factors_zero_middle :
       simp only [map_neg, map_one]
       ring
     rw [hp]
-    simp
+    simp [Polynomial.coeff_one]
 
 end ManuscriptChain.ContinuedFractionObstruction

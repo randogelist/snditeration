@@ -142,8 +142,9 @@ theorem weight5_sign_exponent (n : ℕ) :
 theorem weight5_sign_parity (n : ℕ) :
     (-1 : SignType) ^ ((27*n)*(3*n) + (27*n)*(27*n-1)/2) =
       (-1 : SignType) ^ (n*(n-1)/2) := by
-  rw [weight5_sign_exponent, pow_add, pow_mul, pow_mul]
-  norm_num
+  rw [weight5_sign_exponent, pow_add, pow_mul, pow_mul,
+    (show Odd (891 : ℕ) by decide).neg_one_pow,
+    (show Even (432 : ℕ) by decide).neg_one_pow, one_pow, mul_one]
 
 /-- The paper's weight-five family: K=30n, N=3n, and 2m=6. -/
 def weightFiveParameters (n : ℕ) : Real.Parameters := ⟨2, 3, 3 * n, 30 * n⟩

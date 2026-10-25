@@ -226,6 +226,7 @@ theorem gram_eq_paper_integral (p : Real.Parameters) (hp : Real.Admissible p)
   rw [gram_eq_weighted_integral p hp i j]
   apply setIntegral_congr_fun measurableSet_Ioi
   intro y hy
+  dsimp only
   rw [weightedDensity_eq_paper p hp hy]
 
 end ManuscriptChain.Hyperbolic
