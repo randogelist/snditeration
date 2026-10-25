@@ -39,3 +39,14 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.Moments.integral_polynomial_sq_pos
 #print axioms ManuscriptChain.Moments.momentMatrix_posDef
 #print axioms ManuscriptChain.Real.PositiveMomentRealization.gram_posDef
+
+#print axioms ManuscriptChain.Hyperbolic.summable_exponentialTerm
+#print axioms ManuscriptChain.Hyperbolic.density_pos
+#print axioms ManuscriptChain.Hyperbolic.measurable_density
+#print axioms ManuscriptChain.Hyperbolic.baseMeasure_nonzero
+#print axioms ManuscriptChain.Hyperbolic.integral_pow_mul_exp
+#print axioms ManuscriptChain.Hyperbolic.integral_tsum_momentTerm
+#print axioms ManuscriptChain.Hyperbolic.integrableOn_tsum_momentTerm
+#print axioms ManuscriptChain.Hyperbolic.integrableOn_monomial_density
+#print axioms ManuscriptChain.Hyperbolic.integral_monomial_density
+#print axioms ManuscriptChain.Hyperbolic.integral_monomial_density_eq_monomialMoment
