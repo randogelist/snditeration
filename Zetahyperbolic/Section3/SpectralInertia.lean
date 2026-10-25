@@ -4,7 +4,7 @@ import Zetahyperbolic.Section3.PoleSigns
 import Zetahyperbolic.Section3.PoleSignCounts
 import Mathlib.Tactic
 noncomputable section
-open scoped BigOperators
+open scoped BigOperators MatrixOrder
 open Matrix
 namespace ManuscriptChain.SpectralInertia
 variable {n : ℕ}
@@ -101,7 +101,7 @@ theorem real_direction_factorization (p : Real.Parameters) :
       (realPoleVandermonde p).transpose := by
   have h := congrArg (fun A : Matrix (Fin p.h) (Fin p.h) ℚ => A.map (Rat.castHom ℝ))
     (PoleDiagonalization.rationalDerivativeMatrix_factorization p)
-  simpa only [Matrix.map_mul, Matrix.map_diagonal, Matrix.transpose_map,
+  simpa only [Matrix.map_mul, Matrix.diagonal_map (map_zero (Rat.castHom ℝ)), Matrix.transpose_map,
     realPoleVandermonde, PoleDiagonalization.rationalDerivativeMatrix, Real.derivativeMatrix]
     using h
 
@@ -115,16 +115,19 @@ theorem direction_signature (p : Real.Parameters) (hm : 0 < p.m) :
     (by simpa using realPoleVandermonde_det_ne_zero p)
   have hneg := sigNeg_congruence (Matrix.diagonal w) (realPoleVandermonde p).transpose
     (by simpa using realPoleVandermonde_det_ne_zero p)
-  simp only [Matrix.transpose_transpose, ← real_direction_factorization p,
-    quadratic_diagonal, QuadraticForm.sigPos_weightedSumSquares,
-    QuadraticForm.sigNeg_weightedSumSquares] at hpos hneg
+  have hfac : realPoleVandermonde p * Matrix.diagonal w *
+      (realPoleVandermonde p).transpose = Real.derivativeMatrix p :=
+    (real_direction_factorization p).symm
+  simp only [Matrix.transpose_transpose] at hpos hneg
+  rw [hfac, quadratic_diagonal, QuadraticForm.sigPos_weightedSumSquares] at hpos
+  rw [hfac, quadratic_diagonal, QuadraticForm.sigNeg_weightedSumSquares] at hneg
   have hwp : {i : Fin p.h | 0 < w i} = {i : Fin p.h | Even (p.N + i.val)} := by
     ext i
-    simpa only [Set.mem_setOf_eq, w, Rat.cast_pos] using
+    simpa only [Set.mem_ofPred_eq, w, Rat.cast_pos] using
       PoleDiagonalization.poleWeight_pos_iff p hm i
   have hwn : {i : Fin p.h | w i < 0} = {i : Fin p.h | Odd (p.N + i.val)} := by
     ext i
-    simpa only [Set.mem_setOf_eq, w, Rat.cast_lt_zero] using
+    simpa only [Set.mem_ofPred_eq, w, Rat.cast_lt_zero] using
       PoleDiagonalization.poleWeight_neg_iff p hm i
   rw [hwp] at hpos
   rw [hwn] at hneg
@@ -151,7 +154,10 @@ theorem actual_root_side_counts (p : Real.Parameters) (hp : Real.Admissible p) :
     {i | Real.zeta p.weight < Real.zeta p.weight -
       (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)⁻¹}.ncard =
       {i : Fin p.h | Odd (p.N + i.val)}.ncard := by
-  simpa only [sub_lt_self_iff, lt_sub_self_iff, inv_pos, inv_neg''] using actual_inertia p hp
+  have hright (a b : ℝ) : a < a - b⁻¹ ↔ b < 0 := by
+    have h : a < a - b⁻¹ ↔ b⁻¹ < 0 := by constructor <;> intro hh <;> linarith
+    exact h.trans inv_neg''
+  simpa only [sub_lt_self_iff, inv_pos, hright] using actual_inertia p hp
 
 
 /-- Evaluated inertia counts for every admissible manuscript pencil. -/

@@ -49,3 +49,5 @@ import Zetahyperbolic.Section2.RationalDifference
 import Zetahyperbolic.Section3.PrincipalPencils
 import Zetahyperbolic.Section3.PoleSignCounts
 import Zetahyperbolic.Section3.SpectralInertia
+import Zetahyperbolic.Section2.RationalRegularity
+import Zetahyperbolic.Section3.ReciprocalMoments
