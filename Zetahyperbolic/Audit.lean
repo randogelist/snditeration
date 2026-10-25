@@ -1,4 +1,5 @@
 import Zetahyperbolic
+import Lean.Util.CollectAxioms
 
 /-! Print transitive logical dependencies for selected manuscript declarations. -/
 #print axioms ManuscriptChain.Real.zeta_eq_riemannZeta
@@ -71,3 +72,42 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.PartialFractions.residueCoeff_eq_formula
 #print axioms ManuscriptChain.PartialFractions.residueCoeff_eq_actual
 #print axioms ManuscriptChain.PartialFractions.rational_kernel_decomposition
+
+#print axioms ManuscriptChain.Real.D_factorization
+#print axioms ManuscriptChain.Tau.pullback_identity_polynomial
+#print axioms ManuscriptChain.Tau.tauPolynomial_reflection
+#print axioms ManuscriptChain.Tau.tau_difference_pole
+#print axioms ManuscriptChain.SimplePole.realize_injective
+#print axioms ManuscriptChain.SimplePole.functional_representation_independent
+#print axioms ManuscriptChain.ConcreteMoment.weightedMeasure_nonzero
+#print axioms ManuscriptChain.ConcreteMoment.momentMeasure_nullSingleton
+#print axioms ManuscriptChain.ConcreteMoment.integrableOn_weightedDensity_moment
+#print axioms ManuscriptChain.ConcreteMoment.realization
+#print axioms ManuscriptChain.Hyperbolic.gram_eq_weighted_integral
+#print axioms ManuscriptChain.Hyperbolic.gram_eq_paper_integral
+#print axioms ManuscriptChain.REALIZATION
+#print axioms ManuscriptChain.GRAM_POSITIVE
+#print axioms ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL
+#print axioms ManuscriptChain.EXACT_ZERO_FREE_DISK
+#print axioms ManuscriptChain.primitivePolynomial_natDegree
+#print axioms ManuscriptChain.primitivePolynomial_root_iff
+#print axioms ManuscriptChain.primitivePolynomial_exact_zero_free_disk
+#print axioms ManuscriptChain.PoleDiagonalization.poleWeight_sign
+#print axioms ManuscriptChain.PoleDiagonalization.delta_leadingCoeff_sign
+#print axioms ManuscriptChain.BasisInvariance.weightFive_primitive_leadingCoeff_sign
+#print axioms ManuscriptChain.ContinuedFractionObstruction.example_delta
+#print axioms ManuscriptChain.ContinuedFractionObstruction.positive_center_refutes_printed_fraction
+#print axioms ManuscriptChain.ContinuedFractionObstruction.example_reciprocal_hankel_singular
+
+run_cmd do
+  let env ← Lean.getEnv
+  let mut checked : Nat := 0
+  for (name, info) in env.constants.toList do
+    if (`ManuscriptChain).isPrefixOf name && info.isTheorem then
+      checked := checked + 1
+      for ax in ← Lean.collectAxioms name do
+        unless [``propext, ``Classical.choice, ``Quot.sound].contains ax do
+          throwError "Forbidden dependency {ax} in {name}"
+  if checked == 0 then
+    throwError "No project theorems found for dependency audit"
+  Lean.logInfo m!"GOODWORKFLOWFRONTIER::AXIOM_ALLOWLIST::THEOREMS_CHECKED={checked}"

@@ -27,3 +27,13 @@ import Zetahyperbolic.Section3.PoleIntegralIdentity
 import Zetahyperbolic.Section3.PartialFractionsCore
 import Zetahyperbolic.Section3.PartialFractionsQuotient
 import Zetahyperbolic.Section3.PartialFractionsResidues
+import Zetahyperbolic.Section2.DenominatorFactorization
+import Zetahyperbolic.Section2.TauGenerators
+import Zetahyperbolic.Section2.RationalDomain
+import Zetahyperbolic.Section2.RationalFunctionals
+import Zetahyperbolic.Section3.ConcreteMomentMeasure
+import Zetahyperbolic.Section3.RationalIntegralBridge
+import Zetahyperbolic.Section3.Unconditional
+import Zetahyperbolic.Section3.PrimitivePolynomial
+import Zetahyperbolic.Section3.PoleSigns
+import Zetahyperbolic.Section3.ContinuedFractionObstruction

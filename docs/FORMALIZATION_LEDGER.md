@@ -31,3 +31,32 @@ compiler-certified modules, and preserve the audit/CI evidence.
 - PR #2: https://github.com/randogelist/snditeration/pull/2 — build+dependency audit PASS; merged `297cd4f`.
 - PR #3: https://github.com/randogelist/snditeration/pull/3 — build+dependency audit PASS; merged `8e6f44e`.
 - A checkpoint is an exact Lean declaration with a known CI receipt, not a claim that the entire paper theorem is manuscript-equivalent.
+
+## Current execution candidate — GITHUB_SPECTRAL_v0_1_0
+
+Base: `bf3fdf6970da9f40850d3a056086a524f0ffd055`, PR #11 merged after
+CI build and explicit axiom audit passed (run 40174010799). Main CI run
+40182929099 also passed. All earlier sources and historical archives are retained.
+
+This candidate is under verification; the new source declarations below are
+not promoted to A-Tier until their complete build and dependency audit pass.
+
+| Target | Added source | Exact scope |
+| --- | --- | --- |
+| Lemma 2.2 | `Section2/TauGenerators.lean` | Polynomial pullback and pole-generator identities using actual Definition 2.1 constants. |
+| Lemma 2.3 | `Section2/TauGenerators.lean` | Full polynomial reflection; pole reflection and difference for r ≠ 0. |
+| Rational-function domain | `Section2/RationalDomain.lean`, `RationalFunctionals.lean` | Actual RatFunc subspaces and representation-independent linear μ/τ. General rational substitution compatibility is a subsequent endpoint. |
+| Equation (3.2) on actual pencil | `Section2/DenominatorFactorization.lean`, `Section3/ConcreteMomentMeasure.lean`, `RationalIntegralBridge.lean` | Positive atomless measure, all moment integrability, polynomial/pole evaluation, and equality with original D_N^(2m)/D_K weight. |
+| Theorem 3.1 | `Section3/Unconditional.lean` | Actual Gram positivity, degree h, real roots avoiding ζ, exact positive zero-free radius; only Admissible structural parameters as input. |
+| Primitive polynomial (2.9) | `Section3/PrimitivePolynomial.lean` | Constructed primitive integer normalization, same degree and complex zeros, transferred exact zero-free disk. |
+| Theorem 3.3(2) | `Section3/PoleSigns.lean` | Exact leading sign of the weight-five primitive polynomial. |
+| Theorem 3.3(3) algebra | `Section3/PoleSigns.lean` | Alternating sign of actual γ_a and general determinant leading sign; full eigenvalue inertia/count transfer still open. |
+| Corollaries 3.5–3.6 | `Section3/ContinuedFractionObstruction.lean` | Exact small-instance checks and obstructions to literal printed claims; see manuscript repair notes. |
+
+Next chronological endpoints: rational-function pullback/reflection compatibility,
+explicit interpolation-polynomial identification in 2.5, and Theorem 3.3(1)
+Stieltjes determinacy/strict total positivity. Corrected 3.5–3.6 statements
+must be used; erroneous printed formulas are not target theorems.
+
+No unconditional irrationality of ζ(5), ζ(7), RH, S-Tier finite admission,
+or full manuscript closure is claimed.
