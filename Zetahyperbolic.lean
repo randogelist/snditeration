@@ -18,3 +18,9 @@ import Zetahyperbolic.Section3.HyperbolicMomentBernoulli
 import Zetahyperbolic.Section3.ZetaTail
 import Zetahyperbolic.Section3.BoseTailCore
 import Zetahyperbolic.Section3.BoseTailFormula
+import Zetahyperbolic.Section3.PoleScalingCore
+import Zetahyperbolic.Section3.PoleScalingIntegral
+import Zetahyperbolic.Section3.CothCore
+import Zetahyperbolic.Section3.CothFormula
+import Zetahyperbolic.Section3.PoleKernelAlgebra
+import Zetahyperbolic.Section3.PoleIntegralIdentity
