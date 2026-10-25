@@ -34,3 +34,8 @@ import Zetahyperbolic
 #print axioms ManuscriptChain.General.complex_root_iff
 #print axioms ManuscriptChain.General.complex_root_on_boundary
 #print axioms ManuscriptChain.General.theorem_3_1_general
+
+#print axioms ManuscriptChain.Moments.quadratic_eq_integral_sq
+#print axioms ManuscriptChain.Moments.integral_polynomial_sq_pos
+#print axioms ManuscriptChain.Moments.momentMatrix_posDef
+#print axioms ManuscriptChain.Real.PositiveMomentRealization.gram_posDef
