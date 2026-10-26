@@ -1,0 +1,54 @@
+{
+  "paper_item": "3.7",
+  "alternative_target": "Retain the actual Turán inequalities and Newton log-concavity with their verified nonvanishing/equality hypotheses. Treat individual centered-coefficient nonvanishing as a separate open clause; do not include it in the alternative endpoint.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Remove the unsupported implication from generic spectral distinctness to every intermediate coefficient being nonzero.",
+  "prerequisites": [
+    "3.1",
+    "3.3"
+  ],
+  "retained_open_obligations": [
+    "Map exact imported inequality declarations and hypotheses.",
+    "Any future coefficient-nonvanishing result needs its own argument for every actual admissible parameter."
+  ],
+  "correction_gate": "Existence of two distinct roots is not squarefreeness and does not prohibit an isolated zero coefficient.",
+  "source_paths": [
+    "Zetahyperbolic/Section3/ActualNewtonTuran.lean",
+    "Zetahyperbolic/Section3/NewtonTuran.lean",
+    "Experimental/P03_07/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-07_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-07_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-07_construction",
+  "original_snapshot_commit": "422e9ecc2d9a43f7aa598d9340fa724efed30257",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section3/ActualNewtonTuran.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/ActualNewtonTuran.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/NewtonTuran.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/NewtonTuran.lean"
+    },
+    {
+      "path": "Experimental/P03_07/Target.md",
+      "commit": "422e9ecc2d9a43f7aa598d9340fa724efed30257",
+      "url": "https://github.com/randogelist/snditeration/blob/422e9ecc2d9a43f7aa598d9340fa724efed30257/Experimental/P03_07/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
