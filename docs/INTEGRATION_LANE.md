@@ -10,7 +10,7 @@ This lane **closes existing, independently proved Lean modules and finished pull
 
 - `snditeration` active development: the forthcoming printed Theorem 5.4 integration and any `feat/zetahyperbolic-p05-04*` branch.
 - `snditeration` [PR #15](https://github.com/randogelist/snditeration/pull/15): 51-file source donor, globally failed CI. Do not alter its head or close the PR simply because isolated modules can be salvaged.
-- `snditeration` [PR #16](https://github.com/randogelist/snditeration/pull/16): inert cross-project staging. Do not merge its uncompiled source snapshots as proofs or destroy the staging branch.
+- `snditeration` [PR #16](https://github.com/randogelist/snditeration/pull/16): **MERGED AS INERT SOURCE ARCHIVE**, not as proofs. Exact 16 `.lean.txt` snapshots remain research data, with successful source-only [CI 40271038633](https://github.com/randogelist/snditeration/actions/runs/40271038633) and merge `aa57382bfb2132ccfb4282803b5c524f7778c646`. Preserve historical branch for provenance.
 - `zetahyperbolic-axiom` active draft PRs #3 (6.16), #4 (4.2), #5 (6.10), and any `feat/gwf-target-*` branch. The other instance owns their derivation and sequencing.
 
 This is a **snapshot of 26 October 2026**, not a permanent inference of who owns future branches. Re-query branch/PR activity before each intake.
