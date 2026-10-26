@@ -27,23 +27,23 @@ namespace ManuscriptChain.Chapter6ConeDimension
 /-- The common actual center in 6.17, using the original convergent series. -/
 def center {k : ℕ} (b a : Fin k → ℤ) : ℝ :=
   ∑ m : Fin k,
-    (b m : ℝ) * Real.zeta (2 * (m.val + 1) + 1) +
-      (a m : ℝ) * BetaBeukers.betaValue (2 * (m.val + 1))
+    ((b m : ℝ) * Real.zeta (2 * (m.val + 1) + 1) +
+      (a m : ℝ) * BetaBeukers.betaValue (2 * (m.val + 1)))
 
 /-- The constant monomial entry of the printed combined pencil. -/
 def constantEntry {k : ℕ} (b a : Fin k → ℤ) (r s : ℕ) : ℚ :=
   if r = s then
     -∑ m : Fin k,
-      (b m : ℚ) * Real.harmonic (2 * (m.val + 1) + 1) r +
-        (a m : ℚ) * BetaBeukers.betaHarmonic (2 * (m.val + 1)) (2 * r)
+      ((b m : ℚ) * Real.harmonic (2 * (m.val + 1) + 1) r +
+        (a m : ℚ) * BetaBeukers.betaHarmonic (2 * (m.val + 1)) (2 * r))
   else
     (∑ m : Fin k,
-      (b m : ℚ) / (2 * (m.val + 1)) *
+      ((b m : ℚ) / (2 * (m.val + 1)) *
           (Real.harmonic (2 * (m.val + 1)) r -
             Real.harmonic (2 * (m.val + 1)) s) +
         (a m : ℚ) / (4 * (2 * (m.val + 1) - 1)) *
           (BetaBeukers.betaHarmonic (2 * (m.val + 1) - 1) (2 * r) -
-            BetaBeukers.betaHarmonic (2 * (m.val + 1) - 1) (2 * s))) /
+            BetaBeukers.betaHarmonic (2 * (m.val + 1) - 1) (2 * s)))) /
       ((r : ℚ) - s)
 
 /-- Literal monomial pencil, evaluated at the actual zeta--beta center. -/

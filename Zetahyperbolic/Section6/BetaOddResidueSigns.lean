@@ -154,8 +154,19 @@ theorem slope_posDef (N K m : ℕ) (hm : 1 ≤ m) : (slope N K m).PosDef := by
     exact_mod_cast residue_pos N K m (N + a.val) hm
       (Finset.mem_Ico.mpr ⟨by omega, by have := a.isLt; omega⟩)
 
+/-- The all-dimensional Vandermonde factorization retains the actual
+odd-square nodes and the actual signed residue formula. -/
+theorem slope_factorization (N K m : ℕ) :
+    slope N K m =
+      PaperAdvances.Corollary3_6.finiteVandermonde (nodes N K) (K - N) *
+        Matrix.diagonal (fun a => (residue N K m (N + a.val) : ℝ)) *
+        (PaperAdvances.Corollary3_6.finiteVandermonde (nodes N K) (K - N))ᵀ :=
+  PaperAdvances.Corollary3_6_WeightedCorrected.weighted_hankel_gram
+    (nodes N K) (fun a => (residue N K m (N + a.val) : ℝ)) (K - N)
+
 end ManuscriptChain.BetaOddResidueSigns
 
 #print axioms ManuscriptChain.BetaOddResidueSigns.tail_derivative_eval
 #print axioms ManuscriptChain.BetaOddResidueSigns.residue_pos
 #print axioms ManuscriptChain.BetaOddResidueSigns.slope_posDef
+#print axioms ManuscriptChain.BetaOddResidueSigns.slope_factorization

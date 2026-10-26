@@ -747,3 +747,6 @@ run_cmd do
 #print axioms ManuscriptChain.BetaOddRoot.root_unique
 #print axioms ManuscriptChain.BetaOddRoot.root_side
 #print axioms ManuscriptChain.BetaOddPencil.betaPencil_complex_roots_real
+
+#print axioms ManuscriptChain.BetaScaledUnitObstruction.printed_odd_prime_unit_claim_false
+#print axioms ManuscriptChain.BetaOddPolynomialIntegrality.quotientMoment_norm_le_one

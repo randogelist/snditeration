@@ -47,8 +47,9 @@ theorem beta_harmonic_prime_square_valuation :
       padicValInt.eq_zero_of_not_dvd scaled_harmonic_seven_units.1,
       padicValNat.eq_zero_of_not_dvd scaled_harmonic_seven_units.2]
     norm_num
-  rw [padicValRat.mul (by norm_num) hq, padicValRat.pow,
-    padicValRat.self (by norm_num)] at hunit
+  have hseven : padicValRat 7 (7 : ℚ) = 1 := by
+    simpa using (padicValRat.self (p := 7) (by norm_num))
+  rw [padicValRat.mul (by norm_num) hq, padicValRat.pow, hseven] at hunit
   omega
 
 /-- The exact harmonic assertion in 6.16(3) fails without a cutoff restriction. -/

@@ -176,3 +176,6 @@ import Zetahyperbolic.Section6.Chapter6ConeDimensionObstruction
 import Zetahyperbolic.Section6.Chapter6HarmonicPrimePowerObstruction
 import Zetahyperbolic.Section6.PadicDeterminantDominance
 import Zetahyperbolic.Section6.Theorem63Nonvanishing
+
+import Zetahyperbolic.Section6.BetaOddPolynomialIntegrality
+import Zetahyperbolic.Section6.BetaScaledUnitObstruction

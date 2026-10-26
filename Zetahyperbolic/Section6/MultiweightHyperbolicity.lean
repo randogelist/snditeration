@@ -45,14 +45,21 @@ theorem entry_eval_coupled {k h K : ℕ} (a : Fin k → ℤ)
     Polynomial.eval₂ (Rat.castHom ℝ) (∑ m, (a m : ℝ) * x m) (entry a c i j) =
       ∑ m, (a m : ℝ) * Polynomial.eval₂ (Rat.castHom ℝ) (x m)
         (Real.dualEntry (2*(m.val+1)+1) c i j) := by
-  simp only [entry, Polynomial.eval₂_add,
+  have hev (m : Fin k) :
+      Polynomial.eval₂ (Rat.castHom ℝ) (x m)
+        (Real.dualEntry (2*(m.val+1)+1) c i j) =
+      (dualConstantMatrix (2*(m.val+1)+1) c i j : ℝ) +
+        (dualSlopeMatrix c i j : ℝ) * x m := by
+    change Polynomial.eval₂ (Rat.castHom ℝ) (x m)
+      (C (dualConstantMatrix (2*(m.val+1)+1) c i j) +
+        C (dualSlopeMatrix c i j) * X) = _
+    simp only [Polynomial.eval₂_add, Polynomial.eval₂_mul,
+      Polynomial.eval₂_C, Polynomial.eval₂_X, Rat.coe_castHom]
+  simp only [entry, hev, Polynomial.eval₂_add,
     Polynomial.eval₂_mul, Polynomial.eval₂_C, Polynomial.eval₂_X,
     Rat.coe_castHom]
-  simp only [constant, Real.dualEntry, Polynomial.eval₂_add,
-    Polynomial.eval₂_mul, Polynomial.eval₂_C, Polynomial.eval₂_X,
-    Rat.cast_sum, Rat.cast_mul, Rat.cast_intCast, Rat.coe_castHom,
-    mul_add, Finset.mul_sum, Finset.sum_add_distrib]
-  congr 1
+  simp only [constant, Rat.cast_sum, Rat.cast_mul, Rat.cast_intCast]
+  rw [Finset.mul_sum, ← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro m hm
   ring

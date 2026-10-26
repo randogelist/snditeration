@@ -67,7 +67,8 @@ theorem integrableOn_weighted_moment (k N K m e : ℕ) :
   simp only [Pi.mul_apply, id_eq]
   rw [Real.norm_eq_abs, abs_of_nonneg (mul_nonneg (pow_nonneg hu.le _)
     (weightedDensity_pos k N K m hu).le), heval]
-  have hN : 0 ≤ Real.evalQ (Real.D N) (u^2) ^ (2*m) := by positivity
+  have hN : 0 ≤ Real.evalQ (Real.D N) (u^2) ^ (2*m) :=
+    pow_nonneg (ConcreteMoment.evalQ_D_pos N (sq_pos_of_pos hu)).le _
   have hb := div_le_self hN (denominator_ge_one K u)
   have hc := mul_le_mul_of_nonneg_right hb (density_pos k hu).le
   have hd := mul_le_mul_of_nonneg_left hc (pow_nonneg hu.le (2*e))

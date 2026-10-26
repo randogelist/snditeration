@@ -43,7 +43,8 @@ theorem polynomialCoefficients_vecMul_injective {h K : ℕ} (P : Fin h → ℤ[X
   rw [Matrix.vecMul_injective_iff]
   have hi := polynomialCoefficients_independent P hdeg hP
   have he := (linearIndependent_algebraMap_comp_iff (S := ℝ)).2 hi
-  simpa [Matrix.row, Matrix.map, Matrix.of, Function.comp_def] using he
+  change LinearIndependent ℝ (fun i j => (polynomialCoefficients (K := K) P i j : ℝ))
+  convert he using 1 <;> rfl
 
 /-- This is the slope of the actual rational Beukers pencil, after real embedding. -/
 theorem dualSlope_eq_realGram {h K : ℕ} (C : Matrix (Fin h) (Fin (K + 1)) ℤ) :

@@ -187,8 +187,12 @@ private lemma cross_entry_small (p : ℕ) [Fact p.Prime]
     have hse : s.val % p = s.val := Nat.mod_eq_of_lt s.isLt
     simp [a, b, Nat.add_mod, hre, hse] at hm
     exact hrs (Fin.ext hm)
-  have ha : a < 2*p := by dsimp [a]; have := i.isLt; have := r.isLt; omega
-  have hb : b < 2*p := by dsimp [b]; have := j.isLt; have := s.isLt; omega
+  have ha : a < 2*p := by
+    have hr := r.isLt
+    fin_cases i <;> dsimp [a] <;> omega
+  have hb : b < 2*p := by
+    have hs := s.isLt
+    fin_cases j <;> dsimp [b] <;> omega
   have hA := rational_norm_le_prime_pow p 6 (Real.harmonic 6 a)
     (harmonic_outer_valuation_lower p 6 a ha)
   have hB := rational_norm_le_prime_pow p 6 (Real.harmonic 6 b)

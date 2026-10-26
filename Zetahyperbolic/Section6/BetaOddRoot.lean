@@ -41,10 +41,10 @@ theorem det_rank_one {h : ℕ} (A : Matrix (Fin h) (Fin h) ℝ)
     Matrix.replicateRow_mul_replicateCol_apply, Matrix.mulVec_smul,
     dotProduct_smul, smul_eq_mul]
 
-theorem slope_eq (N h : ℕ) : slope N h =
+theorem slope_eq (N h : ℕ) : BetaOddGram.slope N h =
     (-1:ℝ)^N • Matrix.vecMulVec (alternatingVector h) (alternatingVector h) := by
   ext i j
-  simp only [slope, alternatingVector, Matrix.smul_apply, smul_eq_mul,
+  simp only [BetaOddGram.slope, alternatingVector, Matrix.smul_apply, smul_eq_mul,
     Matrix.vecMulVec, Matrix.of_apply, pow_add]
 
 /-- Exact matrix determinant lemma for the actual beta pencil. -/
@@ -68,9 +68,15 @@ theorem root_zero (k N h : ℕ) (hh : 0<h) : (pencil k N h (root k N h)).det = 0
   have hs := sign_sq N
   suffices he : 1 + (-1:ℝ)^N * (root k N h-moment k 0) * inverseGram k N h = 0 by
     rw [he, mul_zero]
-  unfold root
-  field_simp [hq]
-  nlinarith
+  have hc : root k N h-moment k 0 = -(-1:ℝ)^N / inverseGram k N h := by
+    unfold root
+    ring
+  rw [hc]
+  have hp : (-1:ℝ)^N * (-(-1:ℝ)^N / inverseGram k N h) * inverseGram k N h =
+      -((-1:ℝ)^N * (-1:ℝ)^N) := by
+    field_simp [hq] <;> ring
+  rw [hp, hs]
+  norm_num
 
 theorem root_unique (k N h : ℕ) (hh : 0<h) (X : ℝ) :
     (pencil k N h X).det = 0 ↔ X = root k N h := by
@@ -100,9 +106,8 @@ theorem root_side (k N h : ℕ) (hh : 0<h) :
   have hq := inverseGram_pos k N h hh
   have hs := sign_sq N
   have he : (-1:ℝ)^N * (moment k 0-root k N h) = 1 / inverseGram k N h := by
-    unfold root
-    field_simp [hq.ne']
-    nlinarith
+    simp only [root, sub_sub_cancel]
+    rw [← mul_div_assoc, hs]
   rw [he]
   exact one_div_pos.mpr hq
 
@@ -161,6 +166,6 @@ theorem root_eq_rationalRoot (k N h : ℕ) (hh : 0<h) :
     simp only [rationalRoot, Rat.cast_div, Rat.cast_neg, Rat.cast_sub,
       rational_det_cast, Rat.cast_zero, Rat.cast_one]
   rw [he]
-  field_simp [determinant_slope_ne_zero k N h hh]
+  field_simp [determinant_slope_ne_zero k N h hh] <;> ring
 
 end ManuscriptChain.BetaOddRoot

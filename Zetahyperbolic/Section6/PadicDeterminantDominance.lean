@@ -41,7 +41,8 @@ theorem padic_det_norm_eq_one_of_diagonal_dominant
     Equiv.Perm.sign σ • ∏ i, M (σ i) i
   have hterm (σ : Equiv.Perm ι) :
       ‖term σ‖ = ∏ i, ‖M (σ i) i‖ := by
-    rw [term, padic_sign_smul_norm, norm_prod]
+    dsimp only [term]
+    rw [padic_sign_smul_norm, norm_prod]
   have hle (i j : ι) : ‖M i j‖ ≤ 1 := by
     by_cases hij : i = j
     · subst j

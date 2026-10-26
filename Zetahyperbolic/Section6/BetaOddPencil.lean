@@ -28,7 +28,7 @@ decreasing_by exact i.isLt
 theorem eulerEven_first_four :
     eulerEven 0 = 1 ∧ eulerEven 1 = -1 ∧
       eulerEven 2 = 5 ∧ eulerEven 3 = -61 := by
-  norm_num [eulerEven, Fin.sum_univ_succ]
+  decide
 
 def monomialMoment (e : ℕ) : ℚ :=
   (-1 : ℚ) ^ e * (eulerEven e : ℚ) / 4 ^ (e + 1) *
@@ -86,7 +86,7 @@ theorem entry_affine (N K m i j : ℕ) (x : ℚ) :
         residue N K m (N + a.val) *
           (-oddSquare (N + a.val)) ^ (i + j) := by
   unfold entry
-  rw [Finset.mul_sum, ← add_assoc]
+  rw [Finset.mul_sum, add_assoc]
   congr 1
   rw [← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
@@ -104,7 +104,7 @@ theorem rationalSlope_real_eq (N K m : ℕ) :
     (rationalSlope N K m).map (fun q => (q : ℝ)) = slope N K m := by
   ext i j
   simp only [rationalSlope, Matrix.map_apply, Rat.cast_sum, Rat.cast_mul,
-    Rat.cast_pow, Rat.cast_neg, slope,
+    Rat.cast_pow, Rat.cast_neg, BetaOddResidueSigns.slope,
     PaperAdvances.Corollary3_6_WeightedCorrected.weightedHankel, nodes]
 
 theorem constantMatrix_symmetric (N K m : ℕ) :
