@@ -39,7 +39,7 @@ theorem kreinSix_eq_signed (a b : ℕ → ℝ) :
 private theorem binomial_factorial_5 (ν : Fin 6) :
     (Nat.choose 5 ν.val : ℝ) * (ν.val.factorial : ℝ) *
       ((5 - ν.val).factorial : ℝ) = 120 := by
-  fin_cases ν <;> norm_num
+  fin_cases ν <;> norm_num [Nat.choose, Nat.factorial]
 
 private theorem channel_term_eq (r t m : ℕ) (ν : Fin 6) :
     (Nat.choose 5 ν.val : ℝ) * kreinChannel r m ν.val *
@@ -52,7 +52,7 @@ private theorem channel_term_eq (r t m : ℕ) (ν : Fin 6) :
           ((5 - ν.val).factorial : ℝ)) *
           (((((r + m : ℕ) : ℝ) + 1) ^ (ν.val + 1))⁻¹ *
            ((((t + m : ℕ) : ℝ) + 1) ^ (5 - ν.val + 1))⁻¹) := by ring
-    _ = _ := by rw [binomial_factorial_5]
+    _ = _ := by rw [binomial_factorial_5]; ring
 
 theorem integral_momentTerm_eq_kreinSix (r t m : ℕ) :
     (∫ z, momentTerm r t m z ∂squareMeasure) =
