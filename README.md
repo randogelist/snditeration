@@ -1,3 +1,7 @@
+> **ALT construction — manuscript 6.17.**
+> [Alternative target and prerequisites](Experimental/P06_17/Alt/Target.md) · [Proposed branch](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-17_prop_construction).
+> Documentation only; no new Lean interface, axioms, build or proof tier. The inherited register below describes the main baseline.
+
 # Zetahyperbolic — manuscript completion and Lean evidence
 
 Formalization of *Spectral Theory and Diophantine Bounds for Hankel Determinants

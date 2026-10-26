@@ -1,0 +1,63 @@
+{
+  "paper_item": "6.17",
+  "alternative_target": "For the actual ζ(7)/β(4) two-variable components and finite rational polynomial families, establish the correctly normalized combined bilinear moments and finite coefficient-pencil identity. Recompute local odd-harmonic denominator windows for each selected basis; derive any q-adic nonvanishing only from the actual corrected reduction. Higher-weight and arbitrary-L² extensions are separate goals.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Start with the two actual calibrated base weights and finite polynomial scope; replace defective local congruences by recomputed residue data.",
+  "prerequisites": [
+    "5.2",
+    "5.3",
+    "6.10"
+  ],
+  "retained_open_obligations": [
+    "Prove the actual β(4) diagonal/off-diagonal moments.",
+    "Assemble the signed finite moments and coefficient-slope identity.",
+    "Recompute denominator support and leading matrices; prove determinant nonvanishing rather than assume it.",
+    "General weights, L² completion and infinite definite subspaces remain open."
+  ],
+  "correction_gate": "The recorded q=11 and q=41 counterchecks forbid reusing the printed denominator and leading-diagonal steps. Signed decomposition alone does not produce definite subspaces.",
+  "source_paths": [
+    "Experimental/P06_17/Target.md",
+    "Experimental/P06_17/Assumptions.json",
+    "Experimental/P06_17/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-17_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-17_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-17_construction",
+  "original_snapshot_commit": "3680423885c8141c523e4e1d5154703085962aad",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_17/Target.md",
+      "commit": "3680423885c8141c523e4e1d5154703085962aad",
+      "url": "https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Target.md"
+    },
+    {
+      "path": "Experimental/P06_17/Assumptions.json",
+      "commit": "3680423885c8141c523e4e1d5154703085962aad",
+      "url": "https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_17/Prerequisites.lean",
+      "commit": "3680423885c8141c523e4e1d5154703085962aad",
+      "url": "https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
