@@ -1,0 +1,45 @@
+{
+  "item": "6.12",
+  "module": "P06_12",
+  "namespace": "Experimental.P06_12",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_12.upstream_beta_four_moments_integrable",
+      "meaning": "Polynomial moments of the explicit §6.12 beta-four weight are integrable on the positive half-line; independent of sign-flipped Gram positivity or rational approximation.",
+      "dependency_items": [
+        "6.4"
+      ],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_12.upstream_beta_four_moments_integrable"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.Real.D"
+  ],
+  "dependency_items": [
+    "2.5",
+    "3.1",
+    "6.4",
+    "6.5"
+  ],
+  "input_data": [
+    "ReferenceRootInput"
+  ],
+  "typed_coverage": "Explicit §6.12 analytic weight, actual real integral entries, and a positive reference-root equation. Integrability is isolated without assuming Gram positivity, an effective rational approximation, or valuation preservation.",
+  "missing_domain_interfaces": "The beta rational functional and its equality to these integrals; beta derivative diagonalization; a quantitative spectral margin and continuity modulus; an effective rational selection; all q-adic models.",
+  "repair_gates": [
+    "Resolve the manuscript’s missing labels and its incompatible integer-square/odd-square parameter conventions.",
+    "Prove the reference Gram margin and an effective perturbation bound before constructing r_K.",
+    "The q-adic side requires the actual nonzero residue exclusions and both stated prime regimes; do not assume the desired determinant valuation."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.12",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
