@@ -31,19 +31,19 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 8 | 3.4 | Root interlacing and Dodgson condensation | — **printed root-count requires repair** | `!!` A-Tier, **subclaim**; repair |
 | 9 | 3.5 | Stieltjes J-fraction from interlacing roots | — **printed J-fraction false** | `!!` A-Tier, **subclaim**; repair |
 | 10 | 3.6 | Stieltjes reciprocal-root power sums | — **printed all-order strictness false** | `!!` Corrected **weighted finite-atomic determinant iff order≤distinct support**; printed all-order positivity false |
-| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` Derivative Turán/Newton, strict center bound **and no two adjacent centered coefficients vanish**; each individual coefficient nonzero still open |
+| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` Turán/Newton, strict center, no two adjacent centered coefficients zero, and **actual derivative Rolle separation**; individual nonvanishing open |
 | 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` Actual symmetric whitened/pole operator characteristic polynomial **and full root-multiset equality**; orthogonal CD kernel open |
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` A-Tier, **conditional only** |
+| 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` Conditional transfer, effective-onset variant and **complex-root separation ⇒ integer polynomial factor-two comparison**; actual root gap open |
 | 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
+| 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` **A-Tier original** | `!!` Complete companion ultrametric disk, plus **actual primitive-polynomial specialization under explicit p-adic center/radius hypotheses**; local import open |
 | 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Positive primitive integer ζ5 polynomial, actual 30n family, finite pole-log and adjacent log-ratio identities; **uniform decay/multiplier missing** |
 | 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | — **open as printed** | `!!` Finite positive determinant reweighting; coupled ζ5/ζ3 arithmetic open |
 | 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` Exact original content–Gram/Vandermonde-pole log conservation; **K²-rate and direction repair open** |
-| 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` Actual spectral exponent counting (cap/average conditional) and **large exponent ⇒ root within exp(-τ)**; K-uniform bounds open |
 | 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` Exact **dual C Cᵀ nullspace = coefficient left kernel** and iff positive/row separation; 2D Beukers integral open |
-| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` Full finite part (1), rank-one ±ζ7 and finite **pure-sign-channel** Krein models; actual infinite signed tails open |
+| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` Finite 5.2(1), h=1 signed ζ7 examples, **summable infinite-mode algebraic Krein polarization**; actual Beukers integral and infinite cone tails open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | — (whole item completed) |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
@@ -78,6 +78,8 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 **Six further source-level verification rounds:** [principal-versus-mixed minors, sharp finite-Hankel rank, symmetric pole spectra and dual S.O.S. sweep](docs/ROUND_AUDIT_2026-10-26_PRINCIPAL_MIXED_AND_DUAL.md). The tracker now explicitly crosses the **precise** principal Gram theorem, weighted rank threshold, root-multiset equality, finite signed-channel hypotheses, finite multiweight strict Turán and odd-square parity identities. Each remains separate from the unproved stronger analytic or arithmetic claim. The [machine-readable crossing ledger](docs/CROSSINGS_MACHINE_2026-10-26.json) records their pinned source hashes and passing module receipt.
 
 **Latest six-round proof-source sweep:** [principal-versus-mixed minor positivity, the exact weighted finite-rank threshold, the symmetric pole root multiset, dual signed finite cones, and strict finite multiweight Turán](docs/ROUND_AUDIT_2026-10-26_PRINCIPAL_MIXED_AND_DUAL.md) are now individually crossed at the *subtheorem* level. The [machine-readable ledger](docs/CROSSINGS_MACHINE_2026-10-26.json) records **18 pinned, source-hashed, passing module entries**; this is neither a count of whole manuscript theorems nor evidence that the sources were newly compiled in this documentation turn.
+
+**Reinference finding before saturation:** a new source-hash index now covers 22 pre-existing audited companion modules, including the actual 4.7 exponent-to-root transfer, 4.1 factor-two integer-polynomial comparison, 3.7 Rolle separation and 5.2 summable-mode Krein algebra. This is **newly catalogued evidence, not newly compiled Lean code**. Track no-delta passes separately using the convergence receipt.
 
 ### More completed subclaims uncovered in the 26 October repeat audit
 
