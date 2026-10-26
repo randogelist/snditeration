@@ -4,6 +4,7 @@ import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 import Mathlib.LinearAlgebra.Vandermonde
 import Mathlib.Topology.Instances.Matrix
 import Mathlib.Topology.Order.IntermediateValue
+import Mathlib.Data.Fin.Tuple.Sort
 
 /-!
 # Sparse monomials form a Chebyshev system on the positive half-line
@@ -32,7 +33,7 @@ theorem signVariations_lt_support_card (P : ℝ[X]) (hP : P ≠ 0) :
     by_cases he : P.eraseLead = 0
     · have hc := Polynomial.card_support_eq_one_of_eraseLead_eq_zero hP he
       have hs : SignType.sign P.leadingCoeff ≠ 0 := by
-        simpa only [sign_eq_zero_iff, Polynomial.leadingCoeff_eq_zero] using hP
+        exact _root_.sign_ne_zero.mpr (Polynomial.leadingCoeff_ne_zero.mpr hP)
       rw [Polynomial.signVariations_eq_eraseLead_add_ite hP]
       have hn1 : n = 1 := by omega
       simpa [he, hs, hn1]
@@ -218,5 +219,48 @@ theorem generalized_vandermonde_det_pos {n : ℕ} (e : Fin n → ℕ)
   obtain ⟨t, ht, hz⟩ := intermediate_value_Icc' (by norm_num : (0 : ℝ) ≤ 1)
     hF.continuousOn (show (0 : ℝ) ∈ Set.Icc (F 1) (F 0) from ⟨hnonpos, h0.le⟩)
   exact hnz t ht hz
+
+/-- The two determinants in Andréief's integrand have the same orientation.
+Sorting the nodes multiplies both determinants by the same permutation sign,
+which cancels in their product. -/
+theorem generalized_vandermonde_product_pos {n : ℕ} (e f : Fin n → ℕ)
+    (he : StrictMono e) (hf : StrictMono f) (x : Fin n → ℝ)
+    (hx : Function.Injective x) (hpos : ∀ i, 0 < x i) :
+    0 < Matrix.det (fun i j : Fin n => x i ^ e j) *
+      Matrix.det (fun i j : Fin n => x i ^ f j) := by
+  classical
+  let σ := Tuple.sort x
+  have hs : StrictMono (x ∘ σ) :=
+    (Tuple.monotone_sort x).strictMono_of_injective (hx.comp σ.injective)
+  have hsp (i : Fin n) : 0 < (x ∘ σ) i := hpos (σ i)
+  have hp := mul_pos (generalized_vandermonde_det_pos e he (x ∘ σ) hs hsp)
+    (generalized_vandermonde_det_pos f hf (x ∘ σ) hs hsp)
+  have hde : Matrix.det (fun i j : Fin n => (x ∘ σ) i ^ e j) =
+      (Equiv.Perm.sign σ : ℝ) * Matrix.det (fun i j : Fin n => x i ^ e j) :=
+    Matrix.det_permute σ _
+  have hdf : Matrix.det (fun i j : Fin n => (x ∘ σ) i ^ f j) =
+      (Equiv.Perm.sign σ : ℝ) * Matrix.det (fun i j : Fin n => x i ^ f j) :=
+    Matrix.det_permute σ _
+  rw [hde, hdf] at hp
+  rcases Int.units_eq_one_or (Equiv.Perm.sign σ) with hsign | hsign
+  · simpa [hsign] using hp
+  · simpa [hsign] using hp
+
+/-- Nonnegative Andréief integrand for all positive nodes, including collisions.
+At a collision a repeated matrix row makes the product zero. -/
+theorem generalized_vandermonde_product_nonneg {n : ℕ} (e f : Fin n → ℕ)
+    (he : StrictMono e) (hf : StrictMono f) (x : Fin n → ℝ)
+    (hpos : ∀ i, 0 < x i) :
+    0 ≤ Matrix.det (fun i j : Fin n => x i ^ e j) *
+      Matrix.det (fun i j : Fin n => x i ^ f j) := by
+  classical
+  by_cases hx : Function.Injective x
+  · exact (generalized_vandermonde_product_pos e f he hf x hx hpos).le
+  · obtain ⟨i, j, hij, hne⟩ := Function.not_injective_iff.mp hx
+    have hz : Matrix.det (fun i j : Fin n => x i ^ e j) = 0 := by
+      apply Matrix.det_zero_of_row_eq hne
+      funext k
+      rw [hij]
+    rw [hz, zero_mul]
 
 end ManuscriptChain.MixedMomentAllOrders

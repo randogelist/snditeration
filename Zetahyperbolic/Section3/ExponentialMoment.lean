@@ -1,6 +1,7 @@
 import Zetahyperbolic.Section3.MomentGrowth
 import Zetahyperbolic.Section3.MomentSquareRoot
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+import Mathlib.Analysis.SpecificLimits.Normed
 import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
 /-! A shifted factorial Stieltjes bound gives genuine exponential integrability
@@ -31,10 +32,12 @@ theorem summable_factorial_cosh_majorant (C : ℝ) (A : ℕ) :
     (R := ℝ) A (r := (1/2 : ℝ)) (by norm_num)
   have hi : Function.Injective (fun n : ℕ => 2*n) := by
     intro a b hab
+    change 2*a = 2*b at hab
     omega
   have hs := (h.comp_injective hi).mul_left C
-  convert hs using 1
-  ext n
+  apply hs.congr
+  intro n
+  dsimp only [Function.comp_def]
   rw [show (1/2 : ℝ)^(2*n) * (C * (Nat.factorial (2*n+A) : ℝ)) /
       (Nat.factorial (2*n) : ℝ) =
       C * ((Nat.factorial (2*n+A) : ℝ) / (Nat.factorial (2*n) : ℝ)) *
@@ -78,7 +81,9 @@ theorem integrable_exp_sqrt_of_factorial {μ : Measure ℝ} [IsFiniteMeasure μ]
     apply tsum_congr
     intro n
     dsimp [F]
-    rw [mul_pow, pow_mul, Real.sq_sqrt ht]
+    have hsqrt : Real.sqrt t ^ (2*n) = t^n := by
+      rw [pow_mul, Real.sq_sqrt ht]
+    rw [mul_pow, hsqrt]
   have heq := integral_tsum_of_summable_integral_norm hFint hs
   rw [integral_congr_ae hseries] at heq
   have hs' : Summable (fun n => ∫ t, F n t ∂μ) :=

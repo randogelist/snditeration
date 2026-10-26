@@ -67,8 +67,8 @@ theorem measure_eq_of_moments_of_exponential_neighbourhood
     refine ⟨fun n => (xs n : ℂ), ?_, he⟩
     rw [tendsto_nhdsWithin_iff] at hx ⊢
     constructor
-    · rw [Filter.tendsto_ofReal_iff]
-      exact hx.1
+    · simpa only [Complex.ofReal_zero] using
+        (Complex.continuous_ofReal.tendsto (0 : ℝ)).comp hx.1
     · simpa using hx.2
   have heq := AnalyticOnNhd.eqOn_of_preconnected_of_frequently_eq
     hA hB hU hzero hcomplex

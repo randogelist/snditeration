@@ -54,18 +54,20 @@ theorem beta_ordered_limit :
 
 theorem beta_one_irrational : Irrational (moment 0) := by
   rw [moment_zero]
-  simpa using Real.irrational_pi.div_natCast (n := 4) (by norm_num)
+  simpa using Irrational.div_natCast Real.irrational_pi (n := 4) (by norm_num)
 
 theorem moment_one : moment 1 = Real.log 2 / 2 := by
   have hd (x : ℝ) : HasDerivAt (fun y : ℝ => Real.log (1+y^2) / 2)
       (x / (1+x^2)) x := by
-    have h := (((hasDerivAt_id x).pow 2).const_add 1).log
-      (by positivity : (1:ℝ)+x^2 ≠ 0)
-    convert h.div_const 2 using 1 <;> ring
+    have hd0 : HasDerivAt (fun y : ℝ => 1+y^2) (2*x) x := by
+      simpa only [Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub, pow_one,
+        mul_one] using ((hasDerivAt_id x).pow 2).const_add 1
+    convert (hd0.log (by positivity : (1:ℝ)+x^2 ≠ 0)).div_const 2 using 1 <;> ring
   have hi := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (a := (0:ℝ)) (b := (1:ℝ)) (fun x _ => hd x)
     (by simpa only [pow_one] using (integrand_continuous 1).intervalIntegrable 0 1)
-  simpa [moment] using hi
+  norm_num [moment] at hi ⊢
+  exact hi
 
 /-- The integral recurrence proves all-order moments without interchanging
 an alternating series at its endpoint. -/
@@ -78,7 +80,9 @@ theorem moment_add_two (m : ℕ) :
     ring
   unfold moment
   simp_rw [he]
-  rw [intervalIntegral.integral_sub ((continuous_id.pow m).intervalIntegrable 0 1)
+  have hp : IntervalIntegrable (fun x : ℝ => x^m) volume 0 1 :=
+    (show Continuous (fun x : ℝ => x^m) by fun_prop).intervalIntegrable 0 1
+  rw [intervalIntegral.integral_sub hp
     ((integrand_continuous m).intervalIntegrable 0 1), integral_pow]
   simp
 
@@ -102,7 +106,7 @@ theorem even_moment (r : ℕ) :
 theorem odd_moment (r : ℕ) :
     moment (2*r+1) = ((-1:ℝ)^r / 2) * (Real.log 2 - etaPartialSum r) := by
   induction r with
-  | zero => simpa [etaPartialSum] using moment_one
+  | zero => simpa [etaPartialSum, div_eq_mul_inv, mul_comm] using moment_one
   | succ r ih =>
     rw [show 2*(r+1)+1 = (2*r+1)+2 by omega, moment_add_two, ih]
     simp only [etaPartialSum, Finset.sum_range_succ, pow_succ, Nat.cast_add,
@@ -126,9 +130,11 @@ theorem moment_pos (m : ℕ) : 0 < moment m := by
 
 /-- A quantitative tail bound for every moment of the actual beta-one density. -/
 theorem moment_le (m : ℕ) : moment m ≤ 1 / ((m:ℝ)+1) := by
-  have h := intervalIntegral.integral_mono_on (by norm_num : (0:ℝ) ≤ 1)
-    ((integrand_continuous m).intervalIntegrable 0 1)
-    ((continuous_id.pow m).intervalIntegrable 0 1)
+  have hp : IntervalIntegrable (fun x : ℝ => x^m) volume 0 1 :=
+    (show Continuous (fun x : ℝ => x^m) by fun_prop).intervalIntegrable 0 1
+  have hi : IntervalIntegrable (fun x : ℝ => x^m / (1+x^2)) volume 0 1 :=
+    (integrand_continuous m).intervalIntegrable 0 1
+  have h := intervalIntegral.integral_mono_on (by norm_num : (0:ℝ) ≤ 1) hi hp
     (show ∀ x ∈ Icc (0:ℝ) 1, x^m / (1+x^2) ≤ x^m from fun x hx => by
       apply (div_le_iff₀ (by positivity : (0:ℝ)<1+x^2)).2
       nlinarith [mul_nonneg (pow_nonneg hx.1 m) (sq_nonneg x)])
@@ -138,5 +144,21 @@ theorem moment_le (m : ℕ) : moment m ≤ 1 / ((m:ℝ)+1) := by
 theorem moment_tendsto_zero : Tendsto moment atTop (𝓝 0) :=
   squeeze_zero (fun m => (moment_pos m).le) moment_le
     tendsto_one_div_add_atTop_nhds_zero_nat
+
+/-- Eta-one is the ordered alternating harmonic limit log 2. -/
+theorem eta_ordered_limit : Tendsto etaPartialSum atTop (𝓝 (Real.log 2)) := by
+  apply tendsto_iff_norm_sub_tendsto_zero.2
+  have hg : Tendsto (fun r : ℕ => 2*r+1) atTop atTop := by
+    apply tendsto_atTop.2
+    intro b
+    exact ⟨b, fun n hn => by omega⟩
+  have hlim := (moment_tendsto_zero.comp hg).const_mul 2
+  have he (r : ℕ) : ‖etaPartialSum r - Real.log 2‖ = 2 * moment (2*r+1) := by
+    have h := congrArg abs (odd_moment r)
+    have hs : |(-1:ℝ)^r / 2| = 1/2 := by simp
+    rw [abs_of_pos (moment_pos _), abs_mul, hs] at h
+    rw [Real.norm_eq_abs, abs_sub_comm]
+    linarith
+  simpa only [Function.comp_apply, mul_zero, ← he] using hlim
 
 end ManuscriptChain.BetaOneMoments
