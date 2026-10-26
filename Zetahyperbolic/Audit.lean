@@ -284,3 +284,10 @@ run_cmd do
 #print axioms ManuscriptChain.PotentialGap.lower_decay_bound_counterexample
 #print axioms ManuscriptChain.PotentialGap.evaluation_upper_gives_rate_lower
 #print axioms ManuscriptChain.PotentialGap.evaluation_lower_gives_rate_upper
+
+-- Generic ultrametric integer-polynomial disk reused from frozen PR15.
+#print axioms ManuscriptChain.Ultrametric.norm_eval_le_one
+#print axioms ManuscriptChain.Ultrametric.norm_eval_sub_le
+#print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.eval_ne_zero_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.padicComplex_zero_free_disk
