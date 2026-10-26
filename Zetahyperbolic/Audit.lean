@@ -207,6 +207,18 @@ run_cmd do
 #print axioms ManuscriptChain.Tau.evenPolePair_one
 #print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
 
+-- Independent local A-tier support of printed 3.7: exact actual-family declarations.
+#print axioms ManuscriptChain.NewtonTuran.Actual.spectral_polynomial_splits
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_hasDistinctRoots
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_laguerre
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_consecutive_nonvanishing
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_newton_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_laguerre_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_nonnegative
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_strict
+
 -- P05.01 actual two-variable ζ(7) Beukers moments
 #print axioms ManuscriptChain.Beukers.integral_logMonomial
 #print axioms ManuscriptChain.Beukers.integral_momentTerm

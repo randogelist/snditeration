@@ -62,4 +62,5 @@ import Zetahyperbolic.Section3.NewtonTuran
 import Zetahyperbolic.Section3.ContinuousMeasure
 
 import Zetahyperbolic.Section5.EvenPoleCancellation
+import Zetahyperbolic.Section3.ActualNewtonTuran
 import Zetahyperbolic.Section5.BeukersMomentSeries
