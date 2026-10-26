@@ -156,3 +156,5 @@ import Zetahyperbolic.Section6.OuterPrimePadicBlock
 
 import Zetahyperbolic.Section6.OuterPrimePadicReduction
 import Zetahyperbolic.Section6.Theorem61
+
+import Zetahyperbolic.Section6.OuterPrimePencilIdentification

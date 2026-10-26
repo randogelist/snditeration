@@ -730,3 +730,6 @@ run_cmd do
 
 #print axioms ManuscriptChain.Beukers.theorem_6_1_corrected_local
 #print axioms ManuscriptChain.Beukers.padicLocalMatrix_scaled_reduction
+
+#print axioms ManuscriptChain.Beukers.padicLocalMatrix_eq_monomial_pencil
+#print axioms ManuscriptChain.Beukers.rationalLocalMatrix_eq_monomial_pencil
