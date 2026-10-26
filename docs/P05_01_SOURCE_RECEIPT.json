@@ -1,0 +1,40 @@
+{
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "checkpoint": "P05_01_TWO_VARIABLE_BEUKERS_MOMENTS",
+  "tier": "A_TIER_EXACT_LOCAL",
+  "manuscript": "Theorem 5.1 (5.1),(5.2) 52-page PDF 2026-10-21",
+  "branch": "feat/zetahyperbolic-p05-01-beukers-moments",
+  "proof_source_sha": "08d308a22ebe1cc31dfad61b3e875b192290bf17",
+  "merge_sha": "1ae34f2bc30135460c357f4efffe1fdbb93d5009",
+  "CI": {
+    "run": 40267850777,
+    "job": 121394042966,
+    "build": "PASS",
+    "build_jobs": 8783,
+    "axioms": "PASS",
+    "placeholders": "PASS"
+  },
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "exact_conclusion": "For all r,t natural numbers, the actual strictly positive Beukers density moment equals ζ(7)-H_r^(7) if r=t, and (H_r^(6)-H_t^(6))/(6*(r-t)) otherwise.",
+  "decls": [
+    "ManuscriptChain.Beukers.integral_density_moment_series",
+    "ManuscriptChain.Beukers.diagonal_moment",
+    "ManuscriptChain.Beukers.offdiagonal_moment",
+    "ManuscriptChain.Beukers.theorem_5_1_exact_moments",
+    "ManuscriptChain.Beukers.density_strictly_positive_on_square",
+    "ManuscriptChain.Beukers.density_measurable"
+  ],
+  "open_next": "Theorem 5.2(2) actual infinite Krein decomposition and convergence/tail controls.",
+  "new_lean_modules": [
+    "Zetahyperbolic/Section5/BeukersMomentSeries.lean",
+    "Zetahyperbolic/Section5/BeukersOffDiagonal.lean",
+    "Zetahyperbolic/Section5/BeukersDensity.lean"
+  ],
+  "compiler": "Lean 4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "new_target_started": false
+}
