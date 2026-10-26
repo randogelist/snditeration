@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_item": "3.8",
+  "module_key": "P03_08",
+  "branch": "experiment/zetahyperbolic-p03-08_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P03_08.laplace_density_hasDerivAt",
+      "meaning": "For every natural k and positive tau,y, the displayed infinite exponential density has the displayed termwise tau derivative.",
+      "dependencies": [
+        "Explicit laplaceTerm/density/densityDerivative definitions",
+        "Termwise parameter differentiation and convergence of the actual exponential series"
+      ]
+    },
+    {
+      "name": "Experimental.P03_08.laplace_moment_local_domination",
+      "meaning": "For every actual admissible tuple p, every moment order e and positive tau0, an epsilon<tau0 and one integrable majorant dominate the actual moment and its proposed derivative uniformly on that neighborhood.",
+      "dependencies": [
+        "Definition 2.1 denominator polynomials and actual p",
+        "Exponential-tail estimates, rational-weight polynomial growth, local integrability at zero"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P03_08",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "995195fdf6da232efcb01fe769c878cfa942fe390a5cef24c351145f706fbb8e",
+    "Assumptions.json": "831c0c5e71871ad3d33f62f9084cdc9c40fb7597fa2c5bf95b761b5c3366f21b",
+    "Target.md": "001b149c0eec03909086dce1a0dc7033bc8ee6092b014d749b14f26fe32e67f2",
+    "Work.lean": "53f503e29d41ee224187098abcb9d3e6d592d6a4189a9a132dd2b232aa79f574"
+  },
+  "audit_sha256": "6a7ab229b771cac3dde2ada2239da5bbc35c2c4b71fbda4d1fce640ce46da028",
+  "original_statement_sha256": "4a6495209d3fc5d987a49fd82338e06e81474094484f8df886d3106773bfe55f",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

@@ -1,0 +1,71 @@
+{
+  "id": "P03_08",
+  "paper_id": "3.8",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P03_08",
+  "publication_path": "Experimental/P03_08",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_08.laplace_density_hasDerivAt",
+      "meaning": "For every natural k and positive tau,y, the displayed infinite exponential density has the displayed termwise tau derivative.",
+      "dependencies": [
+        "Explicit laplaceTerm/density/densityDerivative definitions",
+        "Termwise parameter differentiation and convergence of the actual exponential series"
+      ],
+      "supports": "3.8(2) moment differentiation, not the determinant/Jacobi target"
+    },
+    {
+      "name": "Experimental.P03_08.laplace_moment_local_domination",
+      "meaning": "For every actual admissible tuple p, every moment order e and positive tau0, an epsilon<tau0 and one integrable majorant dominate the actual moment and its proposed derivative uniformly on that neighborhood.",
+      "dependencies": [
+        "Definition 2.1 denominator polynomials and actual p",
+        "Exponential-tail estimates, rational-weight polynomial growth, local integrability at zero"
+      ],
+      "supports": "3.8(2) dominated parameter integration; no determinant formula is an assumption"
+    }
+  ],
+  "proved_upstream_aliases": [
+    {
+      "name": "Experimental.P03_08.base_gram_positive",
+      "source": "ManuscriptChain.GRAM_POSITIVE",
+      "paper_dependency": "3.1 / odd-weight moment realization"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P03_08.laplace_density_hasDerivAt",
+    "Experimental.P03_08.laplace_moment_local_domination"
+  ],
+  "full_target_proved": false,
+  "original_statement_preserved": true,
+  "scope": "The exact displayed Laplace series and actual D_N(y^2)^(2m)/D_K(y^2) rational weight are defined. The two new inputs support parameter differentiation of moments only. The determinant derivative and CD spectral identity remain targets.",
+  "missing_interfaces_and_limits": "The definition uses the paper's odd-weight Laplace normalization, with the zeta evaluation point to remain fixed. No existing unimported ChristoffelDarboux or LaplaceJacobiIdentity candidate is imported. Missing interfaces: tau=1 density identification, measurability, deformed moment measure/Gram, actual monic orthogonal polynomials and integral squared norms, CD inverse-Gram identification, pole operator, characteristic polynomial comparison, and matrix logarithmic derivative assembly. The two analytic inputs deliberately support only part (2); part (1) starts from the imported actual positive Gram and algebraic slope facts.",
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "discharge_policy": "Replace each new axiom by proof of the identical quantified statement; compile and audit each changed module and its dependent graph. Never merge axiom-dependent conclusions into certified main. A proof consuming a new axiom is conditional experimental work, not new A-Tier evidence.",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p03-08_construction",
+  "axioms": [
+    {
+      "name": "Experimental.P03_08.laplace_density_hasDerivAt",
+      "meaning": "For every natural k and positive tau,y, the displayed infinite exponential density has the displayed termwise tau derivative.",
+      "dependencies": [
+        "Explicit laplaceTerm/density/densityDerivative definitions",
+        "Termwise parameter differentiation and convergence of the actual exponential series"
+      ],
+      "supports": "3.8(2) moment differentiation, not the determinant/Jacobi target"
+    },
+    {
+      "name": "Experimental.P03_08.laplace_moment_local_domination",
+      "meaning": "For every actual admissible tuple p, every moment order e and positive tau0, an epsilon<tau0 and one integrable majorant dominate the actual moment and its proposed derivative uniformly on that neighborhood.",
+      "dependencies": [
+        "Definition 2.1 denominator polynomials and actual p",
+        "Exponential-tail estimates, rational-weight polynomial growth, local integrability at zero"
+      ],
+      "supports": "3.8(2) dominated parameter integration; no determinant formula is an assumption"
+    }
+  ]
+}
