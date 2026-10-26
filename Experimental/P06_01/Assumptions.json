@@ -1,0 +1,47 @@
+{
+  "item_id": "6.1",
+  "namespace": "Experimental.P06_01",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-01_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Beukers.diagonal_moment",
+    "ManuscriptChain.Beukers.offdiagonal_moment",
+    "ManuscriptChain.Beukers.theorem_5_1_exact_moments"
+  ],
+  "dependency_ids": [
+    "5.1"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_01.harmonic_residual_p_integral",
+      "meaning": "All non-p-multiple terms of the actual finite harmonic sum have p-integral residual.",
+      "dependency_ids": [
+        "5.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "6.1 finite arithmetic / 5.1"
+    },
+    {
+      "name": "Experimental.P06_01.fiber_integrand_integrable",
+      "meaning": "Integrability of the actual transformed polynomial kernel, before proving Jacobian substitution.",
+      "dependency_ids": [
+        "5.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.1"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "No repair is silently substituted for the verbatim target.",
+  "coverage": "Encodes the actual unit-square moments, proposed fiber map, transformed integrand and finite harmonic residual. Existing monomial moment identities are imported, not axiomatized.",
+  "remaining": "Prove the fiber change-of-variables/Jacobian theorem and Mellin divided-difference formula; discharge harmonic residual integrality; derive exact crossing-index valuation and invertibility of the displayed local leading block. No determinant valuation is a prerequisite axiom.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 29,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}
