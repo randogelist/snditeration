@@ -162,3 +162,8 @@ run_cmd do
 #print axioms PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGER_COMPLEX_PADIC
 #print axioms ManuscriptChain.proposition_4_3_complex_padic_disk
 #print axioms ManuscriptChain.primitivePolynomial_complex_padic_disk
+
+#print axioms ManuscriptChain.Tau.reciprocal_even_derivative
+#print axioms ManuscriptChain.Tau.poleSpan_normalized_derivative
+#print axioms ManuscriptChain.Tau.poleElement_coefficient_eq_analytic
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_poles
