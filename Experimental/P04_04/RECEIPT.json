@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "paper_item": "4.4",
+  "module_key": "P04_04",
+  "branch": "experiment/zetahyperbolic-p04-04_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P04_04.fauzan_multiplier_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "EXTERNAL_FAUZAN_2026_PRIME_MULTIPLIER",
+        "P02_04"
+      ]
+    },
+    {
+      "name": "Experimental.P04_04.fauzan_gram_energy_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "EXTERNAL_FAUZAN_2026_ENERGY",
+        "P03_01"
+      ]
+    },
+    {
+      "name": "Experimental.P04_04.negative_node_polynomial_bound",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "EXTERNAL_DLMF_18_10_5_LEGENDRE"
+      ]
+    }
+  ],
+  "axiom_count": 3,
+  "namespace": "Experimental.P04_04",
+  "paper_reference_items": [
+    "2.5",
+    "4.1"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "46850642bcafe94158a53068b91e9108a29e9cda4d1db5e1fc92913b2381ed2d",
+    "Assumptions.json": "91950cfe80be11b8c57a3917191825cf03ea80f905b9d50f2193852f3d61d7ff",
+    "Target.md": "e2fecf176272f522fdaac03a7464bd1f6cc0137746ecd1200b3f867b63d31795",
+    "Work.lean": "5751f6285b8c16f079f82f6604d8b1e3369f3bb97ac0a3e28de93a4fc9e8f4ec"
+  },
+  "audit_sha256": "003b94a37b6c6025937bb22ca0f1ce5eb731a6b665b7b48d6acd080df05b9fdd",
+  "original_statement_sha256": "104490d56f81f602ad8899467c48c5bbb131bbc4f548679da87fbf52d309f1aa",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

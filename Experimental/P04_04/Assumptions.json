@@ -1,0 +1,59 @@
+{
+  "id": "P04_04",
+  "manuscript_id": "4.4",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "full_name": "Experimental.P04_04.fauzan_multiplier_input",
+      "math_meaning": "Positive rational multiplier, coefficient integrality for the actual S_K Δ_K, and its separate upper logarithmic rate from cited Fauzan [5]. Does not assert the target spectral cap, decay of Q as a combined conclusion, or irrationality.",
+      "dependency_ids": [
+        "EXTERNAL_FAUZAN_2026_PRIME_MULTIPLIER",
+        "P02_04"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_04.fauzan_gram_energy_input",
+      "math_meaning": "Separate normalized actual Gram determinant upper rate 2.32380 attributed to Fauzan [5].",
+      "dependency_ids": [
+        "EXTERNAL_FAUZAN_2026_ENERGY",
+        "P03_01"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_04.negative_node_polynomial_bound",
+      "math_meaning": "Classical finite-degree polynomial evaluation bound outside a positive interval in terms of its actual L² integral; supports the spectral argument only.",
+      "dependency_ids": [
+        "EXTERNAL_DLMF_18_10_5_LEGENDRE"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    }
+  ],
+  "verified_upstream_refs": [
+    "ManuscriptChain.Real.delta_eval_eq_det_gram",
+    "ManuscriptChain.GRAM_POSITIVE",
+    "ManuscriptChain.PoleDiagonalization.delta_natDegree",
+    "ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK",
+    "ManuscriptChain.Section4EffectiveBudget.manuscript_effective_rate_margins"
+  ],
+  "dependency_ids": [
+    "P02_04",
+    "P02_05",
+    "P03_01",
+    "P04_01",
+    "EXTERNAL_FAUZAN_2026",
+    "EXTERNAL_DLMF_18_10_5"
+  ],
+  "coverage": "The exact weight-five parameter lattice and printed S_K are defined, with separate arithmetic, energy and finite-polynomial analytic prerequisites. None assumes the theorem’s operator norm bound or rational approximation measure.",
+  "repair_or_interface_gates": [
+    "Read and verify the actual Fauzan [5] source, including exact parameter family, multiplier prime exponents and effective cutoffs; the citation alone does not certify either axiom.",
+    "The existential multiplier is not an implementation of m_{K,100000}=∏p^{-L_p}. Reconstruct that raw arithmetic object and its q-adic proof before claiming the explicit original normalization.",
+    "Prove the finite polynomial bound from the correct Legendre normalization and actual integrals, then derive the Gram lower bound, exact residue factorial formula, uniform Stirling envelopes and certified scalar maximizer bound.",
+    "Replace eventual source rates by explicit onsets/rational error budgets before claiming the effective b₀. Keep this experimental source outside the verified umbrella."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}
