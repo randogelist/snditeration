@@ -1710,13 +1710,14 @@
       "status": "genuinely blocked",
       "baseline_register_status": "REPAIR / OPEN",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "negative_direction_and_independent_q_adic_gap",
-      "reason": "A recorded external rational h=4 negative direction contradicts the printed cone argument; it is not yet a Lean replay. The q-adic part has an independent missing actual local reduction.",
-      "required_to_finish": "Replay the exact certificate or construct a genuinely different restricted cone with certified tails; separately prove actual residue determinant nonvanishing.",
+      "reason": "Part (1) proves the actual q-dimensional paired determinant valuation -7q for every prime q≥5 and every q-integral rational X, with actual Beukers integral identification. Part (2) is refuted by an independently replayed exact h=4 negative direction; that replay is not Lean certification.",
+      "required_to_finish": "Replace the false positive-cone construction and prove quantitative negative-tail control; preserve exact part (1) independently.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1740,20 +1741,30 @@
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_03.upstream_harmonic_residual_p_integral"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Part (1) proves the actual q-dimensional paired determinant valuation -7q for every prime q≥5 and every q-integral rational X, with actual Beukers integral identification. Part (2) is refuted by an independently replayed exact h=4 negative direction; that replay is not Lean certification.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.4",
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN; source partial",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "beta_functional_normalization",
-      "reason": "Finite character cancellation is insufficient before the actual secant-kernel functional and its moment/pole calibration are established.",
-      "required_to_finish": "Prove boundary decay, integration by parts and coherent normalization, then actual positivity and rational coefficient identification.",
+      "reason": "Actual surviving odd-square residues, partial fractions, positive slope and full real spectrum are verified for the rational pencil. The printed differential coupling is negative; an explicit corrected positive expression is proved. Actual beta integral calibration remains open.",
+      "required_to_finish": "Repair and prove the actual monomial and simple-pole beta integral calibration; the corrected differential expression alone does not identify the claimed arithmetic coupling.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1778,20 +1789,30 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_04.beta_kernel_boundary_decay",
         "Experimental.P06_04.beta_kernel_derivative_integrable"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual surviving odd-square residues, partial fractions, positive slope and full real spectrum are verified for the rational pencil. The printed differential coupling is negative; an explicit corrected positive expression is proved. Actual beta integral calibration remains open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.5",
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "actual_beta_unit_blocks_missing",
-      "reason": "The actual beta pencil and selected-prime reduction are missing; residual integrality is not determinant-unitness.",
-      "required_to_finish": "Use the calibrated6.4 pencil and verify nonzero determinant of its scaled reduction, with scaling valuation explicit.",
+      "reason": "Actual integer quotient, odd-prime Euler-moment integrality and weight-4 pole norms are proved. The complete selected-prime Lagrange matrix and determinant valuation remain open.",
+      "required_to_finish": "Prove actual tail-derivative units, prefix norms, integral unimodular Lagrange congruence and the full determinant valuation -(3m_q-2).",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1815,7 +1836,16 @@
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_05.beta_harmonic_residual_p_integral"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual integer quotient, odd-prime Euler-moment integrality and weight-4 pole norms are proved. The complete selected-prime Lagrange matrix and determinant valuation remain open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.6",
@@ -1860,13 +1890,14 @@
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "multiweight_L2_and_signed_subspaces",
-      "reason": "Finite signed mode algebra does not provide arbitrary-L² convergence, infinite definite subspaces or q-adic nonvanishing.",
-      "required_to_finish": "Calibrate actual multiweight moments and absolute convergence, extend continuously, and separately prove cone and local valuation inputs.",
+      "reason": "Actual multiweight rational pencil has slope CCᵀ, full degree h and all complex roots real for independent rational polynomials. Fixed-K positive/negative h-cones are impossible when 2h>K+1. Infinite Krein convergence and top-weight determinant remain separate.",
+      "required_to_finish": "Repair the fixed-degree cone quantifiers, prove actual arbitrary-L² convergence and definite-subspace construction, and prove the independent top-active-weight determinant.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1891,7 +1922,16 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_07.coupled_kernel_square_integrable",
         "Experimental.P06_07.modes_absolute_integral_summable"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual multiweight rational pencil has slope CCᵀ, full degree h and all complex roots real for independent rational polynomials. Fixed-K positive/negative h-cones are impossible when 2h>K+1. Infinite Krein convergence and top-weight determinant remain separate.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.8",
@@ -2024,14 +2064,15 @@
       "status": "genuinely blocked",
       "baseline_register_status": "REPAIR; component `!!`",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "missing_limits_and_wrong_rate_direction",
-      "reason": "The companion now proves the sharp finite coefficient-Gram Hadamard bound. Actual equilibrium/potential limits and strict reweighting remain open, and a lower decay bound cannot imply the printed >581 ratio.",
-      "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; preserve the verified finite bounds and conditional growth results.",
+      "reason": "Exact finite Hadamard bound and zero quadratic log growth are proved for actual independent integer polynomials, all real A≥0 and h=floor(lambda*K), with actual dual-slope identification. Part (1)'s equilibrium limits, strict reweighting and numerical ratio remain open or require repair.",
+      "required_to_finish": "Establish actual equilibrium/potential limits and strict reweighting under exact hypotheses; repair the decay/height-ratio inference in part (1).",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
-        "Inspected newly successful companion source and complete transitive audit: Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses. This component is not destination integration. Equilibrium/potential limits and the strict quantitative gap remain required."
+        "Inspected newly successful companion source and complete transitive audit: Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses. This component is not destination integration. Equilibrium/potential limits and the strict quantitative gap remain required.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2094,7 +2135,16 @@
           "reason": "Finite conservation and conditional polynomial coefficient-Gram growth do not supply equilibrium limits or strict reweighting. A lower decay bound does not imply the printed >581 ratio.",
           "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; retain existing finite and conditional growth lemmas."
         }
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Exact finite Hadamard bound and zero quadratic log growth are proved for actual independent integer polynomials, all real A≥0 and h=floor(lambda*K), with actual dual-slope identification. Part (1)'s equilibrium limits, strict reweighting and numerical ratio remain open or require repair.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.11",
@@ -2175,13 +2225,14 @@
       "status": "genuinely blocked",
       "baseline_register_status": "REPAIR / OPEN; source partial",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "differentiated_series_sign",
-      "reason": "The printed Laplace series omits a global(-1)^(k-1) factor; finite operator algebra cannot justify differentiated infinite series.",
-      "required_to_finish": "Use corrected sign, prove locally uniform differentiated convergence and actual beta-pencil/root-count identification.",
+      "reason": "Actual all-order differential identity, low-mode annihilation, positive exponential envelope, all moments and literal rational-kernel Gram positivity are verified. Printed series needs (-1)^(k-1); infinite-series and beta-functional/slope identification remain open.",
+      "required_to_finish": "Justify the corrected differentiated infinite series, identify the coupled beta functional and its derivative, and prove the actual non-scalar condition for strict Newton inequalities.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2205,20 +2256,30 @@
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_13.upstream_secant_laplace_expansion"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual all-order differential identity, low-mode annihilation, positive exponential envelope, all moments and literal rational-kernel Gram positivity are verified. Printed series needs (-1)^(k-1); infinite-series and beta-functional/slope identification remain open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.14",
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "inconsistent_scaling_conventions",
-      "reason": "The printed source combines incompatible beta functional scaling and Jacobian/monomial factors, including an internal factor2 correction.",
-      "required_to_finish": "Choose one actual unscaled functional and derive all scaling, pole and moment formulas before coupled density/arithmetic claims.",
+      "reason": "The displayed r=1,e=2 moment is -25/256 with v_5=2, refuting the universal valuation-zero assertion. Scaling/Jacobian and functional normalizations still conflict.",
+      "required_to_finish": "Choose and prove one consistent scaled beta functional/measure normalization; replace universal unitness by a justified integrality statement and derive the actual coupled spectral bounds.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2242,21 +2303,31 @@
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_14.upstream_sech_cosine_transform"
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "The displayed r=1,e=2 moment is -25/256 with v_5=2, refuting the universal valuation-zero assertion. Scaling/Jacobian and functional normalizations still conflict.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.15",
       "status": "genuinely blocked",
       "baseline_register_status": "REPAIR / OPEN; source partial",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "conditional_series_and_quantitative_asymptotics",
-      "reason": "Actual all-k beta density, integrable even/odd moments, ordered beta/eta limits, eta-zeta identification for k≥1, eta(1)=log 2, arbitrary mixed-minor positivity and rank-one affine slope are verified. Quantitative arithmetic and exterior asymptotics remain unproved.",
-      "required_to_finish": "Prove all-k Euler evaluations and quantitative transcendence/independence bounds, and establish or repair the claimed Pade/Christoffel root asymptotics.",
+      "reason": "Actual all-k positive moments/minors are preserved. The actual pencil now has a unique rational root, correct parity side, exact inverse-Gram error, explicit polynomial error bound and convergence at fixed k,N. Euler/effective arithmetic and the printed stronger asymptotic remain open.",
+      "required_to_finish": "Prove the exact all-order Euler evaluation and effective arithmetic bounds, and the claimed geometric asymptotic with its polynomial prefactor. Preserve eta(1)=log 2 separately.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
-        "Constructed actual density and square-pushforward measure; proved exact series calibration, all moments, total positivity and affine rank-one slope without analytic premises."
+        "Constructed actual density and square-pushforward measure; proved exact series calibration, all moments, total positivity and affine rank-one slope without analytic premises.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2308,20 +2379,30 @@
           "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
           "local_lean_executed": false
         }
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual all-k positive moments/minors are preserved. The actual pencil now has a unique rational root, correct parity side, exact inverse-Gram error, explicit polynomial error bound and convergence at fixed k,N. Euler/effective arithmetic and the printed stronger asymptotic remain open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.16",
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN; historical companion component `!!`",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "inherits_beta_normalization_and_endpoint_gap",
-      "reason": "Actual mixed ζ-beta affine collapse and weight comparison depend on repaired6.14 normalization and positive endpoint limits, not just an abstract compact-ratio lemma.",
-      "required_to_finish": "Build one coherent mixed weight, prove endpoint ratios/nonsingularity and all odd/dyadic multiplier bounds.",
+      "reason": "Actual H_26^(beta,2) has v_7=-4, refuting the unrestricted -2 bound. The all-order repair 2M≤p^(a+1) ⇒ v_p(H_M^(beta,s))≥-sa is proved. Actual mixed weights and global multiplier conclusions remain open.",
+      "required_to_finish": "Use the explicit prime-power cutoff, separate small/large-prime estimates, and prove actual mixed-weight calibration, endpoint comparison and global multiplier rate.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2343,21 +2424,31 @@
         }
       ],
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
-      "experimental_inputs_without_an_exact_match_recorded_here": []
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Actual H_26^(beta,2) has v_7=-4, refuting the unrestricted -2 bound. The all-order repair 2M≤p^(a+1) ⇒ v_p(H_M^(beta,s))≥-sa is proved. Actual mixed weights and global multiplier conclusions remain open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.17",
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN; historical companion component `!!`",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "verification_this_pass": "VERIFIED_COMPONENTS_OR_REFUTATIONS_NO_NEW_WHOLE_ORIGINAL",
       "obstacle_type": "incorrect_odd_harmonic_windows",
-      "reason": "The destination now verifies the q=11/q=41 counterchecks and corrected odd-denominator cutoffs. These refute local proof steps, not the whole determinant statement.",
-      "required_to_finish": "Construct consistently normalized multiweight moments and infinite signed decomposition, then prove actual local determinant nonvanishing with corrected harmonic support.",
+      "reason": "Fixed-K positive/negative h-cones require 2h≤K+1; K=h=2 is impossible. Earlier q=11/q=41 proof-step refutations and corrected supports remain verified. Actual multiweight normalization, infinite Krein and full determinant remain open.",
+      "required_to_finish": "Repair fixed-degree quantifiers and local prime windows; establish the actual combined moment identity, infinite signed decomposition and recomputed determinant.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
-        "Replayed the exact companion counterchecks in the destination graph and proved the all-odd-q denominator membership cutoffs."
+        "Replayed the exact companion counterchecks in the destination graph and proved the all-odd-q denominator membership cutoffs.",
+        "Chapter 6 campaign: compiled actual-source components and inspected the complete transitive dependency audit; exact scope and missing premises are in docs/CHAPTER_6_PROGRESS.md."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -2409,7 +2500,16 @@
           "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
           "local_lean_executed": false
         }
-      ]
+      ],
+      "chapter_6_evidence": {
+        "source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+        "run_id": 40343849640,
+        "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+        "scope": "Fixed-K positive/negative h-cones require 2h≤K+1; K=h=2 is impossible. Earlier q=11/q=41 proof-step refutations and corrected supports remain verified. Actual multiweight normalization, infinite Krein and full determinant remain open.",
+        "whole_original_completed": false,
+        "main_proof_integration": false,
+        "experimental_branch_discharge_not_inferred": true
+      }
     },
     {
       "item": "6.18",
@@ -2449,13 +2549,16 @@
   ],
   "latest_verified_source": {
     "repository": "randogelist/snditeration",
-    "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+    "commit": "3989d955e6190ab8fabc0720fad136b7e265e074",
+    "tested_checkout": "c6c4708f5e0147bb426f0185adef4c02b06f8b16",
+    "source_checkout_tree_identical": true,
     "pull_request": "https://github.com/randogelist/snditeration/pull/39",
-    "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
-    "job_id": 121600954631,
-    "build_jobs": 8864,
-    "theorems_checked": 2282,
-    "declarations_checked": 2735,
+    "run": "https://github.com/randogelist/snditeration/actions/runs/40343849640",
+    "job_id": 121645398921,
+    "build_jobs": 8897,
+    "library_modules": 190,
+    "theorems_checked": 2779,
+    "declarations_checked": 3319,
     "axioms": [
       "propext",
       "Classical.choice",
@@ -2464,7 +2567,8 @@
     "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
     "toolchain": "Lean 4.33.0",
     "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
-    "local_lean_executed": false
+    "local_lean_executed": false,
+    "receipt": "docs/receipts/CHAPTER_6_20261026.json"
   },
   "status_counts": {
     "untouched": 0,
@@ -2536,6 +2640,25 @@
       "toolchain": "Lean 4.33.0",
       "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
       "local_lean_executed": false
+    },
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+      "job_id": 121600954631,
+      "build_jobs": 8864,
+      "theorems_checked": 2282,
+      "declarations_checked": 2735,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean 4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
     }
   ],
   "completion_counts": {
@@ -2585,9 +2708,29 @@
     "missing_premise": "Individual intermediate centered coefficients nonzero for the actual arithmetic family."
   },
   "active_focus": {
-    "item": "6.1",
-    "status": "COMPLETE_CORRECTED_STATEMENT",
-    "original": "FALSE_AS_PRINTED",
-    "evidence": "docs/receipts/THEOREM_6_1_20261026.json"
+    "chapter": 6,
+    "status": "PARTIAL_VERIFIED_WITH_EXPLICIT_REFUTATIONS",
+    "next_independent_open_original": "6.5",
+    "next_obligation": "Actual selected-prime beta Lagrange congruence, units, prefix norms and full determinant valuation",
+    "evidence": "docs/receipts/CHAPTER_6_20261026.json",
+    "corrected_6_1": {
+      "status": "COMPLETE_CORRECTED_STATEMENT",
+      "original": "FALSE_AS_PRINTED",
+      "evidence": "docs/receipts/THEOREM_6_1_20261026.json"
+    }
+  },
+  "chapter_6_focus": {
+    "complete_originals": [
+      "6.2"
+    ],
+    "original_items": 18,
+    "corrected_6_1_separate": true,
+    "new_complete_original_clauses": [
+      "6.3(1)",
+      "6.7(1)",
+      "6.10(2)"
+    ],
+    "next_independent_open_original": "6.5",
+    "report": "docs/CHAPTER_6_PROGRESS.md"
   }
 }

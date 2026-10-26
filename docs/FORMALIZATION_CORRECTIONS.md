@@ -353,3 +353,8 @@ for other constructions follows from this local obstruction.
 [full compiler/audit log](receipts/THEOREM_6_1_CI_40336562797.log).
 Proofs remain on open PR #39; no branch was merged or deleted.
 
+
+
+## Chapter 6 campaign — 26 October 2026
+
+[CHAPTER_6_PROGRESS.md](CHAPTER_6_PROGRESS.md) records exact new clauses, all-order components, direct refutations and independent rational replay. Source `3989d955e6190ab8fabc0720fad136b7e265e074`, [CI 40343849640](https://github.com/randogelist/snditeration/actions/runs/40343849640), is separately certified in [CHAPTER_6_20261026.json](receipts/CHAPTER_6_20261026.json). No false original is counted as completed; totals remain 13/45 verified source and 9/45 main. Earlier receipts and the completed corrected 6.1 remain intact. The next actual arithmetic endpoint is 6.5, requiring its full selected-prime Lagrange/determinant bridge.

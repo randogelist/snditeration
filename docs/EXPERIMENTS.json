@@ -14042,6 +14042,30 @@
       "active_focus": "Chapter 6",
       "no_local_lean": true,
       "no_build_trigger": true
+    },
+    {
+      "date_utc": "2026-10-26",
+      "main_source": "9613480b439f5d90c450916ab32067a4d5e8fb35",
+      "kind": "CHAPTER_6_DESTINATION_VERIFICATION",
+      "repair_source": "3989d955e6190ab8fabc0720fad136b7e265e074",
+      "run_id": 40343849640,
+      "live_branch_count": 110,
+      "experimental_heads_checked": 108,
+      "all_108_publication_heads_unchanged": true,
+      "paired_attempts": 72,
+      "receipt": "docs/receipts/CHAPTER_6_20261026.json",
+      "verified_original_clauses": [
+        "6.3(1)",
+        "6.7(1)",
+        "6.10(2)"
+      ],
+      "whole_original_count_unchanged": 13,
+      "main_original_count_unchanged": 9,
+      "experimental_branches_changed": false,
+      "experiment_statuses_unchanged": true,
+      "assumption_discharge_not_inferred": true,
+      "partial_input_coverage_note": "6.5 pole norms cover weight 4; the published all-weight prerequisite is not thereby discharged. New source results need an exact consumption bridge before scaffold assumptions can be removed.",
+      "new_catalog_iterations": 0
     }
   ]
 }

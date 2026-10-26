@@ -1,0 +1,21 @@
+{
+  "scope": "EXACT_RATIONAL_REPLAY_AND_MATHEMATICAL_ANALYTIC_ENCLOSURE;NOT_LEAN_KERNEL",
+  "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+  "certificate_git_blob": "855f5f517fccafc45ff689cb872580b881ae0447",
+  "published_checker_git_blob": "84f1fac82da4147824098add6b84ccef410c8d0d",
+  "certificate_sha256": "b17e2ab2b487501545917b32973fe3aa8dc76e322eed53e2517ca90da0ef6d25",
+  "independent_checker_sha256": "1d2e57472f606a5c28f46e2a68213bbc182ad177a4e6bc447b0a559cb435d73f",
+  "h": 4,
+  "K": 28,
+  "m0": 8,
+  "four_independent_basis_polynomials": true,
+  "basis_degree_bound": 27,
+  "exact_basis_constraints_verified": 48,
+  "normalized_coefficient_l1_norm": "1",
+  "negative_direction_in_normalized_basis_verified": true,
+  "eta_enclosure_terms": 240,
+  "zeta_interval_width": "1/1739240079391222074433558477293810414017679460986937411900956104397422592",
+  "quadratic_strict_lower_bound": "-2423/2000000000000000000000000000000000000000000000000000",
+  "quadratic_strict_upper_bound": "-6057/5000000000000000000000000000000000000000000000000000",
+  "result": "PASS"
+}

@@ -257,3 +257,10 @@ All 108 experimental heads match their publication receipts: 110 destination
 branches and 12 companion branches were observed. The 72 paired attempts retain
 their source-only status; no experimental assumption discharge or bridge is inferred.
 
+
+
+## Later destination Chapter 6 verification
+
+Source `3989d955e6190ab8fabc0720fad136b7e265e074` passed [CI 40343849640](https://github.com/randogelist/snditeration/actions/runs/40343849640) with 190 imported library modules and the full transitive three-axiom allowlist. [Exact clause/component register](CHAPTER_6_PROGRESS.md) and [immutable receipt](receipts/CHAPTER_6_20261026.json) distinguish new exact 6.3(1), 6.7(1), 6.10(2), beta/secant components, corrections and refutations. This later destination evidence supersedes only the pending-destination status of the preceding observation; its companion receipts remain unchanged.
+
+All 108 published experimental heads were rechecked unchanged: 110 live branches including main and the repair branch, with 72 paired attempts. No PROP/ALT target, typed interface, publication receipt, named research assumption or catalog iteration changed. The weight-4 pole result for 6.5 is specialized progress, not discharge of an all-weight prerequisite. Source-level results require exact downstream compatibility proofs before experimental assumptions are removed. Original completion remains 13/45 in PR source and 9/45 integrated.

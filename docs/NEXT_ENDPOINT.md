@@ -1,6 +1,9 @@
-# Focused Theorem 6.1 and subsequent open originals
+# Chapter 6 active target and subsequent open originals
 
-The user's active focus is **6.1**. Exact original parts (1) and (2), the complete corrected primitive-vector part (3), and an explicit refutation of the printed nonzero-vector clause are now verified. See [focused correction log](THEOREM_6_1_CORRECTIONS.md) and [CI receipt](receipts/THEOREM_6_1_20261026.json). This completes the corrected local theorem; it does not increase the original-theorem count or authorize merging. No further target is silently selected.
+The user's active focus is **Chapter 6**. Exact clauses **6.3(1), 6.7(1) and 6.10(2)** and the additional components/refutations in [Chapter 6 progress](CHAPTER_6_PROGRESS.md) are verified on PR39. Whole Chapter 6 is not complete; false originals remain separate from repairs. Corrected 6.1 retains its [immutable evidence](receipts/THEOREM_6_1_20261026.json).
+
+The next independent chapter endpoint is **6.5**: prove the exact valuation −(3m_q−2) of the actual selected-prime beta determinant. Actual integer quotient integrality and weight-4 pole norms are available. Remaining premises are tail-derivative units, exact prefix norms, an integral unimodular Lagrange change of basis, and the determinant bridge. No target is assumed as its own input. The false beta analytic calibration in 6.4(1) must be repaired separately; the rational pencil route does not depend on it.
+
 
 
 PR39 source `cf32aeef35b5f7cb02b042f672ac9b519c56b25d` passed [CI 40328869101](https://github.com/randogelist/snditeration/actions/runs/40328869101) with the all-project transitive standard-axiom audit. Original 3.3 is now complete: actual printed Stieltjes determinacy, arbitrary mixed minors in every order, exact primitive leading coefficient, inertia and multiplicity-counted root clauses. The earlier Carleman-only handoff is superseded by this [continuation receipt](receipts/COMPLETION_20261026_CONTINUATION.json). Main proof integration remains 9/45; verified source completion is now 13/45, including 3.8, 5.3 and 6.2. The later [transfer receipt](receipts/COMPLETION_20261026_TRANSFER.json) records independent destination verification of 5.3 and 6.2.

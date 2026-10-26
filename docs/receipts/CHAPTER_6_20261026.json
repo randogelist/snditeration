@@ -1,0 +1,913 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "DESTINATION_PR_SOURCE_CI_AND_TRANSITIVE_AXIOM_AUDIT",
+  "date_utc": "2026-10-26",
+  "repository": "randogelist/snditeration",
+  "source_commit": "3989d955e6190ab8fabc0720fad136b7e265e074",
+  "source_tree": "7a345100fbf6b953efdf85450a1034f9cb7ef6e9",
+  "tested_checkout": "c6c4708f5e0147bb426f0185adef4c02b06f8b16",
+  "tested_checkout_entire_tree_identical": true,
+  "source_to_checkout_changed_files": [],
+  "pull_request": 39,
+  "branch": "repair/zetahyperbolic-completion_i0001_construction",
+  "integration": "UNMERGED_PR_SOURCE_NOT_MAIN",
+  "documentation_parent": "9613480b439f5d90c450916ab32067a4d5e8fb35",
+  "concurrent_main_edits_preserved": true,
+  "compiler": {
+    "execution_target": "GITHUB_CI",
+    "run_id": 40343849640,
+    "job_id": 121645398921,
+    "url": "https://github.com/randogelist/snditeration/actions/runs/40343849640",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "event": "pull_request",
+    "created_at": "2026-10-26T14:53:09Z",
+    "completed_at": "2026-10-26T14:55:55Z",
+    "build_jobs": 8897,
+    "library_modules": 190,
+    "theorems_checked": 2779,
+    "declarations_checked": 3319,
+    "printed_axiom_reports_inspected": 791,
+    "transitive_project_audit": "ALL_PROJECT_DECLARATIONS_ACCEPTED",
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "observed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "source_placeholder_scan": "PASS",
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "local_lean_executed": false,
+    "log": {
+      "path": "docs/receipts/CHAPTER_6_CI_40343849640.log",
+      "bytes": 263662,
+      "sha256": "68deaca90a50d56ca8144b3761a9a5bfbae302d21bee3df65b4d64d2f4f9c7e2",
+      "serialization": "UTF-8 job-log text with one terminating newline"
+    }
+  },
+  "import_graph": {
+    "baseline_source": "e56da14673218911252b92790d5fe713aea66e19",
+    "baseline_modules": 169,
+    "existing_library_files_changed": [],
+    "new_modules": [
+      "Zetahyperbolic/Section6/BetaCouplingDerivative.lean",
+      "Zetahyperbolic/Section6/BetaOddPartialFractions.lean",
+      "Zetahyperbolic/Section6/BetaOddPencil.lean",
+      "Zetahyperbolic/Section6/BetaOddPoleNorm.lean",
+      "Zetahyperbolic/Section6/BetaOddPolynomialIntegrality.lean",
+      "Zetahyperbolic/Section6/BetaOddResidueSigns.lean",
+      "Zetahyperbolic/Section6/BetaOddRoot.lean",
+      "Zetahyperbolic/Section6/BetaOddRootConvergence.lean",
+      "Zetahyperbolic/Section6/BetaScaledUnitObstruction.lean",
+      "Zetahyperbolic/Section6/Chapter6ConeDimensionObstruction.lean",
+      "Zetahyperbolic/Section6/Chapter6HarmonicCutoffBound.lean",
+      "Zetahyperbolic/Section6/Chapter6HarmonicPrimePowerObstruction.lean",
+      "Zetahyperbolic/Section6/CoefficientGramHadamard.lean",
+      "Zetahyperbolic/Section6/MultiweightHyperbolicity.lean",
+      "Zetahyperbolic/Section6/PadicDeterminantDominance.lean",
+      "Zetahyperbolic/Section6/SecantDecay.lean",
+      "Zetahyperbolic/Section6/SecantGram.lean",
+      "Zetahyperbolic/Section6/SecantMoments.lean",
+      "Zetahyperbolic/Section6/SecantOperator.lean",
+      "Zetahyperbolic/Section6/Theorem610CoefficientGrowth.lean",
+      "Zetahyperbolic/Section6/Theorem63Nonvanishing.lean"
+    ],
+    "new_module_count": 21,
+    "total_modules": 190,
+    "new_modules_all_directly_imported": true,
+    "unimported": [],
+    "experimental_import_paths": [],
+    "dependency_toolchain_workflow_unchanged": true
+  },
+  "source_fingerprints": [
+    {
+      "path": ".github/workflows/lean.yml",
+      "git_blob": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+      "bytes": 1072
+    },
+    {
+      "path": "Zetahyperbolic.lean",
+      "git_blob": "bb12ff42a9bb18a82d1a87e59fee1d76741d0473",
+      "bytes": 8763
+    },
+    {
+      "path": "Zetahyperbolic/Audit.lean",
+      "git_blob": "f24d66c34f42603d088e179c75dccb351bc671d5",
+      "bytes": 49802
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaCouplingDerivative.lean",
+      "git_blob": "11ff9e6e4d2c33f1be28f8ea7f216ba9f3b9d012",
+      "bytes": 5521
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddPartialFractions.lean",
+      "git_blob": "bcfcd8971c4feec6102ed5934a3032e8ad2f9acc",
+      "bytes": 7424
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddPencil.lean",
+      "git_blob": "386dedac5648dd0f1bf672cdc3b4e740699b2f3c",
+      "bytes": 6381
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddPoleNorm.lean",
+      "git_blob": "7742c4be6aec1a5dcf1006ef16aaae9d827b1327",
+      "bytes": 7937
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddPolynomialIntegrality.lean",
+      "git_blob": "7fa8887d24619250c663eb066b027a53205f4ef9",
+      "bytes": 4585
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddResidueSigns.lean",
+      "git_blob": "c2cc078f3053cb83b46670850a6ce2c4fcbc84d2",
+      "bytes": 7301
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddRoot.lean",
+      "git_blob": "f07a21083db6cdca42108693cd5045bdfb4df88e",
+      "bytes": 6960
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddRootConvergence.lean",
+      "git_blob": "4a3ee9e9ab11f1d67b9185fe74113e14388ac77f",
+      "bytes": 3893
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaScaledUnitObstruction.lean",
+      "git_blob": "98c68593ffd5801e6ccef33de2c7c1b298323f8f",
+      "bytes": 2049
+    },
+    {
+      "path": "Zetahyperbolic/Section6/Chapter6ConeDimensionObstruction.lean",
+      "git_blob": "7d0aa9e19b1fc7a704cc2c89f51737cb485edccd",
+      "bytes": 4652
+    },
+    {
+      "path": "Zetahyperbolic/Section6/Chapter6HarmonicCutoffBound.lean",
+      "git_blob": "8080b968f3cce584adec3e496a6b59805864bd37",
+      "bytes": 3072
+    },
+    {
+      "path": "Zetahyperbolic/Section6/Chapter6HarmonicPrimePowerObstruction.lean",
+      "git_blob": "b3139d5e59ec5cebb76b19d6a1361f44ab1e08a3",
+      "bytes": 2562
+    },
+    {
+      "path": "Zetahyperbolic/Section6/CoefficientGramHadamard.lean",
+      "git_blob": "b1c08f57f46fc9ce5ac624d3525a18a51051adde",
+      "bytes": 4836
+    },
+    {
+      "path": "Zetahyperbolic/Section6/MultiweightHyperbolicity.lean",
+      "git_blob": "cfc6cc67553fad35640a9f72f6c9ebebae407eae",
+      "bytes": 5998
+    },
+    {
+      "path": "Zetahyperbolic/Section6/PadicDeterminantDominance.lean",
+      "git_blob": "6a856ff0bf1b462b9f0dc43e211df47b001c0c6c",
+      "bytes": 5430
+    },
+    {
+      "path": "Zetahyperbolic/Section6/SecantDecay.lean",
+      "git_blob": "39f7eca7286b7dba042a1953e14fc21ec406262b",
+      "bytes": 2865
+    },
+    {
+      "path": "Zetahyperbolic/Section6/SecantGram.lean",
+      "git_blob": "0d38a9ec61ccb36aa1d2be7ef115d6bbe900fa5e",
+      "bytes": 6899
+    },
+    {
+      "path": "Zetahyperbolic/Section6/SecantMoments.lean",
+      "git_blob": "e5b8fc32d958d9a9a50dc50c6d150d878902e45b",
+      "bytes": 5419
+    },
+    {
+      "path": "Zetahyperbolic/Section6/SecantOperator.lean",
+      "git_blob": "ef39d280f826c160609fec77cf26fa91b5d1c007",
+      "bytes": 7538
+    },
+    {
+      "path": "Zetahyperbolic/Section6/Theorem610CoefficientGrowth.lean",
+      "git_blob": "afdc012b22928597b3e7c0e4359c4cfcf8cb56f7",
+      "bytes": 6278
+    },
+    {
+      "path": "Zetahyperbolic/Section6/Theorem63Nonvanishing.lean",
+      "git_blob": "8e41b9076640391d82dfe46fe60eddd87b890270",
+      "bytes": 17945
+    },
+    {
+      "path": "lake-manifest.json",
+      "git_blob": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+      "bytes": 3563
+    },
+    {
+      "path": "lakefile.lean",
+      "git_blob": "a12e10e090d3fbe33db143b14764105f108854e0",
+      "bytes": 297
+    },
+    {
+      "path": "lean-toolchain",
+      "git_blob": "025e59548e48cf71f2744154e2890beefe30a258",
+      "bytes": 25
+    }
+  ],
+  "scope": {
+    "new_complete_original_clauses": [
+      "6.3(1)",
+      "6.7(1)",
+      "6.10(2)"
+    ],
+    "items": {
+      "6.3": {
+        "status": "REPAIR; **exact (1) `!!` on PR39**",
+        "reason": "Part (1) proves the actual q-dimensional paired determinant valuation -7q for every prime q≥5 and every q-integral rational X, with actual Beukers integral identification. Part (2) is refuted by an independently replayed exact h=4 negative direction; that replay is not Lean certification.",
+        "missing": "Replace the false positive-cone construction and prove quantitative negative-tail control; preserve exact part (1) independently.",
+        "source": "Theorem63Nonvanishing.lean"
+      },
+      "6.4": {
+        "status": "REPAIR; **finite pencil/refutation components `!!` on PR39**",
+        "reason": "Actual surviving odd-square residues, partial fractions, positive slope and full real spectrum are verified for the rational pencil. The printed differential coupling is negative; an explicit corrected positive expression is proved. Actual beta integral calibration remains open.",
+        "missing": "Repair and prove the actual monomial and simple-pole beta integral calibration; the corrected differential expression alone does not identify the claimed arithmetic coupling.",
+        "source": "BetaOddPartialFractions.lean"
+      },
+      "6.5": {
+        "status": "OPEN; **actual prerequisite components `!!` on PR39**",
+        "reason": "Actual integer quotient, odd-prime Euler-moment integrality and weight-4 pole norms are proved. The complete selected-prime Lagrange matrix and determinant valuation remain open.",
+        "missing": "Prove actual tail-derivative units, prefix norms, integral unimodular Lagrange congruence and the full determinant valuation -(3m_q-2).",
+        "source": "BetaOddPoleNorm.lean"
+      },
+      "6.7": {
+        "status": "REPAIR; **exact (1) and cone refutation `!!` on PR39**",
+        "reason": "Actual multiweight rational pencil has slope CCᵀ, full degree h and all complex roots real for independent rational polynomials. Fixed-K positive/negative h-cones are impossible when 2h>K+1. Infinite Krein convergence and top-weight determinant remain separate.",
+        "missing": "Repair the fixed-degree cone quantifiers, prove actual arbitrary-L² convergence and definite-subspace construction, and prove the independent top-active-weight determinant.",
+        "source": "MultiweightHyperbolicity.lean"
+      },
+      "6.10": {
+        "status": "REPAIR; **complete (2) `!!` on PR39**",
+        "reason": "Exact finite Hadamard bound and zero quadratic log growth are proved for actual independent integer polynomials, all real A≥0 and h=floor(lambda*K), with actual dual-slope identification. Part (1)'s equilibrium limits, strict reweighting and numerical ratio remain open or require repair.",
+        "missing": "Establish actual equilibrium/potential limits and strict reweighting under exact hypotheses; repair the decay/height-ratio inference in part (1).",
+        "source": "Theorem610CoefficientGrowth.lean"
+      },
+      "6.13": {
+        "status": "REPAIR; **all-order analytic/Gram components `!!` on PR39**",
+        "reason": "Actual all-order differential identity, low-mode annihilation, positive exponential envelope, all moments and literal rational-kernel Gram positivity are verified. Printed series needs (-1)^(k-1); infinite-series and beta-functional/slope identification remain open.",
+        "missing": "Justify the corrected differentiated infinite series, identify the coupled beta functional and its derivative, and prove the actual non-scalar condition for strict Newton inequalities.",
+        "source": "SecantGram.lean"
+      },
+      "6.14": {
+        "status": "REPAIR; **odd-prime unit refutation `!!` on PR39**",
+        "reason": "The displayed r=1,e=2 moment is -25/256 with v_5=2, refuting the universal valuation-zero assertion. Scaling/Jacobian and functional normalizations still conflict.",
+        "missing": "Choose and prove one consistent scaled beta functional/measure normalization; replace universal unitness by a justified integrality statement and derive the actual coupled spectral bounds.",
+        "source": "BetaScaledUnitObstruction.lean"
+      },
+      "6.15": {
+        "status": "OPEN; **analytic, rational-root/convergence components `!!` on PR39**",
+        "reason": "Actual all-k positive moments/minors are preserved. The actual pencil now has a unique rational root, correct parity side, exact inverse-Gram error, explicit polynomial error bound and convergence at fixed k,N. Euler/effective arithmetic and the printed stronger asymptotic remain open.",
+        "missing": "Prove the exact all-order Euler evaluation and effective arithmetic bounds, and the claimed geometric asymptotic with its polynomial prefactor. Preserve eta(1)=log 2 separately.",
+        "source": "BetaOddRootConvergence.lean"
+      },
+      "6.16": {
+        "status": "REPAIR; **refutation and corrected cutoff `!!` on PR39**",
+        "reason": "Actual H_26^(beta,2) has v_7=-4, refuting the unrestricted -2 bound. The all-order repair 2M≤p^(a+1) ⇒ v_p(H_M^(beta,s))≥-sa is proved. Actual mixed weights and global multiplier conclusions remain open.",
+        "missing": "Use the explicit prime-power cutoff, separate small/large-prime estimates, and prove actual mixed-weight calibration, endpoint comparison and global multiplier rate.",
+        "source": "Chapter6HarmonicCutoffBound.lean"
+      },
+      "6.17": {
+        "status": "REPAIR; **fixed-degree/local refutations `!!` on PR39**",
+        "reason": "Fixed-K positive/negative h-cones require 2h≤K+1; K=h=2 is impossible. Earlier q=11/q=41 proof-step refutations and corrected supports remain verified. Actual multiweight normalization, infinite Krein and full determinant remain open.",
+        "missing": "Repair fixed-degree quantifiers and local prime windows; establish the actual combined moment identity, infinite signed decomposition and recomputed determinant.",
+        "source": "Chapter6ConeDimensionObstruction.lean"
+      }
+    },
+    "corrected_6_1": "Earlier immutable corrected-theorem receipt retained; not an original completion",
+    "whole_original_counts": {
+      "manuscript": 45,
+      "verified_PR_source": 13,
+      "integrated_main": 9,
+      "chapter_6_items": 18,
+      "chapter_6_whole_originals": [
+        "6.2"
+      ],
+      "new_whole_originals_this_campaign": 0
+    },
+    "next_chapter_endpoint": "6.5",
+    "next_premises": [
+      "Actual tail-derivative units",
+      "Exact prefix norms",
+      "Integral unimodular Lagrange congruence",
+      "Full selected-prime determinant valuation -(3m_q-2)"
+    ],
+    "finite_witness_closure": false,
+    "admission": false
+  },
+  "independent_rational_refutation": {
+    "scope": "EXACT_RATIONAL_REPLAY_AND_MATHEMATICAL_ANALYTIC_ENCLOSURE;NOT_LEAN_KERNEL",
+    "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+    "certificate_git_blob": "855f5f517fccafc45ff689cb872580b881ae0447",
+    "published_checker_git_blob": "84f1fac82da4147824098add6b84ccef410c8d0d",
+    "certificate_sha256": "b17e2ab2b487501545917b32973fe3aa8dc76e322eed53e2517ca90da0ef6d25",
+    "independent_checker_sha256": "1d2e57472f606a5c28f46e2a68213bbc182ad177a4e6bc447b0a559cb435d73f",
+    "h": 4,
+    "K": 28,
+    "m0": 8,
+    "four_independent_basis_polynomials": true,
+    "basis_degree_bound": 27,
+    "exact_basis_constraints_verified": 48,
+    "normalized_coefficient_l1_norm": "1",
+    "negative_direction_in_normalized_basis_verified": true,
+    "eta_enclosure_terms": 240,
+    "zeta_interval_width": "1/1739240079391222074433558477293810414017679460986937411900956104397422592",
+    "quadratic_strict_lower_bound": "-2423/2000000000000000000000000000000000000000000000000000",
+    "quadratic_strict_upper_bound": "-6057/5000000000000000000000000000000000000000000000000000",
+    "result": "PASS",
+    "archive_directory": "docs/receipts/CHAPTER_6_COUNTEREXAMPLE_6_3",
+    "lean_certified": false
+  },
+  "experimental_publications": {
+    "published_heads_checked": 108,
+    "all_unchanged": true,
+    "live_destination_branches": 110,
+    "paired_attempts": 72,
+    "named_research_axioms": 51,
+    "branch_heads": [
+      {
+        "branch": "experiment/zetahyperbolic-p03-02_construction",
+        "commit": "7d55c45aa7facaf52a46968405db33d27d208d11",
+        "actual": "7d55c45aa7facaf52a46968405db33d27d208d11"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-03_construction",
+        "commit": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb",
+        "actual": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-04_construction",
+        "commit": "06efc463a549f07db26b8e38f565276e8854d476",
+        "actual": "06efc463a549f07db26b8e38f565276e8854d476"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-05_construction",
+        "commit": "9b1900bd9effd5d660061d3d4ce356acbda72342",
+        "actual": "9b1900bd9effd5d660061d3d4ce356acbda72342"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-06_construction",
+        "commit": "9b56739b36897fbd1564f6cdaea57219320d9e57",
+        "actual": "9b56739b36897fbd1564f6cdaea57219320d9e57"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-07_construction",
+        "commit": "422e9ecc2d9a43f7aa598d9340fa724efed30257",
+        "actual": "422e9ecc2d9a43f7aa598d9340fa724efed30257"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-08_construction",
+        "commit": "8588dce972ddd7ef61906202066965fc1c01d56d",
+        "actual": "8588dce972ddd7ef61906202066965fc1c01d56d"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-09_construction",
+        "commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3",
+        "actual": "b361758244315c7a9a3b5d5ef555122cdddf3bf3"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-01_construction",
+        "commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5",
+        "actual": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-04_construction",
+        "commit": "5fe9a327926560bd3e049690b0fe626bc3a1ce9b",
+        "actual": "5fe9a327926560bd3e049690b0fe626bc3a1ce9b"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-05_construction",
+        "commit": "05272ea512e9ae8f855b03acdf7670249d8110cc",
+        "actual": "05272ea512e9ae8f855b03acdf7670249d8110cc"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-06_construction",
+        "commit": "c34d02d7e75cc06166469695c64862dd3af4b04f",
+        "actual": "c34d02d7e75cc06166469695c64862dd3af4b04f"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-07_construction",
+        "commit": "24ead265dee4b6732386e42336df3ec4dc49426a",
+        "actual": "24ead265dee4b6732386e42336df3ec4dc49426a"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-08_construction",
+        "commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110",
+        "actual": "221ecd8f613ecf0f39ef7752af1386c4223ab110"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-02_construction",
+        "commit": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1",
+        "actual": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-03_construction",
+        "commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3",
+        "actual": "665d06df47be601fa7c2a42a806b293f4dae4ff3"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-06_construction",
+        "commit": "d41b2d7600892844fa5dde219531439fa86e8258",
+        "actual": "d41b2d7600892844fa5dde219531439fa86e8258"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-07_construction",
+        "commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0",
+        "actual": "15ed09b52e0c3d60de5333df8981684b99f70ba0"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-01_construction",
+        "commit": "e2191a109269528cd9ee98ea75e64e3612d48dfc",
+        "actual": "e2191a109269528cd9ee98ea75e64e3612d48dfc"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-02_construction",
+        "commit": "55b16e37db5162ee268a47468ea40c360cf9d412",
+        "actual": "55b16e37db5162ee268a47468ea40c360cf9d412"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-03_construction",
+        "commit": "dacd3e795557421827f2f6a658c9a76c0c26b0f5",
+        "actual": "dacd3e795557421827f2f6a658c9a76c0c26b0f5"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-04_construction",
+        "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a",
+        "actual": "b78f851a807b4ca2c595ad62e9a252e17690989a"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-05_construction",
+        "commit": "6509755298b6f5163b2d565b0a59b39010b26210",
+        "actual": "6509755298b6f5163b2d565b0a59b39010b26210"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-06_construction",
+        "commit": "08ecc99cf133d6f5c1a9398ecffd07605b2b6269",
+        "actual": "08ecc99cf133d6f5c1a9398ecffd07605b2b6269"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-07_construction",
+        "commit": "a6550cd1a91690ee77b3590964f035a8073344a0",
+        "actual": "a6550cd1a91690ee77b3590964f035a8073344a0"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-08_construction",
+        "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5",
+        "actual": "acdc24d724974e6d4f4b4846f24b2a42516a56c5"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-09_construction",
+        "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e",
+        "actual": "c88ecbb039e08e8355065b5e9649183e1f934e2e"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-10_construction",
+        "commit": "42275211433ab64ce66452b341ae210c90f391c8",
+        "actual": "42275211433ab64ce66452b341ae210c90f391c8"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-11_construction",
+        "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a",
+        "actual": "46bf5efa083d392c53ed582ebcff76cd3f59b02a"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-12_construction",
+        "commit": "6020e884f4dc9e4466c85452601c529e10393ab0",
+        "actual": "6020e884f4dc9e4466c85452601c529e10393ab0"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-13_construction",
+        "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774",
+        "actual": "bcdafb328e05802d330c7e96814f22f2b7f90774"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-14_construction",
+        "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1",
+        "actual": "675ed3292458d7b25c84ba47047b2f0ad95faba1"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-15_construction",
+        "commit": "70c77e8d18dfe091e5771b57beee867f474116d8",
+        "actual": "70c77e8d18dfe091e5771b57beee867f474116d8"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-16_construction",
+        "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd",
+        "actual": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-17_construction",
+        "commit": "3680423885c8141c523e4e1d5154703085962aad",
+        "actual": "3680423885c8141c523e4e1d5154703085962aad"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-18_construction",
+        "commit": "0ae60ed1f7cd11f3af98894d34be78fe604f5b8a",
+        "actual": "0ae60ed1f7cd11f3af98894d34be78fe604f5b8a"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-02_prop_construction",
+        "commit": "d434e64c45887df036a632eddffe0da9a6c5a671",
+        "actual": "d434e64c45887df036a632eddffe0da9a6c5a671"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-02_alt_construction",
+        "commit": "07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798",
+        "actual": "07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-03_prop_construction",
+        "commit": "958dea22228b725871233c3b30e9d73ed1740329",
+        "actual": "958dea22228b725871233c3b30e9d73ed1740329"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-03_alt_construction",
+        "commit": "44ed30e15cca4232a43d2cec8c6ff408f64b9dc4",
+        "actual": "44ed30e15cca4232a43d2cec8c6ff408f64b9dc4"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-04_prop_construction",
+        "commit": "0b4465418217e2ce22df916c35d6580c84340681",
+        "actual": "0b4465418217e2ce22df916c35d6580c84340681"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-04_alt_construction",
+        "commit": "b688ba03f0398e343a7f41722cb2140875be58ea",
+        "actual": "b688ba03f0398e343a7f41722cb2140875be58ea"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-05_prop_construction",
+        "commit": "dc5e43ffc5d7442c2a33c66b830e90ce87f833e9",
+        "actual": "dc5e43ffc5d7442c2a33c66b830e90ce87f833e9"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-05_alt_construction",
+        "commit": "0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9",
+        "actual": "0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-06_prop_construction",
+        "commit": "2d3a7ebff285780e966853070200f1128c56b738",
+        "actual": "2d3a7ebff285780e966853070200f1128c56b738"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-06_alt_construction",
+        "commit": "05dd8627087ac0d5b78efecbab66116b024aa2b6",
+        "actual": "05dd8627087ac0d5b78efecbab66116b024aa2b6"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-07_prop_construction",
+        "commit": "db45f506e54543c2928b828183e27adf4f35684f",
+        "actual": "db45f506e54543c2928b828183e27adf4f35684f"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-07_alt_construction",
+        "commit": "d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249",
+        "actual": "d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-08_prop_construction",
+        "commit": "537b8bf9df9eb92a570f923b0bb85f07c80c5bc6",
+        "actual": "537b8bf9df9eb92a570f923b0bb85f07c80c5bc6"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-08_alt_construction",
+        "commit": "12fb1c46b679b2e0a24e420556bebba7b7ca3bae",
+        "actual": "12fb1c46b679b2e0a24e420556bebba7b7ca3bae"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-09_prop_construction",
+        "commit": "47159dd4d872edd575c087e958b2fbb16081250d",
+        "actual": "47159dd4d872edd575c087e958b2fbb16081250d"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p03-09_alt_construction",
+        "commit": "c62c3a6e1ea60803763786a06323198983c6ce44",
+        "actual": "c62c3a6e1ea60803763786a06323198983c6ce44"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-01_prop_construction",
+        "commit": "2792f9d12943eecef474af501a949a7bb3c99d54",
+        "actual": "2792f9d12943eecef474af501a949a7bb3c99d54"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-01_alt_construction",
+        "commit": "3cbf038fd7e58d6987fd23ac1f380be65aca1a4c",
+        "actual": "3cbf038fd7e58d6987fd23ac1f380be65aca1a4c"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-04_prop_construction",
+        "commit": "dab0a8997fa8d318a1f79174771f0ad38327739d",
+        "actual": "dab0a8997fa8d318a1f79174771f0ad38327739d"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-04_alt_construction",
+        "commit": "b97babd716832cae434caae07aec39f0dfa0f71a",
+        "actual": "b97babd716832cae434caae07aec39f0dfa0f71a"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-05_prop_construction",
+        "commit": "9699371fbaa3fb334c8b3eb065fa5410dae71e58",
+        "actual": "9699371fbaa3fb334c8b3eb065fa5410dae71e58"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-05_alt_construction",
+        "commit": "a9944a4d0cb5519e739fd74fac1d1790614a7c74",
+        "actual": "a9944a4d0cb5519e739fd74fac1d1790614a7c74"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-06_prop_construction",
+        "commit": "e55ebbc6868a7e0343879b0bc67693939435af24",
+        "actual": "e55ebbc6868a7e0343879b0bc67693939435af24"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-06_alt_construction",
+        "commit": "a4350652c15a5c19f1da7acaa66037f9277cd640",
+        "actual": "a4350652c15a5c19f1da7acaa66037f9277cd640"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-07_prop_construction",
+        "commit": "0e685512dd9b5019f04d8f25a116cdba5ecf2ff0",
+        "actual": "0e685512dd9b5019f04d8f25a116cdba5ecf2ff0"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-07_alt_construction",
+        "commit": "ff9db1741c255afa1cc918d62bf054d4ce60a02d",
+        "actual": "ff9db1741c255afa1cc918d62bf054d4ce60a02d"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-08_prop_construction",
+        "commit": "0288afd84a03ebd1b3b04e04db4943268adf8a51",
+        "actual": "0288afd84a03ebd1b3b04e04db4943268adf8a51"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p04-08_alt_construction",
+        "commit": "c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907",
+        "actual": "c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-02_prop_construction",
+        "commit": "013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3",
+        "actual": "013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-02_alt_construction",
+        "commit": "33aa75af04494b342e1be0e95e6deb00206d9eb9",
+        "actual": "33aa75af04494b342e1be0e95e6deb00206d9eb9"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-03_prop_construction",
+        "commit": "616215f4fa645d85e5dc99e85d72b5036e070152",
+        "actual": "616215f4fa645d85e5dc99e85d72b5036e070152"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-03_alt_construction",
+        "commit": "05c048a84c1bf0264ad1719e955dbae743eb4278",
+        "actual": "05c048a84c1bf0264ad1719e955dbae743eb4278"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-06_prop_construction",
+        "commit": "32610e1b7a9856768cf2696e77670666a3a9cef7",
+        "actual": "32610e1b7a9856768cf2696e77670666a3a9cef7"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-06_alt_construction",
+        "commit": "850d7402c2f99409e0835605615266ccdd21ce98",
+        "actual": "850d7402c2f99409e0835605615266ccdd21ce98"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-07_prop_construction",
+        "commit": "267e159024b78ff174cb4e3526e3f64429b5f9e8",
+        "actual": "267e159024b78ff174cb4e3526e3f64429b5f9e8"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p05-07_alt_construction",
+        "commit": "817b6df92c87c46084ba88fad5d194243df48b57",
+        "actual": "817b6df92c87c46084ba88fad5d194243df48b57"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-01_prop_construction",
+        "commit": "51308ecd609f911d5dd8d60f54206e7742d0e10c",
+        "actual": "51308ecd609f911d5dd8d60f54206e7742d0e10c"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-01_alt_construction",
+        "commit": "e38ec263ec1f27e38f5ff25a19d679c422c51d51",
+        "actual": "e38ec263ec1f27e38f5ff25a19d679c422c51d51"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-02_prop_construction",
+        "commit": "623a02ccb05a93bf9d3a241b074eb08435f243a6",
+        "actual": "623a02ccb05a93bf9d3a241b074eb08435f243a6"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-02_alt_construction",
+        "commit": "d9ea407687703e80936a80db7934373309d03c58",
+        "actual": "d9ea407687703e80936a80db7934373309d03c58"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-03_prop_construction",
+        "commit": "72280986985d69a823baf1e03c9f427e9c6e8080",
+        "actual": "72280986985d69a823baf1e03c9f427e9c6e8080"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-03_alt_construction",
+        "commit": "aa6e863938be812cfe7a127af4ba8a1ae15f419b",
+        "actual": "aa6e863938be812cfe7a127af4ba8a1ae15f419b"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-04_prop_construction",
+        "commit": "f1be029f8abd6025162c6940f208c85b7d1bfcae",
+        "actual": "f1be029f8abd6025162c6940f208c85b7d1bfcae"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-04_alt_construction",
+        "commit": "f4361d16f8cc643c3ac21312d619df67552faa3c",
+        "actual": "f4361d16f8cc643c3ac21312d619df67552faa3c"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-05_prop_construction",
+        "commit": "ca78de4253ee4746cbc027a834f45b68bb712bc6",
+        "actual": "ca78de4253ee4746cbc027a834f45b68bb712bc6"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-05_alt_construction",
+        "commit": "1ef80acfca3427d9aaae87326dfa31f16667abea",
+        "actual": "1ef80acfca3427d9aaae87326dfa31f16667abea"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-06_prop_construction",
+        "commit": "bee07a3a6623afeadf26254f41a030491a9d408c",
+        "actual": "bee07a3a6623afeadf26254f41a030491a9d408c"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-06_alt_construction",
+        "commit": "ff43ec4bb2443320770395b966d7d0d3bcde1f64",
+        "actual": "ff43ec4bb2443320770395b966d7d0d3bcde1f64"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-07_prop_construction",
+        "commit": "3f8c37dbbf616439a521e1eb5b85c285e8cc8881",
+        "actual": "3f8c37dbbf616439a521e1eb5b85c285e8cc8881"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-07_alt_construction",
+        "commit": "fd935e0458c94c118a8d9f20277b6a12cc558e98",
+        "actual": "fd935e0458c94c118a8d9f20277b6a12cc558e98"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-08_prop_construction",
+        "commit": "f6baa3134ea33988983154e6b41d0c74cabbfaa1",
+        "actual": "f6baa3134ea33988983154e6b41d0c74cabbfaa1"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-08_alt_construction",
+        "commit": "5d6515eea9d7c85438a2076d2ceadb5f1bb77547",
+        "actual": "5d6515eea9d7c85438a2076d2ceadb5f1bb77547"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-09_prop_construction",
+        "commit": "84f8d09b4961f0d97c45df857c53b691e5164385",
+        "actual": "84f8d09b4961f0d97c45df857c53b691e5164385"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-09_alt_construction",
+        "commit": "dce38250d06d8275e6ac8ad0a1a76eee13a1ed47",
+        "actual": "dce38250d06d8275e6ac8ad0a1a76eee13a1ed47"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-10_prop_construction",
+        "commit": "853364b81d3ed3361e3d90eb2837d67cc972f169",
+        "actual": "853364b81d3ed3361e3d90eb2837d67cc972f169"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-10_alt_construction",
+        "commit": "a39b6e76ff25d96a661c0128da8b6da06b41d778",
+        "actual": "a39b6e76ff25d96a661c0128da8b6da06b41d778"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-11_prop_construction",
+        "commit": "d4f252fe49f89bf267475aaf8f9905615a69dfe6",
+        "actual": "d4f252fe49f89bf267475aaf8f9905615a69dfe6"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-11_alt_construction",
+        "commit": "f4446131975e15815e6feb9bd1392de4a7472d7e",
+        "actual": "f4446131975e15815e6feb9bd1392de4a7472d7e"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-12_prop_construction",
+        "commit": "abee72b20f84e11bcd8dc28c91992c9551628c74",
+        "actual": "abee72b20f84e11bcd8dc28c91992c9551628c74"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-12_alt_construction",
+        "commit": "43093c2dacf020e1510d6188ee79d0bde099a6de",
+        "actual": "43093c2dacf020e1510d6188ee79d0bde099a6de"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-13_prop_construction",
+        "commit": "37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc",
+        "actual": "37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-13_alt_construction",
+        "commit": "e060f0d40571ba95e03a6b132adced725f884262",
+        "actual": "e060f0d40571ba95e03a6b132adced725f884262"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-14_prop_construction",
+        "commit": "aa555c759f5703c9cbf68a43320bb3c85d19acc8",
+        "actual": "aa555c759f5703c9cbf68a43320bb3c85d19acc8"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-14_alt_construction",
+        "commit": "73ea839fb5c547141f51506c698c40c3c627bdea",
+        "actual": "73ea839fb5c547141f51506c698c40c3c627bdea"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-15_prop_construction",
+        "commit": "43e543e2ad8981440ebb5b938cd8d6141d6fff06",
+        "actual": "43e543e2ad8981440ebb5b938cd8d6141d6fff06"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-15_alt_construction",
+        "commit": "19303e5152d761369c15c2eea004a9ecbf27f994",
+        "actual": "19303e5152d761369c15c2eea004a9ecbf27f994"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-16_prop_construction",
+        "commit": "5568e83bcfcd9c20ee0916d9c4ba8942015db94b",
+        "actual": "5568e83bcfcd9c20ee0916d9c4ba8942015db94b"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-16_alt_construction",
+        "commit": "c0f4dbf333321157763b93b15e0fe8ed7ce9ec55",
+        "actual": "c0f4dbf333321157763b93b15e0fe8ed7ce9ec55"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-17_prop_construction",
+        "commit": "2f1d4f939154b71b152230ea1b5d408f48255439",
+        "actual": "2f1d4f939154b71b152230ea1b5d408f48255439"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-17_alt_construction",
+        "commit": "229f01232d02b13b08b8cd12cd2b083630aafe66",
+        "actual": "229f01232d02b13b08b8cd12cd2b083630aafe66"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-18_prop_construction",
+        "commit": "991b098f0f7f4cb949a8a9b29f11c76bd376e1c2",
+        "actual": "991b098f0f7f4cb949a8a9b29f11c76bd376e1c2"
+      },
+      {
+        "branch": "experiment/zetahyperbolic-p06-18_alt_construction",
+        "commit": "bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3",
+        "actual": "bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3"
+      }
+    ],
+    "publication_identity_not_compilation": true,
+    "assumption_discharge_inferred": false,
+    "coverage_caveat": "6.5 pole norms specialize to weight 4; no all-weight prerequisite discharge. Exact consumer compatibility is required before any research assumption is removed.",
+    "targets_or_iterations_changed": false
+  },
+  "separate_evidence": {
+    "companion_6_3_part_one": {
+      "source": "cdcb1935aa73a7c7e65006c1c198d114e9dcc6db",
+      "run_id": 40339809027,
+      "job_id": 121631103447,
+      "modules": 263,
+      "theorems": 3162,
+      "declarations": 3901,
+      "destination_certificate_separate": true
+    },
+    "earlier_corrected_6_1": "docs/receipts/THEOREM_6_1_20261026.json",
+    "native_Windows_evidence_not_reused": true
+  },
+  "locks": {
+    "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+    "version": "v1_0_25",
+    "mode": "A_TIER_LEAN",
+    "execution_target": "GITHUB_CI",
+    "no_local_Lean": true,
+    "no_branch_merge": true,
+    "no_branch_deletion": true,
+    "immutable_publication_receipts_preserved": true
+  },
+  "report": "docs/CHAPTER_6_PROGRESS.md"
+}
