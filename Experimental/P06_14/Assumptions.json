@@ -1,0 +1,43 @@
+{
+  "item": "6.14",
+  "module": "P06_14",
+  "namespace": "Experimental.P06_14",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_14.upstream_sech_cosine_transform",
+      "meaning": "Cosine transform of the genuine hyperbolic secant; an upstream analytic identity independent of the requested scaled beta pole functional and coupled pencil.",
+      "dependency_items": [
+        "6.4"
+      ],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_14.upstream_sech_cosine_transform"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.UnitLogMoments.integral_pow_log",
+    "ManuscriptChain.Hyperbolic.density_pos"
+  ],
+  "dependency_items": [
+    "3.1",
+    "4.4",
+    "6.4"
+  ],
+  "input_data": [],
+  "typed_coverage": "Concrete beta series/finite harmonics, an explicit scaling operator, and the independent secant transform. No equivalence between conflicting printed normalizations is assumed.",
+  "missing_domain_interfaces": "A coherent unscaled beta rational functional, the exact change of variables and Jacobian, its monomial and pole formulas, comparison constants C2/C4 and the actual coupled matrix.",
+  "repair_gates": [
+    "The source proof itself contains a “Wait” normalization correction and obtains a factor 2 differing from the displayed monomial formula. Resolve definitions and Jacobian first.",
+    "Do not combine −μ(R(4t)) with an incompatible −4w(2v) formula as axioms.",
+    "Cone positivity, pole alignment and integer arithmetic must use one repaired convention throughout."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.14",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
