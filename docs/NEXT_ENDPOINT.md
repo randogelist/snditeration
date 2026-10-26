@@ -1,4 +1,4 @@
-# Next single-target handoff — following P05.01 A-Tier PASS
+# Next single-target handoff — following P05.01 exact A-Tier closure
 
 ## Completed and frozen
 
@@ -6,6 +6,8 @@
 - `P02_03_ANALYTIC_DERIVATIVE`: PR #18, CI 40262441761 PASS.
 - `P05_04_EVEN_POLE_CANCELLATION`: PR #21, CI 40265986335 PASS.
 - **`P05_01_TWO_VARIABLE_BEUKERS_MOMENTS`: PR #24, [CI 40267850777](https://github.com/randogelist/snditeration/actions/runs/40267850777) PASS**. Three exact source modules, 8,783 Lean jobs, standard-only targeted axiom reports; source `08d308a22ebe1cc31dfad61b3e875b192290bf17`, merged `1ae34f2bc30135460c357f4efffe1fdbb93d5009`.
+
+- **`P05_01_OFFDIAGONAL_RATIONALITY`:** [PR #26](https://github.com/randogelist/snditeration/pull/26) merged `98c11122faa8cfdeb109e4ebba31d1f21d1b505b` after [CI 40268502325 PASS](https://github.com/randogelist/snditeration/actions/runs/40268502325), 8,784 jobs and both explicit rationality declarations axiom-clean. **P05.01 is fully complete as printed.**
 
 ## Candidate next frozen target — not started
 
