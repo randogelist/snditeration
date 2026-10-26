@@ -175,3 +175,9 @@ run_cmd do
 
 #print axioms ManuscriptChain.Tau.normalized_derivative_rationalDomain
 #print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic
+
+-- Independent integration P05.01: Mellin log moments; source copied from PR #15.
+#print axioms ManuscriptChain.UnitLogMoments.image_exp_neg
+#print axioms ManuscriptChain.UnitLogMoments.integral_exp_neg_substitution
+#print axioms ManuscriptChain.UnitLogMoments.integral_pow_log
+#print axioms ManuscriptChain.UnitLogMoments.integrable_pow_log
