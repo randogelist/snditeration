@@ -75,3 +75,4 @@ import Zetahyperbolic.Section4.AlgebraicHeight
 
 import Zetahyperbolic.Section5.KreinMonomial
 import Zetahyperbolic.Section5.KreinPolynomial
+import Zetahyperbolic.Section6.PotentialGap
