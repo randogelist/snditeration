@@ -15,65 +15,67 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 
 **Separate workflow controls (not proof tiers):** `B_TIER_DERIVATION`, `A_TIER_EXECUTION`, `A_TIER_PLANNING`. Build name-tags `_construction`, `_subcritical`, `_critical` and `_reasonal_assertion` are progress/recheck labels, never proof certificates. **No item here meets `!!!` or `!!!!`;** no unconditional ζ(5)/ζ(7) irrationality or full-paper certification follows from the present receipts.
 
-## 2. Manuscript items (45) — tier evidence first
+## 2. Manuscript items (45), in printed order
 
-Items follow the original manuscript's order. **A `!!` on a subclaim, corrected result, or conditional transfer does not close the full printed theorem.** Open items receive no unearned B/A/formal/S marker. The seven exact A-Tier items are crossed off; of these, three are verified only in the companion repository.
+**Whole-item gate** and **component gate** are intentionally separate. A checkmark/strikethrough appears only for an exact original printed item with a passed Lean proof. A `!!` attached to a correction or subclaim certifies **only that narrower statement**, never the unresolved parent. The full [45-item tracker](docs/PAPER_GAP_TRACKER.md) gives source/CI and missing prerequisites.
 
-| # | Paper item | Title | Highest supported tier and scope | Complete printed item? |
+| # | Printed item | Title | Whole-item proof tier | Separate verified component / status |
 |---:|:---|:---|:---|:---|
-| 1 | ~~2.2~~ ✓ | Rational functional pullback | `!!` A-Tier, exact **local** | **Complete** |
-| 2 | ~~2.3~~ ✓ (cross) | Reflection and difference identities for Tau | `!!` A-Tier, exact **cross-repo** | **Complete** |
-| 3 | ~~2.4~~ ✓ | Canonical basis invariance | `!!` A-Tier, exact **local** | **Complete** |
-| 4 | ~~2.5~~ ✓ | Lagrange pole diagonalization | `!!` A-Tier, exact **local** | **Complete** |
-| 5 | ~~3.1~~ ✓ | Universal hyperbolicity and zero-free disk | `!!` A-Tier, exact **local** | **Complete** |
-| 6 | 3.2 | Continuous hyperbolic pencil for all real s > 1 | `!!` A-Tier, **corrected only** | **Corrected only** — printed item requires repair |
-| 7 | 3.3 | Total positivity, leading sign, universal signature | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 8 | 3.4 | Root interlacing and Dodgson condensation | `!!` A-Tier, **subclaim**; repair | **Incomplete; repair needed** |
-| 9 | 3.5 | Stieltjes J-fraction from interlacing roots | `!!` A-Tier, **subclaim**; repair | **Incomplete; repair needed** |
-| 10 | 3.6 | Stieltjes reciprocal-root power sums | `!!` A-Tier, **corrected only** | **Corrected only** — printed item requires repair |
-| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | `!!` A-Tier, **subclaim only** | **Incomplete; repair needed** |
-| 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 14 | 4.1 | Spectral irrationality measure criterion | `!!` A-Tier, **conditional only** | **Conditional only** — original conclusion open |
-| 15 | 4.2 | Transfer for algebraic approximations | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` A-Tier, exact **cross-repo** | **Complete** |
-| 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 19 | 4.6 | Determinant bounds and coefficient heights | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 20 | 4.7 | Root collapse and separation | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 21 | 4.8 | Rational root exclusion and cluster degree bounds | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 22 | 5.1 | Two-variable Beukers measure for zeta(7) | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 24 | 5.3 | Beukers measure and dual pencil for beta(4) | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` A-Tier, exact **cross-repo** | **Complete** |
-| 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open / unverified** | **Incomplete** |
-| 27 | 5.7 | Double-pole determinant for 1,zeta(5),zeta(6) | — **open / unverified** | **Incomplete** |
-| 28 | 6.1 | Divided-difference valuation and intrinsic p^-6 barrier | — **open / unverified** | **Incomplete** |
-| 29 | 6.2 | Simultaneous weight-(6,7) Beukers functional | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 30 | 6.3 | q-adic nonvanishing and positive-cone approximations | — original **blocked**; external rational evidence | **Incomplete; repair needed** |
-| 31 | 6.4 | Character-Vandermonde sign cancellation and beta hyperbolicity | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 32 | 6.5 | q-adic nonvanishing at zero | — **open / unverified** | **Incomplete** |
-| 33 | 6.6 | Generalized multi-weight positive-definite pencil | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 34 | 6.7 | Universal multi-weight Beukers Krein decomposition | — **open / unverified** | **Incomplete** |
-| 35 | 6.8 | Three-term linear-independence cone | — **open / unverified** | **Incomplete** |
-| 36 | 6.9 | Triple-pole and multi-weight determinants | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 37 | 6.10 | Potential-gap identity and quadratic derivative growth | `!!` A-Tier, **subclaim only** | **Incomplete** |
-| 38 | 6.11 | Distribution growth and 2-adic quotient obstruction | — **open / unverified** | **Incomplete** |
-| 39 | 6.12 | Full-dimension sign-flip positivity and q-adic nonvanishing | — **open / unverified** | **Incomplete** |
-| 40 | 6.13 | Central-factorial secant differential identity | `!!` A-Tier, **subclaim**; repair | **Incomplete; repair needed** |
-| 41 | 6.14 | Even-pole cosh scaling and coupled pencils | — **open / unverified** | **Incomplete** |
-| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | `!!` A-Tier, **subclaim**; repair | **Incomplete; repair needed** |
-| 43 | 6.16 | Generalized multi-weight Zeta-Beta pencil | — **open / unverified** | **Incomplete** |
-| 44 | 6.17 | Universal two-variable Zeta-Beta pencil | `!!` A-Tier, **subclaim only** | **Incomplete; repair needed** |
-| 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | `!!` A-Tier, **subclaim only** | **Incomplete** |
+| 1 | ~~2.2~~ ✓ | Rational functional pullback | `!!` **A-Tier original** | — (whole item completed) |
+| 2 | ~~2.3~~ ✓ (cross) | Reflection and difference identities for Tau | `!!` **A-Tier original** | — (whole item completed) |
+| 3 | ~~2.4~~ ✓ | Canonical basis invariance | `!!` **A-Tier original** | — (whole item completed) |
+| 4 | ~~2.5~~ ✓ | Lagrange pole diagonalization | `!!` **A-Tier original** | — (whole item completed) |
+| 5 | ~~3.1~~ ✓ | Universal hyperbolicity and zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
+| 6 | 3.2 | Continuous hyperbolic pencil for all real s > 1 | — **open as printed** | `!!` **corrected theorem only** |
+| 7 | 3.3 | Total positivity, leading sign, universal signature | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 8 | 3.4 | Root interlacing and Dodgson condensation | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 9 | 3.5 | Stieltjes J-fraction from interlacing roots | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 10 | 3.6 | Stieltjes reciprocal-root power sums | — **open as printed** | `!!` **corrected theorem only** |
+| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` A-Tier, **conditional only** |
+| 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
+| 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | — (whole item completed) |
+| 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | — **no verified positive subtheorem** |
+| 27 | 5.7 | Double-pole determinant for 1,zeta(5),zeta(6) | — **open as printed** | — **no verified positive subtheorem** |
+| 28 | 6.1 | Divided-difference valuation and intrinsic p^-6 barrier | — **open as printed** | — **no verified positive subtheorem** |
+| 29 | 6.2 | Simultaneous weight-(6,7) Beukers functional | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 30 | 6.3 | q-adic nonvanishing and positive-cone approximations | — **open as printed** | — **no verified positive subtheorem** |
+| 31 | 6.4 | Character-Vandermonde sign cancellation and beta hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 32 | 6.5 | q-adic nonvanishing at zero | — **open as printed** | — **no verified positive subtheorem** |
+| 33 | 6.6 | Generalized multi-weight positive-definite pencil | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 34 | 6.7 | Universal multi-weight Beukers Krein decomposition | — **open as printed** | — **no verified positive subtheorem** |
+| 35 | 6.8 | Three-term linear-independence cone | — **open as printed** | — **no verified positive subtheorem** |
+| 36 | 6.9 | Triple-pole and multi-weight determinants | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 37 | 6.10 | Potential-gap identity and quadratic derivative growth | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 38 | 6.11 | Distribution growth and 2-adic quotient obstruction | — **open as printed** | — **no verified positive subtheorem** |
+| 39 | 6.12 | Full-dimension sign-flip positivity and q-adic nonvanishing | — **open as printed** | — **no verified positive subtheorem** |
+| 40 | 6.13 | Central-factorial secant differential identity | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 41 | 6.14 | Even-pole cosh scaling and coupled pencils | — **open as printed** | — **no verified positive subtheorem** |
+| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 43 | 6.16 | Generalized multi-weight Zeta-Beta pencil | — **open as printed** | — **no verified positive subtheorem** |
+| 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
+| 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
 
-**Current aggregate:** 7 complete printed items out of 45 (**4 local**, **3 companion-only**); **none** at formal closure (`!!!`) or S-Tier (`!!!!`). The [45-item source/evidence table](docs/PAPER_GAP_TRACKER.md), [64 sub-obligation register](docs/PAPER_GAP_REGISTER.md), and [cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md) contain precise outstanding assumptions, repairs and compiler receipts.
+**Totals:** Seven fully verified exact printed items across the two audited repositories (four local, three companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
-### Additional audited subclaims crossed in repeated reviews
+### More completed subclaims uncovered in the 26 October repeat audit
 
-Four audit passes rechecked the merged local project, the independently passing 219-module companion, historical source ZIPs and the literal PDF theorem statements. Beyond the **seven complete printed A-Tier items**, **21 still-incomplete manuscript rows** now explicitly cross off their separately A-Tier-certified components. These include the actual all-order Turán derivative clauses of **3.7(1)**, coefficient Newton criteria **3.7(2)**, strict centered Newton inequality **3.7(3)**, all-order Dodgson **3.4(2)**, conditional algebraic transfer **4.2**, finite spectral clustering **4.7**, finite root-factor product bounds **4.8**, and finite dual/triple-pole algebra in **5–6**. The false or unsupported printed additions remain open/repair-required.
+The new passes verified the **rank-sensitive degree/root count** for every principal determinant in 3.4, **correct two-/three-level J-fraction continuants** in 3.5, plus precisely matched the all-order derivative Turán, weak/strict/equality Newton clauses of 3.7 and conditional degree-d algebraic transfer in 4.2. Exact q=11 and q=41 Lean calculations refute two **intermediate** 6.17 local-arithmetic proof steps without refuting its full hypothetical theorem.
 
-**[Read the four-round exact-source audit](docs/MULTI_ROUND_CROSS_AUDIT_2026-10-25.md)**. It identifies each matching fully qualified Lean declaration and the unproved mathematical dependency. The [45-item tierlist](docs/PAPER_GAP_TRACKER.md) and [64 detailed sub-obligations](docs/PAPER_GAP_REGISTER.md) carry the crossings forward. **Whole printed items remain 7/45; no new S-Tier, finite-witness or unconditional ζ(5) proof was found.**
+The original PDF also contains an independently confirmed **inequality-direction gap in 4.6(2)**: a stated upper bound on `A_M` is used to infer a lower bound for a leading coefficient. A new lower-rate estimate is required; the previously identified reversed-root-gap argument in 4.8(1) is likewise still unproved.
+
+[**26 October multi-round source audit**](docs/REPEAT_AUDIT_2026-10-26.md) · [**64 sub-obligation register**](docs/PAPER_GAP_REGISTER.md) · [25 October baseline](docs/MULTI_ROUND_CROSS_AUDIT_2026-10-25.md)
 
 ## 3. Source provenance, outstanding endpoints and maintenance
 
