@@ -1,3 +1,17 @@
+# Dual-chain addendum — 26 October 2026
+
+The original policy below describes the first publication snapshot. Current work uses paired `_prop_construction` and `_alt_construction` branches for each unfinished original item; the old `_construction` refs and receipts remain intact.
+
+- PROP inherits the original typed scaffolds and assumptions unchanged and adds `Chain.md`.
+- ALT starts from main and adds a separate `Alt/Target.md` and `Alt/Plan.json`. These are documentation plans, not new Lean interfaces, axioms or proofs. The historical list of Lean files below applies to the original/PROP scaffolds, not to ALT.
+- Preserve exact original, corrected, restricted and conditional scopes separately. Corrected 3.2 keeps its existing historical certification; its false original does not inherit it.
+- An ALT output may serve any PROP or ALT consumer only through an independently proved implication to that consumer's exact input contract. If that implication fails, revise and relabel the consumer rather than treating the substitution as automatic.
+- Select exact predecessor clauses, not a blanket theorem label. No same-target axiom, known-false predecessor or mutually assumed dependency cycle supplies completion.
+- Keep source/dependency/toolchain evidence and transitive axiom audits separate for each target. A new branch or source-only plan earns no new `!`, `!!`, `!!!` or `!!!!`.
+- No local Lean execution, workflow dispatch, proof-source changes or certified-import changes are part of this publication.
+
+## Historical prerequisite-scaffold policy
+
 # Experimental prerequisite modules
 
 Workflow: `YOU_ARE_GOODWORKFLOWFRONTIER` v1_0_25.
