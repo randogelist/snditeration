@@ -1,0 +1,60 @@
+{
+  "paper_item": "6.8",
+  "alternative_target": "State a conditional integer-translate nonvanishing and raywise lower-bound transfer for c+aζ(3)+bζ(5): assume the exact qualitative and quantitative 4.5 conclusions for the fixed pair (a,b) in its stated cone, and the independent Apéry theorem for the b=0 case; then derive the corresponding three-term conclusions, distinguishing an existential threshold from a computable one.",
+  "relation_to_original": "conditional",
+  "changes_from_original": "Retain the original actual linear forms but expose the missing 4.5 theorem as a hypothesis and drop unconditional/effective labels unless separately discharged.",
+  "prerequisites": [
+    "4.5"
+  ],
+  "retained_open_obligations": [
+    "Prove the sign normalization and all zero-coefficient boundary cases.",
+    "Replace the independent Apéry axiom with a checked import.",
+    "Discharge the actual 4.5 hypotheses and supply an algorithmic threshold to recover the original effective statement."
+  ],
+  "correction_gate": "An alternative to 4.5 must imply the exact qualitative/quantitative premises used here. This conditional transfer alone proves no new unconditional linear independence.",
+  "source_paths": [
+    "Experimental/P06_08/Target.md",
+    "Experimental/P06_08/Assumptions.json",
+    "Experimental/P06_08/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-08_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-08_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-08_construction",
+  "original_snapshot_commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_08/Target.md",
+      "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5",
+      "url": "https://github.com/randogelist/snditeration/blob/acdc24d724974e6d4f4b4846f24b2a42516a56c5/Experimental/P06_08/Target.md"
+    },
+    {
+      "path": "Experimental/P06_08/Assumptions.json",
+      "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5",
+      "url": "https://github.com/randogelist/snditeration/blob/acdc24d724974e6d4f4b4846f24b2a42516a56c5/Experimental/P06_08/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_08/Prerequisites.lean",
+      "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5",
+      "url": "https://github.com/randogelist/snditeration/blob/acdc24d724974e6d4f4b4846f24b2a42516a56c5/Experimental/P06_08/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
