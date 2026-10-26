@@ -1,0 +1,49 @@
+{
+  "paper_item": "4.6",
+  "alternative_target": "Retain the actual finite determinant/log-potential conservation identity and formulate asymptotic rate and height conclusions with separately oriented upper and lower multiplier/energy hypotheses. Omit the printed lower-height conclusion unless an independent lower multiplier-rate estimate is established.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Repair the reversed multiplier-rate inequality; do not derive a lower height bound from an upper multiplier bound.",
+  "prerequisites": [
+    "2.5",
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Actual normalizer/multiplier identification.",
+    "Arcsine probability/potential, Jensen/Fubini integrability and Euler–Maclaurin estimates.",
+    "Independent valid lower-rate data for any restored lower-height clause."
+  ],
+  "correction_gate": "Every logarithmic inequality must preserve its sign after multiplying or dividing by positive normalization factors.",
+  "source_paths": [
+    "Zetahyperbolic/Section6/PotentialGap.lean",
+    "Experimental/P04_06/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p04-06_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p04-06_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p04-06_construction",
+  "original_snapshot_commit": "c34d02d7e75cc06166469695c64862dd3af4b04f",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section6/PotentialGap.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section6/PotentialGap.lean"
+    },
+    {
+      "path": "Experimental/P04_06/Target.md",
+      "commit": "c34d02d7e75cc06166469695c64862dd3af4b04f",
+      "url": "https://github.com/randogelist/snditeration/blob/c34d02d7e75cc06166469695c64862dd3af4b04f/Experimental/P04_06/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
