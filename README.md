@@ -26,11 +26,11 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 3 | ~~2.4~~ ✓ | Canonical basis invariance | `!!` **A-Tier original** | — (whole item completed) |
 | 4 | ~~2.5~~ ✓ | Lagrange pole diagonalization | `!!` **A-Tier original** | — (whole item completed) |
 | 5 | ~~3.1~~ ✓ | Universal hyperbolicity and zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
-| 6 | 3.2 | Continuous hyperbolic pencil for all real s > 1 | — **open as printed** | `!!` **corrected theorem only** |
+| 6 | 3.2 | Continuous hyperbolic pencil for all real s > 1 | — **printed normalization false** | `!!` **corrected theorem only** |
 | 7 | 3.3 | Total positivity, leading sign, universal signature | — **open as printed** | `!!` Actual **all principal** Gram minors and every strict 2×2 principal inequality; nonprincipal mixed minors and determinacy open |
-| 8 | 3.4 | Root interlacing and Dodgson condensation | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
-| 9 | 3.5 | Stieltjes J-fraction from interlacing roots | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
-| 10 | 3.6 | Stieltjes reciprocal-root power sums | — **open as printed** | `!!` Corrected **weighted finite-atomic determinant iff order≤distinct support**; printed all-order positivity false |
+| 8 | 3.4 | Root interlacing and Dodgson condensation | — **printed root-count requires repair** | `!!` A-Tier, **subclaim**; repair |
+| 9 | 3.5 | Stieltjes J-fraction from interlacing roots | — **printed J-fraction false** | `!!` A-Tier, **subclaim**; repair |
+| 10 | 3.6 | Stieltjes reciprocal-root power sums | — **printed all-order strictness false** | `!!` Corrected **weighted finite-atomic determinant iff order≤distinct support**; printed all-order positivity false |
 | 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` Derivative Turán/Newton, strict center bound **and no two adjacent centered coefficients vanish**; each individual coefficient nonzero still open |
 | 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` Actual symmetric whitened/pole operator characteristic polynomial **and full root-multiset equality**; orthogonal CD kernel open |
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
@@ -43,14 +43,14 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` Exact **dual C Cᵀ nullspace = coefficient left kernel** and iff positive/row separation; 2D Beukers integral open |
-| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **open as printed** | `!!` Full finite part (1), rank-one ±ζ7 and finite **pure-sign-channel** Krein models; actual infinite signed tails open |
+| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` Full finite part (1), rank-one ±ζ7 and finite **pure-sign-channel** Krein models; actual infinite signed tails open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | — (whole item completed) |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
 | 27 | 5.7 | Double-pole determinant for 1,zeta(5),zeta(6) | — **open as printed** | — **no verified positive subtheorem** |
 | 28 | 6.1 | Divided-difference valuation and intrinsic p^-6 barrier | — **open as printed** | — **no verified positive subtheorem** |
 | 29 | 6.2 | Simultaneous weight-(6,7) Beukers functional | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 30 | 6.3 | q-adic nonvanishing and positive-cone approximations | — **open as printed** | — **no verified positive subtheorem** |
+| 30 | 6.3 | q-adic nonvanishing and positive-cone approximations | — **printed cone contradicted externally** | — **no verified positive subtheorem** |
 | 31 | 6.4 | Character-Vandermonde sign cancellation and beta hyperbolicity | — **open as printed** | `!!` Finite β character sign, 2-/3-node Gram; full analytic moments/q-adic bounds open |
 | 32 | 6.5 | q-adic nonvanishing at zero | — **open as printed** | — **no verified positive subtheorem** |
 | 33 | 6.6 | Generalized multi-weight positive-definite pencil | — **open as printed** | `!!` Conditional finite positive-weight matrix cone: real spectrum, weak/strict-off-roots Turán; infinite density/prime bounds open |
@@ -60,9 +60,9 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 37 | 6.10 | Potential-gap identity and quadratic derivative growth | — **open as printed** | `!!` Finite K²-normalized potential and pole-energy identities; **asymptotic rate/gap open** |
 | 38 | 6.11 | Distribution growth and 2-adic quotient obstruction | — **open as printed** | `!!` Elementary **odd-square scaling and consecutive-product parity**; Euler distribution/2-adic valuations open |
 | 39 | 6.12 | Full-dimension sign-flip positivity and q-adic nonvanishing | — **open as printed** | — **no verified positive subtheorem** |
-| 40 | 6.13 | Central-factorial secant differential identity | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 40 | 6.13 | Central-factorial secant differential identity | — **printed series sign incorrect** | `!!` A-Tier, **subclaim**; repair |
 | 41 | 6.14 | Even-pole cosh scaling and coupled pencils | — **open as printed** | — **no verified positive subtheorem** |
-| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | — **open as printed** | `!!` Qualitative odd-beta transcendence, exact k=0 π/4 and log2/2 moments and Mellin integrals; **η(1) removable endpoint and effective-rate repairs remain** |
+| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | — **printed exterior-rate correction needed** | `!!` Qualitative odd-beta transcendence, exact k=0 π/4 and log2/2 moments and Mellin integrals; **η(1) removable endpoint and effective-rate repairs remain** |
 | 43 | 6.16 | Generalized multi-weight Zeta-Beta pencil | — **open as printed** | — **no verified positive subtheorem** |
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
@@ -74,6 +74,8 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 **Seven additional verification rounds:** [source-hashed machine-readable receipts](docs/CROSSINGS_MACHINE_2026-10-26.json) and [centered Taylor, pole-energy, dual-matrix and β(1) audit](docs/ROUND_AUDIT_2026-10-26_MOMENTS_AND_POLES.md). These newly crossed pieces are compiled, axiom-audited *subclaims*, not new complete manuscript items. They include the actual no-two-consecutive-zero Taylor theorem, exact finite pole-energy identities, the dual-pair discriminant criterion, weight-invariant dual slopes, the k=0 beta moment integrals and the η(1) removable-value correction.
 
 **Six further source-level verification rounds:** [principal-versus-mixed minors, sharp finite-Hankel rank, symmetric pole spectra and dual S.O.S. sweep](docs/ROUND_AUDIT_2026-10-26_PRINCIPAL_MIXED_AND_DUAL.md). The tracker now explicitly crosses the **precise** principal Gram theorem, weighted rank threshold, root-multiset equality, finite signed-channel hypotheses, finite multiweight strict Turán and odd-square parity identities. Each remains separate from the unproved stronger analytic or arithmetic claim. The [machine-readable crossing ledger](docs/CROSSINGS_MACHINE_2026-10-26.json) records their pinned source hashes and passing module receipt.
+
+**Latest six-round proof-source sweep:** [principal-versus-mixed minor positivity, the exact weighted finite-rank threshold, the symmetric pole root multiset, dual signed finite cones, and strict finite multiweight Turán](docs/ROUND_AUDIT_2026-10-26_PRINCIPAL_MIXED_AND_DUAL.md) are now individually crossed at the *subtheorem* level. The [machine-readable ledger](docs/CROSSINGS_MACHINE_2026-10-26.json) records **18 pinned, source-hashed, passing module entries**; this is neither a count of whole manuscript theorems nor evidence that the sources were newly compiled in this documentation turn.
 
 ### More completed subclaims uncovered in the 26 October repeat audit
 
