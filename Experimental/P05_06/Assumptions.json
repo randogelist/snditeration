@@ -1,0 +1,37 @@
+{
+  "id": "P05_06",
+  "printed_id": "5.6",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P05_06",
+  "axioms": [
+    {
+      "full_name": "Experimental.P05_06.outerT_integrable",
+      "mathematical_meaning": "Integrability of the literal floor/min/max outer integrand on the printed compact interval.",
+      "dependency_ids": [
+        "OUTER_FLOOR_PARTITION_REGULARITY"
+      ],
+      "status": "OPEN_EXPERIMENTAL_AXIOM"
+    },
+    {
+      "full_name": "Experimental.P05_06.inner_tail_integrable",
+      "mathematical_meaning": "Absolute integrability of the literal inner R(x)/x^3 on (20,∞); no sign or constant bound.",
+      "dependency_ids": [
+        "INNER_PERIODIC_PRIMITIVE_MAJORANT"
+      ],
+      "status": "OPEN_EXPERIMENTAL_AXIOM"
+    }
+  ],
+  "dependency_ids": [
+    "P05_04",
+    "P05_05_SIMPLE_POLE_SCOPE"
+  ],
+  "coverage": "Actual outer and inner real functions are defined verbatim; axioms cover regularity/convergence only. None of the three printed numeric/arithmetic conclusions is assumed.",
+  "repair_gate": "Table arithmetic alone is not a partition proof. Audit floor endpoints, survivor classes and replacement ranges. Imported 5.4 only applies to simple pole pairs and cannot silently supply higher-order residue claims.",
+  "object_interface_work": "Construct and verify the full floor-function interval partition, continuity claims and exact integration; derive a rigorous periodic-primitive tail majorant proving the signed inequality; build actual pole classes, ordered replacement polynomials, invertible local basis transformation and q-adic determinant valuation estimates.",
+  "discharge_obligations": "Replace outerT_integrable by finite-piece regularity proof and inner_tail_integrable by a proved absolute majorant. These are deliberately weaker than the final integral value and inequality.",
+  "no_target_assumption": true,
+  "no_compilation_performed": true
+}

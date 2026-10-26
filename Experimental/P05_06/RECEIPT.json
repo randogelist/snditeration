@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "paper_item": "5.6",
+  "module_key": "P05_06",
+  "branch": "experiment/zetahyperbolic-p05-06_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P05_06.outerT_integrable",
+      "meaning": "Integrability of the literal floor/min/max outer integrand on the printed compact interval.",
+      "dependencies": [
+        "OUTER_FLOOR_PARTITION_REGULARITY"
+      ]
+    },
+    {
+      "name": "Experimental.P05_06.inner_tail_integrable",
+      "meaning": "Absolute integrability of the literal inner R(x)/x^3 on (20,∞); no sign or constant bound.",
+      "dependencies": [
+        "INNER_PERIODIC_PRIMITIVE_MAJORANT"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P05_06",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "0ef00db4dfdce7ad31880993dfc92309e54fab9ae08465a9353cfea4201adfab",
+    "Assumptions.json": "9becbad9349f36c1c32d448bce6ab11ed78aaf184abccf558832607252b911ea",
+    "Target.md": "4f86ae48da66c70ac63f8c08371fb1c21c31f960322d6f5258b8909ffdec7c5e",
+    "Work.lean": "55a2e8ef480415ac6cb01db6bdbeac8c827071630ec0f73d5e7f35028382bc69"
+  },
+  "audit_sha256": "9e256d11527fa91aab403e75b207566feafa10fefc370244f07d33f7337e5714",
+  "original_statement_sha256": "ab822730d4e225d2938bbe216bbac54073178c2101140383d4145910af5bfdec",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
