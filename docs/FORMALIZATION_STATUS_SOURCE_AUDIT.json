@@ -1,0 +1,1105 @@
+{
+  "audit_kind": "Source-and-mathematical-obstacle inventory, not compiler certification",
+  "baseline_commit": "5acb01dd19a9cd6ca8312557ec5d84ef94a960b6",
+  "no_local_lean": true,
+  "scope": "45 numbered original proof items; corrected statements and components do not increase original whole-item count",
+  "source_files_scanned": 117,
+  "source_declarations_approximate": 1085,
+  "bare_placeholder_scan": "No bare sorry/admit/axiom declarations found in certified-library source tree; substring matches occurred only in provenance comments. Experimental branches intentionally contain separate prerequisite axioms.",
+  "status_caveat": "Genuinely blocked denotes an identified substantive mathematical/definition gap or false original in this source state, not a proof that no future construction can solve the corrected problem. This source audit does not claim exhaustive exploration of all possible mathematics. Root must update under-repair entries after CI.",
+  "items": [
+    {
+      "item": "2.2",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "2.3",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "2.4",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "2.5",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "3.1",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "3.2",
+      "status": "genuinely blocked",
+      "baseline_register_status": "**REPAIR; corrected `!!`**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "false_literal_normalization",
+      "reason": "The printed continuous density differs by \u03c0/2 from the odd-weight density, contradicting its coincidence clause.",
+      "required_to_finish": "Use the separately certified corrected prefactor; the original cannot be proved unchanged.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "3.3",
+      "status": "under repair",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "missing_total_positivity_and_determinacy",
+      "reason": "Principal positivity and finite mixed-minor components do not prove every mixed minor or uniqueness of the actual Stieltjes moment measure.",
+      "required_to_finish": "Complete generalized alternant/Andreief positivity and actual factorial growth plus determinacy transfer.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Assigned exact candidate-module repairs to independent Section3 proof agents; CI pending and no local Lean used."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_03.actualMomentFactorialMajorant",
+        "Experimental.P03_03.generalizedVandermondePositive"
+      ]
+    },
+    {
+      "item": "3.4",
+      "status": "under repair",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "false_universal_root_count",
+      "reason": "An actual principal slope can be singular, so a principal polynomial can lose degree and have fewer finite roots than its matrix size.",
+      "required_to_finish": "Keep generalized eigenvalues including zero, prove compression interlacing and translate only nonzero eigenvalues; Dodgson is an independent component.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Assigned exact candidate-module repairs to independent Section3 proof agents; CI pending and no local Lean used."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_04.actualPrincipalShiftedInertia"
+      ]
+    },
+    {
+      "item": "3.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "false_resolvent_normalization",
+      "reason": "The printed J-fraction uses the wrong diagonal and off-diagonal t factors and omits the Gram determinant normalization; cyclicity is not established.",
+      "required_to_finish": "Prove the corrected I+tB resolvent fraction, determinant prefactor and cyclic/no-breakdown scope.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_05.lanczosBasisOfCyclic"
+      ]
+    },
+    {
+      "item": "3.6",
+      "status": "under repair",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "false_all_order_strict_positivity",
+      "reason": "A finitely supported reciprocal-square measure has bounded Hankel rank; repeated squared distances can reduce it further.",
+      "required_to_finish": "Use the corrected PSD/rank statement and correctly oriented estimator bounds; do not certify the false all-order original.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Assigned exact candidate-module repairs to independent Section3 proof agents; CI pending and no local Lean used."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_06.actualFiniteMomentGramExpansion"
+      ]
+    },
+    {
+      "item": "3.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "invalid_coefficient_nonvanishing_inference",
+      "reason": "Distinct real eigenvalues do not force every centered coefficient nonzero: factors from -1 and 1 produce 1-Y\u00b2.",
+      "required_to_finish": "Keep exact Turan/Newton inequalities separate; independently prove any family-specific nonvanishing with valid hypotheses.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "3.8",
+      "status": "under repair",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "actual_curve_identification",
+      "reason": "Generic Jacobi/logdet calculus alone does not identify the derivative of the actual Laplace-reweighted moment pencil.",
+      "required_to_finish": "Prove differentiation under the integral and match all actual matrix/kernel entries and domain restrictions.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Assigned exact candidate-module repairs to independent Section3 proof agents; CI pending and no local Lean used."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_08.laplace_density_hasDerivAt",
+        "Experimental.P03_08.laplace_moment_local_domination"
+      ]
+    },
+    {
+      "item": "3.9",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "actual_character_and_hurwitz_realization",
+      "reason": "Finite character generating formulas do not supply the actual all-parameter rational functional, positivity, and shifted Hurwitz realization.",
+      "required_to_finish": "Construct correctly normalized analytic moments and full affine-pencil identification, keeping five listed characters distinct from universal character claims.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+        "Experimental.P03_09.character_power_series_blocks"
+      ]
+    },
+    {
+      "item": "4.1",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "effective_onset",
+      "reason": "Existing transfer APIs require numerical onset and rate-margin inputs; a nonconstructive eventual statement alone does not produce a computable threshold.",
+      "required_to_finish": "Supply an effective real-exponent/index-selection interface and explicit actual-family onsets.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "4.2",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**; printed hypotheses retained",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "4.3",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "4.4",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "unproved_arithmetic_energy_inputs",
+      "reason": "Actual primitive normalization decay and the quantitative multiplier/energy bounds at the exact 30n lattice are not supplied by spectral positivity or generic transfer.",
+      "required_to_finish": "Independently prove the cited changed-parameter arithmetic inputs, strict rate margins and effective onsets before exponent25687 or \u03b65 irrationality.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P04_04.fauzan_multiplier_input",
+        "Experimental.P04_04.fauzan_gram_energy_input",
+        "Experimental.P04_04.negative_node_polynomial_bound"
+      ]
+    },
+    {
+      "item": "4.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "unproved_coupled_arithmetic_inputs",
+      "reason": "Pointwise comparison alone does not supply the actual coupled rational pencil, common denominator multiplier, prime gains, spectral/decay rates and effective threshold.",
+      "required_to_finish": "Prove all those inputs on the same normalization and coefficient cone; then invoke the existing conditional transfer.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P04_05.coupled_density_comparison"
+      ]
+    },
+    {
+      "item": "4.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "reversed_inequality_in_printed_proof",
+      "reason": "The upper estimate for the multiplier rate cannot establish the lower-height conclusion. Finite log conservation cannot replace a missing asymptotic lower rate.",
+      "required_to_finish": "Prove an independent lower multiplier-rate estimate and actual potential/height limits, or state a separate corrected theorem.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P04_06.arcsine_probability_input",
+        "Experimental.P04_06.arcsine_log_potential_input"
+      ]
+    },
+    {
+      "item": "4.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "missing_actual_spectral_determinant_height_bounds",
+      "reason": "Finite cap/average root counting needs an upper spectral cap and a lower log absolute determinant bound for the actual whitened slope, plus height data for separation.",
+      "required_to_finish": "Discharge actual lattice premises from4.4/4.6 and supply squarefree-factor/leading coefficient arithmetic for root separation.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P04_07.weight_five_spectral_cap_input",
+        "Experimental.P04_07.weight_five_determinant_lower_input",
+        "Experimental.P04_07.weight_five_primitive_height_input",
+        "Experimental.P04_07.integer_factor_height_input"
+      ]
+    },
+    {
+      "item": "4.8",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "lower_gap_is_not_upper_cluster",
+      "reason": "The printed argument turns a lower root-distance gap into the upper clustering bound required for rational-root exclusion.",
+      "required_to_finish": "Independently establish actual upper-cluster membership and rational approximation lower bounds; keep finite factor-product bounds separate.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P04_08.weight_five_spectral_cap_input",
+        "Experimental.P04_08.zeta_five_measure_input"
+      ]
+    },
+    {
+      "item": "5.1",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "5.2",
+      "status": "under repair",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "general_L2_and_fixed_K_cones",
+      "reason": "The arbitrary real-L\u00b2 component now has a complete proof candidate using a logarithmic kernel bound and dominated integration, pending CI. The full original remains unprovable with its fixed-K cone quantifiers: both h-dimensional signed cones cannot fit in dimension K+1 when 2h>K+1.",
+      "required_to_finish": "Compile/audit exact analytic component and rational-independence interface; separately repair cone quantifiers, construct signed subspaces and control their infinite signed tails.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Repaired rational coefficient independence using explicit matrix determinant-unit equivalence and Rat.cast_det on entrywise casts.",
+        "Constructed actual mixed-monomial integrability and finite polynomial product-integral identification.",
+        "Constructed actual polynomial Mellin-log channels and summable signed-mode interchange.",
+        "Constructed actual kernel MemLp2 proof via density \u2264 L^5+L^4, L=-log(xy), and integrable log powers.",
+        "Constructed exact arbitrary real-L\u00b2 bilinear HasSum identity directly by H\u00f6lder and dominated integration; identified the printed positive/negative mode integrals and proved representative independence."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P05_02.actual_density_memLp_two"
+      ],
+      "candidate_files": [
+        "Zetahyperbolic/Section5/RationalIndependence.lean",
+        "Zetahyperbolic/Section5/BeukersPolynomialIntegral.lean",
+        "Zetahyperbolic/Section5/KreinPolynomialModes.lean",
+        "Zetahyperbolic/Section5/BeukersHilbertSchmidt.lean",
+        "Zetahyperbolic/Section5/KreinL2.lean"
+      ],
+      "candidate_discharge": {
+        "Experimental.P05_02.actual_density_memLp_two": {
+          "candidate": "ManuscriptChain.Beukers.actual_density_memLp_two",
+          "verification": "AWAITING_CI",
+          "experiment_source_changed": false
+        }
+      }
+    },
+    {
+      "item": "5.3",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "beta_kernel_calibration",
+      "reason": "The \u03b24 counterpart needs actual diagonal/off-diagonal geometric-mode moment integrals and coherent normalization, not replacement of \u03b67 labels.",
+      "required_to_finish": "Prove summability/interchange and finite beta rational pencil identification.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P05_03.betaFour_modes_integral_norm_summable"
+      ]
+    },
+    {
+      "item": "5.4",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` \u2014 exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md"
+      ],
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null
+    },
+    {
+      "item": "5.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "unproved_floor_partition_and_valuation",
+      "reason": "Floor/min/max prime-sum constants require a complete exact partition and tail estimate; rational sign checks alone do not supply local q-adic gains.",
+      "required_to_finish": "Integrate the literal outer function, bound the inner tail and prove actual surviving-pole replacement valuation ranges.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P05_06.outerT_integrable",
+        "Experimental.P05_06.inner_tail_integrable"
+      ]
+    },
+    {
+      "item": "5.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "double_pole_residue_identification",
+      "reason": "The displayed tables have not been proved to be the actual order-two partial-fraction coefficients, including endpointk=0; local block valuation is not implemented.",
+      "required_to_finish": "Compute actual residues and endpoint indexing, then prove confluent unit-block congruences and lower-minor estimates.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "6.1",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "residue_to_determinant_gap",
+      "reason": "Single-entry harmonic residual integrality does not prove the crossing-index determinant valuation or intrinsic p^-6 barrier.",
+      "required_to_finish": "Prove actual Jacobian/Mellin bridge and local reduction with invertibility; then derive determinant valuation.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_01.harmonic_residual_p_integral",
+        "Experimental.P06_01.fiber_integrand_integrable"
+      ]
+    },
+    {
+      "item": "6.2",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "simultaneous_functional_denominator_gap",
+      "reason": "Separate divided-difference formulas and an lcm bound do not prove the actual simultaneous \u03b66/\u03b67 integral with zero extra denominator.",
+      "required_to_finish": "Prove actual inserted series interchange, coefficient identity and integralizing multiplier without assumed zero overhead.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_02.harmonic_denominator_divides",
+        "Experimental.P06_02.inserted_geometric_integral_norm_summable"
+      ]
+    },
+    {
+      "item": "6.3",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "negative_direction_and_independent_q_adic_gap",
+      "reason": "A recorded external rational h=4 negative direction contradicts the printed cone argument; it is not yet a Lean replay. The q-adic part has an independent missing actual local reduction.",
+      "required_to_finish": "Replay the exact certificate or construct a genuinely different restricted cone with certified tails; separately prove actual residue determinant nonvanishing.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_03.upstream_harmonic_residual_p_integral"
+      ]
+    },
+    {
+      "item": "6.4",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "beta_functional_normalization",
+      "reason": "Finite character cancellation is insufficient before the actual secant-kernel functional and its moment/pole calibration are established.",
+      "required_to_finish": "Prove boundary decay, integration by parts and coherent normalization, then actual positivity and rational coefficient identification.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_04.beta_kernel_boundary_decay",
+        "Experimental.P06_04.beta_kernel_derivative_integrable"
+      ]
+    },
+    {
+      "item": "6.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "actual_beta_unit_blocks_missing",
+      "reason": "The actual beta pencil and selected-prime reduction are missing; residual integrality is not determinant-unitness.",
+      "required_to_finish": "Use the calibrated6.4 pencil and verify nonzero determinant of its scaled reduction, with scaling valuation explicit.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_05.beta_harmonic_residual_p_integral"
+      ]
+    },
+    {
+      "item": "6.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "uniform_mixed_density_comparison",
+      "reason": "A positive coefficient polynomial on integer nodes still requires actual moment summability and two-sided density comparison, with affine identification and derivative nonsingularity.",
+      "required_to_finish": "Prove uniform ratio bounds from the actual limiting highest coefficient, then construct the same polynomial pencil and independent arithmetic rates.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_06.weight_terms_summable",
+        "Experimental.P06_06.normalized_coefficient_ratio_limit"
+      ]
+    },
+    {
+      "item": "6.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "multiweight_L2_and_signed_subspaces",
+      "reason": "Finite signed mode algebra does not provide arbitrary-L\u00b2 convergence, infinite definite subspaces or q-adic nonvanishing.",
+      "required_to_finish": "Calibrate actual multiweight moments and absolute convergence, extend continuously, and separately prove cone and local valuation inputs.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_07.coupled_kernel_square_integrable",
+        "Experimental.P06_07.modes_absolute_integral_summable"
+      ]
+    },
+    {
+      "item": "6.8",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "inherits_unproved_4_5",
+      "reason": "The three-term cone consequence explicitly depends on unproved4.5 irrationality/measure assumptions; a conditional wrapper does not discharge them.",
+      "required_to_finish": "Prove4.5 for the actual fixed pair and independent Ap\u00e9ry input, then transfer with honest effective/existential threshold distinction.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_08.upstream_apery_irrational",
+        "Experimental.P06_08.upstream_4_5_irrational",
+        "Experimental.P06_08.upstream_4_5_measure"
+      ]
+    },
+    {
+      "item": "6.9",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "cancelled_zero_pole",
+      "reason": "The actual displayed triple-pole rational function cancels the pole atk=0, so a universal nonzero leading-residue assertion there is inconsistent.",
+      "required_to_finish": "Recompute the nonzero pole set and Laurent coefficients; prove corrected Hermite/congruence valuation transfer on that set.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_09.triple_partial_fraction",
+        "Experimental.P06_09.rational_three_jet_interpolation",
+        "Experimental.P06_09.upstream_harmonic_residual_p_integral"
+      ]
+    },
+    {
+      "item": "6.10",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "missing_limits_and_wrong_rate_direction",
+      "reason": "Finite conservation and conditional polynomial coefficient-Gram growth do not supply equilibrium limits or strict reweighting. A lower decay bound does not imply the printed >581 ratio.",
+      "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; retain existing finite and conditional growth lemmas.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "6.11",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "Euler_convention_and_valuation_gap",
+      "reason": "The finite Euler shift input has not been transferred to the manuscript secant convention and prime-distribution/quotient valuations; strictk=1 growth needs checking.",
+      "required_to_finish": "Prove exact distribution and selected-prime finite valuations with the same normalization before asymptotic growth or dyadic obstruction.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_11.upstream_euler_shift"
+      ]
+    },
+    {
+      "item": "6.12",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "missing_effective_spectral_margin",
+      "reason": "Existence of nearby rationals is not an effective cutoff without an actual positive spectral margin and continuity modulus; beta calibration/q-adic conditions remain separate.",
+      "required_to_finish": "Prove the finite actual Gram margin, explicit perturbation error and real rational selection algorithm plus local residue exclusions.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_12.upstream_beta_four_moments_integrable"
+      ]
+    },
+    {
+      "item": "6.13",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "differentiated_series_sign",
+      "reason": "The printed Laplace series omits a global(-1)^(k-1) factor; finite operator algebra cannot justify differentiated infinite series.",
+      "required_to_finish": "Use corrected sign, prove locally uniform differentiated convergence and actual beta-pencil/root-count identification.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_13.upstream_secant_laplace_expansion"
+      ]
+    },
+    {
+      "item": "6.14",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "inconsistent_scaling_conventions",
+      "reason": "The printed source combines incompatible beta functional scaling and Jacobian/monomial factors, including an internal factor2 correction.",
+      "required_to_finish": "Choose one actual unscaled functional and derive all scaling, pole and moment formulas before coupled density/arithmetic claims.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_14.upstream_sech_cosine_transform"
+      ]
+    },
+    {
+      "item": "6.15",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "conditional_series_and_quantitative_asymptotics",
+      "reason": "\u03b21 needs ordered-series/integral identification, not unordered real tsum. Qualitative \u03c0 transcendence does not give effective measure constants; the printed exterior h^-2k asymptotic has an identified repair issue.",
+      "required_to_finish": "Prove actual all-k beta evaluations, correct eta1 removable value, independent quantitative transcendence estimate and repaired Pad\u00e9/Christoffel asymptotics.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
+        "Experimental.P06_15.upstream_unit_geometric"
+      ]
+    },
+    {
+      "item": "6.16",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "inherits_beta_normalization_and_endpoint_gap",
+      "reason": "Actual mixed \u03b6-beta affine collapse and weight comparison depend on repaired6.14 normalization and positive endpoint limits, not just an abstract compact-ratio lemma.",
+      "required_to_finish": "Build one coherent mixed weight, prove endpoint ratios/nonsingularity and all odd/dyadic multiplier bounds.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    },
+    {
+      "item": "6.17",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "incorrect_odd_harmonic_windows",
+      "reason": "Recorded q=11 andq=41 exact counterchecks refute two printed local proof steps; finite \u03b67 moments do not establish beta/multiweight/L\u00b2/cone claims.",
+      "required_to_finish": "Recompute every2j+1 denominator window and local matrix, prove calibrated beta moments and signed-tail/subspace construction independently.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": [
+        "Experimental.P06_17.upstream_beta_four_diagonal_moment",
+        "Experimental.P06_17.upstream_beta_four_offdiagonal_moment"
+      ]
+    },
+    {
+      "item": "6.18",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "NO_NEW_CERTIFICATION_BY_THIS_AUDIT",
+      "sources_inspected": [
+        "chain_categorizer/docs/CHAIN_CATALOG.json",
+        "repo_snapshot/docs/PAPER_GAP_REGISTER.md",
+        "repo_snapshot/docs/MANUSCRIPT_REPAIRS.md",
+        "modularization/main_docs/docs/EXPERIMENTS.json"
+      ],
+      "obstacle_type": "missing_beta_normalization_and_dyadic_multiplier",
+      "reason": "Polynomial quotient vanishing under a guarded degree threshold does not prove full2-integrality, zero dyadic height loss or effective measures.",
+      "required_to_finish": "Resolve6.14 normalization, nonempty active beta indices and all rational residue/basis factors, then derive multiplier and restricted transfer.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "explicit_undischarged_prerequisites": []
+    }
+  ]
+}

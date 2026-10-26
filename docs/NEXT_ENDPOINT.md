@@ -1,20 +1,47 @@
-# Next single-target handoff — following P05.02(2) finite Krein checkpoint
+# Next open original theorem — 3.3
 
-## Newly completed, PASS-ONCE frozen
+The repair campaign on [PR #39](https://github.com/randogelist/snditeration/pull/39)
+has verified the earlier arbitrary-L² Beukers–Krein endpoint, including actual
+kernel square-integrability, the convergent signed-mode identity and independence
+of the chosen almost-everywhere representative. Both parts (1) and (2) of 5.2
+are complete on that branch; the fixed-K cone clause in part (3) needs correction.
+The branch is not merged into main. See the immutable
+[completion receipt](receipts/COMPLETION_20261026.json) and
+[correction log](FORMALIZATION_CORRECTIONS.md).
 
-- `P05_02_2_FINITE_KREIN`: actual ζ7 **monomial** double Beukers integral is exactly its signed 1/1440 Krein mode sum. The same exact moments admit a finite rational polynomial coefficient bilinear extension.
-- [PR #29](https://github.com/randogelist/snditeration/pull/29) merged 588230a857acb5a8b74b76ecf99686e79925759c. [Lean 4.33 CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845) PASS, 8,798 jobs, standard-only axioms in six requested declarations, placeholder scan PASS. Verified source head 372deda8edc77bba6312b8f80137e00e1b75e74f.
-- All preexisting proof modules and Mathlib `.olean` cache assumptions are preserved. Source blobs for both new modules and root/audit entry points match between passing proof head and merged main.
+The next open original is **Theorem 3.3(1)**. The branch now proves an explicit
+factorial majorant for every actual moment, actual Carleman divergence,
+translated sparse and solid minors of all orders, arbitrary mixed 2×2 minors,
+finite mass, and exact square-root coordinate identities. None of these alone
+proves the two remaining assertions:
 
-## Next mathematical target — NOT STARTED
+1. **Arbitrary mixed-minor strict positivity in all orders.** Prove generalized
+   Vandermonde positivity for strictly increasing natural exponents and positive
+   nodes; establish the corresponding Andréief integration identity with every
+   integrability premise justified; then prove strict positivity for the actual
+   measure. The existing sparse/translated and size-two results must not be
+   substituted for arbitrary unrelated row and column exponent selections.
+2. **Stieltjes measure uniqueness.** Transfer the actual factorial bound to any
+   competing positive-half-line measure with the same moments. One concrete
+   route is exponential square-root integrability, symmetric square-root
+   pushforward, analytic moment-generating-function equality, characteristic
+   function uniqueness and pushback by squaring. The new coordinate identities
+   are prerequisites; the exponential-integrability and uniqueness bridges
+   still need proofs. Alternatively formalize a complete Stieltjes Carleman
+   theorem and instantiate all of its hypotheses from the actual source.
 
-`P05_02_2_GENERAL_L2_BEUKERS_KREIN`: finish the **original** Theorem 5.2(2), which quantifies over arbitrary f∈L²(0,1), not merely monomials.
+Use the same Lean 4.33.0 and pinned Mathlib state as the receipt. A completed
+endpoint requires successful permitted-target compilation, complete transitive
+axiom evidence, and verified membership in the built import graph. Experimental
+prerequisite declarations and their publication receipts remain unchanged until
+an explicit branch update consumes the proved library inputs.
 
-1. Prove finite polynomial expansion equals the **single actual double integral** of f(x1)g(x2) against `Beukers.density` (the frozen `polynomialMomentForm` is currently defined as finite sum of individually integrated monomial moments). Establish integrability and finite integration linearity.
-2. Interchange the finite polynomial coefficients with the **infinite** signed mode sum and show that the mode coefficients equal actual integrals of f(x)x^m(-log x)^ν. All nonnegative/absolute summability premises must be proved, not assumed.
-3. Extend both sides continuously from polynomial functions to arbitrary f∈L²(0,1); prove kernel Hilbert–Schmidt/absolute boundedness and uniform signed-mode norm tails to pass the limit.
-4. Recompile and axiom-audit the exact L² theorem with Lean 4.33 and pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. The infinite positive/negative polynomial cones of 5.2(3) remain a **separate** mathematical problem; do not assume away the Krein negative tail.
+Other independent open work is listed item by item in
+[FORMALIZATION_STATUS.json](FORMALIZATION_STATUS.json). In particular, the
+corrected resolvent fraction in 3.5, individual centered-coefficient nonvanishing
+in 3.7, and actual quantitative arithmetic estimates in Chapters 4–6 remain
+separate obligations. No corrected theorem proves a false original.
 
-Parallel branches and unrelated PRs may run independently, but no extra theorem has been started in this handoff.
-
-No claim of ζ7 irrationality, full printed 5.2(2), RH or S-Tier is made.
+The historical finite-Krein receipt remains [CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845)
+at source `372deda8edc77bba6312b8f80137e00e1b75e74f`; it is preserved as an earlier
+monomial/finite-coefficient checkpoint, not the final arbitrary-L² evidence.

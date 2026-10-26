@@ -67,8 +67,8 @@
       "module_key": "P03_02",
       "title": "Continuous hyperbolic pencil for all real $s > 1$",
       "original_status": "**REPAIR; corrected `!!`**",
-      "original_scope": "Corrected real-s>1 positive Gram, nonsingular slope, exact degree, real roots and odd-s coincidence. Prefactor corrected to 2(2pi)^(s-1)/Gamma(s); literal paper prefactor is pi/2 times this. ContinuousParameter candidate not imported.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_scope": "Corrected real-s>1 positive Gram, nonsingular slope, exact degree, real roots and odd-s coincidence. Prefactor corrected to 2(2pi)^(s-1)/Gamma(s); literal paper prefactor is pi/2 times this. ContinuousParameter candidate not imported. Later verified PR39 evidence: Additional actual-family continuity verified on PR39.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/ContinuousFamily.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -137,7 +137,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "**REPAIR; corrected `!!`**",
+          "original_scope": "Corrected real-s>1 positive Gram, nonsingular slope, exact degree, real roots and odd-s coincidence. Prefactor corrected to 2(2pi)^(s-1)/Gamma(s); literal paper prefactor is pi/2 times this. ContinuousParameter candidate not imported.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "Additional actual-family continuity verified on PR39.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "3.3",
@@ -145,8 +159,8 @@
       "module_key": "P03_03",
       "title": "Total positivity, leading sign, and universal signature",
       "original_status": "OPEN; component `!!`",
-      "original_scope": "Exact weight-five leading sign and multiplicity-counted inertia/root-side counts. Part(1) full mixed-minor total positivity and Stieltjes determinacy remain open. Main's Carleman, shifted/mixed moment candidate sources are not imported; no A-tier inherited from source presence. Companion PR #46 verifies a generic factorial-growth Carleman criterion; actual moment bounds and uniqueness are still missing.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_scope": "Exact weight-five leading sign and multiplicity-counted inertia/root-side counts. Part(1) full mixed-minor total positivity and Stieltjes determinacy remain open. Main's Carleman, shifted/mixed moment candidate sources are not imported; no A-tier inherited from source presence. Companion PR #46 verifies a generic factorial-growth Carleman criterion; actual moment bounds and uniqueness are still missing. Later verified PR39 evidence: PR39 proves actual factorial bounds, Carleman divergence and sparse/solid/mixed-2 minors; full arbitrary mixed minors and determinacy remain open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MomentGrowth.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -213,7 +227,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "OPEN; component `!!`",
+          "original_scope": "Exact weight-five leading sign and multiplicity-counted inertia/root-side counts. Part(1) full mixed-minor total positivity and Stieltjes determinacy remain open. Main's Carleman, shifted/mixed moment candidate sources are not imported; no A-tier inherited from source presence. Companion PR #46 verifies a generic factorial-growth Carleman criterion; actual moment bounds and uniqueness are still missing.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "PR39 proves actual factorial bounds, Carleman divergence and sparse/solid/mixed-2 minors; full arbitrary mixed minors and determinacy remain open.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "3.4",
@@ -221,8 +249,8 @@
       "module_key": "P03_04",
       "title": "Root interlacing and Dodgson condensation for principal minors",
       "original_status": "REPAIR; component `!!`",
-      "original_scope": "Principal-root reality, abstract signature restriction, and arbitrary-order polynomial block Dodgson identity proved. Actual constant first principal pencil refutes assuming r finite roots at each size. CauchyInterlacing, PrincipalRadius and actual PrincipalCondensation candidate not imported, so full interlacing/actual Dodgson endpoint remain open in active main graph.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_scope": "Principal-root reality, abstract signature restriction, and arbitrary-order polynomial block Dodgson identity proved. Actual constant first principal pencil refutes assuming r finite roots at each size. CauchyInterlacing, PrincipalRadius and actual PrincipalCondensation candidate not imported, so full interlacing/actual Dodgson endpoint remain open in active main graph. Later verified PR39 evidence: PR39 verifies actual eigenvalue-count interlacing, actual condensation and radius monotonicity with their stated singularity conditions.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/PrincipalCondensation.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -289,7 +317,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "REPAIR; component `!!`",
+          "original_scope": "Principal-root reality, abstract signature restriction, and arbitrary-order polynomial block Dodgson identity proved. Actual constant first principal pencil refutes assuming r finite roots at each size. CauchyInterlacing, PrincipalRadius and actual PrincipalCondensation candidate not imported, so full interlacing/actual Dodgson endpoint remain open in active main graph.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "PR39 verifies actual eigenvalue-count interlacing, actual condensation and radius monotonicity with their stated singularity conditions.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "3.5",
@@ -372,9 +414,9 @@
       "chapter": 3,
       "module_key": "P03_06",
       "title": "Stieltjes reciprocal-root power sums",
-      "original_status": "REPAIR; component `!!`",
-      "original_scope": "Corrected even-moment estimator bounds and convergence at actual spectral center. All-order strict finite-atom Hankel positivity refuted; odd-m sign needs repair. Arbitrary rational-shift/log-derivative and full finite-rank corrected clauses not supplied by local estimator endpoints alone.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "REPAIR; component !! in main; corrected !! on PR39",
+      "original_scope": "Corrected even-moment estimator bounds and convergence at actual spectral center. All-order strict finite-atom Hankel positivity refuted; odd-m sign needs repair. Arbitrary rational-shift/log-derivative and full finite-rank corrected clauses not supplied by local estimator endpoints alone. Later verified PR39 evidence: Complete corrected actual-primitive-polynomial theorem and finite Stieltjes measure verified on PR39; false original not completed.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/CorrectedReciprocalCorollary.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -441,7 +483,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "REPAIR; component `!!`",
+          "original_scope": "Corrected even-moment estimator bounds and convergence at actual spectral center. All-order strict finite-atom Hankel positivity refuted; odd-m sign needs repair. Arbitrary rational-shift/log-derivative and full finite-rank corrected clauses not supplied by local estimator endpoints alone.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "Complete corrected actual-primitive-polynomial theorem and finite Stieltjes measure verified on PR39; false original not completed.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "3.7",
@@ -526,9 +582,9 @@
       "chapter": 3,
       "module_key": "P03_08",
       "title": "Christoffel–Darboux pole representation and Jacobi derivative identity",
-      "original_status": "OPEN",
-      "original_scope": "ChristoffelDarboux and LaplaceJacobiIdentity candidates exist but are not imported or covered by current main audit. Do not promote source declarations or historical finite-operator components to full actual CD/Laplace identity.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "OPEN in main; exact A-Tier !! on PR39",
+      "original_scope": "ChristoffelDarboux and LaplaceJacobiIdentity candidates exist but are not imported or covered by current main audit. Do not promote source declarations or historical finite-operator components to full actual CD/Laplace identity. Later verified PR39 evidence: The whole exact original, including the supplied-family quantifier, is verified on PR39; it is not integrated into main.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/OrthogonalFamilyKernel.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -597,7 +653,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "OPEN",
+          "original_scope": "ChristoffelDarboux and LaplaceJacobiIdentity candidates exist but are not imported or covered by current main audit. Do not promote source declarations or historical finite-operator components to full actual CD/Laplace identity.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "The whole exact original, including the supplied-family quantifier, is verified on PR39; it is not integrated into main.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "3.9",
@@ -1188,8 +1258,8 @@
       "module_key": "P05_02",
       "title": "Dual hyperbolicity and Krein-space decomposition of the two-variable $\\zeta(7)$ pencil",
       "original_status": "REPAIR; component `!!`",
-      "original_scope": "Local finite dual spectrum under real row separation and actual monomial/coefficient Krein identities; full arbitrary-L² extension and all-dimensional cones remain open. Fixed-K positive/negative cones need dimension repair.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_scope": "Local finite dual spectrum under real row separation and actual monomial/coefficient Krein identities; full arbitrary-L² extension and all-dimensional cones remain open. Fixed-K positive/negative cones need dimension repair. Later verified PR39 evidence: Exact parts(1) and(2), including arbitrary real L² functions, are verified on PR39; part(3) needs corrected signed-cone quantifiers.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/KreinL2.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -1256,7 +1326,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "REPAIR; component `!!`",
+          "original_scope": "Local finite dual spectrum under real row separation and actual monomial/coefficient Krein identities; full arbitrary-L² extension and all-dimensional cones remain open. Fixed-K positive/negative cones need dimension repair.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "Exact parts(1) and(2), including arbitrary real L² functions, are verified on PR39; part(3) needs corrected signed-cone quantifiers.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "5.3",
@@ -2129,9 +2213,9 @@
       "chapter": 6,
       "module_key": "P06_09",
       "title": "Triple-pole and multi-weight Hankel determinants",
-      "original_status": "OPEN; historical companion component `!!`",
-      "original_scope": "Historical companion Hermite determinant-unit lemma under prime, distinct-node and congruence hypotheses. Actual triple-pole rows, their congruence and the printed valuations remain open; not integrated here.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "REPAIR; exact leading-coefficient refutation !! on PR39",
+      "original_scope": "Historical companion Hermite determinant-unit lemma under prime, distinct-node and congruence hypotheses. Actual triple-pole rows, their congruence and the printed valuations remain open; not integrated here. Later verified PR39 evidence: PR39 verifies an exact actual n=1 counterexample to the printed leading coefficient; residue/valuation repair remains necessary.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section6/TriplePoleCancellation.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -2201,7 +2285,21 @@
           },
           "new_proof_tier": null
         }
-      ]
+      ],
+      "original_status_history": [
+        {
+          "original_status": "OPEN; historical companion component `!!`",
+          "original_scope": "Historical companion Hermite determinant-unit lemma under prime, distinct-node and congruence hypotheses. Actual triple-pole rows, their congruence and the printed valuations remain open; not integrated here.",
+          "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md"
+        }
+      ],
+      "later_evidence": {
+        "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "receipt": "docs/receipts/COMPLETION_20261026.json",
+        "main_integration": false,
+        "progress": "PR39 verifies an exact actual n=1 counterexample to the printed leading coefficient; residue/valuation repair remains necessary.",
+        "existing_attempts_unchanged": true
+      }
     },
     {
       "item_id": "6.10",
@@ -2921,5 +3019,8 @@
         }
       ]
     }
+  ],
+  "later_evidence_receipts": [
+    "docs/receipts/COMPLETION_20261026.json"
   ]
 }

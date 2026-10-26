@@ -2,9 +2,33 @@
 
 # Experimental chains — original targets and alternatives
 
+## Later verified research evidence — 26 October 2026
+
+The [verified repair branch](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4)
+([CI 40321257752](https://github.com/randogelist/snditeration/actions/runs/40321257752)) proves
+Theorem 3.8, corrected 3.6, parts 1+2 of 5.2 and the additional components/refutation
+listed in the [correction log](FORMALIZATION_CORRECTIONS.md).
+These sources are on PR39, not integrated into main and not copied into the
+published experimental branches. There are **110 live branches** at this check:
+main, the retained 108 experimental branches, and the repair branch.
+
+Two exact named prerequisites have certified matching library exports:
+
+| Published prerequisite | Verified library theorem | Consumption status |
+| --- | --- | --- |
+| `Experimental.P03_03.actualMomentFactorialMajorant` | `ManuscriptChain.ConcreteMoment.actualMomentFactorialMajorant` | Proved on PR39; experimental axiom declaration remains. |
+| `Experimental.P05_02.actual_density_memLp_two` | `ManuscriptChain.Beukers.actual_density_memLp_two` | Proved on PR39; experimental axiom declaration remains. |
+
+The historical **51 named axioms**, **7 zero-new-axiom branches**, heads and file
+receipts below remain unchanged. The experimental snapshots retain
+`SOURCE_ONLY_UNCOMPILED`; a later proof elsewhere is not a branch compilation or
+an automatic import/assumption discharge. No branch was merged or deleted.
+The live main import graph remains unchanged; the verified repair graph also
+has no import path into any experimental module. Next open original: 3.3.
+
 ## Dual proposed and alternative chains
 
-Each of the **36 unfinished original items** now has two active research branches:
+Each of the **36 original items unfinished at publication** has two research branches:
 
 | Role | Branch suffix | Purpose | Current publication status |
 | --- | --- | --- | --- |
@@ -25,7 +49,7 @@ input, or an explicitly revised consumer statement. A restricted result cannot
 silently discharge the stronger original premise. Dependencies, repairs and open
 obligations are recorded per alternative; none is guaranteed to close the chain.
 Corrected 3.2 retains its historical corrected proof separately from the false
-literal normalization. **The 9/45 exact-original count is unchanged.**
+literal normalization. **That publication retained the then-current 9/45 exact-original count.**
 
 Publication verification checked all **72 new heads and 144 documentation blobs**,
 with only intended documentation changes relative to each recorded parent.

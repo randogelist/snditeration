@@ -12551,6 +12551,54 @@
       }
     ]
   },
+  "later_evidence": [
+    {
+      "evidence_id": "completion-20261026",
+      "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+      "receipt": "docs/receipts/COMPLETION_20261026.json",
+      "run_id": 40321257752,
+      "main_integration": false,
+      "proof_scope": "Verified PR39 source; original and PROP/ALT publication snapshots unchanged",
+      "live_branch_verification": {
+        "live_branches": 110,
+        "experimental_heads_checked": 108,
+        "changes": []
+      },
+      "counts": {
+        "whole_original_verified_in_sources": 10,
+        "whole_original_integrated_main": 9,
+        "matching_prerequisite_exports": 2,
+        "experimental_axiom_declarations_removed": 0
+      },
+      "matching_library_proofs": [
+        {
+          "experimental_axiom": "Experimental.P03_03.actualMomentFactorialMajorant",
+          "library_theorem": "ManuscriptChain.ConcreteMoment.actualMomentFactorialMajorant",
+          "experimental_source_changed": false
+        },
+        {
+          "experimental_axiom": "Experimental.P05_02.actual_density_memLp_two",
+          "library_theorem": "ManuscriptChain.Beukers.actual_density_memLp_two",
+          "experimental_source_changed": false
+        }
+      ],
+      "whole_original_completed": [
+        "3.8"
+      ],
+      "corrected_completed": [
+        "3.6"
+      ],
+      "original_parts_completed": [
+        "5.2(1)",
+        "5.2(2)"
+      ],
+      "actual_refutations": [
+        "6.9 leading coefficient at n=1,k=0"
+      ],
+      "next_open_original": "3.3",
+      "import_graph_scope": "Verified repair branch imports every library module and no experimental module; main graph unchanged."
+    }
+  ],
   "later_evidence_checks": [
     {
       "date_utc": "2026-10-26",

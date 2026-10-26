@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "repository": "randogelist/snditeration",
+  "branch": "repair/zetahyperbolic-completion_i0001_construction",
+  "pull_request": 39,
+  "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+  "tested_merge_commit": "fb6483293712b87b06e46be8c521314ddae2ba0f",
+  "source_tree": "18968f96096cdb030250d2af25b2149389139329",
+  "tested_tree_matches_source": true,
+  "main_base": "6b542a9b66c65b312018b567ff16d5e4eed35b13",
+  "main_integration": false,
+  "run_id": 40321257752,
+  "job_id": 121566462325,
+  "conclusion": "success",
+  "build_jobs": 8840,
+  "axiom_audit": "ALL_PROJECT_DECLARATIONS",
+  "theorems_checked": 1888,
+  "declarations_checked": 2292,
+  "printed_axiom_reports": 531,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "platform": "GitHub Actions Linux x86_64",
+  "local_lean_executed": false,
+  "source_placeholder_scan": "PASS",
+  "integration_note": "Verified repair branch only; prior no-merge instruction retained. Main proof graph is unchanged.",
+  "library_module_count": 133,
+  "all_library_modules_in_root_graph": true,
+  "experimental_imports": [],
+  "whole_original_verified_in_sources": 10,
+  "whole_original_integrated_in_main": 9,
+  "corrected_complete_items": [
+    "3.2",
+    "3.6"
+  ],
+  "completed_original_parts": [
+    "5.2(1)",
+    "5.2(2)"
+  ],
+  "next_open_original": "3.3",
+  "prior_success_receipt": "COMPLETION_20261026_CI5.json",
+  "live_branch_verification": {
+    "live_branches": 110,
+    "experimental_heads_checked": 108,
+    "changes": []
+  },
+  "unchanged_dependency_and_workflow_blobs": {
+    ".github/workflows/lean.yml": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+    "lake-manifest.json": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+    "lakefile.lean": "a12e10e090d3fbe33db143b14764105f108854e0",
+    "lean-toolchain": "025e59548e48cf71f2744154e2890beefe30a258"
+  },
+  "source_inventory_sha256": "537ad79e9b2f426fe0e385637ab9834edf310c1b4239d95c7f23647c54a421e4",
+  "job_log_sha256": "b7a038ffe46ab0844c65719c59fffadf3b15d468402ae8506c87464a73cedec0",
+  "source_signature_check": "Existing theorem/definition statement signatures preserved; only reserved binder λ renamed to rate."
+}
