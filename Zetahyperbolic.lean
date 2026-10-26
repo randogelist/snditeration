@@ -80,3 +80,4 @@ import Zetahyperbolic.Section4.UltrametricDisk
 import Zetahyperbolic.Section3.PrincipalDegreeLoss
 import Zetahyperbolic.Section3.DodgsonCondensation
 import Zetahyperbolic.Section3.SignatureRestriction
+import Zetahyperbolic.Section2.RationalTaylor
