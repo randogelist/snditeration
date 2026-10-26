@@ -33,7 +33,8 @@ theorem reciprocalMeasure_Iic_zero {h : ℕ} (r : Fin h → ℝ) (q : ℝ)
   apply Finset.sum_eq_zero
   intro i hi
   rw [Measure.dirac_apply]
-  exact Set.indicator_of_notMem (not_le.mpr (reciprocalAtom_pos r q hr i)) _
+  exact Set.indicator_of_notMem (not_le.mpr (reciprocalAtom_pos r q hr i))
+    (1 : ℝ → ℝ≥0∞)
 
 theorem integrable_reciprocalMeasure {h : ℕ} (r : Fin h → ℝ) (q : ℝ)
     (f : ℝ → ℝ) : Integrable f (reciprocalMeasure r q) := by

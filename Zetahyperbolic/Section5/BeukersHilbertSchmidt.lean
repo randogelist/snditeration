@@ -71,7 +71,7 @@ theorem density_le_log_polynomial {z : ℝ × ℝ} (hz : z ∈ square) :
   · exact (div_le_iff₀ (by positivity : 0 < (720 : ℝ) * (1-u))).2 hscaled
 
 /-- The actual density is measurable, including its totalized boundary values. -/
-theorem density_measurable : Measurable density := by
+theorem density_globally_measurable : Measurable density := by
   unfold density
   fun_prop
 
@@ -94,7 +94,7 @@ theorem density_sq_integrable :
       ring
     rw [he]
     exact h
-  apply hmajorant.mono' (density_measurable.pow_const 2).aestronglyMeasurable
+  apply hmajorant.mono' (density_globally_measurable.pow_const 2).aestronglyMeasurable
   filter_upwards [ae_restrict_mem (measurableSet_Ioo.prod measurableSet_Ioo)] with z hz
   rw [Real.norm_of_nonneg (sq_nonneg _)]
   exact pow_le_pow_left₀ (density_le_log_polynomial hz).1
@@ -102,7 +102,7 @@ theorem density_sq_integrable :
 
 /-- A genuine proof of the named experimental Hilbert–Schmidt prerequisite. -/
 theorem actual_density_memLp_two : MemLp density (2 : ENNReal) squareMeasure :=
-  (memLp_two_iff_integrable_sq density_measurable.aestronglyMeasurable).2
+  (memLp_two_iff_integrable_sq density_globally_measurable.aestronglyMeasurable).2
     density_sq_integrable
 
 end ManuscriptChain.Beukers

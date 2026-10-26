@@ -39,8 +39,8 @@ theorem measurable_printedDensity (p : Real.Parameters) (τ : ℝ) :
   exact (((by fun_prop : Measurable (fun t : ℝ =>
     (Real.realPolynomial (Real.D p.N)).eval t ^ (2 * p.m) /
       (Real.realPolynomial (Real.D p.K)).eval t)).mul
-      ((measurable_density p.k τ).comp Real.measurable_sqrt)).div
-      (measurable_const.mul Real.measurable_sqrt))
+      ((measurable_density p.k τ).comp Real.continuous_sqrt.measurable)).div
+      (measurable_const.mul Real.continuous_sqrt.measurable))
 
 theorem square_image_Ioi :
     (fun y : ℝ => y ^ 2) '' Ioi 0 = Ioi 0 := by
@@ -54,7 +54,7 @@ theorem square_image_Ioi :
 
 theorem square_injOn_Ioi : InjOn (fun y : ℝ => y ^ 2) (Ioi 0) := by
   intro x hx y hy hxy
-  nlinarith
+  exact (sq_eq_sq₀ (le_of_lt hx) (le_of_lt hy)).mp hxy
 
 theorem printedDensity_square (p : Real.Parameters) (τ : ℝ) {y : ℝ}
     (hy : 0 < y) :
@@ -78,9 +78,10 @@ theorem momentMeasure_eq_printed (p : Real.Parameters) (τ : ℝ) :
   calc
     (∫⁻ t, g t ∂momentMeasure p τ) =
         ∫⁻ y in Ioi (0 : ℝ), ENNReal.ofReal (weightedDensity p τ y) * g (y^2) := by
-      rw [momentMeasure, lintegral_map hg (by fun_prop), weightedMeasure,
-        lintegral_withDensity_eq_lintegral_mul _
-          (measurable_weightedDensity p τ).ennreal_ofReal (hg.comp (by fun_prop))]
+      rw [momentMeasure, lintegral_map hg (by fun_prop), weightedMeasure]
+      exact lintegral_withDensity_eq_lintegral_mul (volume.restrict (Ioi 0))
+        (g := fun y : ℝ => g (y^2))
+        (measurable_weightedDensity p τ).ennreal_ofReal (hg.comp (by fun_prop))
     _ = ∫⁻ t in Ioi (0 : ℝ), ENNReal.ofReal (printedDensity p τ t) * g t := by
       symm
       calc
@@ -90,7 +91,7 @@ theorem momentMeasure_eq_printed (p : Real.Parameters) (τ : ℝ) :
             (lintegral_image_eq_lintegral_abs_deriv_mul measurableSet_Ioi
               (f := fun y : ℝ => y^2) (f' := fun y => 2*y)
               (fun y _ => by
-                simpa using ((hasDerivAt_id y).pow 2).hasDerivWithinAt)
+                simpa using (hasDerivAt_pow 2 y).hasDerivWithinAt)
               square_injOn_Ioi (fun t => ENNReal.ofReal (printedDensity p τ t) * g t))
         _ = _ := by
           apply lintegral_congr_ae

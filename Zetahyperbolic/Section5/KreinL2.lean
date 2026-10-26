@@ -27,8 +27,10 @@ def l2KreinChannel (f : ℝ → ℝ) (m ν : ℕ) : ℝ :=
 theorem mellin_test_memLp_two (m ν : ℕ) :
     MemLp (fun x : ℝ => x ^ m * (-_root_.Real.log x) ^ ν) 2 unitMeasure := by
   apply (memLp_two_iff_integrable_sq (by fun_prop)).2
-  simpa only [mul_pow, ← pow_mul, Nat.mul_comm] using
-    UnitLogMoments.integrable_pow_log (2 * m) (2 * ν)
+  change IntegrableOn (fun x : ℝ =>
+    (x ^ m * (-_root_.Real.log x) ^ ν) ^ 2) (Ioo 0 1)
+  simp only [mul_pow, ← pow_mul]
+  exact UnitLogMoments.integrable_pow_log (m * 2) (ν * 2)
 
 /-- Every displayed Mellin coefficient of a real L² function is an honest
 integral of an integrable function. -/
@@ -46,7 +48,7 @@ theorem l2_product_memLp_two {f g : ℝ → ℝ}
   rw [← Measure.prod_restrict]
   apply (memLp_two_iff_integrable_sq
     (hf.aestronglyMeasurable.comp_fst.mul hg.aestronglyMeasurable.comp_snd)).2
-  simpa only [mul_pow] using hf.integrable_sq.mul_prod hg.integrable_sq
+  simpa only [Pi.mul_apply, mul_pow] using hf.integrable_sq.mul_prod hg.integrable_sq
 
 /-- Absolute integrability of the actual Beukers bilinear form for arbitrary L² inputs. -/
 theorem l2_density_product_integrable {f g : ℝ → ℝ}
@@ -64,14 +66,18 @@ private theorem momentTerm_zero_hasSum {z : ℝ × ℝ} (hz : z ∈ square) :
     nlinarith [hz.2.2]
   have hnorm : ‖z.1 * z.2‖ < 1 := by
     rwa [Real.norm_eq_abs, abs_of_pos hu0]
-  convert (hasSum_geometric_of_norm_lt_one hnorm).mul_left
-    ((-_root_.Real.log (z.1 * z.2)) ^ 5 / 720) using 1
-  · funext n
+  have hterm : (fun n => momentTerm 0 0 n z) =
+      (fun n => ((-_root_.Real.log (z.1 * z.2)) ^ 5 / 720) * (z.1 * z.2)^n) := by
+    funext n
     rw [momentTerm_eq 0 0 n hz]
     simp only [pow_zero, one_mul]
     ring
-  · unfold density
+  have hvalue : density z =
+      ((-_root_.Real.log (z.1 * z.2)) ^ 5 / 720) * (1 - z.1 * z.2)⁻¹ := by
+    unfold density
     field_simp [ne_of_gt (sub_pos.mpr hu1)]
+  rw [hterm, hvalue]
+  exact (hasSum_geometric_of_norm_lt_one hnorm).mul_left _
 
 private theorem l2_logMonomial_integrable {f : ℝ → ℝ}
     (hf : MemLp f 2 unitMeasure) (m ν : ℕ) :
@@ -105,7 +111,13 @@ private theorem l2_momentTerm_integrable {f g : ℝ → ℝ}
 private theorem integral_l2_logMonomial (f : ℝ → ℝ) (m ν : ℕ) :
     (∫ x : ℝ in Ioo 0 1, f x * logMonomial m ν x) =
       l2KreinChannel f m ν / (ν.factorial : ℝ) := by
-  simp only [logMonomial, mul_div_assoc, ← mul_assoc, integral_div, l2KreinChannel]
+  have he : (fun x : ℝ => f x * logMonomial m ν x) =
+      (fun x => (f x * x ^ m * (-_root_.Real.log x) ^ ν) / (ν.factorial : ℝ)) := by
+    funext x
+    unfold logMonomial
+    ring
+  rw [he, integral_div]
+  rfl
 
 private theorem integral_l2_momentTerm {f g : ℝ → ℝ}
     (hf : MemLp f 2 unitMeasure) (hg : MemLp g 2 unitMeasure) (m : ℕ) :
@@ -119,10 +131,12 @@ private theorem integral_l2_momentTerm {f g : ℝ → ℝ}
           (l2KreinChannel f m ν.val / (ν.val.factorial : ℝ)) *
             (l2KreinChannel g m (5-ν.val) / ((5-ν.val).factorial : ℝ)) := by
       change (∫ z in square, _ ∂volume.prod volume) = _
-      rw [setIntegral_prod_mul, integral_l2_logMonomial, integral_l2_logMonomial]
+      rw [setIntegral_prod_mul (fun x : ℝ => f x * logMonomial m ν.val x)
+        (fun x : ℝ => g x * logMonomial m (5-ν.val) x) (Ioo 0 1) (Ioo 0 1),
+        integral_l2_logMonomial, integral_l2_logMonomial]
     simp_rw [he]
     rw [← kreinSix_eq_signed]
-    norm_num [kreinSixPairing, Fin.sum_univ_succ]
+    norm_num [kreinSixPairing, Fin.sum_univ_succ, Nat.choose]
     ring
   · intro ν _
     unfold squareMeasure
@@ -222,8 +236,8 @@ theorem l2_integral_congr_ae {f f' g g' : ℝ → ℝ}
   apply integral_congr_ae
   unfold squareMeasure
   rw [← Measure.prod_restrict]
-  filter_upwards [(quasiMeasurePreserving_fst (μ := unitMeasure) (ν := unitMeasure)).ae hff',
-    (quasiMeasurePreserving_snd (μ := unitMeasure) (ν := unitMeasure)).ae hgg'] with z hz₁ hz₂
+  filter_upwards [(Measure.quasiMeasurePreserving_fst (μ := unitMeasure) (ν := unitMeasure)).ae hff',
+    (Measure.quasiMeasurePreserving_snd (μ := unitMeasure) (ν := unitMeasure)).ae hgg'] with z hz₁ hz₂
   rw [hz₁, hz₂]
 
 end ManuscriptChain.Beukers
