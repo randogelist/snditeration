@@ -68,6 +68,9 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** | NOT IN MAIN | Partially formalized | ✓ ~~Dyadic numerator/denominator degrees and quotient-vanishing threshold~~ (companion A-Tier). Full dyadic principal-minor integrality, odd-prime multiplier, determinant-height loss, and final explicit irrationality measure. |
 
 
+**Convergence checkpoint (26 October 2026):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **55**, but these phrases are **not** 55 independent or newly compiled Lean proofs. The [historical convergence ledger](CONVERGENCE_TRACKER.md) and [machine-readable 11-checkpoint series](CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
+
+
 ## 3. Source snapshots and status semantics
 
 **Purpose:** maintain an exact, actionable inventory of the parts of the 52-page, 21 October 2026 Zetahyperbolic manuscript that are **not yet proved in the active `snditeration` Lean project**. This branch is an enduring tracking surface, not an assertion of manuscript closure.
