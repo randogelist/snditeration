@@ -151,3 +151,5 @@ import Zetahyperbolic.Section6.MellinJacobian
 import Zetahyperbolic.Section6.OuterPrimeLocalBlock
 import Zetahyperbolic.Section6.OuterHarmonicBound
 import Zetahyperbolic.Section6.OuterPrimeRationalBlock
+
+import Zetahyperbolic.Section6.OuterPrimePadicBlock

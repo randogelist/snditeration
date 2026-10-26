@@ -85,7 +85,7 @@ theorem fiber_weight_eq (r t : ℕ) {u : ℝ} (hu : u ∈ Ioo 0 1) :
   have hu1 : 1-u ≠ 0 := ne_of_gt (sub_pos.mpr hu.2)
   by_cases hrt : r = t
   · simp only [fiberMonomial, if_pos hrt, mellinWeight, logTail]
-    ring
+    field_simp [hu1] <;> ring
   · have hrt' : (r : ℝ) - (t : ℝ) ≠ 0 := sub_ne_zero.mpr (by exact_mod_cast hrt)
     simp only [fiberMonomial, if_neg hrt, mellinWeight, logTail]
     field_simp [hl, hu1, hrt'] <;> ring
@@ -93,13 +93,13 @@ theorem fiber_weight_eq (r t : ℕ) {u : ℝ} (hu : u ∈ Ioo 0 1) :
 theorem integrable_fiber_weight (r t : ℕ) :
     IntegrableOn (fun u => fiberMonomial r t u * mellinWeight u) (Ioo 0 1) := by
   by_cases hrt : r = t
-  · apply ((integrable_logTail r 6 (by norm_num)).div_const 720).congr_fun _ measurableSet_Ioo
-    intro u hu
+  · apply ((integrable_logTail r 6 (by norm_num)).div_const 720).congr
+    filter_upwards [ae_restrict_mem measurableSet_Ioo] with u hu
     simpa only [if_pos hrt] using (fiber_weight_eq r t hu).symm
   · apply (((integrable_logTail t 5 (by norm_num)).sub
       (integrable_logTail r 5 (by norm_num))).div_const
-      (720 * ((r : ℝ)-(t : ℝ)))).congr_fun _ measurableSet_Ioo
-    intro u hu
+      (720 * ((r : ℝ)-(t : ℝ)))).congr
+    filter_upwards [ae_restrict_mem measurableSet_Ioo] with u hu
     simpa only [if_neg hrt] using (fiber_weight_eq r t hu).symm
 
 theorem integral_fiber_weight_eq_moment (r t : ℕ) :
@@ -108,7 +108,7 @@ theorem integral_fiber_weight_eq_moment (r t : ℕ) :
   rw [setIntegral_congr_fun measurableSet_Ioo (fun u hu => fiber_weight_eq r t hu)]
   by_cases hrt : r = t
   · subst t
-    simp only [if_pos rfl]
+    simp only [ite_true]
     rw [integral_div, integral_logTail r 6 (by norm_num), diagonal_moment]
     norm_num [Nat.factorial]
   · simp only [if_neg hrt]
@@ -176,8 +176,9 @@ theorem integral_coefficientFiber_weight {K : ℕ} (c d : Fin (K+1) → ℚ) :
 /-- The weighted literal inner integral is integrable on the full open unit interval. -/
 theorem integrable_fiber_polynomial_weight {K : ℕ} (c d : Fin (K+1) → ℚ) :
     IntegrableOn (fun u => fiber c d u * mellinWeight u) (Ioo 0 1) := by
-  apply (integrable_coefficientFiber_weight c d).congr_fun _ measurableSet_Ioo
-  intro u hu
+  apply (integrable_coefficientFiber_weight c d).congr
+  filter_upwards [ae_restrict_mem measurableSet_Ioo] with u hu
+  change coefficientFiber c d u * mellinWeight u = fiber c d u * mellinWeight u
   rw [fiber_eq_sum c d hu]
   rfl
 
@@ -190,6 +191,7 @@ theorem polynomial_mellin_fiber_reduction {K : ℕ} (c d : Fin (K+1) → ℚ) :
   rw [← integral_coefficientFiber_weight]
   apply integral_congr_ae
   filter_upwards [ae_restrict_mem measurableSet_Ioo] with u hu
+  change coefficientFiber c d u * mellinWeight u = fiber c d u * mellinWeight u
   rw [fiber_eq_sum c d hu]
   rfl
 

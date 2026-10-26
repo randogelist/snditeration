@@ -723,3 +723,7 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.rationalLocalMatrix_det_valuation
 #print axioms ManuscriptChain.Beukers.rationalLocalMatrix_primitive_pole
 #print axioms ManuscriptChain.Beukers.integral_local_kernel_iff
+
+#print axioms ManuscriptChain.Beukers.padicLocalMatrix_primitive_pole
+#print axioms ManuscriptChain.Beukers.padicLocalMatrix_nonzero_vector_cancellation
+#print axioms ManuscriptChain.Beukers.padicLocalMatrix_det_norm
