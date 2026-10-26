@@ -26,3 +26,13 @@ Workflow: YOU_ARE_GOODWORKFLOWFRONTIER, A_TIER_EXECUTION, P05_01. Reuse mathlib 
 - **Source scanner:** PASS, zero sorry/admit/custom axiom admissions.
 - **PASS-ONCE:** three new Beukers source modules and unchanged Section5/UnitLogMoments retain exact source SHA fingerprints and compiler/toolchain compatibility. The subsequent documentation changes do not recompile any of them.
 - **Boundary:** Full *moment integral* proved, not actual two-variable ζ7 *Krein decomposition* (5.2), cones (5.2(3)), or irrationality.
+
+## Final rationality addendum — verified PASS-ONCE
+
+- Statement: `ManuscriptChain.Beukers.offdiagonal_moment_eq_rat` and `offdiagonal_moment_is_rational`.
+- Formula: for r≠t, the *actual* two-variable integral is exactly the real cast of `((H_r^(6)-H_t^(6))/(6*(r-t)) : ℚ)`.
+- [PR #26](https://github.com/randogelist/snditeration/pull/26) merged with proof SHA `bcb1b496f3e69d97054a6f46c862e00ec967f970`.
+- Main merge: `98c11122faa8cfdeb109e4ebba31d1f21d1b505b`.
+- [CI run 40268502325](https://github.com/randogelist/snditeration/actions/runs/40268502325): 8,784 Lean 4.33 jobs **PASS**, transitive `#print axioms` for both declarations solely `[propext, Classical.choice, Quot.sound]`, placeholder scan **PASS**.
+- No previous Lean proof modules or compatible cached artifacts changed; `Section5/BeukersRationalMoments.lean` is the new independent source.
+- **Target P05.01 is completely frozen at the exact paper level.** The next distinct theorem is P05.02(2), which is **not proved by** these integrals.
