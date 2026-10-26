@@ -291,3 +291,11 @@ run_cmd do
 #print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
 #print axioms ManuscriptChain.Ultrametric.eval_ne_zero_of_mem_disk
 #print axioms ManuscriptChain.Ultrametric.padicComplex_zero_free_disk
+
+-- P03.04: actual admissible degree-loss counterexample; printed full-rank claim is false.
+#print axioms ManuscriptChain.PrincipalDegreeLoss.example_admissible
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_slope_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_direction_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_polynomial_constant
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_principal_has_no_complex_roots
+#print axioms ManuscriptChain.PrincipalDegreeLoss.literal_all_principal_roots_claim_false
