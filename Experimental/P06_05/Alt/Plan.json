@@ -1,0 +1,61 @@
+{
+  "paper_item": "6.5",
+  "alternative_target": "For an actual β(4) pencil from the calibrated 6.4 alternative and each admissible selected prime q, compute its integral scaled Lagrange matrix and prove that its reduction modulo q has nonzero determinant. Derive nonvanishing and the valuation from that verified reduction and explicitly tracked scaling factors; make no universal q≡1 mod8 valuation assertion in advance.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Replace the universal printed valuation by a family of exact locally verified residue-matrix results.",
+  "prerequisites": [
+    "2.5",
+    "6.4"
+  ],
+  "retained_open_obligations": [
+    "Finish the actual β(4) pencil and its Lagrange identity.",
+    "Prove harmonic residual integrality and compute diagonal/off-diagonal reductions.",
+    "Give a uniform argument if claiming coverage for every prime in the printed congruence class."
+  ],
+  "correction_gate": "The reduction must belong to the actual pencil. A selected-prime result or supplied nonzero determinant is not a proof of the all-prime target.",
+  "source_paths": [
+    "Experimental/P06_05/Target.md",
+    "Experimental/P06_05/Assumptions.json",
+    "Experimental/P06_05/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-05_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-05_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-05_construction",
+  "original_snapshot_commit": "6509755298b6f5163b2d565b0a59b39010b26210",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_05/Target.md",
+      "commit": "6509755298b6f5163b2d565b0a59b39010b26210",
+      "url": "https://github.com/randogelist/snditeration/blob/6509755298b6f5163b2d565b0a59b39010b26210/Experimental/P06_05/Target.md"
+    },
+    {
+      "path": "Experimental/P06_05/Assumptions.json",
+      "commit": "6509755298b6f5163b2d565b0a59b39010b26210",
+      "url": "https://github.com/randogelist/snditeration/blob/6509755298b6f5163b2d565b0a59b39010b26210/Experimental/P06_05/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_05/Prerequisites.lean",
+      "commit": "6509755298b6f5163b2d565b0a59b39010b26210",
+      "url": "https://github.com/randogelist/snditeration/blob/6509755298b6f5163b2d565b0a59b39010b26210/Experimental/P06_05/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
