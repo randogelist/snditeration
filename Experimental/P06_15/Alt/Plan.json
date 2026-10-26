@@ -1,0 +1,59 @@
+{
+  "paper_item": "6.15",
+  "alternative_target": "For every k≥0 identify the actual odd Dirichlet beta value with its nonzero rational multiple of π^(2k+1), using the ordered-series/integral definition at β(1). Derive qualitative transcendence and the explicitly stated finite linear-independence consequences from an independently checked π-transcendence theorem. Separate all effective measures, rank-one Padé assertions and exterior asymptotics.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Retain the qualitative arithmetic endpoint, repair the β(1) definition, and remove unproved numerical measure constants and exterior rates from the first endpoint.",
+  "prerequisites": [],
+  "retained_open_obligations": [
+    "Identify the β(1) integral with the ordered alternating-series limit.",
+    "Prove the all-k Euler-number evaluation and its nonzero coefficient.",
+    "Import the checked π-transcendence source; specify the coefficient field for each independence claim.",
+    "The Gram/rank-one construction, quantitative measure and corrected exterior asymptotic remain open."
+  ],
+  "correction_gate": "Never identify β(1) with an unordered real tsum or infer a quantitative transcendence measure from qualitative π transcendence; use eta(1)=log 2 at the removable endpoint.",
+  "source_paths": [
+    "Experimental/P06_15/Target.md",
+    "Experimental/P06_15/Assumptions.json",
+    "Experimental/P06_15/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-15_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-15_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-15_construction",
+  "original_snapshot_commit": "70c77e8d18dfe091e5771b57beee867f474116d8",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_15/Target.md",
+      "commit": "70c77e8d18dfe091e5771b57beee867f474116d8",
+      "url": "https://github.com/randogelist/snditeration/blob/70c77e8d18dfe091e5771b57beee867f474116d8/Experimental/P06_15/Target.md"
+    },
+    {
+      "path": "Experimental/P06_15/Assumptions.json",
+      "commit": "70c77e8d18dfe091e5771b57beee867f474116d8",
+      "url": "https://github.com/randogelist/snditeration/blob/70c77e8d18dfe091e5771b57beee867f474116d8/Experimental/P06_15/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_15/Prerequisites.lean",
+      "commit": "70c77e8d18dfe091e5771b57beee867f474116d8",
+      "url": "https://github.com/randogelist/snditeration/blob/70c77e8d18dfe091e5771b57beee867f474116d8/Experimental/P06_15/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
