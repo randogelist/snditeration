@@ -16,13 +16,13 @@ theorem pi_ae_pos (n : ℕ) (hμ : ∀ᵐ t ∂μ, 0 < t) :
 
 theorem pi_ne_zero (n : ℕ) (hμ : μ ≠ 0) :
     Measure.pi (fun _ : Fin n => μ) ≠ 0 := by
-  have hu : μ Set.univ ≠ 0 := by simpa only [measure_univ_eq_zero] using hμ
+  have hu : μ Set.univ ≠ 0 := Measure.measure_univ_ne_zero.mpr hμ
   intro hz
   have hv := congrArg (fun ν : Measure (Fin n → ℝ) => ν Set.univ) hz
   have hp : (∏ _i : Fin n, μ Set.univ) ≠ 0 :=
     Finset.prod_ne_zero_iff.mpr (fun _ _ => hu)
   apply hp
-  simpa only [Measure.pi_univ, Measure.zero_apply] using hv
+  simpa [Measure.pi_univ] using hv
 
 theorem pi_ae_injective [NullSingletonClass μ] (n : ℕ) :
     ∀ᵐ x : Fin n → ℝ ∂Measure.pi (fun _ : Fin n => μ), Function.Injective x := by
@@ -35,7 +35,7 @@ theorem pi_ae_injective [NullSingletonClass μ] (n : ℕ) :
       simp only [P, Fin.cons_injective_iff, Set.mem_range, not_exists, Function.Injective]
       measurability
     have hp : ∀ᵐ z ∂μ.prod (Measure.pi (fun _ : Fin n => μ)), P z := by
-      apply (ae_prod_iff_ae_ae hm).mpr
+      apply (Measure.ae_prod_iff_ae_ae hm).mpr
       apply Eventually.of_forall
       intro t
       have havoid : ∀ᵐ x : Fin n → ℝ ∂Measure.pi (fun _ : Fin n => μ),

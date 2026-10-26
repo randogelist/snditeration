@@ -48,8 +48,12 @@ theorem integral_det_mul_prod (f g : ι → α → ℝ)
       ∂Measure.pi (fun _ : ι => μ)) = (pairingMatrix μ f g).det := by
   simp_rw [det_mul_prod_expansion]
   rw [integral_finsetSum]
-  · simp_rw [integral_const_mul, integral_fintype_prod_eq_prod]
-    exact (Matrix.det_apply' (pairingMatrix μ f g)).symm
+  · rw [Matrix.det_apply']
+    apply Finset.sum_congr rfl
+    intro σ _
+    rw [integral_const_mul]
+    congr 1
+    exact integral_fintype_prod_eq_prod (fun i t => f (σ i) t * g i t)
   · intro σ _
     exact (Integrable.fintype_prod (fun i => hfg (σ i) i)).const_mul _
 

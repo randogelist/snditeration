@@ -237,10 +237,12 @@ theorem generalized_vandermonde_product_pos {n : ℕ} (e f : Fin n → ℕ)
     (generalized_vandermonde_det_pos f hf (x ∘ σ) hs hsp)
   have hde : Matrix.det (fun i j : Fin n => (x ∘ σ) i ^ e j) =
       (Equiv.Perm.sign σ : ℝ) * Matrix.det (fun i j : Fin n => x i ^ e j) :=
-    Matrix.det_permute σ _
+    by simpa only [Matrix.submatrix_apply, Function.comp_apply, id_eq] using
+      Matrix.det_permute σ (fun i j : Fin n => x i ^ e j)
   have hdf : Matrix.det (fun i j : Fin n => (x ∘ σ) i ^ f j) =
       (Equiv.Perm.sign σ : ℝ) * Matrix.det (fun i j : Fin n => x i ^ f j) :=
-    Matrix.det_permute σ _
+    by simpa only [Matrix.submatrix_apply, Function.comp_apply, id_eq] using
+      Matrix.det_permute σ (fun i j : Fin n => x i ^ f j)
   rw [hde, hdf] at hp
   rcases Int.units_eq_one_or (Equiv.Perm.sign σ) with hsign | hsign
   · simpa [hsign] using hp

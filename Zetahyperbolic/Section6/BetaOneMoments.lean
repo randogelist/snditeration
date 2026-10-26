@@ -54,7 +54,7 @@ theorem beta_ordered_limit :
 
 theorem beta_one_irrational : Irrational (moment 0) := by
   rw [moment_zero]
-  simpa using Irrational.div_natCast Real.irrational_pi (n := 4) (by norm_num)
+  simpa using Irrational.div_natCast _root_.irrational_pi (m := 4) (by norm_num)
 
 theorem moment_one : moment 1 = Real.log 2 / 2 := by
   have hd (x : ℝ) : HasDerivAt (fun y : ℝ => Real.log (1+y^2) / 2)
@@ -62,7 +62,10 @@ theorem moment_one : moment 1 = Real.log 2 / 2 := by
     have hd0 : HasDerivAt (fun y : ℝ => 1+y^2) (2*x) x := by
       simpa only [Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub, pow_one,
         mul_one] using ((hasDerivAt_id x).pow 2).const_add 1
-    convert (hd0.log (by positivity : (1:ℝ)+x^2 ≠ 0)).div_const 2 using 1 <;> ring
+    have h := (hd0.log (by positivity : (1:ℝ)+x^2 ≠ 0)).div_const 2
+    have hc : (2*x / (1+x^2)) / 2 = x / (1+x^2) := by ring
+    rw [hc] at h
+    exact h
   have hi := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (a := (0:ℝ)) (b := (1:ℝ)) (fun x _ => hd x)
     (by simpa only [pow_one] using (integrand_continuous 1).intervalIntegrable 0 1)
@@ -151,11 +154,11 @@ theorem eta_ordered_limit : Tendsto etaPartialSum atTop (𝓝 (Real.log 2)) := b
   have hg : Tendsto (fun r : ℕ => 2*r+1) atTop atTop := by
     apply tendsto_atTop.2
     intro b
-    exact ⟨b, fun n hn => by omega⟩
+    exact eventually_atTop.2 ⟨b, fun n hn => by omega⟩
   have hlim := (moment_tendsto_zero.comp hg).const_mul 2
   have he (r : ℕ) : ‖etaPartialSum r - Real.log 2‖ = 2 * moment (2*r+1) := by
     have h := congrArg abs (odd_moment r)
-    have hs : |(-1:ℝ)^r / 2| = 1/2 := by simp
+    have hs : |(-1:ℝ)^r / 2| = 1/2 := by norm_num [abs_div, abs_pow]
     rw [abs_of_pos (moment_pos _), abs_mul, hs] at h
     rw [Real.norm_eq_abs, abs_sub_comm]
     linarith

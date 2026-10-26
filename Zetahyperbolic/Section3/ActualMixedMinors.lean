@@ -42,8 +42,7 @@ theorem mixed_moment_det_pos (p : Real.Parameters) {n : ℕ}
   have hint : Integrable H ν := MomentAndreief.integrable_det_mul_det μ F G hfg
   have hpositive : ∀ᵐ x ∂ν, 0 < H x := by
     have hnodes : ∀ᵐ x ∂ν, ∀ i, 0 < x i :=
-      eventually_all.2 (fun i => MeasureTheory.tendsto_eval_ae_ae.eventually
-        (momentMeasure_ae_pos p))
+      MomentProductSupport.pi_ae_pos μ n (momentMeasure_ae_pos p)
     filter_upwards [hnodes, MomentProductSupport.pi_ae_injective μ n] with x hxp hxi
     dsimp only [H, F, G]
     rw [evaluation_det_transpose, evaluation_det_transpose]
