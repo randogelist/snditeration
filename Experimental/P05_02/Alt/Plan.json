@@ -1,0 +1,54 @@
+{
+  "paper_item": "5.2",
+  "alternative_target": "Retain the finite rational-polynomial dual-spectrum and finite coefficient Krein statements. Target an arbitrary-L² extension only with the actual kernel/operator, polynomial-integral identification and convergence estimates. Replace the universal fixed-K cone clause by a separately proposed sufficiently-large-K formulation respecting 2h≤K+1.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Separate the established finite clauses, the analytic completion, and the dimension-repaired cone problem; no all-dimensional cone conclusion follows from signed decomposition alone.",
+  "prerequisites": [
+    "5.1"
+  ],
+  "retained_open_obligations": [
+    "Actual kernel square integrability and bounded representative-independent operator.",
+    "Polynomial product-integral identification, signed-mode summability and density extension.",
+    "Independent cone construction and genuine tail estimates for any repaired quantifiers."
+  ],
+  "correction_gate": "The condition 2h≤K+1 is necessary, not a sufficient cone-existence theorem.",
+  "source_paths": [
+    "Zetahyperbolic/Section5/ActualDualSpectrum.lean",
+    "Zetahyperbolic/Section5/KreinPolynomial.lean",
+    "Experimental/P05_02/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p05-02_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p05-02_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p05-02_construction",
+  "original_snapshot_commit": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section5/ActualDualSpectrum.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section5/ActualDualSpectrum.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section5/KreinPolynomial.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section5/KreinPolynomial.lean"
+    },
+    {
+      "path": "Experimental/P05_02/Target.md",
+      "commit": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1",
+      "url": "https://github.com/randogelist/snditeration/blob/444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1/Experimental/P05_02/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
