@@ -167,3 +167,8 @@ run_cmd do
 #print axioms ManuscriptChain.Tau.poleSpan_normalized_derivative
 #print axioms ManuscriptChain.Tau.poleElement_coefficient_eq_analytic
 #print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_poles
+
+#print axioms ManuscriptChain.Tau.polynomialReal_normalized_derivative
+#print axioms ManuscriptChain.Tau.coordinateReal_even_derivative
+#print axioms ManuscriptChain.Tau.rationalDomain_coefficient_eq_coordinate_derivative
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_coordinates
