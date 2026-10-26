@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paper_item": "5.3",
+  "module_key": "P05_03",
+  "branch": "experiment/zetahyperbolic-p05-03_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P05_03.betaFour_modes_integral_norm_summable",
+      "meaning": "Absolute summability of the integrals of the actual alternating geometric mode norms for every pair of monomial indices.",
+      "dependencies": [
+        "P05_01_UNIT_LOG_MOMENTS",
+        "BETA4_GEOMETRIC_MODE_BOUND"
+      ]
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P05_03",
+  "paper_reference_items": [
+    "2.2",
+    "2.3",
+    "5.2"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "2c8e756c245cff24ef5ec1dd2ddb7f6b3df2368ec8bbf0166e198248891646de",
+    "Assumptions.json": "2dbad972e92b7818571195b5aa5cdc10234e589533df2ae8b0afcc834a676c6f",
+    "Target.md": "d036810fec9f7307257012f9f97a372c9418446ae89a47164d645a82e025e2c9",
+    "Work.lean": "d92aea14cadd05cd965965772df02df8c369cdf2a766523794c3c1770fed60e6"
+  },
+  "audit_sha256": "dd4f8afe92ab8b0523e884fb4741304cefff4df9a9fd4243f6f0c74f8f7703b4",
+  "original_statement_sha256": "89faa3864263df8890bc4ab56b3b4d17cb4f61177d10f15e86825118efc79c79",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

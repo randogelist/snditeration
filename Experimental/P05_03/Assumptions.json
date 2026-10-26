@@ -1,0 +1,30 @@
+{
+  "id": "P05_03",
+  "printed_id": "5.3",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P05_03",
+  "axioms": [
+    {
+      "full_name": "Experimental.P05_03.betaFour_modes_integral_norm_summable",
+      "mathematical_meaning": "Absolute summability of the integrals of the actual alternating geometric mode norms for every pair of monomial indices.",
+      "dependency_ids": [
+        "P05_01_UNIT_LOG_MOMENTS",
+        "BETA4_GEOMETRIC_MODE_BOUND"
+      ],
+      "status": "OPEN_EXPERIMENTAL_AXIOM"
+    }
+  ],
+  "dependency_ids": [
+    "P05_01_UNIT_LOG_MOMENTS",
+    "P05_02_FINITE_SPECTRUM"
+  ],
+  "coverage": "Concrete printed beta4 density and mode definitions plus one convergence prerequisite; no moment identity or beta hyperbolicity conclusion assumed.",
+  "repair_gate": "Do not treat pointwise positive density as positivity of the bilinear coefficient form. Preserve the printed normalization and audit it against exact low-index moments before accepting any target conclusion.",
+  "object_interface_work": "Prove each mode is integrable using existing arbitrary-order Mellin logarithmic integrals; identify pointwise geometric expansion; justify integral/tsum interchange; construct and identify the actual beta series and rational harmonic tails; only then transport the true coefficient pencil to finite positive-slope spectrum.",
+  "discharge_obligations": "Replace summability axiom by exact Mellin term estimates and a convergent numerical majorant. The series-to-beta moment identity and all finite-pencil identifications remain separate work.",
+  "no_target_assumption": true,
+  "no_compilation_performed": true
+}
