@@ -1,0 +1,63 @@
+{
+  "item_id": "6.9",
+  "namespace": "Experimental.P06_09",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-09_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Real.harmonic"
+  ],
+  "dependency_ids": [
+    "2.5",
+    "5.7",
+    "6.1"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_09.triple_partial_fraction",
+      "meaning": "Finite partial-fraction decomposition of the actual displayed triple-pole rational function times P.",
+      "dependency_ids": [
+        "5.7"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.7 multipole partial-fraction architecture"
+    },
+    {
+      "name": "Experimental.P06_09.rational_three_jet_interpolation",
+      "meaning": "Generic rational Hermite interpolation at distinct nodes for three jets.",
+      "dependency_ids": [
+        "2.5",
+        "5.7"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "2.5 generalized Hermite basis / 5.7"
+    },
+    {
+      "name": "Experimental.P06_09.upstream_harmonic_residual_p_integral",
+      "meaning": "Lower-level highest-weight harmonic residue arithmetic.",
+      "dependency_ids": [
+        "6.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "6.1"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "Check the printed leading-pole coefficient and scaling exponents against the explicit rational function before asserting a normalization. In particular the determinant-scale calculation must use an actual field/scaling construction, not formal half-integer q powers.\n\nSTATIC_SOURCE_REVIEW_PENDING_CONSISTENCY: at k=0 and n≥1, the displayed numerator contains the j=1 factor t^6 while the displayed denominator contains t^3. The apparent k=0 pole cancels. Consequently the printed claim that the leading triple-pole coefficient is nonzero at every k, including k=0, cannot be admitted as a prerequisite. Reconcile the actual rational function, index range and residue formula before proceeding. The experimental partial-fraction existence axiom permits zero coefficients and remains unchanged; this note is not a proof of the target.",
+  "coverage": "Encodes the actual printed triple-pole rational function and lower-level finite decomposition, Hermite interpolation, and harmonic residue interfaces. The companion Hermite mod-p theorem is donor evidence only and is not silently imported.",
+  "remaining": "Discharge decomposition and interpolation; compute and check actual Laurent coefficients, construct the polylog functional and determinants, establish noncancellation on the stated polynomial space, then identify exact mod-q Hermite blocks. For part (2), first implement the actual multiweight double-pole functional from5.7. Neither asserted determinant valuation nor the required block congruences are axioms.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 38,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION",
+  "static_source_review": {
+    "status": "PENDING_CONSISTENCY_REPAIR",
+    "obstruction": "k=0 cancellation: numerator t^6, denominator t^3 for n≥1",
+    "forbidden_assumption": "Nonzero leading triple-pole coefficient at every k including k=0",
+    "prerequisite_impact": "Existing partial-fraction axiom allows zero coefficients; unchanged."
+  }
+}

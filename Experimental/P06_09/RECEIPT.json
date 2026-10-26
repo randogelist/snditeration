@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.9",
+  "module_key": "P06_09",
+  "branch": "experiment/zetahyperbolic-p06-09_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_09.triple_partial_fraction",
+      "meaning": "Finite partial-fraction decomposition of the actual displayed triple-pole rational function times P.",
+      "dependencies": [
+        "5.7"
+      ]
+    },
+    {
+      "name": "Experimental.P06_09.rational_three_jet_interpolation",
+      "meaning": "Generic rational Hermite interpolation at distinct nodes for three jets.",
+      "dependencies": [
+        "2.5",
+        "5.7"
+      ]
+    },
+    {
+      "name": "Experimental.P06_09.upstream_harmonic_residual_p_integral",
+      "meaning": "Lower-level highest-weight harmonic residue arithmetic.",
+      "dependencies": [
+        "6.1"
+      ]
+    }
+  ],
+  "axiom_count": 3,
+  "namespace": "Experimental.P06_09",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "1654ad2b9e00e24b78daed92df93ee83fbed6d6c8c24ba71d303f6cbd0b58f6b",
+    "Assumptions.json": "ab381d58a3c0e52122298c55252b6ba4eb81c6ddecfc378d13b5a4a62e4423a2",
+    "Target.md": "d1bb0633f462d25c2834e25338ea0c6fcd1a02f23d50f78cf5ca240e71221044",
+    "Work.lean": "71799176b045f2f10e89859b5fe4bea384c430ae97f1649cfafd7d86fe93ab02"
+  },
+  "audit_sha256": "4828e90f7e063c4744df0af2b223e7768fbf08e0efe621a0d5ba43d3db1f3945",
+  "original_statement_sha256": "fd03583216c24a7d3126418ac4fd3f366835291bcb8436e869c1b8e821adfcb1",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
