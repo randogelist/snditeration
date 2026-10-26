@@ -200,3 +200,9 @@ run_cmd do
 #print axioms ManuscriptChain.ContinuousWeight.momentMeasure_nonzero
 #print axioms ManuscriptChain.ContinuousWeight.integral_momentMeasure
 #print axioms ManuscriptChain.ContinuousWeight.integrableOn_weightedDensity_moment
+
+-- Theorem 5.4: actual rational integer-pole cancellation and endpoint.
+#print axioms ManuscriptChain.Tau.evenPolePair_coe
+#print axioms ManuscriptChain.Tau.evenPolePair_cancellation
+#print axioms ManuscriptChain.Tau.evenPolePair_one
+#print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
