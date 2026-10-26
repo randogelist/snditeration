@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.18",
+  "module_key": "P06_18",
+  "branch": "experiment/zetahyperbolic-p06-18_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [],
+  "axiom_count": 0,
+  "namespace": "Experimental.P06_18",
+  "paper_reference_items": [
+    "6.1",
+    "6.10",
+    "6.14",
+    "6.16",
+    "6.2",
+    "6.3",
+    "6.4",
+    "6.6",
+    "6.7",
+    "6.9"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "3e350932b2505eed5d3e8742a9515c93202202ccde5e9fba0e55d876348bf26f",
+    "Assumptions.json": "ca614f2f46b489daadc53284e2e2ea2c0b2f46f105fff473f250f9bcfdd3051d",
+    "Target.md": "f9c2f940a20fe1bf1e861b39d2811579c4b53f8c8062360d4d0c20950062abdb",
+    "Work.lean": "c6231b8ef33a9404cf21e121108a9b3e6627fbad84d38f0605d6b0bbf5e0dc37"
+  },
+  "audit_sha256": "f0b311e968432e14a1b285d0f8d510880feda35aa5877d4fe013adecaacbb8d3",
+  "original_statement_sha256": "99b2bba09ff690003636ecc99f618ee1a423dbafb3444e7e7fcc15450f04bf19",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": false
+}

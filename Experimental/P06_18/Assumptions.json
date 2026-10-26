@@ -1,0 +1,37 @@
+{
+  "item": "6.18",
+  "module": "P06_18",
+  "namespace": "Experimental.P06_18",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [],
+  "axiom_names": [],
+  "reused_declarations": [
+    "ManuscriptChain.Real.D_eq_prod_Icc",
+    "ManuscriptChain.Real.D_factorization"
+  ],
+  "dependency_items": [
+    "3.4",
+    "4.5",
+    "6.6",
+    "6.14",
+    "6.16"
+  ],
+  "input_data": [
+    "PrincipalMinorInput"
+  ],
+  "typed_coverage": "Concrete original denominator, exact shifted numerator and Euclidean quotient; a typed natural-number degree threshold; actual alternating odd harmonic sums. There is no assumed quotient-zero, dyadic-integrality or effective-measure conclusion.",
+  "missing_domain_interfaces": "Port audited donor degree/quotient lemmas after fingerprint verification; beta functional normalization; pole residues; 2-adic ring/valuation and multiplier interfaces; pure-zeta arithmetic transfer.",
+  "repair_gates": [
+    "Check natural-subtraction guards against the exact integer degree inequality before using the threshold.",
+    "Part1 requires an active beta coefficient; rmin is not defined for the all-zero beta tuple.",
+    "Resolve 6.14 normalization before claiming dyadic integrality.",
+    "Part3 is limited to beta coefficients zero and top zeta weight five; it may not be extended to arbitrary zeta–beta mixtures."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.18",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
