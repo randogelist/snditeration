@@ -11,7 +11,7 @@ half-line. No infinite-support or all-order strict-Hankel claim is made.
 -/
 
 noncomputable section
-open scoped BigOperators
+open scoped BigOperators ENNReal
 open MeasureTheory Set
 
 namespace LeanPaper.ReciprocalRootMoments
@@ -32,8 +32,8 @@ theorem reciprocalMeasure_Iic_zero {h : ℕ} (r : Fin h → ℝ) (q : ℝ)
   rw [reciprocalMeasure, Measure.finsetSum_apply]
   apply Finset.sum_eq_zero
   intro i hi
-  exact (Measure.dirac_eq_zero_iff_not_mem measurableSet_Iic).mpr
-    (not_le.mpr (reciprocalAtom_pos r q hr i))
+  rw [Measure.dirac_apply]
+  exact Set.indicator_of_notMem (not_le.mpr (reciprocalAtom_pos r q hr i)) _
 
 theorem integrable_reciprocalMeasure {h : ℕ} (r : Fin h → ℝ) (q : ℝ)
     (f : ℝ → ℝ) : Integrable f (reciprocalMeasure r q) := by

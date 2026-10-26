@@ -84,9 +84,16 @@ theorem density_sq_integrable :
     have h := ((product_log_pow_integrable 10).add
       ((product_log_pow_integrable 9).const_mul 2)).add
         (product_log_pow_integrable 8)
-    convert h using 1
-    ext z
-    ring
+    have he : (fun z : ℝ × ℝ =>
+        ((-_root_.Real.log (z.1 * z.2)) ^ 5 +
+          (-_root_.Real.log (z.1 * z.2)) ^ 4) ^ 2) =
+        (fun z => ((-_root_.Real.log (z.1 * z.2)) ^ 10 +
+          2 * (-_root_.Real.log (z.1 * z.2)) ^ 9) +
+          (-_root_.Real.log (z.1 * z.2)) ^ 8) := by
+      funext z
+      ring
+    rw [he]
+    exact h
   apply hmajorant.mono' (density_measurable.pow_const 2).aestronglyMeasurable
   filter_upwards [ae_restrict_mem (measurableSet_Ioo.prod measurableSet_Ioo)] with z hz
   rw [Real.norm_of_nonneg (sq_nonneg _)]

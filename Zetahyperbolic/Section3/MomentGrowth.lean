@@ -161,4 +161,21 @@ theorem momentGrowthConstant_pos (p : Real.Parameters) : 0 < momentGrowthConstan
   have hproduct := hpos.trans_le hbound
   exact (mul_pos_iff_of_pos_right (by positivity)).1 hproduct
 
+/-- The exact factorial-majorant prerequisite used by the experimental 3.3
+construction, proved here from the actual measure without an added axiom. -/
+theorem actualMomentFactorialMajorant (p : Real.Parameters) (_hp : Real.Admissible p) :
+    ∃ C : ℝ, 0 < C ∧ ∃ A : ℕ, ∀ r : ℕ,
+      |∫ t : ℝ, t ^ r ∂momentMeasure p| ≤ C * (Nat.factorial (2 * r + A) : ℝ) := by
+  refine ⟨momentGrowthConstant p, momentGrowthConstant_pos p,
+    2 * p.k + 2 * (numeratorPolynomial p).natDegree + 1, ?_⟩
+  intro r
+  have hnonneg : 0 ≤ ∫ t : ℝ, t ^ r ∂momentMeasure p := by
+    apply integral_nonneg_of_ae
+    filter_upwards [momentMeasure_ae_pos p] with t ht
+    exact pow_nonneg ht.le r
+  rw [abs_of_nonneg hnonneg]
+  have hindex : 2 * p.k + 2 * (r + (numeratorPolynomial p).natDegree) + 1 =
+      2 * r + (2 * p.k + 2 * (numeratorPolynomial p).natDegree + 1) := by omega
+  simpa only [hindex] using moment_le_factorial p r
+
 end ManuscriptChain.ConcreteMoment
