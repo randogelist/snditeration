@@ -264,3 +264,79 @@ run_cmd do
 #print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_spec
 #print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_degree
 #print axioms ManuscriptChain.Section4AlgebraicHeight.proposition_4_2_algebraic_numbers
+
+#print axioms ManuscriptChain.Beukers.kreinSix_eq_signed
+#print axioms ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_bilinear
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
+
+-- Finite 6.10 potential identity and a corrected rate-direction counterexample.
+#print axioms ManuscriptChain.PotentialGap.detPolynomial_coeff_dimension
+#print axioms ManuscriptChain.PotentialGap.base_det_mul_whitened_det
+#print axioms ManuscriptChain.PotentialGap.abs_coefficient_eq_center_mul_det
+#print axioms ManuscriptChain.PotentialGap.log_coefficient_sub_log_center
+#print axioms ManuscriptChain.PotentialGap.normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.manuscript_normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.rate_conservation
+#print axioms ManuscriptChain.PotentialGap.height_decay_ratio_gt_581
+#print axioms ManuscriptChain.PotentialGap.lower_decay_bound_counterexample
+#print axioms ManuscriptChain.PotentialGap.evaluation_upper_gives_rate_lower
+#print axioms ManuscriptChain.PotentialGap.evaluation_lower_gives_rate_upper
+
+-- Generic ultrametric integer-polynomial disk reused from frozen PR15.
+#print axioms ManuscriptChain.Ultrametric.norm_eval_le_one
+#print axioms ManuscriptChain.Ultrametric.norm_eval_sub_le
+#print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.eval_ne_zero_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.padicComplex_zero_free_disk
+
+-- P03.04: actual admissible degree-loss counterexample; printed full-rank claim is false.
+#print axioms ManuscriptChain.PrincipalDegreeLoss.example_admissible
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_slope_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_direction_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_polynomial_constant
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_principal_has_no_complex_roots
+#print axioms ManuscriptChain.PrincipalDegreeLoss.literal_all_principal_roots_claim_false
+
+-- P03.04: conditional polynomial Dodgson identity and signature restriction bounds.
+#print axioms ManuscriptChain.Dodgson.det_border
+#print axioms ManuscriptChain.Dodgson.block_condensation
+#print axioms ManuscriptChain.Dodgson.symmetric_block_condensation
+#print axioms ManuscriptChain.Dodgson.map_border
+#print axioms ManuscriptChain.Dodgson.polynomial_symmetric_block_condensation
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_comp_le
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_le_restrict_add_codimension
+#print axioms ManuscriptChain.SignatureRestriction.signature_restriction_bounds
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_codimension_one
+#print axioms ManuscriptChain.SignatureRestriction.signature_comp_bounds
+
+-- Lemma 2.3: actual RatFunc.eval germ and direct normalized analytic derivative API.
+#print axioms ManuscriptChain.SimplePole.realEval_eq_eval
+#print axioms ManuscriptChain.SimplePole.realEval_eventuallyEq_eval
+#print axioms ManuscriptChain.SimplePole.supported_pole_denom_zero
+#print axioms ManuscriptChain.Tau.regular_at_zero_iff
+#print axioms ManuscriptChain.Tau.dataCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.partialFractionCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_RatFunc_eval
+
+-- P06.10(2) conditional coefficient Gram determinant O(K log K) rate.
+#print axioms ManuscriptChain.CoefficientGramGrowth.map_intGram
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_realGram_eq_int
+#print axioms ManuscriptChain.CoefficientGramGrowth.realGram_posDef
+#print axioms ManuscriptChain.CoefficientGramGrowth.one_le_det
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_upper
+#print axioms ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero
+
+-- P03.02 corrected real-parameter hyperbolicity and exact odd-weight alignment.
+#print axioms ManuscriptChain.ContinuousWeight.gram_posDef
+#print axioms ManuscriptChain.ContinuousWeight.gram_integral
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_eq_paper
+#print axioms ManuscriptChain.ContinuousWeight.gram_eq_paper_integral
+#print axioms ManuscriptChain.ContinuousWeight.gram_odd
+#print axioms ManuscriptChain.ContinuousWeight.poleWeight_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_det_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_odd
+#print axioms ManuscriptChain.ContinuousWeight.pencil_odd
+#print axioms ManuscriptChain.ContinuousWeight.proposition_3_2_corrected
