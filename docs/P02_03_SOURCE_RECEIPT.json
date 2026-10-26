@@ -1,0 +1,47 @@
+{
+  "project": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "checkpoint_name": "P02_03_NORMALIZED_ANALYTIC_DERIVATIVE",
+  "proof_tier": "A_TIER_EXACT_CANONICAL_REALIZATION",
+  "manuscript_item": "Lemma 2.3",
+  "source_branch": "feat/zetahyperbolic-p02-03-analytic-derivative",
+  "source_head": "d6c79fdeca8f77928a934acecf1b7af96fdb6fee",
+  "merge_commit": "c935c9963608a1ab3b58fe9af4c849dd4b47d3d4",
+  "destination_ci": {
+    "id": 40262441761,
+    "job_id": 121377504848,
+    "conclusion": "success",
+    "build_jobs": 8768,
+    "axiom_print_count": 10,
+    "axiom_allowlist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "placeholder_scan": "success"
+  },
+  "compiler": "Lean 4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source_files": [
+    {
+      "path": "Zetahyperbolic/Section2/AnalyticDerivative.lean",
+      "git_blob_sha": "a17a2280f1785f091bd465dc5015005c9e19c2a4"
+    },
+    {
+      "path": "Zetahyperbolic/Section2/PolynomialDerivative.lean",
+      "git_blob_sha": "4e497f8edac5b7deebd876511c3b4ae0af59a0ec"
+    },
+    {
+      "path": "Zetahyperbolic/Section2/RationalAnalyticBridge.lean",
+      "git_blob_sha": "a752da304e7c99e4a2f0d24659ab07c463a2560d"
+    }
+  ],
+  "main_declarations": [
+    "ManuscriptChain.Tau.normalized_derivative_rationalDomain",
+    "ManuscriptChain.Tau.rationalFunctional_difference_analytic"
+  ],
+  "scope": "Unique rational pole coordinates; zero origin residue required; canonical real evaluation.",
+  "not_proved": "Equality with Mathlib RatFunc.eval on an open neighborhood of zero.",
+  "next_item": "Theorem 5.4 even-pole pair cancellation",
+  "next_branch_started": false,
+  "native_windows_receipt": "NOT_CLAIMED"
+}
