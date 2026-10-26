@@ -1,0 +1,48 @@
+{
+  "id": "P04_06",
+  "manuscript_id": "4.6",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "full_name": "Experimental.P04_06.arcsine_probability_input",
+      "math_meaning": "Classical arcsine density is an integrable probability density on (0,L).",
+      "dependency_ids": [
+        "CLASSICAL_ARCSINE_MEASURE"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_06.arcsine_log_potential_input",
+      "math_meaning": "Actual logarithmic potential of that density at −u² with explicit closed value and integrability.",
+      "dependency_ids": [
+        "CLASSICAL_ARCSINE_LOG_POTENTIAL"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    }
+  ],
+  "verified_upstream_refs": [
+    "ManuscriptChain.PotentialGap.base_det_mul_whitened_det",
+    "ManuscriptChain.PotentialGap.manuscript_normalized_log_identity",
+    "ManuscriptChain.PotentialGap.evaluation_upper_gives_rate_lower",
+    "ManuscriptChain.PotentialGap.evaluation_lower_gives_rate_upper"
+  ],
+  "dependency_ids": [
+    "P02_05",
+    "P03_01",
+    "P04_04",
+    "CLASSICAL_ARCSINE_MEASURE",
+    "EXTERNAL_FAUZAN_2026_ENERGY"
+  ],
+  "coverage": "The finite determinant/log identities are already imported. Only independent classical arcsine probability/potential inputs for the Jensen lower bound are axiomatized; no target determinant rate, height bound or decay rate is assumed.",
+  "repair_or_interface_gates": [
+    "Prove both classical identities and all needed Fubini/Jensen integrability conditions on the actual high-dimensional Andréief integrand.",
+    "Construct the exact S_K normalizer and the original Q_K multiplier interface in this branch or import a discharged upstream implementation; a chosen primitive normalizer alone is insufficient.",
+    "Establish actual Euler–Maclaurin and Gram-energy asymptotics with certified constants. Neither follows from finite log conservation.",
+    "The printed lower coefficient-height argument reverses A_M≤−2.32425 into a lower bound. This is a REPAIR gate: obtain an independent valid lower multiplier-rate estimate or revise the claim. Do not assume the invalid inference.",
+    "Full paper polynomial-height and limsup statements remain unproved; source-only axioms do not close them."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}

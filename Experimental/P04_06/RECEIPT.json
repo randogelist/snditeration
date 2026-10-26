@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_item": "4.6",
+  "module_key": "P04_06",
+  "branch": "experiment/zetahyperbolic-p04-06_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P04_06.arcsine_probability_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "CLASSICAL_ARCSINE_MEASURE"
+      ]
+    },
+    {
+      "name": "Experimental.P04_06.arcsine_log_potential_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "CLASSICAL_ARCSINE_LOG_POTENTIAL"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P04_06",
+  "paper_reference_items": [
+    "4.4"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "3cc728fdf2a5d89cc404f1e096bb750b2f137e8137683fe6b75e913bbafa5cfa",
+    "Assumptions.json": "942b8a5d0d529ebb215c2b41d0784817caf744077c05110cd07dedadc00cb7f3",
+    "Target.md": "90f9cd95a9776bd8c9d5b46c816fd9e17455cbb4b7176a67805e605c3703aba2",
+    "Work.lean": "62d2c29dd4d4692d464300e66f1efe62a3c1f1f42c69241f5c79c433d0cc0772"
+  },
+  "audit_sha256": "f5a9f8578c4f693ed41412e9fbf3d5f467d38467da47ab6364306e87cc9187c9",
+  "original_statement_sha256": "75a470cdb035cec486ee3c7d0e1300f0b3a6170b1e218b8ed8cc055b2b1b28d0",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
