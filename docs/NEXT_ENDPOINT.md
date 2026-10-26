@@ -1,22 +1,20 @@
-# Next single-target handoff — following P05.01 A-Tier PASS
+# Next single-target handoff — following P05.02(2) finite Krein checkpoint
 
-## Completed and frozen
+## Newly completed, PASS-ONCE frozen
 
-- `P04_03_COMPLEX_PADIC_ZERO_FREE_DISK`: PR #17, CI 40259783326 PASS.
-- `P02_03_ANALYTIC_DERIVATIVE`: PR #18, CI 40262441761 PASS.
-- `P05_04_EVEN_POLE_CANCELLATION`: PR #21, CI 40265986335 PASS.
-- **`P05_01_TWO_VARIABLE_BEUKERS_MOMENTS`: PR #24, [CI 40267850777](https://github.com/randogelist/snditeration/actions/runs/40267850777) PASS**. Three exact source modules, 8,783 Lean jobs, standard-only targeted axiom reports; source `08d308a22ebe1cc31dfad61b3e875b192290bf17`, merged `1ae34f2bc30135460c357f4efffe1fdbb93d5009`.
+- `P05_02_2_FINITE_KREIN`: actual ζ7 **monomial** double Beukers integral is exactly its signed 1/1440 Krein mode sum. The same exact moments admit a finite rational polynomial coefficient bilinear extension.
+- [PR #29](https://github.com/randogelist/snditeration/pull/29) merged 588230a857acb5a8b74b76ecf99686e79925759c. [Lean 4.33 CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845) PASS, 8,798 jobs, standard-only axioms in six requested declarations, placeholder scan PASS. Verified source head 372deda8edc77bba6312b8f80137e00e1b75e74f.
+- All preexisting proof modules and Mathlib `.olean` cache assumptions are preserved. Source blobs for both new modules and root/audit entry points match between passing proof head and merged main.
 
-## Candidate next frozen target — not started
+## Next mathematical target — NOT STARTED
 
-**Theorem 5.2(2), actual ζ(7) Beukers Krein-space decomposition.**
+`P05_02_2_GENERAL_L2_BEUKERS_KREIN`: finish the **original** Theorem 5.2(2), which quantifies over arbitrary f∈L²(0,1), not merely monomials.
 
-Theorem 5.1 now supplies the genuine normalized positive double-integral moments for every monomial pair (not just formal rational coefficients). Companion source `LeanPaper.ImportedSection56.KreinIdentity` proves finite/algebraic positive-minus-negative modes and conditional infinite tsum equality; `snditeration` already has finite coefficient Gram/dual spectral modules. What is **not** yet proved is an exact analytic identification of the actual 5.1 integral with its infinite Krein mode decomposition, the required mode summability/Fubini exchange, and valid sign-domain estimates. Part (3) all-dimensional strict cones need additional correct hypotheses and independent negative-tail control (printed 6.3(2) has a counterexample).
+1. Prove finite polynomial expansion equals the **single actual double integral** of f(x1)g(x2) against `Beukers.density` (the frozen `polynomialMomentForm` is currently defined as finite sum of individually integrated monomial moments). Establish integrability and finite integration linearity.
+2. Interchange the finite polynomial coefficients with the **infinite** signed mode sum and show that the mode coefficients equal actual integrals of f(x)x^m(-log x)^ν. All nonnegative/absolute summability premises must be proved, not assumed.
+3. Extend both sides continuously from polynomial functions to arbitrary f∈L²(0,1); prove kernel Hilbert–Schmidt/absolute boundedness and uniform signed-mode norm tails to pass the limit.
+4. Recompile and axiom-audit the exact L² theorem with Lean 4.33 and pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. The infinite positive/negative polynomial cones of 5.2(3) remain a **separate** mathematical problem; do not assume away the Krein negative tail.
 
-Begin with a small theorem realizing each actual 5.1 moment as the normalized plus-minus mode sum, proving summability, before considering cone claims. **Do not treat an abstract finite channel equality as Theorem 5.2(2)**.
+Parallel branches and unrelated PRs may run independently, but no extra theorem has been started in this handoff.
 
-## Concurrency rule
-
-A separate future branch may be created while a different PR is pending. Each source merge still requires an actual destination compiler PASS, source/definition equivalence and a transitive standard-axiom audit. Continue preserving the frozen Lean 4.33.0 Mathlib snapshot `db584cd6d46c92f209a44c0f1c829460d327499d` under LEAN_ANCHORINGS/PASS-ONCE.
-
-No new theorem branch has been started by this handoff. No ζ(5)/ζ(7) irrationality, RH, finite-witness formal closure or S-Tier claim is made.
+No claim of ζ7 irrationality, full printed 5.2(2), RH or S-Tier is made.
