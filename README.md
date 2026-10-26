@@ -91,6 +91,12 @@ The original PDF also contains an independently confirmed **inequality-direction
 
 [**26 October multi-round source audit**](docs/REPEAT_AUDIT_2026-10-26.md) · [**64 sub-obligation register**](docs/PAPER_GAP_REGISTER.md) · [25 October baseline](docs/MULTI_ROUND_CROSS_AUDIT_2026-10-25.md)
 
+### Collected cross-project intake (26 October 2026)
+
+The source collection has a [dedicated draft PR #16](https://github.com/randogelist/snditeration/pull/16) on branch `feat/zetahyperbolic-cross-project-intake-v1`. It pins **16 companion Lean sources** as inert `.lean.txt` snapshots, with source SHA-256 and a small-PR migration plan. The independent [source-packet merge matrix](docs/CROSS_PROJECT_SOURCE_INTAKE_20261026.md) identifies 10 targeted waves, checked source dependencies, the failed PR #15 salvage frontier and the warnings for conditional/axiom-dependent ZIP material. A separate downloadable user ZIP `ZETAHYPERBOLIC_CROSS_PROJECT_INTAKE_v0_1_2.zip` contains 30 inert data/source snapshots from 25 original archives.
+
+**Local merger status:** `SRC_COLLECTED`, not `DEST_COMPILED`. The draft CI PASS (when present) means only that the unchanged imported Lean project still builds, because no `.lean.txt` snapshot enters the default import graph. A print-axioms check and exact paper-object adapter remain necessary before closing a local gap. Current completed printed total remains **7/45 across the two repositories**.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
