@@ -1,0 +1,43 @@
+{
+  "checkpoint": "P05_01_COMPLETE_BEUKERS_MOMENTS",
+  "mode": "A_TIER_EXECUTION",
+  "tier": "!!",
+  "manuscript": "Theorem 5.1 (5.1)-(5.2) of supplied 21 October 2026 manuscript",
+  "full_integral": {
+    "pr": 24,
+    "proof_head": "08d308a22ebe1cc31dfad61b3e875b192290bf17",
+    "merged": "1ae34f2bc30135460c357f4efffe1fdbb93d5009",
+    "ci": 40267850777,
+    "build_jobs": 8783,
+    "status": "PASS"
+  },
+  "rationality": {
+    "pr": 26,
+    "proof_head": "bcb1b496f3e69d97054a6f46c862e00ec967f970",
+    "merged": "98c11122faa8cfdeb109e4ebba31d1f21d1b505b",
+    "ci": 40268502325,
+    "build_jobs": 8784,
+    "status": "PASS"
+  },
+  "exact_rationality_declarations": [
+    "ManuscriptChain.Beukers.offdiagonal_moment_eq_rat",
+    "ManuscriptChain.Beukers.offdiagonal_moment_is_rational"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "placeholder_scan": "PASS",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "next": "P05_02_ACTUAL_KREIN_DECOMPOSITION_NOT_STARTED",
+  "scope_exclusions": [
+    "Infinite two-variable signed Krein decomposition",
+    "All-dimensional positive/negative polynomial cones",
+    "Irrationality of zeta(7)"
+  ],
+  "frozen_source_hashes": {
+    "rationality_module_git_blob": "115bbae9a01745fe2593b852920e202ecd0d5e4c"
+  }
+}
