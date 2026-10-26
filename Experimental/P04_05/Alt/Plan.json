@@ -1,0 +1,50 @@
+{
+  "paper_item": "4.5",
+  "alternative_target": "Construct the actual coupled weight-five/weight-three moment pencil on the explicitly verified density-comparison region. State its quantitative irrationality or approximation consequence only under independent coupled multiplier, decay, spectral-rate and effective-onset hypotheses.",
+  "relation_to_original": "conditional",
+  "changes_from_original": "Separate positive-density/spectral realization from the arithmetic conclusion; retain the exact allowable coefficient region and both signs of a.",
+  "prerequisites": [
+    "2.2",
+    "3.1",
+    "4.1"
+  ],
+  "retained_open_obligations": [
+    "Coupled single-Z rational pencil and actual center identification.",
+    "Density comparison from summable exponential series.",
+    "Outer/small-prime rank estimates, multiplier and strict combined rate margin."
+  ],
+  "correction_gate": "A pure-weight 4.4 bound cannot be reused for the coupled family without a proved comparison and arithmetic transfer.",
+  "source_paths": [
+    "Experimental/P04_05/Prerequisites.lean",
+    "Experimental/P04_05/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p04-05_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p04-05_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p04-05_construction",
+  "original_snapshot_commit": "05272ea512e9ae8f855b03acdf7670249d8110cc",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P04_05/Prerequisites.lean",
+      "commit": "05272ea512e9ae8f855b03acdf7670249d8110cc",
+      "url": "https://github.com/randogelist/snditeration/blob/05272ea512e9ae8f855b03acdf7670249d8110cc/Experimental/P04_05/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P04_05/Target.md",
+      "commit": "05272ea512e9ae8f855b03acdf7670249d8110cc",
+      "url": "https://github.com/randogelist/snditeration/blob/05272ea512e9ae8f855b03acdf7670249d8110cc/Experimental/P04_05/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
