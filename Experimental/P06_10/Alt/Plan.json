@@ -1,0 +1,62 @@
+{
+  "paper_item": "6.10",
+  "alternative_target": "Keep the exact finite normalized-log determinant identity and the conditional rate identity when the named limits exist. For K∈N tending to infinity and integer coefficient matrices C_K∈M_{h(K)×(K+1)}(Z), assume h(K)≤K+1, full real row rank, and a fixed exponent A≥0 such that every entry satisfies |C_K(i,j)|≤(K+1)^A for every K. Target log det(C_K C_Kᵀ)/K²→0 using the available weaker finite upper bound. Omit strict equilibrium reweighting and the ratio >581 unless an explicit sufficient upper bound for the positive decay rate is proved.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Separate finite/rate conservation from unproved equilibrium identification; replace the defective lower-decay argument and avoid claiming the exact printed finite Hadamard bound.",
+  "prerequisites": [
+    "2.5",
+    "3.1",
+    "5.2"
+  ],
+  "retained_open_obligations": [
+    "Prove the relevant limiting hypotheses for any concrete family.",
+    "Identify actual pencil derivatives with C_K C_Kᵀ.",
+    "Potential-energy identification and strict reweighting remain open; any numerical ratio needs the correct upper-decay premise."
+  ],
+  "correction_gate": "The existing counterexample prevents deriving a lower bound on height/decay from only a lower bound on decay. Reuse compiled components only with their exact hypotheses and evidence.",
+  "source_paths": [
+    "Experimental/P06_10/Target.md",
+    "Experimental/P06_10/Assumptions.json",
+    "Experimental/P06_10/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-10_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-10_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-10_construction",
+  "original_snapshot_commit": "42275211433ab64ce66452b341ae210c90f391c8",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_10/Target.md",
+      "commit": "42275211433ab64ce66452b341ae210c90f391c8",
+      "url": "https://github.com/randogelist/snditeration/blob/42275211433ab64ce66452b341ae210c90f391c8/Experimental/P06_10/Target.md"
+    },
+    {
+      "path": "Experimental/P06_10/Assumptions.json",
+      "commit": "42275211433ab64ce66452b341ae210c90f391c8",
+      "url": "https://github.com/randogelist/snditeration/blob/42275211433ab64ce66452b341ae210c90f391c8/Experimental/P06_10/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_10/Prerequisites.lean",
+      "commit": "42275211433ab64ce66452b341ae210c90f391c8",
+      "url": "https://github.com/randogelist/snditeration/blob/42275211433ab64ce66452b341ae210c90f391c8/Experimental/P06_10/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
