@@ -1,0 +1,150 @@
+Source commit: e64d301c64307703a4384a72cba8ba253b3f505d
+GitHub Actions run: 40184648602
+Platform: GitHub ubuntu-latest; not a native Windows receipt.
+Exact build and axiom log excerpts (timestamps retained):
+
+2026-10-25T10:24:39.6065783Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-10-25T10:25:55.7278123Z ✔ [8724/8746] Built Zetahyperbolic.Section2.DenominatorFactorization (3.0s)
+2026-10-25T10:25:59.5338267Z ✔ [8733/8746] Built Zetahyperbolic.Section3.PoleSigns (6.5s)
+2026-10-25T10:25:59.8367838Z ⚠ [8737/8746] Built Zetahyperbolic.Section2.TauGenerators (8.1s)
+2026-10-25T10:25:59.8445635Z ⚠ [8738/8746] Built Zetahyperbolic.Section2.RationalDomain (8.1s)
+2026-10-25T10:26:01.3335534Z ✔ [8739/8746] Built Zetahyperbolic.Section3.ContinuedFractionObstruction (5.6s)
+2026-10-25T10:26:03.2378936Z ⚠ [8740/8746] Built Zetahyperbolic.Section2.RationalFunctionals (3.3s)
+2026-10-25T10:26:05.0402057Z ✔ [8741/8746] Built Zetahyperbolic.Section3.ConcreteMomentMeasure (5.6s)
+2026-10-25T10:26:09.3447655Z ✔ [8742/8746] Built Zetahyperbolic.Section3.RationalIntegralBridge (4.3s)
+2026-10-25T10:26:12.6480977Z ✔ [8743/8746] Built Zetahyperbolic.Section3.Unconditional (3.3s)
+2026-10-25T10:26:16.0506383Z ✔ [8744/8746] Built Zetahyperbolic.Section3.PrimitivePolynomial (3.4s)
+2026-10-25T10:26:19.1538153Z ✔ [8745/8746] Built Zetahyperbolic (2.0s)
+2026-10-25T10:26:19.1737703Z Build completed successfully (8746 jobs).
+2026-10-25T10:26:47.5534864Z 'ManuscriptChain.Real.zeta_eq_riemannZeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5547629Z 'ManuscriptChain.Real.zeta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5597598Z 'ManuscriptChain.BasisInvariance.det_changeBasisPencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5599108Z 'ManuscriptChain.BasisInvariance.primitiveNormalization_nonempty' depends on axioms: [propext,
+2026-10-25T10:26:47.5617121Z  Classical.choice,
+2026-10-25T10:26:47.5621551Z  Quot.sound]
+2026-10-25T10:26:47.5642466Z 'ManuscriptChain.BasisInvariance.theorem_2_4_canonical_basis_invariance' depends on axioms: [propext,
+2026-10-25T10:26:47.5649136Z  Classical.choice,
+2026-10-25T10:26:47.5649665Z  Quot.sound]
+2026-10-25T10:26:47.5650731Z 'ManuscriptChain.BasisInvariance.theorem_2_4_constructed_canonical_basis_invariance' depends on axioms: [propext,
+2026-10-25T10:26:47.5652216Z  Classical.choice,
+2026-10-25T10:26:47.5652705Z  Quot.sound]
+2026-10-25T10:26:47.5653694Z 'ManuscriptChain.PoleDiagonalization.poleWeight_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5655312Z 'ManuscriptChain.PoleDiagonalization.rationalDerivativeMatrix_factorization' depends on axioms: [propext,
+2026-10-25T10:26:47.5656605Z  Classical.choice,
+2026-10-25T10:26:47.5657174Z  Quot.sound]
+2026-10-25T10:26:47.5658124Z 'ManuscriptChain.PoleDiagonalization.rationalDerivativeMatrix_det_ne_zero' depends on axioms: [propext,
+2026-10-25T10:26:47.5659177Z  Classical.choice,
+2026-10-25T10:26:47.5659675Z  Quot.sound]
+2026-10-25T10:26:47.5660603Z 'ManuscriptChain.PoleDiagonalization.delta_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5662147Z 'ManuscriptChain.PoleDiagonalization.theorem_2_5_lagrange_pole_diagonalization' depends on axioms: [propext,
+2026-10-25T10:26:47.5663280Z  Classical.choice,
+2026-10-25T10:26:47.5663794Z  Quot.sound]
+2026-10-25T10:26:47.5664698Z 'ManuscriptChain.BasisInvariance.theorem_2_4_constructed_for_manuscript' depends on axioms: [propext,
+2026-10-25T10:26:47.5665703Z  Classical.choice,
+2026-10-25T10:26:47.5666205Z  Quot.sound]
+2026-10-25T10:26:47.5667270Z 'ManuscriptChain.RealTransfer.polynomial_integer_squeeze' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5668815Z 'ManuscriptChain.RealTransfer.conditional_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5670367Z 'ManuscriptChain.RealTransfer.RationalMeasure.irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5671965Z 'ManuscriptChain.RealTransfer.conditional_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5673494Z 'ManuscriptChain.RealTransfer.paper_parameter_inequalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5675008Z 'ManuscriptChain.Spectral.SymmetricAffinePencil.eval_detPolynomial' depends on axioms: [propext,
+2026-10-25T10:26:47.5676032Z  Classical.choice,
+2026-10-25T10:26:47.5676665Z  Quot.sound]
+2026-10-25T10:26:47.5677633Z 'ManuscriptChain.Spectral.SymmetricAffinePencil.center_nonvanishing_of_positive' depends on axioms: [propext,
+2026-10-25T10:26:47.5678732Z  Classical.choice,
+2026-10-25T10:26:47.5679275Z  Quot.sound]
+2026-10-25T10:26:47.5680649Z 'ManuscriptChain.Real.manuscriptPencil_detPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5682207Z 'ManuscriptChain.Real.delta_eval_eq_det_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5687202Z 'ManuscriptChain.Real.delta_nonzero_of_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5688672Z 'ManuscriptChain.Spectral.RootFactorization.complex_root_location' depends on axioms: [propext,
+2026-10-25T10:26:47.5689690Z  Classical.choice,
+2026-10-25T10:26:47.5690187Z  Quot.sound]
+2026-10-25T10:26:47.5691107Z 'ManuscriptChain.Spectral.RootFactorization.eval_ne_zero_of_distance_lt' depends on axioms: [propext,
+2026-10-25T10:26:47.5692116Z  Classical.choice,
+2026-10-25T10:26:47.5692609Z  Quot.sound]
+2026-10-25T10:26:47.5693543Z 'ManuscriptChain.Spectral.det_one_add_smul_of_hermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5694939Z 'ManuscriptChain.Spectral.rootFactorization_nonempty_of_posDef' depends on axioms: [propext,
+2026-10-25T10:26:47.5695984Z  Classical.choice,
+2026-10-25T10:26:47.5696591Z  Quot.sound]
+2026-10-25T10:26:47.5697440Z 'ManuscriptChain.Spectral.theorem_3_1_hyperbolicity_of_posDef' depends on axioms: [propext,
+2026-10-25T10:26:47.5698377Z  Classical.choice,
+2026-10-25T10:26:47.5698859Z  Quot.sound]
+2026-10-25T10:26:47.5699710Z 'ManuscriptChain.General.complex_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5701113Z 'ManuscriptChain.General.complex_root_on_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5703127Z 'ManuscriptChain.General.theorem_3_1_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5704550Z 'ManuscriptChain.Moments.quadratic_eq_integral_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5705964Z 'ManuscriptChain.Moments.integral_polynomial_sq_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5707568Z 'ManuscriptChain.Moments.momentMatrix_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5709107Z 'ManuscriptChain.Real.PositiveMomentRealization.gram_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5790836Z 'ManuscriptChain.Hyperbolic.summable_exponentialTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5792336Z 'ManuscriptChain.Hyperbolic.density_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5793814Z 'ManuscriptChain.Hyperbolic.measurable_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5795264Z 'ManuscriptChain.Hyperbolic.baseMeasure_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5796847Z 'ManuscriptChain.Hyperbolic.integral_pow_mul_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5798499Z 'ManuscriptChain.Hyperbolic.integral_tsum_momentTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5799854Z 'ManuscriptChain.Hyperbolic.integrableOn_tsum_momentTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5801326Z 'ManuscriptChain.Hyperbolic.integrableOn_monomial_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5802856Z 'ManuscriptChain.Hyperbolic.integral_monomial_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5804293Z 'ManuscriptChain.Hyperbolic.integral_monomial_density_eq_monomialMoment' depends on axioms: [propext,
+2026-10-25T10:26:47.5805344Z  Classical.choice,
+2026-10-25T10:26:47.5805796Z  Quot.sound]
+2026-10-25T10:26:47.5806746Z 'ManuscriptChain.Real.zeta_tail_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5808045Z 'ManuscriptChain.Real.zeta_tail_pole_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5809638Z 'ManuscriptChain.Hyperbolic.bose_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5811024Z 'ManuscriptChain.Hyperbolic.integrableOn_bose_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5812486Z 'ManuscriptChain.Hyperbolic.integral_bose_tail_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5813876Z 'ManuscriptChain.Hyperbolic.integral_bose_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5815257Z 'ManuscriptChain.Hyperbolic.integral_density_div_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5887863Z 'ManuscriptChain.Hyperbolic.coth_partial_fractions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5889459Z 'ManuscriptChain.Hyperbolic.pole_scaled_kernel_split_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5892062Z 'ManuscriptChain.Hyperbolic.poleIntegralIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5893467Z 'ManuscriptChain.PartialFractions.tailPoleFactors_pairwise_coprime' depends on axioms: [propext,
+2026-10-25T10:26:47.5894996Z  Classical.choice,
+2026-10-25T10:26:47.5895360Z  Quot.sound]
+2026-10-25T10:26:47.5896114Z 'ManuscriptChain.PartialFractions.kernelNumerator_partial_fraction_exists' depends on axioms: [propext,
+2026-10-25T10:26:47.5896865Z  Classical.choice,
+2026-10-25T10:26:47.5897082Z  Quot.sound]
+2026-10-25T10:26:47.5897799Z 'ManuscriptChain.PartialFractions.data_quotient_eq_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5899381Z 'ManuscriptChain.PartialFractions.data_quotient_eq_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5900747Z 'ManuscriptChain.PartialFractions.residueCoeff_eq_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5902137Z 'ManuscriptChain.PartialFractions.residueCoeff_eq_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5903437Z 'ManuscriptChain.PartialFractions.rational_kernel_decomposition' depends on axioms: [propext,
+2026-10-25T10:26:47.5904221Z  Classical.choice,
+2026-10-25T10:26:47.5904590Z  Quot.sound]
+2026-10-25T10:26:47.5905261Z 'ManuscriptChain.Real.D_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5906647Z 'ManuscriptChain.Tau.pullback_identity_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5907931Z 'ManuscriptChain.Tau.tauPolynomial_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5909031Z 'ManuscriptChain.Tau.tau_difference_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5909697Z 'ManuscriptChain.SimplePole.realize_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5910374Z 'ManuscriptChain.SimplePole.functional_representation_independent' depends on axioms: [propext,
+2026-10-25T10:26:47.5910988Z  Classical.choice,
+2026-10-25T10:26:47.5911345Z  Quot.sound]
+2026-10-25T10:26:47.5912180Z 'ManuscriptChain.ConcreteMoment.weightedMeasure_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5913569Z 'ManuscriptChain.ConcreteMoment.momentMeasure_nullSingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:47.5914951Z 'ManuscriptChain.ConcreteMoment.integrableOn_weightedDensity_moment' depends on axioms: [propext,
+2026-10-25T10:26:47.5915837Z  Classical.choice,
+2026-10-25T10:26:47.5916201Z  Quot.sound]
+2026-10-25T10:26:48.1833173Z 'ManuscriptChain.ConcreteMoment.realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1857800Z 'ManuscriptChain.Hyperbolic.gram_eq_weighted_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1859209Z 'ManuscriptChain.Hyperbolic.gram_eq_paper_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1860179Z 'ManuscriptChain.REALIZATION' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1861024Z 'ManuscriptChain.GRAM_POSITIVE' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1861935Z 'ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1862858Z 'ManuscriptChain.EXACT_ZERO_FREE_DISK' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1863845Z 'ManuscriptChain.primitivePolynomial_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1864897Z 'ManuscriptChain.primitivePolynomial_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1865972Z 'ManuscriptChain.primitivePolynomial_exact_zero_free_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1867353Z 'ManuscriptChain.PoleDiagonalization.poleWeight_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1868871Z 'ManuscriptChain.PoleDiagonalization.delta_leadingCoeff_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1870256Z 'ManuscriptChain.BasisInvariance.weightFive_primitive_leadingCoeff_sign' depends on axioms: [propext,
+2026-10-25T10:26:48.1871189Z  Classical.choice,
+2026-10-25T10:26:48.1871564Z  Quot.sound]
+2026-10-25T10:26:48.1872501Z 'ManuscriptChain.ContinuedFractionObstruction.example_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-25T10:26:48.1874291Z 'ManuscriptChain.ContinuedFractionObstruction.positive_center_refutes_printed_fraction' depends on axioms: [propext,
+2026-10-25T10:26:48.1875312Z  Classical.choice,
+2026-10-25T10:26:48.1875686Z  Quot.sound]
+2026-10-25T10:26:48.1876691Z 'ManuscriptChain.ContinuedFractionObstruction.example_reciprocal_hankel_singular' depends on axioms: [propext,
+2026-10-25T10:26:48.1877633Z  Classical.choice,
+2026-10-25T10:26:48.1877964Z  Quot.sound]
+2026-10-25T10:26:48.1884580Z GOODWORKFLOWFRONTIER::AXIOM_ALLOWLIST::THEOREMS_CHECKED=600
+
