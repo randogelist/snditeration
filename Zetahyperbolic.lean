@@ -182,3 +182,5 @@ import Zetahyperbolic.Section6.BetaScaledUnitObstruction
 
 import Zetahyperbolic.Section6.Chapter6HarmonicCutoffBound
 import Zetahyperbolic.Section6.BetaOddPoleNorm
+
+import Zetahyperbolic.Section6.BetaOddRootConvergence

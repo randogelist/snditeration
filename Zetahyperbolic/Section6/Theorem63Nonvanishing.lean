@@ -121,7 +121,8 @@ theorem pairedMonomialMatrix_cast (p : ℕ) [Fact p.Prime] (X : ℚ) :
     (pairedMonomialMatrix p X).map (Rat.castHom ℚ_[p]) =
       pairedMonomialPadicMatrix p (X : ℚ_[p]) := by
   ext r s
-  simp [pairedMonomialMatrix, pairedMonomialPadicMatrix, Matrix.map_apply, apply_ite]
+  simp [pairedMonomialMatrix, pairedMonomialPadicMatrix, Matrix.map_apply, apply_ite] <;>
+    split_ifs <;> simp_all
 
 theorem pairedMonomialPadicMatrix_diagonal (p : ℕ) [Fact p.Prime]
     (X : ℚ_[p]) (r : Fin p) :
@@ -317,9 +318,9 @@ theorem theorem_6_3_at_zero (p : ℕ) [Fact p.Prime] (hp5 : 5 ≤ p) :
 /-- The actual polynomial corresponding to the r-th row. -/
 def pairedMonomialValue (p r : ℕ) (x : ℝ) : ℝ := x^r + x^(r+p)
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Direct identification with the actual Beukers integral. This verifies
 the matrix is the manuscript polynomial pencil, not a formal surrogate. -/
-set_option backward.isDefEq.respectTransparency false in
 theorem pairedMonomial_actual_integral (p : ℕ) [Fact p.Prime] (r s : Fin p) :
     (∫ z, pairedMonomialValue p r.val z.1 * pairedMonomialValue p s.val z.2
       ∂beukersMeasure) =

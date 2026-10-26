@@ -61,7 +61,9 @@ theorem beta_harmonic_valuation_lower (p s M a : ℕ) [Fact p.Prime]
 theorem beta_even_index_bound_before_prime_square (p s j : ℕ) [Fact p.Prime]
     (hj : 4 * j ≤ p ^ 2) :
     -(s : ℤ) ≤ padicValRat p (betaHarmonic s (2 * j)) := by
-  simpa using beta_harmonic_valuation_lower p s (2 * j) 1 (by omega)
+  simpa using beta_harmonic_valuation_lower p s (2 * j) 1 (by
+    change 2 * (2 * j) ≤ p ^ 2
+    omega)
 
 /-- The zero-pole window uses the actual odd denominator cutoff. -/
 theorem beta_harmonic_integral_before_prime (p s M : ℕ) [Fact p.Prime]

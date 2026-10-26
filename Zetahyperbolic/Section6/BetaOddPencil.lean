@@ -28,7 +28,17 @@ decreasing_by exact i.isLt
 theorem eulerEven_first_four :
     eulerEven 0 = 1 ∧ eulerEven 1 = -1 ∧
       eulerEven 2 = 5 ∧ eulerEven 3 = -61 := by
-  decide
+  have h0 : eulerEven 0 = 1 := by rw [eulerEven]
+  have h1 : eulerEven 1 = -1 := by
+    rw [eulerEven]
+    norm_num [Fin.sum_univ_succ, h0]
+  have h2 : eulerEven 2 = 5 := by
+    rw [eulerEven]
+    norm_num [Fin.sum_univ_succ, h0, h1]
+  have h3 : eulerEven 3 = -61 := by
+    rw [eulerEven]
+    norm_num [Fin.sum_univ_succ, h0, h1, h2]
+  exact ⟨h0, h1, h2, h3⟩
 
 def monomialMoment (e : ℕ) : ℚ :=
   (-1 : ℚ) ^ e * (eulerEven e : ℚ) / 4 ^ (e + 1) *
