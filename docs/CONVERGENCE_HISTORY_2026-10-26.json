@@ -1,0 +1,196 @@
+{
+  "schema": "zetahyperbolic-convergence-observation-v1",
+  "observed_date": "2026-10-26",
+  "branch": "persistent/zetahyperbolic-paper-gap-tracker",
+  "source_document": "docs/PAPER_GAP_TRACKER.md",
+  "source_code_baselines": {
+    "randogelist/snditeration/main": {
+      "commit": "c521749190cce9981b0f108a8edc8034420f6420",
+      "ci_run": 40186793090,
+      "compilation": "PASS"
+    },
+    "randogelist/zetahyperbolic-axiom/main": {
+      "commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "ci_run": 40188664869,
+      "compiled_modules": 219,
+      "axiom_audit": "PASS"
+    }
+  },
+  "definitions": {
+    "whole_printed_a_tier": "Number of distinct original printed items visibly crossed out with source-supported whole-item Lean A-Tier at this tracker commit; not number newly proven at that time.",
+    "unresolved_item_rows_with_citation_crosses": "Distinct unfinished manuscript item rows containing an explicit '✓ ~~...~~' crossed supporting claim; annotation coverage is not proof completion.",
+    "literal_inline_crossout_labels": "Count of inline textual crossout labels '✓ ~~...~~' in tracker; overlaps/duplications possible, not a unique Lean theorem count.",
+    "independently_indexed_passing_companion_modules": "Distinct Lean modules with pinned source SHA-256 matching companion CI manifest, as represented in docs/CROSSINGS_MACHINE_2026-10-26.json.",
+    "new_lean_proof_compilations_at_this_tracker_commit": "Zero for all tracker documentation commits: earlier CI proofs were reused rather than newly compiled here."
+  },
+  "checkpoints": [
+    {
+      "checkpoint_sha": "b056df56585fb8d4195fcbcf6af38b85d610b3fd",
+      "utc_time": "2026-10-25T20:51:10Z",
+      "stage": "Initial 45-item inventory",
+      "whole_printed_a_tier": 0,
+      "unresolved_item_rows_with_citation_crosses": 0,
+      "literal_inline_crossout_labels": 0,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "359f34282bacccb06ff70aab549b028a6a05f07d",
+      "utc_time": "2026-10-25T21:07:09Z",
+      "stage": "Cross-repo whole-item recognition",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 0,
+      "literal_inline_crossout_labels": 0,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "cbd4f7f859bcc957a29f729640dacb20a933e6f0",
+      "utc_time": "2026-10-25T21:16:20Z",
+      "stage": "Tier definitions moved ahead of items",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 0,
+      "literal_inline_crossout_labels": 0,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "013b2013182dcf1093335c23f54490775cb094af",
+      "utc_time": "2026-10-25T22:02:18Z",
+      "stage": "First substantive supporting-claim sweep",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 21,
+      "literal_inline_crossout_labels": 25,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 21,
+      "additional_inline_crossout_labels": 25,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "fe5811011c5988d41bf5061d8e44ead12a52b7cc",
+      "utc_time": "2026-10-26T00:23:44Z",
+      "stage": "Rank and proof-direction scrutiny",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 23,
+      "literal_inline_crossout_labels": 29,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 2,
+      "additional_inline_crossout_labels": 4,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "bdc90f36aca3ae17aa625f43dd5212d7cef6faa8",
+      "utc_time": "2026-10-26T00:43:50Z",
+      "stage": "Primitive ζ5 and finite ζ7 reclassification",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 27,
+      "literal_inline_crossout_labels": 39,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 4,
+      "additional_inline_crossout_labels": 10,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "e58cd0637acac6f27ed1327e2f907e51097776d3",
+      "utc_time": "2026-10-26T00:55:38Z",
+      "stage": "Center and pole-energy refinements",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 27,
+      "literal_inline_crossout_labels": 48,
+      "independently_indexed_passing_companion_modules": 0,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 9,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "acb49f2d90c4c7a67dd3f1ca8a6bdaaf3b5d5646",
+      "utc_time": "2026-10-26T00:58:44Z",
+      "stage": "First source-hashed module index",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 27,
+      "literal_inline_crossout_labels": 48,
+      "independently_indexed_passing_companion_modules": 10,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 10,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "73da0740afd4287fea7409956357337a9e651cb5",
+      "utc_time": "2026-10-26T01:16:25Z",
+      "stage": "Expanded hashed verification index",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 27,
+      "literal_inline_crossout_labels": 48,
+      "independently_indexed_passing_companion_modules": 18,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 8,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "9c4232d06a568309e2c5fb0c19b4a96e06dd5e1d",
+      "utc_time": "2026-10-26T01:17:02Z",
+      "stage": "Principal and dual supporting-claim sweep",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 28,
+      "literal_inline_crossout_labels": 55,
+      "independently_indexed_passing_companion_modules": 18,
+      "newly_annotated_unresolved_items": 1,
+      "additional_inline_crossout_labels": 7,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    },
+    {
+      "checkpoint_sha": "345c37399f6485c94359966ea5f23a0598d2178f",
+      "utc_time": "2026-10-26T01:21:03Z",
+      "stage": "Documentation/style cleanup",
+      "whole_printed_a_tier": 7,
+      "unresolved_item_rows_with_citation_crosses": 28,
+      "literal_inline_crossout_labels": 55,
+      "independently_indexed_passing_companion_modules": 18,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 0,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 0
+    }
+  ],
+  "latest_summary": {
+    "whole_printed_a_tier": 7,
+    "whole_total": 45,
+    "unchanged_since": "2026-10-25T21:07:09Z",
+    "unfinished_paper_items": 38,
+    "unfinished_rows_with_one_or_more_crosses": 28,
+    "literal_inline_crossout_labels": 55,
+    "pinned_pass_modules": 18,
+    "new_main_lean_proof_builds_during_this_documentation_series": 0,
+    "convergence_classification": "Audit/documentation saturation with mathematical endpoint plateau, not a proof of whole-manuscript closure.",
+    "remaining_critical_dependency_examples": [
+      "4.4 actual-family explicit arithmetic multiplier",
+      "4.4 uniform quadratic primitive decay",
+      "4.4 actual spectral norm and effective thresholds",
+      "5.1 true two-variable Beukers moment integral",
+      "5.2 infinite Krein-tail control and all-dimensional cones"
+    ]
+  },
+  "limitations": [
+    "All counts are derived from historical markdown snapshots, not independent mathematical proof checks.",
+    "Twenty-five to fifty-five inline labels can reflect rewording, splitting and preexisting-source rediscovery; never treat the increase as new theorem proofs.",
+    "Historical git dates are UTC, and source repositories' main branches stayed fixed during these tracker edits.",
+    "The absence of newly completed printed theorems is evidence of a plateau over these audited commits, not evidence of mathematical impossibility.",
+    "Only new source-aligned exact statements with current admissible CI/axiom receipts may increase the certified whole-item total."
+  ]
+}
