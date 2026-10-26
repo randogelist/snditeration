@@ -1,0 +1,36 @@
+{
+  "checkpoint_name": "P04_03_COMPLEX_PADIC_ZERO_FREE_DISK",
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "status": "A_TIER_LOCAL_VERIFIED",
+  "original_printed_item": "Proposition 4.3",
+  "manuscript_pdf_page": 15,
+  "source_proof_head": "19747fdced7c4e87f2e9312ca8deff8b14111525",
+  "main_merge_commit": "1e7d422cc81c30179275707750f5fde38af5e503",
+  "destination_ci": {
+    "workflow_run": 40259783326,
+    "job": 121369443202,
+    "result": "PASS",
+    "total_build_jobs": 8765,
+    "source_scanner": "PASS"
+  },
+  "source_files": [
+    "Zetahyperbolic/Section4/PadicDisk.lean",
+    "Zetahyperbolic/Section4/IsometricExtension.lean",
+    "Zetahyperbolic/Section4/ComplexPadicDisk.lean",
+    "Zetahyperbolic/Section4/ActualPrimitivePadicDisk.lean"
+  ],
+  "target_declarations": [
+    "PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGER_COMPLEX_PADIC",
+    "ManuscriptChain.proposition_4_3_complex_padic_disk",
+    "ManuscriptChain.primitivePolynomial_complex_padic_disk"
+  ],
+  "transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler": "Lean 4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "hypothesis_remains": "p-adic center evaluation of specific family nonzero",
+  "next_target_not_started": true
+}

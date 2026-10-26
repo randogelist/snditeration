@@ -34,18 +34,25 @@ positive-definiteness input to the general odd-weight spectral theorem.
 The exact compiled and audited boundary is recorded in
 [the formalization ledger](docs/FORMALIZATION_LEDGER.md).
 
-The main endpoints are `ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL` and
-`ManuscriptChain.EXACT_ZERO_FREE_DISK`: exact degree, real roots avoiding
-ζ(2k+1), and a positive zero-free radius attained by a root, for every
+The main endpoints include `ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL` and
+`ManuscriptChain.ACTUAL_OPERATOR_ZERO_FREE_DISK`: exact degree, real roots avoiding
+ζ(2k+1), and the sharp radius 1/‖B‖₂ attained by a root, for every
 admissible tuple. The primitive integer polynomial inherits these results.
 No assumption of pairwise distinct roots is inserted.
 
-Section 2 develops pullback/reflection identities and actual simple-pole
-rational-function domains. Section 3 also records the exact alternating pole
-signs. Sections 4–6 retain open arithmetic and quantitative endpoints;
+Section 2 proves full-domain pullback/reflection identities on actual simple-pole
+rational-function domains. Section 3 proves exact Sylvester inertia and root-side
+counts, real-rootedness
+of every principal determinant (allowing singular slopes), and convergence of
+the corrected reciprocal-moment estimator to the exact root radius. Sections 4–6 retain open arithmetic
+and quantitative endpoints;
 this repository does not establish irrationality of ζ(5) or ζ(7).
 
 Some printed corollaries require corrections. See
 [the manuscript repair notes](docs/MANUSCRIPT_REPAIRS.md) before attempting
 those endpoints. A proof of a corrected statement is not reported as a proof
 of the original false statement.
+
+The latest proof receipt is [CHECKPOINT.json](CHECKPOINT.json). Continue with
+[the next unfinished endpoint](docs/NEXT_ENDPOINT.md); earlier PASS-ONCE
+receipts and exact audit excerpts are retained under `docs/receipts/`.

@@ -1,6 +1,15 @@
 # Archive frontier: Section 3
 
-Source inspection, 2026-10-25. This assessment read theorem statements and proof bodies;
+Source inspection, 2026-10-25.
+
+Subsequent verified migration: PR #14 imports the actual principal-root reality
+endpoint as `Section3/PrincipalPencils.lean`. New `PoleSignCounts.lean` and
+`SpectralInertia.lean` close the previously missing congruence-to-eigenvalue
+count transfer using Mathlib quadratic-form signatures. The assessment below
+records what was found in the archives, not the current proof boundary; use
+FORMALIZATION_LEDGER.md for the current boundary.
+
+Original archive assessment: This assessment read theorem statements and proof bodies;
 it did not compile the archives, establish a new PASS-ONCE, or promote archive receipts.
 No complete proof of actual-pencil 3.3(1) total positivity/Carleman, 3.3(3) spectral
 signature counts, or full 3.4 interlacing was found in the modules inspected below.

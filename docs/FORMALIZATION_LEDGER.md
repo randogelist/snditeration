@@ -6,13 +6,14 @@ Manuscript: supplied 52-page version dated 21 October 2026.
 
 ## Verified baseline
 
-PR [#12](https://github.com/randogelist/snditeration/pull/12) merged as
-`57ef44a083a6a6e4e40442a9de4203fb89716a8a` after build and axiom audit
-[run 40184648602](https://github.com/randogelist/snditeration/actions/runs/40184648602)
-on source head `e64d301c64307703a4384a72cba8ba253b3f505d`.
-The guard checked **600 theorem declarations** (including generated declarations),
+PR [#14](https://github.com/randogelist/snditeration/pull/14) merged as
+`1460d455583ffbe5e08bbcb3274f9002be36b5ef` after build and axiom audit
+[run 40186462123](https://github.com/randogelist/snditeration/actions/runs/40186462123)
+on source head `351f704e8a6b3b942e12c67f5213c011b970af16`.
+The guard checked **846 theorem declarations** (including generated declarations),
 allowing only `propext`, `Classical.choice`, and `Quot.sound`.
-This count is not a count of manuscript theorems.
+This count is not a count of manuscript theorems. Earlier PR #12 (600) and
+PR #13 (717) receipts remain preserved with exact build/audit log excerpts.
 
 All earlier `.lean` files and historical ZIP archives are preserved. Reuse is
 by Lake source/dependency traces and the pinned toolchain, not by filenames.
@@ -23,38 +24,42 @@ transitively using a deliberately introduced custom axiom in a temporary test.
 | Manuscript item | Verified source and scope | Remaining boundary |
 | --- | --- | --- |
 | Definition 2.1 | `Section2/Moments.lean`, `RationalDomain.lean`, `RationalFunctionals.lean`: actual rational pencil; injective simple-pole representation and representation-independent linear functionals on RatFunc subspaces. | No arbitrary representation-invariance premise. |
-| Lemma 2.2 | `Section2/TauGenerators.lean`: every polynomial pullback plus exact pole-generator values. | Full actual rational substitution compatibility is the next extension. |
-| Lemma 2.3 | `Section2/TauGenerators.lean`: full polynomial reflection; pole reflection; difference for every integer r ≠ 0. | Full-domain rational reflection is the next extension. |
+| Lemma 2.2 | `Section2/TauGenerators.lean`: every polynomial pullback plus exact pole-generator values; `RationalPullbackAssembly.lean` proves full actual rational substitution and functional compatibility. | None for the full simple-square-pole domain identity. |
+| Lemma 2.3 | **A-Tier local canonical analytic derivative**. Prior `TauGenerators.lean`, `RationalReflection.lean`, `TauPolynomialDifference.lean`, `RationalDifference.lean` prove the exact rational-domain algebraic reflection and finite difference. New `Section2/AnalyticDerivative.lean`, `PolynomialDerivative.lean`, `RationalAnalyticBridge.lean` prove normalized real iterated derivatives for every finite nonzero-pole span, all polynomial terms, and **every regular element of the actual `Tau.RationalDomain`** via its unique polynomial/pole coordinates; final declaration `ManuscriptChain.Tau.rationalFunctional_difference_analytic`. [PR #18](https://github.com/randogelist/snditeration/pull/18), [CI 40262441761](https://github.com/randogelist/snditeration/actions/runs/40262441761) 8,768 jobs PASS, 10 targeted axiom prints only `propext`, `Classical.choice`, `Quot.sound`, merged `c935c9963608a1ab3b58fe9af4c849dd4b47d3d4`. | The independently useful API equivalence between `analyticRealization f` and Mathlib's totalized `RatFunc.eval (Rat.castHom ℝ) x f` on a neighborhood of 0 is **not** a theorem of this PR. No zero-pole derivative is asserted; regularity is explicit. Do not claim the unproved API identification. |
 | Theorem 2.4 | `Section2/BasisInvariance.lean`, `PoleDiagonalization.lean`: determinant congruence, constructed primitive normalization, concrete basis invariance. | Nonzero determinant is proved, not an open input. |
-| Theorem 2.5 | `Section2/PoleDiagonalization.lean`: actual residues, Vandermonde factorization, nonzero diagonal slope, transformed pencil and exact degree. | Explicit interpolation-polynomial identification with the printed Lagrange functions remains separate. |
-| Equation (3.2), actual pencil | `Section3/ConcreteMomentMeasure.lean`, `RationalIntegralBridge.lean`: integrability, nonzero atomless positive measure and actual original-weight integral identity. | Extension to every rational function is next. |
-| Theorem 3.1 | `Section3/Unconditional.lean`: actual Gram positivity, degree h, real roots avoiding ζ(2k+1), and exact positive zero-free radius attained by a root. Only structural `Admissible` hypotheses remain. | Explicit named B_K and Euclidean operator-norm identification are next. Pairwise distinct roots are not asserted. |
+| Theorem 2.5 | `Section2/PoleDiagonalization.lean`: actual residues, Vandermonde factorization, nonzero diagonal slope, transformed pencil and exact degree. `Section2/LagrangeBasis.lean` gives the printed product, interpolation values, degree, inverse-Vandermonde coefficients and the exact change-of-basis identification. | None for these precise declarations. |
+| Equation (3.2), actual pencil | `Section3/ConcreteMomentMeasure.lean`, `RationalIntegralBridge.lean`: integrability, nonzero atomless positive measure and actual original-weight integral identity. `RationalMomentFunctional.lean` proves integrability and the exact integral identity for every rational function in the actual domain, with actual RatFunc evaluation on t≥0. | None for the odd-weight rational-domain integral theorem (k>0). |
+| Theorem 3.1 | `Section3/Unconditional.lean`: actual Gram positivity, degree h, real roots avoiding ζ(2k+1), and exact positive zero-free radius attained by a root. Only structural `Admissible` hypotheses remain. `ActualSpectrum.lean` constructs B=(sqrt G)⁻¹M(sqrt G)⁻¹, identifies its actual eigenvalues and ℓ² operator norm, and proves the sharp radius 1/‖B‖₂ with boundary attainment. | Pairwise distinct roots are not asserted. |
 | Primitive polynomial (2.9) | `Section3/PrimitivePolynomial.lean`: constructed primitive integer polynomial, same degree and complex zero set, inherited exact zero-free disk. | None for these precise declarations. |
 | Proposition 3.2 | Printed continuous-density normalization differs by π/2 at odd weights. | Repair before proving coincidence with (2.8); see correction notes. |
 | Theorem 3.3(1) | Positive definiteness of the actual Hankel Gram is proved. | Strict total positivity of arbitrary mixed minors and Stieltjes determinacy/Carleman are open. |
 | Theorem 3.3(2) | `Section3/PoleSigns.lean`: primitive weight-five leading sign is (-1)^(n(n-1)/2). | None for this exact sign statement. |
-| Theorem 3.3(3) | `Section3/PoleSigns.lean`: actual γ_a has sign (-1)^(a-1), exact parity criteria and general leading sign. | Sylvester inertia and actual eigenvalue/root-side count transfer remain open. |
-| Theorem 3.4 | General principal-minor real-rootedness candidates identified in archives. | Not imported yet; full Cauchy interlacing/Dodgson connection remains open. |
-| Corollaries 3.5–3.6 | `Section3/ContinuedFractionObstruction.lean`: actual rank-one determinant/root, finite-moment Hankel singularity and corrected scalar resolvent algebra. | Literal printed claims require correction; positive-center counterexample assembly is next. |
+| Theorem 3.3(3) | `Section3/PoleSigns.lean`: actual γ_a has sign (-1)^(a-1), exact parity criteria and general leading sign. `SpectralInertia.lean` proves Sylvester transfer, exact eigenvalue/root-side counts with spectral multiplicities, and weight-five floor(27n/2) below / ceil(27n/2) above ζ(5). `PoleSignCounts.lean` evaluates the parity counts. | Counts retain spectral multiplicities; root simplicity is not asserted. |
+| Theorem 3.4 | `Section3/PrincipalPencils.lean` proves actual injective principal-base positivity, nonzero principal determinant polynomials and reality of all their complex roots, with exact identification of the rational principal determinant. | Singular principal directions and degree loss are allowed; full Cauchy interlacing/Dodgson connection remains open. |
+| Corollaries 3.5–3.6 | `Section3/ContinuedFractionObstruction.lean`: actual rank-one determinant/root, finite-moment Hankel singularity and corrected scalar resolvent algebra. `ContinuedFractionCounterexample.lean` proves the actual admissible positive-center counterexample. `ReciprocalMoments.lean` and `ReciprocalMomentLimit.lean` prove the corrected estimate bounds and convergence to 1/‖B‖₂. | Literal printed claims require correction. A general corrected Lanczos continued-fraction theorem remains separate. |
 | Theorem 3.7 | Distinct real factors do not imply nonzero intermediate coefficients; exact example is checked. | Precise Newton/Turán statements and equality cases require separate proofs. |
 | Theorem 4.1 | `Section4/Transfer.lean`: audited conditional arithmetic transfer to a quantitative rational measure and irrationality. | Concrete growth/decay/comparison/index-budget hypotheses remain open. |
+| Proposition 4.3 | `Section4/{PadicDisk,IsometricExtension,ComplexPadicDisk,ActualPrimitivePadicDisk}.lean`: exact ℂ_p norm-preserving zero-free disk for every integer polynomial with nonzero value at an integral p-adic center, plus the true manuscript primitive Hankel polynomial specialization. **A-Tier destination Lean 4.33 PASS**: [PR #17](https://github.com/randogelist/snditeration/pull/17), [CI 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326), merged `1e7d422cc81c30179275707750f5fde38af5e503`. All seven printed axiom reports contain only `propext`, `Classical.choice`, `Quot.sound`; 8765 build jobs/placeholder scanner PASS. | Center nonvanishing for a **specific p-adic zeta value** is not supplied. No weight-five multiplier, K-uniform estimate or ζ(5) irrationality follows from the disk theorem alone. |
+| Theorem 5.1 | **CLOSED EXACT A-TIER LOCAL** — `Section5/BeukersMomentSeries.lean`, `BeukersOffDiagonal.lean`, `BeukersDensity.lean`: actual strictly positive measurable unit-square density `(-log(xy))^5/(720*(1-xy))`, absolutely summable expansion, justified interchange, diagonal `ζ(7)-H_r^(7)` and offdiagonal `(H_r^(6)-H_t^(6))/(6(r-t))` for every r,t. [PR #24](https://github.com/randogelist/snditeration/pull/24), [CI 40267850777 PASS](https://github.com/randogelist/snditeration/actions/runs/40267850777), **8,783 build jobs**, 8 standard-only transitive proofs; merged `1ae34f2bc30135460c357f4efffe1fdbb93d5009`. `Section5/BeukersRationalMoments.lean` **explicitly proves the resulting offdiagonal moment belongs to ℚ** with a concrete rational witness: [PR #26](https://github.com/randogelist/snditeration/pull/26), [CI 40268502325 PASS](https://github.com/randogelist/snditeration/actions/runs/40268502325), **8,784 jobs**, 2 additional standard-only target axiom reports; merged `98c11122faa8cfdeb109e4ebba31d1f21d1b505b`. | Does not prove actual infinite ζ(7) Krein decomposition (5.2(2)), uniform negative-tail positivity (5.2(3)), nor irrationality of ζ(7). |
+| Theorem 5.2(2), **finite proven component** | `Section5/KreinMonomial.lean` proves the **actual** ζ(7) unit-square monomial integral equals the infinite signed Krein pairing with exact unnormalized Mellin factorial channels and 1/1440 constant; `Section5/KreinPolynomial.lean` proves the finite rational coefficient bilinear extension of those actual moments. **A-Tier local partial**: [PR #29](https://github.com/randogelist/snditeration/pull/29), [CI 40271072845 PASS](https://github.com/randogelist/snditeration/actions/runs/40271072845), 8,798 Lean jobs, six targeted standard-only axiom reports, source placeholder scan PASS, merged `588230a857acb5a8b74b76ecf99686e79925759c`. | **Full printed Theorem 5.2(2) remains OPEN:** actual polynomial product-double-integral transport and arbitrary-f∈L² extension with summability/continuity. This is not a proof of the infinite signed cones in 5.2(3). |
+| Theorem 5.4 | `Section5/EvenPoleCancellation.lean`: literal rational-function expression `(X-j)⁻¹-(X+j)⁻¹`, exact destination τ-functional value `C(j⁻(2k+1))` for every `j≥1` including `j=1`, and finite rational linearity. **A-Tier local**: [PR #21](https://github.com/randogelist/snditeration/pull/21) merged `f64b49b9b51b43626abbf09d1cf3821b187ea8b5` after [CI 40265986335 PASS](https://github.com/randogelist/snditeration/actions/runs/40265986335), 8,773 jobs, 1,011 project theorems scanned, four targeted declarations with standard-only transitive axioms. | Theorem 5.4 is complete as printed; Theorem 5.1 is now separately proved as a real integral; Theorem 5.2 infinite Krein tails and zeta irrationality remain open. |
 | Sections 4–6 applications | Archive candidates retained; see source frontier. | No unconditional ζ(5), ζ(7), or linear-form irrationality asserted. |
 
 ## Continuation policy
 
 Use [ARCHIVE_FRONTIER.md](ARCHIVE_FRONTIER.md) for exact reusable source locations.
-The current open extension work is confined to new modules, preserving the
-verified baseline. The next compile/audit receipt must distinguish these
-extensions from the previously verified 600 declarations.
+The verified source is frozen at the receipt above. Continue in new modules
+from [NEXT_ENDPOINT.md](NEXT_ENDPOINT.md), beginning with the current single target in NEXT_ENDPOINT.md (Theorem 5.2(2) after verified Theorem 5.1). Do not weaken a statement or insert
+a missing conclusion as an unexplained premise.
 
 [MANUSCRIPT_REPAIRS.md](MANUSCRIPT_REPAIRS.md) and
 [SECTION3_CORRECTIONS.md](SECTION3_CORRECTIONS.md) record exact corrections.
 A proof of a corrected formula is not a proof of the original false formula.
 No RH, S-Tier finite-witness admission, or full manuscript closure is claimed.
 
-## Candidate extension (not yet verified)
+## Checkpoint status
 
-The six new RationalPullback, RationalPullbackAssembly, RationalReflection,
-RationalMomentFunctional, ActualSpectrum, and ContinuedFractionCounterexample
-modules are included in the build and allowlist audit. Their status remains
-construction until an exact GitHub build and audit receipt is recorded.
+All imported proof modules in this checkpoint passed the integrated build and
+allowlist audit. There are no unfinished construction modules in the import
+closure. Open mathematics is recorded in NEXT_ENDPOINT.md, not represented
+by placeholders or custom axioms.
