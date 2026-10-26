@@ -1,0 +1,61 @@
+{
+  "paper_item": "6.14",
+  "alternative_target": "Choose one explicit unscaled actual β-functional, define its even-pole rescaling by −μ(R(4t)), and derive the corresponding integral change-of-variables formula with its Jacobian. Compute its monomial and pole moments from that definition. Only then formulate the actual bζ(5)+aβ(4) and bζ(5)−aβ(2) pencils and prove positivity on an explicitly bounded comparison cone.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Replace incompatible printed normalizations by a single definition with derived constants; separate spectral positivity from all arithmetic/irrationality conclusions.",
+  "prerequisites": [
+    "3.1",
+    "6.4"
+  ],
+  "retained_open_obligations": [
+    "Calibrate the unscaled β-functional and secant transform.",
+    "Resolve the factor-two discrepancy by direct substitution; derive actual pole and monomial formulas.",
+    "Prove comparison constants, coherent pole alignment and the actual coupled matrix identity; arithmetic rates remain separate."
+  ],
+  "correction_gate": "Do not assume both −μ(R(4t)) and an inconsistent density factor. Every later β-dependent branch must use this same repaired convention via an explicit equality.",
+  "source_paths": [
+    "Experimental/P06_14/Target.md",
+    "Experimental/P06_14/Assumptions.json",
+    "Experimental/P06_14/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-14_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-14_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-14_construction",
+  "original_snapshot_commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_14/Target.md",
+      "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1",
+      "url": "https://github.com/randogelist/snditeration/blob/675ed3292458d7b25c84ba47047b2f0ad95faba1/Experimental/P06_14/Target.md"
+    },
+    {
+      "path": "Experimental/P06_14/Assumptions.json",
+      "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1",
+      "url": "https://github.com/randogelist/snditeration/blob/675ed3292458d7b25c84ba47047b2f0ad95faba1/Experimental/P06_14/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_14/Prerequisites.lean",
+      "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1",
+      "url": "https://github.com/randogelist/snditeration/blob/675ed3292458d7b25c84ba47047b2f0ad95faba1/Experimental/P06_14/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
