@@ -1,0 +1,64 @@
+{
+  "paper_item": "6.16",
+  "alternative_target": "Using the single repaired 6.14 β-normalization, construct the actual finite mixed ζ–β weight and affine pencil. Prove positive comparison with the reference ζ-weight when its explicit ratio has a positive continuous extension to a compactified half-line, including both endpoints. Deduce finite Gram positivity and the spectral conclusion under the actual derivative nonsingularity hypothesis.",
+  "relation_to_original": "conditional",
+  "changes_from_original": "Expose the endpoint-ratio hypotheses and leave uniform arithmetic multiplier rates and unproved universal signature claims outside this first endpoint.",
+  "prerequisites": [
+    "2.2",
+    "2.5",
+    "3.1",
+    "6.6",
+    "6.14"
+  ],
+  "retained_open_obligations": [
+    "Define and identify the combined weight and affine collapse.",
+    "Prove its actual ratio identity, continuity and positive endpoint limits.",
+    "Verify signature parity, odd-prime valuations and dyadic multipliers separately."
+  ],
+  "correction_gate": "The generic compact-ratio donor is only a component. Its endpoint hypotheses must be proved for the actual repaired mixed weight before an unconditional mixed-pencil conclusion.",
+  "source_paths": [
+    "Experimental/P06_16/Target.md",
+    "Experimental/P06_16/Assumptions.json",
+    "Experimental/P06_16/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-16_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-16_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-16_construction",
+  "original_snapshot_commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_16/Target.md",
+      "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd",
+      "url": "https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Target.md"
+    },
+    {
+      "path": "Experimental/P06_16/Assumptions.json",
+      "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd",
+      "url": "https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_16/Prerequisites.lean",
+      "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd",
+      "url": "https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
