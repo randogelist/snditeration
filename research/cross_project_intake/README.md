@@ -30,3 +30,10 @@ Import into separate small feature PRs, never overwrite PASS-ONCE frozen modules
 ZETAHYPERBOLIC_CROSS_PROJECT_INTAKE_v0_1_2.zip (SHA-256 3982d2f1726ccfbae86f3bdcf436f1f8b3ee998bb9f450f20e629dd3c9cef118) collects 30 inert source/data entries from 25 uploaded ZIPs with provenance, quarantine of extra axiom, and finite ζ5 examples. This archive is provided separately in the conversation; its bytes are not committed here.
 
 Earlier snditeration PR #15 is CI FAILED at 0cee4ea2; selectively cherry-pick only after isolated compilation/audit. The goal is to import reliable proofs and then build missing mathematics, not to confuse a source snapshot with a theorem.
+
+## Integrity receipt (26 October 2026)
+
+- Source-to-staging exact Git blob identity: **16/16** staged `.lean.txt` files match their upstream pinned `.lean` blobs byte-for-byte (all comparisons re-read from GitHub).
+- PR #16 source-only CI **PASS**: [Actions run 40258829315](https://github.com/randogelist/snditeration/actions/runs/40258829315). This checks **the unchanged imported project**, NOT the 16 source snapshots; no new Lean theorem is admitted by that run.
+- User-ZIP source packet: `ZETAHYPERBOLIC_CROSS_PROJECT_INTAKE_v0_1_2.zip`, original 25 source ZIP SHA-256 inventory; all **30** inside-file byte hashes were rechecked and the archive passed its ZIP CRC check.
+- User ZIP source dedup: **810 `.lean` archive occurrences; 541 distinct SHA-256 content variants; 269 byte-identical repeats**. Reusing source once is sufficient; repeated archive copies are not independent theorem receipts.
