@@ -50,7 +50,7 @@ theorem principal_eigenvalue_abs_le (p : Spectral.SymmetricAffinePencil n)
     have h := (eigenvalue_count_interlacing p hp choose hchoose N).1
     change {j | N < b j}.ncard ≤ {j | N < a j}.ncard at h
     rw [hfull, Set.ncard_empty] at h
-    have hpos : 0 < {j | N < b j}.ncard := Set.ncard_pos.mpr ⟨i, hbi⟩
+    have hpos : 0 < {j | N < b j}.ncard := (Set.ncard_pos (Set.toFinite {j | N < b j})).mpr ⟨i, hbi⟩
     omega
 
 /-- The norm of the actually whitened restricted pencil cannot exceed the full norm. -/
@@ -80,6 +80,7 @@ theorem actual_principal_positive_radius_antitone (p : Real.Parameters)
     (hsmall : 0 < Spectral.actualOperatorNorm (Principal.manuscriptPrincipalPencil p choose)) :
     1 / Spectral.actualOperatorNorm (Real.manuscriptPencil p) ≤
       1 / Spectral.actualOperatorNorm (Principal.manuscriptPrincipalPencil p choose) :=
-  (principal_positive_radius_antitone _ (GRAM_POSITIVE p hp) choose hchoose hsmall).2
+  (principal_positive_radius_antitone (Real.manuscriptPencil p) (GRAM_POSITIVE p hp) choose hchoose hsmall).2
 
 end ManuscriptChain.Cauchy
+

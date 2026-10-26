@@ -43,7 +43,8 @@ theorem factorial_majorant_le_power {C : ℝ} (hC : 0 ≤ C) (A r : ℕ) (hr : 1
     calc
       _ ≤ ((2 : ℝ) ^ r) ^ A := by
         apply pow_le_pow_left₀ (by positivity)
-        exact_mod_cast (Nat.lt_two_pow_self r).le
+        have hnat : r ≤ 2 ^ r := (Nat.lt_two_pow_self).le
+        exact_mod_cast hnat
       _ = (2 : ℝ) ^ (r * A) := (pow_mul _ _ _).symm
       _ ≤ _ := pow_le_pow_right₀ (by norm_num) (by
         simpa only [Nat.mul_comm r A] using
@@ -60,7 +61,7 @@ theorem factorial_majorant_le_power {C : ℝ} (hC : 0 ≤ C) (A r : ℕ) (hr : 1
       apply mul_le_mul_of_nonneg_right _ (by positivity)
       apply mul_le_mul _ hrpow (by positivity) (by positivity)
       exact mul_le_mul hc hbpow (by positivity) (by positivity)
-    _ = _ := by simp only [mul_pow, pow_mul]; ring
+    _ = _ := by simp only [mul_pow, pow_mul]
 
 def carlemanOffset (p : Real.Parameters) : ℕ :=
   2 * p.k + 2 * (numeratorPolynomial p).natDegree + 1
@@ -90,10 +91,13 @@ theorem carlemanTerm_lower_bound (p : Real.Parameters) (r : ℕ) (hr : 1 ≤ r) 
     1 / (carlemanConstant p * r) ≤ carlemanTerm p r := by
   have hB := carlemanConstant_pos p
   have hpos : 0 < ∫ t : ℝ, t ^ r ∂momentMeasure p := by
-    simpa [Matrix.det_fin_one] using solid_moment_det_pos p r 0 1
+    have h := solid_moment_det_pos p r 0 1
+    erw [Matrix.det_fin_one] at h
+    simpa using h
   have hbound := moment_le_carleman_power p r hr
   have h := _root_.Real.rpow_le_rpow_of_nonpos hpos hbound
-    (by positivity : -(((2 * r : ℕ) : ℝ))⁻¹ ≤ 0)
+    (by exact neg_nonpos.mpr (inv_nonneg.mpr (by positivity : (0 : ℝ) ≤ ((2 * r : ℕ) : ℝ))) :
+      -(((2 * r : ℕ) : ℝ))⁻¹ ≤ 0)
   rw [_root_.Real.rpow_neg (by positivity),
     _root_.Real.pow_rpow_inv_natCast (by
       have hb := carlemanConstant_pos p

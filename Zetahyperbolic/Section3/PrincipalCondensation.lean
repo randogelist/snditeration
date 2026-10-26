@@ -42,7 +42,8 @@ theorem polynomial_condensation
   have hA : A.IsSymm := hM.submatrix Sum.inl
   have hf : Matrix.fromBlocks A (fun i j => if j = 0 then u i else v i)
       (fun i j => if i = 0 then u j else v j) !![a, b; b, c] = M := by
-    ext (i | i) (j | j)
+    apply Matrix.ext
+    rintro (i | i) (j | j)
     · rfl
     · fin_cases j <;> simp [A, u, v, Matrix.fromBlocks]
     · fin_cases i
@@ -54,7 +55,8 @@ theorem polynomial_condensation
       border A (fun k => M (Sum.inl k) (Sum.inr j))
         (fun k => M (Sum.inl k) (Sum.inr i)) (M (Sum.inr i) (Sum.inr j)) =
         M.submatrix (keep i) (keep j) := by
-    ext (k | k) (l | l)
+    apply Matrix.ext
+    rintro (k | k) (l | l)
     · rfl
     · rfl
     · exact hM.apply _ _
@@ -101,6 +103,7 @@ theorem actualMatrix_eval (p : Real.Parameters) (choose : n ⊕ Fin 2 → Fin p.
     Polynomial.eval_X, Polynomial.eval_C]
   change ((Real.manuscriptPencil p).matrixAt x) (choose i) (choose j) = _
   rw [Real.manuscriptPencil_matrixAt]
+  rfl
 
 theorem actual_core_det_ne_zero (p : Real.Parameters) (hp : Real.Admissible p)
     (choose : n ⊕ Fin 2 → Fin p.h) (hchoose : Function.Injective choose) :
@@ -112,7 +115,9 @@ theorem actual_core_det_ne_zero (p : Real.Parameters) (hp : Real.Admissible p)
   have heq : (core (actualMatrix p choose)).det.eval (Real.zeta p.weight) =
       ((Real.gram p (Real.zeta p.weight)).submatrix
         (choose ∘ Sum.inl) (choose ∘ Sum.inl)).det := by
-    rw [(Polynomial.evalRingHom _).map_det]
+    change (Polynomial.evalRingHom (Real.zeta p.weight))
+      (core (actualMatrix p choose)).det = _
+    rw [RingHom.map_det]
     congr 1
     exact congrArg (fun M => M.submatrix Sum.inl Sum.inl)
       (actualMatrix_eval p choose (Real.zeta p.weight))
@@ -141,3 +146,4 @@ theorem actual_condensation_at_root (p : Real.Parameters) (hp : Real.Admissible 
   exact ⟨h, by rw [h]; exact neg_nonpos.mpr (sq_nonneg _)⟩
 
 end ManuscriptChain.Dodgson
+

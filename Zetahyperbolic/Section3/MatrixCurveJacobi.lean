@@ -142,7 +142,7 @@ theorem directionalDet_eq_trace {n : ℕ}
     directionalDet G H = G.det * (G⁻¹ * H).trace := by
   have hentry (i j : Fin n) :
       HasDerivAt (fun z : ℝ => (G + z • H) i j) (H i j) 0 := by
-    simpa only [Matrix.add_apply, Matrix.smul_apply, smul_eq_mul, one_mul] using
+    simpa [Matrix.add_apply, Matrix.smul_apply, smul_eq_mul, id] using
       ((hasDerivAt_id (0 : ℝ)).mul_const (H i j)).const_add (G i j)
   have h := curve_det_leibniz hentry
   simp only [zero_smul, add_zero] at h

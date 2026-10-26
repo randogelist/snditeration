@@ -86,6 +86,8 @@ theorem actual_centered_root_iff (p : PositiveSlopePencil h) (ξ : ℝ) (z : ℂ
   · rintro ⟨i, rfl⟩
     refine ⟨i, ?_⟩
     push_cast
+    change (ξ : ℂ) - (centeredDualEigenvalues p ξ i : ℂ) -
+      (ξ : ℂ) + (centeredDualEigenvalues p ξ i : ℂ) = 0
     ring
 
 end ManuscriptChain.DualSpectral

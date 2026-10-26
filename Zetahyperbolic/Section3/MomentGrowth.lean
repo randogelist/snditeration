@@ -1,4 +1,5 @@
 import Zetahyperbolic.Section3.ShiftedMomentPositivity
+import Mathlib.Analysis.Real.Pi.Bounds
 
 /-!
 # Explicit factorial bounds for the concrete moments
@@ -35,7 +36,7 @@ theorem integral_monomial_density_le_factorial (k e : ℕ) :
     exact_mod_cast (show 1 ≤ Nat.factorial (2 * k) from Nat.factorial_pos (2 * k))
   have hp : (1 : ℝ) ≤ (2 * _root_.Real.pi) ^ (2 * e + 2) := by
     apply one_le_pow₀
-    linarith [_root_.Real.one_lt_pi]
+    linarith [_root_.Real.pi_gt_three]
   have hd : (1 : ℝ) ≤ (Nat.factorial (2 * k) : ℝ) *
       (2 * _root_.Real.pi) ^ (2 * e + 2) := one_le_mul_of_one_le_of_one_le hf hp
   have hb := div_le_self (show (0 : ℝ) ≤
@@ -85,7 +86,7 @@ theorem moment_le_numerator_integral (p : Real.Parameters) (r : ℕ) :
     (integrableOn_polynomial_density p.k _)
   filter_upwards [ae_restrict_mem measurableSet_Ioi] with y hy
   have hN : 0 ≤ Real.evalQ (Real.D p.N ^ (2 * p.m - 1)) (y ^ 2) := by
-    have h := (evalQ_D_pos p.N (show 0 < y ^ 2 by positivity)).le
+    have h := (evalQ_D_pos p.N (sq_pos_of_pos hy)).le
     simpa [Real.evalQ, Real.realPolynomial] using pow_nonneg h (2 * p.m - 1)
   have hratio := div_le_self hN (evalQ_tailD_ge_one p (sq_nonneg y))
   have hmul := mul_le_mul_of_nonneg_right hratio (Hyperbolic.density_pos p.k hy).le
@@ -104,8 +105,9 @@ theorem integral_numerator_moment (p : Real.Parameters) (r : ℕ) :
       fun y => ∑ e ∈ (numeratorPolynomial p).support,
         (numeratorPolynomial p).coeff e * (y ^ (2 * (r + e)) * Hyperbolic.density p.k y) := by
     funext y
-    simp only [Polynomial.eval_mul, Polynomial.eval_pow, Polynomial.eval_X,
-      Polynomial.eval_eq_sum, Polynomial.sum, Finset.sum_mul]
+    rw [Polynomial.eval_mul, Polynomial.eval_pow, Polynomial.eval_X,
+      Polynomial.eval_eq_sum]
+    simp only [Polynomial.sum, Finset.sum_mul]
     apply Finset.sum_congr rfl
     intro e he
     rw [Nat.mul_add, pow_add, pow_mul, pow_mul]
@@ -152,9 +154,28 @@ theorem moment_le_factorial (p : Real.Parameters) (r : ℕ) :
 
 theorem momentGrowthConstant_pos (p : Real.Parameters) : 0 < momentGrowthConstant p := by
   have hpos : 0 < ∫ t : ℝ, t ^ 0 ∂momentMeasure p := by
-    simpa [Matrix.det_fin_one] using solid_moment_det_pos p 0 0 1
+    have h := solid_moment_det_pos p 0 0 1
+    erw [Matrix.det_fin_one] at h
+    simpa using h
   have hbound := moment_le_factorial p 0
   have hproduct := hpos.trans_le hbound
   exact (mul_pos_iff_of_pos_right (by positivity)).1 hproduct
+
+/-- The exact factorial-majorant prerequisite used by the experimental 3.3
+construction, proved here from the actual measure without an added axiom. -/
+theorem actualMomentFactorialMajorant (p : Real.Parameters) (_hp : Real.Admissible p) :
+    ∃ C : ℝ, 0 < C ∧ ∃ A : ℕ, ∀ r : ℕ,
+      |∫ t : ℝ, t ^ r ∂momentMeasure p| ≤ C * (Nat.factorial (2 * r + A) : ℝ) := by
+  refine ⟨momentGrowthConstant p, momentGrowthConstant_pos p,
+    2 * p.k + 2 * (numeratorPolynomial p).natDegree + 1, ?_⟩
+  intro r
+  have hnonneg : 0 ≤ ∫ t : ℝ, t ^ r ∂momentMeasure p := by
+    apply integral_nonneg_of_ae
+    filter_upwards [momentMeasure_ae_pos p] with t ht
+    exact pow_nonneg ht.le r
+  rw [abs_of_nonneg hnonneg]
+  have hindex : 2 * p.k + 2 * (r + (numeratorPolynomial p).natDegree) + 1 =
+      2 * r + (2 * p.k + 2 * (numeratorPolynomial p).natDegree + 1) := by omega
+  simpa only [hindex] using moment_le_factorial p r
 
 end ManuscriptChain.ConcreteMoment

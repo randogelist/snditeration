@@ -83,8 +83,8 @@ theorem integrable_moment (p : Real.Parameters) (e : ℕ) {τ : ℝ} (hτ : 0 < 
       (weight_positive p hy).le (density_positive p.k hτ hy).le))]
   rw [heval]
   have hr := div_le_self
-    (pow_nonneg (LaplaceDenominator.D_real_pos p.N (show 0 < y^2 by positivity)).le (2*p.m))
-    (LaplaceDenominator.D_real_ge_one p.K (show 0 < y^2 by positivity))
+    (pow_nonneg (LaplaceDenominator.D_real_pos p.N (sq_pos_of_pos hy)).le (2*p.m))
+    (LaplaceDenominator.D_real_ge_one p.K (sq_pos_of_pos hy))
   have hh := mul_le_mul_of_nonneg_left
     (mul_le_mul_of_nonneg_right hr (density_positive p.k hτ hy).le)
     (pow_nonneg hy.le (2*e))
@@ -100,6 +100,7 @@ theorem integrable_momentDerivative (p : Real.Parameters) (e : ℕ) {τ : ℝ} (
   filter_upwards [ae_restrict_mem measurableSet_Ioi] with y hy
   have hc : 0 ≤ y^(2*e)*weight p y :=
     mul_nonneg (pow_nonneg hy.le _) (weight_positive p hy).le
+  change ‖y^(2*e)*weight p y*densityDerivative p.k τ y‖ ≤ _
   rw [norm_mul, Real.norm_of_nonneg hc]
   have h := mul_le_mul_of_nonneg_left
     (densityDerivative_bound p.k ha hy (show 2*a ≤ τ by dsimp [a]; linarith)) hc
@@ -133,9 +134,8 @@ theorem moment_hasDerivAt (p : Real.Parameters) (e : ℕ) {τ : ℝ} (hτ : 0 < 
   · filter_upwards [ae_restrict_mem measurableSet_Ioi] with y hy
     intro z hz
     have hzpos : 0 < z := lt_trans (by positivity : 0 < 2*a) hz
-    convert (density_hasDerivAt p.k hzpos hy).const_mul (y^(2*e)*weight p y) using 1
-    funext v
-    simp only [weightedDensity, mul_assoc]
+    simpa [weightedDensity, mul_assoc] using
+      (density_hasDerivAt p.k hzpos hy).const_mul (y^(2*e)*weight p y)
 
 
 end ManuscriptChain.LaplaceMomentDerivative
