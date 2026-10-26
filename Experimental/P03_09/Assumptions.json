@@ -1,0 +1,67 @@
+{
+  "id": "P03_09",
+  "paper_id": "3.9",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P03_09",
+  "publication_path": "Experimental/P03_09",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+      "meaning": "For every k>0, rational 0<theta<=1 and j>=0, the actual density divided by y^2+(j+theta)^2 is integrable and its integral differs from the actual shifted Hurwitz tail times (j+theta)^(2k) by a rational number.",
+      "dependencies": [
+        "Imported odd-weight Hyperbolic.density",
+        "Shifted Hurwitz Dirichlet series and finite initial sum",
+        "Rational-shift Hermite pole identity"
+      ],
+      "supports": "Rational shifted-pole moment functional used upstream of 3.9(1) hyperbolicity"
+    },
+    {
+      "name": "Experimental.P03_09.character_power_series_blocks",
+      "meaning": "For each of the five explicit primitive-real-character coefficient tables and every 0<z<1, the power series HasSum equals its displayed factored numerator divided by 1-z^q.",
+      "dependencies": [
+        "Explicit periodic coefficient tables for conductors 3,4,5,8",
+        "Geometric-series regrouping and absolute convergence"
+      ],
+      "supports": "3.9(2) character kernel analysis; positivity is to be proved, not an axiom"
+    }
+  ],
+  "proved_upstream_aliases": [],
+  "axiom_names": [
+    "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+    "Experimental.P03_09.character_power_series_blocks"
+  ],
+  "full_target_proved": false,
+  "original_statement_preserved": true,
+  "scope": "Actual Hyperbolic.density pole integrals at rational shifted squares and actual shifted series are used. Five explicit coefficient tables and their factored numerators represent the requested real characters. Inputs are scalar pole-remainder and HasSum identities only.",
+  "missing_interfaces_and_limits": "No arbitrary character/pencil model is substituted for the paper: coefficient functions are explicit for chi_-3, chi_-4, chi_5, chi_8, chi_-8. Missing interfaces remain explicit: identification and exhaustion of Mathlib primitive real Dirichlet characters, exponential substitution for the defined characterKernel, character L-value centers and parity, identification of the shifted series with the standard Hurwitz function, actual simple-pole rational domains, numerator/denominator identities and moment integrability for all orders, positive moment measure, Vandermonde factorization and determinant degree/real-root transfer. Do not claim this scaffold covers those interfaces or all original quantifiers yet.",
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "discharge_policy": "Replace each new axiom by proof of the identical quantified statement; compile and audit each changed module and its dependent graph. Never merge axiom-dependent conclusions into certified main. A proof consuming a new axiom is conditional experimental work, not new A-Tier evidence.",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p03-09_construction",
+  "axioms": [
+    {
+      "name": "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+      "meaning": "For every k>0, rational 0<theta<=1 and j>=0, the actual density divided by y^2+(j+theta)^2 is integrable and its integral differs from the actual shifted Hurwitz tail times (j+theta)^(2k) by a rational number.",
+      "dependencies": [
+        "Imported odd-weight Hyperbolic.density",
+        "Shifted Hurwitz Dirichlet series and finite initial sum",
+        "Rational-shift Hermite pole identity"
+      ],
+      "supports": "Rational shifted-pole moment functional used upstream of 3.9(1) hyperbolicity"
+    },
+    {
+      "name": "Experimental.P03_09.character_power_series_blocks",
+      "meaning": "For each of the five explicit primitive-real-character coefficient tables and every 0<z<1, the power series HasSum equals its displayed factored numerator divided by 1-z^q.",
+      "dependencies": [
+        "Explicit periodic coefficient tables for conductors 3,4,5,8",
+        "Geometric-series regrouping and absolute convergence"
+      ],
+      "supports": "3.9(2) character kernel analysis; positivity is to be proved, not an axiom"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "paper_item": "3.9",
+  "module_key": "P03_09",
+  "branch": "experiment/zetahyperbolic-p03-09_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+      "meaning": "For every k>0, rational 0<theta<=1 and j>=0, the actual density divided by y^2+(j+theta)^2 is integrable and its integral differs from the actual shifted Hurwitz tail times (j+theta)^(2k) by a rational number.",
+      "dependencies": [
+        "Imported odd-weight Hyperbolic.density",
+        "Shifted Hurwitz Dirichlet series and finite initial sum",
+        "Rational-shift Hermite pole identity"
+      ]
+    },
+    {
+      "name": "Experimental.P03_09.character_power_series_blocks",
+      "meaning": "For each of the five explicit primitive-real-character coefficient tables and every 0<z<1, the power series HasSum equals its displayed factored numerator divided by 1-z^q.",
+      "dependencies": [
+        "Explicit periodic coefficient tables for conductors 3,4,5,8",
+        "Geometric-series regrouping and absolute convergence"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P03_09",
+  "paper_reference_items": [
+    "3.1"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "f96399a9537222ab31f6b5ab5ecb4d382f2f1873fcbe348a653eb407704fa891",
+    "Assumptions.json": "6bd72def7ef6603dd921a77be7334cf5cd377190846a07d413994e4fcdacb491",
+    "Target.md": "0a74e7bfb209d5c72a8030ef5934c52b8f2fa041fb7d5c5ed43b9fa5242db609",
+    "Work.lean": "a6dbd50587a532be68846e8d04e82b692fb53372076cdb9bb652a70d90cbf2be"
+  },
+  "audit_sha256": "e5859a48f12e6629b9de67b64f192debcc2b6493f793eba95285f4628e78e399",
+  "original_statement_sha256": "bf4970c1982b814395e690c2eac16e46553e0b091240c2d1a694289f52ed4978",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
