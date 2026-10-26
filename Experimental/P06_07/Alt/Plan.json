@@ -1,0 +1,61 @@
+{
+  "paper_item": "6.7",
+  "alternative_target": "For finitely many specified odd weights and a finite rational polynomial family, prove the signed bilinear mode identity for the actual combined two-variable kernel, with all constants explicit, then derive the finite polynomial-pencil spectrum under coefficient independence. The first endpoint is restricted to polynomial inputs.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Replace the universal arbitrary-L² and infinite signed-subspace claims by a finite polynomial identity and its finite spectral consequence.",
+  "prerequisites": [
+    "5.1",
+    "5.2"
+  ],
+  "retained_open_obligations": [
+    "Calibrate every actual weight and signed-channel coefficient.",
+    "Prove absolute convergence/interchange for the polynomial modes.",
+    "Arbitrary-L² completion, positive/negative-subspace existence and q-adic nonvanishing remain independent open extensions."
+  ],
+  "correction_gate": "Krein polarization does not imply existence of definite cones. A corrected 5.2 component supplies only its precisely proved input scope.",
+  "source_paths": [
+    "Experimental/P06_07/Target.md",
+    "Experimental/P06_07/Assumptions.json",
+    "Experimental/P06_07/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-07_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-07_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-07_construction",
+  "original_snapshot_commit": "a6550cd1a91690ee77b3590964f035a8073344a0",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_07/Target.md",
+      "commit": "a6550cd1a91690ee77b3590964f035a8073344a0",
+      "url": "https://github.com/randogelist/snditeration/blob/a6550cd1a91690ee77b3590964f035a8073344a0/Experimental/P06_07/Target.md"
+    },
+    {
+      "path": "Experimental/P06_07/Assumptions.json",
+      "commit": "a6550cd1a91690ee77b3590964f035a8073344a0",
+      "url": "https://github.com/randogelist/snditeration/blob/a6550cd1a91690ee77b3590964f035a8073344a0/Experimental/P06_07/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_07/Prerequisites.lean",
+      "commit": "a6550cd1a91690ee77b3590964f035a8073344a0",
+      "url": "https://github.com/randogelist/snditeration/blob/a6550cd1a91690ee77b3590964f035a8073344a0/Experimental/P06_07/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
