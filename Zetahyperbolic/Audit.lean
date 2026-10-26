@@ -191,6 +191,16 @@ run_cmd do
 #print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.coefficient_newton_strict_criterion
 #print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.normalized_shifted_newton_strict
 
+-- Independent P03.02 corrected real-s density/moments; full continuous pencil remains open.
+#print axioms ManuscriptChain.ContinuousWeight.printedPrefactor_eq
+#print axioms ManuscriptChain.ContinuousWeight.density_pos
+#print axioms ManuscriptChain.ContinuousWeight.integral_monomial_density
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_pos
+#print axioms ManuscriptChain.ContinuousWeight.weightedMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.momentMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.integral_momentMeasure
+#print axioms ManuscriptChain.ContinuousWeight.integrableOn_weightedDensity_moment
+
 -- Theorem 5.4: actual rational integer-pole cancellation and endpoint.
 #print axioms ManuscriptChain.Tau.evenPolePair_coe
 #print axioms ManuscriptChain.Tau.evenPolePair_cancellation
