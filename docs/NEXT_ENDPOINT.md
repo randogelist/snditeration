@@ -1,47 +1,11 @@
-# Next open original theorem — 3.3
+# Next unresolved originals after verified Theorem 3.3
 
-The repair campaign on [PR #39](https://github.com/randogelist/snditeration/pull/39)
-has verified the earlier arbitrary-L² Beukers–Krein endpoint, including actual
-kernel square-integrability, the convergent signed-mode identity and independence
-of the chosen almost-everywhere representative. Both parts (1) and (2) of 5.2
-are complete on that branch; the fixed-K cone clause in part (3) needs correction.
-The branch is not merged into main. See the immutable
-[completion receipt](receipts/COMPLETION_20261026.json) and
-[correction log](FORMALIZATION_CORRECTIONS.md).
+PR39 source `cf32aeef35b5f7cb02b042f672ac9b519c56b25d` passed [CI 40328869101](https://github.com/randogelist/snditeration/actions/runs/40328869101) with the all-project transitive standard-axiom audit. Original 3.3 is now complete: actual printed Stieltjes determinacy, arbitrary mixed minors in every order, exact primitive leading coefficient, inertia and multiplicity-counted root clauses. The earlier Carleman-only handoff is superseded by this [continuation receipt](receipts/COMPLETION_20261026_CONTINUATION.json). Main proof integration remains 9/45; verified source completion is now 13/45, including 3.8, 5.3 and 6.2. The later [transfer receipt](receipts/COMPLETION_20261026_TRANSFER.json) records independent destination verification of 5.3 and 6.2.
 
-The next open original is **Theorem 3.3(1)**. The branch now proves an explicit
-factorial majorant for every actual moment, actual Carleman divergence,
-translated sparse and solid minors of all orders, arbitrary mixed 2×2 minors,
-finite mass, and exact square-root coordinate identities. None of these alone
-proves the two remaining assertions:
+The first unresolved numbered original is **3.4**. Its full-degree principal-root assertion is false (an admissible principal pencil can be constant); its corrected eigenvalue interlacing and condensation components are already verified. It requires a separately stated singularity-aware correction, not a proof of the false original. The literal continued fraction in 3.5 and all-order finite-support positivity in original 3.6 also remain refuted; corrected 3.6 is complete separately.
 
-1. **Arbitrary mixed-minor strict positivity in all orders.** Prove generalized
-   Vandermonde positivity for strictly increasing natural exponents and positive
-   nodes; establish the corresponding Andréief integration identity with every
-   integrability premise justified; then prove strict positivity for the actual
-   measure. The existing sparse/translated and size-two results must not be
-   substituted for arbitrary unrelated row and column exponent selections.
-2. **Stieltjes measure uniqueness.** Transfer the actual factorial bound to any
-   competing positive-half-line measure with the same moments. One concrete
-   route is exponential square-root integrability, symmetric square-root
-   pushforward, analytic moment-generating-function equality, characteristic
-   function uniqueness and pushback by squaring. The new coordinate identities
-   are prerequisites; the exponential-integrability and uniqueness bridges
-   still need proofs. Alternatively formalize a complete Stieltjes Carleman
-   theorem and instantiate all of its hypotheses from the actual source.
+The next unrefuted open original is **3.7**. Prove that every individual intermediate centered coefficient of the actual primitive polynomial is nonzero. Existing real-rootedness/Newton results establish strict inequalities and exclude adjacent zeros, but distinct nonzero real roots alone do not exclude an isolated zero. At degree h−1 the coefficient is h*a_h*ζ(s)+a_(h−1); a family-specific arithmetic or spectral argument is required. Preserve the original quantifiers and do not replace this clause by strict Newton alone.
 
-Use the same Lean 4.33.0 and pinned Mathlib state as the receipt. A completed
-endpoint requires successful permitted-target compilation, complete transitive
-axiom evidence, and verified membership in the built import graph. Experimental
-prerequisite declarations and their publication receipts remain unchanged until
-an explicit branch update consumes the proved library inputs.
+Independent later work needs actual quantitative height/decay and multiplier bounds, correct local valuation matrices, consistent beta normalizations, valid sufficiently-large-degree signed cones, and quantitative beta asymptotics. The new beta moment/total-positivity/rank-one components do not prove these arithmetic inputs. See the [45-item status inventory](FORMALIZATION_STATUS.json) for exact attempts and remaining obligations.
 
-Other independent open work is listed item by item in
-[FORMALIZATION_STATUS.json](FORMALIZATION_STATUS.json). In particular, the
-corrected resolvent fraction in 3.5, individual centered-coefficient nonvanishing
-in 3.7, and actual quantitative arithmetic estimates in Chapters 4–6 remain
-separate obligations. No corrected theorem proves a false original.
-
-The historical finite-Krein receipt remains [CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845)
-at source `372deda8edc77bba6312b8f80137e00e1b75e74f`; it is preserved as an earlier
-monomial/finite-coefficient checkpoint, not the final arbitrary-L² evidence.
+Keep proof sources on the retained branch under the no-merge/no-deletion lock. Use the pinned toolchain/dependencies, permitted CI target and transitive axiom audit; do not run Lean locally. Published PROP/ALT targets and custom research assumptions remain unchanged until an explicit branch consumption proof is made. No new finite-witness admission or ζ(5)/ζ(7) irrationality claim follows.

@@ -2,6 +2,34 @@
 
 # Experimental chains — original targets and alternatives
 
+## Latest independently verified continuation — 26 October 2026
+
+The repair branch at [`0672896955e5`](https://github.com/randogelist/snditeration/tree/0672896955e5dc7f7f9b9a0f5340c59e69f0890b)
+passed [CI 40331258877](https://github.com/randogelist/snditeration/actions/runs/40331258877).
+Whole originals **3.3, 5.3 and 6.2** are newly completed, in addition to the prior
+3.8 completion. Current verified-source count is **13/45**; main integration
+remains **9/45**. The [continuation receipt](receipts/COMPLETION_20261026_CONTINUATION.json)
+and [transfer receipt](receipts/COMPLETION_20261026_TRANSFER.json) supplement every
+earlier publication record.
+
+A third exact prerequisite now has a matching standard-axiom library proof:
+`Experimental.P03_03.generalizedVandermondePositive` matches
+`ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_pos`.
+The existing factorial-bound and L²-density matches are preserved.
+The experimental declarations themselves have not been removed or consumed.
+The new beta-mode and harmonic/insertion proofs are useful upstream sources,
+but their experimental definitions still need explicit consumption/compatibility
+bridges before any scaffold assumption is called discharged.
+
+All **108** experimental heads remain identical to publication: **110** live
+branches and **72** paired attempts. Original/PROP/ALT snapshots remain
+`SOURCE_ONLY_UNCOMPILED`; no new iteration or branch build is invented.
+The tested destination graph has **157** library modules and no path into
+Experimental. The first unresolved original is 3.4 (a false clause requiring
+repair); the next unrefuted open original is 3.7 (individual actual centered
+coefficient nonvanishing). The pending-state prose below is historical and is
+superseded only by these new exact-source certificates.
+
 ## Later verified research evidence — 26 October 2026
 
 The [verified repair branch](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4)
@@ -186,3 +214,4 @@ branch is tracked separately, without inventing PROP/ALT iteration lineage.
 ## Later source continuation — 26 October 2026
 
 PR #39 advanced to [d336519fa7ef](https://github.com/randogelist/snditeration/tree/d336519fa7ef42cb1cf847849c6e22652e8ca6b1); [CI 40326832707](https://github.com/randogelist/snditeration/actions/runs/40326832707) was building with its audit pending. Its 16 new imported library modules are candidates, not covered by the older successful receipt. The [README continuation](../README.md#unverified-continuation--26-october-2026) records the affected items and exact boundaries. All 108 experimental heads still match publication; 110 live branches and 72 paired attempts remain. No scaffold assumption or downstream bridge is newly discharged, and no catalog iteration is invented for the cross-item repair branch. Companion PR #49 likewise advanced to b1c99c0d25cf94ee2cfbb398f697b7e50c363f89 with CI still running; its previous 40320889232 run failed. Immutable publication and successful historical receipts above remain intact.
+

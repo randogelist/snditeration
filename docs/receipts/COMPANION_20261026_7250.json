@@ -1,0 +1,31 @@
+{
+  "repository": "randogelist/zetahyperbolic-axiom",
+  "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+  "run_id": 40327942655,
+  "job_id": 121589422240,
+  "conclusion": "success",
+  "modules_passed": 260,
+  "reused_matching_audited_modules": 257,
+  "fresh_compilations": 3,
+  "theorems_checked": 3076,
+  "declarations_checked": 3809,
+  "dependency_declarations_checked": 86244,
+  "observed_axioms": [
+    "Quot.sound",
+    "Classical.choice",
+    "propext"
+  ],
+  "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+  "audit_regressions": "PASS",
+  "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+  "lean_version": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "native_windows": "NOT_RUN",
+  "full_manuscript_equivalence": "NOT_CERTIFIED",
+  "whole_original_scope_reviewed": [
+    "3.8",
+    "5.3",
+    "6.2"
+  ],
+  "destination_integration_inferred": false
+}

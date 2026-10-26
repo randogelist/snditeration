@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "repository": "randogelist/snditeration",
+  "branch": "repair/zetahyperbolic-completion_i0001_construction",
+  "pull_request": 39,
+  "source_commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+  "tested_merge_commit": "380ede6497804267869133ed931fdca8e02099bc",
+  "source_tree": "caced3ebc43b73f9892514e95789aa697b62f81c",
+  "tested_proof_dependency_toolchain_workflow_blobs_match_source": true,
+  "tested_full_tree_matches_source": false,
+  "source_to_tested_checkout_changes": "Documentation only; exact compare inspected.",
+  "main_base": "1273af83a8d7b5e147c35c6b2186ab8727158086",
+  "main_integration": false,
+  "run_id": 40331258877,
+  "job_id": 121600954631,
+  "conclusion": "success",
+  "build_jobs": 8864,
+  "axiom_audit": "ALL_PROJECT_DECLARATIONS",
+  "theorems_checked": 2282,
+  "declarations_checked": 2735,
+  "printed_axiom_reports": 728,
+  "printed_axiom_declarations_unique": 683,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "platform": "GitHub Actions Linux x86_64",
+  "local_lean_executed": false,
+  "source_placeholder_scan": "PASS",
+  "library_module_count": 157,
+  "all_library_modules_in_root_graph": true,
+  "experimental_imports": [],
+  "new_library_modules": 24,
+  "previous_library_modules_unchanged": 133,
+  "whole_original_verified_in_sources": 13,
+  "whole_original_integrated_in_main": 9,
+  "new_whole_originals_this_continuation": [
+    "5.3",
+    "6.2"
+  ],
+  "new_whole_originals_campaign": [
+    "3.3",
+    "3.8",
+    "5.3",
+    "6.2"
+  ],
+  "corrected_complete_items": [
+    "3.2",
+    "3.6"
+  ],
+  "completed_original_parts": [
+    "5.2(1)",
+    "5.2(2)"
+  ],
+  "next_unresolved_numbered_original": "3.4 (false clause; repair required)",
+  "next_unrefuted_open_original": "3.7",
+  "missing_premise": "Individual intermediate centered coefficients nonzero for the actual family.",
+  "prior_success_receipt": "COMPLETION_20261026_CONTINUATION.json",
+  "development_runs": [
+    {
+      "label": "CI16",
+      "source": "ba15b3bf15f8237d23e18e2d1afcf9cad201cf4a",
+      "run_id": 40330688727,
+      "job_id": 121598999522,
+      "conclusion": "failure"
+    }
+  ],
+  "verified_source_blobs": {
+    "Zetahyperbolic/Section3/MomentDeterminacy.lean": "677a0539dc9a4aa9f2dbefc99b2c2d6cbc291a6b",
+    "Zetahyperbolic/Section5/ActualKreinDimensionObstruction.lean": "5e682325ce2f9f6dc28e3ccd576f753ef5c48316",
+    "Zetahyperbolic/Section6/BetaHarmonicIndexObstruction.lean": "864ff3f81eb7ecd44c160c6d37eabef29f2c2574",
+    "Zetahyperbolic/Section6/TriplePoleGeneralCancellation.lean": "fe2b7eedf79a4d11e8465f7ab8f7de94dffcad84",
+    "Zetahyperbolic/Section3/MixedMomentAllOrders.lean": "ae8ae72ca1b01dba43ad5a89211748aa3e86c4ce",
+    "Zetahyperbolic/Section3/ExponentialMoment.lean": "b3a7d52b0c18c697c88ea059b666a0bd23cf92db",
+    "Zetahyperbolic/Section6/TriplePoleOriginCoefficient.lean": "8c871765b1530c8518f7e5f1f49a4f187933e88a",
+    "Zetahyperbolic/Section6/BetaOneMoments.lean": "0635440abf56080ca33d54bc92868a2ee774f458",
+    "Zetahyperbolic/Section3/MomentAndreief.lean": "1497b5b5f68726ed80c8610cadcc33b8f26393a4",
+    "Zetahyperbolic/Section3/MomentProductSupport.lean": "38937401944ab78aec3b5a7131d60ff44dd1e0ee",
+    "Zetahyperbolic/Section3/ActualMixedMinors.lean": "2ebeac43b4e768bae3904c2d2e90f15faa672921",
+    "Zetahyperbolic/Section3/SymmetricSquareRoot.lean": "206d4fc8bb189ea5c062d98c68a411eae875309a",
+    "Zetahyperbolic/Section3/Theorem33.lean": "10600d6ed3fca6c41884823225658ad2057259c1",
+    "Zetahyperbolic/Section6/BetaOddMoments.lean": "1686c381a15d662c15cbe0cea6e723cdf2092ce1",
+    "Zetahyperbolic/Section6/BetaOddGram.lean": "cfa05980c81c37920c485a7ce04c6723db099514",
+    "Zetahyperbolic/Section6/BetaOddEta.lean": "8cdf42fbe557fd5ecbb7d5177e2c83ff5497c45b",
+    "Zetahyperbolic/Section3/PositiveMomentMinors.lean": "e157471c5a4b4166700512e0fc09b7fbb60e62f1",
+    "Zetahyperbolic/Section6/BetaEtaZeta.lean": "635cc3a24fc4cd70da0ba3404511a5dbdda0811c",
+    "Zetahyperbolic/Section6/BetaOddTotalPositivity.lean": "6d3d2ee8e02cd6bd8511cbf0e6c2c4431c4b63d2",
+    "Zetahyperbolic/Section5/BetaBeukersMoments.lean": "baf43471eb8d9620bfa83c548956ec3efeea9806",
+    "Zetahyperbolic/Section5/BetaBeukersSpectrum.lean": "da9ffe05531e9a5832fe26166f579352cff42e22",
+    "Zetahyperbolic/Section5/BeukersIntegralPencil.lean": "7f63fac867527f548135f912f8f40426bb663c46",
+    "Zetahyperbolic/Section6/BeukersDenominator.lean": "1b0fc9953e83874c72c1c3f14b4c11b95876b0f4",
+    "Zetahyperbolic/Section6/BeukersSimultaneous.lean": "8032f33447b19f439f1aa718e4f93db2c2b394b5",
+    "Zetahyperbolic.lean": "d961e5d460f64cf5c726784dbc6f9078b5a79dbe",
+    "Zetahyperbolic/Audit.lean": "96175f4e3e8b8d58c9b4dc0a69d134b082e456e6"
+  },
+  "job_log_sha256": "cb137949b1980f250906ecbb35fcd9530ed02579a4d29deaa2050060e65d6236",
+  "live_branch_verification": {
+    "live_branches": 110,
+    "experimental_heads_checked": 108,
+    "changes": [],
+    "paired_attempts": 72
+  },
+  "unchanged_dependency_and_workflow_blobs": {
+    ".github/workflows/lean.yml": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+    "lake-manifest.json": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+    "lakefile.lean": "a12e10e090d3fbe33db143b14764105f108854e0",
+    "lean-toolchain": "025e59548e48cf71f2744154e2890beefe30a258"
+  },
+  "integration_note": "No branch merged or deleted; main receives documentation/evidence only. Historical receipts and experimental publication records remain immutable.",
+  "new_modules_since_prior_receipt": 5,
+  "development_failure_note": "CI16 built every source and passed the full axiom audit; the final textual placeholder guard matched the words 'axiom audit' in provenance comments. Comments were clarified; no proof or CI guard was weakened.",
+  "donor_source": {
+    "repository": "randogelist/zetahyperbolic-axiom",
+    "commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+    "run_id": 40327942655,
+    "items": [
+      "5.3",
+      "6.2"
+    ],
+    "destination_verification_separate": true
+  }
+}

@@ -2,7 +2,7 @@
   "audit_kind": "Original-theorem status register with exact compiler and transitive-axiom evidence, plus explicit mathematical blockers",
   "baseline_commit": "5acb01dd19a9cd6ca8312557ec5d84ef94a960b6",
   "no_local_lean": true,
-  "scope": "The 45 original manuscript proof items are tracked separately from definitions, remarks, the conjecture, corrected statements and component proofs. The verified PR39 source completes 10 whole originals; main still integrates the historical 9. No merge or main proof integration is inferred from this register.",
+  "scope": "The 45 original manuscript proof items remain separate from corrections and components. Verified PR39 source completes 13 whole originals; main integrates the historical 9. New whole originals in this campaign: 3.3, 3.8, 5.3 and 6.2. No merge is inferred.",
   "bare_placeholder_scan": "No bare sorry/admit/axiom declarations found in certified-library source tree; substring matches occurred only in provenance comments. Experimental branches intentionally contain separate prerequisite axioms.",
   "status_caveat": "Genuinely blocked identifies a substantive mathematical or definition gap, or a false original, in the inspected source state. It is not a claim that all future mathematical approaches are impossible. Completed means the whole original is proved on the identified verified source; source completion and main integration are counted separately.",
   "items": [
@@ -298,17 +298,20 @@
     },
     {
       "item": "3.3",
-      "status": "genuinely blocked",
+      "status": "completed",
       "baseline_register_status": "OPEN; component `!!`",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
-      "obstacle_type": "missing_total_positivity_and_determinacy",
-      "reason": "Actual shifted/sparse Hankel positivity, factorial moment majorant, Carleman divergence and square-root measure recovery are proved on the verified branch. Arbitrary mixed minors of all orders and full Stieltjes determinacy remain unproved.",
-      "required_to_finish": "Supply the all-order mixed-minor/Cauchy–Binet positivity theorem and the measure-determinacy bridge; do not infer uniqueness from divergence alone.",
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual printed-measure Stieltjes uniqueness and arbitrary all-order mixed-minor strict positivity are proved, and assembled with exact primitive coefficient sign, degree, inertia and multiplicity-counted root clauses.",
+      "required_to_finish": null,
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
-        "Repaired and assembled the relevant Section3 modules; final CI7 compiled the imported graph and audited all project declarations. No local Lean was run."
+        "Repaired and assembled the relevant Section3 modules; final CI7 compiled the imported graph and audited all project declarations. No local Lean was run.",
+        "Proved generalized Vandermonde positivity, finite-product support and all-order Andreief with integrability; instantiated the actual zeta Gram.",
+        "Proved factorial-to-exponential bound, symmetric square-root lift, MGF continuation/characteristic uniqueness and printed-measure recovery.",
+        "Proved explicit primitive polynomial multiset-root and coefficient-at-degree endpoints; completed full CI and transitive axiom audit."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "verified_component_evidence": {
@@ -357,11 +360,54 @@
           "declaration": "ManuscriptChain.ConcreteMoment.actualMomentFactorialMajorant",
           "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
           "verified_source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4"
+        },
+        "Experimental.P03_03.generalizedVandermondePositive": {
+          "experiment_source_changed": false,
+          "declaration": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_pos",
+          "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+          "verified_source_commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "interface_comparison": "Same finite determinant, all natural exponent/node indices and strict positivity hypotheses; only binder order and implicit dimension differ."
         }
       },
-      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
-      "experimental_inputs_without_an_exact_match_recorded_here": [
-        "Experimental.P03_03.generalizedVandermondePositive"
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+          "reason": "Actual shifted/sparse Hankel positivity, factorial moment majorant, Carleman divergence and square-root measure recovery are proved on the verified branch. Arbitrary mixed minors of all orders and full Stieltjes determinacy remain unproved.",
+          "required_to_finish": "Supply the all-order mixed-minor/Cauchy–Binet positivity theorem and the measure-determinacy bridge; do not infer uniqueness from divergence alone."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+        "job_id": 121592645513,
+        "build_jobs": 8859,
+        "theorems_checked": 2149,
+        "declarations_checked": 2579,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/Theorem33.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/ActualMixedMinors.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/SymmetricSquareRoot.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentDeterminacy.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/ExponentialMoment.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MixedMomentAllOrders.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentAndreief.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentProductSupport.lean"
       ]
     },
     {
@@ -544,7 +590,8 @@
       "required_to_finish": "Keep exact Turan/Newton inequalities separate; independently prove any family-specific nonvanishing with valid hypotheses.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Rechecked the printed generic-distinctness argument: strict centered Newton and exclusion of adjacent zero coefficients do not rule out an isolated zero. The coefficient at degree h-1 is h*a_h*zeta(s)+a_(h-1), requiring actual-family arithmetic information."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1087,8 +1134,8 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
       "obstacle_type": "false_fixed_K_signed_cone_quantifiers",
-      "reason": "Parts(1) and(2) are fully proved by the combined actual rational-pencil/centered-spectrum declarations and theorem_5_2_l2_krein. The full original remains false with its fixed-K signed-cone quantifiers: both h-dimensional signed cones cannot fit in dimensionK+1 when2h>K+1.",
-      "required_to_finish": "Repair the cone quantifiers, then construct the claimed signed polynomial subspaces with valid infinite-tail control; parts(1)+(2) cannot prove false part(3).",
+      "reason": "Parts (1) and (2) remain complete. Actual rational coefficient subspaces and the literal Beukers integral now formally imply 2h≤K+1; K=h=2 refutes fixed-K part (3).",
+      "required_to_finish": "Revise the fixed-K cone quantifiers and prove sufficiently-large-degree definite subspaces with valid infinite-tail control.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
@@ -1096,7 +1143,8 @@
         "Constructed actual mixed-monomial integrability and finite polynomial product-integral identification.",
         "Constructed actual polynomial Mellin-log channels and summable signed-mode interchange.",
         "Constructed actual kernel MemLp2 proof via density ≤ L^5+L^4, L=-log(xy), and integrable log powers.",
-        "Constructed exact arbitrary real-L² bilinear HasSum identity directly by Hölder and dominated integration; identified the printed positive/negative mode integrals and proved representative independence."
+        "Constructed exact arbitrary real-L² bilinear HasSum identity directly by Hölder and dominated integration; identified the printed positive/negative mode integrals and proved representative independence.",
+        "Formalized the dimension obstruction for the actual rational polynomial form and integral, preserving the manuscript scalar field."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "verified_component_evidence": {
@@ -1159,20 +1207,48 @@
         }
       },
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
-      "experimental_inputs_without_an_exact_match_recorded_here": []
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "historical_reviews": [
+        {
+          "reason": "Parts(1) and(2) are fully proved by the combined actual rational-pencil/centered-spectrum declarations and theorem_5_2_l2_krein. The full original remains false with its fixed-K signed-cone quantifiers: both h-dimensional signed cones cannot fit in dimensionK+1 when2h>K+1.",
+          "required_to_finish": "Repair the cone quantifiers, then construct the claimed signed polynomial subspaces with valid infinite-tail control; parts(1)+(2) cannot prove false part(3)."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
+      ]
     },
     {
       "item": "5.3",
-      "status": "genuinely blocked",
+      "status": "completed",
       "baseline_register_status": "OPEN; source partial",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
-      "obstacle_type": "beta_kernel_calibration",
-      "reason": "The β4 counterpart needs actual diagonal/off-diagonal geometric-mode moment integrals and coherent normalization, not replacement of ζ7 labels.",
-      "required_to_finish": "Prove summability/interchange and finite beta rational pencil identification.",
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual positive beta(4) density, exact diagonal/off-diagonal moments, actual rational polynomial-family integral pencil, positive coefficient-Gram derivative, exact degree and all-real roots. Rational linear independence and degree bounds are exactly the printed premises.",
+      "required_to_finish": null,
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Transferred the independently verified companion proof to exact destination definitions and existing library APIs, inspected every original quantifier and actual integral identification, then completed destination full-build/transitive-axiom verification."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1193,10 +1269,46 @@
           "repository_path": "docs/EXPERIMENTS.json"
         }
       ],
-      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P05_03.betaFour_modes_integral_norm_summable"
-      ]
+      ],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "reason": "The β4 counterpart needs actual diagonal/off-diagonal geometric-mode moment integrals and coherent normalization, not replacement of ζ7 labels.",
+          "required_to_finish": "Prove summability/interchange and finite beta rational pencil identification."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+        "job_id": 121600954631,
+        "build_jobs": 8864,
+        "theorems_checked": 2282,
+        "declarations_checked": 2735,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersSpectrum.lean"
+      ],
+      "companion_provenance": {
+        "repository": "randogelist/zetahyperbolic-axiom",
+        "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+        "run_id": 40327942655,
+        "role": "independently certified donor; destination evidence separately recorded"
+      }
     },
     {
       "item": "5.4",
@@ -1256,11 +1368,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
       "obstacle_type": "unproved_floor_partition_and_valuation",
-      "reason": "Floor/min/max prime-sum constants require a complete exact partition and tail estimate; rational sign checks alone do not supply local q-adic gains.",
-      "required_to_finish": "Integrate the literal outer function, bound the inner tail and prove actual surviving-pole replacement valuation ranges.",
+      "reason": "The companion now proves the exact outer integral and refutes two printed continuity clauses. The inner-tail bound, prime-sum asymptotics and local q-adic gains remain.",
+      "required_to_finish": "Repair the false continuity clauses, prove the inner-tail bound and surviving-pole valuation ranges; transfer the independently verified outer-integral component before claiming destination integration.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Exact literal outer floor-function integral 453803/288000 and two printed continuity-clause refutations. This component is not destination integration. Inner-tail/prime-sum asymptotics, residue gain and a corrected continuity statement remain required."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1285,6 +1398,47 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P05_06.outerT_integrable",
         "Experimental.P05_06.inner_tail_integrable"
+      ],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Exact literal outer floor-function integral 453803/288000 and two printed continuity-clause refutations.",
+          "remaining": "Inner-tail/prime-sum asymptotics, residue gain and a corrected continuity statement remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Floor/min/max prime-sum constants require a complete exact partition and tail estimate; rational sign checks alone do not supply local q-adic gains.",
+          "required_to_finish": "Integrate the literal outer function, bound the inner tail and prove actual surviving-pole replacement valuation ranges."
+        }
       ]
     },
     {
@@ -1329,11 +1483,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
       "obstacle_type": "residue_to_determinant_gap",
-      "reason": "Single-entry harmonic residual integrality does not prove the crossing-index determinant valuation or intrinsic p^-6 barrier.",
-      "required_to_finish": "Prove actual Jacobian/Mellin bridge and local reduction with invertibility; then derive determinant valuation.",
+      "reason": "The companion now proves the actual outer-prime off-diagonal moment valuation -7. The crossing-index determinant leading congruence, Mellin bridge and intrinsic p^-6 barrier remain unproved.",
+      "required_to_finish": "Prove the actual Jacobian/Mellin bridge and invertible local 2-by-2 reduction, then the determinant valuation/barrier; the companion single-entry result remains separate until transferred.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses. This component is not destination integration. Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1358,20 +1513,62 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_01.harmonic_residual_p_integral",
         "Experimental.P06_01.fiber_integrand_integrable"
+      ],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses.",
+          "remaining": "Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Single-entry harmonic residual integrality does not prove the crossing-index determinant valuation or intrinsic p^-6 barrier.",
+          "required_to_finish": "Prove actual Jacobian/Mellin bridge and local reduction with invertibility; then derive determinant valuation."
+        }
       ]
     },
     {
       "item": "6.2",
-      "status": "genuinely blocked",
+      "status": "completed",
       "baseline_register_status": "OPEN; source partial",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
-      "obstacle_type": "simultaneous_functional_denominator_gap",
-      "reason": "Separate divided-difference formulas and an lcm bound do not prove the actual simultaneous ζ6/ζ7 integral with zero extra denominator.",
-      "required_to_finish": "Prove actual inserted series interchange, coefficient identity and integralizing multiplier without assumed zero overhead.",
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual adjacent and extra-denominator Beukers integrals, arbitrary integer polynomial and integer alpha/beta, exact zeta(6)/zeta(7) linear form and printed rational correction, with proved 6*d_K^7 integer clearing.",
+      "required_to_finish": null,
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Transferred the independently verified companion proof to exact destination definitions and existing library APIs, inspected every original quantifier and actual integral identification, then completed destination full-build/transitive-axiom verification."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1392,11 +1589,47 @@
           "repository_path": "docs/EXPERIMENTS.json"
         }
       ],
-      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_02.harmonic_denominator_divides",
         "Experimental.P06_02.inserted_geometric_integral_norm_summable"
-      ]
+      ],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "reason": "Separate divided-difference formulas and an lcm bound do not prove the actual simultaneous ζ6/ζ7 integral with zero extra denominator.",
+          "required_to_finish": "Prove actual inserted series interchange, coefficient identity and integralizing multiplier without assumed zero overhead."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+        "job_id": 121600954631,
+        "build_jobs": 8864,
+        "theorems_checked": 2282,
+        "declarations_checked": 2735,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean"
+      ],
+      "companion_provenance": {
+        "repository": "randogelist/zetahyperbolic-axiom",
+        "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+        "run_id": 40327942655,
+        "role": "independently certified donor; destination evidence separately recorded"
+      }
     },
     {
       "item": "6.3",
@@ -1632,11 +1865,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
       "obstacle_type": "cancelled_zero_pole",
-      "reason": "The verified branch proves an actual n=1 cancellation counterexample to the printed triple-pole leading-coefficient claim. Historical Hermite determinant-unit components do not supply the missing actual triple-pole residue/congruence/valuation transfer.",
-      "required_to_finish": "Repair the cancelled pole order and leading-term statement, recompute actual residue rows, then prove their congruences and determinant valuations.",
+      "reason": "For every n≥1 the actual printed rational function is t³ times a continuous factor nonzero at zero; H_(n+1)(0)=(n!)⁶. The claimed leading triple-pole coefficient is therefore false throughout this range.",
+      "required_to_finish": "Recompute the noncancelled pole/residue rows and prove their actual congruences and determinant valuations.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Extended the n=1 counterexample to every positive n and computed the corrected local factor exactly."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "verified_component_evidence": {
@@ -1682,6 +1916,33 @@
         "Experimental.P06_09.triple_partial_fraction",
         "Experimental.P06_09.rational_three_jet_interpolation",
         "Experimental.P06_09.upstream_harmonic_residual_p_integral"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "The verified branch proves an actual n=1 cancellation counterexample to the printed triple-pole leading-coefficient claim. Historical Hermite determinant-unit components do not supply the missing actual triple-pole residue/congruence/valuation transfer.",
+          "required_to_finish": "Repair the cancelled pole order and leading-term statement, recompute actual residue rows, then prove their congruences and determinant valuations."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
       ]
     },
     {
@@ -1691,11 +1952,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
       "obstacle_type": "missing_limits_and_wrong_rate_direction",
-      "reason": "Finite conservation and conditional polynomial coefficient-Gram growth do not supply equilibrium limits or strict reweighting. A lower decay bound does not imply the printed >581 ratio.",
-      "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; retain existing finite and conditional growth lemmas.",
+      "reason": "The companion now proves the sharp finite coefficient-Gram Hadamard bound. Actual equilibrium/potential limits and strict reweighting remain open, and a lower decay bound cannot imply the printed >581 ratio.",
+      "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; preserve the verified finite bounds and conditional growth results.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses. This component is not destination integration. Equilibrium/potential limits and the strict quantitative gap remain required."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1717,7 +1979,48 @@
         }
       ],
       "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
-      "experimental_inputs_without_an_exact_match_recorded_here": []
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses.",
+          "remaining": "Equilibrium/potential limits and the strict quantitative gap remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Finite conservation and conditional polynomial coefficient-Gram growth do not supply equilibrium limits or strict reweighting. A lower decay bound does not imply the printed >581 ratio.",
+          "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; retain existing finite and conditional growth lemmas."
+        }
+      ]
     },
     {
       "item": "6.11",
@@ -1874,11 +2177,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
       "obstacle_type": "conditional_series_and_quantitative_asymptotics",
-      "reason": "β1 needs ordered-series/integral identification, not unordered real tsum. Qualitative π transcendence does not give effective measure constants; the printed exterior h^-2k asymptotic has an identified repair issue.",
-      "required_to_finish": "Prove actual all-k beta evaluations, correct eta1 removable value, independent quantitative transcendence estimate and repaired Padé/Christoffel asymptotics.",
+      "reason": "Actual all-k beta density, integrable even/odd moments, ordered beta/eta limits, eta-zeta identification for k≥1, eta(1)=log 2, arbitrary mixed-minor positivity and rank-one affine slope are verified. Quantitative arithmetic and exterior asymptotics remain unproved.",
+      "required_to_finish": "Prove all-k Euler evaluations and quantitative transcendence/independence bounds, and establish or repair the claimed Pade/Christoffel root asymptotics.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Constructed actual density and square-pushforward measure; proved exact series calibration, all moments, total positivity and affine rank-one slope without analytic premises."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1903,6 +2207,33 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
         "Experimental.P06_15.upstream_unit_geometric"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "β1 needs ordered-series/integral identification, not unordered real tsum. Qualitative π transcendence does not give effective measure constants; the printed exterior h^-2k asymptotic has an identified repair issue.",
+          "required_to_finish": "Prove actual all-k beta evaluations, correct eta1 removable value, independent quantitative transcendence estimate and repaired Padé/Christoffel asymptotics."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
       ]
     },
     {
@@ -1947,11 +2278,12 @@
       "original_statement_unchanged": true,
       "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
       "obstacle_type": "incorrect_odd_harmonic_windows",
-      "reason": "Recorded q=11 andq=41 exact counterchecks refute two printed local proof steps; finite ζ7 moments do not establish beta/multiweight/L²/cone claims.",
-      "required_to_finish": "Recompute every2j+1 denominator window and local matrix, prove calibrated beta moments and signed-tail/subspace construction independently.",
+      "reason": "The destination now verifies the q=11/q=41 counterchecks and corrected odd-denominator cutoffs. These refute local proof steps, not the whole determinant statement.",
+      "required_to_finish": "Construct consistently normalized multiweight moments and infinite signed decomposition, then prove actual local determinant nonvanishing with corrected harmonic support.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
-        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Replayed the exact companion counterchecks in the destination graph and proved the all-odd-q denominator membership cutoffs."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1976,6 +2308,33 @@
       "experimental_inputs_without_an_exact_match_recorded_here": [
         "Experimental.P06_17.upstream_beta_four_diagonal_moment",
         "Experimental.P06_17.upstream_beta_four_offdiagonal_moment"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Recorded q=11 andq=41 exact counterchecks refute two printed local proof steps; finite ζ7 moments do not establish beta/multiweight/L²/cone claims.",
+          "required_to_finish": "Recompute every2j+1 denominator window and local matrix, prove calibrated beta moments and signed-tail/subspace construction independently."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
       ]
     },
     {
@@ -2016,13 +2375,13 @@
   ],
   "latest_verified_source": {
     "repository": "randogelist/snditeration",
-    "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+    "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
     "pull_request": "https://github.com/randogelist/snditeration/pull/39",
-    "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
-    "job_id": 121566462325,
-    "build_jobs": 8840,
-    "theorems_checked": 1888,
-    "declarations_checked": 2292,
+    "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+    "job_id": 121600954631,
+    "build_jobs": 8864,
+    "theorems_checked": 2282,
+    "declarations_checked": 2735,
     "axioms": [
       "propext",
       "Classical.choice",
@@ -2037,8 +2396,8 @@
     "untouched": 0,
     "attempted": 0,
     "under repair": 0,
-    "completed": 10,
-    "genuinely blocked": 35
+    "completed": 13,
+    "genuinely blocked": 32
   },
   "schema_version": 2,
   "initial_review_scan": {
@@ -2065,15 +2424,56 @@
       "toolchain": "Lean4.33.0",
       "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
       "local_lean_executed": false
+    },
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+      "job_id": 121566462325,
+      "build_jobs": 8840,
+      "theorems_checked": 1888,
+      "declarations_checked": 2292,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean 4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
+    },
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+      "job_id": 121592645513,
+      "build_jobs": 8859,
+      "theorems_checked": 2149,
+      "declarations_checked": 2579,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean 4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
     }
   ],
   "completion_counts": {
     "original_proof_items": 45,
-    "whole_originals_verified_on_PR39_source": 10,
+    "whole_originals_verified_on_PR39_source": 13,
     "whole_originals_integrated_on_main": 9,
-    "whole_originals_remaining": 35,
+    "whole_originals_remaining": 32,
     "new_whole_originals_verified_this_work": [
-      "3.8"
+      "3.3",
+      "3.8",
+      "5.3",
+      "6.2"
     ],
     "partial_originals_with_new_complete_clauses": {
       "5.2": [
@@ -2104,5 +2504,10 @@
       "role": "Named experimental assumptions and original target metadata. Published custom axioms remain distinct from matching proved library declarations."
     }
   },
-  "experimental_prerequisite_note": "Snapshot prerequisite names are review metadata, not a live-branch axiom census. Verified library matches are recorded separately. The experimental source is unchanged unless explicitly stated; consult docs/EXPERIMENTS.json for branch-level evidence and publication receipts."
+  "experimental_prerequisite_note": "Snapshot prerequisite names are review metadata, not a live-branch axiom census. Verified library matches are recorded separately. The experimental source is unchanged unless explicitly stated; consult docs/EXPERIMENTS.json for branch-level evidence and publication receipts.",
+  "next_open_original": {
+    "first_unresolved_numbered_item": "3.4 (false full-degree clause; corrected statement required)",
+    "next_unrefuted_open_original": "3.7",
+    "missing_premise": "Individual intermediate centered coefficients nonzero for the actual arithmetic family."
+  }
 }

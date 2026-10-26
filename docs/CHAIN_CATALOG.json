@@ -158,9 +158,9 @@
       "chapter": 3,
       "module_key": "P03_03",
       "title": "Total positivity, leading sign, and universal signature",
-      "original_status": "OPEN; component `!!`",
-      "original_scope": "Exact weight-five leading sign and multiplicity-counted inertia/root-side counts. Part(1) full mixed-minor total positivity and Stieltjes determinacy remain open. Main's Carleman, shifted/mixed moment candidate sources are not imported; no A-tier inherited from source presence. Companion PR #46 verifies a generic factorial-growth Carleman criterion; actual moment bounds and uniqueness are still missing. Later verified PR39 evidence: PR39 proves actual factorial bounds, Carleman divergence and sparse/solid/mixed-2 minors; full arbitrary mixed minors and determinacy remain open.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MomentGrowth.lean",
+      "original_status": "OPEN in main; **exact `!!` on PR39**",
+      "original_scope": "Whole original verified on PR39: actual printed-measure determinacy, arbitrary all-order mixed minors, exact coefficient-at-degree sign, inertia and primitive root multiplicities. Main retains its historical components only.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/Theorem33.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -1257,9 +1257,9 @@
       "chapter": 5,
       "module_key": "P05_02",
       "title": "Dual hyperbolicity and Krein-space decomposition of the two-variable $\\zeta(7)$ pencil",
-      "original_status": "REPAIR; component `!!`",
-      "original_scope": "Local finite dual spectrum under real row separation and actual monomial/coefficient Krein identities; full arbitrary-L² extension and all-dimensional cones remain open. Fixed-K positive/negative cones need dimension repair. Later verified PR39 evidence: Exact parts(1) and(2), including arbitrary real L² functions, are verified on PR39; part(3) needs corrected signed-cone quantifiers.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/KreinL2.lean",
+      "original_status": "REPAIR; parts(1),(2) and refutation `!!` on PR39",
+      "original_scope": "Exact parts(1),(2) are complete. Actual rational fixed-K cones satisfy 2h≤K+1; permitted K=h=2 refutes part(3). Sufficiently-large-K cones and signed-tail control need new proofs.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section5/ActualKreinDimensionObstruction.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -1347,9 +1347,9 @@
       "chapter": 5,
       "module_key": "P05_03",
       "title": "Two-variable Beukers measure and dual pencil for $\\beta(4) = L(4, \\chi_{-4})$",
-      "original_status": "OPEN; source partial",
-      "original_scope": "Low-node β4 tensor/Gram calculations only; actual two-variable integral, moments and dual pencil open.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "OPEN in main; **exact `!!` on PR39**",
+      "original_scope": "Whole original verified: literal beta(4) positive density and all fourth-power moments, rational polynomial-family integral pencil, exact coefficient-Gram derivative, degree h and all complex roots real.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersSpectrum.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -1663,9 +1663,9 @@
       "chapter": 6,
       "module_key": "P06_02",
       "title": "Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead",
-      "original_status": "OPEN; source partial",
-      "original_scope": "Exact divided differences and 6d_K⁷ denominator; simultaneous ζ6/ζ7 analytic functional and claimed zero overhead remain open.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "OPEN in main; **exact `!!` on PR39**",
+      "original_scope": "Whole original verified: actual adjacent/extra-denominator integrals, arbitrary integer polynomial and alpha/beta, exact zeta(6)/zeta(7) identity, printed rational correction and proved 6*d_K^7 integer clearing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -2213,9 +2213,9 @@
       "chapter": 6,
       "module_key": "P06_09",
       "title": "Triple-pole and multi-weight Hankel determinants",
-      "original_status": "REPAIR; exact leading-coefficient refutation !! on PR39",
-      "original_scope": "Historical companion Hermite determinant-unit lemma under prime, distinct-node and congruence hypotheses. Actual triple-pole rows, their congruence and the printed valuations remain open; not integrated here. Later verified PR39 evidence: PR39 verifies an exact actual n=1 counterexample to the printed leading coefficient; residue/valuation repair remains necessary.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section6/TriplePoleCancellation.lean",
+      "original_status": "REPAIR; **uniform refutation/corrected local coefficient `!!` on PR39**",
+      "original_scope": "For every n≥1, actual R_n(t)=t³H_n(t) near zero with H_n(0)≠0; H_(n+1)(0)=(n!)⁶. Recompute actual pole rows/congruences before determinant valuation claims.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/TriplePoleOriginCoefficient.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -2702,9 +2702,9 @@
       "chapter": 6,
       "module_key": "P06_15",
       "title": "Arithmetic transcendence, strictly positive one-variable measure, and rank-one Padé pencil for $\\beta(2k+1)$ across all $k\\ge 0$",
-      "original_status": "REPAIR / OPEN; source partial",
-      "original_scope": "Odd β rational π-powers, qualitative transcendence/finite independence and k=0 moments; effective measures, all-k rank-one law and printed exterior asymptotic not certified.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "OPEN; **analytic/rank-one components `!!` on PR39**",
+      "original_scope": "Actual all-k density and even/odd moments, ordered beta/eta limits, eta-zeta factor for k≥1, eta1=log2, all-order mixed minors and rank-one slope verified. Euler evaluations, quantitative transcendence and exterior root asymptotics remain open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/BetaOddTotalPositivity.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -2862,9 +2862,9 @@
       "chapter": 6,
       "module_key": "P06_17",
       "title": "Universal two-variable Beukers Zeta–Beta pencil, Krein decomposition, and $q$-adic non-vanishing",
-      "original_status": "OPEN; historical companion component `!!`",
-      "original_scope": "Historical companion corrected harmonic windows, support disjointness and index nondivisibility. Actual combined measure, infinite Krein decomposition and highest-weight determinant nonvanishing remain open; not integrated here.",
-      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "original_status": "OPEN; **local refutation/corrected support `!!` on PR39**",
+      "original_scope": "Destination q=11/q=41 counterchecks and exact odd-harmonic denominator cutoffs verified. Actual multiweight measure, infinite Krein and determinant nonvanishing remain separate open premises.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/BetaHarmonicIndexObstruction.lean",
       "selected_attempts": [],
       "attempts": [
         {
@@ -3021,6 +3021,8 @@
     }
   ],
   "later_evidence_receipts": [
-    "docs/receipts/COMPLETION_20261026.json"
+    "docs/receipts/COMPLETION_20261026.json",
+    "docs/receipts/COMPLETION_20261026_CONTINUATION.json",
+    "docs/receipts/COMPLETION_20261026_TRANSFER.json"
   ]
 }

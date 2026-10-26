@@ -12597,6 +12597,64 @@
       ],
       "next_open_original": "3.3",
       "import_graph_scope": "Verified repair branch imports every library module and no experimental module; main graph unchanged."
+    },
+    {
+      "evidence_id": "continuation-20261026",
+      "source_commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+      "receipt": "docs/receipts/COMPLETION_20261026_CONTINUATION.json",
+      "run_id": 40328869101,
+      "job_id": 121592645513,
+      "main_integration": false,
+      "proof_scope": "Verified PR39 source; immutable original/PROP/ALT targets, source refs and publication records unchanged.",
+      "counts": {
+        "whole_original_verified_in_sources": 11,
+        "whole_original_integrated_main": 9,
+        "matching_prerequisite_exports": 3,
+        "experimental_axiom_declarations_removed": 0
+      },
+      "whole_original_completed": [
+        "3.3"
+      ],
+      "experimental_branch_compilation_status": "SOURCE_ONLY_UNCOMPILED",
+      "experimental_sources_changed": false,
+      "downstream_bridge_status": "No new branch consumption or PROP/ALT compatibility bridge inferred.",
+      "matching_library_proofs": [
+        {
+          "experimental_axiom": "Experimental.P03_03.generalizedVandermondePositive",
+          "library_theorem": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_pos",
+          "interface": "Exact same finite determinant/exponents/nodes/strict hypotheses; binder order only differs.",
+          "experimental_source_changed": false
+        }
+      ],
+      "next_unrefuted_open_original": "3.7",
+      "next_unresolved_numbered_original": "3.4 (false full-degree clause; repair required)",
+      "import_graph_scope": "All destination library modules imported and audited; no Experimental import path."
+    },
+    {
+      "evidence_id": "transfer-20261026",
+      "source_commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+      "receipt": "docs/receipts/COMPLETION_20261026_TRANSFER.json",
+      "run_id": 40331258877,
+      "job_id": 121600954631,
+      "main_integration": false,
+      "proof_scope": "Verified PR39 source; immutable original/PROP/ALT targets, source refs and publication records unchanged.",
+      "counts": {
+        "whole_original_verified_in_sources": 13,
+        "whole_original_integrated_main": 9,
+        "matching_prerequisite_exports": 3,
+        "experimental_axiom_declarations_removed": 0
+      },
+      "whole_original_completed": [
+        "5.3",
+        "6.2"
+      ],
+      "experimental_branch_compilation_status": "SOURCE_ONLY_UNCOMPILED",
+      "experimental_sources_changed": false,
+      "downstream_bridge_status": "No new branch consumption or PROP/ALT compatibility bridge inferred.",
+      "matching_library_proofs": [],
+      "next_unrefuted_open_original": "3.7",
+      "next_unresolved_numbered_original": "3.4 (false full-degree clause; repair required)",
+      "import_graph_scope": "All destination library modules imported and audited; no Experimental import path."
     }
   ],
   "later_evidence_checks": [
@@ -13292,6 +13350,38 @@
           "sha": "b1c99c0d25cf94ee2cfbb398f697b7e50c363f89"
         }
       ]
+    },
+    {
+      "date_utc": "2026-10-26",
+      "main_source": "1273af83a8d7b5e147c35c6b2186ab8727158086",
+      "live_branch_count": 110,
+      "experimental_heads_checked": 108,
+      "all_108_publication_heads_unchanged": true,
+      "paired_attempts": 72,
+      "repair_branch": "repair/zetahyperbolic-completion_i0001_construction",
+      "repair_source": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+      "run_id": 40331258877,
+      "job_id": 121600954631,
+      "ci_checkout": "380ede6497804267869133ed931fdca8e02099bc",
+      "proof_dependency_toolchain_workflow_blobs_equal": true,
+      "checkout_diff_scope": "Only documentation differs from proof head.",
+      "audit": {
+        "library_modules": 157,
+        "project_declarations": 2735,
+        "theorems": 2282,
+        "allowed_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "experimental_import_paths": []
+      },
+      "companion_source": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+      "companion_run_id": 40327942655,
+      "companion_run_conclusion": "success",
+      "companion_scope": "Separate whole originals 3.8,5.3,6.2 and component evidence; destination5.3/6.2 independently transferred and verified.",
+      "experiment_statuses_unchanged": true,
+      "assumption_discharge_not_inferred": true
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "scope": "Lean source declarations, distinct from the 45 manuscript-item status inventory.",
-  "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+  "source_commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
   "verification": "SUCCESSFUL_FULL_BUILD_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT",
   "local_lean_executed": false,
-  "module_count": 133,
-  "declaration_count": 1349,
+  "module_count": 157,
+  "declaration_count": 1606,
   "root_graph": {
     "Zetahyperbolic": [
       "Zetahyperbolic.Section2.Moments",
@@ -123,7 +123,31 @@
       "Zetahyperbolic.Section5.BeukersHilbertSchmidt",
       "Zetahyperbolic.Section3.MomentSquareRoot",
       "Zetahyperbolic.Section5.KreinL2",
-      "Zetahyperbolic.Section3.OrthogonalFamilyKernel"
+      "Zetahyperbolic.Section3.OrthogonalFamilyKernel",
+      "Zetahyperbolic.Section3.MomentDeterminacy",
+      "Zetahyperbolic.Section5.ActualKreinDimensionObstruction",
+      "Zetahyperbolic.Section6.BetaHarmonicIndexObstruction",
+      "Zetahyperbolic.Section6.TriplePoleGeneralCancellation",
+      "Zetahyperbolic.Section3.MixedMomentAllOrders",
+      "Zetahyperbolic.Section3.ExponentialMoment",
+      "Zetahyperbolic.Section6.TriplePoleOriginCoefficient",
+      "Zetahyperbolic.Section6.BetaOneMoments",
+      "Zetahyperbolic.Section3.MomentAndreief",
+      "Zetahyperbolic.Section3.MomentProductSupport",
+      "Zetahyperbolic.Section3.ActualMixedMinors",
+      "Zetahyperbolic.Section3.SymmetricSquareRoot",
+      "Zetahyperbolic.Section3.Theorem33",
+      "Zetahyperbolic.Section6.BetaOddMoments",
+      "Zetahyperbolic.Section6.BetaOddGram",
+      "Zetahyperbolic.Section6.BetaOddEta",
+      "Zetahyperbolic.Section3.PositiveMomentMinors",
+      "Zetahyperbolic.Section6.BetaEtaZeta",
+      "Zetahyperbolic.Section6.BetaOddTotalPositivity",
+      "Zetahyperbolic.Section5.BetaBeukersMoments",
+      "Zetahyperbolic.Section5.BetaBeukersSpectrum",
+      "Zetahyperbolic.Section5.BeukersIntegralPencil",
+      "Zetahyperbolic.Section6.BeukersDenominator",
+      "Zetahyperbolic.Section6.BeukersSimultaneous"
     ],
     "Zetahyperbolic.Section3.OrthogonalFamilyKernel": [
       "Zetahyperbolic.Section3.PrintedMomentMeasure"
@@ -697,6 +721,129 @@
       "Zetahyperbolic.Section2.RationalFunctionals",
       "Mathlib.Algebra.Field.GeomSum",
       "Mathlib.Algebra.Algebra.Hom.Rat"
+    ],
+    "Zetahyperbolic.Section3.MomentDeterminacy": [
+      "Zetahyperbolic.Section3.MomentSquareRoot",
+      "Mathlib.Probability.Moments.MGFAnalytic",
+      "Mathlib.MeasureTheory.Measure.CharacteristicFunction"
+    ],
+    "Zetahyperbolic.Section5.ActualKreinDimensionObstruction": [
+      "Zetahyperbolic.Section5.BeukersPolynomialIntegral",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas"
+    ],
+    "Zetahyperbolic.Section6.BetaHarmonicIndexObstruction": [
+      "Mathlib.Tactic",
+      "Mathlib.NumberTheory.Padics.PadicVal.Basic"
+    ],
+    "Zetahyperbolic.Section6.TriplePoleGeneralCancellation": [
+      "Zetahyperbolic.Section6.TriplePoleCancellation"
+    ],
+    "Zetahyperbolic.Section3.MixedMomentAllOrders": [
+      "Zetahyperbolic.Section3.ShiftedMomentPositivity",
+      "Mathlib.Algebra.Polynomial.RuleOfSigns",
+      "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+      "Mathlib.LinearAlgebra.Vandermonde",
+      "Mathlib.Topology.Instances.Matrix",
+      "Mathlib.Topology.Order.IntermediateValue",
+      "Mathlib.Data.Fin.Tuple.Sort"
+    ],
+    "Zetahyperbolic.Section3.ExponentialMoment": [
+      "Zetahyperbolic.Section3.MomentGrowth",
+      "Zetahyperbolic.Section3.MomentSquareRoot",
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.Series",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+    ],
+    "Zetahyperbolic.Section6.TriplePoleOriginCoefficient": [
+      "Zetahyperbolic.Section6.TriplePoleGeneralCancellation"
+    ],
+    "Zetahyperbolic.Section6.BetaOneMoments": [
+      "Mathlib.Analysis.Real.Pi.Leibniz",
+      "Mathlib.Analysis.Real.Pi.Irrational",
+      "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+      "Mathlib.Tactic"
+    ],
+    "Zetahyperbolic.Section3.MomentAndreief": [
+      "Mathlib"
+    ],
+    "Zetahyperbolic.Section3.MomentProductSupport": [
+      "Mathlib"
+    ],
+    "Zetahyperbolic.Section3.ActualMixedMinors": [
+      "Zetahyperbolic.Section3.MixedMomentAllOrders",
+      "Zetahyperbolic.Section3.MomentAndreief",
+      "Zetahyperbolic.Section3.MomentProductSupport",
+      "Zetahyperbolic.Section3.MomentSquareRoot"
+    ],
+    "Zetahyperbolic.Section3.SymmetricSquareRoot": [
+      "Zetahyperbolic.Section3.MomentSquareRoot",
+      "Zetahyperbolic.Section3.MomentDeterminacy",
+      "Zetahyperbolic.Section3.ExponentialMoment",
+      "Zetahyperbolic.Section3.PrintedMomentMeasure"
+    ],
+    "Zetahyperbolic.Section3.Theorem33": [
+      "Zetahyperbolic.Section3.ActualMixedMinors",
+      "Zetahyperbolic.Section3.SymmetricSquareRoot",
+      "Zetahyperbolic.Section3.SpectralInertia",
+      "Zetahyperbolic.Section3.PoleSigns",
+      "Zetahyperbolic.Section3.PrimitivePolynomial"
+    ],
+    "Zetahyperbolic.Section6.BetaOddMoments": [
+      "Zetahyperbolic.Section5.UnitLogMoments",
+      "Mathlib.Tactic"
+    ],
+    "Zetahyperbolic.Section6.BetaOddGram": [
+      "Zetahyperbolic.Section6.BetaOddMoments",
+      "Zetahyperbolic.Section3.MomentPositivity",
+      "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+      "Mathlib.LinearAlgebra.Matrix.Rank"
+    ],
+    "Zetahyperbolic.Section6.BetaOddEta": [
+      "Zetahyperbolic.Section6.BetaOddMoments",
+      "Zetahyperbolic.Section6.BetaOneMoments"
+    ],
+    "Zetahyperbolic.Section3.PositiveMomentMinors": [
+      "Zetahyperbolic.Section3.MixedMomentAllOrders",
+      "Zetahyperbolic.Section3.MomentAndreief",
+      "Zetahyperbolic.Section3.MomentProductSupport"
+    ],
+    "Zetahyperbolic.Section6.BetaEtaZeta": [
+      "Zetahyperbolic.Section6.BetaOddEta",
+      "Zetahyperbolic.Section2.Moments"
+    ],
+    "Zetahyperbolic.Section6.BetaOddTotalPositivity": [
+      "Zetahyperbolic.Section6.BetaOddGram",
+      "Zetahyperbolic.Section3.PositiveMomentMinors"
+    ],
+    "Zetahyperbolic.Audit": [
+      "Zetahyperbolic",
+      "Lean.Util.CollectAxioms"
+    ],
+    "Zetahyperbolic.Section5.BetaBeukersMoments": [
+      "Zetahyperbolic.Section5.BeukersMomentSeries",
+      "Mathlib"
+    ],
+    "Zetahyperbolic.Section5.BetaBeukersSpectrum": [
+      "Zetahyperbolic.Section5.BetaBeukersMoments",
+      "Zetahyperbolic.Section5.BeukersPolynomialIntegral",
+      "Zetahyperbolic.Section5.RationalIndependence"
+    ],
+    "Zetahyperbolic.Section5.BeukersIntegralPencil": [
+      "Zetahyperbolic.Section5.BeukersDensity",
+      "Zetahyperbolic.Section5.BeukersRationalMoments",
+      "Zetahyperbolic.Section5.BeukersPolynomialIntegral",
+      "Zetahyperbolic.Section5.DualMoments",
+      "Mathlib"
+    ],
+    "Zetahyperbolic.Section6.BeukersDenominator": [
+      "Zetahyperbolic.Section5.DualMoments",
+      "Mathlib.Algebra.GCDMonoid.Finset",
+      "Mathlib.Data.Rat.Lemmas",
+      "Mathlib.Tactic"
+    ],
+    "Zetahyperbolic.Section6.BeukersSimultaneous": [
+      "Zetahyperbolic.Section5.BeukersIntegralPencil",
+      "Zetahyperbolic.Section6.BeukersDenominator"
     ]
   },
   "experimental_imports": [],
@@ -2690,6 +2837,38 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section2/TauPolynomialDifference.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/ActualMixedMinors.lean",
+      "source_sha256": "1be957745959ee6116eb5947a0f94d785c28e032ec4602e73994b24fed3af08c",
+      "git_blob_sha": "2ebeac43b4e768bae3904c2d2e90f15faa672921",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.ConcreteMoment.evaluation_det_transpose",
+          "kind": "theorem",
+          "line": 21,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.ConcreteMoment.mixed_moment_det_pos",
+          "kind": "theorem",
+          "line": 29,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.GRAM_ARBITRARY_MIXED_MINOR_POSITIVE",
+          "kind": "theorem",
+          "line": 79,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/ActualMixedMinors.lean"
     },
     {
       "path": "Zetahyperbolic/Section3/ActualNewtonTuran.lean",
@@ -5385,6 +5564,45 @@
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/DodgsonCondensation.lean"
     },
     {
+      "path": "Zetahyperbolic/Section3/ExponentialMoment.lean",
+      "source_sha256": "07e41aa2b1fe77e104684311daca3a370cec8b467267161728ff26a7a5d8d076",
+      "git_blob_sha": "b3a7d52b0c18c697c88ea059b666a0bd23cf92db",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.ExponentialMoment.factorial_ratio",
+          "kind": "theorem",
+          "line": 16,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.ExponentialMoment.summable_factorial_cosh_majorant",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.ExponentialMoment.integrable_exp_sqrt_of_factorial",
+          "kind": "theorem",
+          "line": 50,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.ConcreteMoment.actual_exp_sqrt_integrable",
+          "kind": "theorem",
+          "line": 112,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/ExponentialMoment.lean"
+    },
+    {
       "path": "Zetahyperbolic/Section3/FiniteAtomicHankel.lean",
       "source_sha256": "f7d41faa9a62033cc7b09b83e360f89afbcd04a023b157447467e3885088abf8",
       "git_blob_sha": "91ceb22df77132ee1cb087fcde59e701b2b0e9c1",
@@ -6508,6 +6726,115 @@
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MatrixCurveJacobi.lean"
     },
     {
+      "path": "Zetahyperbolic/Section3/MixedMomentAllOrders.lean",
+      "source_sha256": "ec16224415fb27ac7fee2477f371c7276fd52a86ec36f3b5b5e10e924520f35e",
+      "git_blob_sha": "ae8ae72ca1b01dba43ad5a89211748aa3e86c4ce",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.signVariations_lt_support_card",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.positive_roots_lt_support_card",
+          "kind": "theorem",
+          "line": 48,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.eq_zero_of_sparse_positive_roots",
+          "kind": "theorem",
+          "line": 55,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.sparsePolynomial",
+          "kind": "def",
+          "line": 75,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.sparsePolynomial_eval",
+          "kind": "theorem",
+          "line": 78,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.sparsePolynomial_coeff",
+          "kind": "theorem",
+          "line": 82,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.sparsePolynomial_support_card_le",
+          "kind": "theorem",
+          "line": 93,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.sparse_coefficients_eq_zero",
+          "kind": "theorem",
+          "line": 111,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_ne_zero",
+          "kind": "theorem",
+          "line": 125,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.geometric_vandermonde_det_pos",
+          "kind": "theorem",
+          "line": 146,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.interpolated_nodes",
+          "kind": "theorem",
+          "line": 164,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_pos",
+          "kind": "theorem",
+          "line": 191,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_product_pos",
+          "kind": "theorem",
+          "line": 226,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_product_nonneg",
+          "kind": "theorem",
+          "line": 261,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/MixedMomentAllOrders.lean"
+    },
+    {
       "path": "Zetahyperbolic/Section3/MixedMomentTwo.lean",
       "source_sha256": "ffc789e3fe9758ebd97b5710ba3f712ae967678d202fb07ea83c1bce743d314d",
       "git_blob_sha": "6020bf92caf0b571e66ae15946e45df0260a061c",
@@ -6580,6 +6907,98 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MixedMomentTwo.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/MomentAndreief.lean",
+      "source_sha256": "587ca959c25330df3ce43522b0c577d946f92491bd2059f63080220df8802d5b",
+      "git_blob_sha": "1497b5b5f68726ed80c8610cadcc33b8f26393a4",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.evaluationMatrix",
+          "kind": "def",
+          "line": 19,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.pairingMatrix",
+          "kind": "def",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.det_mul_prod_expansion",
+          "kind": "theorem",
+          "line": 25,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.integrable_det_mul_prod",
+          "kind": "theorem",
+          "line": 36,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.integral_det_mul_prod",
+          "kind": "theorem",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.det_mul_det_expansion",
+          "kind": "theorem",
+          "line": 60,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.integrable_det_mul_det",
+          "kind": "theorem",
+          "line": 70,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentAndreief.integral_det_mul_det",
+          "kind": "theorem",
+          "line": 81,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/MomentAndreief.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/MomentDeterminacy.lean",
+      "source_sha256": "8c2948c6c771a00a5b2b9e86192639934faed0f742a281b9a9433af76d98bb3d",
+      "git_blob_sha": "677a0539dc9a4aa9f2dbefc99b2c2d6cbc291a6b",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.MomentDeterminacy.mgf_eventuallyEq_of_moments",
+          "kind": "theorem",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentDeterminacy.measure_eq_of_moments_of_exponential_neighbourhood",
+          "kind": "theorem",
+          "line": 38,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/MomentDeterminacy.lean"
     },
     {
       "path": "Zetahyperbolic/Section3/MomentGrowth.lean",
@@ -6721,6 +7140,38 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MomentPositivity.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/MomentProductSupport.lean",
+      "source_sha256": "ee3e34028b9866f97cf26e4f444e2cd76c896330bfcfee6516f34953a15364c6",
+      "git_blob_sha": "38937401944ab78aec3b5a7131d60ff44dd1e0ee",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.MomentProductSupport.pi_ae_pos",
+          "kind": "theorem",
+          "line": 12,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentProductSupport.pi_ne_zero",
+          "kind": "theorem",
+          "line": 17,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.MomentProductSupport.pi_ae_injective",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/MomentProductSupport.lean"
     },
     {
       "path": "Zetahyperbolic/Section3/MomentSquareRoot.lean",
@@ -7805,6 +8256,31 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/PoleSigns.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/PositiveMomentMinors.lean",
+      "source_sha256": "881af6ea3e071a4132c3a8047c988f3e5dabd03fa94585f7d3cc38e7f83867d2",
+      "git_blob_sha": "e157471c5a4b4166700512e0fc09b7fbb60e62f1",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.PositiveMomentMinors.evaluation_det_transpose",
+          "kind": "theorem",
+          "line": 21,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.PositiveMomentMinors.mixed_moment_det_pos",
+          "kind": "theorem",
+          "line": 29,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/PositiveMomentMinors.lean"
     },
     {
       "path": "Zetahyperbolic/Section3/PositiveMomentRealization.lean",
@@ -9294,6 +9770,231 @@
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/SymmetricAffinePencil.lean"
     },
     {
+      "path": "Zetahyperbolic/Section3/SymmetricSquareRoot.lean",
+      "source_sha256": "29418a58c6b382d5190717431e3769f7fff5cd7a59fba81af95fc5b2cea33e73",
+      "git_blob_sha": "206d4fc8bb189ea5c062d98c68a411eae875309a",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.symmetrize",
+          "kind": "def",
+          "line": 16,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.lift",
+          "kind": "def",
+          "line": 19,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.symmetrize_isFiniteMeasure",
+          "kind": "instance",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.lift_isFiniteMeasure",
+          "kind": "instance",
+          "line": 28,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.map_sq_symmetrize",
+          "kind": "theorem",
+          "line": 33,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.map_sq_lift",
+          "kind": "theorem",
+          "line": 44,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.neg_pow_even",
+          "kind": "theorem",
+          "line": 48,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.neg_pow_odd",
+          "kind": "theorem",
+          "line": 51,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integral_even_symmetrize",
+          "kind": "theorem",
+          "line": 54,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integral_odd_symmetrize",
+          "kind": "theorem",
+          "line": 67,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integrable_even_sqrt",
+          "kind": "theorem",
+          "line": 80,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integrable_pow_sqrt",
+          "kind": "theorem",
+          "line": 88,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integral_even_lift",
+          "kind": "theorem",
+          "line": 99,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.integral_odd_lift",
+          "kind": "theorem",
+          "line": 105,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.lift_moments_eq",
+          "kind": "theorem",
+          "line": 113,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.measure_eq_of_lift_exponential_neighbourhood",
+          "kind": "theorem",
+          "line": 131,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.lift_exponential_neighbourhood",
+          "kind": "theorem",
+          "line": 146,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.SymmetricSquareRoot.stieltjes_unique_of_factorial",
+          "kind": "theorem",
+          "line": 179,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.ConcreteMoment.actual_stieltjes_measure_unique",
+          "kind": "theorem",
+          "line": 203,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.PrintedMomentMeasure.printed_stieltjes_measure_unique",
+          "kind": "theorem",
+          "line": 225,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/SymmetricSquareRoot.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/Theorem33.lean",
+      "source_sha256": "01336d836df83e72f15db5ed8dc17cbf9dd555e37c28e844e42428ee6b2cbc21",
+      "git_blob_sha": "10600d6ed3fca6c41884823225658ad2057259c1",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.theorem_3_3_total_positivity_determinacy_signature",
+          "kind": "theorem",
+          "line": 17,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.theorem_3_3_weight_five_leading_sign",
+          "kind": "theorem",
+          "line": 36,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.primitivePolynomial_real_identity",
+          "kind": "theorem",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.spectralFactor_roots",
+          "kind": "theorem",
+          "line": 57,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.primitivePolynomial_real_roots",
+          "kind": "theorem",
+          "line": 71,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.theorem_3_3_weight_five_coefficient_sign",
+          "kind": "theorem",
+          "line": 99,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.card_filter_univ_map",
+          "kind": "theorem",
+          "line": 108,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.theorem_3_3_weight_five_root_multiplicity_counts",
+          "kind": "theorem",
+          "line": 122,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.theorem_3_3_weight_five",
+          "kind": "theorem",
+          "line": 135,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section3/Theorem33.lean"
+    },
+    {
       "path": "Zetahyperbolic/Section3/Unconditional.lean",
       "source_sha256": "cfb9b1879999f2180e73125efe5375e4c63a6a191745bfb5696e70f74b2f2d62",
       "git_blob_sha": "d1ebaefba38441a68e791ddd845235066d980ed1",
@@ -10274,6 +10975,389 @@
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/ActualDualSpectrum.lean"
     },
     {
+      "path": "Zetahyperbolic/Section5/ActualKreinDimensionObstruction.lean",
+      "source_sha256": "20995f98dd563adb741d21c5ecf950eb5da3accd9c385e7165af495e9e1b6c12",
+      "git_blob_sha": "5e682325ce2f9f6dc28e3ccd576f753ef5c48316",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.Beukers.rational_positive_negative_disjoint",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.actual_positive_negative_dimension_bound",
+          "kind": "theorem",
+          "line": 38,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.actual_integral_cones_require_twice_dimension",
+          "kind": "theorem",
+          "line": 52,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.actual_fixed_K_two_h_two_impossible",
+          "kind": "theorem",
+          "line": 67,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/ActualKreinDimensionObstruction.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section5/BetaBeukersMoments.lean",
+      "source_sha256": "548cd3d089b6b4cda4df4018d1c344a1d2871b6577505f00c854fcdab5d4bd5d",
+      "git_blob_sha": "baf43471eb8d9620bfa83c548956ec3efeea9806",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaValue",
+          "kind": "def",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaHarmonic",
+          "kind": "def",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_series_summable",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_even_tail_sum",
+          "kind": "theorem",
+          "line": 38,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_even_tail_summable",
+          "kind": "theorem",
+          "line": 56,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaDensity",
+          "kind": "def",
+          "line": 65,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaDensity_positive",
+          "kind": "theorem",
+          "line": 68,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaDensity_measurable",
+          "kind": "theorem",
+          "line": 78,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaMeasure",
+          "kind": "def",
+          "line": 82,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.integral_betaMeasure",
+          "kind": "theorem",
+          "line": 85,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.positiveTerm",
+          "kind": "def",
+          "line": 95,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.signedTerm",
+          "kind": "def",
+          "line": 99,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.positiveTerm_nonneg",
+          "kind": "theorem",
+          "line": 102,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.positiveTerm_integrable",
+          "kind": "theorem",
+          "line": 108,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.signedTerm_integrable",
+          "kind": "theorem",
+          "line": 118,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.positiveTerm_eq",
+          "kind": "theorem",
+          "line": 122,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_monomial_integrable",
+          "kind": "theorem",
+          "line": 131,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.monomial_integrable_betaMeasure",
+          "kind": "theorem",
+          "line": 157,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaDensity_moment_eq_tsum",
+          "kind": "theorem",
+          "line": 167,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.integral_positiveTerm",
+          "kind": "theorem",
+          "line": 193,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.integral_positiveTerm_le",
+          "kind": "theorem",
+          "line": 213,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.summable_integral_norm_signedTerm",
+          "kind": "theorem",
+          "line": 238,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.integral_betaDensity_moment_series",
+          "kind": "theorem",
+          "line": 253,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_diagonal_moment",
+          "kind": "theorem",
+          "line": 269,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.reciprocal_sum_three",
+          "kind": "theorem",
+          "line": 283,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_offdiagonal_moment",
+          "kind": "theorem",
+          "line": 292,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_offdiagonal_is_rational",
+          "kind": "theorem",
+          "line": 319,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.proposition_5_3_exact_moments",
+          "kind": "theorem",
+          "line": 328,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.proposition_5_3_actual_measure",
+          "kind": "theorem",
+          "line": 345,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersMoments.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section5/BetaBeukersSpectrum.lean",
+      "source_sha256": "baa62a8484ab6767907ad4a6eaf97512a7a39413acf9a8f38954e5ae9d7be9e1",
+      "git_blob_sha": "da9ffe05531e9a5832fe26166f579352cff42e22",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.coefficientPolynomialValue_polynomialCoefficients",
+          "kind": "theorem",
+          "line": 25,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.polynomial_slope_posDef",
+          "kind": "theorem",
+          "line": 37,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaConstant",
+          "kind": "def",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaConstant_swap",
+          "kind": "theorem",
+          "line": 49,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.beta_moment_eq_constant",
+          "kind": "theorem",
+          "line": 60,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaConstantMatrix",
+          "kind": "def",
+          "line": 70,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaConstantMatrix_symmetric",
+          "kind": "theorem",
+          "line": 74,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.fourth_pair_expansion",
+          "kind": "theorem",
+          "line": 88,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.fourth_pair_integrable",
+          "kind": "theorem",
+          "line": 102,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.integral_fourth_pair",
+          "kind": "theorem",
+          "line": 116,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaIntegralMatrix",
+          "kind": "def",
+          "line": 147,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaIntegralMatrix_eq",
+          "kind": "theorem",
+          "line": 151,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaIntegralPencil",
+          "kind": "def",
+          "line": 160,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaSpectralPencil",
+          "kind": "def",
+          "line": 165,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaIntegralPencil_eq_spectral",
+          "kind": "theorem",
+          "line": 173,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.betaIntegralPencil_derivative",
+          "kind": "theorem",
+          "line": 190,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaBeukers.proposition_5_3_integral_polynomial_hyperbolicity",
+          "kind": "theorem",
+          "line": 198,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersSpectrum.lean"
+    },
+    {
       "path": "Zetahyperbolic/Section5/BeukersDensity.lean",
       "source_sha256": "4b3a2a4f127a5b6f75b9756a887c1c00ae9ca7359170186cdb9baec3ae8f42cb",
       "git_blob_sha": "bc3d755c3068b1cd6d9066076321c45167bf862a",
@@ -10343,6 +11427,94 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/BeukersHilbertSchmidt.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section5/BeukersIntegralPencil.lean",
+      "source_sha256": "4bee4dc44e9c15d9ab3996cb2b1626ca45f5a872b7267087ea91c708688635e8",
+      "git_blob_sha": "7f63fac867527f548135f912f8f40426bb663c46",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.Beukers.density_integrable",
+          "kind": "theorem",
+          "line": 32,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.beukersMeasure",
+          "kind": "def",
+          "line": 40,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.integral_beukersMeasure",
+          "kind": "theorem",
+          "line": 43,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.monomial_integrable_beukersMeasure",
+          "kind": "theorem",
+          "line": 53,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.theorem_5_1_actual_measure",
+          "kind": "theorem",
+          "line": 64,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.coefficientEval",
+          "kind": "def",
+          "line": 79,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.polynomial_pair_integrable",
+          "kind": "theorem",
+          "line": 83,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.integral_polynomial_pair",
+          "kind": "theorem",
+          "line": 89,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.moment_eq_dualConstant",
+          "kind": "theorem",
+          "line": 94,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.polynomialMomentForm_eq_dualEntry",
+          "kind": "theorem",
+          "line": 105,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.integral_polynomial_pair_eq_dualEntry",
+          "kind": "theorem",
+          "line": 123,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BeukersIntegralPencil.lean"
     },
     {
       "path": "Zetahyperbolic/Section5/BeukersMomentSeries.lean",
@@ -11379,6 +12551,896 @@
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/UnitLogMoments.lean"
     },
     {
+      "path": "Zetahyperbolic/Section6/BetaEtaZeta.lean",
+      "source_sha256": "225faf8cf4eae4ded43ea3a95b17e9381b7a9592fd0c9bbdd10312efaade5184",
+      "git_blob_sha": "635cc3a24fc4cd70da0ba3404511a5dbdda0811c",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.zetaPartial",
+          "kind": "def",
+          "line": 17,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.zetaPartial_succ",
+          "kind": "theorem",
+          "line": 20,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.etaPartial_succ",
+          "kind": "theorem",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.eta_even_partial",
+          "kind": "theorem",
+          "line": 28,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.etaValue_eq_zeta",
+          "kind": "theorem",
+          "line": 46,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.etaValue_eq_riemannZeta_re",
+          "kind": "theorem",
+          "line": 66,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaEtaZeta.odd_moment_zeta",
+          "kind": "theorem",
+          "line": 71,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaEtaZeta.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaHarmonicIndexObstruction.lean",
+      "source_sha256": "5857a17e17733ebea983c5665229a76c7ba65e9b5034715f57fd128addaeb2df",
+      "git_blob_sha": "864ff3f81eb7ecd44c160c6d37eabef29f2c2574",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.oddHarmonic",
+          "kind": "def",
+          "line": 18,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.permitted_lower_index",
+          "kind": "theorem",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.lower_sum_contains_pole",
+          "kind": "theorem",
+          "line": 26,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.oddHarmonic_two_six",
+          "kind": "theorem",
+          "line": 29,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.lower_sum_not_eleven_integral",
+          "kind": "theorem",
+          "line": 33,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.betaTwoMoment",
+          "kind": "def",
+          "line": 38,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.betaTwoBasisDiagonal",
+          "kind": "def",
+          "line": 44,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.forty_one_leading_cancellation",
+          "kind": "theorem",
+          "line": 49,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.forty_one_diagonal_pole_drop",
+          "kind": "theorem",
+          "line": 53,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.odd_denominator_membership",
+          "kind": "theorem",
+          "line": 59,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.odd_denominator_membership_iff",
+          "kind": "theorem",
+          "line": 73,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "LeanPaper.BetaHarmonicIndexObstruction.lower_block_pole_iff",
+          "kind": "theorem",
+          "line": 85,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaHarmonicIndexObstruction.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddEta.lean",
+      "source_sha256": "383ebf613e51eeccca2cb36af1c1252b73a2945bbeb8546cd6ffbefce3b2738b",
+      "git_blob_sha": "8cdf42fbe557fd5ecbb7d5177e2c83ff5497c45b",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaOddEta.etaValue",
+          "kind": "def",
+          "line": 19,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddEta.odd_moment",
+          "kind": "theorem",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddEta.eta_ordered_limit",
+          "kind": "theorem",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddEta.etaValue_zero",
+          "kind": "theorem",
+          "line": 66,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaOddEta.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddGram.lean",
+      "source_sha256": "98969626491a1158ff46c0947b51c79dd4189f0200c8d4ff3ae1cc648bca62ce",
+      "git_blob_sha": "cfa05980c81c37920c485a7ce04c6723db099514",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.integrand_pos",
+          "kind": "theorem",
+          "line": 22,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.integrand_measurable",
+          "kind": "theorem",
+          "line": 29,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.weightedMeasure",
+          "kind": "def",
+          "line": 33,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.weightedMeasure_nullSingleton",
+          "kind": "instance",
+          "line": 36,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.weightedMeasure_nonzero",
+          "kind": "theorem",
+          "line": 41,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.momentMeasure",
+          "kind": "def",
+          "line": 52,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.momentMeasure_nonzero",
+          "kind": "theorem",
+          "line": 54,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.momentMeasure_nullSingleton",
+          "kind": "instance",
+          "line": 57,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.weighted_power",
+          "kind": "theorem",
+          "line": 72,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.integrable_moment",
+          "kind": "theorem",
+          "line": 77,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.integral_moment",
+          "kind": "theorem",
+          "line": 88,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.pencil",
+          "kind": "def",
+          "line": 100,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.actual_beta_gram_posDef",
+          "kind": "theorem",
+          "line": 104,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.actual_beta_gram_det_pos",
+          "kind": "theorem",
+          "line": 113,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.slope",
+          "kind": "def",
+          "line": 117,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.pencil_affine",
+          "kind": "theorem",
+          "line": 120,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.slope_outer_product",
+          "kind": "theorem",
+          "line": 126,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.slope_rank_one",
+          "kind": "theorem",
+          "line": 132,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaOddGram.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddMoments.lean",
+      "source_sha256": "23d09f9807699a969d71d8f3606842f65a331df45365384f8c398c8efea5b244",
+      "git_blob_sha": "1686c381a15d662c15cbe0cea6e723cdf2092ce1",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.unitMeasure",
+          "kind": "abbrev",
+          "line": 19,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.raw",
+          "kind": "def",
+          "line": 21,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.integrand",
+          "kind": "def",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment",
+          "kind": "def",
+          "line": 26,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.betaPartialSum",
+          "kind": "def",
+          "line": 28,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.etaPartialSum",
+          "kind": "def",
+          "line": 31,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.raw_integrable",
+          "kind": "theorem",
+          "line": 34,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.raw_integral",
+          "kind": "theorem",
+          "line": 37,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.raw_nonneg",
+          "kind": "theorem",
+          "line": 44,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.integrand_bounds",
+          "kind": "theorem",
+          "line": 49,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.integrand_integrable",
+          "kind": "theorem",
+          "line": 60,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment_bounds",
+          "kind": "theorem",
+          "line": 69,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment_pos",
+          "kind": "theorem",
+          "line": 85,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment_le",
+          "kind": "theorem",
+          "line": 88,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment_tendsto_zero",
+          "kind": "theorem",
+          "line": 93,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.moment_add_two",
+          "kind": "theorem",
+          "line": 97,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.even_moment",
+          "kind": "theorem",
+          "line": 111,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddMoments.beta_ordered_limit",
+          "kind": "theorem",
+          "line": 125,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaOddMoments.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOddTotalPositivity.lean",
+      "source_sha256": "e8d88f18461a1ca682c72de90c69e41b9266d5e0b47c3b5b57218e91f0bb253c",
+      "git_blob_sha": "6d3d2ee8e02cd6bd8511cbf0e6c2c4431c4b63d2",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.momentMeasure_isFiniteMeasure",
+          "kind": "instance",
+          "line": 17,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.momentMeasure_ae_pos",
+          "kind": "theorem",
+          "line": 21,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOddGram.actual_beta_mixed_minor_pos",
+          "kind": "theorem",
+          "line": 30,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaOddTotalPositivity.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BetaOneMoments.lean",
+      "source_sha256": "9e85ea98905eecefd1373c86c2da6e1d21024ed330aaac4274116ffc3e6066e5",
+      "git_blob_sha": "0635440abf56080ca33d54bc92868a2ee774f458",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.betaPartialSum",
+          "kind": "def",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.etaPartialSum",
+          "kind": "def",
+          "line": 28,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment",
+          "kind": "def",
+          "line": 32,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.integrand_continuous",
+          "kind": "theorem",
+          "line": 34,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_eq_open_integral",
+          "kind": "theorem",
+          "line": 40,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_zero",
+          "kind": "theorem",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.beta_ordered_limit",
+          "kind": "theorem",
+          "line": 50,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.beta_one_irrational",
+          "kind": "theorem",
+          "line": 55,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_one",
+          "kind": "theorem",
+          "line": 59,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_add_two",
+          "kind": "theorem",
+          "line": 77,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.even_moment",
+          "kind": "theorem",
+          "line": 93,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.odd_moment",
+          "kind": "theorem",
+          "line": 109,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_pos",
+          "kind": "theorem",
+          "line": 125,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_le",
+          "kind": "theorem",
+          "line": 135,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.moment_tendsto_zero",
+          "kind": "theorem",
+          "line": 147,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BetaOneMoments.eta_ordered_limit",
+          "kind": "theorem",
+          "line": 152,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BetaOneMoments.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BeukersDenominator.lean",
+      "source_sha256": "0b61afdca182296bf5f463e489a6525d9e45dcae1c443c0f4c1eab311b0acca5",
+      "git_blob_sha": "1b0fc9953e83874c72c1c3f14b4c11b95876b0f4",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.commonDenominator",
+          "kind": "def",
+          "line": 25,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.integerRationals",
+          "kind": "def",
+          "line": 26,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.commonDenominator_dvd",
+          "kind": "lemma",
+          "line": 28,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.commonDenominator_ne_zero",
+          "kind": "lemma",
+          "line": 34,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.nat_div_mem",
+          "kind": "lemma",
+          "line": 39,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.nat_mem",
+          "kind": "lemma",
+          "line": 44,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.harmonic_denominator",
+          "kind": "theorem",
+          "line": 48,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.difference_div_mem",
+          "kind": "lemma",
+          "line": 59,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.harmonic_difference_denominator",
+          "kind": "theorem",
+          "line": 75,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.dualConstant_seven_denominator",
+          "kind": "theorem",
+          "line": 86,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.BeukersDenominator.adjacent_dualConstant",
+          "kind": "theorem",
+          "line": 100,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersDenominator.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/BeukersSimultaneous.lean",
+      "source_sha256": "547ec61dd3cd43225471a782d7960dcd3abd849d5e68b250cf97952c3fa1b787",
+      "git_blob_sha": "8032f33447b19f439f1aa718e4f93db2c2b394b5",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.Beukers.adjacent_moment",
+          "kind": "theorem",
+          "line": 25,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.integral_norm_adjacent_moment",
+          "kind": "lemma",
+          "line": 35,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.summable_integral_norm_adjacent",
+          "kind": "lemma",
+          "line": 45,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedKernel",
+          "kind": "def",
+          "line": 53,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedKernel_eq_tsum",
+          "kind": "lemma",
+          "line": 56,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedKernel_integral",
+          "kind": "theorem",
+          "line": 77,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedKernel_integrable",
+          "kind": "theorem",
+          "line": 99,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedPolynomialKernel",
+          "kind": "def",
+          "line": 109,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedPolynomialKernel_eq_sum",
+          "kind": "theorem",
+          "line": 112,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedPolynomialKernel_integrable",
+          "kind": "theorem",
+          "line": 122,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.diagonalCoefficient",
+          "kind": "def",
+          "line": 132,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.linearCoefficient",
+          "kind": "def",
+          "line": 133,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.constantCoefficient",
+          "kind": "def",
+          "line": 134,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.harmonicSixCoefficient",
+          "kind": "def",
+          "line": 136,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.shiftedPolynomialKernel_integral",
+          "kind": "theorem",
+          "line": 139,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.polynomial_pair_integral_affine",
+          "kind": "theorem",
+          "line": 156,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousRationalPart",
+          "kind": "def",
+          "line": 167,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousRationalPart_eq_printed",
+          "kind": "theorem",
+          "line": 171,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousKernel",
+          "kind": "def",
+          "line": 220,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousKernel_eq",
+          "kind": "theorem",
+          "line": 225,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousKernel_integrable",
+          "kind": "theorem",
+          "line": 233,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousKernel_integral",
+          "kind": "theorem",
+          "line": 240,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.simultaneousRationalPart_denominator",
+          "kind": "theorem",
+          "line": 255,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.Beukers.theorem_6_2",
+          "kind": "theorem",
+          "line": 294,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean"
+    },
+    {
       "path": "Zetahyperbolic/Section6/CoefficientGramGrowth.lean",
       "source_sha256": "096c9716c249e521a786c2e24c01fd189a8bd1deb21ae75f888f696eb293bf42",
       "git_blob_sha": "8d9783da0fcb8dfeda7c29ef1273269995097c59",
@@ -11606,21 +13668,199 @@
         }
       ],
       "source_url": "https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section6/TriplePoleCancellation.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/TriplePoleGeneralCancellation.lean",
+      "source_sha256": "ad224d7c8bd0b2b003fc95bbfbb6c935f3f8784c164e3c62ca53905398aca4ba",
+      "git_blob_sha": "fe2b7eedf79a4d11e8465f7ab8f7de94dffcad84",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.numeratorTail",
+          "kind": "def",
+          "line": 18,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.denominatorTail",
+          "kind": "def",
+          "line": 21,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.regularFactor",
+          "kind": "def",
+          "line": 24,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.numerator_factor",
+          "kind": "theorem",
+          "line": 27,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.denominator_factor",
+          "kind": "theorem",
+          "line": 34,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.printedR_eq_cubic",
+          "kind": "theorem",
+          "line": 41,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.denominatorTail_zero_ne",
+          "kind": "theorem",
+          "line": 51,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.numeratorTail_zero_ne",
+          "kind": "theorem",
+          "line": 59,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.regularFactor_zero_ne",
+          "kind": "theorem",
+          "line": 70,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.regularFactor_continuousAt_zero",
+          "kind": "theorem",
+          "line": 79,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.printedR_div_cube_tendsto",
+          "kind": "theorem",
+          "line": 90,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.actual_leading_zero",
+          "kind": "theorem",
+          "line": 101,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.printedLeading_zero_eq_factorial",
+          "kind": "theorem",
+          "line": 111,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.printed_leading_formula_fails_all",
+          "kind": "theorem",
+          "line": 116,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/TriplePoleGeneralCancellation.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section6/TriplePoleOriginCoefficient.lean",
+      "source_sha256": "61c375142f6093e8142a50b99a707fa2f9b62731e6974bc07f74546302a351ea",
+      "git_blob_sha": "8c871765b1530c8518f7e5f1f49a4f187933e88a",
+      "new_file": true,
+      "source_changed": true,
+      "in_root_import_graph": true,
+      "declarations": [
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.denominatorTail_zero",
+          "kind": "theorem",
+          "line": 10,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.numeratorTail_succ_zero",
+          "kind": "theorem",
+          "line": 17,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.regularFactor_succ_zero",
+          "kind": "theorem",
+          "line": 38,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        },
+        {
+          "source_name": "ManuscriptChain.TriplePoleCancellation.printedR_succ_div_cube_tendsto",
+          "kind": "theorem",
+          "line": 49,
+          "status": "completed",
+          "identity_note": "Source declaration index; private/generated environment names are audited by Lean."
+        }
+      ],
+      "source_url": "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/TriplePoleOriginCoefficient.lean"
     }
   ],
   "verification_evidence": {
-    "run_id": 40321257752,
-    "job_id": 121566462325,
-    "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
-    "tested_merge_commit": "fb6483293712b87b06e46be8c521314ddae2ba0f",
+    "source_commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+    "tested_merge_commit": "380ede6497804267869133ed931fdca8e02099bc",
+    "run_id": 40331258877,
+    "job_id": 121600954631,
     "main_integration": false,
     "observed_axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
     ],
-    "declarations_checked": 2292,
-    "theorems_checked": 1888
+    "theorems_checked": 2282,
+    "declarations_checked": 2735
   },
-  "declaration_count_note": "Lexical named source declarations; generated/private environment declarations are counted separately by the Lean audit."
+  "declaration_count_note": "Lexical source index only; exact generated/private theorem and declaration counts come from the Lean environment audit in verification_evidence.",
+  "historical_verification_evidence": [
+    {
+      "run_id": 40321257752,
+      "job_id": 121566462325,
+      "source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+      "tested_merge_commit": "fb6483293712b87b06e46be8c521314ddae2ba0f",
+      "main_integration": false,
+      "observed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations_checked": 2292,
+      "theorems_checked": 1888
+    },
+    {
+      "source_commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+      "tested_merge_commit": "ce62e5b2e630784cddd1895201425f1b5c57bad3",
+      "run_id": 40328869101,
+      "job_id": 121592645513,
+      "main_integration": false,
+      "observed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "theorems_checked": 2149,
+      "declarations_checked": 2579
+    }
+  ]
 }

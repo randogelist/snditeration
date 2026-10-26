@@ -1,5 +1,46 @@
 # Formalization corrections and verification record
 
+Current verified destination source: `0672896955e5dc7f7f9b9a0f5340c59e69f0890b`, CI `40331258877`. **13/45 whole originals are verified on PR39; 9/45 are integrated into main.** The current 32-item obligation list is below; older sections retain their historical status at their own source/run checkpoints. Later evidence closes 3.3, 5.3 and 6.2 without rewriting those checkpoints.
+
+Completed whole originals: 2.2, 2.3, 2.4, 2.5, 3.1, 3.3, 3.8, 4.2, 4.3, 5.1, 5.3, 5.4, 6.2. Corrected 3.2/3.6 and partial/refuted statements remain separate.
+
+| Remaining original | Precise remaining obligation or repair |
+| --- | --- |
+| 3.2 | Use the separately certified corrected prefactor; the original cannot be proved unchanged. |
+| 3.4 | Replace the false original root-count assertion with a degree-sensitive statement or add explicit nonsingularity of each relevant principal slope; preserve generalized eigenvalue/nonzero-root distinctions. |
+| 3.5 | Prove the corrected I+tB resolvent fraction, determinant prefactor and cyclic/no-breakdown scope. |
+| 3.6 | Adopt the separately identified corrected theorem; finite support makes the original all-order strict determinant assertion impossible. |
+| 3.7 | Keep exact Turan/Newton inequalities separate; independently prove any family-specific nonvanishing with valid hypotheses. |
+| 3.9 | Construct correctly normalized analytic moments and full affine-pencil identification, keeping five listed characters distinct from universal character claims. |
+| 4.1 | Supply an effective real-exponent/index-selection interface and explicit actual-family onsets. |
+| 4.4 | Independently prove the cited changed-parameter arithmetic inputs, strict rate margins and effective onsets before exponent25687 or ζ5 irrationality. |
+| 4.5 | Prove all those inputs on the same normalization and coefficient cone; then invoke the existing conditional transfer. |
+| 4.6 | Prove an independent lower multiplier-rate estimate and actual potential/height limits, or state a separate corrected theorem. |
+| 4.7 | Discharge actual lattice premises from4.4/4.6 and supply squarefree-factor/leading coefficient arithmetic for root separation. |
+| 4.8 | Independently establish actual upper-cluster membership and rational approximation lower bounds; keep finite factor-product bounds separate. |
+| 5.2 | Revise the fixed-K cone quantifiers and prove sufficiently-large-degree definite subspaces with valid infinite-tail control. |
+| 5.6 | Repair the false continuity clauses, prove the inner-tail bound and surviving-pole valuation ranges; transfer the independently verified outer-integral component before claiming destination integration. |
+| 5.7 | Compute actual residues and endpoint indexing, then prove confluent unit-block congruences and lower-minor estimates. |
+| 6.1 | Prove the actual Jacobian/Mellin bridge and invertible local 2-by-2 reduction, then the determinant valuation/barrier; the companion single-entry result remains separate until transferred. |
+| 6.3 | Replay the exact certificate or construct a genuinely different restricted cone with certified tails; separately prove actual residue determinant nonvanishing. |
+| 6.4 | Prove boundary decay, integration by parts and coherent normalization, then actual positivity and rational coefficient identification. |
+| 6.5 | Use the calibrated6.4 pencil and verify nonzero determinant of its scaled reduction, with scaling valuation explicit. |
+| 6.6 | Prove uniform ratio bounds from the actual limiting highest coefficient, then construct the same polynomial pencil and independent arithmetic rates. |
+| 6.7 | Calibrate actual multiweight moments and absolute convergence, extend continuously, and separately prove cone and local valuation inputs. |
+| 6.8 | Prove4.5 for the actual fixed pair and independent Apéry input, then transfer with honest effective/existential threshold distinction. |
+| 6.9 | Recompute the noncancelled pole/residue rows and prove their actual congruences and determinant valuations. |
+| 6.10 | Prove actual limit identification and an appropriately directed upper decay estimate; preserve the verified finite bounds and conditional growth results. |
+| 6.11 | Prove exact distribution and selected-prime finite valuations with the same normalization before asymptotic growth or dyadic obstruction. |
+| 6.12 | Prove the finite actual Gram margin, explicit perturbation error and real rational selection algorithm plus local residue exclusions. |
+| 6.13 | Use corrected sign, prove locally uniform differentiated convergence and actual beta-pencil/root-count identification. |
+| 6.14 | Choose one actual unscaled functional and derive all scaling, pole and moment formulas before coupled density/arithmetic claims. |
+| 6.15 | Prove all-k Euler evaluations and quantitative transcendence/independence bounds, and establish or repair the claimed Pade/Christoffel root asymptotics. |
+| 6.16 | Build one coherent mixed weight, prove endpoint ratios/nonsingularity and all odd/dyadic multiplier bounds. |
+| 6.17 | Construct consistently normalized multiweight moments and infinite signed decomposition, then prove actual local determinant nonvanishing with corrected harmonic support. |
+| 6.18 | Resolve6.14 normalization, nonempty active beta indices and all rational residue/basis factors, then derive multiplier and restricted transfer. |
+
+## Historical correction entries and appended verification
+
 Verified repair-branch record, 26 October 2026. This document records changes to Lean proofs, newly connected formalization components, explicit corrections to false printed statements, and the remaining mathematical obligations. It does not alter the supplied 52-page manuscript dated 21 October 2026.
 
 **Latest verification:** [CI7 run 40321257752, job 121566462325](https://github.com/randogelist/snditeration/actions/runs/40321257752/job/121566462325) passed the full root build and project-wide transitive axiom audit. The final repair source head is [`67c962b74112df9f41afe1eb11f69392e7c84cb4`](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4); CI tested its synthetic PR merge checkout `fb6483293712b87b06e46be8c521314ddae2ba0f` against base `6b542a9b66c65b312018b567ff16d5e4eed35b13`. The build completed 8,840 jobs. The audit inspected 1,888 theorems among 2,292 project declarations and accepted only `propext`, `Classical.choice` and `Quot.sound`. The earlier successful CI5 certificate remains intact below.
@@ -223,3 +264,61 @@ CI7 completed the final practical full-project verification: the exact root buil
 The proof source stays on PR #39 under the no-merge/no-deletion lock. Documentation on main may cite the immutable branch certificate, but may not call it main source integration. Native Windows receipts, companion source receipts and the Linux CI5/CI7 certificates remain separate. Original 3.8 is complete on the repair branch, giving ten original whole-statement source certificates and nine main integrations; 5.2(1)+(2), corrected 3.6, the 3.4 corrections/components and the 6.9 refutation are separately classified. The next open original theorem remains 3.3 with arbitrary mixed-minor positivity and determinacy still missing. No finite-witness closure/admission evidence was supplied, so no `!!!` or `!!!!` status is granted.
 
 Source-audit snapshot SHA-256: `78806d24b0a8250d587dd138a596c661320c74c8de2058bdc196889c90f72064`.
+
+## Later continuation: actual determinacy, arbitrary minors and corrected local inputs
+
+This section is later evidence and does not replace the immutable CI5/CI7 receipts above. The exact new certificate is `cf32aeef35b5f7cb02b042f672ac9b519c56b25d`, [CI 40328869101](https://github.com/randogelist/snditeration/actions/runs/40328869101), job `121592645513`. It is PR39 source evidence; the branch is not merged into main. The earlier next-target description for 3.3 is superseded only by this independently compiled and audited continuation.
+
+| Affected item | Original problem and cause | Correction/proof supplied | Exact scope after verification |
+| --- | --- | --- | --- |
+| 3.3(1), arbitrary minors | Sparse/solid and 2×2 minors did not cover unrelated increasing row and column selections. A determinant-integral identity and its integrability premises were missing. | `MixedMomentAllOrders` proves generalized Vandermonde positivity using the sparse-polynomial root bound, a geometric-node evaluation and connectedness. `MomentAndreief` proves the all-order determinant integral identity by finite expansion and product integration. `MomentProductSupport` proves positivity and absence of collisions almost everywhere. `ActualMixedMinors` instantiates every premise for the actual moment measure. | Every finite minor of the actual zeta Gram matrix selected by arbitrary strictly increasing row/column maps is positive, with no supplied positivity, summability or determinant premise. |
+| 3.3(1), determinacy | Carleman divergence alone was not a proof of measure uniqueness. | The factorial bound yields exponential square-root integrability. An explicit symmetric square-root lift has matching even moments, zero odd moments and an exponential-integrability neighbourhood. Analytic MGF equality continues to the imaginary axis, characteristic-function uniqueness identifies the lifts, and squaring recovers the measures. | Uniqueness among all positive-half-line measures with the stated integrable moments. Finite competitor mass follows from its zeroth moment. `PrintedMomentMeasure` transfers the result to the literal manuscript density. The extra printed condition 2mN≤K is unnecessary for this proof. |
+| 3.3(2),(3) | A whole-item claim must retain the coefficient normalization and multiplicity-counted root clauses, not just the new analytic components. | `Theorem33` assembles the new measure/minor endpoints with the previously verified leading-sign, primitive-degree, factorization and inertia results. | Whole original 3.3 is complete on the identified PR source. Existing exact leading-sign and spectral evidence is preserved; main integration remains separate. |
+| 5.2(3) | At fixed K, the claimed positive and negative rational h-dimensional subspaces may exceed the dimension K+1. | `ActualKreinDimensionObstruction` proves disjointness and 2h≤K+1 for the actual rational coefficient form and its literal Beukers integral; K=h=2 is impossible. | Refutation of the fixed-K cone clause. A sufficiently-large-K revision would still need its own definite-subspace and infinite-tail proof. Exact 5.2(1),(2) remain complete; the false whole original is not counted. |
+| 6.9 | The printed leading triple-pole coefficient ignores numerator cancellation at zero. | `TriplePoleGeneralCancellation` proves R_n(t)=t³H_n(t) for every n≥1, with H continuous and nonzero at zero. `TriplePoleOriginCoefficient` computes H_(n+1)(0)=(n!)⁶. | Uniform cancellation and corrected local coefficient, extending the historical n=1 refutation. This supplies no unproved q-adic matrix-unit or whole-theorem valuation conclusion. |
+| 6.15 | The beta-one endpoint is conditionally convergent; an unordered real tsum is inappropriate. The all-k density and affine pencil needed actual calibration. | `BetaOneMoments` proves ordered beta-one/eta-one limits π/4 and log 2, actual initial integrals, all k=0 moments and beta-one irrationality. `BetaOddMoments`, `BetaOddEta` and `BetaEtaZeta` prove actual all-k density integrability, bounds, recurrence, all even/odd moments, ordered beta/eta calibration and the actual Riemann-zeta eta factor for k≥1. `BetaOddGram` constructs the weighted square-pushforward measure and rank-one affine slope. `PositiveMomentMinors` and `BetaOddTotalPositivity` prove every arbitrary mixed minor positive for that measure. | Exact analytic, total-positivity and rank-one components. No effective transcendence measure, all-k Euler evaluation, exterior asymptotic or whole original 6.15 is inferred. |
+| 6.17 | Two local denominator arguments use incorrect odd-harmonic cutoffs. | `BetaHarmonicIndexObstruction` replays exact q=11/q=41 counterchecks in the destination graph and proves the corrected odd-prime support cutoffs. | Refutations/corrected finite-index lemmas only. The actual multiweight pencil, signed infinite decomposition and determinant nonvanishing still need independent proofs. |
+
+The source changes contain no replacement axioms or proof placeholders. Every new result module is imported by the tested root; the audit checks transitive dependencies of every project declaration, including generated/private declarations. No `Experimental` import path is present. Native Windows evidence and companion-source provenance remain separate from this GitHub Actions certificate.
+
+Failed development runs are retained as failures: CI8 `40324078562` at `eeca9cd4edf0cd7f6119589a61476c695e4fb6d1`, CI9 `40324486564` at `4456c255ca1a91f1530355d80d4ae5396f3f761c`, and CI10 `40325097810` at `ff093e0b93d0e72242d6ca0390856aa019b909b4`. Repairs addressed Lean API qualification, finite-product permutation normalization, filter convergence and integral expansion; failed attempts are not certification evidence. Additional attempts and the final successful run are recorded in the new receipt.
+
+The next unresolved numbered original is 3.4, whose full-degree principal-root claim is false and therefore needs a corrected statement. The next still-open original without an established refutation is **3.7**: every individual intermediate centered coefficient must be shown nonzero for the actual family. Real-rootedness proves the strict Newton hierarchy and excludes adjacent zero coefficients, but does not exclude an isolated zero (for example, 1−Y²). The missing family-specific input cannot be supplied by generic distinctness.
+
+The remaining item-by-item obstacles, attempted routes and required repairs are in `FORMALIZATION_STATUS.json`. Chapters 4–6 still require actual arithmetic multiplier/valuation estimates, effective decay/height comparisons, consistent beta normalizations, valid cone constructions and quantitative asymptotics. None of this continuation proves ζ(5) or ζ(7) irrationality. There is no finite-witness closure/admission evidence for `!!!` or `!!!!`.
+
+## Verified destination transfer of original 5.3 and 6.2
+
+Source `0672896955e5dc7f7f9b9a0f5340c59e69f0890b`, [CI 40331258877](https://github.com/randogelist/snditeration/actions/runs/40331258877), job `121600954631`, independently verifies these transfers. The companion source is `7250b47ba4d20ba934e890966a9b77a559689cfd`, successful run `40327942655`; its separate certificate was inspected before transfer. The five destination modules adapt imports/namespaces and reuse existing proved integrals and rational-independence infrastructure. No new premise replaces an original conclusion.
+
+## Proposition 5.3: integrate the actual beta(4) Beukers measure and full pencil
+
+**Original destination gap.** The destination had the Mellin-log integrals, general Beukers polynomial infrastructure, rational-independence bridge and positive-slope spectral theorem, but no actual beta(4) density-to-moments-to-polynomial-pencil chain. A companion proof did not constitute destination integration.
+
+**Exact transferred scope.** Two new modules construct the literal positive density `(-log(x*y))^2/(6*(1+(x*y)^2))` on (0,1)^2, prove integrability of every required monomial, and identify the fourth-power diagonal moments with `beta(4)-H_(2k)^(beta,4)`. Off-diagonal moments equal the printed rational difference of weight-three harmonic sums divided by `12*(k-l)`. The beta value is its genuinely summable Dirichlet series, with finite tails proved from that same series.
+
+For every finite rational polynomial family `A : Fin h → Q[u]` of degree at most K, assuming exactly rational linear independence, the formalized functions are `A_i(x^4)`. Finite integral linearity identifies their actual integral matrix with the rational constant matrix plus beta(4) times the coefficient Gram matrix. The derivative is exactly that coefficient Gram matrix; rational independence proves its real positive definiteness. The induced polynomial determinant has exact degree h and every complex root is real. No positive-definiteness assumption on the beta integral bilinear form or additional real-independence hypothesis is used.
+
+**Provenance and adaptation.** Transferred from registered companion commit `7250b47ba4d20ba934e890966a9b77a559689cfd`, successful audited run `40327942655`. Source `LeanPaper/BetaBeukersMoments.lean` SHA-256 is `16e343150c46345bf73b736e9517fe9bc5d4a697f9391dd6e6bad42269667701`; source `LeanPaper/BetaBeukersSpectrum.lean` SHA-256 is `195bbed4a8a6bcae979e93bddffaa8421aff9bf16a96df64668591933dfca640`. Both hashes were checked against the certified source manifest. Companion and destination pin Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+The destination transfer replaces imports and namespaces with existing destination modules, reuses `coefficientPolynomialValue` in place of the identical companion `coefficientEval`, and adds the two short helper proofs for actual polynomial evaluation and rational-polynomial coefficient-Gram positivity. Mathematical statements and hypotheses are preserved. No old beta source was modified and no proof axiom or placeholder was added.
+
+### Theorem 6.2 — exact simultaneous Beukers functional
+
+## Original gap and cause
+
+The destination already proved the actual two-variable Beukers monomial moments and their finite polynomial bilinear extension, but did not connect the additional geometric denominator to the actual zeta-six tail or prove the printed rational correction's exact integer clearing. An abstract affine identity or an assumed denominator budget would not establish Theorem 6.2.
+
+## Source and correction
+
+Transferred the verified mathematical argument from registered companion source `randogelist/zetahyperbolic-axiom@7250b47ba4d20ba934e890966a9b77a559689cfd`, files `src/LeanPaper/BeukersIntegralPencil.lean`, `BeukersDenominator.lean`, and `BeukersSimultaneous.lean`. Companion compiler/audit evidence is run `40327942655`; it remains separate from destination evidence.
+
+Destination modules:
+
+- `Zetahyperbolic/Section5/BeukersIntegralPencil.lean`: constructs the actual weighted measure, identifies its integrals with the existing density integrals, and proves the integral-to-rational-pencil identity. Reuses the destination's existing `density_monomial_integrable`, `polynomial_product_integrable`, and `integral_polynomial_product_eq_momentForm` proofs instead of copying them. The two polynomial evaluators are definitionally identical finite coefficient sums.
+- `Zetahyperbolic/Section6/BeukersDenominator.lean`: proves the common denominator of harmonic sums and divided differences with `d_K = lcm(1,...,K)`, including `K=0`, and the exact `6*d_K^7` clearing.
+- `Zetahyperbolic/Section6/BeukersSimultaneous.lean`: proves absolute summability of the adjacent-moment series, justifies interchange with the actual integral, identifies the extra-denominator kernel with the actual zeta-six tail, and evaluates the single simultaneous integral for every integer coefficient vector and integer alpha/beta.
+
+The final `ManuscriptChain.Beukers.theorem_6_2` retains all printed quantifiers and the literal weighted-measure integral. `simultaneousRationalPart_eq_printed` separately proves equality with the manuscript's diagonal harmonic-seven, off-diagonal harmonic-six divided-difference, and linear harmonic-six correction, with the printed signs. `simultaneousRationalPart_denominator` proves membership in the integer image, not an assumed arithmetic premise. No target weakening, axioms, admissions, coefficient restrictions, or fixed-order specialization were introduced.
+
+Final destination verification: full root build 8,864 jobs; all-project audit 2,282 theorem declarations and 2,735 declarations; only propext, Classical.choice and Quot.sound. Root/import and remote source-blob readback checks pass. Whole originals are now 13/45 in verified sources and 9/45 integrated into main; 32 remain unresolved. No local Lean, merge or branch deletion occurred.

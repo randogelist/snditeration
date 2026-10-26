@@ -51,7 +51,7 @@ Original statement: **REPAIR; corrected `!!`**. [Source register](https://github
 
 ## 3.3 — Total positivity, leading sign, and universal signature
 
-Original statement: OPEN; component `!!`. [Source register](https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section3/MomentGrowth.lean).
+Original statement: OPEN in main; **exact `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/Theorem33.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -186,7 +186,7 @@ No research iteration registered; the original status above is preserved.
 
 ## 5.2 — Dual hyperbolicity and Krein-space decomposition of the two-variable $\zeta(7)$ pencil
 
-Original statement: REPAIR; component `!!`. [Source register](https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section5/KreinL2.lean).
+Original statement: REPAIR; parts(1),(2) and refutation `!!` on PR39. [Source register](https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section5/ActualKreinDimensionObstruction.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Original statement: REPAIR; component `!!`. [Source register](https://github.com
 
 ## 5.3 — Two-variable Beukers measure and dual pencil for $\beta(4) = L(4, \chi_{-4})$
 
-Original statement: OPEN; source partial. [Source register](https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md).
+Original statement: OPEN in main; **exact `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersSpectrum.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -237,7 +237,7 @@ Original statement: OPEN. [Source register](https://github.com/randogelist/sndit
 
 ## 6.2 — Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead
 
-Original statement: OPEN; source partial. [Source register](https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md).
+Original statement: OPEN in main; **exact `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -300,7 +300,7 @@ Original statement: OPEN. [Source register](https://github.com/randogelist/sndit
 
 ## 6.9 — Triple-pole and multi-weight Hankel determinants
 
-Original statement: REPAIR; exact leading-coefficient refutation !! on PR39. [Source register](https://github.com/randogelist/snditeration/blob/67c962b74112df9f41afe1eb11f69392e7c84cb4/Zetahyperbolic/Section6/TriplePoleCancellation.lean).
+Original statement: REPAIR; **uniform refutation/corrected local coefficient `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/TriplePoleOriginCoefficient.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -354,7 +354,7 @@ Original statement: OPEN. [Source register](https://github.com/randogelist/sndit
 
 ## 6.15 — Arithmetic transcendence, strictly positive one-variable measure, and rank-one Padé pencil for $\beta(2k+1)$ across all $k\ge 0$
 
-Original statement: REPAIR / OPEN; source partial. [Source register](https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md).
+Original statement: OPEN; **analytic/rank-one components `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/BetaOddTotalPositivity.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -372,7 +372,7 @@ Original statement: OPEN; historical companion component `!!`. [Source register]
 
 ## 6.17 — Universal two-variable Beukers Zeta–Beta pencil, Krein decomposition, and $q$-adic non-vanishing
 
-Original statement: OPEN; historical companion component `!!`. [Source register](https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md).
+Original statement: OPEN; **local refutation/corrected support `!!` on PR39**. [Source register](https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section6/BetaHarmonicIndexObstruction.lean).
 
 | Attempt | Role / part | Stage | Work status | Relation | Source | Parents / supersedes |
 | --- | --- | --- | --- | --- | --- | --- |
