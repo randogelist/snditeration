@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.5",
+  "module_key": "P06_05",
+  "branch": "experiment/zetahyperbolic-p06-05_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_05.beta_harmonic_residual_p_integral",
+      "meaning": "p-integral residual after removing the single odd denominator equal to p.",
+      "dependencies": [
+        "6.4"
+      ]
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P06_05",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "67a8d48b0d1b716662abb6098fd512cf1c64db89f563ca8ecc6993b4822ba81d",
+    "Assumptions.json": "25bd00bf5e6fe36ee516eff16b2260a1f50e896a327e32175d577f1d8168be95",
+    "Target.md": "0b1f3e61a3d1ca3b2695df15f32a9a8bdb70263f6e39e1e7be64b7690aa351a0",
+    "Work.lean": "d8ac99af1eed2b2e323983478aaf5030f6961887aa93505e81ccfe6340142267"
+  },
+  "audit_sha256": "187215a0248080c8eff81d9a68f2b51753719d41bddaf052a48576ef0acf372a",
+  "original_statement_sha256": "888904bffc663e6118cb598e7347c944b936dcbd5360c2bc1a5ce8a39e51a7fb",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

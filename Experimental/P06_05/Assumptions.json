@@ -1,0 +1,38 @@
+{
+  "item_id": "6.5",
+  "namespace": "Experimental.P06_05",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-05_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.PoleDiagonalization.lagrangeCoefficientMatrix_eq_inverse"
+  ],
+  "dependency_ids": [
+    "2.5",
+    "5.3",
+    "6.4"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_05.beta_harmonic_residual_p_integral",
+      "meaning": "p-integral residual after removing the single odd denominator equal to p.",
+      "dependency_ids": [
+        "6.4"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "6.4 / finite β-harmonic arithmetic"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "No repair is silently substituted for the verbatim target.",
+  "coverage": "Encodes the exact finite β-harmonic sums, odd-pole denominator and q-dependent parameters. It does not introduce an unconstrained matrix in place of the missing actual β(4) pencil.",
+  "remaining": "First finish the actual one-variable β(4) functional/pencil object and its 6.4 Lagrange transport; prove residual arithmetic, valuations of actual pole factors and the off-diagonal integrality/diagonal dominance. Finally derive the determinant valuation including change-of-basis factors. No diagonal or final valuation is assumed.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 34,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}
