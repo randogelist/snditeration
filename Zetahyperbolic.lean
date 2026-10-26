@@ -71,3 +71,4 @@ import Zetahyperbolic.Section5.BeukersRationalMoments
 import Zetahyperbolic.Section4.ComplexComparison
 import Zetahyperbolic.Section4.TransferComplete
 import Zetahyperbolic.Section4.EffectiveBudget
+import Zetahyperbolic.Section4.AlgebraicHeight
