@@ -1,0 +1,47 @@
+{
+  "paper_item": "3.2",
+  "alternative_target": "For every real s>1 and admissible actual parameter tuple, use the density with prefactor 2(2π)^(s−1)/Γ(s); establish its actual positive Gram pencil, nonsingular slope, exact determinant degree, real roots and coincidence with the odd-integer construction.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Replace the printed prefactor, which differs by π/2. Keep the corrected result separate from the literal original.",
+  "prerequisites": [
+    "2.5",
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Attach the existing corrected ContinuousPencil/ContinuousDensity declarations and their exact historical evidence to the alternative target; any new wrappers require their own verification."
+  ],
+  "correction_gate": "No proof of the printed prefactor is claimed.",
+  "source_paths": [
+    "Zetahyperbolic/Section3/ContinuousPencil.lean",
+    "Zetahyperbolic/Section3/ContinuousDensity.lean"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-02_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-02_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-02_construction",
+  "original_snapshot_commit": "7d55c45aa7facaf52a46968405db33d27d208d11",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section3/ContinuousPencil.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/ContinuousPencil.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/ContinuousDensity.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/ContinuousDensity.lean"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
