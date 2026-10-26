@@ -1,0 +1,179 @@
+{
+  "schema": "zetahyperbolic-audited-crossings-v1",
+  "created": "2026-10-26",
+  "purpose": "Machine-readable proof-audited component crossings, not complete manuscript certifications",
+  "manuscript_printed_items_total": 45,
+  "whole_printed_items_preexisting_complete": 7,
+  "whole_printed_items_newly_completed": 0,
+  "evidence": {
+    "source_repository": "randogelist/zetahyperbolic-axiom",
+    "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+    "compiler": "Lean 4.33.0",
+    "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "linux_ci_url": "https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40188664869",
+    "compiled_modules": 219,
+    "passed_modules": 219,
+    "axiom_audit_accepted": true
+  },
+  "local_main_ported": false,
+  "entries": [
+    {
+      "paper_item": "3.7",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ConsecutiveDerivativeZeros",
+      "lean_declarations": [
+        "LeanPaper.ConsecutiveDerivativeZeros.actual_centered_consecutive_nonvanishing",
+        "LeanPaper.ConsecutiveDerivativeZeros.consecutive_taylor_nonvanishing"
+      ],
+      "source_sha256": "6e9ca7d7c608322ae865716c06c6bed9cfb288c83ab980d62fffe117c3c854f4",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ConsecutiveDerivativeZeros.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "no two adjacent centered coefficients vanish; not all coefficients individually nonzero"
+    },
+    {
+      "paper_item": "3.7",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.DerivativeDistinctRoots",
+      "lean_declarations": [
+        "LeanPaper.DerivativeDistinctRoots.iterated_derivative_hasDistinctRoots"
+      ],
+      "source_sha256": "d53eccf811aba5a6c2281924b6340b26aaa1d7bf4ee5307ad25a2487ca612414",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/DerivativeDistinctRoots.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "two distinct roots exist at eligible derivative order; does not prove all roots simple"
+    },
+    {
+      "paper_item": "4.4",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "PaperChain.Stage05AdjacentDriftBridge",
+      "lean_declarations": [
+        "PaperChain.stage05_affine_original_adjacent_log_ratio",
+        "PaperChain.stage05_zeta5_irrational_if_adjacent_energy_drift"
+      ],
+      "source_sha256": "240b88567ba72680039684688507bef6bfbfeb7f7356a208d67183154860fe0c",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/PaperChain/Stage05AdjacentDriftBridge.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "actual-family adjacent logarithm identity; irrationality result explicitly assumes negative drift"
+    },
+    {
+      "paper_item": "4.4,4.6,6.10",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "Theorem_4_1_Pole_Log_Slope",
+      "lean_declarations": [
+        "ManuscriptChain.PoleLogSlope.derivative_log_pole_split",
+        "ManuscriptChain.PoleLogSlope.finite_energy_pole_product"
+      ],
+      "source_sha256": "81298b7f37823e8b3bf2abdd31092763f9e2656d559515705128ddb13cbacd77",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/Theorem_4_1_Pole_Log_Slope.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "exact finite pole Vandermonde/residue log split, no asymptotic rate"
+    },
+    {
+      "paper_item": "4.6,6.10",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "PaperChain.Stage08PoleProductBridge",
+      "lean_declarations": [
+        "PaperChain.stage08_original_finite_pole_energy"
+      ],
+      "source_sha256": "5ee129cb9979fd6ec6cfbad1d3a56de22a0cefcfc732c20a46dff6b85270990a",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/PaperChain/Stage08PoleProductBridge.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "exact finite original-parameter potential/pole energy"
+    },
+    {
+      "paper_item": "5.2",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.DualWeightInvariance",
+      "lean_declarations": [
+        "PaperOrder.CoreAlgebra.dualEntry_derivative_weight_independent",
+        "PaperOrder.CoreAlgebra.dualDelta_top_coefficient_weight_independent"
+      ],
+      "source_sha256": "59dd99126fddd893b69c5adc4596b895cba7bbca13bf83c4790481047965d6a3",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/DualWeightInvariance.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "X-slope and top possible determinant coefficient weight-independent; can vanish if rows dependent"
+    },
+    {
+      "paper_item": "5.2",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.DualBasisCongruence",
+      "lean_declarations": [
+        "PaperOrder.CoreAlgebra.dualSlopeMatrix_rowChange",
+        "PaperOrder.CoreAlgebra.dualDelta_top_coeff_rowChange"
+      ],
+      "source_sha256": "d3322325193227927628a7e65ffb5e047449817afbbbbb160021f8e60d92d916",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/DualBasisCongruence.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "dual slope/top coefficient congruence under row basis change"
+    },
+    {
+      "paper_item": "5.2",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.DualStrictDiscriminant",
+      "lean_declarations": [
+        "PaperOrder.CoreAlgebra.dualTwoByTwo_discriminant_pos_of_nonproportional"
+      ],
+      "source_sha256": "edd907d7b7203689cda4a58a72f6bf0c57f58ce25be92ec49761ae9badf6eddb",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/DualStrictDiscriminant.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "strict 2x2 discriminant only under nonproportionality and positive-definite slope"
+    },
+    {
+      "paper_item": "6.15",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.BetaOneMoments",
+      "lean_declarations": [
+        "LeanPaper.BetaOneMoments.zeroth_moment",
+        "LeanPaper.BetaOneMoments.first_moment",
+        "LeanPaper.BetaOneMoments.eta_at_one_needs_removable_value"
+      ],
+      "source_sha256": "90fed68dff29385067f81e7e884eee12363e7909caefd762c01e6e4a507f058b",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/BetaOneMoments.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "exact beta-one integrals and correction to naive eta at s=1 substitution"
+    },
+    {
+      "paper_item": "6.15",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.UnitLogMoments",
+      "lean_declarations": [
+        "LeanPaper.UnitLogMoments.integral_pow_log",
+        "LeanPaper.UnitLogMoments.integrable_pow_log"
+      ],
+      "source_sha256": "6cb093af150118382615e72499281b53c23885abde8a06cfa52d23e28178ff5d",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/UnitLogMoments.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "generic Mellin logarithmic monomial integrals, not actual all-k beta integrals"
+    }
+  ]
+}
