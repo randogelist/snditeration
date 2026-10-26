@@ -23,6 +23,8 @@ Reuse does not upgrade a theorem's tier until the exact destination statement, c
 
 **2026-10-26 admission update:** Intake wave **P0-C (printed Proposition 4.3)** has been merged and verified independently via [PR #17](https://github.com/randogelist/snditeration/pull/17). Freeze `P04_03_COMPLEX_PADIC_ZERO_FREE_DISK`. All P0 intake closures **4.3, 2.3 and 5.4 are NOW MERGED**; next candidate 5.1 remains NOT STARTED. Prior source-only draft PR #16 is still just data; its previous P0-C research snapshots are now superseded by the compiled source on `main`. This source change resets the old fixed-source no-delta marker.
 
+**P0 COMPLETE — LOCAL PROOFS FROZEN:** All three previously companion-only complete printed items (2.3, 4.3, 5.4) are now compiled and axiom-audited in `snditeration/main`: PR #18, #17, #21, respectively. The exact original-item total remains **7/45, all seven locally verified**. The next proposed execution target is **Theorem 5.1**; no new branch was started during this merge cycle.
+
 ## 3. Actual gap-closing import waves
 
 | Order | Current paper gap | Source intake / precise capability | Acceptance gate / unresolved premise |

@@ -22,7 +22,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | # | Printed item | Title | Whole-item proof tier | Separate verified component / status |
 |---:|:---|:---|:---|:---|
 | 1 | ~~2.2~~ ✓ | Rational functional pullback | `!!` **A-Tier original** | — (whole item completed) |
-| 2 | ~~2.3~~ ✓ (local) | Reflection and difference identities for Tau | `!!` **A-Tier original** | `!!` **LOCAL PASS**: actual full τ-coordinate normalized analytic derivative, PR #18, CI 40262441761. Optional Mathlib totalized `RatFunc.eval` neighborhood API remains separate. |
+| 2 | ~~2.3~~ ✓ (local) | Reflection and difference identities for Tau | `!!` **A-Tier original** | `!!` Local canonical normalized analytic τ derivative, PR #18 CI PASS; totalized `RatFunc.eval` interoperability optional |
 | 3 | ~~2.4~~ ✓ | Canonical basis invariance | `!!` **A-Tier original** | — (whole item completed) |
 | 4 | ~~2.5~~ ✓ | Lagrange pole diagonalization | `!!` **A-Tier original** | — (whole item completed) |
 | 5 | ~~3.1~~ ✓ | Universal hyperbolicity and zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
@@ -45,7 +45,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` Exact **dual C Cᵀ nullspace = coefficient left kernel** and iff positive/row separation; 2D Beukers integral open |
 | 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` Finite 5.2(1), h=1 signed ζ7 examples, **summable infinite-mode algebraic Krein polarization**; actual Beukers integral and infinite cone tails open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 25 | ~~5.4~~ ✓ (local) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | `!!` **LOCAL PASS**: exact `(X-j)⁻¹-(X+j)⁻¹` τ-cancellation for every `j≥1`, including `j=1`, plus finite rational sums; PR #21, CI 40265986335. |
+| 25 | ~~5.4~~ ✓ (local) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | `!!` Local all-j even-pole cancellation including j=1 and finite linearity, PR #21 CI PASS 8773 jobs |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
 | 27 | 5.7 | Double-pole determinant for 1,zeta(5),zeta(6) | — **open as printed** | — **no verified positive subtheorem** |
 | 28 | 6.1 | Divided-difference valuation and intrinsic p^-6 barrier | — **open as printed** | — **no verified positive subtheorem** |
@@ -107,6 +107,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **P02.03 and P05.04 local closure (26 October 2026):** [PR #18](https://github.com/randogelist/snditeration/pull/18) (CI 40262441761) and [PR #21](https://github.com/randogelist/snditeration/pull/21) (CI 40265986335, 8,773 jobs, 1,011 audited project theorems) both merged into `main`, with their exact compiled theorem types and standard-only axioms. All seven original printed certified items are now **locally integrated**; the full manuscript remains **7/45**, and corrected/nonprinted stronger assertions are still separate.
 
+**26 October local-integration freeze:** Lemma **2.3** ([PR #18, CI PASS](https://github.com/randogelist/snditeration/actions/runs/40262441761)), Proposition **4.3** ([PR #17, CI PASS](https://github.com/randogelist/snditeration/actions/runs/40259783326)), and Theorem **5.4** ([PR #21, CI PASS](https://github.com/randogelist/snditeration/actions/runs/40265986335)) are now all imported, compiled and axiom-audited in `snditeration/main`. Consequently **all seven previously certified complete printed items are now locally A-Tier**, with the aggregate 7/45 unchanged. Theorem 5.4 merged at `f64b49b9` with **8,773 jobs**, four standard-only targeted axiom prints and a PASS placeholder scanner. The next candidate is **Theorem 5.1** (actual two-variable ζ(7) moments), not started.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
@@ -128,12 +130,12 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 | Crossed manuscript item | Verification | Remaining work |
 |---|---|---|
 | ~~Lemma 2.2~~ | **LOCAL PASS** (`snditeration/main`) | None for printed pullback |
-| ~~Lemma 2.3~~ | **CROSS-REPO PASS** (`zetahyperbolic-axiom/main`) | Port derivative-at-zero proof into `snditeration`; its stronger local all-RatFunc bridge remains separate |
+| ~~Lemma 2.3~~ | **LOCAL PASS** (`snditeration/main`, PR #18) | Canonical all-regular-domain analytic derivative passed; Mathlib totalized `RatFunc.eval` compatibility remains an optional stronger bridge |
 | ~~Theorem 2.4~~ | **LOCAL PASS** | None for canonical primitive basis invariance |
 | ~~Theorem 2.5~~ | **LOCAL PASS** | None for Lagrange pole diagonalization |
 | ~~Theorem 3.1~~ | **LOCAL PASS** | None for exact odd-weight hyperbolicity/sharp finite disk; this is **not** a quantitative ζ5 measure |
-| ~~Proposition 4.3~~ | **CROSS-REPO PASS** | Port the full `ℂ_p` norm-preserving zero-free disk theorem |
-| ~~Theorem 5.4~~ | **CROSS-REPO PASS** | Port actual even-pole cancellation, including `j=1` |
+| ~~Proposition 4.3~~ | **LOCAL PASS** (`snditeration/main`, PR #17) | Exact `ℂ_p` norm-preserving disk and primitive-polynomial specialization compiled and audited |
+| ~~Theorem 5.4~~ | **LOCAL PASS** (`snditeration/main`, PR #21) | Exact all-j cancellation, j=1 endpoint and finite rational linearity compiled/audited |
 
 **Aggregate count:** 7/45 complete printed items, comprising **7 certified locally, all previously companion-only proofs now integrated**. All seven are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
 
@@ -143,10 +145,10 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 
 | Priority | Exact unresolved paper endpoint | Concrete closure target |
 |:---|:---|:---|
-| P1 | **Lemma 2.3 local integration** | The printed identity is already audited in the companion repository. Port its proof and close the **stronger** `snditeration` canonical-coefficient/regular-RatFunc derivative identity. |
+| P1 | **Lemma 2.3 optional interoperability** | Printed identity and canonical normalized analytic derivative already locally PASS. Optional proof: eventual equality with Mathlib's totalized `RatFunc.eval` at the origin. |
 | P2 | **Theorem 3.3(1)** | All mixed Hankel minors strictly positive, plus the Carleman/Stieltjes determinacy proof; the sign/inertia clauses are already locally proved |
 | P3 | **Theorem 3.4; Corollary 3.5; Theorem 3.7** | Rank-sensitive interlacing and corrected Lanczos fraction remain open. All-order Dodgson and the corrected finite-rank reciprocal-moment laws are audited elsewhere, but require local intake as applicable; full Newton/Turán endpoint remains open. |
-| P4 | **Theorems 3.8–3.9; Proposition 4.2; local intake of 4.3 and 5.4** | Complete Christoffel–Darboux/Hurwitz/character identification and algebraic transfer. Proposition 4.3 and Theorem 5.4 are **already cross-branch A-Tier**; port and audit their exact proofs locally. |
+| P4 | **Theorems 3.8–3.9; Proposition 4.2** | Complete Christoffel–Darboux/Hurwitz/character identification and algebraic transfer. Propositions 4.3 and Theorem 5.4 are now *locally* PASS and frozen. |
 | P5 | **Theorems 4.4–4.8** | Real ζ(5) arithmetic multipliers and determinant decay, `‖B_K‖ ≤ exp(11.411 K)`, height/prime estimates, the asserted irrationality exponent **25687** and linear-form transfer |
 | P6 | **Sections 5–6** | Actual ζ(7)/β Beukers integrals, infinite Krein/tail bounds, prime sums, double/triple pole valuations, multiweight positivity and arithmetic conclusions |
 
