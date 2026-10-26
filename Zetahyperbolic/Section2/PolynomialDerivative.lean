@@ -24,7 +24,7 @@ theorem polynomialReal_iteratedDeriv (q : ℚ[X]) (n : ℕ) :
       (fun x : ℝ => aeval x (Polynomial.derivative^[n] q)) := by
   induction n with
   | zero =>
-      simp [iteratedDeriv_zero, polynomialReal]
+      rfl
   | succ n ih =>
       rw [iteratedDeriv_succ, ih]
       funext x
@@ -41,7 +41,7 @@ theorem polynomialReal_normalized_derivative (q : ℚ[X]) (n : ℕ) :
   simp only [zero_add, Nat.descFactorial_self, nsmul_eq_mul]
   push_cast
   have hn : (n.factorial : ℝ) ≠ 0 := by positivity
-  field_simp [hn]
+  field_simp [hn] <;> rfl
 
 /-- Actual real function of polynomial and pole coefficients. -/
 def coordinateReal (q : ℚ[X]) (c : ℤ →₀ ℚ) (x : ℝ) : ℝ :=
@@ -54,7 +54,7 @@ theorem coordinateReal_even_derivative
       (q.coeff (2*k) : ℝ) +
         ∑ r ∈ c.support, (c r : ℝ) * (-(r : ℝ)^(2*k+1))⁻¹ := by
   have hpoly : ContDiffAt ℝ (2*k : ℕ) (polynomialReal q) 0 := by
-    exact (Polynomial.contDiff_aeval q (2*k : WithTop ℕ∞)).contDiffAt
+    exact (Polynomial.contDiff_aeval (𝕜 := ℝ) q (2*k : WithTop ℕ∞)).contDiffAt
   have hreg (r : ℤ) (hr : r ∈ c.support) :
       ContDiffAt ℝ (2*k : ℕ)
         (fun x : ℝ => (c r : ℝ) * (x - (r : ℝ))⁻¹) 0 := by
