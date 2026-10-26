@@ -58,5 +58,6 @@ import Zetahyperbolic.Section2.PolynomialDerivative
 import Zetahyperbolic.Section2.RationalAnalyticBridge
 
 import Zetahyperbolic.Section5.UnitLogMoments
+import Zetahyperbolic.Section3.NewtonTuran
 
 import Zetahyperbolic.Section5.EvenPoleCancellation
