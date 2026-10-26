@@ -48,6 +48,8 @@ An exact SHA-256 sweep of all original user ZIP members found **810 `.lean` occu
 
 **Practical rule:** a future merge should compare source SHA-256 first, reuse a single canonical byte-identical source, and inspect exact theorem *types* and transitive axioms separately. Do not count each ZIP occurrence as a new mathematical result or compiler PASS.
 
+**2026-10-26 P04.02 merge receipt:** the full seven-module algebraic-number height-transfer chain from frozen PR #15 has now passed destination [PR #30](https://github.com/randogelist/snditeration/pull/30), [CI 40270563393](https://github.com/randogelist/snditeration/actions/runs/40270563393) and [main CI 40270854695](https://github.com/randogelist/snditeration/actions/runs/40270854695). Exact manuscript **conditional Proposition 4.2** is closed locally; actual ζ(5) inputs remain unproved. This does not supersede companion active derivation branches.
+
 ## 4. What cannot be closed by source merging
 
 - **4.4 ζ5 measure:** the printed family is `K=30n,N=3n,m=3`, and its crucial explicit multiplier/prime allocation, positive primitive value with *quadratic decay*, and operator norm bound remain unproved. Generic rational-polynomial estimates, finite witness candidates, and the separate Fauzan family do not discharge these actual-family inequalities.

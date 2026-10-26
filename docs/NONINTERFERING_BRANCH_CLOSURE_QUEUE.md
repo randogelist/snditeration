@@ -16,6 +16,8 @@ Integration-only mandate: close already-proved isolated modules without changing
 
 | [snditeration #27](https://github.com/randogelist/snditeration/pull/27) | **INTEGRATED** conditional complex-root polynomial comparison; merged `c00bb4cf5db3d450449d355a0523a09e68daf351`, [PR CI 40269076009 PASS](https://github.com/randogelist/snditeration/actions/runs/40269076009), [main CI 40269287634 PASS](https://github.com/randogelist/snditeration/actions/runs/40269287634). Does not prove actual ζ5 root gap. |
 
+| [snditeration #30](https://github.com/randogelist/snditeration/pull/30) | **INTEGRATED** — exact conditional printed 4.2 algebraic-number height transfer, 7 original source modules byte-identical, 10 audited declarations. [PR CI 40270563393](https://github.com/randogelist/snditeration/actions/runs/40270563393) and [main CI 40270854695](https://github.com/randogelist/snditeration/actions/runs/40270854695) PASS; merged `7775f7daf2cfb15d7a7614fd30371cc7a1392aed`. **Actual ζ5 rate, separation and height limsup remain hypotheses.** |
+
 ## Frozen source donors and protected parallel work
 
 | PR or branch | Restriction |
@@ -39,4 +41,4 @@ Integration-only mandate: close already-proved isolated modules without changing
 5. Verify merged source on main and its separate main CI. Then record exact subclaim closure without inflating whole printed theorem counts.
 6. Branch deletion is distinct from merge and is not implied. Preserve historical branch refs when they serve as proof evidence.
 
-Current complete printed manuscript count: 8/45 following the parallel agent’s fully certified Theorem 5.1 (PRs #24 and #26). Generic A-Tier supporting lemmas do not upgrade their whole parent theorem. This queue may be updated only upon a new independently verified merge or an explicit protected-work status change.
+Current complete printed manuscript count: 9/45 (includes exact printed conditional Proposition 4.2) following the parallel agent’s fully certified Theorem 5.1 (PRs #24 and #26). Generic A-Tier supporting lemmas do not upgrade their whole parent theorem. This queue may be updated only upon a new independently verified merge or an explicit protected-work status change.

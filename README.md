@@ -35,7 +35,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` Actual symmetric whitened/pole operator characteristic polynomial **and full root-multiset equality**; orthogonal CD kernel open |
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` Locally compiled conditional complex-root comparison, logarithmic index and effective-onset transfer (PRs #27/#28); actual ζ5 root gap and decay remain open |
-| 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
+| 15 | ~~4.2~~ ✓ (local) | Transfer for algebraic approximations | `!!` **A-Tier original (conditional)** | Exact conditional resultant/height transfer for all algebraic numbers of degree ≤d, including integer minimal-polynomial wrapper; PR #30 and local main CI PASS. **Family rate/separation inputs still open** |
 | 16 | ~~4.3~~ ✓ (local) | Ultrametric zero-free disk | `!!` **A-Tier original** | `!!` **LOCAL certified**: exact ℂ_p norm-preserving disk, plus actual manuscript primitive-polynomial specialization; center nonvanishing remains the theorem hypothesis |
 | 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Positive primitive integer ζ5 polynomial, actual 30n family, finite pole-log and adjacent log-ratio identities; **uniform decay/multiplier missing** |
 | 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | — **open as printed** | `!!` Finite positive determinant reweighting; coupled ζ5/ζ3 arithmetic open |
@@ -67,7 +67,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
 
-**Totals:** Eight fully verified exact printed items in the canonical repository (eight local, zero companion-only), **37 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
+**Totals:** Nine fully verified printed items as stated (including conditional Proposition 4.2) in the canonical repository (nine local, zero companion-only), **36 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
 **Historical evidence-mining checkpoint (before P05.01 merge):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **60**, but these phrases are **not** 60 independent or newly compiled Lean proofs. The indexed, hash-matched source-module coverage increased from 18 to **22**. The [historical convergence ledger](docs/CONVERGENCE_TRACKER.md) and [machine-readable 13-checkpoint series](docs/CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
 
@@ -115,6 +115,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **P05.01 final local certification:** [PR #24](https://github.com/randogelist/snditeration/pull/24) proves the exact ζ(7) moment integral; [PR #26](https://github.com/randogelist/snditeration/pull/26) adds the explicit witness that every offdiagonal integral is a rational number. [CI 40267850777](https://github.com/randogelist/snditeration/actions/runs/40267850777) and [CI 40268502325](https://github.com/randogelist/snditeration/actions/runs/40268502325) both passed with standard-only transitive axioms (8,783 and 8,784 jobs). Frozen [main receipt](https://github.com/randogelist/snditeration/blob/main/docs/P05_01_A_TIER_RECEIPT.json). **8/45** original printed items now certified; Theorem 5.2(2) infinite Krein decomposition remains next and unstarted.
 
+**P04.02 local exact conditional A-Tier closure (26 October 2026):** [PR #30](https://github.com/randogelist/snditeration/pull/30) merged as `7775f7daf2cfb15d7a7614fd30371cc7a1392aed`; [PR CI 40270563393](https://github.com/randogelist/snditeration/actions/runs/40270563393) and [post-merge main CI 40270854695](https://github.com/randogelist/snditeration/actions/runs/40270854695) **both PASS**. Seven donor source modules remain byte-identical and ten transitive axiom reports use only `propext`, `Classical.choice`, `Quot.sound`. The exact conditional printed algebraic-approximation theorem now includes its full minimal-polynomial/algebraic-number formulation. Its degree, quadratic decay, all-complex-root separation and height-limsup estimates remain **explicit hypotheses**, not results about the actual ζ(5) family.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
@@ -144,7 +146,7 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 | ~~Theorem 5.1~~ | **LOCAL PASS** (`snditeration/main`, PR #24) | Exact positive two-variable ζ(7) Beukers integral with diagonal/offdiagonal harmonic moments and 720 normalization; Theorem 5.2 remains separate |
 | ~~Theorem 5.4~~ | **LOCAL PASS** (`snditeration/main`, PR #21) | Exact all-j cancellation, j=1 endpoint and finite rational linearity compiled/audited |
 
-**Aggregate count:** 8/45 complete printed items, comprising **8 certified locally, all previously companion-only proofs now integrated**. All eight are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
+**Aggregate count:** 9/45 complete printed items as stated, comprising **9 certified locally, all previously companion-only proofs now integrated**. All eight are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
 
 **More work already finished at subclause level:** corrected Proposition 3.2; all-order Dodgson part of Theorem 3.4; corrected Corollary 3.6; strict Newton components of 3.7; effective *conditional* index selection with explicit onset; `CCᵀ` dual-pencil algebra; `6d_K^7` Beukers denominator; finite central-factorial identities; qualitative odd-beta transcendence; polynomial quotient-degree thresholds. **Do not** cross off their full original printed theorems. Full [source-level cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
