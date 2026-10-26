@@ -1,0 +1,31 @@
+{
+  "id": "P05_02",
+  "printed_id": "5.2",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P05_02",
+  "axioms": [
+    {
+      "full_name": "Experimental.P05_02.actual_density_memLp_two",
+      "mathematical_meaning": "The actual printed unit-square Beukers density is square-integrable; a Hilbert-Schmidt regularity input, not the L2 Krein identity or cone existence.",
+      "dependency_ids": [
+        "P05_01",
+        "HILBERT_SCHMIDT_KERNEL_BOUND"
+      ],
+      "status": "OPEN_EXPERIMENTAL_AXIOM"
+    }
+  ],
+  "dependency_ids": [
+    "P05_01",
+    "P05_02_FINITE_SPECTRUM",
+    "P05_02_MONOMIAL_KREIN"
+  ],
+  "coverage": "Only an analytic prerequisite for part (2). Parts (1) and (2) already have imported finite support; no whole printed theorem is asserted.",
+  "repair_gate": "Part (3) cannot be admitted with its literal universal fixed-K quantifiers: preserve the dimension gate 2h≤K+1 and require an explicitly repaired sufficiently-large-K statement, followed by genuine infinite-tail control. No cone-existence axiom is introduced.",
+  "object_interface_work": "Construct the L2 operator API, prove representative independence and boundedness; identify the finite coefficient form with the actual polynomial-product double integral; extend by density; establish signed-mode summability. Part (1) still needs the precise rational-polynomial-independence interface if not imported.",
+  "discharge_obligations": "Replace actual_density_memLp_two by an explicit logarithmic integral estimate for Beukers.density on the actual squareMeasure. Then separately discharge mode bounds and convergence; this assumption alone is not complete closure.",
+  "no_target_assumption": true,
+  "no_compilation_performed": true
+}

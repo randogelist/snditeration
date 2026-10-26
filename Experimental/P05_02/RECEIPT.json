@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "paper_item": "5.2",
+  "module_key": "P05_02",
+  "branch": "experiment/zetahyperbolic-p05-02_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P05_02.actual_density_memLp_two",
+      "meaning": "The actual printed unit-square Beukers density is square-integrable; a Hilbert-Schmidt regularity input, not the L2 Krein identity or cone existence.",
+      "dependencies": [
+        "P05_01",
+        "HILBERT_SCHMIDT_KERNEL_BOUND"
+      ]
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P05_02",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "d20af5b9b0b498684306f7b0b93bab438b285e561f30fa04d63afa88ede40dfb",
+    "Assumptions.json": "74b2692e3dce77765b5e12c44edb9fa2a46fa7bb7e3de969126984db5b29ee59",
+    "Target.md": "de0bbf1a20e1214a3b5483dbe0831264c410cae0b6441cf9bd1e7b035d1ff4b3",
+    "Work.lean": "dcedf310a2c85eb4e0feb510230fdb43d89e998f4740afb746a90b3114686ba9"
+  },
+  "audit_sha256": "765043b78c23a619d6832b7b16dafb1019d79d4bf90f3a9cbfc34ce6ab886d49",
+  "original_statement_sha256": "7e218edcc4d8f99810ec565308407663c60b9bbd949820303c8fcdc713077383",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
