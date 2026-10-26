@@ -47,12 +47,8 @@ theorem mixed_moment_det_pos (p : Real.Parameters) {n : ℕ}
     dsimp only [H, F, G]
     rw [evaluation_det_transpose, evaluation_det_transpose]
     exact MixedMomentAllOrders.generalized_vandermonde_product_pos e f he hf x hxi hxp
-  have huniv : 0 < ν Set.univ := by
-    dsimp only [ν]
-    rw [Measure.pi_univ]
-    apply Finset.prod_pos
-    intro i _
-    exact Measure.measure_univ_pos.mpr (momentMeasure_nonzero p)
+  have huniv : 0 < ν Set.univ :=
+    Measure.measure_univ_pos.mpr (MomentProductSupport.pi_ne_zero μ n (momentMeasure_nonzero p))
   have hsupport : ν (Function.support H)ᶜ = 0 := by
     apply (ae_iff).mp
     filter_upwards [hpositive] with x hx
@@ -61,14 +57,17 @@ theorem mixed_moment_det_pos (p : Real.Parameters) {n : ℕ}
     apply (integral_pos_iff_support_of_nonneg_ae (hpositive.mono (fun _ h => h.le)) hint).2
     rw [measure_of_measure_compl_eq_zero hsupport]
     exact huniv
+  have hm : MomentAndreief.pairingMatrix μ F G =
+      (fun i j : Fin n => ∫ t, t ^ (e i + f j) ∂μ) := by
+    ext i j
+    simp only [MomentAndreief.pairingMatrix, F, G, ← pow_add]
   have hid := MomentAndreief.integral_det_mul_det μ F G hfg
   have hmul : 0 < (n.factorial : ℝ) * Matrix.det (fun i j : Fin n =>
       ∫ t, t ^ (e i + f j) ∂momentMeasure p) := by
     change 0 < ∫ x, (MomentAndreief.evaluationMatrix F x).det *
       (MomentAndreief.evaluationMatrix G x).det ∂Measure.pi (fun _ : Fin n => μ) at hI
-    rw [hid] at hI
-    simpa only [MomentAndreief.pairingMatrix, F, G, μ,
-      ← pow_add, Fintype.card_fin] using hI
+    rw [hid, hm] at hI
+    simpa only [μ, Fintype.card_fin] using hI
   exact pos_of_mul_pos_right hmul (Nat.cast_nonneg _)
 
 end ManuscriptChain.ConcreteMoment

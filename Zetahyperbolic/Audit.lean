@@ -651,3 +651,9 @@ run_cmd do
 #print axioms ManuscriptChain.BetaOddEta.odd_moment
 #print axioms ManuscriptChain.BetaOddEta.eta_ordered_limit
 #print axioms ManuscriptChain.BetaOddEta.etaValue_zero
+#print axioms ManuscriptChain.PositiveMomentMinors.mixed_moment_det_pos
+#print axioms ManuscriptChain.BetaEtaZeta.etaValue_eq_zeta
+#print axioms ManuscriptChain.BetaEtaZeta.etaValue_eq_riemannZeta_re
+#print axioms ManuscriptChain.BetaEtaZeta.odd_moment_zeta
+#print axioms ManuscriptChain.BetaOddGram.momentMeasure_ae_pos
+#print axioms ManuscriptChain.BetaOddGram.actual_beta_mixed_minor_pos

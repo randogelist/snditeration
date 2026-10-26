@@ -134,3 +134,6 @@ import Zetahyperbolic.Section3.Theorem33
 import Zetahyperbolic.Section6.BetaOddMoments
 import Zetahyperbolic.Section6.BetaOddGram
 import Zetahyperbolic.Section6.BetaOddEta
+import Zetahyperbolic.Section3.PositiveMomentMinors
+import Zetahyperbolic.Section6.BetaEtaZeta
+import Zetahyperbolic.Section6.BetaOddTotalPositivity

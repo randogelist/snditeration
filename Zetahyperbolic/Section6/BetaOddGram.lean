@@ -23,7 +23,8 @@ theorem integrand_pos (k m : ℕ) {x : ℝ} (hx : x ∈ Ioo 0 1) :
     0 < integrand k m x := by
   have hlog : 0 < -Real.log x := neg_pos.mpr (Real.log_neg hx.1 hx.2)
   unfold integrand raw
-  positivity
+  exact div_pos (div_pos (mul_pos (pow_pos hx.1 _) (pow_pos hlog _))
+    (by positivity)) (by positivity)
 
 theorem integrand_measurable (k m : ℕ) : Measurable (integrand k m) := by
   unfold integrand raw
@@ -126,7 +127,7 @@ theorem slope_outer_product (N h : ℕ) : slope N h =
     Matrix.vecMulVec (fun i : Fin h => (-1:ℝ)^N * (-1:ℝ)^i.val)
       (fun j : Fin h => (-1:ℝ)^j.val) := by
   ext i j
-  simp only [slope, Matrix.vecMulVec, pow_add]
+  simp only [slope, Matrix.vecMulVec, Matrix.of_apply, pow_add]
 
 theorem slope_rank_one (N h : ℕ) (hh : 0 < h) : (slope N h).rank = 1 := by
   have hu : (slope N h).rank ≤ 1 := by

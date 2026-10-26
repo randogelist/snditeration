@@ -65,7 +65,11 @@ theorem eta_ordered_limit (k : ℕ) :
 /-- The k=0 endpoint is the removable eta value log 2. -/
 theorem etaValue_zero : etaValue 0 = Real.log 2 := by
   apply tendsto_nhds_unique (eta_ordered_limit 0)
-  simpa only [etaPartialSum, BetaOneMoments.etaPartialSum, Nat.mul_zero,
-    Nat.zero_add, pow_one] using BetaOneMoments.eta_ordered_limit
+  have he : etaPartialSum 0 = BetaOneMoments.etaPartialSum := by
+    funext r
+    simp only [etaPartialSum, BetaOneMoments.etaPartialSum, Nat.mul_zero,
+      Nat.zero_add, pow_one]
+  rw [he]
+  exact BetaOneMoments.eta_ordered_limit
 
 end ManuscriptChain.BetaOddEta
