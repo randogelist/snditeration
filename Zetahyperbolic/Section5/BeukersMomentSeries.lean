@@ -44,7 +44,8 @@ lemma logMonomial_nonneg (a j : ℕ) {x : ℝ} (hx : x ∈ Ioo 0 1) :
   have hh : 0 ≤ -_root_.Real.log x := neg_nonneg.mpr
     (_root_.Real.log_nonpos hx.1.le hx.2.le)
   unfold logMonomial
-  positivity
+  exact div_nonneg (mul_nonneg (pow_nonneg hx.1.le _) (pow_nonneg hh _))
+    (by positivity)
 
 lemma momentTerm_nonneg (r t n : ℕ) {z : ℝ × ℝ} (hz : z ∈ square) :
     0 ≤ momentTerm r t n z := by
@@ -77,7 +78,9 @@ lemma density_moment_eq_tsum (r t : ℕ) {z : ℝ × ℝ} (hz : z ∈ square) :
   have hxy1 : z.1*z.2 < 1 := by
     have hh := mul_lt_mul_of_pos_right hz.1.2 hz.2.1
     nlinarith [hz.2.2]
-  have hnorm : ‖z.1*z.2‖ < 1 := by simpa [Real.norm_eq_abs, abs_of_pos hxy0] using hxy1
+  have hnorm : ‖z.1*z.2‖ < 1 := by
+    rw [Real.norm_eq_abs, abs_mul, abs_of_pos hz.1.1, abs_of_pos hz.2.1]
+    exact hxy1
   have h := (hasSum_geometric_of_norm_lt_one hnorm).mul_left
     (z.1^r*z.2^t*(-_root_.Real.log (z.1*z.2))^5/720)
   have hterm : (fun n => momentTerm r t n z) =
@@ -88,7 +91,8 @@ lemma density_moment_eq_tsum (r t : ℕ) {z : ℝ × ℝ} (hz : z ∈ square) :
   rw [hterm]
   rw [h.tsum_eq]
   unfold density
-  ring
+  have hden : 1 - z.1 * z.2 ≠ 0 := ne_of_gt (sub_pos.mpr hxy1)
+  field_simp [hden] <;> ring
 
 /-- Exact separated moment of a single geometric-series term. -/
 theorem integral_momentTerm (r t n : ℕ) :

@@ -127,8 +127,12 @@ theorem direction_odd (p : Real.Parameters) :
     (rationalDerivativeMatrix_factorization p)
   simp only [Matrix.map_mul, Matrix.diagonal_map (map_zero (Rat.castHom ℝ)),
     Matrix.transpose_map] at h
-  simpa only [Rat.coe_castHom, rationalDerivativeMatrix, Real.derivativeMatrix,
-    Matrix.map] using h.symm
+  have hcast : (rationalDerivativeMatrix p).map (Rat.castHom ℝ) =
+      Real.derivativeMatrix p := by
+    ext i j
+    rfl
+  rw [hcast] at h
+  simpa only [Rat.coe_castHom, Matrix.map] using h.symm
 
 def center (s : ℝ) : ℝ := (riemannZeta (s : ℂ)).re
 

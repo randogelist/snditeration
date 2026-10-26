@@ -238,7 +238,7 @@ theorem partialFractionCoefficient_eq_iteratedDeriv (n : ℕ) (f : RationalDomai
 
 /-- Lemma 2.3 with the actual normalized analytic derivative at zero.
 Evaluation at any parameter gives the same scalar derivative. -/
-theorem rationalFunctional_difference_analytic (k : ℕ) (hk : 1 ≤ k)
+theorem rationalFunctional_difference_analytic_RatFunc_eval (k : ℕ) (hk : 1 ≤ k)
     (f : RationalDomain) (hf : (RatFunc.denom (f : RatFunc ℚ)).eval 0 ≠ 0)
     (z : ℝ) :
     (rationalFunctional k (rationalDifference f)).eval₂ (algebraMap ℚ ℝ) z =
