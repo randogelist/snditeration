@@ -1,0 +1,47 @@
+{
+  "item_id": "6.4",
+  "namespace": "Experimental.P06_04",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-04_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.PoleDiagonalization.lagrangeCoefficientMatrix_eq_inverse",
+    "ManuscriptChain.DualSpectral.coefficientSlope_posDef"
+  ],
+  "dependency_ids": [
+    "2.5",
+    "5.3"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_04.beta_kernel_boundary_decay",
+      "meaning": "Polynomial multiples of the first three derivatives of the exact sech kernel vanish at infinity.",
+      "dependency_ids": [
+        "5.3"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.3 analytic β-kernel layer"
+    },
+    {
+      "name": "Experimental.P06_04.beta_kernel_derivative_integrable",
+      "meaning": "Integrability of polynomial multiples of those derivatives on the positive half-line.",
+      "dependency_ids": [
+        "5.3"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.3 analytic β-kernel layer"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "Normalization/sign review remains mandatory: the verbatim formulas are recorded as targets, not asserted by the experimental axioms. Existing positive-slope spectral results do not calibrate the β-functional.",
+  "coverage": "Explicit odd-square denominator and both printed differential-weight expressions are encoded. This is only the kernel and pole-algebra input layer; no calibrated one-variable β(4) rational functional has been supplied in the active repository.",
+  "remaining": "Discharge derivative integrability and boundary terms; define the actual β series and one-variable rational functional; verify every normalization in the sech moment/partial-fraction formulas before calibration. Construct odd-pole Lagrange transport, signs and hyperbolicity from the actual functional. Do not assume the printed positive-weight identity.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 33,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}
