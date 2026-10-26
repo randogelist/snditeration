@@ -239,3 +239,8 @@ run_cmd do
 #print axioms ManuscriptChain.Spectral.comparisonRadius_pos
 #print axioms ManuscriptChain.Section4ComplexComparison.polynomial_comparison
 #print axioms ManuscriptChain.Section4ComplexComparison.integer_comparison
+
+#print axioms ManuscriptChain.Beukers.kreinSix_eq_signed
+#print axioms ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_bilinear
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
