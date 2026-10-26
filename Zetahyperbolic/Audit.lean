@@ -144,15 +144,20 @@ import Lean.Util.CollectAxioms
 run_cmd do
   let env ← Lean.getEnv
   let mut checked : Nat := 0
+  let mut declarations : Nat := 0
   for (name, info) in env.constants.toList do
-    if (`ManuscriptChain).isPrefixOf name && info.isTheorem then
-      checked := checked + 1
+    if (`ManuscriptChain).isPrefixOf name || (`PaperAdvances).isPrefixOf name ||
+        (`LeanPaper).isPrefixOf name then
+      declarations := declarations + 1
+      if info.isTheorem then checked := checked + 1
       for ax in ← Lean.collectAxioms name do
         unless [``propext, ``Classical.choice, ``Quot.sound].contains ax do
           throwError "Forbidden dependency {ax} in {name}"
   if checked == 0 then
     throwError "No project theorems found for dependency audit"
   Lean.logInfo m!"GOODWORKFLOWFRONTIER::AXIOM_ALLOWLIST::THEOREMS_CHECKED={checked}"
+  Lean.logInfo m!"AXIOM_AUDIT_DECLARATIONS={declarations}"
+  Lean.logInfo m!"AXIOM_AUDIT_ACCEPTED=ALL_PROJECT_DECLARATIONS"
 
 -- Proposition 4.3: exact ℤ_p, ℚ_p, ℂ_p statements and original integer polynomial.
 #print axioms PaperAdvances.Proposition4_3_PadicDisk.PROPOSITION_4_3_INTEGRAL_QPADIC
@@ -340,3 +345,44 @@ run_cmd do
 #print axioms ManuscriptChain.ContinuousWeight.direction_odd
 #print axioms ManuscriptChain.ContinuousWeight.pencil_odd
 #print axioms ManuscriptChain.ContinuousWeight.proposition_3_2_corrected
+
+-- Completion campaign: exact candidate declarations.
+#print axioms ManuscriptChain.ConcreteMoment.momentMeasure_ae_pos
+#print axioms ManuscriptChain.ConcreteMoment.shiftedMomentMeasure_nonzero
+#print axioms ManuscriptChain.ConcreteMoment.integrable_moment
+#print axioms ManuscriptChain.ConcreteMoment.integrable_shifted_moment
+#print axioms ManuscriptChain.ConcreteMoment.integral_shifted_moment
+#print axioms ManuscriptChain.ConcreteMoment.sparse_shifted_momentMatrix_posDef
+#print axioms ManuscriptChain.ConcreteMoment.sparse_shifted_moment_det_pos
+#print axioms ManuscriptChain.ConcreteMoment.solid_moment_det_pos
+#print axioms ManuscriptChain.gram_eq_moment
+#print axioms ManuscriptChain.GRAM_TRANSLATED_SPARSE_MINOR_POSITIVE
+#print axioms ManuscriptChain.GRAM_SOLID_MINOR_POSITIVE
+#print axioms ManuscriptChain.Hyperbolic.zeta_even_le_zeta_two
+#print axioms ManuscriptChain.Hyperbolic.integral_monomial_density_le_factorial
+#print axioms ManuscriptChain.Hyperbolic.integral_real_polynomial_density
+#print axioms ManuscriptChain.ConcreteMoment.moment_le_numerator_integral
+#print axioms ManuscriptChain.ConcreteMoment.integral_numerator_moment
+#print axioms ManuscriptChain.ConcreteMoment.moment_le_factorial
+#print axioms ManuscriptChain.ConcreteMoment.momentGrowthConstant_pos
+#print axioms ManuscriptChain.ConcreteMoment.factorial_majorant_le_power
+#print axioms ManuscriptChain.ConcreteMoment.carlemanConstant_pos
+#print axioms ManuscriptChain.ConcreteMoment.moment_le_carleman_power
+#print axioms ManuscriptChain.ConcreteMoment.carlemanTerm_lower_bound
+#print axioms ManuscriptChain.ConcreteMoment.carlemanSeries_not_summable
+#print axioms ManuscriptChain.ConcreteMoment.momentValue_pos
+#print axioms ManuscriptChain.ConcreteMoment.momentValue_strict_logConvex
+#print axioms ManuscriptChain.ConcreteMoment.momentRatio_strictMono
+#print axioms ManuscriptChain.ConcreteMoment.momentGapRatio_pos
+#print axioms ManuscriptChain.ConcreteMoment.momentGapRatio_succ
+#print axioms ManuscriptChain.ConcreteMoment.momentGapRatio_strictMono
+#print axioms ManuscriptChain.ConcreteMoment.mixed_moment_two_pos
+#print axioms ManuscriptChain.GRAM_MIXED_TWO_MINOR_POSITIVE
+
+#print axioms ManuscriptChain.Cauchy.actual_eigenvalue_count_interlacing
+#print axioms ManuscriptChain.Cauchy.actual_principal_positive_radius_antitone
+#print axioms ManuscriptChain.Dodgson.actual_polynomial_condensation
+#print axioms ManuscriptChain.Dodgson.actual_condensation_at_root
+#print axioms PaperAdvances.Corollary3_6_ExactFiniteRank.weighted_det_pos_iff_order_le_support
+#print axioms LeanPaper.ReciprocalRootMoments.manuscript_reciprocal_moments
+#print axioms LeanPaper.ReciprocalRootMoments.reciprocalHankel_det_pos_iff

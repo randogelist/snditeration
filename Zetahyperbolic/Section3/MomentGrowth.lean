@@ -158,3 +158,4 @@ theorem momentGrowthConstant_pos (p : Real.Parameters) : 0 < momentGrowthConstan
   exact (mul_pos_iff_of_pos_right (by positivity)).1 hproduct
 
 end ManuscriptChain.ConcreteMoment
+

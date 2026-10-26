@@ -82,10 +82,14 @@ theorem sparse_shifted_momentMatrix_posDef (p : Real.Parameters) (a : ℕ)
   have hpd := Moments.momentMatrix_posDef (shiftedMomentMeasure_nonzero p a)
     (fun i j : Fin d => integrable_shifted_moment p a (i.val + j.val))
   have hs := hpd.submatrix hchoose
-  convert hs using 1
-  ext i j
-  simp only [Matrix.submatrix_apply, Moments.momentMatrix, choose,
-    integral_shifted_moment, Nat.add_assoc]
+  have heq :
+      (fun i j : Fin r => ∫ t, t ^ (a + e i + e j) ∂momentMeasure p) =
+        (Moments.momentMatrix (shiftedMomentMeasure p a) d).submatrix choose choose := by
+    ext i j
+    simp only [Matrix.submatrix_apply, Moments.momentMatrix, choose,
+      integral_shifted_moment, Nat.add_assoc]
+  rw [heq]
+  exact hs
 
 /-- Strict positivity of every shifted sparse principal moment determinant. -/
 theorem sparse_shifted_moment_det_pos (p : Real.Parameters) (a : ℕ)
@@ -124,7 +128,16 @@ theorem GRAM_TRANSLATED_SPARSE_MINOR_POSITIVE
     0 < Matrix.det ((Real.gram p (Real.zeta p.weight)).submatrix
       (fun i => (⟨a + e i, ha i⟩ : Fin p.h))
       (fun j => (⟨b + e j, hb j⟩ : Fin p.h))) := by
-  simp only [Matrix.submatrix, gram_eq_moment p hp]
+  have heq :
+      (Real.gram p (Real.zeta p.weight)).submatrix
+        (fun i => (⟨a + e i, ha i⟩ : Fin p.h))
+        (fun j => (⟨b + e j, hb j⟩ : Fin p.h)) =
+        (fun i j : Fin r =>
+          ∫ t, t ^ (a + b + e i + e j) ∂ConcreteMoment.momentMeasure p) := by
+    ext i j
+    simpa only [Matrix.submatrix_apply, gram_eq_moment p hp,
+      Nat.add_assoc, Nat.add_left_comm, Nat.add_comm]
+  rw [heq]
   simpa only [Nat.add_assoc, Nat.add_left_comm, Nat.add_comm] using
     ConcreteMoment.sparse_shifted_moment_det_pos p (a + b) e he
 
@@ -141,3 +154,4 @@ theorem GRAM_SOLID_MINOR_POSITIVE (p : Real.Parameters) (hp : Real.Admissible p)
   exact gram_eq_moment p hp _ _
 
 end ManuscriptChain
+

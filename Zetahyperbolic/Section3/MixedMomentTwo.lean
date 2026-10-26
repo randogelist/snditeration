@@ -94,3 +94,4 @@ theorem GRAM_MIXED_TWO_MINOR_POSITIVE (p : Real.Parameters) (hp : Real.Admissibl
     (cols 0).val (cols 1).val (hrows (by decide)) (hcols (by decide))
 
 end ManuscriptChain
+

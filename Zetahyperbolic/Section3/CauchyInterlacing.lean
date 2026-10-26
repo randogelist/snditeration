@@ -30,8 +30,10 @@ theorem inclusion_congruence (choose : Fin r → Fin n) (A : Matrix (Fin n) (Fin
       A.submatrix choose choose := by
   unfold inclusionMatrix
   rw [Matrix.transpose_submatrix, Matrix.transpose_one]
-  rw [Matrix.one_submatrix_mul choose (Equiv.refl _)]
-  rw [Matrix.mul_submatrix_one (Equiv.refl _) choose]
+  change ((1 : Matrix (Fin n) (Fin n) ℝ).submatrix choose (Equiv.refl (Fin n))) * A *
+      ((1 : Matrix (Fin n) (Fin n) ℝ).submatrix (Equiv.refl (Fin n)) choose) = _
+  rw [Matrix.one_submatrix_mul choose (Equiv.refl (Fin n))]
+  rw [Matrix.mul_submatrix_one (Equiv.refl (Fin n)) choose]
   rfl
 
 theorem inclusion_injective (choose : Fin r → Fin n) (hchoose : Function.Injective choose) :
@@ -136,8 +138,9 @@ theorem eigenvalue_count_interlacing (p : Spectral.SymmetricAffinePencil n)
   have h := principal_signature_bounds choose hchoose (p.direction - t • p.base)
   have hs : (p.direction - t • p.base).submatrix choose choose =
       (principalPencil p choose).direction - t • (principalPencil p choose).base := rfl
+  have hp' : (principalPencil p choose).base.PosDef := hp.submatrix hchoose
   rw [hs, pencil_shifted_signature p hp,
-    pencil_shifted_signature _ (hp.submatrix hchoose)] at h
+    pencil_shifted_signature (principalPencil p choose) hp'] at h
   exact h
 
 /-- Successive principal sizes differ by at most one eigenvalue above every threshold. -/
@@ -158,6 +161,7 @@ theorem actual_eigenvalue_count_interlacing (p : Real.Parameters) (hp : Real.Adm
       {i | t < Spectral.actualEigenvalues (Real.manuscriptPencil p) i}.ncard ∧
     {i | t < Spectral.actualEigenvalues (Real.manuscriptPencil p) i}.ncard + r ≤
       {i | t < Spectral.actualEigenvalues (Principal.manuscriptPrincipalPencil p choose) i}.ncard + p.h :=
-  eigenvalue_count_interlacing _ (GRAM_POSITIVE p hp) choose hchoose t
+  eigenvalue_count_interlacing (Real.manuscriptPencil p) (GRAM_POSITIVE p hp) choose hchoose t
 
 end ManuscriptChain.Cauchy
+
