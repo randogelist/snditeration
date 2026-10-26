@@ -1,3 +1,7 @@
+# Iteration-catalog addendum
+
+[CHAIN_CATALOG.json](CHAIN_CATALOG.json) now indexes item/part/role/iteration independently of the immutable publication manifests. Multiple attempts may coexist. Existing branches are registered as i0001 by convention, not by a claim about recovered historical iteration numbering. Each new attempt has its own target and source record; explicit parent, supersession and dependency links never substitute for proof. Neither an iteration number, stage nor editorial selection grants a theorem tier. See the [guide](CHAIN_CATALOG_GUIDE.md).
+
 # Dual-chain addendum — 26 October 2026
 
 The original policy below describes the first publication snapshot. Current work uses paired `_prop_construction` and `_alt_construction` branches for each unfinished original item; the old `_construction` refs and receipts remain intact.

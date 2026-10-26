@@ -1,3 +1,5 @@
+> **Iteration catalog:** [all attempts](CHAIN_CATALOG.md) · [registration guide](CHAIN_CATALOG_GUIDE.md). The paired publication below is the initial snapshot; any item or subpart may have further PROP/ALT iterations without overwriting these receipts.
+
 # Experimental chains — original targets and alternatives
 
 ## Dual proposed and alternative chains

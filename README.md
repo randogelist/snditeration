@@ -12,6 +12,25 @@ open hypotheses, or printed claims requiring repair. These counts are an
 inventory, not a percentage of mathematical work completed. No unconditional
 ζ(5)/ζ(7) irrationality, RH, finite-witness closure, or full-paper completion is claimed.
 
+## Chain categorizer and iterations
+
+The [chain categorizer](docs/CHAIN_CATALOG.md) groups all **45 proof items** by
+**chapter → item → subpart → PROP/ALT → iteration**. Its initial registration
+contains the **72 existing paired attempts**; it creates no new research branch.
+
+Each part can have multiple competing or successive iterations, such as
+`P03_04.whole.alt.i0001`, then `P03_04.whole.alt.i0002`. Existing branch names
+remain unchanged. New iterations record their own target, immutable source,
+parents, dependencies, status and evidence. Newest does not mean selected,
+superseded or proved; replacing an input still requires a compatibility proof.
+
+Use [the guide](docs/CHAIN_CATALOG_GUIDE.md) and
+[`tools/chain_catalog.py`](tools/chain_catalog.py) to filter, validate, register
+another iteration and regenerate the table. The
+[JSON catalog](docs/CHAIN_CATALOG.json) is the editable source; the older
+[experiment manifest](docs/EXPERIMENTS.json) retains its publication receipts.
+The categorizer neither executes Lean nor changes mathematical proof tiers.
+
 ## Dual proposed and alternative chains
 
 Each of the **36 unfinished original items** now has two active research branches:

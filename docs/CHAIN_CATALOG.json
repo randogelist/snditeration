@@ -1,0 +1,2925 @@
+{
+  "schema_version": 1,
+  "repository": "randogelist/snditeration",
+  "source_snapshot_commit": "5acb01dd19a9cd6ca8312557ec5d84ef94a960b6",
+  "registration_note": "i0001 is the initial catalog registration for each role/part, not a reconstructed historical Init or iteration sequence. Existing branch names are retained. No new proof evidence is claimed.",
+  "branch_naming": "experiment/zetahyperbolic-pXX-YY[_PART]_{prop|alt}_iNNNN_{construction|subcritical|critical|soft_assertion}",
+  "evidence_policy": "Stage and iteration are organizational labels only. A newer iteration never supersedes, certifies or discharges an older attempt automatically. Preserve exact hypotheses and immutable compiler/axiom evidence; compatibility bridges require independent proofs.",
+  "items": [
+    {
+      "item_id": "2.2",
+      "chapter": 2,
+      "module_key": "P02_02",
+      "title": "Pullback identity",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Full rational-domain scaled substitution and pullback identity, with k≥1.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "2.3",
+      "chapter": 2,
+      "module_key": "P02_03",
+      "title": "Reflection and difference identities for $\\tau_X^{(s)}$",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Reflection and regular-domain finite difference identified with actual Mathlib RatFunc.eval iterated analytic derivative. Root includes RationalTaylor, superseding stale ledger API gap. Proof's Bernoulli parity errors repaired; regularity at zero explicit.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "2.4",
+      "chapter": 2,
+      "module_key": "P02_04",
+      "title": "Canonical basis invariance",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Constructed primitive normalization and canonical basis invariance; actual determinant nonvanishing proved.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "2.5",
+      "chapter": 2,
+      "module_key": "P02_05",
+      "title": "Lagrange pole diagonalization",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Actual Lagrange interpolation products, inverse Vandermonde, pole slope diagonalization and exact transformed pencil.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "3.1",
+      "chapter": 3,
+      "module_key": "P03_01",
+      "title": "Universal hyperbolicity and zero-free disk",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Actual Gram positivity, exact degree, real roots avoiding zeta center, actual whitened spectrum, sharp 1/operator-norm radius and primitive-polynomial transport; structural admissibility only, no claim of pairwise-distinct roots.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "3.2",
+      "chapter": 3,
+      "module_key": "P03_02",
+      "title": "Continuous hyperbolic pencil for all real $s > 1$",
+      "original_status": "**REPAIR; corrected `!!`**",
+      "original_scope": "Corrected real-s>1 positive Gram, nonsingular slope, exact degree, real roots and odd-s coincidence. Prefactor corrected to 2(2pi)^(s-1)/Gamma(s); literal paper prefactor is pi/2 times this. ContinuousParameter candidate not imported.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_02.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-02_prop_construction",
+          "source_commit": "d434e64c45887df036a632eddffe0da9a6c5a671",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/d434e64c45887df036a632eddffe0da9a6c5a671/Experimental/P03_02/Target.md",
+          "target_summary": "Original 3.2: Continuous hyperbolic pencil for all real $s > 1$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.1",
+            "2.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-02_construction",
+            "commit": "7d55c45aa7facaf52a46968405db33d27d208d11"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "d434e64c45887df036a632eddffe0da9a6c5a671",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_02.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-02_alt_construction",
+          "source_commit": "07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798/Experimental/P03_02/Alt/Target.md",
+          "target_summary": "For every real s>1 and admissible actual parameter tuple, use the density with prefactor 2(2π)^(s−1)/Γ(s); establish its actual positive Gram pencil, nonsingular slope, exact determinant degree, real roots and coincidence with the odd-integer construction.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-02_construction",
+            "commit": "7d55c45aa7facaf52a46968405db33d27d208d11"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.3",
+      "chapter": 3,
+      "module_key": "P03_03",
+      "title": "Total positivity, leading sign, and universal signature",
+      "original_status": "OPEN; component `!!`",
+      "original_scope": "Exact weight-five leading sign and multiplicity-counted inertia/root-side counts. Part(1) full mixed-minor total positivity and Stieltjes determinacy remain open. Main's Carleman, shifted/mixed moment candidate sources are not imported; no A-tier inherited from source presence. Companion PR #46 verifies a generic factorial-growth Carleman criterion; actual moment bounds and uniqueness are still missing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_03.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-03_prop_construction",
+          "source_commit": "958dea22228b725871233c3b30e9d73ed1740329",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/958dea22228b725871233c3b30e9d73ed1740329/Experimental/P03_03/Target.md",
+          "target_summary": "Original 3.3: Total positivity, leading sign, and universal signature. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-03_construction",
+            "commit": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "958dea22228b725871233c3b30e9d73ed1740329",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_03.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-03_alt_construction",
+          "source_commit": "44ed30e15cca4232a43d2cec8c6ff408f64b9dc4",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/44ed30e15cca4232a43d2cec8c6ff408f64b9dc4/Experimental/P03_03/Alt/Target.md",
+          "target_summary": "Retain the actual positive Gram theorem and verified weight-five leading-sign and inertia/root-side counts as separate clauses; formulate mixed-minor positivity and Stieltjes determinacy as separately conditional extensions with explicit integrability, alternant and factorial-growth inputs.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-03_construction",
+            "commit": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "44ed30e15cca4232a43d2cec8c6ff408f64b9dc4",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.4",
+      "chapter": 3,
+      "module_key": "P03_04",
+      "title": "Root interlacing and Dodgson condensation for principal minors",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Principal-root reality, abstract signature restriction, and arbitrary-order polynomial block Dodgson identity proved. Actual constant first principal pencil refutes assuming r finite roots at each size. CauchyInterlacing, PrincipalRadius and actual PrincipalCondensation candidate not imported, so full interlacing/actual Dodgson endpoint remain open in active main graph.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_04.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-04_prop_construction",
+          "source_commit": "0b4465418217e2ce22df916c35d6580c84340681",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/0b4465418217e2ce22df916c35d6580c84340681/Experimental/P03_04/Target.md",
+          "target_summary": "Original 3.4: Root interlacing and Dodgson condensation for principal minors. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-04_construction",
+            "commit": "06efc463a549f07db26b8e38f565276e8854d476"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "0b4465418217e2ce22df916c35d6580c84340681",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_04.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-04_alt_construction",
+          "source_commit": "b688ba03f0398e343a7f41722cb2140875be58ea",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/b688ba03f0398e343a7f41722cb2140875be58ea/Experimental/P03_04/Alt/Target.md",
+          "target_summary": "For the actual nested principal pencils, prove interlacing first for the generalized symmetric eigenvalues, allowing zero eigenvalues; transport only nonzero eigenvalues to finite roots with multiplicities and sign-aware reciprocal ordering. State the actual Dodgson identity separately, retaining any nonzero-central-minor premise.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-04_construction",
+            "commit": "06efc463a549f07db26b8e38f565276e8854d476"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "b688ba03f0398e343a7f41722cb2140875be58ea",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.5",
+      "chapter": 3,
+      "module_key": "P03_05",
+      "title": "Stieltjes J-fraction from interlacing roots",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Actual admissible rank-one counterexample refutes literal continued fraction. General normalized Lanczos/no-breakdown and spectral-edge decay still open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_05.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-05_prop_construction",
+          "source_commit": "dc5e43ffc5d7442c2a33c66b830e90ce87f833e9",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/dc5e43ffc5d7442c2a33c66b830e90ce87f833e9/Experimental/P03_05/Target.md",
+          "target_summary": "Original 3.5: Stieltjes J-fraction from interlacing roots. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-05_construction",
+            "commit": "9b1900bd9effd5d660061d3d4ce356acbda72342"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "dc5e43ffc5d7442c2a33c66b830e90ce87f833e9",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_05.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-05_alt_construction",
+          "source_commit": "0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9/Experimental/P03_05/Alt/Target.md",
+          "target_summary": "Replace the printed fraction by the resolvent fraction for I+tB, t=X−ζ(s): diagonal entries 1+t a_i and squared off-diagonal terms t²b_i². Relate it to the actual principal determinant ratio with its Gram-determinant normalization. Work on the cyclic Krylov subspace; require cyclicity only for a full-length fraction.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-05_construction",
+            "commit": "9b1900bd9effd5d660061d3d4ce356acbda72342"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.6",
+      "chapter": 3,
+      "module_key": "P03_06",
+      "title": "Stieltjes reciprocal-root power sums",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Corrected even-moment estimator bounds and convergence at actual spectral center. All-order strict finite-atom Hankel positivity refuted; odd-m sign needs repair. Arbitrary rational-shift/log-derivative and full finite-rank corrected clauses not supplied by local estimator endpoints alone.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_06.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-06_prop_construction",
+          "source_commit": "2d3a7ebff285780e966853070200f1128c56b738",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/2d3a7ebff285780e966853070200f1128c56b738/Experimental/P03_06/Target.md",
+          "target_summary": "Original 3.6: Stieltjes reciprocal-root power sums. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-06_construction",
+            "commit": "9b56739b36897fbd1564f6cdaea57219320d9e57"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "2d3a7ebff285780e966853070200f1128c56b738",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_06.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-06_alt_construction",
+          "source_commit": "05dd8627087ac0d5b78efecbab66116b024aa2b6",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/05dd8627087ac0d5b78efecbab66116b024aa2b6/Experimental/P03_06/Alt/Target.md",
+          "target_summary": "For an actual real-rooted polynomial P of degree h≥1, with its h roots listed with multiplicity, and real q0 with P(q0)≠0, set u_j=(r_j−q0)^−2 and S_2r=∑u_j^r. Target positive semidefinite Hankel matrices, strict positivity only up to the number of distinct u_j, vanishing determinants above that rank, and h^(−1/(2r))d_min≤S_2r^(−1/(2r))≤d_min for r≥1.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-06_construction",
+            "commit": "9b56739b36897fbd1564f6cdaea57219320d9e57"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "05dd8627087ac0d5b78efecbab66116b024aa2b6",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.7",
+      "chapter": 3,
+      "module_key": "P03_07",
+      "title": "Turán non-negativity and Newton log-concavity",
+      "original_status": "OPEN; component `!!`",
+      "original_scope": "All-order actual derivative Turan weak/strict/equality, sharp center ratio, normalized coefficient Newton strict/equality criteria, and strict centered Newton hierarchy proved. Individual nonvanishing of every intermediate centered coefficient remains unproved; generic-distinctness argument invalid.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_07.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-07_prop_construction",
+          "source_commit": "db45f506e54543c2928b828183e27adf4f35684f",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/db45f506e54543c2928b828183e27adf4f35684f/Experimental/P03_07/Target.md",
+          "target_summary": "Original 3.7: Turán non-negativity and Newton log-concavity. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "3.3"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-07_construction",
+            "commit": "422e9ecc2d9a43f7aa598d9340fa724efed30257"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "db45f506e54543c2928b828183e27adf4f35684f",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_07.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-07_alt_construction",
+          "source_commit": "d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249/Experimental/P03_07/Alt/Target.md",
+          "target_summary": "Retain the actual Turán inequalities and Newton log-concavity with their verified nonvanishing/equality hypotheses. Treat individual centered-coefficient nonvanishing as a separate open clause; do not include it in the alternative endpoint.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "3.3"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-07_construction",
+            "commit": "422e9ecc2d9a43f7aa598d9340fa724efed30257"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.8",
+      "chapter": 3,
+      "module_key": "P03_08",
+      "title": "Christoffel–Darboux pole representation and Jacobi derivative identity",
+      "original_status": "OPEN",
+      "original_scope": "ChristoffelDarboux and LaplaceJacobiIdentity candidates exist but are not imported or covered by current main audit. Do not promote source declarations or historical finite-operator components to full actual CD/Laplace identity.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_08.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-08_prop_construction",
+          "source_commit": "537b8bf9df9eb92a570f923b0bb85f07c80c5bc6",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/537b8bf9df9eb92a570f923b0bb85f07c80c5bc6/Experimental/P03_08/Target.md",
+          "target_summary": "Original 3.8: Christoffel–Darboux pole representation and Jacobi derivative identity. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.1",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-08_construction",
+            "commit": "8588dce972ddd7ef61906202066965fc1c01d56d"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "537b8bf9df9eb92a570f923b0bb85f07c80c5bc6",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_08.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-08_alt_construction",
+          "source_commit": "12fb1c46b679b2e0a24e420556bebba7b7ca3bae",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "alternative_proof_route",
+          "target_url": "https://github.com/randogelist/snditeration/blob/12fb1c46b679b2e0a24e420556bebba7b7ca3bae/Experimental/P03_08/Alt/Target.md",
+          "target_summary": "First formulate the pole-kernel spectral identity directly with the inverse of the actual finite Gram matrix. Separately prove the matrix-curve identity d(log det Gτ)/dτ=tr(Gτ⁻¹Gτ′) under differentiability and positive definiteness, then identify Gτ′ by dominated differentiation of the actual Laplace density.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-08_construction",
+            "commit": "8588dce972ddd7ef61906202066965fc1c01d56d"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "12fb1c46b679b2e0a24e420556bebba7b7ca3bae",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "3.9",
+      "chapter": 3,
+      "module_key": "P03_09",
+      "title": "Hyperbolicity for Hurwitz and Dirichlet Hankel determinants",
+      "original_status": "OPEN",
+      "original_scope": "Actual Hurwitz/Dirichlet positive measures and pole-moment identifications absent from active graph. Historical companion finite character/Fekete components do not close full statement.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P03_09.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-09_prop_construction",
+          "source_commit": "47159dd4d872edd575c087e958b2fbb16081250d",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/47159dd4d872edd575c087e958b2fbb16081250d/Experimental/P03_09/Target.md",
+          "target_summary": "Original 3.9: Hyperbolicity for Hurwitz and Dirichlet Hankel determinants. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-09_construction",
+            "commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "47159dd4d872edd575c087e958b2fbb16081250d",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P03_09.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p03-09_alt_construction",
+          "source_commit": "c62c3a6e1ea60803763786a06323198983c6ce44",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/c62c3a6e1ea60803763786a06323198983c6ce44/Experimental/P03_09/Alt/Target.md",
+          "target_summary": "Restrict the character part initially to the five explicit coefficient tables χ−3, χ−4, χ5, χ8 and χ−8, proving their geometric generating identities and positivity; build their actual moment pencils with explicit centers. Treat the shifted Hurwitz pole-integral realization as a separate conditional subtarget.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p03-09_construction",
+            "commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "c62c3a6e1ea60803763786a06323198983c6ce44",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.1",
+      "chapter": 4,
+      "module_key": "P04_01",
+      "title": "Spectral irrationality measure criterion",
+      "original_status": "OPEN; component `!!`",
+      "original_scope": "Local complex-root comparison, lattice index and rational transfer; effective threshold requires explicit computable onset/rates. Printed existence of effective b₀ from bare eventual bounds is not certified.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_01.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-01_prop_construction",
+          "source_commit": "2792f9d12943eecef474af501a949a7bb3c99d54",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/2792f9d12943eecef474af501a949a7bb3c99d54/Experimental/P04_01/Target.md",
+          "target_summary": "Original 4.1: Spectral irrationality measure criterion. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-01_construction",
+            "commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "2792f9d12943eecef474af501a949a7bb3c99d54",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_01.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-01_alt_construction",
+          "source_commit": "3cbf038fd7e58d6987fd23ac1f380be65aca1a4c",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/3cbf038fd7e58d6987fd23ac1f380be65aca1a4c/Experimental/P04_01/Alt/Target.md",
+          "target_summary": "Use the existing effective natural-exponent transfer with explicitly supplied rational rate margins, a numerical onset and the exact family estimates required by that API. Keep the more general real-exponent eventual transfer as a separately non-effective statement until a constructive onset is provided.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-01_construction",
+            "commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "3cbf038fd7e58d6987fd23ac1f380be65aca1a4c",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.2",
+      "chapter": 4,
+      "module_key": "P04_02",
+      "title": "Transfer criterion for algebraic approximations of degree $d \\ge 1$",
+      "original_status": "**A-Tier `!!` — exact**; printed hypotheses retained",
+      "original_scope": "Exact lattice, degree, nonzero quadratic decay, complex-root separation and height-limsup assumptions imply the printed bound for all algebraic α with bounded extension degree and large naive height. Actual ζ5 input estimates are separate. No effective B₀ is claimed in the printed proposition.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "4.3",
+      "chapter": 4,
+      "module_key": "P04_03",
+      "title": "Ultrametric zero-free disk over $\\mathbb{Q}_p$",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Exact norm-preserving zero-free disk over ℂ_p for integer Q with Q(ξ)≠0; actual primitive polynomial specialization included. Specific ζ-family center valuation is separate.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "4.4",
+      "chapter": 4,
+      "module_key": "P04_04",
+      "title": "Sharpened spectral bound and effective irrationality measure for $\\zeta(5)$",
+      "original_status": "OPEN; component `!!`",
+      "original_scope": "Actual primitive polynomial with positive normalization, exact degree, nonzero center and finite identities; explicit multiplier, uniform quadratic decay, spectral cap and exponent 25687 remain open. The supplied PDF states the spectral cap 11.411 and measure exponent 25687.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_04.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-04_prop_construction",
+          "source_commit": "dab0a8997fa8d318a1f79174771f0ad38327739d",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/dab0a8997fa8d318a1f79174771f0ad38327739d/Experimental/P04_04/Target.md",
+          "target_summary": "Original 4.4: Sharpened spectral bound and effective irrationality measure for $\\zeta(5)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.4",
+            "2.5",
+            "3.1",
+            "4.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-04_construction",
+            "commit": "5fe9a327926560bd3e049690b0fe626bc3a1ce9b"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "dab0a8997fa8d318a1f79174771f0ad38327739d",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_04.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-04_alt_construction",
+          "source_commit": "b97babd716832cae434caae07aec39f0dfa0f71a",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "conditional",
+          "target_url": "https://github.com/randogelist/snditeration/blob/b97babd716832cae434caae07aec39f0dfa0f71a/Experimental/P04_04/Alt/Target.md",
+          "target_summary": "For the actual weight-five 30n parameter lattice, retain a conditional rational-approximation transfer whose independent inputs are an explicitly implemented integralizing multiplier, quantitative Gram-energy decay, a proved spectral estimate and effective onsets. Compute the admissible approximation exponent from those rates; assert 25687 only if the exact strict margins are discharged.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.4",
+            "2.5",
+            "3.1",
+            "4.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-04_construction",
+            "commit": "5fe9a327926560bd3e049690b0fe626bc3a1ce9b"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "b97babd716832cae434caae07aec39f0dfa0f71a",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.5",
+      "chapter": 4,
+      "module_key": "P04_05",
+      "title": "Irrationality and effective measure for $b\\zeta(5) + a\\zeta(3)$",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Finite weight-shift determinant reweighting only; coupled density/Loewner bounds, p-adic cancellation, decay and effective measure open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_05.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-05_prop_construction",
+          "source_commit": "9699371fbaa3fb334c8b3eb065fa5410dae71e58",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/9699371fbaa3fb334c8b3eb065fa5410dae71e58/Experimental/P04_05/Target.md",
+          "target_summary": "Original 4.5: Irrationality and effective measure for $b\\zeta(5) + a\\zeta(3)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "3.1",
+            "4.1",
+            "4.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-05_construction",
+            "commit": "05272ea512e9ae8f855b03acdf7670249d8110cc"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "9699371fbaa3fb334c8b3eb065fa5410dae71e58",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_05.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-05_alt_construction",
+          "source_commit": "a9944a4d0cb5519e739fd74fac1d1790614a7c74",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "conditional",
+          "target_url": "https://github.com/randogelist/snditeration/blob/a9944a4d0cb5519e739fd74fac1d1790614a7c74/Experimental/P04_05/Alt/Target.md",
+          "target_summary": "Construct the actual coupled weight-five/weight-three moment pencil on the explicitly verified density-comparison region. State its quantitative irrationality or approximation consequence only under independent coupled multiplier, decay, spectral-rate and effective-onset hypotheses.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "3.1",
+            "4.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-05_construction",
+            "commit": "05272ea512e9ae8f855b03acdf7670249d8110cc"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "a9944a4d0cb5519e739fd74fac1d1790614a7c74",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.6",
+      "chapter": 4,
+      "module_key": "P04_06",
+      "title": "Two-sided determinant bounds and coefficient heights",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Finite leading-value/Gram/log conservation only; quadratic asymptotics and heights open. Printed use of upper multiplier-rate bound as a lower bound needs repair.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_06.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-06_prop_construction",
+          "source_commit": "e55ebbc6868a7e0343879b0bc67693939435af24",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/e55ebbc6868a7e0343879b0bc67693939435af24/Experimental/P04_06/Target.md",
+          "target_summary": "Original 4.6: Two-sided determinant bounds and coefficient heights. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1",
+            "4.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-06_construction",
+            "commit": "c34d02d7e75cc06166469695c64862dd3af4b04f"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "e55ebbc6868a7e0343879b0bc67693939435af24",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_06.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-06_alt_construction",
+          "source_commit": "a4350652c15a5c19f1da7acaa66037f9277cd640",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/a4350652c15a5c19f1da7acaa66037f9277cd640/Experimental/P04_06/Alt/Target.md",
+          "target_summary": "Retain the actual finite determinant/log-potential conservation identity and formulate asymptotic rate and height conclusions with separately oriented upper and lower multiplier/energy hypotheses. Omit the printed lower-height conclusion unless an independent lower multiplier-rate estimate is established.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-06_construction",
+            "commit": "c34d02d7e75cc06166469695c64862dd3af4b04f"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "a4350652c15a5c19f1da7acaa66037f9277cd640",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.7",
+      "chapter": 4,
+      "module_key": "P04_07",
+      "title": "Macroscopic exponential root collapse and root separation",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Finite cap+average cluster count and root-distance transport; actual family uniform cap/average and arithmetic separation open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_07.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-07_prop_construction",
+          "source_commit": "0e685512dd9b5019f04d8f25a116cdba5ecf2ff0",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/0e685512dd9b5019f04d8f25a116cdba5ecf2ff0/Experimental/P04_07/Target.md",
+          "target_summary": "Original 4.7: Macroscopic exponential root collapse and root separation. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "4.4",
+            "4.6"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-07_construction",
+            "commit": "24ead265dee4b6732386e42336df3ec4dc49426a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "0e685512dd9b5019f04d8f25a116cdba5ecf2ff0",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_07.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-07_alt_construction",
+          "source_commit": "ff9db1741c255afa1cc918d62bf054d4ce60a02d",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "conditional",
+          "target_url": "https://github.com/randogelist/snditeration/blob/ff9db1741c255afa1cc918d62bf054d4ce60a02d/Experimental/P04_07/Alt/Target.md",
+          "target_summary": "Prove a conditional finite cap-and-average root-clustering theorem on the actual family: an explicit spectral cap on the actual whitened slope B and a normalized lower bound for log|det B| (with det B≠0) imply a multiplicity-counted cluster count. Add root separation only under actual polynomial height/leading-coefficient and squarefree-factor data; keep nearest-root decay dependent on a separate small nonzero center evaluation.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "4.4",
+            "4.6"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-07_construction",
+            "commit": "24ead265dee4b6732386e42336df3ec4dc49426a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "ff9db1741c255afa1cc918d62bf054d4ce60a02d",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "4.8",
+      "chapter": 4,
+      "module_key": "P04_08",
+      "title": "Rational root exclusion and degree bounds for cluster factors",
+      "original_status": "REPAIR / OPEN; source partial",
+      "original_scope": "Factor/root-distance inequalities only; rational-root exclusion and effective degree bounds open. Printed proof reverses lower gap into upper cluster bound.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P04_08.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-08_prop_construction",
+          "source_commit": "0288afd84a03ebd1b3b04e04db4943268adf8a51",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/0288afd84a03ebd1b3b04e04db4943268adf8a51/Experimental/P04_08/Target.md",
+          "target_summary": "Original 4.8: Rational root exclusion and degree bounds for cluster factors. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "4.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-08_construction",
+            "commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "0288afd84a03ebd1b3b04e04db4943268adf8a51",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P04_08.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p04-08_alt_construction",
+          "source_commit": "c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907/Experimental/P04_08/Alt/Target.md",
+          "target_summary": "Restrict rational-root exclusion to roots independently known to lie in a specified upper-radius cluster, combined with an explicit rational-approximation lower bound. For actual polynomial factors, prove the finite factor-product degree inequalities with nonzero evaluation, leading coefficient and sign conditions explicit.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "4.4",
+            "4.7"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p04-08_construction",
+            "commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "5.1",
+      "chapter": 5,
+      "module_key": "P05_01",
+      "title": "Two-variable Beukers measure for $\\zeta(7)$",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Actual positive measurable unit-square density, all diagonal/offdiagonal moment identities and explicit rational offdiagonal witness.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "5.2",
+      "chapter": 5,
+      "module_key": "P05_02",
+      "title": "Dual hyperbolicity and Krein-space decomposition of the two-variable $\\zeta(7)$ pencil",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Local finite dual spectrum under real row separation and actual monomial/coefficient Krein identities; full arbitrary-L² extension and all-dimensional cones remain open. Fixed-K positive/negative cones need dimension repair.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P05_02.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-02_prop_construction",
+          "source_commit": "013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3/Experimental/P05_02/Target.md",
+          "target_summary": "Original 5.2: Dual hyperbolicity and Krein-space decomposition of the two-variable $\\zeta(7)$ pencil. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-02_construction",
+            "commit": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P05_02.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-02_alt_construction",
+          "source_commit": "33aa75af04494b342e1be0e95e6deb00206d9eb9",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/33aa75af04494b342e1be0e95e6deb00206d9eb9/Experimental/P05_02/Alt/Target.md",
+          "target_summary": "Retain the finite rational-polynomial dual-spectrum and finite coefficient Krein statements. Target an arbitrary-L² extension only with the actual kernel/operator, polynomial-integral identification and convergence estimates. Replace the universal fixed-K cone clause by a separately proposed sufficiently-large-K formulation respecting 2h≤K+1.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-02_construction",
+            "commit": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "33aa75af04494b342e1be0e95e6deb00206d9eb9",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "5.3",
+      "chapter": 5,
+      "module_key": "P05_03",
+      "title": "Two-variable Beukers measure and dual pencil for $\\beta(4) = L(4, \\chi_{-4})$",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Low-node β4 tensor/Gram calculations only; actual two-variable integral, moments and dual pencil open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P05_03.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-03_prop_construction",
+          "source_commit": "616215f4fa645d85e5dc99e85d72b5036e070152",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/616215f4fa645d85e5dc99e85d72b5036e070152/Experimental/P05_03/Target.md",
+          "target_summary": "Original 5.3: Two-variable Beukers measure and dual pencil for $\\beta(4) = L(4, \\chi_{-4})$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-03_construction",
+            "commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "616215f4fa645d85e5dc99e85d72b5036e070152",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P05_03.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-03_alt_construction",
+          "source_commit": "05c048a84c1bf0264ad1719e955dbae743eb4278",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "alternative_proof_route",
+          "target_url": "https://github.com/randogelist/snditeration/blob/05c048a84c1bf0264ad1719e955dbae743eb4278/Experimental/P05_03/Alt/Target.md",
+          "target_summary": "First prove the beta-four density’s actual monomial integral identities by a justified geometric-mode expansion, auditing its normalization against low-index exact integrals. Then obtain the finite pencil’s real-rootedness from real symmetry and positive-definite coefficient Gram slope under actual row independence.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-03_construction",
+            "commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "05c048a84c1bf0264ad1719e955dbae743eb4278",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "5.4",
+      "chapter": 5,
+      "module_key": "P05_04",
+      "title": "Cancellation of higher zeta values on even pole pairs",
+      "original_status": "**A-Tier `!!` — exact**",
+      "original_scope": "Actual τ on simple even-pole pairs, every j≥1 including j=1, and finite rational linearity.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": []
+    },
+    {
+      "item_id": "5.6",
+      "chapter": 5,
+      "module_key": "P05_06",
+      "title": "Weight-seven prime-sum evaluation and pole-ordered refinement",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Rational constant signs do not establish floor-function partition, prime-sum integrals or q-adic gain.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P05_06.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-06_prop_construction",
+          "source_commit": "32610e1b7a9856768cf2696e77670666a3a9cef7",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/32610e1b7a9856768cf2696e77670666a3a9cef7/Experimental/P05_06/Target.md",
+          "target_summary": "Original 5.6: Weight-seven prime-sum evaluation and pole-ordered refinement. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.4",
+            "5.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-06_construction",
+            "commit": "d41b2d7600892844fa5dde219531439fa86e8258"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "32610e1b7a9856768cf2696e77670666a3a9cef7",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P05_06.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-06_alt_construction",
+          "source_commit": "850d7402c2f99409e0835605615266ccdd21ce98",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "alternative_proof_route",
+          "target_url": "https://github.com/randogelist/snditeration/blob/850d7402c2f99409e0835605615266ccdd21ce98/Experimental/P05_06/Alt/Target.md",
+          "target_summary": "Separate exact integration of the literal outer floor/min/max function from an independently bounded inner tail and from the local q-adic pole-replacement lemma. Accept only constants derived from a complete verified partition and tail estimate; formulate the valuation gain on the actual surviving pole classes and valid replacement ranges.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-06_construction",
+            "commit": "d41b2d7600892844fa5dde219531439fa86e8258"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "850d7402c2f99409e0835605615266ccdd21ce98",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "5.7",
+      "chapter": 5,
+      "module_key": "P05_07",
+      "title": "Simultaneous double-pole Hankel determinant for $\\{1, \\zeta(5), \\zeta(6)\\}$",
+      "original_status": "OPEN",
+      "original_scope": "Actual double-pole decomposition, local determinants/valuations and lower-minor bounds unproved.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P05_07.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-07_prop_construction",
+          "source_commit": "267e159024b78ff174cb4e3526e3f64429b5f9e8",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/267e159024b78ff174cb4e3526e3f64429b5f9e8/Experimental/P05_07/Target.md",
+          "target_summary": "Original 5.7: Simultaneous double-pole Hankel determinant for $\\{1, \\zeta(5), \\zeta(6)\\}$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-07_construction",
+            "commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "267e159024b78ff174cb4e3526e3f64429b5f9e8",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P05_07.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p05-07_alt_construction",
+          "source_commit": "817b6df92c87c46084ba88fad5d194243df48b57",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/817b6df92c87c46084ba88fad5d194243df48b57/Experimental/P05_07/Alt/Target.md",
+          "target_summary": "Define the functional from the actual order-two partial-fraction coefficients of R_n(t), including k=0, and first prove its finite rational residue/degree identities. Formulate subsequent determinant valuation as a separate conditional block-transfer theorem with explicitly proved actual coefficient congruences and unit blocks.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p05-07_construction",
+            "commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "817b6df92c87c46084ba88fad5d194243df48b57",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.1",
+      "chapter": 6,
+      "module_key": "P06_01",
+      "title": "Divided-difference $p$-adic valuation law and intrinsic $p^{-6}$ barrier",
+      "original_status": "OPEN",
+      "original_scope": "Actual divided-difference valuation, Mellin bridge and intrinsic p⁻⁶ obstruction unproved.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_01.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-01_prop_construction",
+          "source_commit": "51308ecd609f911d5dd8d60f54206e7742d0e10c",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/51308ecd609f911d5dd8d60f54206e7742d0e10c/Experimental/P06_01/Target.md",
+          "target_summary": "Original 6.1: Divided-difference $p$-adic valuation law and intrinsic $p^{-6}$ barrier. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-01_construction",
+            "commit": "e2191a109269528cd9ee98ea75e64e3612d48dfc"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "51308ecd609f911d5dd8d60f54206e7742d0e10c",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_01.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-01_alt_construction",
+          "source_commit": "e38ec263ec1f27e38f5ff25a19d679c422c51d51",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/e38ec263ec1f27e38f5ff25a19d679c422c51d51/Experimental/P06_01/Alt/Target.md",
+          "target_summary": "For the actual finite harmonic sum H_r^(s), prime p∈N, s,r∈N with s≥1 and r<2p, prove p-integrality of H_r^(s)−1_{p≤r}/p^s. Separately establish the actual unit-square-to-fiber integral identity for rational polynomials with its Jacobian. Restrict the endpoint to these residue and analytic components; no universal p^(−6) determinant barrier is included.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-01_construction",
+            "commit": "e2191a109269528cd9ee98ea75e64e3612d48dfc"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "e38ec263ec1f27e38f5ff25a19d679c422c51d51",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.2",
+      "chapter": 6,
+      "module_key": "P06_02",
+      "title": "Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Exact divided differences and 6d_K⁷ denominator; simultaneous ζ6/ζ7 analytic functional and claimed zero overhead remain open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_02.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-02_prop_construction",
+          "source_commit": "623a02ccb05a93bf9d3a241b074eb08435f243a6",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/623a02ccb05a93bf9d3a241b074eb08435f243a6/Experimental/P06_02/Target.md",
+          "target_summary": "Original 6.2: Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-02_construction",
+            "commit": "55b16e37db5162ee268a47468ea40c360cf9d412"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "623a02ccb05a93bf9d3a241b074eb08435f243a6",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_02.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-02_alt_construction",
+          "source_commit": "d9ea407687703e80936a80db7934373309d03c58",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/d9ea407687703e80936a80db7934373309d03c58/Experimental/P06_02/Alt/Target.md",
+          "target_summary": "For A∈Z[x] of degree at most K and integers α,β, identify the actual integral I_K(α,β;A) with the ζ(7)/ζ(6) linear form and rational remainder displayed in the original target. Initially require only a constructed positive integer D(K,α,β,A) with D·R_K∈Z; the exact multiplier 6d_K^7 is a separate strengthening.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-02_construction",
+            "commit": "55b16e37db5162ee268a47468ea40c360cf9d412"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "d9ea407687703e80936a80db7934373309d03c58",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.3",
+      "chapter": 6,
+      "module_key": "P06_03",
+      "title": "Unconditional $q$-adic non-vanishing and explicit positive-cone approximations for $G_{\\mathcal{A}}^{(7)}(X)$",
+      "original_status": "REPAIR / OPEN",
+      "original_scope": "Part (2) has an external rational h=4 negative-direction counterexample, not a Lean replay; independent q-adic part (1) remains open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_03.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-03_prop_construction",
+          "source_commit": "72280986985d69a823baf1e03c9f427e9c6e8080",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/72280986985d69a823baf1e03c9f427e9c6e8080/Experimental/P06_03/Target.md",
+          "target_summary": "Original 6.3: Unconditional $q$-adic non-vanishing and explicit positive-cone approximations for $G_{\\mathcal{A}}^{(7)}(X)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2",
+            "6.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-03_construction",
+            "commit": "dacd3e795557421827f2f6a658c9a76c0c26b0f5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "72280986985d69a823baf1e03c9f427e9c6e8080",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_03.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-03_alt_construction",
+          "source_commit": "aa6e863938be812cfe7a127af4ba8a1ae15f419b",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/aa6e863938be812cfe7a127af4ba8a1ae15f419b/Experimental/P06_03/Alt/Target.md",
+          "target_summary": "For a specified finite rational polynomial coefficient family in the actual ζ(7) Beukers form, target positivity only on a subspace for which an explicit finite quadratic-form positivity certificate and a rigorous omitted-mode error bound are supplied. Treat q-adic nonvanishing of the actual pencil as an independent target requiring its actual leading residue matrix.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2",
+            "6.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-03_construction",
+            "commit": "dacd3e795557421827f2f6a658c9a76c0c26b0f5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "aa6e863938be812cfe7a127af4ba8a1ae15f419b",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.4",
+      "chapter": 6,
+      "module_key": "P06_04",
+      "title": "Character–Vandermonde sign cancellation and unconditional hyperbolicity for $\\beta(4)$",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Finite character-Vandermonde cancellation and two/three-node Gram models; actual β4 analytic pencil and global arithmetic open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_04.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-04_prop_construction",
+          "source_commit": "f1be029f8abd6025162c6940f208c85b7d1bfcae",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/f1be029f8abd6025162c6940f208c85b7d1bfcae/Experimental/P06_04/Target.md",
+          "target_summary": "Original 6.4: Character–Vandermonde sign cancellation and unconditional hyperbolicity for $\\beta(4)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "5.3"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-04_construction",
+            "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "f1be029f8abd6025162c6940f208c85b7d1bfcae",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_04.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-04_alt_construction",
+          "source_commit": "f4361d16f8cc643c3ac21312d619df67552faa3c",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/f4361d16f8cc643c3ac21312d619df67552faa3c/Experimental/P06_04/Alt/Target.md",
+          "target_summary": "For each specified finite family of distinct odd-pole nodes, define the actual β(4) rational functional from a coherent secant-kernel normalization, prove its moment and pole identities, and establish the character–Vandermonde cancellation. Apply a finite positive-Gram spectral theorem only after the actual resulting Gram form is shown positive.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "5.3"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-04_construction",
+            "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "f4361d16f8cc643c3ac21312d619df67552faa3c",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.5",
+      "chapter": 6,
+      "module_key": "P06_05",
+      "title": "Unconditional $q$-adic non-vanishing for $\\Delta_K^{(\\beta(4))}(0)$",
+      "original_status": "OPEN",
+      "original_scope": "Specified q≡1 mod8 determinant valuation and local unit-block proof missing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_05.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-05_prop_construction",
+          "source_commit": "ca78de4253ee4746cbc027a834f45b68bb712bc6",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/ca78de4253ee4746cbc027a834f45b68bb712bc6/Experimental/P06_05/Target.md",
+          "target_summary": "Original 6.5: Unconditional $q$-adic non-vanishing for $\\Delta_K^{(\\beta(4))}(0)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "5.3",
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-05_construction",
+            "commit": "6509755298b6f5163b2d565b0a59b39010b26210"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "ca78de4253ee4746cbc027a834f45b68bb712bc6",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_05.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-05_alt_construction",
+          "source_commit": "1ef80acfca3427d9aaae87326dfa31f16667abea",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/1ef80acfca3427d9aaae87326dfa31f16667abea/Experimental/P06_05/Alt/Target.md",
+          "target_summary": "For an actual β(4) pencil from the calibrated 6.4 alternative and each admissible selected prime q, compute its integral scaled Lagrange matrix and prove that its reduction modulo q has nonzero determinant. Derive nonvanishing and the valuation from that verified reduction and explicitly tracked scaling factors; make no universal q≡1 mod8 valuation assertion in advance.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-05_construction",
+            "commit": "6509755298b6f5163b2d565b0a59b39010b26210"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "1ef80acfca3427d9aaae87326dfa31f16667abea",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.6",
+      "chapter": 6,
+      "module_key": "P06_06",
+      "title": "Generalized multi-weight positive-definite pencil",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Finite anchored positive cone, full-degree real spectrum and Turán under matrix assumptions; actual multiweight density/arithmetic inputs open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_06.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-06_prop_construction",
+          "source_commit": "bee07a3a6623afeadf26254f41a030491a9d408c",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/bee07a3a6623afeadf26254f41a030491a9d408c/Experimental/P06_06/Target.md",
+          "target_summary": "Original 6.6: Generalized multi-weight positive-definite pencil. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "3.1",
+            "3.3",
+            "4.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-06_construction",
+            "commit": "08ecc99cf133d6f5c1a9398ecffd07605b2b6269"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "bee07a3a6623afeadf26254f41a030491a9d408c",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_06.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-06_alt_construction",
+          "source_commit": "ff43ec4bb2443320770395b966d7d0d3bcde1f64",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/ff43ec4bb2443320770395b966d7d0d3bcde1f64/Experimental/P06_06/Alt/Target.md",
+          "target_summary": "For a fixed integer tuple a with a_k>0 and P_a(l)>0 for every integer l≥1, prove the actual coupled-weight moment identity and two-sided comparison c1·w_(2k+1)≤W_a≤c2·w_(2k+1), with c1>0 and c2 finite. Derive positive definiteness, actual affine-pencil identification and real roots with the explicit derivative nonsingularity condition; leave universal arithmetic multiplier rates out of this endpoint.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "3.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-06_construction",
+            "commit": "08ecc99cf133d6f5c1a9398ecffd07605b2b6269"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "ff43ec4bb2443320770395b966d7d0d3bcde1f64",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.7",
+      "chapter": 6,
+      "module_key": "P06_07",
+      "title": "Universal multi-weight two-variable Beukers Krein decomposition",
+      "original_status": "OPEN",
+      "original_scope": "Universal actual two-variable multiweight measure, infinite Krein decomposition/cones and q-adic input missing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_07.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-07_prop_construction",
+          "source_commit": "3f8c37dbbf616439a521e1eb5b85c285e8cc8881",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/3f8c37dbbf616439a521e1eb5b85c285e8cc8881/Experimental/P06_07/Target.md",
+          "target_summary": "Original 6.7: Universal multi-weight two-variable Beukers Krein decomposition. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2",
+            "6.1",
+            "6.3",
+            "6.6"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-07_construction",
+            "commit": "a6550cd1a91690ee77b3590964f035a8073344a0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "3f8c37dbbf616439a521e1eb5b85c285e8cc8881",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_07.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-07_alt_construction",
+          "source_commit": "fd935e0458c94c118a8d9f20277b6a12cc558e98",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/fd935e0458c94c118a8d9f20277b6a12cc558e98/Experimental/P06_07/Alt/Target.md",
+          "target_summary": "For finitely many specified odd weights and a finite rational polynomial family, prove the signed bilinear mode identity for the actual combined two-variable kernel, with all constants explicit, then derive the finite polynomial-pencil spectrum under coefficient independence. The first endpoint is restricted to polynomial inputs.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.1",
+            "5.2"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-07_construction",
+            "commit": "a6550cd1a91690ee77b3590964f035a8073344a0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "fd935e0458c94c118a8d9f20277b6a12cc558e98",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.8",
+      "chapter": 6,
+      "module_key": "P06_08",
+      "title": "Unconditional three-term linear independence cone for $\\{1, \\zeta(3), \\zeta(5)\\}$",
+      "original_status": "OPEN",
+      "original_scope": "Three-term linear independence and effective forms inherit unproved 4.5 arithmetic/decay hypotheses.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_08.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-08_prop_construction",
+          "source_commit": "f6baa3134ea33988983154e6b41d0c74cabbfaa1",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/f6baa3134ea33988983154e6b41d0c74cabbfaa1/Experimental/P06_08/Target.md",
+          "target_summary": "Original 6.8: Unconditional three-term linear independence cone for $\\{1, \\zeta(3), \\zeta(5)\\}$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "4.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-08_construction",
+            "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "f6baa3134ea33988983154e6b41d0c74cabbfaa1",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_08.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-08_alt_construction",
+          "source_commit": "5d6515eea9d7c85438a2076d2ceadb5f1bb77547",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "conditional",
+          "target_url": "https://github.com/randogelist/snditeration/blob/5d6515eea9d7c85438a2076d2ceadb5f1bb77547/Experimental/P06_08/Alt/Target.md",
+          "target_summary": "State a conditional integer-translate nonvanishing and raywise lower-bound transfer for c+aζ(3)+bζ(5): assume the exact qualitative and quantitative 4.5 conclusions for the fixed pair (a,b) in its stated cone, and the independent Apéry theorem for the b=0 case; then derive the corresponding three-term conclusions, distinguishing an existential threshold from a computable one.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "4.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-08_construction",
+            "commit": "acdc24d724974e6d4f4b4846f24b2a42516a56c5"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "5d6515eea9d7c85438a2076d2ceadb5f1bb77547",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.9",
+      "chapter": 6,
+      "module_key": "P06_09",
+      "title": "Triple-pole and multi-weight Hankel determinants",
+      "original_status": "OPEN; historical companion component `!!`",
+      "original_scope": "Historical companion Hermite determinant-unit lemma under prime, distinct-node and congruence hypotheses. Actual triple-pole rows, their congruence and the printed valuations remain open; not integrated here.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_09.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-09_prop_construction",
+          "source_commit": "84f8d09b4961f0d97c45df857c53b691e5164385",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/84f8d09b4961f0d97c45df857c53b691e5164385/Experimental/P06_09/Target.md",
+          "target_summary": "Original 6.9: Triple-pole and multi-weight Hankel determinants. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "5.7",
+            "6.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-09_construction",
+            "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "84f8d09b4961f0d97c45df857c53b691e5164385",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_09.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-09_alt_construction",
+          "source_commit": "dce38250d06d8275e6ac8ad0a1a76eee13a1ed47",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/dce38250d06d8275e6ac8ad0a1a76eee13a1ed47/Experimental/P06_09/Alt/Target.md",
+          "target_summary": "For the displayed R_n^(3), n≥1 and rational P with deg P<6n, construct the actual partial fractions allowing zero Laurent coefficients, explicitly omit the cancelled pole at k=0, and identify the coefficients of ζ(s), ζ(s+1), ζ(s+2) in the residue-functional evaluation. Leave universal noncancellation and determinant valuations as separate strengthened targets over the recomputed nonzero pole set.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "5.7"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-09_construction",
+            "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "dce38250d06d8275e6ac8ad0a1a76eee13a1ed47",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.10",
+      "chapter": 6,
+      "module_key": "P06_10",
+      "title": "Universal potential-gap identity and vanishing of quadratic derivative growth in two variables",
+      "original_status": "REPAIR; component `!!`",
+      "original_scope": "Local actual finite potential conservation and corrected rate-direction counterexample. Imported CoefficientGramGrowth proves normalized log det(CCᵀ)→0 under row rank and polynomial entry bounds, using a weaker finite bound than printed Hadamard. Full limiting potential gap and strict reweighting remain open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_10.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-10_prop_construction",
+          "source_commit": "853364b81d3ed3361e3d90eb2837d67cc972f169",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/853364b81d3ed3361e3d90eb2837d67cc972f169/Experimental/P06_10/Target.md",
+          "target_summary": "Original 6.10: Universal potential-gap identity and vanishing of quadratic derivative growth in two variables. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1",
+            "4.6",
+            "5.2"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-10_construction",
+            "commit": "42275211433ab64ce66452b341ae210c90f391c8"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "853364b81d3ed3361e3d90eb2837d67cc972f169",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_10.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-10_alt_construction",
+          "source_commit": "a39b6e76ff25d96a661c0128da8b6da06b41d778",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/a39b6e76ff25d96a661c0128da8b6da06b41d778/Experimental/P06_10/Alt/Target.md",
+          "target_summary": "Keep the exact finite normalized-log determinant identity and the conditional rate identity when the named limits exist. For K∈N tending to infinity and integer coefficient matrices C_K∈M_{h(K)×(K+1)}(Z), assume h(K)≤K+1, full real row rank, and a fixed exponent A≥0 such that every entry satisfies |C_K(i,j)|≤(K+1)^A for every K. Target log det(C_K C_Kᵀ)/K²→0 using the available weaker finite upper bound. Omit strict equilibrium reweighting and the ratio >581 unless an explicit sufficient upper bound for the positive decay rate is proved.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1",
+            "5.2"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-10_construction",
+            "commit": "42275211433ab64ce66452b341ae210c90f391c8"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "a39b6e76ff25d96a661c0128da8b6da06b41d778",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.11",
+      "chapter": 6,
+      "module_key": "P06_11",
+      "title": "The $p^{-(2k-1)}$ distribution growth law and 2-adic polynomial-quotient obstruction for $\\beta(2k)$",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Odd-square scaling/parity only; Euler distribution and odd/2-adic valuation laws open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_11.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-11_prop_construction",
+          "source_commit": "d4f252fe49f89bf267475aaf8f9905615a69dfe6",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/d4f252fe49f89bf267475aaf8f9905615a69dfe6/Experimental/P06_11/Target.md",
+          "target_summary": "Original 6.11: The $p^{-(2k-1)}$ distribution growth law and 2-adic polynomial-quotient obstruction for $\\beta(2k)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.1",
+            "6.4",
+            "6.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-11_construction",
+            "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "d4f252fe49f89bf267475aaf8f9905615a69dfe6",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_11.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-11_alt_construction",
+          "source_commit": "f4446131975e15815e6feb9bd1392de4a7472d7e",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/f4446131975e15815e6feb9bd1392de4a7472d7e/Experimental/P06_11/Alt/Target.md",
+          "target_summary": "First prove the finite Euler-polynomial distribution identity using the explicit Bernoulli-based Euler definition and fixed sign convention. Then evaluate the actual odd-harmonic residuals and polynomial quotients at a selected prime and weight. Claim only those exact finite valuations actually derived; leave the universal asymptotic growth law and dyadic obstruction as later targets.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-11_construction",
+            "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "f4446131975e15815e6feb9bd1392de4a7472d7e",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.12",
+      "chapter": 6,
+      "module_key": "P06_12",
+      "title": "Full-dimension sign-flip restoration of positive definiteness and $q$-adic non-vanishing for pure $\\beta(4)$",
+      "original_status": "OPEN",
+      "original_scope": "Actual sign-flipped full-dimensional positivity, rational cutoff with spectral margin and q-adic nonvanishing missing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_12.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-12_prop_construction",
+          "source_commit": "abee72b20f84e11bcd8dc28c91992c9551628c74",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/abee72b20f84e11bcd8dc28c91992c9551628c74/Experimental/P06_12/Target.md",
+          "target_summary": "Original 6.12: Full-dimension sign-flip restoration of positive definiteness and $q$-adic non-vanishing for pure $\\beta(4)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1",
+            "6.4",
+            "6.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-12_construction",
+            "commit": "6020e884f4dc9e4466c85452601c529e10393ab0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "abee72b20f84e11bcd8dc28c91992c9551628c74",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_12.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-12_alt_construction",
+          "source_commit": "43093c2dacf020e1510d6188ee79d0bde099a6de",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/43093c2dacf020e1510d6188ee79d0bde099a6de/Experimental/P06_12/Alt/Target.md",
+          "target_summary": "At a fixed finite dimension K, construct the actual sign-modified β(4) Gram matrix and a rigorously proved positive spectral margin. Derive positivity for rational perturbations whose explicit matrix error is smaller than that margin. Treat preservation of q-adic nonvanishing as a separate local residue condition for the actual perturbed pencil.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.5",
+            "3.1",
+            "6.4",
+            "6.5"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-12_construction",
+            "commit": "6020e884f4dc9e4466c85452601c529e10393ab0"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "43093c2dacf020e1510d6188ee79d0bde099a6de",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.13",
+      "chapter": 6,
+      "module_key": "P06_13",
+      "title": "Central-factorial secant differential identity, Laplace mode annihilation, and unilateral $(h,0)$ root signature for all $k\\ge 1$",
+      "original_status": "REPAIR / OPEN; source partial",
+      "original_scope": "Finite central-factorial/secant identity and positive envelope; printed series sign needs correction, differentiated infinite sum and β-pencils remain open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_13.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-13_prop_construction",
+          "source_commit": "37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc/Experimental/P06_13/Target.md",
+          "target_summary": "Original 6.13: Central-factorial secant differential identity, Laplace mode annihilation, and unilateral $(h,0)$ root signature for all $k\\ge 1$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-13_construction",
+            "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_13.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-13_alt_construction",
+          "source_commit": "e060f0d40571ba95e03a6b132adced725f884262",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/e060f0d40571ba95e03a6b132adced725f884262/Experimental/P06_13/Alt/Target.md",
+          "target_summary": "For every k≥1 prove the finite central-factorial secant operator identity and its differentiated Laplace expansion on z>0 with the required global factor (−1)^(k−1). Build the associated actual combined-β pencil only after local uniform differentiated convergence is established; formulate unilateral root counts with multiplicity and explicit nonsingularity hypotheses.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-13_construction",
+            "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "e060f0d40571ba95e03a6b132adced725f884262",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.14",
+      "chapter": 6,
+      "module_key": "P06_14",
+      "title": "Even-pole scaling via $\\cosh(2\\pi v)$ and coupled positive-definite pencils for $b\\zeta(5)+a\\beta(4)$ and $b\\zeta(5)-a\\beta(2)$",
+      "original_status": "OPEN",
+      "original_scope": "Even-pole cosh scaling, aligned moments and uniform coupled spectral/arithmetic bounds missing.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_14.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-14_prop_construction",
+          "source_commit": "aa555c759f5703c9cbf68a43320bb3c85d19acc8",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/aa555c759f5703c9cbf68a43320bb3c85d19acc8/Experimental/P06_14/Target.md",
+          "target_summary": "Original 6.14: Even-pole scaling via $\\cosh(2\\pi v)$ and coupled positive-definite pencils for $b\\zeta(5)+a\\beta(4)$ and $b\\zeta(5)-a\\beta(2)$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "4.4",
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-14_construction",
+            "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "aa555c759f5703c9cbf68a43320bb3c85d19acc8",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_14.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-14_alt_construction",
+          "source_commit": "73ea839fb5c547141f51506c698c40c3c627bdea",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "corrected",
+          "target_url": "https://github.com/randogelist/snditeration/blob/73ea839fb5c547141f51506c698c40c3c627bdea/Experimental/P06_14/Alt/Target.md",
+          "target_summary": "Choose one explicit unscaled actual β-functional, define its even-pole rescaling by −μ(R(4t)), and derive the corresponding integral change-of-variables formula with its Jacobian. Compute its monomial and pole moments from that definition. Only then formulate the actual bζ(5)+aβ(4) and bζ(5)−aβ(2) pencils and prove positivity on an explicitly bounded comparison cone.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.1",
+            "6.4"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-14_construction",
+            "commit": "675ed3292458d7b25c84ba47047b2f0ad95faba1"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "73ea839fb5c547141f51506c698c40c3c627bdea",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.15",
+      "chapter": 6,
+      "module_key": "P06_15",
+      "title": "Arithmetic transcendence, strictly positive one-variable measure, and rank-one Padé pencil for $\\beta(2k+1)$ across all $k\\ge 0$",
+      "original_status": "REPAIR / OPEN; source partial",
+      "original_scope": "Odd β rational π-powers, qualitative transcendence/finite independence and k=0 moments; effective measures, all-k rank-one law and printed exterior asymptotic not certified.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_15.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-15_prop_construction",
+          "source_commit": "43e543e2ad8981440ebb5b938cd8d6141d6fff06",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/43e543e2ad8981440ebb5b938cd8d6141d6fff06/Experimental/P06_15/Target.md",
+          "target_summary": "Original 6.15: Arithmetic transcendence, strictly positive one-variable measure, and rank-one Padé pencil for $\\beta(2k+1)$ across all $k\\ge 0$. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.8",
+            "5.1"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-15_construction",
+            "commit": "70c77e8d18dfe091e5771b57beee867f474116d8"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "43e543e2ad8981440ebb5b938cd8d6141d6fff06",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_15.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-15_alt_construction",
+          "source_commit": "19303e5152d761369c15c2eea004a9ecbf27f994",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/19303e5152d761369c15c2eea004a9ecbf27f994/Experimental/P06_15/Alt/Target.md",
+          "target_summary": "For every k≥0 identify the actual odd Dirichlet beta value with its nonzero rational multiple of π^(2k+1), using the ordered-series/integral definition at β(1). Derive qualitative transcendence and the explicitly stated finite linear-independence consequences from an independently checked π-transcendence theorem. Separate all effective measures, rank-one Padé assertions and exterior asymptotics.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-15_construction",
+            "commit": "70c77e8d18dfe091e5771b57beee867f474116d8"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "19303e5152d761369c15c2eea004a9ecbf27f994",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.16",
+      "chapter": 6,
+      "module_key": "P06_16",
+      "title": "Generalized multi-weight Zeta–Beta positive-definite pencil",
+      "original_status": "OPEN; historical companion component `!!`",
+      "original_scope": "Historical companion compact positive-ratio comparison with explicit endpoint positivity and ratio identity. Actual mixed ζ–β weight, endpoint behavior, spectral and arithmetic conclusions remain open; not integrated here.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_16.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-16_prop_construction",
+          "source_commit": "5568e83bcfcd9c20ee0916d9c4ba8942015db94b",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/5568e83bcfcd9c20ee0916d9c4ba8942015db94b/Experimental/P06_16/Target.md",
+          "target_summary": "Original 6.16: Generalized multi-weight Zeta–Beta positive-definite pencil. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "2.5",
+            "3.1",
+            "3.3",
+            "6.6",
+            "6.14"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-16_construction",
+            "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "5568e83bcfcd9c20ee0916d9c4ba8942015db94b",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_16.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-16_alt_construction",
+          "source_commit": "c0f4dbf333321157763b93b15e0fe8ed7ce9ec55",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "conditional",
+          "target_url": "https://github.com/randogelist/snditeration/blob/c0f4dbf333321157763b93b15e0fe8ed7ce9ec55/Experimental/P06_16/Alt/Target.md",
+          "target_summary": "Using the single repaired 6.14 β-normalization, construct the actual finite mixed ζ–β weight and affine pencil. Prove positive comparison with the reference ζ-weight when its explicit ratio has a positive continuous extension to a compactified half-line, including both endpoints. Deduce finite Gram positivity and the spectral conclusion under the actual derivative nonsingularity hypothesis.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "2.2",
+            "2.5",
+            "3.1",
+            "6.6",
+            "6.14"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-16_construction",
+            "commit": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "c0f4dbf333321157763b93b15e0fe8ed7ce9ec55",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.17",
+      "chapter": 6,
+      "module_key": "P06_17",
+      "title": "Universal two-variable Beukers Zeta–Beta pencil, Krein decomposition, and $q$-adic non-vanishing",
+      "original_status": "OPEN; historical companion component `!!`",
+      "original_scope": "Historical companion corrected harmonic windows, support disjointness and index nondivisibility. Actual combined measure, infinite Krein decomposition and highest-weight determinant nonvanishing remain open; not integrated here.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_17.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-17_prop_construction",
+          "source_commit": "2f1d4f939154b71b152230ea1b5d408f48255439",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/2f1d4f939154b71b152230ea1b5d408f48255439/Experimental/P06_17/Target.md",
+          "target_summary": "Original 6.17: Universal two-variable Beukers Zeta–Beta pencil, Krein decomposition, and $q$-adic non-vanishing. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.2",
+            "5.3",
+            "6.7",
+            "6.10"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-17_construction",
+            "commit": "3680423885c8141c523e4e1d5154703085962aad"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "2f1d4f939154b71b152230ea1b5d408f48255439",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_17.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-17_alt_construction",
+          "source_commit": "229f01232d02b13b08b8cd12cd2b083630aafe66",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/229f01232d02b13b08b8cd12cd2b083630aafe66/Experimental/P06_17/Alt/Target.md",
+          "target_summary": "For the actual ζ(7)/β(4) two-variable components and finite rational polynomial families, establish the correctly normalized combined bilinear moments and finite coefficient-pencil identity. Recompute local odd-harmonic denominator windows for each selected basis; derive any q-adic nonvanishing only from the actual corrected reduction. Higher-weight and arbitrary-L² extensions are separate goals.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "5.2",
+            "5.3",
+            "6.10"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-17_construction",
+            "commit": "3680423885c8141c523e4e1d5154703085962aad"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "229f01232d02b13b08b8cd12cd2b083630aafe66",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    },
+    {
+      "item_id": "6.18",
+      "chapter": 6,
+      "module_key": "P06_18",
+      "title": "Principal-minor 2-adic integrality law, dyadic height bounds for Zeta–Beta pencils, and multi-weight effective measures",
+      "original_status": "OPEN; source partial",
+      "original_scope": "Dyadic numerator/denominator degree and quotient-vanishing threshold only; integrality, multiplier, height loss and effective measure open.",
+      "original_source_url": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/README.md",
+      "selected_attempts": [],
+      "attempts": [
+        {
+          "attempt_id": "P06_18.whole.prop.i0001",
+          "role": "prop",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-18_prop_construction",
+          "source_commit": "991b098f0f7f4cb949a8a9b29f11c76bd376e1c2",
+          "stage": "construction",
+          "work_status": "SOURCE_ONLY_UNCOMPILED",
+          "relation_to_original": "original",
+          "target_url": "https://github.com/randogelist/snditeration/blob/991b098f0f7f4cb949a8a9b29f11c76bd376e1c2/Experimental/P06_18/Target.md",
+          "target_summary": "Original 6.18: Principal-minor 2-adic integrality law, dyadic height bounds for Zeta–Beta pencils, and multi-weight effective measures. Preserve all repair gates and exact scope in Target.md.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "3.4",
+            "4.5",
+            "6.6",
+            "6.14",
+            "6.16"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-18_construction",
+            "commit": "0ae60ed1f7cd11f3af98894d34be78fe604f5b8a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "991b098f0f7f4cb949a8a9b29f11c76bd376e1c2",
+            "verified_blob_count": 1,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        },
+        {
+          "attempt_id": "P06_18.whole.alt.i0001",
+          "role": "alt",
+          "part": "whole",
+          "iteration": 1,
+          "branch": "experiment/zetahyperbolic-p06-18_alt_construction",
+          "source_commit": "bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3",
+          "stage": "construction",
+          "work_status": "DOCUMENTATION_ONLY_CANDIDATE",
+          "relation_to_original": "restricted",
+          "target_url": "https://github.com/randogelist/snditeration/blob/bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3/Experimental/P06_18/Alt/Target.md",
+          "target_summary": "For the actual shifted numerator polynomials over D_K, a nonempty active β-index set, and the exact integer degree inequality for each entry, prove Euclidean polynomial-quotient vanishing. Separately prove 2-integrality of the actual finite alternating odd-harmonic sums. State no zero dyadic-loss determinant theorem until the repaired β pole normalization and all rational residue/basis factors are accounted for.",
+          "parents": [],
+          "dependencies": [],
+          "dependency_resolution_status": "CLAUSE_SELECTION_AND_COMPATIBILITY_PROOFS_REQUIRED",
+          "candidate_prerequisite_items": [
+            "6.14",
+            "6.16"
+          ],
+          "evidence": [],
+          "supersedes": [],
+          "origin_snapshot": {
+            "branch": "experiment/zetahyperbolic-p06-18_construction",
+            "commit": "0ae60ed1f7cd11f3af98894d34be78fe604f5b8a"
+          },
+          "historical_evidence_location": "https://github.com/randogelist/snditeration/blob/5acb01dd19a9cd6ca8312557ec5d84ef94a960b6/docs/EXPERIMENTS.json",
+          "publication_identity": {
+            "commit": "bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3",
+            "verified_blob_count": 3,
+            "meaning": "Source publication identity only; not proof or compilation evidence."
+          },
+          "new_proof_tier": null
+        }
+      ]
+    }
+  ]
+}
