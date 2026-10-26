@@ -1,0 +1,53 @@
+{
+  "paper_item": "3.4",
+  "alternative_target": "For the actual nested principal pencils, prove interlacing first for the generalized symmetric eigenvalues, allowing zero eigenvalues; transport only nonzero eigenvalues to finite roots with multiplicities and sign-aware reciprocal ordering. State the actual Dodgson identity separately, retaining any nonzero-central-minor premise.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Allow principal degree loss and roots at infinity instead of asserting r finite roots at every size.",
+  "prerequisites": [
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Actual shifted-inertia identification and nested compression/interlacing proof.",
+    "Actual pencil substitution in the generic Dodgson identity."
+  ],
+  "correction_gate": "The known constant principal-pencil case must satisfy the corrected statement; a full-root-count predecessor cannot be assumed.",
+  "source_paths": [
+    "Zetahyperbolic/Section3/PrincipalDegreeLoss.lean",
+    "Zetahyperbolic/Section3/SignatureRestriction.lean",
+    "Zetahyperbolic/Section3/DodgsonCondensation.lean"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-04_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-04_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-04_construction",
+  "original_snapshot_commit": "06efc463a549f07db26b8e38f565276e8854d476",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section3/PrincipalDegreeLoss.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/PrincipalDegreeLoss.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/SignatureRestriction.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/SignatureRestriction.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/DodgsonCondensation.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/DodgsonCondensation.lean"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
