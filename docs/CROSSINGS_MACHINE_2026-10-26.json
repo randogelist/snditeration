@@ -303,7 +303,24 @@
       "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/DyadicQuotientThreshold.lean",
       "verified_receipt_status": "PASS",
       "scope_and_limitation": "Odd-square variable substitution algebra and evenness of consecutive product only; no distribution valuations, dyadic obstruction or height limit."
+    },
+    {
+      "paper_item": "4.3 actual primitive specialization; 4.7 true manuscript spectral roots",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.Section4ManuscriptBridge",
+      "lean_declarations": [
+        "LeanPaper.Section4ManuscriptBridge.manuscript_spectral_cluster_fraction",
+        "LeanPaper.Section4ManuscriptBridge.manuscript_large_exponent_gives_close_root",
+        "LeanPaper.Section4ManuscriptBridge.manuscript_primitive_complex_padic_disk"
+      ],
+      "source_sha256": "c7d82a2dda22fb92ae2b9d7ecbce560fd1dc14f3fbe21637f165ca17467eec52",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/Section4ManuscriptBridge.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "An actual admissible odd-zeta Hankel pencil satisfies the finite spectral-count inequality if its pointwise exponent cap and average bound are separately supplied. A root with log(|beta|)>=τ has exact determinant zero and |root-center|<=exp(-τ). The constructed primitive integer polynomial also satisfies the complex p-adic zero-free disk conditional on given center nonzero and small-radius assumptions; no actual-family effective cap, p-adic center valuation, rate, or ζ5 irrationality follows."
     }
   ],
-  "last_source_audit": "2026-10-26, six-round principal/mixed/dual source sweep"
+  "last_source_audit": "2026-10-26, source-difference round discovered actual-pencils close-root transfer"
 }
