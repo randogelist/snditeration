@@ -32,6 +32,7 @@ theorem evenPolePair_coe (j : ℕ) :
   rw [rationalDomain_pole_coe (j : ℤ),
     rationalDomain_pole_coe (-(j : ℤ))]
   simp only [Int.cast_neg, map_neg, sub_neg_eq_add]
+  simp
 
 /-- Actual integer-pole τ, with no exceptional omission at j=1. -/
 theorem evenPolePair_cancellation (k j : ℕ) (hj : 1 ≤ j) :
