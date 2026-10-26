@@ -1,0 +1,61 @@
+{
+  "paper_item": "6.9",
+  "alternative_target": "For the displayed R_n^(3), n≥1 and rational P with deg P<6n, construct the actual partial fractions allowing zero Laurent coefficients, explicitly omit the cancelled pole at k=0, and identify the coefficients of ζ(s), ζ(s+1), ζ(s+2) in the residue-functional evaluation. Leave universal noncancellation and determinant valuations as separate strengthened targets over the recomputed nonzero pole set.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Remove the false every-node nonzero triple-pole coefficient premise; use actual surviving poles and recomputed Laurent data.",
+  "prerequisites": [
+    "2.5",
+    "5.7"
+  ],
+  "retained_open_obligations": [
+    "Prove cancellation and exact partial fractions for the actual rational function.",
+    "Determine all surviving pole orders and the correct coefficient formulas.",
+    "Construct the actual determinant, prove noncancellation on its polynomial space, and recompute mod-q blocks and exponents."
+  ],
+  "correction_gate": "The j=1 numerator contributes t^6 while the denominator contributes t^3 at k=0. Neither the printed coefficient formula nor its downstream valuation may be retained without recomputation.",
+  "source_paths": [
+    "Experimental/P06_09/Target.md",
+    "Experimental/P06_09/Assumptions.json",
+    "Experimental/P06_09/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-09_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-09_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-09_construction",
+  "original_snapshot_commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_09/Target.md",
+      "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e",
+      "url": "https://github.com/randogelist/snditeration/blob/c88ecbb039e08e8355065b5e9649183e1f934e2e/Experimental/P06_09/Target.md"
+    },
+    {
+      "path": "Experimental/P06_09/Assumptions.json",
+      "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e",
+      "url": "https://github.com/randogelist/snditeration/blob/c88ecbb039e08e8355065b5e9649183e1f934e2e/Experimental/P06_09/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_09/Prerequisites.lean",
+      "commit": "c88ecbb039e08e8355065b5e9649183e1f934e2e",
+      "url": "https://github.com/randogelist/snditeration/blob/c88ecbb039e08e8355065b5e9649183e1f934e2e/Experimental/P06_09/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
