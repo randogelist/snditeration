@@ -1,0 +1,49 @@
+{
+  "id": "P03_06",
+  "paper_item": "3.6",
+  "branch": "experiment/zetahyperbolic-p03-06_construction",
+  "namespace": "Experimental.P03_06",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "proof_claim": false,
+  "axioms": [
+    {
+      "name": "Experimental.P03_06.actualFiniteMomentGramExpansion",
+      "meaning": "Quadratic form of the actual finite reciprocal-square moment Hankel matrix equals a finite sum of polynomial squares at its actual spectral nodes.",
+      "dependencies": [
+        "finite-sum distributivity and natural-power addition",
+        "Theorem 3.1 actual roots for later interpretation"
+      ],
+      "supports": "Upstream exact finite algebra for positive-semidefiniteness; not the target strict positivity/rank/logarithmic derivative/limit assertions."
+    }
+  ],
+  "proved_prerequisite_aliases": [],
+  "original_statement_preserved": true,
+  "original_target_assumed": false,
+  "requires_discharge": [
+    "Experimental.P03_06.actualFiniteMomentGramExpansion"
+  ],
+  "publication_path": "Experimental/P03_06",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_06.actualFiniteMomentGramExpansion",
+      "meaning": "Quadratic form of the actual finite reciprocal-square moment Hankel matrix equals a finite sum of polynomial squares at its actual spectral nodes.",
+      "dependencies": [
+        "finite-sum distributivity and natural-power addition",
+        "Theorem 3.1 actual roots for later interpretation"
+      ],
+      "supports": "Upstream exact finite algebra for positive-semidefiniteness; not the target strict positivity/rank/logarithmic derivative/limit assertions."
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P03_06.actualFiniteMomentGramExpansion"
+  ],
+  "proved_upstream_aliases": [],
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "full_target_proved": false
+}
