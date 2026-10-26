@@ -1,0 +1,60 @@
+{
+  "paper_item": "6.11",
+  "alternative_target": "First prove the finite Euler-polynomial distribution identity using the explicit Bernoulli-based Euler definition and fixed sign convention. Then evaluate the actual odd-harmonic residuals and polynomial quotients at a selected prime and weight. Claim only those exact finite valuations actually derived; leave the universal asymptotic growth law and dyadic obstruction as later targets.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Separate finite distribution arithmetic from the universal growth-rate and 2-adic claims.",
+  "prerequisites": [
+    "6.4"
+  ],
+  "retained_open_obligations": [
+    "Discharge the Euler shift axiom and reconcile the secant Euler-number convention.",
+    "Construct the actual local β-functional and prove quotient/residue valuations.",
+    "Resolve the k=1 boundary case and all asymptotic error quantifiers."
+  ],
+  "correction_gate": "A scaling formula alone is not a valuation proof; no strict positive linear-growth conclusion is inherited at k=1 without separate verification.",
+  "source_paths": [
+    "Experimental/P06_11/Target.md",
+    "Experimental/P06_11/Assumptions.json",
+    "Experimental/P06_11/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-11_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-11_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-11_construction",
+  "original_snapshot_commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_11/Target.md",
+      "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a",
+      "url": "https://github.com/randogelist/snditeration/blob/46bf5efa083d392c53ed582ebcff76cd3f59b02a/Experimental/P06_11/Target.md"
+    },
+    {
+      "path": "Experimental/P06_11/Assumptions.json",
+      "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a",
+      "url": "https://github.com/randogelist/snditeration/blob/46bf5efa083d392c53ed582ebcff76cd3f59b02a/Experimental/P06_11/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_11/Prerequisites.lean",
+      "commit": "46bf5efa083d392c53ed582ebcff76cd3f59b02a",
+      "url": "https://github.com/randogelist/snditeration/blob/46bf5efa083d392c53ed582ebcff76cd3f59b02a/Experimental/P06_11/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
