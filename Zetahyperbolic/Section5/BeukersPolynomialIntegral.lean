@@ -50,6 +50,7 @@ private theorem polynomial_product_expansion {K : ℕ}
       ∑ r : Fin (K + 1), ∑ t : Fin (K + 1),
         (c r : ℝ) * (d t : ℝ) * (z.1 ^ r.val * z.2 ^ t.val * density z) := by
   simp only [coefficientPolynomialValue, Finset.sum_mul, Finset.mul_sum]
+  conv_lhs => rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro r _
   apply Finset.sum_congr rfl
@@ -63,9 +64,9 @@ theorem polynomial_product_integrable {K : ℕ} (c d : Fin (K + 1) → ℚ) :
       coefficientPolynomialValue c z.1 * coefficientPolynomialValue d z.2 * density z)
       squareMeasure := by
   simp_rw [polynomial_product_expansion]
-  apply integrable_finset_sum
+  apply integrable_finsetSum
   intro r _
-  apply integrable_finset_sum
+  apply integrable_finsetSum
   intro t _
   exact (density_monomial_integrable r.val t.val).const_mul _
 
@@ -76,18 +77,18 @@ theorem integral_polynomial_product_eq_momentForm {K : ℕ}
     (∫ z, coefficientPolynomialValue c z.1 * coefficientPolynomialValue d z.2 *
       density z ∂squareMeasure) = polynomialMomentForm c d := by
   simp_rw [polynomial_product_expansion]
-  rw [integral_finset_sum]
+  rw [integral_finsetSum]
   · unfold polynomialMomentForm
     apply Finset.sum_congr rfl
     intro r _
-    rw [integral_finset_sum]
+    rw [integral_finsetSum]
     · apply Finset.sum_congr rfl
       intro t _
       rw [integral_const_mul]
     · intro t _
       exact (density_monomial_integrable r.val t.val).const_mul _
   · intro r _
-    apply integrable_finset_sum
+    apply integrable_finsetSum
     intro t _
     exact (density_monomial_integrable r.val t.val).const_mul _
 

@@ -92,7 +92,7 @@ theorem carlemanTerm_lower_bound (p : Real.Parameters) (r : ℕ) (hr : 1 ≤ r) 
   have hB := carlemanConstant_pos p
   have hpos : 0 < ∫ t : ℝ, t ^ r ∂momentMeasure p := by
     have h := solid_moment_det_pos p r 0 1
-    rw [Matrix.det_fin_one] at h
+    erw [Matrix.det_fin_one] at h
     simpa using h
   have hbound := moment_le_carleman_power p r hr
   have h := _root_.Real.rpow_le_rpow_of_nonpos hpos hbound

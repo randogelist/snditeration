@@ -18,13 +18,13 @@ def momentValue (p : Real.Parameters) (a : ℕ) : ℝ :=
 
 theorem momentValue_pos (p : Real.Parameters) (a : ℕ) : 0 < momentValue p a := by
   have h := solid_moment_det_pos p a 0 1
-  rw [Matrix.det_fin_one] at h
+  erw [Matrix.det_fin_one] at h
   simpa [momentValue] using h
 
 theorem momentValue_strict_logConvex (p : Real.Parameters) (a : ℕ) :
     momentValue p (a + 1) ^ 2 < momentValue p a * momentValue p (a + 2) := by
   have h := solid_moment_det_pos p a 0 2
-  rw [Matrix.det_fin_two] at h
+  erw [Matrix.det_fin_two] at h
   simp only [Fin.val_zero, Fin.val_one, Nat.add_zero,
     Nat.zero_add, Nat.add_assoc] at h
   change 0 < momentValue p a * momentValue p (a + 2) -
@@ -63,7 +63,7 @@ theorem momentGapRatio_strictMono (p : Real.Parameters) {d : ℕ} (hd : 0 < d) :
         intro a b hab
         change momentValue p (a + (d + 1)) / momentValue p a <
           momentValue p (b + (d + 1)) / momentValue p b
-        rw [momentGapRatio_succ, momentGapRatio_succ]
+        rw [momentGapRatio_succ p d a, momentGapRatio_succ p d b]
         exact mul_lt_mul (hprev hab)
           (le_of_lt (momentRatio_strictMono p (Nat.add_lt_add_right hab d)))
           (momentGapRatio_pos p 1 (a + d))

@@ -90,6 +90,7 @@ import Zetahyperbolic.Section3.ActualReciprocalNearestRoot
 import Zetahyperbolic.Section3.CarlemanDivergence
 import Zetahyperbolic.Section3.CauchyInterlacing
 import Zetahyperbolic.Section3.ChristoffelDarboux
+import Zetahyperbolic.Section3.ContinuousFamily
 import Zetahyperbolic.Section3.ContinuousParameter
 import Zetahyperbolic.Section3.CorrectedReciprocalCorollary
 import Zetahyperbolic.Section3.FiniteAtomicHankel
@@ -103,8 +104,13 @@ import Zetahyperbolic.Section3.MomentGrowth
 import Zetahyperbolic.Section3.PrimitiveRealNormalization
 import Zetahyperbolic.Section3.PrincipalCondensation
 import Zetahyperbolic.Section3.PrincipalRadius
+import Zetahyperbolic.Section3.PrintedMomentMeasure
+import Zetahyperbolic.Section3.ReciprocalStieltjesMeasure
 import Zetahyperbolic.Section3.ShiftedMomentPositivity
 import Zetahyperbolic.Section3.SingularSpectrum
 import Zetahyperbolic.Section5.BeukersPolynomialIntegral
 import Zetahyperbolic.Section5.DualCenteredSpectrum
+import Zetahyperbolic.Section5.KreinPolynomialModes
 import Zetahyperbolic.Section5.RationalIndependence
+import Zetahyperbolic.Section6.TriplePoleCancellation
+import Zetahyperbolic.Section5.BeukersHilbertSchmidt

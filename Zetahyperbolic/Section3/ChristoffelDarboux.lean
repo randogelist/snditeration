@@ -101,7 +101,7 @@ theorem inverse_gram (hG : G.PosDef) :
       congrArg Inv.inv (LDL.lower_conj_diag hG).symm
     _ = _ := by
       rw [Matrix.mul_inv_rev, Matrix.mul_inv_rev, ← Matrix.conjTranspose_nonsing_inv,
-        LDL.lower, Matrix.inv_inv, inverse_diagonal]
+        LDL.lower, Matrix.inv_inv_of_invertible, inverse_diagonal]
       simp only [Matrix.conjTranspose_eq_transpose_of_trivial, Matrix.mul_assoc]
 
 theorem monicPolynomial_eval (hG : G.PosDef) (i : Fin n) (t : ℝ) :
@@ -115,11 +115,14 @@ theorem kernel_eq_inverseGram (hG : G.PosDef) (t u : ℝ) :
       (G⁻¹ *ᵥ (fun i : Fin n => u ^ i.val)) := by
   rw [inverse_gram hG, ← Matrix.mulVec_mulVec, ← Matrix.mulVec_mulVec,
     Matrix.dotProduct_mulVec, Matrix.vecMul_transpose]
-  simp only [kernel, dotProduct, Matrix.mulVec_diagonal, Matrix.mulVec]
+  simp only [kernel, dotProduct]
+  simp only [Matrix.mulVec_diagonal]
+  simp only [Matrix.mulVec, dotProduct]
   apply Finset.sum_congr rfl
   intro i _
   rw [monicPolynomial_eval, monicPolynomial_eval]
   dsimp only [squaredNorm]
+  simp only [mul_comm]
   field_simp [lower_diagonal_ne_zero hG i, ne_of_gt (diagonal_positive hG i)] <;> ring
 
 
@@ -173,7 +176,7 @@ theorem bilinear_rescale (c d : Fin n → ℝ) (a b : ℝ) :
   intro i _
   apply Finset.sum_congr rfl
   intro j _
-  simp only [div_eq_mul_inv, mul_inv_rev]
+  simp only [div_eq_mul_inv, _root_.mul_inv_rev]
   ring
 
 theorem coefficient_pairing (hG : G.PosDef) (i j : Fin n) :

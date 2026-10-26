@@ -155,7 +155,7 @@ theorem moment_le_factorial (p : Real.Parameters) (r : ℕ) :
 theorem momentGrowthConstant_pos (p : Real.Parameters) : 0 < momentGrowthConstant p := by
   have hpos : 0 < ∫ t : ℝ, t ^ 0 ∂momentMeasure p := by
     have h := solid_moment_det_pos p 0 0 1
-    rw [Matrix.det_fin_one] at h
+    erw [Matrix.det_fin_one] at h
     simpa using h
   have hbound := moment_le_factorial p 0
   have hproduct := hpos.trans_le hbound

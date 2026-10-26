@@ -15,10 +15,10 @@ open scoped BigOperators
 namespace ManuscriptChain.Section5DualSpectrum
 open DualAlgebra DualSpectral
 
+set_option maxHeartbeats 3000000 in
 /-- Rational row independence is preserved by coefficient embedding into R.
 The proof uses the nonzero rational Gram determinant, not a scalar-extension
 independence premise. -/
-set_option maxHeartbeats 3000000 in
 theorem real_rows_separate_of_rational_injective {h K : ℕ}
     (c : Matrix (Fin h) (Fin (K+1)) ℚ) (hc : Function.Injective c.vecMul) :
     coefficientRowsSeparate (realCoefficients c) := by
@@ -26,7 +26,7 @@ theorem real_rows_separate_of_rational_injective {h K : ℕ}
     simpa [Matrix.conjTranspose_eq_transpose_of_trivial] using
       Matrix.PosDef.mul_conjTranspose_self c hc
   have hqdet : (c * c.transpose).det ≠ 0 :=
-    ne_of_gt hqpd.det_pos
+    ((Matrix.isUnit_iff_isUnit_det (c * c.transpose)).mp hqpd.isUnit).ne_zero
   have hmap : coefficientSlope (realCoefficients c) =
       (c * c.transpose).map (Rat.castHom ℝ) := by
     ext i j

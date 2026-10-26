@@ -92,7 +92,7 @@ lemma kernel_le_endpoint_sum {a b s y : ℝ} (hy : 0 < y) (ha : a ≤ s) (hb : s
   rw [← tsum_mul_left, ← tsum_mul_left, ← tsum_mul_left,
     ← Summable.tsum_add ((summable_exponentialTerm a hy).mul_left (y^a))
       ((summable_exponentialTerm b hy).mul_left (y^b))]
-  exact tsum_le_tsum hterm ((summable_exponentialTerm s hy).mul_left (y^s))
+  exact ((summable_exponentialTerm s hy).mul_left (y^s)).tsum_le_tsum hterm
     (((summable_exponentialTerm a hy).mul_left (y^a)).add
       ((summable_exponentialTerm b hy).mul_left (y^b)))
 

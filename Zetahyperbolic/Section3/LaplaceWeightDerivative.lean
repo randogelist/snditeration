@@ -42,8 +42,8 @@ theorem summable_term (j : ℕ) {τ y : ℝ} (hτ : 0 < τ) (hy : 0 < y) :
 theorem term_hasDerivAt (j n : ℕ) (τ y : ℝ) :
     HasDerivAt (fun z => term j n z y) (termDerivative j n τ y) τ := by
   have hd := ((hasDerivAt_id τ).const_mul (-(2*Real.pi*((n+1 : ℕ) : ℝ)*y))).exp
-  convert hd.const_mul (((n+1 : ℕ) : ℝ)^j) using 1 <;>
-    dsimp [term, termDerivative, id] <;> ring
+  simpa [term, termDerivative, id, mul_assoc, mul_left_comm, mul_comm] using
+    hd.const_mul (((n+1 : ℕ) : ℝ)^j)
 
 theorem rate_mul_exp_bound {a rate τ : ℝ} (ha : 0 < a) (hrate : 0 ≤ rate)
     (hτ : 2*a ≤ τ) :
@@ -70,9 +70,10 @@ theorem termDerivative_bound (j n : ℕ) {a τ y : ℝ}
   have hc : 0 ≤ (((n+1 : ℕ) : ℝ)^j) := by positivity
   have hrate : 0 ≤ 2*Real.pi*((n+1 : ℕ) : ℝ)*y := by positivity
   have h := mul_le_mul_of_nonneg_left (rate_mul_exp_bound ha hrate hτ) hc
-  simpa only [termDerivative, term, norm_neg, Real.norm_eq_abs,
-    abs_of_nonneg (mul_nonneg hrate (mul_nonneg hc (Real.exp_pos _).le)),
-    mul_assoc, mul_left_comm, mul_comm] using h
+  unfold termDerivative term
+  rw [norm_neg, norm_mul, Real.norm_of_nonneg hrate, norm_mul,
+    Real.norm_of_nonneg hc, Real.norm_of_nonneg (Real.exp_pos _).le]
+  simpa only [mul_assoc, mul_left_comm, mul_comm] using h
 
 theorem density_hasDerivAt (k : ℕ) {τ y : ℝ} (hτ : 0 < τ) (hy : 0 < y) :
     HasDerivAt (fun z => density k z y) (densityDerivative k τ y) τ := by
