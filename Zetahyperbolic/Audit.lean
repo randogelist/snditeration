@@ -750,3 +750,5 @@ run_cmd do
 
 #print axioms ManuscriptChain.BetaScaledUnitObstruction.printed_odd_prime_unit_claim_false
 #print axioms ManuscriptChain.BetaOddPolynomialIntegrality.quotientMoment_norm_le_one
+
+#print axioms ManuscriptChain.Chapter6HarmonicCutoff.beta_harmonic_valuation_lower

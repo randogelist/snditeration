@@ -45,7 +45,7 @@ theorem slope_eq (N h : ℕ) : BetaOddGram.slope N h =
     (-1:ℝ)^N • Matrix.vecMulVec (alternatingVector h) (alternatingVector h) := by
   ext i j
   simp only [BetaOddGram.slope, alternatingVector, Matrix.smul_apply, smul_eq_mul,
-    Matrix.vecMulVec, Matrix.of_apply, pow_add]
+    Matrix.vecMulVec, Matrix.of_apply, pow_add, mul_assoc]
 
 /-- Exact matrix determinant lemma for the actual beta pencil. -/
 theorem determinant_formula (k N h : ℕ) (X : ℝ) :

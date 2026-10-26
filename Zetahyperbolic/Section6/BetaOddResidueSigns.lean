@@ -160,7 +160,7 @@ theorem slope_factorization (N K m : ℕ) :
     slope N K m =
       PaperAdvances.Corollary3_6.finiteVandermonde (nodes N K) (K - N) *
         Matrix.diagonal (fun a => (residue N K m (N + a.val) : ℝ)) *
-        (PaperAdvances.Corollary3_6.finiteVandermonde (nodes N K) (K - N))ᵀ :=
+        (PaperAdvances.Corollary3_6.finiteVandermonde (nodes N K) (K - N)).transpose :=
   PaperAdvances.Corollary3_6_WeightedCorrected.weighted_hankel_gram
     (nodes N K) (fun a => (residue N K m (N + a.val) : ℝ)) (K - N)
 

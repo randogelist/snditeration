@@ -179,3 +179,6 @@ import Zetahyperbolic.Section6.Theorem63Nonvanishing
 
 import Zetahyperbolic.Section6.BetaOddPolynomialIntegrality
 import Zetahyperbolic.Section6.BetaScaledUnitObstruction
+
+import Zetahyperbolic.Section6.Chapter6HarmonicCutoffBound
+import Zetahyperbolic.Section6.BetaOddPoleNorm

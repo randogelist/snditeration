@@ -121,7 +121,7 @@ theorem pairedMonomialMatrix_cast (p : ℕ) [Fact p.Prime] (X : ℚ) :
     (pairedMonomialMatrix p X).map (Rat.castHom ℚ_[p]) =
       pairedMonomialPadicMatrix p (X : ℚ_[p]) := by
   ext r s
-  simp [pairedMonomialMatrix, pairedMonomialPadicMatrix, Matrix.map_apply]
+  simp [pairedMonomialMatrix, pairedMonomialPadicMatrix, Matrix.map_apply, apply_ite]
 
 theorem pairedMonomialPadicMatrix_diagonal (p : ℕ) [Fact p.Prime]
     (X : ℚ_[p]) (r : Fin p) :
@@ -132,7 +132,7 @@ theorem pairedMonomialPadicMatrix_diagonal (p : ℕ) [Fact p.Prime]
   simp only [pairedMonomialPadicMatrix, Fin.sum_univ_two]
   simp only [Fin.val_zero, Fin.val_one, zero_mul, one_mul, add_zero]
   have hn : r.val ≠ r.val+p := by omega
-  simp [hn, Ne.symm hn]
+  simp [hn, Ne.symm hn, hp.ne']
 
 /-- Each paired diagonal has residue -2/3 after multiplication by p^7. -/
 theorem pairedMonomial_scaled_diagonal_reduction (p : ℕ) [Fact p.Prime]
@@ -271,6 +271,7 @@ theorem pairedMonomial_determinant_norm (p : ℕ) [Fact p.Prime]
 theorem pairedMonomialMatrix_affine (p : ℕ) (X : ℚ) :
     pairedMonomialMatrix p X = pairedMonomialMatrix p 0 + (2*X) • (1 : Matrix (Fin p) (Fin p) ℚ) := by
   ext r s
+  have hpne : p ≠ 0 := by have := r.isLt; omega
   have hcross₁ : r.val ≠ s.val+p := by have := r.isLt; omega
   have hcross₂ : r.val+p ≠ s.val := by have := s.isLt; omega
   simp only [pairedMonomialMatrix, Fin.sum_univ_two, Fin.val_zero, Fin.val_one,
@@ -278,7 +279,7 @@ theorem pairedMonomialMatrix_affine (p : ℕ) (X : ℚ) :
     smul_eq_mul, Matrix.one_apply]
   by_cases hrs : r = s
   · subst s
-    simp [hcross₁, hcross₂]
+    simp [hcross₁, hcross₂, hpne]
     ring
   · have hvs : r.val ≠ s.val := fun he => hrs (Fin.ext he)
     have hvs' : r.val+p ≠ s.val+p := by omega
@@ -318,11 +319,13 @@ def pairedMonomialValue (p r : ℕ) (x : ℝ) : ℝ := x^r + x^(r+p)
 
 /-- Direct identification with the actual Beukers integral. This verifies
 the matrix is the manuscript polynomial pencil, not a formal surrogate. -/
+set_option backward.isDefEq.respectTransparency false in
 theorem pairedMonomial_actual_integral (p : ℕ) [Fact p.Prime] (r s : Fin p) :
     (∫ z, pairedMonomialValue p r.val z.1 * pairedMonomialValue p s.val z.2
       ∂beukersMeasure) =
     ((pairedMonomialMatrix p 0 r s : ℚ) : ℝ) +
       if r = s then 2 * Real.zeta 7 else 0 := by
+  have hpne : p ≠ 0 := (Fact.out : p.Prime).ne_zero
   have hm (a b : ℕ) : (∫ z, z.1^a * z.2^b ∂beukersMeasure) =
       (Real.dualConstant 7 a b : ℝ) + if a=b then Real.zeta 7 else 0 := by
     rw [integral_beukersMeasure, moment_eq_dualConstant]
@@ -333,8 +336,13 @@ theorem pairedMonomial_actual_integral (p : ℕ) [Fact p.Prime] (r s : Fin p) :
     funext z
     dsimp [pairedMonomialValue]
     ring
-  rw [he, integral_add ((hi _ _).add (hi _ _)) ((hi _ _).add (hi _ _)),
-    integral_add (hi _ _) (hi _ _), integral_add (hi _ _) (hi _ _)]
+  have hsplit := integral_add
+    ((hi r.val s.val).add (hi r.val (s.val+p)))
+    ((hi (r.val+p) s.val).add (hi (r.val+p) (s.val+p)))
+  have hleft := integral_add (hi r.val s.val) (hi r.val (s.val+p))
+  have hright := integral_add (hi (r.val+p) s.val) (hi (r.val+p) (s.val+p))
+  simp only [Pi.add_apply] at hsplit hleft hright
+  rw [he, hsplit, hleft, hright]
   simp only [hm]
   simp only [pairedMonomialMatrix, Fin.sum_univ_two, Fin.val_zero, Fin.val_one,
     zero_mul, one_mul, add_zero, ite_self, Rat.cast_add]
@@ -342,7 +350,7 @@ theorem pairedMonomial_actual_integral (p : ℕ) [Fact p.Prime] (r s : Fin p) :
   have hcross₂ : r.val+p ≠ s.val := by have := s.isLt; omega
   by_cases hrs : r = s
   · subst s
-    simp [hcross₁, hcross₂]
+    simp [hcross₁, hcross₂, hpne]
     ring
   · have hvs : r.val ≠ s.val := fun he => hrs (Fin.ext he)
     have hvs' : r.val+p ≠ s.val+p := by omega
