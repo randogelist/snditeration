@@ -1,0 +1,49 @@
+{
+  "paper_item": "5.3",
+  "alternative_target": "First prove the beta-four density’s actual monomial integral identities by a justified geometric-mode expansion, auditing its normalization against low-index exact integrals. Then obtain the finite pencil’s real-rootedness from real symmetry and positive-definite coefficient Gram slope under actual row independence.",
+  "relation_to_original": "alternative_proof_route",
+  "changes_from_original": "Use finite slope positivity rather than treating pointwise density positivity as positivity of the whole bilinear coefficient form. Correct the density or moments explicitly if the normalization check fails.",
+  "prerequisites": [
+    "5.1",
+    "5.2"
+  ],
+  "retained_open_obligations": [
+    "Mode integrability, absolute integral summability and integral/series interchange.",
+    "Actual beta-series and rational harmonic-tail identification.",
+    "True coefficient pencil and row-independence hypotheses."
+  ],
+  "correction_gate": "A normalization repair produces a corrected statement, not proof of the literal original.",
+  "source_paths": [
+    "Experimental/P05_03/Prerequisites.lean",
+    "Experimental/P05_03/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p05-03_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p05-03_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p05-03_construction",
+  "original_snapshot_commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P05_03/Prerequisites.lean",
+      "commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3",
+      "url": "https://github.com/randogelist/snditeration/blob/665d06df47be601fa7c2a42a806b293f4dae4ff3/Experimental/P05_03/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P05_03/Target.md",
+      "commit": "665d06df47be601fa7c2a42a806b293f4dae4ff3",
+      "url": "https://github.com/randogelist/snditeration/blob/665d06df47be601fa7c2a42a806b293f4dae4ff3/Experimental/P05_03/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
