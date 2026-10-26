@@ -145,3 +145,16 @@ See the [axiom and integration policy](EXPERIMENTAL_AXIOM_POLICY.md).
 | **6.16** | [branch](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-16_construction) · [target](https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Target.md) | [typed inputs](https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Prerequisites.lean) · [assumptions](https://github.com/randogelist/snditeration/blob/bb2692e70ebcb844af2432f3c3a42134e80fa8dd/Experimental/P06_16/Assumptions.json) | 0 | Integer coupling data and common-pole coefficient with existing pure-zeta APIs; repaired 6.14 functional, mixed-weight comparison, signature and prime valuations remain open. |
 | **6.17** | [branch](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-17_construction) · [target](https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Target.md) | [typed inputs](https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Prerequisites.lean) · [assumptions](https://github.com/randogelist/snditeration/blob/3680423885c8141c523e4e1d5154703085962aad/Experimental/P06_17/Assumptions.json) | 2 | Actual β(4) moments are explicit 5.3 assumptions; ζ(7)/coefficient-Gram facts are reused. Higher β moments, signed subspaces and corrected q-adic terms remain open. |
 | **6.18** | [branch](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-18_construction) · [target](https://github.com/randogelist/snditeration/blob/0ae60ed1f7cd11f3af98894d34be78fe604f5b8a/Experimental/P06_18/Target.md) | [typed inputs](https://github.com/randogelist/snditeration/blob/0ae60ed1f7cd11f3af98894d34be78fe604f5b8a/Experimental/P06_18/Prerequisites.lean) · [assumptions](https://github.com/randogelist/snditeration/blob/0ae60ed1f7cd11f3af98894d34be78fe604f5b8a/Experimental/P06_18/Assumptions.json) | 0 | Actual shifted numerator, quotient and guarded degree threshold; no quotient-zero or integrality target is assumed. β normalization, dyadic heights and restricted effective transfer remain open. |
+
+## Later evidence check — 26 October 2026
+
+All 108 experimental branch heads still match the original publication receipts.
+There are now **110 live branches**, including main and the independent
+[PR #39 repair branch](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4). Its
+[successful CI 40321257752](https://github.com/randogelist/snditeration/actions/runs/40321257752)
+and inspected transitive axiom evidence cover the repaired library imports,
+not the experimental prerequisite modules. The [README branch receipt](../README.md#later-branch-evidence--26-october-2026)
+records the precise components, corrections and refutation. No experimental
+status, target, named assumption, compatibility bridge or immutable receipt is
+changed. The 72 paired catalog attempts are unchanged; the cross-item repair
+branch is tracked separately, without inventing PROP/ALT iteration lineage.
