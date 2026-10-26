@@ -50,7 +50,7 @@ theorem principal_eigenvalue_abs_le (p : Spectral.SymmetricAffinePencil n)
     have h := (eigenvalue_count_interlacing p hp choose hchoose N).1
     change {j | N < b j}.ncard ≤ {j | N < a j}.ncard at h
     rw [hfull, Set.ncard_empty] at h
-    have hpos : 0 < {j | N < b j}.ncard := Set.ncard_pos.mpr ⟨i, hbi⟩
+    have hpos : 0 < {j | N < b j}.ncard := (Set.ncard_pos (Set.toFinite {j | N < b j})).mpr ⟨i, hbi⟩
     omega
 
 /-- The norm of the actually whitened restricted pencil cannot exceed the full norm. -/

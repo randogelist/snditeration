@@ -147,7 +147,7 @@ run_cmd do
   let mut declarations : Nat := 0
   for (name, info) in env.constants.toList do
     if (`ManuscriptChain).isPrefixOf name || (`PaperAdvances).isPrefixOf name ||
-        (`LeanPaper).isPrefixOf name then
+        (`LeanPaper).isPrefixOf name || (`_private.Zetahyperbolic).isPrefixOf name then
       declarations := declarations + 1
       if info.isTheorem then checked := checked + 1
       for ax in ← Lean.collectAxioms name do
@@ -386,3 +386,83 @@ run_cmd do
 #print axioms PaperAdvances.Corollary3_6_ExactFiniteRank.weighted_det_pos_iff_order_le_support
 #print axioms LeanPaper.ReciprocalRootMoments.manuscript_reciprocal_moments
 #print axioms LeanPaper.ReciprocalRootMoments.reciprocalHankel_det_pos_iff
+#print axioms ManuscriptChain.ChristoffelDarboux.lower_diagonal_ne_zero
+#print axioms ManuscriptChain.ChristoffelDarboux.diagonal_positive
+#print axioms ManuscriptChain.ChristoffelDarboux.squaredNorm_positive
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_coeff_self
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_coeff_above
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_natDegree
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_monic
+#print axioms ManuscriptChain.ChristoffelDarboux.inverse_diagonal
+#print axioms ManuscriptChain.ChristoffelDarboux.inverse_gram
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_eval
+#print axioms ManuscriptChain.ChristoffelDarboux.kernel_eq_inverseGram
+#print axioms ManuscriptChain.ChristoffelDarboux.eval_ofFn_mul_eq_sum
+#print axioms ManuscriptChain.ChristoffelDarboux.integrable_eval_ofFn_mul
+#print axioms ManuscriptChain.ChristoffelDarboux.bilinear_eq_integral_product
+#print axioms ManuscriptChain.ChristoffelDarboux.bilinear_rescale
+#print axioms ManuscriptChain.ChristoffelDarboux.coefficient_pairing
+#print axioms ManuscriptChain.ChristoffelDarboux.monicPolynomial_integral_product
+#print axioms ManuscriptChain.ChristoffelDarboux.kernel_eq_integral_normalized
+#print axioms ManuscriptChain.PoleKernel.charpoly_relative_eq_pole
+#print axioms ManuscriptChain.PoleKernel.trace_relative_eq_pole
+#print axioms ManuscriptChain.PoleKernel.kernelMatrix_entry
+#print axioms ManuscriptChain.ChristoffelDarboux.actualPolynomial_monic
+#print axioms ManuscriptChain.ChristoffelDarboux.actualPolynomial_degree
+#print axioms ManuscriptChain.ChristoffelDarboux.actualPolynomial_orthogonal
+#print axioms ManuscriptChain.ChristoffelDarboux.actualPolynomial_norm_pos
+#print axioms ManuscriptChain.ChristoffelDarboux.actualKernel_inverseGram
+#print axioms ManuscriptChain.ChristoffelDarboux.realPoleVandermonde_entry
+#print axioms ManuscriptChain.ChristoffelDarboux.actualPoleOperator_eq
+#print axioms ManuscriptChain.ChristoffelDarboux.whitened_charpoly_eq_relative
+#print axioms ManuscriptChain.ChristoffelDarboux.actual_whitened_charpoly_eq_pole
+#print axioms ManuscriptChain.ChristoffelDarboux.actual_whitened_roots_eq_pole
+#print axioms ManuscriptChain.AffineJacobi.unitDetPoly_derivative
+#print axioms ManuscriptChain.AffineJacobi.unitDetPoly_eval
+#print axioms ManuscriptChain.AffineJacobi.unitDet_hasDerivAt
+#print axioms ManuscriptChain.AffineJacobi.affineDet_factor_pointwise
+#print axioms ManuscriptChain.AffineJacobi.affineDet_hasDerivAt
+#print axioms ManuscriptChain.AffineJacobi.affineDet_log_hasDerivAt
+#print axioms ManuscriptChain.MatrixCurveJacobi.curve_det_leibniz
+#print axioms ManuscriptChain.MatrixCurveJacobi.directionalDet_eq_trace
+#print axioms ManuscriptChain.MatrixCurveJacobi.generic_det_hasDerivAt
+#print axioms ManuscriptChain.MatrixCurveJacobi.generic_logDet_hasDerivAt
+#print axioms ManuscriptChain.LaplaceWeightDerivative.summable_term
+#print axioms ManuscriptChain.LaplaceWeightDerivative.term_hasDerivAt
+#print axioms ManuscriptChain.LaplaceWeightDerivative.rate_mul_exp_bound
+#print axioms ManuscriptChain.LaplaceWeightDerivative.termDerivative_bound
+#print axioms ManuscriptChain.LaplaceWeightDerivative.density_hasDerivAt
+#print axioms ManuscriptChain.LaplaceWeightDerivative.densityDerivative_bound
+#print axioms ManuscriptChain.LaplaceWeightDerivative.density_eq_scaled
+#print axioms ManuscriptChain.LaplaceWeightDerivative.density_one
+#print axioms ManuscriptChain.LaplaceWeightDerivative.density_positive
+#print axioms ManuscriptChain.LaplaceWeightDerivative.measurable_density
+#print axioms ManuscriptChain.LaplaceWeightDerivative.measurable_densityDerivative
+#print axioms ManuscriptChain.LaplaceWeightDerivative.integrable_monomial_density
+#print axioms ManuscriptChain.LaplaceDenominator.D_real_pos
+#print axioms ManuscriptChain.LaplaceDenominator.D_real_ge_one
+#print axioms ManuscriptChain.LaplaceDenominator.D_real_ratio_pos
+#print axioms ManuscriptChain.LaplaceMomentDerivative.weight_positive
+#print axioms ManuscriptChain.LaplaceMomentDerivative.measurable_weight
+#print axioms ManuscriptChain.LaplaceMomentDerivative.measurable_weightedDensity
+#print axioms ManuscriptChain.LaplaceMomentDerivative.integrable_polynomial_density
+#print axioms ManuscriptChain.LaplaceMomentDerivative.integrable_moment
+#print axioms ManuscriptChain.LaplaceMomentDerivative.integrable_momentDerivative
+#print axioms ManuscriptChain.LaplaceMomentDerivative.moment_hasDerivAt
+#print axioms ManuscriptChain.LaplaceGramMeasure.weightedDensity_positive
+#print axioms ManuscriptChain.LaplaceGramMeasure.weightedMeasure_nonzero
+#print axioms ManuscriptChain.LaplaceGramMeasure.momentMeasure_nonzero
+#print axioms ManuscriptChain.LaplaceGramMeasure.integral_momentMeasure
+#print axioms ManuscriptChain.LaplaceGramMeasure.integrable_momentMeasure
+#print axioms ManuscriptChain.LaplaceGramMeasure.gram_eq_momentMatrix
+#print axioms ManuscriptChain.LaplaceGramMeasure.gram_positive
+#print axioms ManuscriptChain.LaplaceGramMeasure.gram_one
+#print axioms ManuscriptChain.LaplaceGramMeasure.gram_entry_hasDerivAt
+#print axioms ManuscriptChain.LaplaceJacobiIdentity.trace_eq_kernel_integral
+#print axioms ManuscriptChain.LaplaceJacobiIdentity.laplace_logDet_hasDerivAt
+#print axioms ManuscriptChain.LaplaceJacobiIdentity.laplace_kernel_eq_orthogonal_sum
+#print axioms LeanPaper.CorrectedReciprocalCorollary.corrected_corollary_3_6
+#print axioms ManuscriptChain.Beukers.density_monomial_integrable
+#print axioms ManuscriptChain.Beukers.polynomial_product_integrable
+#print axioms ManuscriptChain.Beukers.integral_polynomial_product_eq_momentForm
+#print axioms ManuscriptChain.Beukers.integral_polynomial_product_eq_krein

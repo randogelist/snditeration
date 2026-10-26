@@ -1,7 +1,4 @@
-import Mathlib.LinearAlgebra.Matrix.PosDef
-import Mathlib.LinearAlgebra.Matrix.Rank
-import Mathlib.LinearAlgebra.Vandermonde
-import Mathlib.Tactic
+import Mathlib
 
 /-! Source-preserving integration from randogelist/zetahyperbolic-axiom@295eecb40a82557cf2b85101eb69707c357b0127.
 Original declarations retain their namespaces and exact statements. Redundant

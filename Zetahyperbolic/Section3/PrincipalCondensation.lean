@@ -42,7 +42,8 @@ theorem polynomial_condensation
   have hA : A.IsSymm := hM.submatrix Sum.inl
   have hf : Matrix.fromBlocks A (fun i j => if j = 0 then u i else v i)
       (fun i j => if i = 0 then u j else v j) !![a, b; b, c] = M := by
-    ext (i | i) (j | j) : 2
+    apply Matrix.ext
+    rintro (i | i) (j | j)
     · rfl
     · fin_cases j <;> simp [A, u, v, Matrix.fromBlocks]
     · fin_cases i
@@ -54,7 +55,8 @@ theorem polynomial_condensation
       border A (fun k => M (Sum.inl k) (Sum.inr j))
         (fun k => M (Sum.inl k) (Sum.inr i)) (M (Sum.inr i) (Sum.inr j)) =
         M.submatrix (keep i) (keep j) := by
-    ext (k | k) (l | l) : 2
+    apply Matrix.ext
+    rintro (k | k) (l | l)
     · rfl
     · rfl
     · exact hM.apply _ _

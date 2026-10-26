@@ -33,8 +33,8 @@ theorem summable_term (j : ℕ) {τ y : ℝ} (hτ : 0 < τ) (hy : 0 < y) :
   have h := (summable_nat_add_iff 1).mpr
     (Real.summable_pow_mul_exp_neg_nat_mul j
       (show 0 < 2*Real.pi*y*τ by positivity))
-  convert h using 1
-  funext n
+  apply h.congr
+  intro n
   unfold term
   congr 2
   ring
@@ -43,24 +43,23 @@ theorem term_hasDerivAt (j n : ℕ) (τ y : ℝ) :
     HasDerivAt (fun z => term j n z y) (termDerivative j n τ y) τ := by
   have hd := ((hasDerivAt_id τ).const_mul (-(2*Real.pi*((n+1 : ℕ) : ℝ)*y))).exp
   convert hd.const_mul (((n+1 : ℕ) : ℝ)^j) using 1 <;>
-    simp only [term, termDerivative] <;> ring
+    dsimp [term, termDerivative, id] <;> ring
 
-theorem rate_mul_exp_bound {a λ τ : ℝ} (ha : 0 < a) (hλ : 0 ≤ λ)
+theorem rate_mul_exp_bound {a rate τ : ℝ} (ha : 0 < a) (hrate : 0 ≤ rate)
     (hτ : 2*a ≤ τ) :
-    λ * Real.exp (-λ*τ) ≤ a⁻¹ * Real.exp (-λ*a) := by
-  have hh : (a*λ)*Real.exp (-(a*λ)) ≤ 1 :=
-    (Real.mul_exp_neg_le_exp_neg_one (a*λ)).trans
+    rate * Real.exp (-rate*τ) ≤ a⁻¹ * Real.exp (-rate*a) := by
+  have hh : (a*rate)*Real.exp (-(a*rate)) ≤ 1 :=
+    (Real.mul_exp_neg_le_exp_neg_one (a*rate)).trans
       (Real.exp_le_one_iff.mpr (by norm_num))
   calc
-    λ * Real.exp (-λ*τ) ≤ λ * Real.exp (-λ*(2*a)) := by
-      apply mul_le_mul_of_nonneg_left _ hλ
+    rate * Real.exp (-rate*τ) ≤ rate * Real.exp (-rate*(2*a)) := by
+      apply mul_le_mul_of_nonneg_left _ hrate
       apply Real.exp_le_exp.mpr
       nlinarith
-    _ = a⁻¹ * ((a*λ)*Real.exp (-(a*λ))) * Real.exp (-λ*a) := by
-      rw [show -λ*(2*a) = -(a*λ) + (-λ*a) by ring, Real.exp_add]
-      field_simp
-      ring
-    _ ≤ a⁻¹ * 1 * Real.exp (-λ*a) := by
+    _ = a⁻¹ * ((a*rate)*Real.exp (-(a*rate))) * Real.exp (-rate*a) := by
+      rw [show -rate*(2*a) = -(a*rate) + (-rate*a) by ring, Real.exp_add]
+      field_simp [ha.ne'] <;> ring
+    _ ≤ a⁻¹ * 1 * Real.exp (-rate*a) := by
       exact mul_le_mul_of_nonneg_right
         (mul_le_mul_of_nonneg_left hh (inv_nonneg.mpr ha.le)) (Real.exp_pos _).le
     _ = _ := by ring
@@ -69,17 +68,20 @@ theorem termDerivative_bound (j n : ℕ) {a τ y : ℝ}
     (ha : 0 < a) (hy : 0 < y) (hτ : 2*a ≤ τ) :
     ‖termDerivative j n τ y‖ ≤ a⁻¹ * term j n a y := by
   have hc : 0 ≤ (((n+1 : ℕ) : ℝ)^j) := by positivity
-  have hλ : 0 ≤ 2*Real.pi*((n+1 : ℕ) : ℝ)*y := by positivity
-  have h := mul_le_mul_of_nonneg_left (rate_mul_exp_bound ha hλ hτ) hc
+  have hrate : 0 ≤ 2*Real.pi*((n+1 : ℕ) : ℝ)*y := by positivity
+  have h := mul_le_mul_of_nonneg_left (rate_mul_exp_bound ha hrate hτ) hc
   simpa only [termDerivative, term, norm_neg, Real.norm_eq_abs,
-    abs_of_nonneg (mul_nonneg hλ (mul_nonneg hc (Real.exp_pos _).le)),
+    abs_of_nonneg (mul_nonneg hrate (mul_nonneg hc (Real.exp_pos _).le)),
     mul_assoc, mul_left_comm, mul_comm] using h
 
 theorem density_hasDerivAt (k : ℕ) {τ y : ℝ} (hτ : 0 < τ) (hy : 0 < y) :
     HasDerivAt (fun z => density k z y) (densityDerivative k τ y) τ := by
   let a := τ/4
   have ha : 0 < a := by dsimp [a]; positivity
-  have hmem : τ ∈ Ioi (2*a) := by dsimp [a]; linarith
+  have hmem : τ ∈ Ioi (2*a) := by
+    change 2*a < τ
+    dsimp [a]
+    linarith
   have hsum := hasDerivAt_tsum_of_isPreconnected
     ((summable_term (2*k) ha hy).mul_left a⁻¹)
     isOpen_Ioi (convex_Ioi (2*a)).isPreconnected
@@ -114,7 +116,7 @@ theorem density_eq_scaled (k : ℕ) {τ : ℝ} (hτ : τ ≠ 0) (y : ℝ) :
     congr 2
     ring
   rw [he, mul_pow]
-  field_simp
+  field_simp [hτ] <;> ring
 
 @[simp] theorem density_one (k : ℕ) (y : ℝ) :
     density k 1 y = Hyperbolic.density k y := by
@@ -146,7 +148,7 @@ theorem integrable_monomial_density (k e : ℕ) {τ : ℝ} (hτ : 0 < τ) :
   apply hc.congr
   filter_upwards [] with y
   rw [density_eq_scaled k hτ.ne', mul_pow, pow_add]
-  field_simp
+  field_simp [hτ.ne'] <;> ring
 
 
 end ManuscriptChain.LaplaceWeightDerivative

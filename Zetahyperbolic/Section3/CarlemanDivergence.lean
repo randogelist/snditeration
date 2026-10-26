@@ -91,7 +91,9 @@ theorem carlemanTerm_lower_bound (p : Real.Parameters) (r : ℕ) (hr : 1 ≤ r) 
     1 / (carlemanConstant p * r) ≤ carlemanTerm p r := by
   have hB := carlemanConstant_pos p
   have hpos : 0 < ∫ t : ℝ, t ^ r ∂momentMeasure p := by
-    simpa [Matrix.det_fin_one] using solid_moment_det_pos p r 0 1
+    have h := solid_moment_det_pos p r 0 1
+    rw [Matrix.det_fin_one] at h
+    simpa using h
   have hbound := moment_le_carleman_power p r hr
   have h := _root_.Real.rpow_le_rpow_of_nonpos hpos hbound
     (by exact neg_nonpos.mpr (inv_nonneg.mpr (by positivity : (0 : ℝ) ≤ ((2 * r : ℕ) : ℝ))) :
@@ -122,4 +124,3 @@ theorem carlemanSeries_not_summable (p : Real.Parameters) :
   exact _root_.Real.not_summable_one_div_natCast ((summable_nat_add_iff 1).1 hsum)
 
 end ManuscriptChain.ConcreteMoment
-

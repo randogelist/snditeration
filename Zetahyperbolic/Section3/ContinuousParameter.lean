@@ -18,7 +18,10 @@ namespace ManuscriptChain.ContinuousWeight
 
 lemma continuousAt_prefactor {s : ℝ} (hs : 0 < s) : ContinuousAt prefactor s := by
   have hg : ContinuousAt Real.Gamma s :=
-    (Real.differentiableAt_Gamma (fun n => by have hn : (0:ℝ) ≤ n := by positivity; linarith)).continuousAt
+    (Real.differentiableAt_Gamma (fun n => by
+      intro he
+      have hn : (0 : ℝ) ≤ (n : ℝ) := Nat.cast_nonneg n
+      linarith)).continuousAt
   exact (continuousAt_const.mul
     ((Real.continuous_const_rpow (by positivity)).continuousAt.comp
       (continuousAt_id.sub continuousAt_const))).div hg
@@ -87,7 +90,7 @@ lemma kernel_le_endpoint_sum {a b s y : ℝ} (hy : 0 < y) (ha : a ≤ s) (hb : s
     simpa only [mul_add, add_mul] using hh
   unfold kernel
   rw [← tsum_mul_left, ← tsum_mul_left, ← tsum_mul_left,
-    ← tsum_add ((summable_exponentialTerm a hy).mul_left (y^a))
+    ← Summable.tsum_add ((summable_exponentialTerm a hy).mul_left (y^a))
       ((summable_exponentialTerm b hy).mul_left (y^b))]
   exact tsum_le_tsum hterm ((summable_exponentialTerm s hy).mul_left (y^s))
     (((summable_exponentialTerm a hy).mul_left (y^a)).add

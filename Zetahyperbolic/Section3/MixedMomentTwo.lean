@@ -17,12 +17,15 @@ def momentValue (p : Real.Parameters) (a : ℕ) : ℝ :=
   ∫ t, t ^ a ∂momentMeasure p
 
 theorem momentValue_pos (p : Real.Parameters) (a : ℕ) : 0 < momentValue p a := by
-  simpa [Matrix.det_fin_one, momentValue] using solid_moment_det_pos p a 0 1
+  have h := solid_moment_det_pos p a 0 1
+  rw [Matrix.det_fin_one] at h
+  simpa [momentValue] using h
 
 theorem momentValue_strict_logConvex (p : Real.Parameters) (a : ℕ) :
     momentValue p (a + 1) ^ 2 < momentValue p a * momentValue p (a + 2) := by
   have h := solid_moment_det_pos p a 0 2
-  simp only [Matrix.det_fin_two, Fin.val_zero, Fin.val_one, Nat.add_zero,
+  rw [Matrix.det_fin_two] at h
+  simp only [Fin.val_zero, Fin.val_one, Nat.add_zero,
     Nat.zero_add, Nat.add_assoc] at h
   change 0 < momentValue p a * momentValue p (a + 2) -
     momentValue p (a + 1) * momentValue p (a + 1) at h
@@ -58,6 +61,8 @@ theorem momentGapRatio_strictMono (p : Real.Parameters) {d : ℕ} (hd : 0 < d) :
         exact momentRatio_strictMono p
       · have hprev := ih (Nat.pos_of_ne_zero hd0)
         intro a b hab
+        change momentValue p (a + (d + 1)) / momentValue p a <
+          momentValue p (b + (d + 1)) / momentValue p b
         rw [momentGapRatio_succ, momentGapRatio_succ]
         exact mul_lt_mul (hprev hab)
           (le_of_lt (momentRatio_strictMono p (Nat.add_lt_add_right hab d)))
@@ -74,6 +79,7 @@ theorem mixed_moment_two_pos (p : Real.Parameters) (i₀ i₁ j₀ j₁ : ℕ)
     (Nat.add_lt_add_right hi j₀)
   have he₀ : i₀ + j₀ + (j₁ - j₀) = i₀ + j₁ := by omega
   have he₁ : i₁ + j₀ + (j₁ - j₀) = i₁ + j₁ := by omega
+  dsimp only at h
   rw [he₀, he₁] at h
   have hcross := (div_lt_div_iff₀
     (momentValue_pos p (i₀ + j₀)) (momentValue_pos p (i₁ + j₀))).1 h
@@ -94,4 +100,3 @@ theorem GRAM_MIXED_TWO_MINOR_POSITIVE (p : Real.Parameters) (hp : Real.Admissibl
     (cols 0).val (cols 1).val (hrows (by decide)) (hcols (by decide))
 
 end ManuscriptChain
-

@@ -154,4 +154,3 @@ theorem GRAM_SOLID_MINOR_POSITIVE (p : Real.Parameters) (hp : Real.Admissible p)
   exact gram_eq_moment p hp _ _
 
 end ManuscriptChain
-

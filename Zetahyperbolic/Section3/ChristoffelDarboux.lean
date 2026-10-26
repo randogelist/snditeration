@@ -100,7 +100,7 @@ theorem inverse_gram (hG : G.PosDef) :
     G⁻¹ = (LDL.lower hG * LDL.diag hG * (LDL.lower hG)ᴴ)⁻¹ :=
       congrArg Inv.inv (LDL.lower_conj_diag hG).symm
     _ = _ := by
-      rw [Matrix.mul_inv_rev, Matrix.mul_inv_rev, Matrix.conjTranspose_nonsing_inv,
+      rw [Matrix.mul_inv_rev, Matrix.mul_inv_rev, ← Matrix.conjTranspose_nonsing_inv,
         LDL.lower, Matrix.inv_inv, inverse_diagonal]
       simp only [Matrix.conjTranspose_eq_transpose_of_trivial, Matrix.mul_assoc]
 
@@ -113,14 +113,14 @@ theorem monicPolynomial_eval (hG : G.PosDef) (i : Fin n) (t : ℝ) :
 theorem kernel_eq_inverseGram (hG : G.PosDef) (t u : ℝ) :
     kernel hG t u = (fun i : Fin n => t ^ i.val) ⬝ᵥ
       (G⁻¹ *ᵥ (fun i : Fin n => u ^ i.val)) := by
-  rw [inverse_gram]
-  simp only [Matrix.mulVec_mulVec, Matrix.dotProduct_mulVec,
-    Matrix.vecMul_transpose, Matrix.diagonal_mulVec, dotProduct, Matrix.mulVec]
+  rw [inverse_gram hG, ← Matrix.mulVec_mulVec, ← Matrix.mulVec_mulVec,
+    Matrix.dotProduct_mulVec, Matrix.vecMul_transpose]
+  simp only [kernel, dotProduct, Matrix.mulVec_diagonal, Matrix.mulVec]
   apply Finset.sum_congr rfl
   intro i _
   rw [monicPolynomial_eval, monicPolynomial_eval]
   dsimp only [squaredNorm]
-  field_simp [lower_diagonal_ne_zero hG i, ne_of_gt (diagonal_positive hG i)]
+  field_simp [lower_diagonal_ne_zero hG i, ne_of_gt (diagonal_positive hG i)] <;> ring
 
 
 
@@ -129,9 +129,11 @@ theorem kernel_eq_inverseGram (hG : G.PosDef) (t u : ℝ) :
 theorem eval_ofFn_mul_eq_sum (c d : Fin n → ℝ) (x : ℝ) :
     (Polynomial.ofFn n c).eval x * (Polynomial.ofFn n d).eval x =
       ∑ i, ∑ j, c i * d j * x ^ (i.val + j.val) := by
-  simp only [ManuscriptChain.Moments.eval_ofFn_eq_sum, Finset.sum_mul, Finset.mul_sum]
+  rw [ManuscriptChain.Moments.eval_ofFn_eq_sum,
+    ManuscriptChain.Moments.eval_ofFn_eq_sum, Finset.sum_mul]
   apply Finset.sum_congr rfl
   intro i _
+  rw [Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro j _
   rw [pow_add]
@@ -166,13 +168,19 @@ theorem bilinear_eq_integral_product {μ : Measure ℝ}
 theorem bilinear_rescale (c d : Fin n → ℝ) (a b : ℝ) :
     (fun i => c i / a) ⬝ᵥ (G *ᵥ (fun j => d j / b)) =
       (c ⬝ᵥ (G *ᵥ d)) / (a*b) := by
-  simp only [dotProduct, mulVec, mul_div_assoc, ← Finset.sum_div,
-    div_mul_div_comm, Finset.sum_div]
+  simp only [dotProduct, mulVec, Finset.mul_sum, Finset.sum_div]
+  apply Finset.sum_congr rfl
+  intro i _
+  apply Finset.sum_congr rfl
+  intro j _
+  simp only [div_eq_mul_inv, mul_inv_rev]
+  ring
 
 theorem coefficient_pairing (hG : G.PosDef) (i j : Fin n) :
     orthogonalCoefficients hG i ⬝ᵥ (G *ᵥ orthogonalCoefficients hG j) =
       if i = j then squaredNorm hG i else 0 := by
-  rw [orthogonalCoefficients, orthogonalCoefficients, bilinear_rescale]
+  unfold orthogonalCoefficients
+  rw [bilinear_rescale]
   have h := congrFun (congrFun (LDL.diag_eq_lowerInv_conj hG) i) j
   have he : (LDL.lowerInv hG i) ⬝ᵥ (G *ᵥ LDL.lowerInv hG j) =
       LDL.diag hG i j := by
@@ -211,7 +219,8 @@ theorem kernel_eq_integral_normalized {μ : Measure ℝ}
     _ = kernel hG t u := by
       apply Finset.sum_congr rfl
       intro i _
-      rw [pow_two, monicPolynomial_integral_product hm hGram]
+      simp_rw [pow_two]
+      rw [monicPolynomial_integral_product hm hGram]
       simp
     _ = _ := kernel_eq_inverseGram hG t u
 
@@ -347,7 +356,8 @@ theorem whitened_charpoly_eq_relative {n : ℕ} (p : Spectral.SymmetricAffinePen
 theorem actual_whitened_charpoly_eq_pole (p : Real.Parameters) (hp : Real.Admissible p) :
     (Spectral.whitenedMatrix (Real.manuscriptPencil p)).charpoly =
       (actualPoleOperator p hp).charpoly := by
-  rw [whitened_charpoly_eq_relative _ (GRAM_POSITIVE p hp), actualPoleOperator_eq]
+  rw [whitened_charpoly_eq_relative (Real.manuscriptPencil p) (GRAM_POSITIVE p hp),
+    actualPoleOperator_eq]
   change ((Real.gram p (Real.zeta p.weight))⁻¹ * Real.derivativeMatrix p).charpoly = _
   rw [SpectralInertia.real_direction_factorization]
   exact PoleKernel.charpoly_relative_eq_pole _ _ _
