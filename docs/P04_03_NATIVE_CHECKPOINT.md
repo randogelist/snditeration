@@ -23,3 +23,15 @@ The proposition **assumes** nonzero Q(ξ) at a chosen integral p-adic center. Th
 ### Required exact gate before merging
 
 Integrated `lake build` PASS; `lake env lean Zetahyperbolic/Audit.lean` PASS; no `sorryAx`, extra axioms, or admitted source. Check transitive axiom sets of the seven printed declarations against `propext`, `Classical.choice`, `Quot.sound`. Freeze the four passed source files and preserve the existing project cache.
+
+## Verified destination receipt (FROZEN)
+
+- `P04_03_COMPLEX_PADIC_ZERO_FREE_DISK=PROVED_IN_DESTINATION_LEAN`
+- Branch proof head: `19747fdced7c4e87f2e9312ca8deff8b14111525`.
+- Integrated Lean build: [GitHub Actions 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326), **PASS**, 8,765 jobs.
+- Target: `Zetahyperbolic.Section4.ActualPrimitivePadicDisk`; [PR #17](https://github.com/randogelist/snditeration/pull/17) **merged**, main merge commit `1e7d422cc81c30179275707750f5fde38af5e503`.
+- `#print axioms`: seven checked declarations, all exactly `[propext, Classical.choice, Quot.sound]`.
+- Source placeholder scan: **PASS**. No sorry/admit declarations; no newly introduced custom axioms.
+- Imported proof bodies: three companion Lean sources `zetahyperbolic-axiom@86ca99a`, original namespace preserved, import paths alone adjusted; independent byte-equivalence audit PASS.
+- **PASS-ONCE:** four compiled Lean source modules frozen by this proof head and pinned toolchain/Mathlib. No `.olean` package was uploaded to GitHub by this documentation commit.
+- **Scope:** exact printed Proposition 4.3 plus actual primitive-polynomial specialization under explicit p-adic center-nonvanishing hypothesis. This does **not** discharge the K=30n weight-five decay/multiplier.
