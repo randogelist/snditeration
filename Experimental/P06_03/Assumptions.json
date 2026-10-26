@@ -1,0 +1,40 @@
+{
+  "item_id": "6.3",
+  "namespace": "Experimental.P06_03",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-03_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Real.dualEntry",
+    "ManuscriptChain.Beukers.actual_monomial_krein_bilinear",
+    "ManuscriptChain.Beukers.polynomialMomentForm_eq_krein"
+  ],
+  "dependency_ids": [
+    "5.1",
+    "5.2",
+    "6.1"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_03.upstream_harmonic_residual_p_integral",
+      "meaning": "p-integrality of the explicitly removed finite harmonic residue.",
+      "dependency_ids": [
+        "6.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "6.1"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "BLOCKED_LITERAL_PART_2: the repository documents an actual h=4 negative-direction counterexample. Neither positive definiteness nor determinant decay is assumed. A corrected target needs an explicit separately approved statement.",
+  "coverage": "The q-dimensional part uses the actual rational dual pencil and explicit basis coefficients. The disputed cone has explicit polynomial/mode definitions for inspection only.",
+  "remaining": "For part (1), derive the scaled entry matrix and its reduction from the harmonic residual, then prove determinant valuation and rational-center nonvanishing. For part (2), do not attempt a closure of the literal claim until the documented h=4 counterexample and a replacement statement are reconciled. Finite mode annihilation is not infinite-tail positivity.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 32,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}

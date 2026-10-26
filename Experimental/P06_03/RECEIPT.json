@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.3",
+  "module_key": "P06_03",
+  "branch": "experiment/zetahyperbolic-p06-03_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_03.upstream_harmonic_residual_p_integral",
+      "meaning": "p-integrality of the explicitly removed finite harmonic residue.",
+      "dependencies": [
+        "6.1"
+      ]
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P06_03",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "d5105fd2ff72f5b7e319d1ac7ffc5e5c26b7f0e1f0b47ce7d306cdc45404766c",
+    "Assumptions.json": "9bb6d889e7ca3a6ab6beb48dbbfbcb02a79ad1f3e122329f32820f8a5881200c",
+    "Target.md": "9811a18efbe6853e2765291ebae7aa3a7b919c47278a53abf390fc389171790a",
+    "Work.lean": "9e63bf665f3250423710d56b3c13f1c552fd167e5a4749d8b97a1161827a0855"
+  },
+  "audit_sha256": "b675ce202da1e6a1c39af1c23be7a2033f383bc79c9874cba7fa820c2c48f60e",
+  "original_statement_sha256": "d3a78a21379f844a4900a6df03d481283bf006251ab428056a2fe41a7ff90a2c",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
