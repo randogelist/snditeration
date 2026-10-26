@@ -1,0 +1,48 @@
+{
+  "paper_item": "3.5",
+  "alternative_target": "Replace the printed fraction by the resolvent fraction for I+tB, t=X−ζ(s): diagonal entries 1+t a_i and squared off-diagonal terms t²b_i². Relate it to the actual principal determinant ratio with its Gram-determinant normalization. Work on the cyclic Krylov subspace; require cyclicity only for a full-length fraction.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Correct scaling, normalization and continued-fraction orientation; allow early Lanczos termination. Exponential edge convergence is a separate conditional statement.",
+  "prerequisites": [
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Construct the actual Lanczos/Krylov basis and prove the rational-function resolvent identity.",
+    "Prove nonvanishing for numerical evaluations; identify any full-length cyclic vector.",
+    "Establish an independent spectral-edge rate before attaching convergence."
+  ],
+  "correction_gate": "Use a rational-function identity or explicit nested denominator conditions; do not infer cyclicity merely from a generic distinct-spectrum claim.",
+  "source_paths": [
+    "Experimental/P03_05/Prerequisites.lean",
+    "Experimental/P03_05/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-05_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-05_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-05_construction",
+  "original_snapshot_commit": "9b1900bd9effd5d660061d3d4ce356acbda72342",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P03_05/Prerequisites.lean",
+      "commit": "9b1900bd9effd5d660061d3d4ce356acbda72342",
+      "url": "https://github.com/randogelist/snditeration/blob/9b1900bd9effd5d660061d3d4ce356acbda72342/Experimental/P03_05/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P03_05/Target.md",
+      "commit": "9b1900bd9effd5d660061d3d4ce356acbda72342",
+      "url": "https://github.com/randogelist/snditeration/blob/9b1900bd9effd5d660061d3d4ce356acbda72342/Experimental/P03_05/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
