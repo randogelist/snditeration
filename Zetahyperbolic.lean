@@ -78,3 +78,5 @@ import Zetahyperbolic.Section5.KreinPolynomial
 import Zetahyperbolic.Section6.PotentialGap
 import Zetahyperbolic.Section4.UltrametricDisk
 import Zetahyperbolic.Section3.PrincipalDegreeLoss
+import Zetahyperbolic.Section3.DodgsonCondensation
+import Zetahyperbolic.Section3.SignatureRestriction

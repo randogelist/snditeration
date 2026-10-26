@@ -299,3 +299,15 @@ run_cmd do
 #print axioms ManuscriptChain.PrincipalDegreeLoss.principal_polynomial_constant
 #print axioms ManuscriptChain.PrincipalDegreeLoss.first_principal_has_no_complex_roots
 #print axioms ManuscriptChain.PrincipalDegreeLoss.literal_all_principal_roots_claim_false
+
+-- P03.04: conditional polynomial Dodgson identity and signature restriction bounds.
+#print axioms ManuscriptChain.Dodgson.det_border
+#print axioms ManuscriptChain.Dodgson.block_condensation
+#print axioms ManuscriptChain.Dodgson.symmetric_block_condensation
+#print axioms ManuscriptChain.Dodgson.map_border
+#print axioms ManuscriptChain.Dodgson.polynomial_symmetric_block_condensation
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_comp_le
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_le_restrict_add_codimension
+#print axioms ManuscriptChain.SignatureRestriction.signature_restriction_bounds
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_codimension_one
+#print axioms ManuscriptChain.SignatureRestriction.signature_comp_bounds
