@@ -22,7 +22,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | # | Printed item | Title | Whole-item proof tier | Separate verified component / status |
 |---:|:---|:---|:---|:---|
 | 1 | ~~2.2~~ ✓ | Rational functional pullback | `!!` **A-Tier original** | — (whole item completed) |
-| 2 | ~~2.3~~ ✓ (cross) | Reflection and difference identities for Tau | `!!` **A-Tier original** | — (whole item completed) |
+| 2 | ~~2.3~~ ✓ (local) | Reflection and difference identities for Tau | `!!` **A-Tier original** | `!!` **LOCAL PASS**: actual full τ-coordinate normalized analytic derivative, PR #18, CI 40262441761. Optional Mathlib totalized `RatFunc.eval` neighborhood API remains separate. |
 | 3 | ~~2.4~~ ✓ | Canonical basis invariance | `!!` **A-Tier original** | — (whole item completed) |
 | 4 | ~~2.5~~ ✓ | Lagrange pole diagonalization | `!!` **A-Tier original** | — (whole item completed) |
 | 5 | ~~3.1~~ ✓ | Universal hyperbolicity and zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
@@ -45,7 +45,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` Exact **dual C Cᵀ nullspace = coefficient left kernel** and iff positive/row separation; 2D Beukers integral open |
 | 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` Finite 5.2(1), h=1 signed ζ7 examples, **summable infinite-mode algebraic Krein polarization**; actual Beukers integral and infinite cone tails open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | — (whole item completed) |
+| 25 | ~~5.4~~ ✓ (local) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | `!!` **LOCAL PASS**: exact `(X-j)⁻¹-(X+j)⁻¹` τ-cancellation for every `j≥1`, including `j=1`, plus finite rational sums; PR #21, CI 40265986335. |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
 | 27 | 5.7 | Double-pole determinant for 1,zeta(5),zeta(6) | — **open as printed** | — **no verified positive subtheorem** |
 | 28 | 6.1 | Divided-difference valuation and intrinsic p^-6 barrier | — **open as printed** | — **no verified positive subtheorem** |
@@ -67,7 +67,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
 
-**Totals:** Seven fully verified exact printed items across the two audited repositories (five local, two companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
+**Totals:** Seven fully verified exact printed items across the two audited repositories (seven local, zero companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
 **Convergence checkpoint (26 October 2026):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **60**, but these phrases are **not** 60 independent or newly compiled Lean proofs. The indexed, hash-matched source-module coverage increased from 18 to **22**. The [historical convergence ledger](docs/CONVERGENCE_TRACKER.md) and [machine-readable 13-checkpoint series](docs/CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
 
@@ -97,13 +97,15 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **Local merger status:** `SRC_COLLECTED`, not `DEST_COMPILED`. The draft CI PASS (when present) means only that the unchanged imported Lean project still builds, because no `.lean.txt` snapshot enters the default import graph. A print-axioms check and exact paper-object adapter remain necessary before closing a local gap. Current completed printed total remains **7/45 across the two repositories**.
 
-**P04.03 local A-Tier closure (26 October 2026):** [PR #17](https://github.com/randogelist/snditeration/pull/17) merged as `1e7d422c`; [8,765-job CI and exact axiom audit 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326) passed. The three originally companion-only closures are now **2 local-import-pending (2.3 and 5.4)** plus locally merged 4.3. The combined whole-item total remains 7/45. [Read the native project checkpoint](https://github.com/randogelist/snditeration/blob/main/docs/P04_03_NATIVE_CHECKPOINT.md). This new source commit ends the earlier **fixed-source** evidence-saturation interval.
+**P04.03 local A-Tier closure (26 October 2026):** [PR #17](https://github.com/randogelist/snditeration/pull/17) merged as `1e7d422c`; [8,765-job CI and exact axiom audit 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326) passed. The three originally companion-only closures are now **0 local-import-pending** plus locally merged 4.3. The combined whole-item total remains 7/45. [Read the native project checkpoint](https://github.com/randogelist/snditeration/blob/main/docs/P04_03_NATIVE_CHECKPOINT.md). This new source commit ends the earlier **fixed-source** evidence-saturation interval.
 
 **Integration ownership:** [Independent integration lane and noninterference protocol](docs/INTEGRATION_LANE.md) documents which development branches are protected, the single-target merge gate, and locally verified PR #19 (Mellin moments). It does not change the whole-item count of 7/45.
 
 **Independent integration closure:** [PR #20](https://github.com/randogelist/snditeration/pull/20) merged the standalone Newton/Turán core from failed donor PR #15; [full Lean+axiom PR CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) passed. Seven exact axiom reports were standard-only; the source is identical to its donor. This is local A-Tier mathematical **support for printed 3.7**, not proof of the still-open individual centered-coefficient nonvanishing. The original complete printed theorem count remains 7/45.
 
 **Independent local P03.02 support integration:** [PR #22](https://github.com/randogelist/snditeration/pull/22) merged corrected real-weight density and moments (two unchanged, previously individually built PR #15 sources); [CI 40265703589](https://github.com/randogelist/snditeration/actions/runs/40265703589) passed all eight targeted axiom checks. This is **A-Tier partial/corrected support**, *not* proof of the false-as-printed continuous pencil or a new complete manuscript item.
+
+**P02.03 and P05.04 local closure (26 October 2026):** [PR #18](https://github.com/randogelist/snditeration/pull/18) (CI 40262441761) and [PR #21](https://github.com/randogelist/snditeration/pull/21) (CI 40265986335, 8,773 jobs, 1,011 audited project theorems) both merged into `main`, with their exact compiled theorem types and standard-only axioms. All seven original printed certified items are now **locally integrated**; the full manuscript remains **7/45**, and corrected/nonprinted stronger assertions are still separate.
 
 ## 3. Source provenance, outstanding endpoints and maintenance
 
@@ -133,7 +135,7 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 | ~~Proposition 4.3~~ | **CROSS-REPO PASS** | Port the full `ℂ_p` norm-preserving zero-free disk theorem |
 | ~~Theorem 5.4~~ | **CROSS-REPO PASS** | Port actual even-pole cancellation, including `j=1` |
 
-**Aggregate count:** 7/45 complete printed items, comprising **5 certified locally + 2 additional certified in the companion repo**. Only 4 are currently local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
+**Aggregate count:** 7/45 complete printed items, comprising **7 certified locally, all previously companion-only proofs now integrated**. All seven are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
 
 **More work already finished at subclause level:** corrected Proposition 3.2; all-order Dodgson part of Theorem 3.4; corrected Corollary 3.6; strict Newton components of 3.7; effective *conditional* index selection with explicit onset; `CCᵀ` dual-pencil algebra; `6d_K^7` Beukers denominator; finite central-factorial identities; qualitative odd-beta transcendence; polynomial quotient-degree thresholds. **Do not** cross off their full original printed theorems. Full [source-level cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
