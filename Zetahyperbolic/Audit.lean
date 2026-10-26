@@ -311,3 +311,12 @@ run_cmd do
 #print axioms ManuscriptChain.SignatureRestriction.signature_restriction_bounds
 #print axioms ManuscriptChain.SignatureRestriction.sigPos_codimension_one
 #print axioms ManuscriptChain.SignatureRestriction.signature_comp_bounds
+
+-- Lemma 2.3: actual RatFunc.eval germ and direct normalized analytic derivative API.
+#print axioms ManuscriptChain.SimplePole.realEval_eq_eval
+#print axioms ManuscriptChain.SimplePole.realEval_eventuallyEq_eval
+#print axioms ManuscriptChain.SimplePole.supported_pole_denom_zero
+#print axioms ManuscriptChain.Tau.regular_at_zero_iff
+#print axioms ManuscriptChain.Tau.dataCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.partialFractionCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_RatFunc_eval
