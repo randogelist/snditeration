@@ -34,7 +34,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` LOCAL actual-family derivative Turán/strict centered Newton and no-consecutive-zero coefficients (PR #23); all-centered-individual-nonzero still open |
 | 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` Actual symmetric whitened/pole operator characteristic polynomial **and full root-multiset equality**; orthogonal CD kernel open |
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` Conditional transfer, effective-onset variant and **complex-root separation ⇒ integer polynomial factor-two comparison**; actual root gap open |
+| 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` Locally compiled conditional complex-root comparison, logarithmic index and effective-onset transfer (PRs #27/#28); actual ζ5 root gap and decay remain open |
 | 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 16 | ~~4.3~~ ✓ (local) | Ultrametric zero-free disk | `!!` **A-Tier original** | `!!` **LOCAL certified**: exact ℂ_p norm-preserving disk, plus actual manuscript primitive-polynomial specialization; center nonvanishing remains the theorem hypothesis |
 | 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Positive primitive integer ζ5 polynomial, actual 30n family, finite pole-log and adjacent log-ratio identities; **uniform decay/multiplier missing** |
