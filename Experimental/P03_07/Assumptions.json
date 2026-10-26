@@ -1,0 +1,40 @@
+{
+  "id": "P03_07",
+  "paper_id": "3.7",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P03_07",
+  "publication_path": "Experimental/P03_07",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [],
+  "proved_upstream_aliases": [
+    {
+      "name": "Experimental.P03_07.actual_real_splitting",
+      "source": "ManuscriptChain.NewtonTuran.Actual.primitiveRealPolynomial_splits",
+      "paper_dependency": "3.1"
+    },
+    {
+      "name": "Experimental.P03_07.actual_center_nonzero",
+      "source": "ManuscriptChain.NewtonTuran.Actual.primitiveRealPolynomial_center_ne_zero",
+      "paper_dependency": "3.1"
+    },
+    {
+      "name": "Experimental.P03_07.actual_two_distinct_roots",
+      "source": "ManuscriptChain.NewtonTuran.Actual.actual_primitive_hasDistinctRoots",
+      "paper_dependency": "3.3(3)"
+    }
+  ],
+  "axiom_names": [],
+  "full_target_proved": false,
+  "original_statement_preserved": true,
+  "scope": "Typed aliases only: actual primitive-polynomial real splitting, nonzero zeta-center value and existence of two distinct roots. These imported facts support the already-proved Turan/Newton inequalities; they do not prove individual centered-coefficient nonvanishing.",
+  "missing_interfaces_and_limits": "No new axiom is introduced: the relevant upstream spectral facts are already proved. Introducing individual coefficient nonvanishing, or a spectral condition chosen only to restate it, would assume the outstanding target. The named HasDistinctRoots predicate means existence of two distinct roots, not squarefreeness. The false generic-distinctness justification is preserved in the literal statement below, not endorsed.",
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "discharge_policy": "Replace each new axiom by proof of the identical quantified statement; compile and audit each changed module and its dependent graph. Never merge axiom-dependent conclusions into certified main. A proof consuming a new axiom is conditional experimental work, not new A-Tier evidence.",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p03-07_construction",
+  "axioms": []
+}
