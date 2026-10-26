@@ -231,3 +231,6 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.theorem_5_1_exact_moments
 #print axioms ManuscriptChain.Beukers.density_strictly_positive_on_square
 #print axioms ManuscriptChain.Beukers.density_measurable
+
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_eq_rat
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_is_rational
