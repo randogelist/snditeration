@@ -4,7 +4,7 @@ import Zetahyperbolic.Section6.BeukersDenominator
 /-!
 Source transfer: randogelist/zetahyperbolic-axiom at
 7250b47ba4d20ba934e890966a9b77a559689cfd, verified companion run 40327942655.
-This destination adaptation requires its own build and transitive axiom audit.
+This destination adaptation requires its own build and transitive dependency audit.
 -/
 
 /-!
