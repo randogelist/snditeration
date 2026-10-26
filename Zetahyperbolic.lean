@@ -153,3 +153,6 @@ import Zetahyperbolic.Section6.OuterHarmonicBound
 import Zetahyperbolic.Section6.OuterPrimeRationalBlock
 
 import Zetahyperbolic.Section6.OuterPrimePadicBlock
+
+import Zetahyperbolic.Section6.OuterPrimePadicReduction
+import Zetahyperbolic.Section6.Theorem61

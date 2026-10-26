@@ -100,7 +100,7 @@ theorem integrable_fiber_weight (r t : ℕ) :
       (integrable_logTail r 5 (by norm_num))).div_const
       (720 * ((r : ℝ)-(t : ℝ)))).congr
     filter_upwards [ae_restrict_mem measurableSet_Ioo] with u hu
-    simpa only [if_neg hrt] using (fiber_weight_eq r t hu).symm
+    simpa only [Pi.sub_apply, if_neg hrt] using (fiber_weight_eq r t hu).symm
 
 theorem integral_fiber_weight_eq_moment (r t : ℕ) :
     (∫ u : ℝ in Ioo 0 1, fiberMonomial r t u * mellinWeight u) =

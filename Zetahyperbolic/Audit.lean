@@ -727,3 +727,6 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.padicLocalMatrix_primitive_pole
 #print axioms ManuscriptChain.Beukers.padicLocalMatrix_nonzero_vector_cancellation
 #print axioms ManuscriptChain.Beukers.padicLocalMatrix_det_norm
+
+#print axioms ManuscriptChain.Beukers.theorem_6_1_corrected_local
+#print axioms ManuscriptChain.Beukers.padicLocalMatrix_scaled_reduction

@@ -48,8 +48,9 @@ theorem padicLocalMatrix_low_norm (p r : ℕ) [Fact p.Prime]
     ‖X - (Real.harmonic 7 r : ℚ_[p])‖ ≤ 1 := by
   have hh := rational_norm_le_one_of_valuation_nonneg p (Real.harmonic 7 r)
     (harmonic_below_prime_valuation_nonneg p 7 r hr)
-  exact (Padic.nonarchimedean X (-(Real.harmonic 7 r : ℚ_[p]))).trans
-    (max_le hX (by simpa using hh))
+  simpa only [sub_eq_add_neg] using
+    (Padic.nonarchimedean X (-(Real.harmonic 7 r : ℚ_[p]))).trans
+      (max_le hX (by simpa only [norm_neg] using hh))
 
 theorem padicLocalMatrix_offdiagonal_norm (p r : ℕ) [Fact p.Prime]
     (hp11 : 11 ≤ p) (hr : r < p) :
@@ -172,8 +173,9 @@ theorem padicLocalMatrix_nonzero_vector_cancellation (p r : ℕ) [Fact p.Prime]
     simp only [Matrix.mulVec, dotProduct, Fin.sum_univ_two, padicLocalMatrix, c,
       Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Matrix.head_fin_const,
       mul_zero, add_zero]
+    change ‖(Real.dualConstant 7 r (r+p) : ℚ_[p]) * (p : ℚ_[p])‖ = (p : ℝ)^6
     rw [norm_mul, padicLocalMatrix_offdiagonal_norm p r hp11 hr, Padic.norm_p]
-    field_simp
+    field_simp [hpn]
     <;> ring
   refine ⟨c, ?_, ?_, ?_, h1⟩
   · intro hz

@@ -108,9 +108,78 @@ theorem theorem_6_1_part_two (p K r₁ r₂ : ℕ) [Fact p.Prime]
   · rw [integral_beukersMeasure, moment_eq_dualConstant]
     simp only [hne, if_false, add_zero]
 
+private theorem finset_valuation_nonneg (p : ℕ) [Fact p.Prime]
+    (S : Finset ℕ) (F : ℕ → ℚ) :
+    (∀ i ∈ S, 0 ≤ padicValRat p (F i)) →
+      0 ≤ padicValRat p (∑ i ∈ S, F i) := by
+  classical
+  induction S using Finset.induction_on with
+  | empty =>
+      intro _
+      simp
+  | @insert a S ha ih =>
+      intro hF
+      rw [Finset.sum_insert ha]
+      by_cases hz : F a + ∑ i ∈ S, F i = 0
+      · rw [hz, padicValRat.zero]
+      · exact (le_min (hF a (Finset.mem_insert_self a S))
+          (ih (fun i hi => hF i (Finset.mem_insert_of_mem hi)))).trans
+          (padicValRat.min_le_padicValRat_add hz)
+
+/-- Removing the unique p-pole leaves an actual p-integral rational remainder.
+This retains the residue information lost by a bare valuation equality. -/
+theorem harmonic_outer_regular_valuation_nonneg (p r s : ℕ) [Fact p.Prime]
+    (hr : r < p) :
+    0 ≤ padicValRat p (Real.harmonic s (r + p) - Real.harmonic s r -
+      1 / (p : ℚ) ^ s) := by
+  classical
+  have hp : p.Prime := Fact.out
+  let F : ℕ → ℚ := fun i => 1 / ((r + i + 1 : ℕ) : ℚ) ^ s
+  let j : ℕ := p - r - 1
+  have hj : j ∈ Finset.range p := by
+    apply Finset.mem_range.mpr
+    dsimp [j]
+    omega
+  have hindex : r + j + 1 = p := by dsimp [j]; omega
+  have hjterm : F j = 1 / (p : ℚ) ^ s := by
+    dsimp [F]
+    rw [hindex]
+  have hregular : Real.harmonic s (r + p) - Real.harmonic s r -
+      1 / (p : ℚ) ^ s = ∑ i ∈ (Finset.range p).erase j, F i := by
+    rw [harmonic_difference_eq_shifted_sum]
+    change (∑ i ∈ Finset.range p, F i) - 1 / (p : ℚ) ^ s = _
+    rw [← Finset.sum_erase_add _ _ hj, hjterm]
+    ring
+  rw [hregular]
+  apply finset_valuation_nonneg
+  intro i hi
+  have hir : i < p := Finset.mem_range.mp (Finset.mem_of_mem_erase hi)
+  have hij : i ≠ j := Finset.ne_of_mem_erase hi
+  have hne : r + i + 1 ≠ p := by
+    intro he
+    apply hij
+    dsimp [j]
+    omega
+  have hnd : ¬p ∣ r + i + 1 := by
+    rintro ⟨k, hk⟩
+    have hk2 : k < 2 := by
+      apply (Nat.mul_lt_mul_left hp.pos).mp
+      rw [← hk]
+      omega
+    have hk0 : k ≠ 0 := by
+      intro hk0
+      simp [hk0] at hk
+    have hk1 : k = 1 := by omega
+    apply hne
+    simpa [hk1] using hk
+  simp only [F, one_div, padicValRat.inv, padicValRat.pow,
+    padicValRat.of_nat, padicValNat.eq_zero_of_not_dvd hnd,
+    Nat.cast_zero, mul_zero, neg_zero, le_refl]
+
 end ManuscriptChain.Beukers
 
 #print axioms ManuscriptChain.Beukers.harmonic_below_prime_valuation_nonneg
 #print axioms ManuscriptChain.Beukers.harmonic_outer_valuation_lower
 #print axioms ManuscriptChain.Beukers.theorem_6_1_harmonic_bound
 #print axioms ManuscriptChain.Beukers.theorem_6_1_part_two
+#print axioms ManuscriptChain.Beukers.harmonic_outer_regular_valuation_nonneg
