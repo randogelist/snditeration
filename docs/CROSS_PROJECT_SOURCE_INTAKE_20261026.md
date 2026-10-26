@@ -34,6 +34,12 @@ Reuse does not upgrade a theorem's tier until the exact destination statement, c
 | 9 / P2 | **4.8** finite denominator certificates | 3 R2 ζ5 candidate polynomials/exact intervals in user ZIP, plus `Zeta3R2Finite` Euler row mass and IMPACTG finite eta-source | Design terminating Lean rational checker, verify native ζ5 interval vs generated data. Exclusions up to B=27,65,145 are finite **external** claims and for **different R2 parameters**; not a proof of (4.8) for original K=30n |
 | 10 / P2 | **5.6 / 6.2 / 5.7** q-adic prime/cancellation and rational denominators | `Zeta3Anchor.MomentArithmetic`, `Classifier64.Beukers`, CHEB η and GP7 finite Laplace, older `zeta5-spectral-lean` arithmetic | These are **templates only**, not target statements. Rebuild the original 3/40,37/40 ζ7 prime integrals and K30n ζ5 multiplier with exact interval/p-adic certificates. Never import axiom-contaminated Lean4.34 upstream blindly |
 
+### Byte-identity deduplication of the 25 historical ZIPs
+
+An exact SHA-256 sweep of all original user ZIP members found **810 `.lean` occurrences**, but only **541 distinct Lean source byte sequences**. The remaining **269 occurrences are exact duplicate source bytes**, and **158 distinct source hashes** occur across more than one archive. These are *source-file duplicates*, not theorems, proofs or independent confirmations. For example, the file named `Theorem_5_1_Two_Variable_Beukers_Measure_For_Zeta_7.lean` occurs byte-identically in five archives; that repetition does not prove its analytical content. Another duplicated candidate is `Theorem_6_3_Unconditional_Q_Adic_Non_Vanishing_And_Explicit_Positive_Cone_Approximations_For_G_A_7.lean`, also found in five archives despite the printed cone counterexample.
+
+**Practical rule:** a future merge should compare source SHA-256 first, reuse a single canonical byte-identical source, and inspect exact theorem *types* and transitive axioms separately. Do not count each ZIP occurrence as a new mathematical result or compiler PASS.
+
 ## 4. What cannot be closed by source merging
 
 - **4.4 ζ5 measure:** the printed family is `K=30n,N=3n,m=3`, and its crucial explicit multiplier/prime allocation, positive primitive value with *quadratic decay*, and operator norm bound remain unproved. Generic rational-polynomial estimates, finite witness candidates, and the separate Fauzan family do not discharge these actual-family inequalities.
