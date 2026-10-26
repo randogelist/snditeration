@@ -9,7 +9,7 @@ The determinacy clause refers to the printed measure, not a surrogate moment
 sequence. The minor indices are arbitrary increasing row and column selections.
 The growth proof even removes the printed auxiliary condition 2mN ≤ K. -/
 noncomputable section
-open MeasureTheory
+open MeasureTheory SignType
 open scoped BigOperators
 
 namespace ManuscriptChain
@@ -51,7 +51,8 @@ theorem primitivePolynomial_real_identity (p : Real.Parameters) :
     ext
     simp
   simpa only [Polynomial.map_map, hc, Polynomial.map_mul, Polynomial.map_C,
-    Real.manuscriptPencil_detPolynomial, Real.realPolynomial, primitivePolynomial] using hi
+    Rat.coe_castHom, Real.manuscriptPencil_detPolynomial, Real.realPolynomial,
+    primitivePolynomial] using hi
 
 private theorem spectralFactor_roots (center beta : ℝ) (hb : beta ≠ 0) :
     (Spectral.spectralFactor center beta).roots = {center - beta⁻¹} := by
@@ -75,9 +76,10 @@ theorem primitivePolynomial_real_roots (p : Real.Parameters) (hp : Real.Admissib
   classical
   have hs : ((primitive p).scale : ℝ) ≠ 0 := by
     exact_mod_cast (ne_of_gt (primitive p).scale_pos)
+  have hpos : (Real.manuscriptPencil p).base.PosDef := GRAM_POSITIVE p hp
   rw [primitivePolynomial_real_identity, Polynomial.roots_C_mul _ hs,
-    Spectral.detPolynomial_actual_factorization _ (GRAM_POSITIVE p hp),
-    Polynomial.roots_C_mul _ (ne_of_gt (GRAM_POSITIVE p hp).det_pos)]
+    Spectral.detPolynomial_actual_factorization (Real.manuscriptPencil p) hpos,
+    Polynomial.roots_C_mul _ (ne_of_gt hpos.det_pos)]
   have hprod : (∏ i : Fin p.h,
       Spectral.spectralFactor (Real.manuscriptPencil p).center
         (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)) ≠ 0 := by
@@ -85,7 +87,7 @@ theorem primitivePolynomial_real_roots (p : Real.Parameters) (hp : Real.Admissib
   rw [Polynomial.roots_prod _ _ hprod]
   have hf (i : Fin p.h) := spectralFactor_roots (Real.manuscriptPencil p).center
     (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)
-    (Spectral.actualEigenvalues_ne_zero _ (GRAM_POSITIVE p hp)
+    (Spectral.actualEigenvalues_ne_zero (Real.manuscriptPencil p) hpos
       (General.derivative_nonsingular p) i)
   simp_rw [hf]
   exact Multiset.bind_singleton _

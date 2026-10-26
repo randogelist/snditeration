@@ -46,7 +46,9 @@ private theorem eta_even_partial (k r : ℕ) :
 theorem etaValue_eq_zeta (k : ℕ) (hk : 1 ≤ k) :
     etaValue k = (1 - 1 / (2:ℝ)^(2*k)) * Real.zeta (2*k+1) := by
   have hz : Tendsto (zetaPartial k) atTop (𝓝 (Real.zeta (2*k+1))) := by
-    simpa only [zetaPartial, Nat.cast_add, Nat.cast_one] using
+    change Tendsto (fun r : ℕ => ∑ n ∈ Finset.range r,
+      1 / ((n:ℝ)+1)^(2*k+1)) atTop (𝓝 (Real.zeta (2*k+1)))
+    simpa only [Nat.cast_add, Nat.cast_one] using
       (Real.zeta_series_hasSum (s := 2*k+1) (by omega)).tendsto_sum_nat
   have hg : Tendsto (fun r : ℕ => 2*r) atTop atTop := by
     apply tendsto_atTop.2
