@@ -181,3 +181,9 @@ run_cmd do
 #print axioms ManuscriptChain.UnitLogMoments.integral_exp_neg_substitution
 #print axioms ManuscriptChain.UnitLogMoments.integral_pow_log
 #print axioms ManuscriptChain.UnitLogMoments.integrable_pow_log
+
+-- Theorem 5.4: actual rational integer-pole cancellation and endpoint.
+#print axioms ManuscriptChain.Tau.evenPolePair_coe
+#print axioms ManuscriptChain.Tau.evenPolePair_cancellation
+#print axioms ManuscriptChain.Tau.evenPolePair_one
+#print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
