@@ -181,3 +181,12 @@ run_cmd do
 #print axioms ManuscriptChain.UnitLogMoments.integral_exp_neg_substitution
 #print axioms ManuscriptChain.UnitLogMoments.integral_pow_log
 #print axioms ManuscriptChain.UnitLogMoments.integrable_pow_log
+
+-- Standalone PR15 Newton/Turan core: audited local integration, not full printed Theorem 3.7.
+#print axioms ManuscriptChain.NewtonTuran.Core.turan_eq_zero_iff_multiple_zero
+#print axioms ManuscriptChain.NewtonTuran.HigherDerivativeTuran.iterated_turan_nonnegative
+#print axioms ManuscriptChain.NewtonTuran.HigherDerivativeTuran.iterated_turan_strict
+#print axioms ManuscriptChain.NewtonTuran.NormalizedNewton.coefficient_newton
+#print axioms ManuscriptChain.NewtonTuran.ConsecutiveDerivativeZeros.consecutive_taylor_nonvanishing
+#print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.coefficient_newton_strict_criterion
+#print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.normalized_shifted_newton_strict
