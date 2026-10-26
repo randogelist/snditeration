@@ -1,0 +1,60 @@
+{
+  "paper_item": "6.2",
+  "alternative_target": "For A∈Z[x] of degree at most K and integers α,β, identify the actual integral I_K(α,β;A) with the ζ(7)/ζ(6) linear form and rational remainder displayed in the original target. Initially require only a constructed positive integer D(K,α,β,A) with D·R_K∈Z; the exact multiplier 6d_K^7 is a separate strengthening.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Keep the actual simultaneous integral and exact coefficients, relax only the optimal denominator claim.",
+  "prerequisites": [
+    "5.1"
+  ],
+  "retained_open_obligations": [
+    "Establish the inserted geometric-series interchange and ζ(6) tail.",
+    "Prove the simultaneous integral identity.",
+    "Construct the explicit denominator algorithm; prove the optimal 6d_K^7 bound only in a later strengthening."
+  ],
+  "correction_gate": "A larger clearing multiplier must be propagated into every later height/decay calculation; zero overhead may not be retained by label.",
+  "source_paths": [
+    "Experimental/P06_02/Target.md",
+    "Experimental/P06_02/Assumptions.json",
+    "Experimental/P06_02/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-02_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-02_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-02_construction",
+  "original_snapshot_commit": "55b16e37db5162ee268a47468ea40c360cf9d412",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_02/Target.md",
+      "commit": "55b16e37db5162ee268a47468ea40c360cf9d412",
+      "url": "https://github.com/randogelist/snditeration/blob/55b16e37db5162ee268a47468ea40c360cf9d412/Experimental/P06_02/Target.md"
+    },
+    {
+      "path": "Experimental/P06_02/Assumptions.json",
+      "commit": "55b16e37db5162ee268a47468ea40c360cf9d412",
+      "url": "https://github.com/randogelist/snditeration/blob/55b16e37db5162ee268a47468ea40c360cf9d412/Experimental/P06_02/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_02/Prerequisites.lean",
+      "commit": "55b16e37db5162ee268a47468ea40c360cf9d412",
+      "url": "https://github.com/randogelist/snditeration/blob/55b16e37db5162ee268a47468ea40c360cf9d412/Experimental/P06_02/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
