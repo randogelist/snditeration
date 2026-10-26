@@ -224,3 +224,6 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.integral_momentTerm
 #print axioms ManuscriptChain.Beukers.integral_density_moment_series
 #print axioms ManuscriptChain.Beukers.diagonal_moment
+
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment
+#print axioms ManuscriptChain.Beukers.theorem_5_1_exact_moments
