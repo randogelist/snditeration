@@ -1,38 +1,17 @@
-# Next single-target handoff
+# Next single-target handoff — following P05.04 local A-Tier PASS
 
-## Target frozen for next execution: Theorem 5.4 — even-pole cancellation
+## Completed / frozen
 
-As of P02.03 / PR #18, Lemma 2.3's normalized analytic derivative and actual
-rational-domain finite difference are A-Tier verified in the canonical
-unique polynomial/pole-coordinate realization. Existing Section2 source
-files and new proof modules remain PASS-ONCE frozen.
+- `P02_03_ANALYTIC_DERIVATIVE`: [PR #18](https://github.com/randogelist/snditeration/pull/18), Lean 4.33 [CI 40262441761 PASS](https://github.com/randogelist/snditeration/actions/runs/40262441761). Actual τ-domain analytic normalized derivative proved.
+- `P04_03_COMPLEX_PADIC_ZERO_FREE_DISK`: [PR #17](https://github.com/randogelist/snditeration/pull/17), [CI 40259783326 PASS](https://github.com/randogelist/snditeration/actions/runs/40259783326).
+- `P05_04_EVEN_POLE_CANCELLATION`: [PR #21](https://github.com/randogelist/snditeration/pull/21), [CI 40265986335 PASS](https://github.com/randogelist/snditeration/actions/runs/40265986335), merged `f64b49b9b51b43626abbf09d1cf3821b187ea8b5`; four exact source theorems, 8,773 jobs, 1,011 theorem declarations audited.
 
-The companion `zetahyperbolic-axiom@86ca99a` already compiled
-`LeanPaper.Section2TauLinear.evenPolePair_cancellation`
-for every integer j≥1, including the j=1 exception.
+## Candidate next target — NOT YET FROZEN OR STARTED
 
-## Required P05.04 destination tasks (not started)
+**Theorem 5.1, actual two-variable ζ(7) Beukers moment identity.** Recommended because finite rational moments, Mellin log-moment integration, and finite dual algebra already exist in the project and companion sources. Missing: an exact positive double-integral identity with the paper's `720` normalization, diagonal tail `ζ(7)-H_r^{(7)}`, and rational off-diagonal divided differences. This requires genuine Fubini, geometric-series and integrability proofs on the **actual manuscript kernel**.
 
-1. Use the canonical `Tau.rationalFunctional` and actual `RatFunc`
-   domain objects already in `snditeration/main`.
-2. Express the even pole pair `(x-j)⁻¹-(x+j)⁻¹` for each j≥1 in
-   the correct integer-pole domain.
-3. Prove the exact theorem value `j^(-(2k+1))` for the paper's
-   normalization and weight convention, including j=1.
-4. Print the exact axiom dependencies, run full Lean 4.33 GitHub
-   CI and merge only after PASS; do not transfer the upstream
-   theorem name without proving equality of actual domain objects.
-5. Keep previous source/olean artifacts untouched under PASS-ONCE.
+Possible alternative single-target closure: Theorem 3.3(1), arbitrary mixed Hankel minors (requires generalized Vandermonde/Andréief and Carleman proof).
 
-## Separate optional technical bridge — NOT certified by P02.03
+Preserve **LEAN_ANCHORINGS/PASS-ONCE**, compile only new/invalidated sources and retain Lean 4.33 + Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assert an actual ζ(5)/ζ(7) irrationality, RH or S-Tier witness.
 
-For any regular domain element `f`, prove on an open neighborhood of zero
-that the canonical `Tau.analyticRealization f` agrees pointwise with
-Mathlib's `RatFunc.eval (Rat.castHom ℝ) x (f : RatFunc ℚ)`,
-and transport `iteratedDeriv` along that eventual equality.
-The printed finite-pole/span analytic derivative statement and its
-canonical rational-domain form are already proved; this strengthens
-interoperability with Mathlib's totalized evaluation API. Do not treat
-this optional bridge as a theorem that the previous CI checked.
-
-No ζ5/ζ7 irrationality or RH result is asserted.
+**Concurrency:** a later feature branch may be created while another PR is pending. Every merge must still have an integrated destination build and standard-only transitive dependency audit, and source changes must not discard other merged work.
