@@ -253,10 +253,21 @@ run_cmd do
 #print axioms ManuscriptChain.Section4EffectiveBudget.effective_spectral_measure
 #print axioms ManuscriptChain.Section4EffectiveBudget.manuscript_effective_rate_margins
 
+-- P04.02: conditional algebraic-height transfer with exact minimal polynomial wrapper.
+#print axioms ManuscriptChain.Section4Resultant.integer_resultant_product
+#print axioms ManuscriptChain.Section4Resultant.irreducible_conjugate_product_one_le
+#print axioms ManuscriptChain.Section4ConjugateBounds.algebraic_approximation_barrier
+#print axioms ManuscriptChain.Section4AlgebraicBudget.eventually_conjugate_budget
+#print axioms ManuscriptChain.Section4AlgebraicTransfer.algebraic_transfer_rates
+#print axioms ManuscriptChain.Section4AlgebraicLimsup.algebraic_transfer_limsup
+#print axioms ManuscriptChain.Section4AlgebraicLattice.proposition_4_2
+#print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_spec
+#print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_degree
+#print axioms ManuscriptChain.Section4AlgebraicHeight.proposition_4_2_algebraic_numbers
+
 #print axioms ManuscriptChain.Beukers.kreinSix_eq_signed
 #print axioms ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix
 #print axioms ManuscriptChain.Beukers.actual_monomial_krein_bilinear
 #print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
-
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
