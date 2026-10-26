@@ -14,8 +14,8 @@ inventory, not a percentage of mathematical work completed. No unconditional
 
 ## Verified repair branch — later evidence, not main integration
 
-[PR #39](https://github.com/randogelist/snditeration/pull/39) contains the completed
-repair campaign at [`67c962b74112`](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4).
+[PR #39](https://github.com/randogelist/snditeration/pull/39) contains the historically verified
+repair snapshot at [`67c962b74112`](https://github.com/randogelist/snditeration/tree/67c962b74112df9f41afe1eb11f69392e7c84cb4).
 [CI 40321257752](https://github.com/randogelist/snditeration/actions/runs/40321257752) passed
 the full root build, all-project transitive axiom audit and source-placeholder scan.
 It checked **2,292 declarations**, including
@@ -39,6 +39,35 @@ See the [correction log](docs/FORMALIZATION_CORRECTIONS.md),
 [immutable receipt](docs/receipts/COMPLETION_20261026.json).
 The next open original remains **3.3**: all-order arbitrary mixed minors and
 Stieltjes uniqueness. No local Lean was executed and no proof was replaced by an axiom.
+
+## Unverified continuation — 26 October 2026
+
+The current open PR #39 head has advanced to
+[`d336519fa7ef42cb1cf847849c6e22652e8ca6b1`](https://github.com/randogelist/snditeration/tree/d336519fa7ef42cb1cf847849c6e22652e8ca6b1).
+[Run 40326832707](https://github.com/randogelist/snditeration/actions/runs/40326832707)
+was still building at this inspection; its axiom audit had not run. The preceding
+run 40326124751 failed. **The successful receipt below certifies only the older
+`67c962b74112df9f41afe1eb11f69392e7c84cb4` state, not this new head.**
+
+The source delta adds 16 library modules, all explicitly imported by the new
+root, and extends the audit. No existing mathematical module was changed in this
+delta. New imports reference the prior library, Mathlib and these new modules;
+none introduces an import path to Experimental. This is source-graph inspection,
+not a successful compiler or transitive axiom receipt.
+
+| Item | New source candidate | Certification boundary |
+| --- | --- | --- |
+| 3.3 | [Theorem33](https://github.com/randogelist/snditeration/blob/d336519fa7ef42cb1cf847849c6e22652e8ca6b1/Zetahyperbolic/Section3/Theorem33.lean) assembles printed-measure Stieltjes uniqueness, arbitrary strictly increasing mixed-minor indices, actual signature and weight-five primitive-polynomial root multiplicity counts. | Still the next open original: exact-source successful compilation, transitive axiom audit and final whole-statement scope acceptance remain required. |
+| 5.2(3) | Actual rational Beukers fixed-degree dimension obstruction, including K=h=2. | Refutation candidate only; no new certified refutation or corrected cone theorem. |
+| 6.9 | All-positive-n cubic-zero factorization and first nonzero coefficient. | General correction candidates extend the earlier certified n=1 refutation; valuations remain separate. |
+| 6.15 | Actual beta-one and all-order odd-beta density moments, ordered-series calibration and positive Gram constructions. | Component candidates only; effective measures, all-k rank-one and exterior asymptotics are not established by these sources. |
+| 6.17 | Explicit harmonic-index obstruction to the local arithmetic argument. | Intermediate-refutation candidate, not completion or refutation of every conclusion. |
+
+Counts remain **9/45 integrated** and **10/45 historically verified at the cited
+PR source**. All 108 experimental publication heads and all 72 paired attempts
+are unchanged; there are 110 destination branches. Companion archive and other
+unchanged source heads retain their previous receipts. No new assumption
+discharge, compatibility bridge, proof tier, or Windows verification is inferred.
 
 ## Chain categorizer and iterations
 
@@ -272,9 +301,13 @@ accepted extension of this repository. Its current `main` is
 Only README documentation differs from the prior source snapshot
 `211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80`, which has [failed CI 40281177876](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40281177876).
 Companion [PR #49](https://github.com/randogelist/zetahyperbolic-axiom/pull/49),
-source `bdcbb8bbd54d9837e3230cd50c28358eec37ee42`, has
-[CI 40320889232](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40320889232)
-still in progress at this inspection; no new companion PASS is inferred.
+earlier source `bdcbb8bbd54d9837e3230cd50c28358eec37ee42`, has now failed
+[CI 40320889232](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40320889232).
+Its current head is `b1c99c0d25cf94ee2cfbb398f697b7e50c363f89`, with
+[CI 40326559574](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40326559574)
+still compiling/auditing at this inspection. It adds a source candidate for the
+actual outer-prime off-diagonal valuation and further analytic/compiler repairs.
+No new companion PASS or destination integration is inferred.
 The following earlier exact-source receipts were inspected independently; none
 closes the corresponding whole paper item or certifies a new destination import.
 

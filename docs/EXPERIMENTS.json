@@ -13216,6 +13216,82 @@
           "sha": "bdcbb8bbd54d9837e3230cd50c28358eec37ee42"
         }
       ]
+    },
+    {
+      "date_utc": "2026-10-26",
+      "main_source": "6ac5fc94d92a4dd4b6753f648e4412019b7fc4c1",
+      "live_branch_count": 110,
+      "all_108_publication_heads_unchanged": true,
+      "repair_source": "d336519fa7ef42cb1cf847849c6e22652e8ca6b1",
+      "pr": 39,
+      "merged": false,
+      "run_id": 40326832707,
+      "job_id": 121585604688,
+      "run_observed_status": "in_progress",
+      "axiom_audit_observed_status": "pending",
+      "status": "SOURCE_CANDIDATE_NOT_CERTIFIED",
+      "new_library_module_count": 16,
+      "source_delta_existing_mathematical_modules_changed": false,
+      "experimental_import_paths_added": [],
+      "previous_verified_source": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+      "previous_verified_run": 40321257752,
+      "original_main_count": 9,
+      "historical_verified_original_count": 10,
+      "next_open_original": "3.3",
+      "experiment_statuses_unchanged": true,
+      "assumption_discharge_not_inferred": true,
+      "companion_source": "b1c99c0d25cf94ee2cfbb398f697b7e50c363f89",
+      "companion_pr": 49,
+      "companion_run_id": 40326559574,
+      "companion_run_observed_status": "in_progress",
+      "companion_previous_run": 40320889232,
+      "companion_previous_run_conclusion": "failure",
+      "companion_heads": [
+        {
+          "branch": "archive/branch-consolidation-20261026",
+          "sha": "a241aa883da18eb1eb3ec027cbb971694bc7e3bf"
+        },
+        {
+          "branch": "continuation-in-progress",
+          "sha": "d6230ba0fc870dafa32af8fa9c08eaddbbc44009"
+        },
+        {
+          "branch": "feat/gwf-target-38-matrix-curve-jacobi-v0_1_0",
+          "sha": "e2afb4799552057e9d1bf0a8831624e5429b31de"
+        },
+        {
+          "branch": "feat/gwf-target-38-monic-orthogonal-v0_1_0",
+          "sha": "53f82c21f01b154a5f0b2f5fe467c33350d3e387"
+        },
+        {
+          "branch": "feat/leaned-paper-source-assembly-v0_1_0",
+          "sha": "898c17c8ed17e1c37fb9d3fc4c1116b9beb062b0"
+        },
+        {
+          "branch": "leaned-paper",
+          "sha": "211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80"
+        },
+        {
+          "branch": "main",
+          "sha": "41674aac3544bf314a53b4302266ad22a30ae707"
+        },
+        {
+          "branch": "persistent/zetahyperbolic-paper-gap-tracker",
+          "sha": "a1cd210007b773d0652da3870363c4fba28c5388"
+        },
+        {
+          "branch": "repair/gwf-33-carleman-after235-v0_1_0_construction",
+          "sha": "82fcf7b31da336585fe81bd5b75f0043a69fec4e"
+        },
+        {
+          "branch": "repair/gwf-52-rational-independence-after235-v0_1_0_construction",
+          "sha": "cf4b3e49887b7293d8794adf5f45cea8126b9517"
+        },
+        {
+          "branch": "repair/gwf-completion-construction",
+          "sha": "b1c99c0d25cf94ee2cfbb398f697b7e50c363f89"
+        }
+      ]
     }
   ]
 }

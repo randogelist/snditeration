@@ -182,3 +182,7 @@ records the precise components, corrections and refutation. No experimental
 status, target, named assumption, compatibility bridge or immutable receipt is
 changed. The 72 paired catalog attempts are unchanged; the cross-item repair
 branch is tracked separately, without inventing PROP/ALT iteration lineage.
+
+## Later source continuation — 26 October 2026
+
+PR #39 advanced to [d336519fa7ef](https://github.com/randogelist/snditeration/tree/d336519fa7ef42cb1cf847849c6e22652e8ca6b1); [CI 40326832707](https://github.com/randogelist/snditeration/actions/runs/40326832707) was building with its audit pending. Its 16 new imported library modules are candidates, not covered by the older successful receipt. The [README continuation](../README.md#unverified-continuation--26-october-2026) records the affected items and exact boundaries. All 108 experimental heads still match publication; 110 live branches and 72 paired attempts remain. No scaffold assumption or downstream bridge is newly discharged, and no catalog iteration is invented for the cross-item repair branch. Companion PR #49 likewise advanced to b1c99c0d25cf94ee2cfbb398f697b7e50c363f89 with CI still running; its previous 40320889232 run failed. Immutable publication and successful historical receipts above remain intact.
