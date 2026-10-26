@@ -142,3 +142,5 @@ import Zetahyperbolic.Section5.BetaBeukersSpectrum
 import Zetahyperbolic.Section5.BeukersIntegralPencil
 import Zetahyperbolic.Section6.BeukersDenominator
 import Zetahyperbolic.Section6.BeukersSimultaneous
+
+import Zetahyperbolic.Section6.BeukersOuterValuation
