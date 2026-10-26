@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "paper_item": "4.5",
+  "module_key": "P04_05",
+  "branch": "experiment/zetahyperbolic-p04-05_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P04_05.coupled_density_comparison",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P03_01",
+        "P04_05_ANALYTIC_COMPARISON"
+      ]
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P04_05",
+  "paper_reference_items": [
+    "2.2",
+    "4.1"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "00864bdebb8384606111f231ebb305375c3901ea8ad9f6bee3a45cd034f7a559",
+    "Assumptions.json": "991a387006918e3c6ef218d12c413807f579804a78012aeb25576ab3555f532a",
+    "Target.md": "194d16dee93ee69f3e80f5bdb3a38551febc9674f253f028475d71f53130fb54",
+    "Work.lean": "31af3baf7953c753b4708ee9d784907442536e3bf0aba16927e229b9b471e780"
+  },
+  "audit_sha256": "7c25139daaf99403f1e839b012c0c57af17a429649e09795525be7f846781927",
+  "original_statement_sha256": "7cf30e6963812194355be3260e1868e61f1d88c98ffdba06612155624eba9a8d",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

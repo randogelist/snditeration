@@ -1,0 +1,41 @@
+{
+  "id": "P04_05",
+  "manuscript_id": "4.5",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "full_name": "Experimental.P04_05.coupled_density_comparison",
+      "math_meaning": "Pointwise comparison of actual w5 and b w5−a y²w3, with the manuscript coefficients and positive lower comparison. Only the analytic density prerequisite.",
+      "dependency_ids": [
+        "P03_01",
+        "P04_05_ANALYTIC_COMPARISON"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    }
+  ],
+  "verified_upstream_refs": [
+    "ManuscriptChain.Hyperbolic.density",
+    "ManuscriptChain.Hyperbolic.summable_exponentialTerm",
+    "ManuscriptChain.Hyperbolic.density_pos",
+    "ManuscriptChain.Mu.integral_rational_density",
+    "ManuscriptChain.Section4TransferComplete.spectral_transfer_lattice"
+  ],
+  "dependency_ids": [
+    "P02_02",
+    "P03_01",
+    "P04_01",
+    "P04_04",
+    "EXTERNAL_FAUZAN_2026_SMALL_PRIMES"
+  ],
+  "coverage": "Only the genuine coupled-density comparison is assumed. Existing pure-weight analytic realization and rational moment facts remain imported. No ζ5/ζ3 irrationality, multiplier, decay or combined spectral statement is assumed.",
+  "repair_or_interface_gates": [
+    "Discharge comparison by the actual summable exponential series, retaining both signs of a.",
+    "Construct the actual single-Z coupled rational pencil and prove slope equality and positive Gram realization. These objects are not replaced by a generic arbitrary matrix.",
+    "Prove outer-prime rank-loss and small-prime bounds independently. The manuscript’s claimed rank ≤14 requires a separate actual matrix-rank proof.",
+    "Track O(K) and O(log K) losses with sufficient strict rate margins; an O(log K) error cannot be silently discarded at the exact 11.411 bound."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}
