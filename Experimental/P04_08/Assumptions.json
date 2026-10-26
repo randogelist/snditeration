@@ -1,0 +1,45 @@
+{
+  "id": "P04_08",
+  "manuscript_id": "4.8",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "full_name": "Experimental.P04_08.weight_five_spectral_cap_input",
+      "math_meaning": "Earlier 4.4 actual operator-norm cap, which gives a lower root-distance gap after proved transfer, not an upper cluster radius.",
+      "dependency_ids": [
+        "P04_04_SPECTRAL"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_08.zeta_five_measure_input",
+      "math_meaning": "Earlier 4.4 rational approximation bound after an existential threshold, on the actual real zeta series.",
+      "dependency_ids": [
+        "P04_04_MEASURE"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    }
+  ],
+  "verified_upstream_refs": [
+    "ManuscriptChain.primitivePolynomial_root_iff",
+    "ManuscriptChain.Spectral.actual_complex_root_distance",
+    "ManuscriptChain.primitivePolynomial_isPrimitive",
+    "ManuscriptChain.primitivePolynomial_natDegree"
+  ],
+  "dependency_ids": [
+    "P03_01",
+    "P04_04"
+  ],
+  "coverage": "Only genuine earlier Theorem 4.4 inputs are exposed. These can support factor-distance bounds and the denominator bound for a rational root already known to be clustered. The blanket small-denominator exclusion remains behind a repair gate.",
+  "repair_or_interface_gates": [
+    "Discharge both earlier 4.4 inputs. Their assumptions are experimental, not existing certified zeta estimates.",
+    "The paper turns |r−ζ5|≥exp(−11.411K) into |r−ζ5|≤exp(−11.411K). Never introduce that upper-cluster statement as an axiom or use ex-falso to cross this gap.",
+    "Part (1) unconditional small-denominator exclusion requires an independent new argument or a corrected statement. The conditional clustered-root assertion has a different scope.",
+    "Part (2) printed upper degree inequality should be checked carefully: from |F(ξ)|≤|c_F|exp(−dτK), logarithms give d≤(log|c_F|−log|F(ξ)|)/(τK). Keep all positivity/nonzero conditions explicit.",
+    "Represent actual polynomial divisors, complex root multiplicities and leading coefficients; prove finite factor-product/log inequalities instead of assuming the target degree bounds."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_item": "4.8",
+  "module_key": "P04_08",
+  "branch": "experiment/zetahyperbolic-p04-08_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P04_08.weight_five_spectral_cap_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P04_04_SPECTRAL"
+      ]
+    },
+    {
+      "name": "Experimental.P04_08.zeta_five_measure_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P04_04_MEASURE"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P04_08",
+  "paper_reference_items": [
+    "4.4"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "1650d1ff23efc004f4815d693a71966f0fa6204fefffbdbc58a04cace09018ea",
+    "Assumptions.json": "5b6a6f6bef6bb43f005f675714698e679578c8e36c84229ea147345e925c5fcd",
+    "Target.md": "8186561aa73d6122cef7c0ca8e40b5e5cc071ecd877b483cadbd6d9cedaecf77",
+    "Work.lean": "bc9968bd45e5cbea340f61c1b3623dd05d961ea42c86a7dbcc9e24c397c834e2"
+  },
+  "audit_sha256": "9237c7f122f56e4240ad1b846328a7c2929346b6c62e81439b244d8edd582dbb",
+  "original_statement_sha256": "e080d341494eddf2cba45908cd8220f89af13a3e129868f07c299d23f029dad3",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
