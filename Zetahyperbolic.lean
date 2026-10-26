@@ -53,3 +53,6 @@ import Zetahyperbolic.Section2.RationalRegularity
 import Zetahyperbolic.Section3.ReciprocalMoments
 import Zetahyperbolic.Section3.ReciprocalMomentLimit
 import Zetahyperbolic.Section4.ActualPrimitivePadicDisk
+import Zetahyperbolic.Section2.AnalyticDerivative
+import Zetahyperbolic.Section2.PolynomialDerivative
+import Zetahyperbolic.Section2.RationalAnalyticBridge
