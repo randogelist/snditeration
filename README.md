@@ -36,7 +36,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` Conditional transfer, effective-onset variant and **complex-root separation ⇒ integer polynomial factor-two comparison**; actual root gap open |
 | 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` **A-Tier original** | `!!` Complete companion ultrametric disk, plus **actual primitive-polynomial specialization under explicit p-adic center/radius hypotheses**; local import open |
+| 16 | ~~4.3~~ ✓ (local) | Ultrametric zero-free disk | `!!` **A-Tier original** | `!!` **LOCAL certified**: exact ℂ_p norm-preserving disk, plus actual manuscript primitive-polynomial specialization; center nonvanishing remains the theorem hypothesis |
 | 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Positive primitive integer ζ5 polynomial, actual 30n family, finite pole-log and adjacent log-ratio identities; **uniform decay/multiplier missing** |
 | 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | — **open as printed** | `!!` Finite positive determinant reweighting; coupled ζ5/ζ3 arithmetic open |
 | 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` Exact original content–Gram/Vandermonde-pole log conservation; **K²-rate and direction repair open** |
@@ -67,7 +67,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
 
-**Totals:** Seven fully verified exact printed items across the two audited repositories (four local, three companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
+**Totals:** Seven fully verified exact printed items across the two audited repositories (five local, two companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
 **Convergence checkpoint (26 October 2026):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **60**, but these phrases are **not** 60 independent or newly compiled Lean proofs. The indexed, hash-matched source-module coverage increased from 18 to **22**. The [historical convergence ledger](docs/CONVERGENCE_TRACKER.md) and [machine-readable 13-checkpoint series](docs/CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
 
@@ -97,6 +97,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **Local merger status:** `SRC_COLLECTED`, not `DEST_COMPILED`. The draft CI PASS (when present) means only that the unchanged imported Lean project still builds, because no `.lean.txt` snapshot enters the default import graph. A print-axioms check and exact paper-object adapter remain necessary before closing a local gap. Current completed printed total remains **7/45 across the two repositories**.
 
+**P04.03 local A-Tier closure (26 October 2026):** [PR #17](https://github.com/randogelist/snditeration/pull/17) merged as `1e7d422c`; [8,765-job CI and exact axiom audit 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326) passed. The three originally companion-only closures are now **2 local-import-pending (2.3 and 5.4)** plus locally merged 4.3. The combined whole-item total remains 7/45. [Read the native project checkpoint](https://github.com/randogelist/snditeration/blob/main/docs/P04_03_NATIVE_CHECKPOINT.md). This new source commit ends the earlier **fixed-source** evidence-saturation interval.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
@@ -125,7 +127,7 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 | ~~Proposition 4.3~~ | **CROSS-REPO PASS** | Port the full `ℂ_p` norm-preserving zero-free disk theorem |
 | ~~Theorem 5.4~~ | **CROSS-REPO PASS** | Port actual even-pole cancellation, including `j=1` |
 
-**Aggregate count:** 7/45 complete printed items, comprising **4 certified locally + 3 additional certified in the companion repo**. Only 4 are currently local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
+**Aggregate count:** 7/45 complete printed items, comprising **5 certified locally + 2 additional certified in the companion repo**. Only 4 are currently local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
 
 **More work already finished at subclause level:** corrected Proposition 3.2; all-order Dodgson part of Theorem 3.4; corrected Corollary 3.6; strict Newton components of 3.7; effective *conditional* index selection with explicit onset; `CCᵀ` dual-pencil algebra; `6d_K^7` Beukers denominator; finite central-factorial identities; qualitative odd-beta transcendence; polynomial quotient-degree thresholds. **Do not** cross off their full original printed theorems. Full [source-level cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
