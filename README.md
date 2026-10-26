@@ -99,6 +99,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **P04.03 local A-Tier closure (26 October 2026):** [PR #17](https://github.com/randogelist/snditeration/pull/17) merged as `1e7d422c`; [8,765-job CI and exact axiom audit 40259783326](https://github.com/randogelist/snditeration/actions/runs/40259783326) passed. The three originally companion-only closures are now **2 local-import-pending (2.3 and 5.4)** plus locally merged 4.3. The combined whole-item total remains 7/45. [Read the native project checkpoint](https://github.com/randogelist/snditeration/blob/main/docs/P04_03_NATIVE_CHECKPOINT.md). This new source commit ends the earlier **fixed-source** evidence-saturation interval.
 
+**Integration ownership:** [Independent integration lane and noninterference protocol](docs/INTEGRATION_LANE.md) documents which development branches are protected, the single-target merge gate, and locally verified PR #19 (Mellin moments). It does not change the whole-item count of 7/45.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
