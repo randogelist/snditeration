@@ -223,3 +223,11 @@ run_cmd do
 #print axioms ManuscriptChain.DualSpectral.coefficientSlope_posDef
 #print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_degree
 #print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_zeros_real
+#print axioms ManuscriptChain.Beukers.integral_logMonomial
+#print axioms ManuscriptChain.Beukers.integral_momentTerm
+#print axioms ManuscriptChain.Beukers.integral_density_moment_series
+#print axioms ManuscriptChain.Beukers.diagonal_moment
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment
+#print axioms ManuscriptChain.Beukers.theorem_5_1_exact_moments
+#print axioms ManuscriptChain.Beukers.density_strictly_positive_on_square
+#print axioms ManuscriptChain.Beukers.density_measurable

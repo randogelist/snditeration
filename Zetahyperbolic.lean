@@ -64,3 +64,6 @@ import Zetahyperbolic.Section3.ContinuousMeasure
 import Zetahyperbolic.Section5.EvenPoleCancellation
 import Zetahyperbolic.Section3.ActualNewtonTuran
 import Zetahyperbolic.Section5.ActualDualSpectrum
+import Zetahyperbolic.Section5.BeukersMomentSeries
+import Zetahyperbolic.Section5.BeukersOffDiagonal
+import Zetahyperbolic.Section5.BeukersDensity
