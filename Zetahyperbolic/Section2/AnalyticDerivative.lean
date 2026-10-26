@@ -81,11 +81,11 @@ theorem poleElement_coefficient (k : ℕ) (c : ℤ →₀ ℚ) :
     dataCoefficient_apply]
   simp only [coeff_zero, zero_sub]
   push_cast
-  simp only [Finset.sum_neg_distrib]
-  congr 1
-  apply Finset.sum_congr rfl
-  intro r hr
-  ring
+  simp only [inv_neg, mul_neg, Finset.sum_neg_distrib]
+  all_goals
+    first
+    | rfl
+    | ring
 
 /-- The normalized genuine analytic derivative equals the coefficient
 in the unique coordinates of the actual rational-function domain. -/
