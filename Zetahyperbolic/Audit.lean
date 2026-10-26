@@ -190,3 +190,153 @@ run_cmd do
 #print axioms ManuscriptChain.NewtonTuran.ConsecutiveDerivativeZeros.consecutive_taylor_nonvanishing
 #print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.coefficient_newton_strict_criterion
 #print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.normalized_shifted_newton_strict
+
+-- Independent P03.02 corrected real-s density/moments; full continuous pencil remains open.
+#print axioms ManuscriptChain.ContinuousWeight.printedPrefactor_eq
+#print axioms ManuscriptChain.ContinuousWeight.density_pos
+#print axioms ManuscriptChain.ContinuousWeight.integral_monomial_density
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_pos
+#print axioms ManuscriptChain.ContinuousWeight.weightedMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.momentMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.integral_momentMeasure
+#print axioms ManuscriptChain.ContinuousWeight.integrableOn_weightedDensity_moment
+
+-- Theorem 5.4: actual rational integer-pole cancellation and endpoint.
+#print axioms ManuscriptChain.Tau.evenPolePair_coe
+#print axioms ManuscriptChain.Tau.evenPolePair_cancellation
+#print axioms ManuscriptChain.Tau.evenPolePair_one
+#print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
+
+-- Independent local A-tier support of printed 3.7: exact actual-family declarations.
+#print axioms ManuscriptChain.NewtonTuran.Actual.spectral_polynomial_splits
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_hasDistinctRoots
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_laguerre
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_consecutive_nonvanishing
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_newton_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_laguerre_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_nonnegative
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_strict
+
+#print axioms ManuscriptChain.DualAlgebra.dualSlopeMatrix_eq_CCT
+#print axioms ManuscriptChain.DualSpectral.coefficientSlope_posDef
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_degree
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_zeros_real
+#print axioms ManuscriptChain.Beukers.integral_logMonomial
+#print axioms ManuscriptChain.Beukers.integral_momentTerm
+#print axioms ManuscriptChain.Beukers.integral_density_moment_series
+#print axioms ManuscriptChain.Beukers.diagonal_moment
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment
+#print axioms ManuscriptChain.Beukers.theorem_5_1_exact_moments
+#print axioms ManuscriptChain.Beukers.density_strictly_positive_on_square
+#print axioms ManuscriptChain.Beukers.density_measurable
+
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_eq_rat
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_is_rational
+
+-- Conditional all-complex-root separation comparison, isolated from actual ζ5 rate.
+#print axioms ManuscriptChain.Spectral.comparisonRadius_pos
+#print axioms ManuscriptChain.Section4ComplexComparison.polynomial_comparison
+#print axioms ManuscriptChain.Section4ComplexComparison.integer_comparison
+
+-- P04.01: exact conditional rate/index transfer, no specific ζ5 decay assumption discharged.
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_bounds
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_tendsto
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_radius_budget
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_denominator_budget
+#print axioms ManuscriptChain.Section4IndexSelection.exists_indexBudget_of_rates
+#print axioms ManuscriptChain.Section4IndexSelection.measure_of_rates
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_real_exponent
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_lattice
+#print axioms ManuscriptChain.Section4EffectiveBudget.explicit_budgets
+#print axioms ManuscriptChain.Section4EffectiveBudget.effective_spectral_measure
+#print axioms ManuscriptChain.Section4EffectiveBudget.manuscript_effective_rate_margins
+
+-- P04.02: conditional algebraic-height transfer with exact minimal polynomial wrapper.
+#print axioms ManuscriptChain.Section4Resultant.integer_resultant_product
+#print axioms ManuscriptChain.Section4Resultant.irreducible_conjugate_product_one_le
+#print axioms ManuscriptChain.Section4ConjugateBounds.algebraic_approximation_barrier
+#print axioms ManuscriptChain.Section4AlgebraicBudget.eventually_conjugate_budget
+#print axioms ManuscriptChain.Section4AlgebraicTransfer.algebraic_transfer_rates
+#print axioms ManuscriptChain.Section4AlgebraicLimsup.algebraic_transfer_limsup
+#print axioms ManuscriptChain.Section4AlgebraicLattice.proposition_4_2
+#print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_spec
+#print axioms ManuscriptChain.Section4AlgebraicHeight.integerMinimalPolynomial_degree
+#print axioms ManuscriptChain.Section4AlgebraicHeight.proposition_4_2_algebraic_numbers
+
+#print axioms ManuscriptChain.Beukers.kreinSix_eq_signed
+#print axioms ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_bilinear
+#print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
+
+-- Finite 6.10 potential identity and a corrected rate-direction counterexample.
+#print axioms ManuscriptChain.PotentialGap.detPolynomial_coeff_dimension
+#print axioms ManuscriptChain.PotentialGap.base_det_mul_whitened_det
+#print axioms ManuscriptChain.PotentialGap.abs_coefficient_eq_center_mul_det
+#print axioms ManuscriptChain.PotentialGap.log_coefficient_sub_log_center
+#print axioms ManuscriptChain.PotentialGap.normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.manuscript_normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.rate_conservation
+#print axioms ManuscriptChain.PotentialGap.height_decay_ratio_gt_581
+#print axioms ManuscriptChain.PotentialGap.lower_decay_bound_counterexample
+#print axioms ManuscriptChain.PotentialGap.evaluation_upper_gives_rate_lower
+#print axioms ManuscriptChain.PotentialGap.evaluation_lower_gives_rate_upper
+
+-- Generic ultrametric integer-polynomial disk reused from frozen PR15.
+#print axioms ManuscriptChain.Ultrametric.norm_eval_le_one
+#print axioms ManuscriptChain.Ultrametric.norm_eval_sub_le
+#print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.eval_ne_zero_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.padicComplex_zero_free_disk
+
+-- P03.04: actual admissible degree-loss counterexample; printed full-rank claim is false.
+#print axioms ManuscriptChain.PrincipalDegreeLoss.example_admissible
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_slope_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_direction_zero
+#print axioms ManuscriptChain.PrincipalDegreeLoss.principal_polynomial_constant
+#print axioms ManuscriptChain.PrincipalDegreeLoss.first_principal_has_no_complex_roots
+#print axioms ManuscriptChain.PrincipalDegreeLoss.literal_all_principal_roots_claim_false
+
+-- P03.04: conditional polynomial Dodgson identity and signature restriction bounds.
+#print axioms ManuscriptChain.Dodgson.det_border
+#print axioms ManuscriptChain.Dodgson.block_condensation
+#print axioms ManuscriptChain.Dodgson.symmetric_block_condensation
+#print axioms ManuscriptChain.Dodgson.map_border
+#print axioms ManuscriptChain.Dodgson.polynomial_symmetric_block_condensation
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_comp_le
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_le_restrict_add_codimension
+#print axioms ManuscriptChain.SignatureRestriction.signature_restriction_bounds
+#print axioms ManuscriptChain.SignatureRestriction.sigPos_codimension_one
+#print axioms ManuscriptChain.SignatureRestriction.signature_comp_bounds
+
+-- Lemma 2.3: actual RatFunc.eval germ and direct normalized analytic derivative API.
+#print axioms ManuscriptChain.SimplePole.realEval_eq_eval
+#print axioms ManuscriptChain.SimplePole.realEval_eventuallyEq_eval
+#print axioms ManuscriptChain.SimplePole.supported_pole_denom_zero
+#print axioms ManuscriptChain.Tau.regular_at_zero_iff
+#print axioms ManuscriptChain.Tau.dataCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.partialFractionCoefficient_eq_iteratedDeriv
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_RatFunc_eval
+
+-- P06.10(2) conditional coefficient Gram determinant O(K log K) rate.
+#print axioms ManuscriptChain.CoefficientGramGrowth.map_intGram
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_realGram_eq_int
+#print axioms ManuscriptChain.CoefficientGramGrowth.realGram_posDef
+#print axioms ManuscriptChain.CoefficientGramGrowth.one_le_det
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_upper
+#print axioms ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero
+
+-- P03.02 corrected real-parameter hyperbolicity and exact odd-weight alignment.
+#print axioms ManuscriptChain.ContinuousWeight.gram_posDef
+#print axioms ManuscriptChain.ContinuousWeight.gram_integral
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_eq_paper
+#print axioms ManuscriptChain.ContinuousWeight.gram_eq_paper_integral
+#print axioms ManuscriptChain.ContinuousWeight.gram_odd
+#print axioms ManuscriptChain.ContinuousWeight.poleWeight_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_det_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_odd
+#print axioms ManuscriptChain.ContinuousWeight.pencil_odd
+#print axioms ManuscriptChain.ContinuousWeight.proposition_3_2_corrected
