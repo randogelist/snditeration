@@ -1,0 +1,54 @@
+{
+  "item": "6.17",
+  "module": "P06_17",
+  "namespace": "Experimental.P06_17",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_17.upstream_beta_four_diagonal_moment",
+      "meaning": "Concrete diagonal integral identity from earlier Proposition 5.3, only beta weight four; no arbitrary-weight or q-adic conclusion is assumed.",
+      "dependency_items": [
+        "5.3"
+      ],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    },
+    {
+      "name": "Experimental.P06_17.upstream_beta_four_offdiagonal_moment",
+      "meaning": "Concrete rational off-diagonal integral identity from earlier Proposition 5.3, only beta weight four.",
+      "dependency_items": [
+        "5.3"
+      ],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_17.upstream_beta_four_diagonal_moment",
+    "Experimental.P06_17.upstream_beta_four_offdiagonal_moment"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.DualSpectral.coefficientSlope_posDef",
+    "ManuscriptChain.Beukers.polynomialMomentForm_eq_krein",
+    "ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero"
+  ],
+  "dependency_items": [
+    "5.2",
+    "5.3",
+    "6.7",
+    "6.10"
+  ],
+  "input_data": [],
+  "typed_coverage": "Actual beta-four integral base case as separately named prior-item assumptions, plus existing genuine zeta-seven moments/Krein bilinear identity, coefficient-Gram positivity and growth facts.",
+  "missing_domain_interfaces": "Higher even-beta moments, multiweight assembly, all required signed-channel and positive/negative-subspace arguments, exact local matrices and corrected q-adic leading terms.",
+  "repair_gates": [
+    "The q=11 odd-harmonic denominator and q=41 leading-diagonal counterchecks refute printed proof steps. Do not assume those local congruences.",
+    "Recompute the actual 2j+1 denominator ranges for every selected basis before using a valuation formula.",
+    "Krein decomposition does not by itself construct uniformly definite finite-dimensional subspaces."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.17",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}

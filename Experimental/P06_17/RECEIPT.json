@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.17",
+  "module_key": "P06_17",
+  "branch": "experiment/zetahyperbolic-p06-17_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_17.upstream_beta_four_diagonal_moment",
+      "meaning": "Concrete diagonal integral identity from earlier Proposition 5.3, only beta weight four; no arbitrary-weight or q-adic conclusion is assumed.",
+      "dependencies": []
+    },
+    {
+      "name": "Experimental.P06_17.upstream_beta_four_offdiagonal_moment",
+      "meaning": "Concrete rational off-diagonal integral identity from earlier Proposition 5.3, only beta weight four.",
+      "dependencies": []
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P06_17",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "a774bc0975c67959050cbd6c7657d1a61cd7a5ae3f9973f1297e94061c873f95",
+    "Assumptions.json": "b302fb7b9f61e87ebf2df4fca3453e16784305324a5354fabf0da3ea819fee0e",
+    "Target.md": "444ea9a5e4a105afe70adcb3c81b87c3c4f42361aa9b8f250b39bb78d615482c",
+    "Work.lean": "5495d81ff81f63f9ad75986e3a26cd62b9ec81d4861d9a09316f780e75228a50"
+  },
+  "audit_sha256": "dcdb47b62f372c6878f28fb1cca5334c3213ae4e8ac04d96eb7bedbca2172c82",
+  "original_statement_sha256": "8b6c661a0c4daa4ff20ff2a1da324d1dc2be0ef4107c2b05996549f399e51183",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
