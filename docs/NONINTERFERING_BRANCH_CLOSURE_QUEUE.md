@@ -15,10 +15,12 @@ Integration-only mandate: close already-proved isolated modules without changing
 
 | PR or branch | Restriction |
 |---|---|
+| [snditeration #22](https://github.com/randogelist/snditeration/pull/22) | Integration-only corrected real-weight density/measure subclaim for 3.2; source two individually compiled modules from PR15. Require independent CI [40265703589](https://github.com/randogelist/snditeration/actions/runs/40265703589) and exact axiom gate before merger; whole printed 3.2 remains open |
 | [snditeration #15](https://github.com/randogelist/snditeration/pull/15) | Frozen failed-CI donor: salvage only independently compiled modules into separate new integration branches, never merge/close bulk PR |
 | [snditeration #16](https://github.com/randogelist/snditeration/pull/16) | Inert source-snapshot donor, not compiled in destination; do not merge/close as proof |
 | [snditeration #20](https://github.com/randogelist/snditeration/pull/20) | **INTEGRATED** — isolated NewtonTuran (general real-rooted polynomial hierarchy) merged as `8563380bef3f078dee0c29bc39cc9a40d2cf1030`. [PR CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) PASS, 7 targeted standard-only axiom reports, placeholder scan PASS. **NOT** the complete printed 3.7 |
-| Companion 3.4, 4.2, 5.1, 6.9, 6.10, 6.16 drafts and upcoming snditeration 5.4 | ACTIVE OTHER AGENT: no edits, closures, PR merges or cherry-picks into their branches |
+| [snditeration #21](https://github.com/randogelist/snditeration/pull/21) — active Theorem 5.4 | **ACTIVE OTHER AGENT:** no edits, closure, cherry-picks or merges |
+| Companion 3.4, 4.2, 5.1, 6.9, 6.10, 6.16 drafts | **ACTIVE OTHER AGENT:** no edits, closures, PR merges or cherry-picks into their branches |
 
 ## Noninterference merge gate
 
