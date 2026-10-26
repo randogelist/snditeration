@@ -130,6 +130,5 @@ theorem normalized_log_det_tendsto_zero
           (Real.log 2 / (K : ℝ) + Real.log (K : ℝ) / (K : ℝ)) *
           (K : ℝ)^2 := by
             field_simp [ne_of_gt hKpos]
-            ring
 
 end ManuscriptChain.CoefficientGramGrowth
