@@ -1,0 +1,49 @@
+{
+  "paper_item": "3.9",
+  "alternative_target": "Restrict the character part initially to the five explicit coefficient tables χ−3, χ−4, χ5, χ8 and χ−8, proving their geometric generating identities and positivity; build their actual moment pencils with explicit centers. Treat the shifted Hurwitz pole-integral realization as a separate conditional subtarget.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Replace automatic coverage of all named Mathlib characters by five concrete tables until character identification/exhaustion is proved; do not assume the unverified shifted scalar identity without independent verification.",
+  "prerequisites": [
+    "2.5",
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "All-order moment integrability and pole domains.",
+    "L-value/parity and Hurwitz-series identifications.",
+    "Exact shifted pole-integral remainder and arithmetic rationality."
+  ],
+  "correction_gate": "Positive kernels alone do not certify the rational Hurwitz functional or correct zeta/L center.",
+  "source_paths": [
+    "Experimental/P03_09/Prerequisites.lean",
+    "Experimental/P03_09/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-09_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-09_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-09_construction",
+  "original_snapshot_commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P03_09/Prerequisites.lean",
+      "commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3",
+      "url": "https://github.com/randogelist/snditeration/blob/b361758244315c7a9a3b5d5ef555122cdddf3bf3/Experimental/P03_09/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P03_09/Target.md",
+      "commit": "b361758244315c7a9a3b5d5ef555122cdddf3bf3",
+      "url": "https://github.com/randogelist/snditeration/blob/b361758244315c7a9a3b5d5ef555122cdddf3bf3/Experimental/P03_09/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
