@@ -1,0 +1,50 @@
+{
+  "item_id": "6.6",
+  "namespace": "Experimental.P06_06",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-06_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Mu.integral_rational_density",
+    "ManuscriptChain.Hyperbolic.density_pos",
+    "ManuscriptChain.Hyperbolic.summable_exponentialTerm"
+  ],
+  "dependency_ids": [
+    "2.2",
+    "3.1",
+    "3.3",
+    "4.5"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_06.weight_terms_summable",
+      "meaning": "Summability of the explicitly defined finite-polynomial exponential terms at every positive y.",
+      "dependency_ids": [
+        "3.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "3.1 exponential moment construction"
+    },
+    {
+      "name": "Experimental.P06_06.normalized_coefficient_ratio_limit",
+      "meaning": "The normalized coefficient ratio tends to the actual highest coefficient a_k.",
+      "dependency_ids": [
+        "4.5"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "4.5 differential-shift architecture / polynomial asymptotics"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "No repair is silently substituted for the verbatim target.",
+  "coverage": "Encodes the actual finite coefficient polynomial, exponential coupled weight and actual odd-zeta center. Positivity of the cone, uniform comparison constants, pencil identification and arithmetic rates are not axioms.",
+  "remaining": "Prove both analytic prerequisites; prove the shifted-functional identity in the actual rational domain, discrete positive ratio infimum/supremum and integral comparison. Construct the Z-pencil and its top-weight derivative, transport inertia/radius, then independently establish the claimed actual multiplier rate.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 35,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}

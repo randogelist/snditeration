@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.6",
+  "module_key": "P06_06",
+  "branch": "experiment/zetahyperbolic-p06-06_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_06.weight_terms_summable",
+      "meaning": "Summability of the explicitly defined finite-polynomial exponential terms at every positive y.",
+      "dependencies": [
+        "3.1"
+      ]
+    },
+    {
+      "name": "Experimental.P06_06.normalized_coefficient_ratio_limit",
+      "meaning": "The normalized coefficient ratio tends to the actual highest coefficient a_k.",
+      "dependencies": [
+        "4.5"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P06_06",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "f0e1b6396d9e87a70882c6b5a37bd473c8ddb0a5a0319d888b728e9ae28f89e3",
+    "Assumptions.json": "e3678db84931c70f991b03c08ed7ec4f5d15497d73a9b19cc50a4098083572d6",
+    "Target.md": "853752115d27a0485cea601b50a3158b478ad59d8e2e12194d1468ba2558c62c",
+    "Work.lean": "1b0a694be8584842316edd8e597a62ffd1fade948e0a38539598f0cbc422b617"
+  },
+  "audit_sha256": "dd259a30e6142b0dbf130465a4ab04cf617353f9669d28f51543f8e19f3de4f1",
+  "original_statement_sha256": "886ba96897b53e781fd88934a38b8944c7f0da2a9a2e74968bdaef7420a0cc43",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
