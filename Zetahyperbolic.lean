@@ -73,3 +73,5 @@ import Zetahyperbolic.Section4.TransferComplete
 import Zetahyperbolic.Section4.EffectiveBudget
 
 import Zetahyperbolic.Section5.KreinMonomial
+
+import Zetahyperbolic.Section5.KreinPolynomial
