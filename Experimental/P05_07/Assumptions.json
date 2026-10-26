@@ -1,0 +1,20 @@
+{
+  "id": "P05_07",
+  "printed_id": "5.7",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "namespace": "Experimental.P05_07",
+  "axioms": [],
+  "dependency_ids": [
+    "P05_05_SIMPLE_POLE_SCOPE",
+    "DOUBLE_POLE_RESIDUE_INTERFACE"
+  ],
+  "coverage": "Object-interface scaffold only: actual rational function and literal displayed A/B/U/V, functional and determinant definitions. No axiom is safe or necessary before the coefficient table has been matched to the rational function.",
+  "repair_gate": "Do not axiomatize the displayed A/B table as the actual residue table without checking it. Equation (5.8) has numerator factors indexed j=1,…,n and denominator nodes including k=0; endpoint normalization and indexing are an explicit gate. No claimed inconsistency is used as an axiom or ex-falso route. 5.4 is simple-pole only and provides no automatic higher-order extension.",
+  "object_interface_work": "Construct actual order-two residue coefficients; verify degree/zero-polynomial-part assertions and table identity, including k=0; define q-adic valuations with zero conventions; construct confluent/Hermite bases and local blocks; prove exact determinant valuations and minor bounds. The assumed integer relation aζ5+bζ6=c must remain explicit in any eventual conditional theorem.",
+  "discharge_obligations": "No axioms currently admitted. First produce a consistent verified object identification; only then consider named, independently justified local valuation prerequisites. Never assume the final -36m determinant valuation as a prerequisite.",
+  "no_target_assumption": true,
+  "no_compilation_performed": true
+}
