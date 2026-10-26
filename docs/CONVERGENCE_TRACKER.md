@@ -109,3 +109,8 @@ The whole-paper target has not closed. Particularly decisive open obligations re
 The two no-delta passes were: (A) reconciliation of **exact whole-item certified sets** with the companion's machine-readable 45-item status inventory, identical at `{2.2, 2.3, 2.4, 2.5, 3.1, 4.3, 5.4}`; (B) separate source-commit/CI gate check confirming both `main` proof corpora unchanged and PR #15 still CI-failing. Neither pass introduced a new certified subclaim, repaired frontier, verified commit or regression. This is **snapshot-specific saturation**, not an exhaustive theorem-search guarantee.
 
 [**Detailed no-delta receipt**](REINFERENCE_SATURATION_2026-10-26.md) · [**updated 13-checkpoint machine history**](CONVERGENCE_HISTORY_2026-10-26.json).
+
+
+## Updated proof-source convergence checkpoint — P05.01
+
+The earlier evidence-saturation mark concerned a **fixed historical source corpus**, not later GitHub commits. After the new source passes [Theorem 5.1 PR #24](https://github.com/randogelist/snditeration/pull/24) and its [rationality PR #26](https://github.com/randogelist/snditeration/pull/26), the whole-item count rose from **7/45 to 8/45**. The two new builds (8,783 and 8,784 jobs) pass, with standard-only transitive proof dependencies. PR #26 adds a **new exact literal ℚ witness** to the same eighth theorem; do **not** count it as a ninth full theorem. The fixed-source `∅ REINFERENCE_NO_DELTA` marker ceases to apply to the newly changed `main` source. Next mathematical endpoint remains actual infinite ζ7 Krein polarization and summability (Theorem 5.2(2)); no merged proof yet.
