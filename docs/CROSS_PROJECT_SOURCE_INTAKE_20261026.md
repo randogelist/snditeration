@@ -19,6 +19,8 @@ Reuse does not upgrade a theorem's tier until the exact destination statement, c
 
 **Previous wide candidate [PR #15](https://github.com/randogelist/snditeration/pull/15):** source head `0cee4ea2`, [CI failure run 40188938699](https://github.com/randogelist/snditeration/actions/runs/40188938699). Review/build unaffected modules in independent PRs, not the entire failed import graph.
 
+**Exact source-integrity receipt:** all **16/16** staged companion `.lean.txt` Git blobs were re-fetched and compared byte-for-byte with their source files at the pinned `zetahyperbolic-axiom@86ca99a` commit; Git blob SHAs matched in every case. The intake PR's [source-only CI run 40258829315](https://github.com/randogelist/snditeration/actions/runs/40258829315) passed, **but it did not compile any staged `.lean.txt` source**. Do not interpret that run as a new Lean theorem PASS.
+
 ## 3. Actual gap-closing import waves
 
 | Order | Current paper gap | Source intake / precise capability | Acceptance gate / unresolved premise |
