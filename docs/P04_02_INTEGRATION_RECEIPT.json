@@ -1,0 +1,39 @@
+{
+  "checkpoint": "P04_02_ALGEBRAIC_HEIGHT_CONDITIONAL",
+  "status": "CLOSED_EXACT_LOCAL_A_TIER_CONDITIONAL",
+  "manuscript": "Proposition 4.2 pp.15 52-page 2026-10-21",
+  "user_workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "donor_commit": "0cee4ea2e32b1f476488f92b476c4eb224285160",
+  "integration_head": "ee34192c0db37c71c7e4bd792f353905b16fd104",
+  "merge_commit": "7775f7daf2cfb15d7a7614fd30371cc7a1392aed",
+  "pr": 30,
+  "ci": {
+    "pr_run": 40270563393,
+    "main_run": 40270854695,
+    "both": "PASS",
+    "build_jobs": 8796,
+    "axioms": "STANDARD_ONLY",
+    "placeholders": "PASS"
+  },
+  "source_git_blob_shas": {
+    "Resultant.lean": "81add2ff3b18dc34225e980fb02d05ac60642665",
+    "ConjugateBounds.lean": "a6a530add05291482793d4ac52185650185a86e2",
+    "AlgebraicBudget.lean": "7e57ea9d3a86e3691cc993dff3fa5264058de7ce",
+    "AlgebraicTransfer.lean": "3e19791d784018309a8af2da7e1e62360eff0609",
+    "AlgebraicLimsup.lean": "bc700e74fb3638020448f1c2236e64789bb1afc4",
+    "AlgebraicLattice.lean": "ea8a842e1b9af4aa78b5efbdc9e1d50b95b0690e",
+    "AlgebraicHeight.lean": "1318764ca344668e5feeed3c02f0c26bc50aff5b"
+  },
+  "exact_final_theorem": "ManuscriptChain.Section4AlgebraicHeight.proposition_4_2_algebraic_numbers",
+  "assumed_family_properties": [
+    "degree rate",
+    "nonzero quadratic evaluation decay",
+    "all complex root separation",
+    "quadratic log naive-height limsup"
+  ],
+  "does_not_prove": [
+    "actual ζ5 family estimates",
+    "effective modulus for unquantified eventual assumptions",
+    "ζ5 irrationality"
+  ]
+}

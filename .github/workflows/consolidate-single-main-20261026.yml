@@ -1,0 +1,137 @@
+name: Consolidate remaining branches into main
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/consolidate-single-main-20261026.yml
+permissions: {}
+concurrency:
+  group: single-main-consolidation-20261026
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    if: github.repository == 'randogelist/snditeration' && github.ref == 'refs/heads/main' && github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Verify preserved histories and atomically retire nine branches
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_CLEANUP_PLAN: >-
+            {"repo":"randogelist/snditeration","main":"941c2c4cf83535f3612719377602b054113924ae","expected_tree":"02e4413ca42cc4287bf112352e7b0973352fc04e","workflow_path":".github/workflows/consolidate-single-main-20261026.yml","retire":{"feat/zetahyperbolic-continuation-20261025":"1c4b0f4ba33abb933c0c7d5ce4245bcb7021e564","feat/zetahyperbolic-cross-project-intake-v1":"a34f714335b3fff54abf617d0ce96516f58a7546","feat/zetahyperbolic-lean433-foundation":"d034ea4821c78a2a3bc2437629cd37df05289610","feat/zetahyperbolic-p05-02-2-actual-krein":"22ffc21c1a97a40bd3c90152d253837c4ed4e28a","feat/zetahyperbolic-section2-pole-diagonalization":"39008d015fba73b7f94dc3339e5f091bcc346fc2","feat/zetahyperbolic-section3-gram-pencil":"202f200bb0d43f0381a30b186264ce3e250f283a","feat/zetahyperbolic-theorem4-transfer":"9151fa3daa7ef31088aef0610f8a6f9aadd139e8","integrate/pr15-p06-10-finite-potential-gap-v1":"3918cc64163066238f58f97ad17dfc5527b8ce8d","persistent/zetahyperbolic-paper-gap-tracker":"c25248454c6cb9d6130b24d55a54beded50434f7"},"prior_archive":"d034ea4821c78a2a3bc2437629cd37df05289610","prior_retired_branches":{"feat/zetahyperbolic-explicit-pole-residues":"33fa661937ecb63bcfc41b7e8c1947b60f9c00f0","feat/zetahyperbolic-hyperbolic-density":"957ed92bc6d8480177ec9eadd1239f30080bfecc","feat/zetahyperbolic-p02-03-analytic-derivative":"4637f9cdbd5e3f4c5c847ac28e690f35ebd453e6","feat/zetahyperbolic-p04-03-complex-padic-disk":"419b7211948568cbe966652ea2d1997f4e16181b","feat/zetahyperbolic-p05-01-beukers-moments":"e414614d9eff5340dc15de5ae0ebe17496b051c1","feat/zetahyperbolic-p05-01-rationality-certification":"0345e361d873e3aa75c4dc3a2bac47146cc70822","feat/zetahyperbolic-p05-04-even-pole-cancellation":"103832d27df26535dbf7761f32d1f20e93245271","feat/zetahyperbolic-partial-fractions":"1c54d2d85a632937fcab79a9b70b121ff33e26eb","feat/zetahyperbolic-pole-resolvent-scaling":"9785059849489fb26d91a86b7cce13a14116fba8","feat/zetahyperbolic-positive-moment-bridge":"f9c2c6a0b904cb7c868e3cad741c9b49da9d4c8f","feat/zetahyperbolic-principal-inertia":"e996f07f7ce4d94c9240b04b1a2db76c33521cab","feat/zetahyperbolic-rational-domain-closure":"673fd16cc90ab4ee4c7bb3e9bff95c47c361dc13","feat/zetahyperbolic-theorem3-1-hyperbolicity":"8a79a493ab6dac03e903a3eaf18a9fd4e0a855b9","feat/zetahyperbolic-unconditional-gram":"a8bfd7c2e471e80b97d944bba8d8f1549961b74e","feat/zetahyperbolic-zeta-tail-pole":"3c0d4274dc6a8df15175ae91e40c317a99f09e5b","integrate/persistent-paper-gap-snapshot-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-actual-newton-turan-v1":"404b615c8a03579520ef14ab64220a38a785ca16","integrate/pr15-actual-ratfunc-taylor-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-coefficient-gram-growth-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-complex-root-comparison-v1":"e1d01423f66deea33e024f4595a5641eee09a8ec","integrate/pr15-continuous-weight-moments-v1":"4b732696ef500bb0e2fca127c951065ce6748480","integrate/pr15-corrected-continuous-pencil-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-finite-dual-spectrum-v1":"1cf894adb08b01fbb288fc633868feb76b454a5e","integrate/pr15-general-ultrametric-disk-v1":"91e45631121c62bcc7a3de95815f1da040a0d5af","integrate/pr15-newton-turan-core-v1":"98a015273002d4ce24f24b80c539bb10fa5d8498","integrate/pr15-p04-02-algebraic-height-v1":"42583b9057b8dc9f44159073f9febe2c44ea6d04","integrate/pr15-principal-degree-loss-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-section3-dodgson-signature-v1":"941c2c4cf83535f3612719377602b054113924ae","integrate/pr15-section4-index-transfer-v1":"96b9e6504c3f9e3b0857b4188fbc4952f3839898","integrate/pr15-section5-unit-log-moments-v1":"db9e6d4590641e1224f5b93e290985005d775e58"}}
+        shell: bash
+        run: |
+          python3 - <<'PYTHON_SCRIPT'
+          import base64
+          import json
+          import os
+          import subprocess
+          import tempfile
+          import urllib.request
+          
+          
+          def run(plan):
+              repo = plan['repo']
+              token = os.environ['GH_TOKEN']
+              assert repo == 'randogelist/snditeration'
+              assert os.environ['GITHUB_REPOSITORY'] == repo
+              assert os.environ['GITHUB_REF'] == 'refs/heads/main'
+              assert os.environ['GITHUB_RUN_ATTEMPT'] == '1'
+              run_sha = os.environ['GITHUB_SHA']
+              assert len(plan['retire']) == 9
+              assert 'main' not in plan['retire']
+          
+              def get(path):
+                  request = urllib.request.Request(
+                      'https://api.github.com/repos/' + repo + path,
+                      headers={
+                          'Authorization': 'Bearer ' + token,
+                          'Accept': 'application/vnd.github+json',
+                          'X-GitHub-Api-Version': '2022-11-28',
+                      },
+                  )
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      return json.load(response)
+          
+              def branches():
+                  result = {}
+                  for page in range(1, 11):
+                      rows = get('/branches?per_page=100&page=' + str(page))
+                      for row in rows:
+                          assert not row['protected'], 'Unexpected branch protection'
+                          result[row['name']] = row['commit']['sha']
+                      if len(rows) < 100:
+                          return result
+                  raise RuntimeError('Unexpectedly large branch inventory')
+          
+              def files(tree_sha):
+                  tree = get('/git/trees/' + tree_sha + '?recursive=1')
+                  assert not tree['truncated'], 'Truncated tree inventory'
+                  return {e['path']: (e['mode'], e['type'], e['sha'])
+                          for e in tree['tree'] if e['type'] != 'tree'}
+          
+              def guard_state():
+                  assert get('')['default_branch'] == 'main'
+                  assert not get('/pulls?state=open&per_page=100'), 'Open PR found'
+                  assert branches() == expected_before, 'Branch inventory changed; stop'
+          
+              expected_before = dict(plan['retire'])
+              expected_before['main'] = run_sha
+              guard_state()
+              commit = get('/git/commits/' + run_sha)
+              expected_parents = [plan['main']] + list(plan['retire'].values())
+              assert [p['sha'] for p in commit['parents']] == expected_parents
+              # The consolidation commit directly retains every retiring branch head.
+              expected_files = files(plan['expected_tree'])
+              actual_files = files(commit['tree']['sha'])
+              assert plan['workflow_path'] not in expected_files
+              assert actual_files.pop(plan['workflow_path'])[0:2] == ('100644', 'blob')
+              assert actual_files == expected_files, 'Unexpected source tree change'
+              original_files = files(get('/git/commits/' + plan['main'])['tree']['sha'])
+              assert all(actual_files.get(k) == v for k, v in original_files.items())
+              archive = get('/git/commits/' + plan['prior_archive'])
+              assert plan['prior_archive'] in plan['retire'].values()
+              assert set(plan['prior_retired_branches'].values()) - {plan['main']} <= {
+                  p['sha'] for p in archive['parents']}
+          
+              # Credentials stay in environment variables, never command arguments or logs.
+              env = dict(os.environ)
+              env['GIT_TERMINAL_PROMPT'] = '0'
+              env['GIT_CONFIG_COUNT'] = '1'
+              env['GIT_CONFIG_KEY_0'] = 'http.https://github.com/.extraheader'
+              credential = base64.b64encode(('x-access-token:' + token).encode()).decode()
+              env['GIT_CONFIG_VALUE_0'] = 'AUTHORIZATION: basic ' + credential
+              leases = ['--force-with-lease=refs/heads/' + name + ':' + sha
+                        for name, sha in plan['retire'].items()]
+              deletions = [':refs/heads/' + name for name in plan['retire']]
+              with tempfile.TemporaryDirectory(prefix='single-main-consolidation-') as work:
+                  subprocess.run(['git', 'init', '--bare', '--quiet', work], check=True)
+                  command = ['git', '-C', work, 'push', '--atomic', '--porcelain']
+                  remote_and_refs = ['https://github.com/' + repo + '.git'] + deletions
+                  subprocess.run(command + ['--dry-run'] + leases + remote_and_refs,
+                                 env=env, check=True)
+                  guard_state()
+                  subprocess.run(command + leases + remote_and_refs, env=env, check=True)
+          
+              remaining = branches()
+              assert remaining == {'main': run_sha}, 'Post-deletion verification failed'
+              print(json.dumps({
+                  'status': 'SINGLE_MAIN_CONSOLIDATION_PASS',
+                  'initial_branches': 10,
+                  'removed_branches': 9,
+                  'remaining_branches': 1,
+                  'main': run_sha,
+                  'previous_main': plan['main'],
+                  'prior_history_archive': plan['prior_archive'],
+                  'preserved_branch_heads': plan['retire'],
+                  'preserved_original_files': len(original_files),
+                  'remaining': remaining,
+              }, sort_keys=True, indent=2))
+          
+          
+          if __name__ == '__main__':
+              run(json.loads(os.environ['BRANCH_CLEANUP_PLAN']))
+          PYTHON_SCRIPT

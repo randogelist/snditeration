@@ -1,0 +1,158 @@
+{
+  "repository": "randogelist/snditeration",
+  "main_before": "941c2c4cf83535f3612719377602b054113924ae",
+  "tree_before": "543dd419f9ae6dc7f8c3cfc0cdb5459b9e402d70",
+  "tracker_tree": "8baf82e1b34bb3e664340c429faccc0c2682b73b",
+  "branches_before": {
+    "feat/zetahyperbolic-continuation-20261025": "1c4b0f4ba33abb933c0c7d5ce4245bcb7021e564",
+    "feat/zetahyperbolic-cross-project-intake-v1": "a34f714335b3fff54abf617d0ce96516f58a7546",
+    "feat/zetahyperbolic-lean433-foundation": "d034ea4821c78a2a3bc2437629cd37df05289610",
+    "feat/zetahyperbolic-p05-02-2-actual-krein": "22ffc21c1a97a40bd3c90152d253837c4ed4e28a",
+    "feat/zetahyperbolic-section2-pole-diagonalization": "39008d015fba73b7f94dc3339e5f091bcc346fc2",
+    "feat/zetahyperbolic-section3-gram-pencil": "202f200bb0d43f0381a30b186264ce3e250f283a",
+    "feat/zetahyperbolic-theorem4-transfer": "9151fa3daa7ef31088aef0610f8a6f9aadd139e8",
+    "integrate/pr15-p06-10-finite-potential-gap-v1": "3918cc64163066238f58f97ad17dfc5527b8ce8d",
+    "main": "941c2c4cf83535f3612719377602b054113924ae",
+    "persistent/zetahyperbolic-paper-gap-tracker": "c25248454c6cb9d6130b24d55a54beded50434f7"
+  },
+  "added_documents": [
+    {
+      "path": "docs/CONVERGENCE_HISTORY_2026-10-26.json",
+      "sha": "96c73f6099d0a1c880cc559077788bfea6647126",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/CONVERGENCE_TRACKER.md",
+      "sha": "73720ff44b7192e4fde80cda32df6af84d6a8a97",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/CROSSINGS_MACHINE_2026-10-26.json",
+      "sha": "adb8de13dbec80082d46dbbedb6848b780ca3fea",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md",
+      "sha": "a4148235de73a250e7bee04b7a504f9a16952ff4",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/CROSS_PROJECT_SOURCE_INTAKE_20261026.md",
+      "sha": "8db9f2549cf49bba4e4dc21e4eaed27e6478d14c",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/INTEGRATION_LANE.md",
+      "sha": "bbf8c57ff85799ba6f472efb7a7c34654999e279",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/INTEGRATION_P04_01_CLOSURE.md",
+      "sha": "52f01b4b27f150115c87988e0b342e4f919bb358",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/MULTI_ROUND_CROSS_AUDIT_2026-10-25.md",
+      "sha": "ffe0f4747c8aaa2b4de32d381ece6e90d062bbbd",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/NONINTERFERING_BRANCH_CLOSURE_QUEUE.md",
+      "sha": "3df625641eea7d3fc7aa1e4e444aaa77b8322f3f",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/P04_02_INTEGRATION_RECEIPT.json",
+      "sha": "9fd4cf58879fa769e0d3dc8381e412fbfddebd4b",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/P06_10_FINITE_POTENTIAL_RECEIPT.json",
+      "sha": "6fad0907632ab156d3509d972c2a4cc2b0f314f2",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PAPER_GAP_REGISTER.md",
+      "sha": "0b89dab58c9aaed153c7a5376558d454d398ec44",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PAPER_GAP_TRACKER.md",
+      "sha": "24af941629b878798887b8bb761c65b37bec5380",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/REINFERENCE_SATURATION_2026-10-26.md",
+      "sha": "2549aab6d83a0589ab5b0ddce37aab2d8b99ae7e",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/REPEAT_AUDIT_2026-10-26.md",
+      "sha": "9502f629464bd11f98a309635311d25950613fdf",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/ROUND_AUDIT_2026-10-26_ADDITIONAL_CROSSINGS.md",
+      "sha": "b1ddd12ff78a3339b1cd7dac471af399f421f3a6",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/ROUND_AUDIT_2026-10-26_MOMENTS_AND_POLES.md",
+      "sha": "dc2c893204a6ff8c6ef72198a960ba3e82b25302",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/ROUND_AUDIT_2026-10-26_PRINCIPAL_MIXED_AND_DUAL.md",
+      "sha": "7b2cdbcd662fd97cb401be1c5d664840bb96eb96",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/research/PERSISTENT_MAIN_MERGE_RESOLUTION_20261026.md",
+      "sha": "9642882206d8da92103afe216d83d23741e51ec0",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/research/PERSISTENT_TRACKER_README_PREMERGE_20261026.md",
+      "sha": "1fca8fb33943742da838b59209ae486f499ca817",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/research/TRACKER_MAIN_MERGE_RECEIPT_20261026.md",
+      "sha": "c64cd819fc6c6b2f97db878d6988cb0c01fa858f",
+      "mode": "100644"
+    }
+  ],
+  "prior_retired_archive": "d034ea4821c78a2a3bc2437629cd37df05289610",
+  "previous_retired_branches": {
+    "feat/zetahyperbolic-explicit-pole-residues": "33fa661937ecb63bcfc41b7e8c1947b60f9c00f0",
+    "feat/zetahyperbolic-hyperbolic-density": "957ed92bc6d8480177ec9eadd1239f30080bfecc",
+    "feat/zetahyperbolic-p02-03-analytic-derivative": "4637f9cdbd5e3f4c5c847ac28e690f35ebd453e6",
+    "feat/zetahyperbolic-p04-03-complex-padic-disk": "419b7211948568cbe966652ea2d1997f4e16181b",
+    "feat/zetahyperbolic-p05-01-beukers-moments": "e414614d9eff5340dc15de5ae0ebe17496b051c1",
+    "feat/zetahyperbolic-p05-01-rationality-certification": "0345e361d873e3aa75c4dc3a2bac47146cc70822",
+    "feat/zetahyperbolic-p05-04-even-pole-cancellation": "103832d27df26535dbf7761f32d1f20e93245271",
+    "feat/zetahyperbolic-partial-fractions": "1c54d2d85a632937fcab79a9b70b121ff33e26eb",
+    "feat/zetahyperbolic-pole-resolvent-scaling": "9785059849489fb26d91a86b7cce13a14116fba8",
+    "feat/zetahyperbolic-positive-moment-bridge": "f9c2c6a0b904cb7c868e3cad741c9b49da9d4c8f",
+    "feat/zetahyperbolic-principal-inertia": "e996f07f7ce4d94c9240b04b1a2db76c33521cab",
+    "feat/zetahyperbolic-rational-domain-closure": "673fd16cc90ab4ee4c7bb3e9bff95c47c361dc13",
+    "feat/zetahyperbolic-theorem3-1-hyperbolicity": "8a79a493ab6dac03e903a3eaf18a9fd4e0a855b9",
+    "feat/zetahyperbolic-unconditional-gram": "a8bfd7c2e471e80b97d944bba8d8f1549961b74e",
+    "feat/zetahyperbolic-zeta-tail-pole": "3c0d4274dc6a8df15175ae91e40c317a99f09e5b",
+    "integrate/persistent-paper-gap-snapshot-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-actual-newton-turan-v1": "404b615c8a03579520ef14ab64220a38a785ca16",
+    "integrate/pr15-actual-ratfunc-taylor-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-coefficient-gram-growth-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-complex-root-comparison-v1": "e1d01423f66deea33e024f4595a5641eee09a8ec",
+    "integrate/pr15-continuous-weight-moments-v1": "4b732696ef500bb0e2fca127c951065ce6748480",
+    "integrate/pr15-corrected-continuous-pencil-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-finite-dual-spectrum-v1": "1cf894adb08b01fbb288fc633868feb76b454a5e",
+    "integrate/pr15-general-ultrametric-disk-v1": "91e45631121c62bcc7a3de95815f1da040a0d5af",
+    "integrate/pr15-newton-turan-core-v1": "98a015273002d4ce24f24b80c539bb10fa5d8498",
+    "integrate/pr15-p04-02-algebraic-height-v1": "42583b9057b8dc9f44159073f9febe2c44ea6d04",
+    "integrate/pr15-principal-degree-loss-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-section3-dodgson-signature-v1": "941c2c4cf83535f3612719377602b054113924ae",
+    "integrate/pr15-section4-index-transfer-v1": "96b9e6504c3f9e3b0857b4188fbc4952f3839898",
+    "integrate/pr15-section5-unit-log-moments-v1": "db9e6d4590641e1224f5b93e290985005d775e58"
+  }
+}
