@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.13",
+  "module_key": "P06_13",
+  "branch": "experiment/zetahyperbolic-p06-13_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_13.upstream_secant_laplace_expansion",
+      "meaning": "Base undifferentiated expansion 1/(2 cosh z)=sum (-1)^n exp(-(2n+1)z) for z>0; no central-factorial or differentiated conclusion is assumed.",
+      "dependencies": []
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P06_13",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "152707d124d3891414fb9a6f672666da218d48e9376af56a530d226a63fd500b",
+    "Assumptions.json": "85d3ccf148d9bc6544030fd446213d5bb02ff6de559ba81084de9178fdb2261a",
+    "Target.md": "b640b5d936ccc2ee7e57de88c26228d694fe50a095c8ca11e3e50839c1dff5d1",
+    "Work.lean": "dff51b6b4c17473098612109bbca282442c8ab5f2173a6d08bfbeb35b5fdbdcd"
+  },
+  "audit_sha256": "b73c02be2b8ee03c947a522c35d20a2eef923d3d70aa34433855c8f3f2708397",
+  "original_statement_sha256": "e57ee74d722efd50d4181c311cf649f8a7675b616b7e3efa0dd7ef16d137be04",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

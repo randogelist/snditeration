@@ -1,0 +1,38 @@
+{
+  "item": "6.13",
+  "module": "P06_13",
+  "namespace": "Experimental.P06_13",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_13.upstream_secant_laplace_expansion",
+      "meaning": "Base undifferentiated expansion 1/(2 cosh z)=sum (-1)^n exp(-(2n+1)z) for z>0; no central-factorial or differentiated conclusion is assumed.",
+      "dependency_items": [],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_13.upstream_secant_laplace_expansion"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.Hyperbolic.summable_exponentialTerm"
+  ],
+  "dependency_items": [
+    "6.4"
+  ],
+  "input_data": [],
+  "typed_coverage": "The concrete secant kernel, its base series, and the finite differential operator are typed. Existing exponential-series summability is available as a starting estimate.",
+  "missing_domain_interfaces": "Port the already reported donor finite operator proof after checking its source/dependency identity; establish local uniform differentiated convergence; construct the actual coupled beta pencil.",
+  "repair_gates": [
+    "The printed differentiated series has a missing global (−1)^(k−1) factor. Do not assume the literal printed series.",
+    "The endpoint is Xi_k, a beta combination with pi-dependent coefficients; this is not an individual beta irrationality theorem.",
+    "Strict Newton inequalities need their correct multiplicity/nondegeneracy conditions, not genericity."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.13",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
