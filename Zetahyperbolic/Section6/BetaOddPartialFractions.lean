@@ -96,9 +96,9 @@ theorem data_quotient_eq (N K : ℕ) (f : ℚ[X]) :
       rw [add_comm, WithBot.add_lt_add_iff_left hnb]
       exact fd.remainder_degree a ha
   have hidentity : rem + tail N K * fd.quotient = f := by
-    rw [fd.numerator_eq]
-    change rem + tail N K * fd.quotient = fd.quotient * tail N K + rem
-    ring
+    calc
+      rem + tail N K * fd.quotient = fd.quotient * tail N K + rem := by ring
+      _ = f := fd.numerator_eq.symm
   exact (div_modByMonic_unique fd.quotient rem hmonic ⟨hidentity, hdegree⟩).1.symm
 
 theorem residue_eq_formula (N K : ℕ) (f : ℚ[X]) (a : ℕ)
@@ -131,6 +131,7 @@ theorem residue_eq_formula (N K : ℕ) (f : ℚ[X]) (a : ℕ)
         ∏ c ∈ s.erase a, (oddSquare c - oddSquare a) := by
     rw [Finset.sum_eq_single a]
     · rw [eval_mul, data_remainder_constant N K f a ha, eval_C, hp a]
+      simp
     · intro b hb hba
       rw [eval_mul, hp b]
       apply mul_eq_zero.mpr

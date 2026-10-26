@@ -24,7 +24,7 @@ theorem inverse_quadratic_diagonal_bound {n : ℕ}
   let w : Fin n → ℝ := A⁻¹ *ᵥ v
   have hw : A *ᵥ w = v := by
     dsimp only [w]
-    rw [← Matrix.mulVec_mulVec,
+    rw [Matrix.mulVec_mulVec,
       Matrix.mul_nonsing_inv _ (isUnit_iff_ne_zero.mpr hA.det_pos.ne'), Matrix.one_mulVec]
   have hee : e ⬝ᵥ (A *ᵥ e) = A i i := by
     simp [e, Matrix.mulVec_single]

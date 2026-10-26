@@ -29,7 +29,7 @@ private theorem nat_unit_norm (p n : ℕ) [Fact p.Prime]
   have hklt : k < 2 := by
     apply (Nat.mul_lt_mul_left hp).mp
     rw [← hk]
-    exact hnp
+    omega
   have hk0 : k ≠ 0 := by intro hz; simp [hz] at hk; omega
   have hk1 : k = 1 := by omega
   apply hne
@@ -37,8 +37,15 @@ private theorem nat_unit_norm (p n : ℕ) [Fact p.Prime]
 
 private theorem sum_norm_le_one (p : ℕ) [Fact p.Prime]
     {ι : Type*} (S : Finset ι) (f : ι → ℚ_[p])
-    (hf : ∀ i ∈ S, ‖f i‖ ≤ 1) : ‖∑ i ∈ S, f i‖ ≤ 1 :=
-  norm_sum_le_of_forall_le_of_nonneg (by norm_num) hf
+    (hf : ∀ i ∈ S, ‖f i‖ ≤ 1) : ‖∑ i ∈ S, f i‖ ≤ 1 := by
+  classical
+  induction S using Finset.induction_on with
+  | empty => simp
+  | @insert a S ha ih =>
+    rw [Finset.sum_insert ha]
+    exact (Padic.nonarchimedean _ _).trans (max_le
+      (hf a (Finset.mem_insert_self a S))
+      (ih (fun i hi => hf i (Finset.mem_insert_of_mem hi))))
 
 theorem betaHarmonic_below_norm (p N j : ℕ) [Fact p.Prime]
     (hNp : 2 * N + 1 = p) (hj : j ≤ N) :
@@ -143,8 +150,7 @@ theorem poleValue_outer_norm (p N j : ℕ) [Fact p.Prime]
         one_pow, one_mul, div_self (by norm_num : (1 : ℝ) ≠ 0), le_refl]
   have hB : ‖B‖ = (p : ℝ) ^ 4 := by
     dsimp [B]
-    rw [norm_div, norm_mul, norm_mul, norm_neg, norm_pow, norm_pow, norm_pow,
-      norm_pow, norm_neg, norm_one, norm_neg, norm_one, ha, Padic.norm_p]
+    simp only [norm_div, norm_mul, norm_pow, norm_neg, norm_one, ha, Padic.norm_p]
     simp
   have he : (poleValue j 0 : ℚ_[p]) = B + A := by
     dsimp [poleValue, A, B, E, a]

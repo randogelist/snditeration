@@ -22,17 +22,19 @@ theorem displayed_moment_one_two : displayedMoment 1 2 = -(25:ℚ)/256 := by
   norm_num [displayedMoment, he]
 
 theorem five_unit_denominator : padicValRat 5 (256:ℚ) = 0 := by
-  rw [padicValRat.of_nat (p := 5) (n := 256),
-    padicValNat.eq_zero_of_not_dvd (by norm_num : ¬5∣256)]
-  norm_num
+  have h : padicValNat 5 256 = 0 :=
+    padicValNat.eq_zero_of_not_dvd (by norm_num : ¬5∣256)
+  simpa only [Nat.cast_ofNat, h, Nat.cast_zero] using
+    (padicValRat.of_nat (p := 5) (n := 256))
 
 theorem displayed_moment_five_valuation : padicValRat 5 (displayedMoment 1 2) = 2 := by
   letI : Fact (Nat.Prime 5) := ⟨by norm_num⟩
   rw [displayed_moment_one_two,
     padicValRat.div (by norm_num : -(25:ℚ) ≠ 0) (by norm_num : (256:ℚ) ≠ 0),
     padicValRat.neg, five_unit_denominator]
-  rw [show (25:ℚ) = (5:ℚ)^2 by norm_num, padicValRat.pow,
-    padicValRat.self (p := 5) (by norm_num)]
+  have h5 : padicValRat 5 (5:ℚ) = 1 := by
+    simpa using (padicValRat.self (p := 5) (by norm_num))
+  rw [show (25:ℚ) = (5:ℚ)^2 by norm_num, padicValRat.pow, h5]
   norm_num
 
 theorem printed_odd_prime_unit_claim_false :

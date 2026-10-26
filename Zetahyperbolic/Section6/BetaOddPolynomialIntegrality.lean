@@ -25,11 +25,11 @@ def integerQuotient (N K m i j : ℕ) : ℤ[X] :=
 
 theorem integerPrefix_map (N : ℕ) :
     (integerPrefix N).map (Int.castRingHom ℚ) = oddPrefix N := by
-  simp [integerPrefix, oddPrefix, oddSquare, Polynomial.map_prod]
+  simp [integerPrefix, oddPrefix, oddSquare, Polynomial.map_prod, Polynomial.C_ofNat]
 
 theorem integerTail_map (N K : ℕ) :
     (integerTail N K).map (Int.castRingHom ℚ) = tail N K := by
-  simp [integerTail, tail, oddSquare, Polynomial.map_prod]
+  simp [integerTail, tail, oddSquare, Polynomial.map_prod, Polynomial.C_ofNat]
 
 theorem integerNumerator_map (N m i j : ℕ) :
     (integerNumerator N m i j).map (Int.castRingHom ℚ) = numerator N m i j := by
