@@ -1,4 +1,5 @@
-import Zetahyperbolic.Section6.BetaOddPolynomialIntegrality
+import Zetahyperbolic.Section6.BetaOddPencil
+import Mathlib.NumberTheory.Padics.PadicNumbers
 
 /-! Exact local poles of the printed beta(4) functional. The central odd
 denominator has a first-order pole; every later odd denominator before

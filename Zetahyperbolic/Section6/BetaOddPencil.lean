@@ -31,13 +31,13 @@ theorem eulerEven_first_four :
   have h0 : eulerEven 0 = 1 := by rw [eulerEven]
   have h1 : eulerEven 1 = -1 := by
     rw [eulerEven]
-    norm_num [Fin.sum_univ_succ, h0]
+    norm_num [Fin.sum_univ_succ, h0, Nat.choose]
   have h2 : eulerEven 2 = 5 := by
     rw [eulerEven]
-    norm_num [Fin.sum_univ_succ, h0, h1]
+    norm_num [Fin.sum_univ_succ, h0, h1, Nat.choose]
   have h3 : eulerEven 3 = -61 := by
     rw [eulerEven]
-    norm_num [Fin.sum_univ_succ, h0, h1, h2]
+    norm_num [Fin.sum_univ_succ, h0, h1, h2, Nat.choose]
   exact ⟨h0, h1, h2, h3⟩
 
 def monomialMoment (e : ℕ) : ℚ :=

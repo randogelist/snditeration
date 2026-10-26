@@ -753,4 +753,4 @@ run_cmd do
 
 #print axioms ManuscriptChain.Chapter6HarmonicCutoff.beta_harmonic_valuation_lower
 
-#print axioms ManuscriptChain.BetaOddRootConvergence.rationalRoot_tendsto_beta
+#print axioms ManuscriptChain.BetaOddRoot.rationalRoot_tendsto_beta

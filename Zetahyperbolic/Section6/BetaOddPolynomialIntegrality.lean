@@ -1,4 +1,4 @@
-import Zetahyperbolic.Section6.BetaOddPartialFractions
+import Zetahyperbolic.Section6.BetaOddPencil
 import Mathlib.NumberTheory.Padics.PadicNumbers
 
 /-! The polynomial-quotient contribution in Theorem 6.5 is integral at

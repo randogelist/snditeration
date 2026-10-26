@@ -23,14 +23,15 @@ theorem inverse_quadratic_diagonal_bound {n : ℕ}
   let e : Fin n → ℝ := Pi.single i 1
   let w : Fin n → ℝ := A⁻¹ *ᵥ v
   have hw : A *ᵥ w = v := by
-    rw [w, ← Matrix.mulVec_mulVec,
+    dsimp only [w]
+    rw [← Matrix.mulVec_mulVec,
       Matrix.mul_nonsing_inv _ (isUnit_iff_ne_zero.mpr hA.det_pos.ne'), Matrix.one_mulVec]
   have hee : e ⬝ᵥ (A *ᵥ e) = A i i := by
     simp [e, Matrix.mulVec_single]
   have hew : e ⬝ᵥ (A *ᵥ w) = v i := by
     rw [hw]
     simp [e]
-  have hs : Aᵀ = A := by simpa using hA.isHermitian
+  have hs : Aᵀ = A := (Matrix.isHermitian_iff_isSymm.mp hA.isHermitian).eq
   have hwe : w ⬝ᵥ (A *ᵥ e) = v i := by
     rw [← hs, Matrix.dotProduct_transpose_mulVec]
     exact hew
@@ -65,9 +66,9 @@ theorem root_error_le_last_moment (k N h : ℕ) :
   let i : Fin (h+1) := ⟨h, by omega⟩
   have hb := root_error_le_diagonal k N (h+1) (by omega) i
   have he : pencil k N (h+1) (moment k 0) i i = moment k (2*(N+2*h)) := by
-    rw [even_moment]
+    rw [even_moment k (N+2*h)]
     simp only [pencil, i]
-    congr 2 <;> omega
+    rw [show N+h+h = N+2*h by omega]
   rwa [he] at hb
 
 theorem root_error_explicit_bound (k N h : ℕ) :
