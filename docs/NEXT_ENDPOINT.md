@@ -1,20 +1,14 @@
-# Next single-target handoff — following P05.02(2) finite Krein checkpoint
+# Focused Theorem 6.1 and subsequent open originals
 
-## Newly completed, PASS-ONCE frozen
+The user's active focus is **6.1**. Exact original parts (1) and (2), the complete corrected primitive-vector part (3), and an explicit refutation of the printed nonzero-vector clause are now verified. See [focused correction log](THEOREM_6_1_CORRECTIONS.md) and [CI receipt](receipts/THEOREM_6_1_20261026.json). This completes the corrected local theorem; it does not increase the original-theorem count or authorize merging. No further target is silently selected.
 
-- `P05_02_2_FINITE_KREIN`: actual ζ7 **monomial** double Beukers integral is exactly its signed 1/1440 Krein mode sum. The same exact moments admit a finite rational polynomial coefficient bilinear extension.
-- [PR #29](https://github.com/randogelist/snditeration/pull/29) merged 588230a857acb5a8b74b76ecf99686e79925759c. [Lean 4.33 CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845) PASS, 8,798 jobs, standard-only axioms in six requested declarations, placeholder scan PASS. Verified source head 372deda8edc77bba6312b8f80137e00e1b75e74f.
-- All preexisting proof modules and Mathlib `.olean` cache assumptions are preserved. Source blobs for both new modules and root/audit entry points match between passing proof head and merged main.
 
-## Next mathematical target — NOT STARTED
+PR39 source `cf32aeef35b5f7cb02b042f672ac9b519c56b25d` passed [CI 40328869101](https://github.com/randogelist/snditeration/actions/runs/40328869101) with the all-project transitive standard-axiom audit. Original 3.3 is now complete: actual printed Stieltjes determinacy, arbitrary mixed minors in every order, exact primitive leading coefficient, inertia and multiplicity-counted root clauses. The earlier Carleman-only handoff is superseded by this [continuation receipt](receipts/COMPLETION_20261026_CONTINUATION.json). Main proof integration remains 9/45; verified source completion is now 13/45, including 3.8, 5.3 and 6.2. The later [transfer receipt](receipts/COMPLETION_20261026_TRANSFER.json) records independent destination verification of 5.3 and 6.2.
 
-`P05_02_2_GENERAL_L2_BEUKERS_KREIN`: finish the **original** Theorem 5.2(2), which quantifies over arbitrary f∈L²(0,1), not merely monomials.
+The first unresolved numbered original is **3.4**. Its full-degree principal-root assertion is false (an admissible principal pencil can be constant); its corrected eigenvalue interlacing and condensation components are already verified. It requires a separately stated singularity-aware correction, not a proof of the false original. The literal continued fraction in 3.5 and all-order finite-support positivity in original 3.6 also remain refuted; corrected 3.6 is complete separately.
 
-1. Prove finite polynomial expansion equals the **single actual double integral** of f(x1)g(x2) against `Beukers.density` (the frozen `polynomialMomentForm` is currently defined as finite sum of individually integrated monomial moments). Establish integrability and finite integration linearity.
-2. Interchange the finite polynomial coefficients with the **infinite** signed mode sum and show that the mode coefficients equal actual integrals of f(x)x^m(-log x)^ν. All nonnegative/absolute summability premises must be proved, not assumed.
-3. Extend both sides continuously from polynomial functions to arbitrary f∈L²(0,1); prove kernel Hilbert–Schmidt/absolute boundedness and uniform signed-mode norm tails to pass the limit.
-4. Recompile and axiom-audit the exact L² theorem with Lean 4.33 and pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. The infinite positive/negative polynomial cones of 5.2(3) remain a **separate** mathematical problem; do not assume away the Krein negative tail.
+The next unrefuted open original is **3.7**. Prove that every individual intermediate centered coefficient of the actual primitive polynomial is nonzero. Existing real-rootedness/Newton results establish strict inequalities and exclude adjacent zeros, but distinct nonzero real roots alone do not exclude an isolated zero. At degree h−1 the coefficient is h*a_h*ζ(s)+a_(h−1); a family-specific arithmetic or spectral argument is required. Preserve the original quantifiers and do not replace this clause by strict Newton alone.
 
-Parallel branches and unrelated PRs may run independently, but no extra theorem has been started in this handoff.
+Independent later work needs actual quantitative height/decay and multiplier bounds, correct local valuation matrices, consistent beta normalizations, valid sufficiently-large-degree signed cones, and quantitative beta asymptotics. The new beta moment/total-positivity/rank-one components do not prove these arithmetic inputs. See the [45-item status inventory](FORMALIZATION_STATUS.json) for exact attempts and remaining obligations.
 
-No claim of ζ7 irrationality, full printed 5.2(2), RH or S-Tier is made.
+Keep proof sources on the retained branch under the no-merge/no-deletion lock. Use the pinned toolchain/dependencies, permitted CI target and transitive axiom audit; do not run Lean locally. Published PROP/ALT targets and custom research assumptions remain unchanged until an explicit branch consumption proof is made. No new finite-witness admission or ζ(5)/ζ(7) irrationality claim follows.

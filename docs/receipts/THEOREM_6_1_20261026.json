@@ -1,0 +1,71 @@
+{
+  "repository": "randogelist/snditeration",
+  "source_commit": "e56da14673218911252b92790d5fe713aea66e19",
+  "source_tree": "7c9fc0df3bdf22c0f16f6973c29ea2e0817eff6c",
+  "tested_merge_commit": "e3035522db0d3e4ae20589c89c33a4539b9e0643",
+  "run_id": 40336562797,
+  "job_id": 121619608918,
+  "conclusion": "success",
+  "source_dependency_toolchain_workflow_matches_checkout": true,
+  "checkout_differences": "Documentation only",
+  "build_jobs": 8876,
+  "library_modules": 169,
+  "theorems_checked": 2422,
+  "declarations_checked": 2886,
+  "transitive_audit": "ALL_PROJECT_DECLARATIONS",
+  "printed_reports": 748,
+  "observed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_placeholder_scan": "PASS",
+  "local_lean_executed": false,
+  "main_proof_integration": false,
+  "original_whole_count": 13,
+  "main_original_whole_count": 9,
+  "exact_original_parts": [
+    "6.1(1)",
+    "6.1(2)"
+  ],
+  "corrected_complete": "6.1(3): primitive integral vectors replace merely nonzero integral vectors",
+  "literal_original": "REFUTED_NONZERO_VECTOR_CLAUSE",
+  "corrected_whole_theorem": "COMPLETE",
+  "new_modules": 12,
+  "experimental_imports": [],
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "log_sha256": "91631296ed5cfdbbe1f31f35887da4b2fa5f72bb9927928b33da4f9f91565fbe",
+  "full_log": "THEOREM_6_1_CI_40336562797.log",
+  "verified_source_blobs": {
+    "Zetahyperbolic.lean": "ba1dbff16f147d5f56de84a6da5dabe3233376e8",
+    "Zetahyperbolic/Audit.lean": "a66221b960ba1bbac9798cb7bbff088ba8806c7e",
+    "Zetahyperbolic/Section6/BeukersOuterValuation.lean": "21dd8d89fc67c419d3b0ac92476413e1bd9bce44",
+    "Zetahyperbolic/Section6/MellinFiber.lean": "2216708d9fa748cead8d8cbfa19dcaa538ad7fc8",
+    "Zetahyperbolic/Section6/MellinFiberPolynomial.lean": "38f88f4896de7113dcc9eb4f8850d30752c0662b",
+    "Zetahyperbolic/Section6/MellinFiberWeighted.lean": "2b99133bf716f9efbd13a6aef8c2bec16e7ab1c7",
+    "Zetahyperbolic/Section6/MellinJacobian.lean": "712147b47195d7852f4d25a021a52b23c5bc0aa3",
+    "Zetahyperbolic/Section6/OuterHarmonicBound.lean": "c49106902ac2ed8356ddb521c4d5d5fe0e492cc7",
+    "Zetahyperbolic/Section6/OuterPrimeLocalBlock.lean": "a3a0961c77b47e36809074a747b7b28251758ab4",
+    "Zetahyperbolic/Section6/OuterPrimePadicBlock.lean": "e013ee52b2b1c2d103e1d4a85c63c07b3f9ada84",
+    "Zetahyperbolic/Section6/OuterPrimePadicReduction.lean": "14006f39b71e33960662fc18f148e4d44a549995",
+    "Zetahyperbolic/Section6/OuterPrimePencilIdentification.lean": "7fa249f93347a60e586d111a05b8bb7de736387e",
+    "Zetahyperbolic/Section6/OuterPrimeRationalBlock.lean": "61c4f399bf7f01acdc7ea1c072a95f0f490c7221",
+    "Zetahyperbolic/Section6/Theorem61.lean": "69032ba05dab8191f5177e8862e0765e3938b8a9",
+    "docs/THEOREM_6_1_CORRECTIONS.md": "227d969a24568c29467af2b3ebbd5865a88b3410"
+  },
+  "environment_blobs": {
+    ".github/workflows/lean.yml": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+    "lake-manifest.json": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+    "lakefile.lean": "a12e10e090d3fbe33db143b14764105f108854e0",
+    "lean-toolchain": "025e59548e48cf71f2744154e2890beefe30a258"
+  },
+  "development_runs": [
+    40333840272,
+    40334233198,
+    40334704332,
+    40335293612,
+    40335906969,
+    40336562797
+  ]
+}

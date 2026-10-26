@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "repository": "randogelist/snditeration",
+  "branch": "repair/zetahyperbolic-completion_i0001_construction",
+  "pull_request": 39,
+  "source_commit": "2f251d22ccec217164437b8a0767500bbad7652e",
+  "tested_merge_commit": "77a7180774b867e00c3c7f17fd89176e32084f38",
+  "source_tree": "ed4d2512e20963aec7903375c46c1defe362b95f",
+  "tested_tree_matches_source": true,
+  "main_base": "6b542a9b66c65b312018b567ff16d5e4eed35b13",
+  "main_integration": false,
+  "run_id": 40319578590,
+  "job_id": 121560767300,
+  "conclusion": "success",
+  "build_jobs": 8839,
+  "axiom_audit": "ALL_PROJECT_DECLARATIONS",
+  "theorems_checked": 1880,
+  "declarations_checked": 2284,
+  "printed_axiom_reports": 523,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "platform": "GitHub Actions Linux x86_64",
+  "local_lean_executed": false,
+  "source_placeholder_scan": "PASS",
+  "integration_note": "Verified repair branch only; prior no-merge instruction retained. Main proof graph is unchanged."
+}

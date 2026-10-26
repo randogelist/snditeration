@@ -1,0 +1,2593 @@
+{
+  "audit_kind": "Original-theorem status register with exact compiler and transitive-axiom evidence, plus explicit mathematical blockers",
+  "baseline_commit": "5acb01dd19a9cd6ca8312557ec5d84ef94a960b6",
+  "no_local_lean": true,
+  "scope": "The 45 original manuscript proof items remain separate from corrections and components. Verified PR39 source completes 13 whole originals; main integrates the historical 9. New whole originals in this campaign: 3.3, 3.8, 5.3 and 6.2. No merge is inferred.",
+  "bare_placeholder_scan": "No bare sorry/admit/axiom declarations found in certified-library source tree; substring matches occurred only in provenance comments. Experimental branches intentionally contain separate prerequisite axioms.",
+  "status_caveat": "Genuinely blocked identifies a substantive mathematical or definition gap, or a false original, in the inspected source state. It is not a claim that all future mathematical approaches are impossible. Completed means the whole original is proved on the identified verified source; source completion and main integration are counted separately.",
+  "items": [
+    {
+      "item": "2.2",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "2.3",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "2.4",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "2.5",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "3.1",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "3.2",
+      "status": "genuinely blocked",
+      "baseline_register_status": "**REPAIR; corrected `!!`**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "false_literal_normalization",
+      "reason": "The printed continuous density differs by π/2 from the odd-weight density, contradicting its coincidence clause.",
+      "required_to_finish": "Use the separately certified corrected prefactor; the original cannot be proved unchanged.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "3.3",
+      "status": "completed",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual printed-measure Stieltjes uniqueness and arbitrary all-order mixed-minor strict positivity are proved, and assembled with exact primitive coefficient sign, degree, inertia and multiplicity-counted root clauses.",
+      "required_to_finish": null,
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Repaired and assembled the relevant Section3 modules; final CI7 compiled the imported graph and audited all project declarations. No local Lean was run.",
+        "Proved generalized Vandermonde positivity, finite-product support and all-order Andreief with integrability; instantiated the actual zeta Gram.",
+        "Proved factorial-to-exponential bound, symmetric square-root lift, MGF continuation/characteristic uniqueness and printed-measure recovery.",
+        "Proved explicit primitive polynomial multiset-root and coefficient-at-degree endpoints; completed full CI and transitive axiom audit."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "historical_experiment_axiom_still_declared": [
+        "Experimental.P03_03.actualMomentFactorialMajorant"
+      ],
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "verified_prerequisite_matches": {
+        "Experimental.P03_03.actualMomentFactorialMajorant": {
+          "experiment_source_changed": false,
+          "declaration": "ManuscriptChain.ConcreteMoment.actualMomentFactorialMajorant",
+          "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+          "verified_source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4"
+        },
+        "Experimental.P03_03.generalizedVandermondePositive": {
+          "experiment_source_changed": false,
+          "declaration": "ManuscriptChain.MixedMomentAllOrders.generalized_vandermonde_det_pos",
+          "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+          "verified_source_commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "interface_comparison": "Same finite determinant, all natural exponent/node indices and strict positivity hypotheses; only binder order and implicit dimension differ."
+        }
+      },
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+          "reason": "Actual shifted/sparse Hankel positivity, factorial moment majorant, Carleman divergence and square-root measure recovery are proved on the verified branch. Arbitrary mixed minors of all orders and full Stieltjes determinacy remain unproved.",
+          "required_to_finish": "Supply the all-order mixed-minor/Cauchy–Binet positivity theorem and the measure-determinacy bridge; do not infer uniqueness from divergence alone."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+        "job_id": 121592645513,
+        "build_jobs": 8859,
+        "theorems_checked": 2149,
+        "declarations_checked": 2579,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/Theorem33.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/ActualMixedMinors.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/SymmetricSquareRoot.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentDeterminacy.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/ExponentialMoment.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MixedMomentAllOrders.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentAndreief.lean",
+        "https://github.com/randogelist/snditeration/blob/cf32aeef35b5f7cb02b042f672ac9b519c56b25d/Zetahyperbolic/Section3/MomentProductSupport.lean"
+      ]
+    },
+    {
+      "item": "3.4",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+      "obstacle_type": "false_universal_root_count",
+      "reason": "Actual principal degree loss remains a counterexample to the original universal finite-root-count formulation. The verified branch supplies principal spectral compression/interlacing, inertia, radius and Dodgson components.",
+      "required_to_finish": "Replace the false original root-count assertion with a degree-sensitive statement or add explicit nonsingularity of each relevant principal slope; preserve generalized eigenvalue/nonzero-root distinctions.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Repaired and assembled the relevant Section3 modules; final CI7 compiled the imported graph and audited all project declarations. No local Lean was run."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "historical_experiment_axiom_still_declared": [
+        "Experimental.P03_04.actualPrincipalShiftedInertia"
+      ],
+      "verified_prerequisite_matches": {
+        "Experimental.P03_04.actualPrincipalShiftedInertia": {
+          "declaration": "ManuscriptChain.Cauchy.pencil_shifted_signature",
+          "specialization": "p := Principal.manuscriptPrincipalPencil p choose; positive base := Principal.principal_base_posDef p hp choose hchoose",
+          "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+          "verified_source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+          "experiment_source_changed": false
+        }
+      }
+    },
+    {
+      "item": "3.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "false_resolvent_normalization",
+      "reason": "The printed J-fraction uses the wrong diagonal and off-diagonal t factors and omits the Gram determinant normalization; cyclicity is not established.",
+      "required_to_finish": "Prove the corrected I+tB resolvent fraction, determinant prefactor and cyclic/no-breakdown scope.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P03_05.lanczosBasisOfCyclic"
+      ]
+    },
+    {
+      "item": "3.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+      "obstacle_type": "false_all_order_strict_positivity",
+      "reason": "The verified branch proves the corrected full finite-atomic/log-derivative/rank statements, including actual reciprocal transfer. The original all-order strict positivity claim is false for finite support, and its logarithmic-derivative/sign/bound clauses need correction.",
+      "required_to_finish": "Adopt the separately identified corrected theorem; finite support makes the original all-order strict determinant assertion impossible.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Repaired and assembled the relevant Section3 modules; final CI7 compiled the imported graph and audited all project declarations. No local Lean was run."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P03_06.actualFiniteMomentGramExpansion"
+      ],
+      "verified_support_for_experimental_inputs": {
+        "Experimental.P03_06.actualFiniteMomentGramExpansion": {
+          "declaration": "PaperAdvances.Corollary3_6.finite_hankel_gram",
+          "scope": "Certified matrix Gram identity for arbitrary finite real nodes; the exact experimental quadratic-sum interface is not separately declared by name.",
+          "verified_source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+          "experiment_source_changed": false
+        }
+      }
+    },
+    {
+      "item": "3.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "invalid_coefficient_nonvanishing_inference",
+      "reason": "Distinct real eigenvalues do not force every centered coefficient nonzero: factors from -1 and 1 produce 1-Y².",
+      "required_to_finish": "Keep exact Turan/Newton inequalities separate; independently prove any family-specific nonvanishing with valid hypotheses.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Rechecked the printed generic-distinctness argument: strict centered Newton and exclusion of adjacent zero coefficients do not rule out an isolated zero. The coefficient at degree h-1 is h*a_h*zeta(s)+a_(h-1), requiring actual-family arithmetic information."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "3.8",
+      "status": "completed",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+      "reason": "Both original clauses are proved for the literal printed measure and every supplied monic degree-indexed orthogonal family. The verified source identifies the actual pole spectrum and proves the Laplace/Jacobi derivative with the zeta evaluation point fixed. The manuscript and Parameters.h both set h=K-N.",
+      "attempts_made": [
+        "Compared the original measure, h=K-N pole indexing, fixed-zeta Laplace parameter and supplied-family quantifiers with actual source definitions.",
+        "Repaired termwise Laplace differentiation, local integral domination, Gram/Jacobi assembly and canonical kernel interfaces.",
+        "Proved the literal printed measure realization and actual pole spectrum.",
+        "Proved arbitrary supplied monic orthogonal-family kernel congruence and specialized both original clauses.",
+        "Verified the complete imported source in CI7 and inspected standard-only transitive axiom evidence."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "remaining_obligation": null,
+      "historical_experiment_axiom_still_declared": [
+        "Experimental.P03_08.laplace_density_hasDerivAt",
+        "Experimental.P03_08.laplace_moment_local_domination"
+      ],
+      "verified_original_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "Zetahyperbolic/Section3/ChristoffelDarboux.lean",
+        "Zetahyperbolic/Section3/LaplaceWeightDerivative.lean",
+        "Zetahyperbolic/Section3/LaplaceMomentDerivative.lean",
+        "Zetahyperbolic/Section3/LaplaceGramMeasure.lean",
+        "Zetahyperbolic/Section3/LaplaceJacobiIdentity.lean",
+        "Zetahyperbolic/Section3/PrintedMomentMeasure.lean",
+        "Zetahyperbolic/Section3/OrthogonalFamilyKernel.lean"
+      ],
+      "verified_original_endpoints": [
+        "ManuscriptChain.OrthogonalFamilyKernel.actual_kernel_eq_canonical",
+        "ManuscriptChain.OrthogonalFamilyKernel.laplace_kernel_eq_canonical",
+        "ManuscriptChain.OrthogonalFamilyKernel.actual_supplied_family_charpoly",
+        "ManuscriptChain.OrthogonalFamilyKernel.laplace_supplied_family_deriv"
+      ],
+      "main_integration_status": "VERIFIED_WHOLE_ORIGINAL_ON_PR39_NOT_MAIN",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "3.9",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "actual_character_and_hurwitz_realization",
+      "reason": "Finite character generating formulas do not supply the actual all-parameter rational functional, positivity, and shifted Hurwitz realization.",
+      "required_to_finish": "Construct correctly normalized analytic moments and full affine-pencil identification, keeping five listed characters distinct from universal character claims.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P03_09.hurwitz_pole_integral_rational_remainder",
+        "Experimental.P03_09.character_power_series_blocks"
+      ]
+    },
+    {
+      "item": "4.1",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "effective_onset",
+      "reason": "Existing transfer APIs require numerical onset and rate-margin inputs; a nonconstructive eventual statement alone does not produce a computable threshold.",
+      "required_to_finish": "Supply an effective real-exponent/index-selection interface and explicit actual-family onsets.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "4.2",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**; printed hypotheses retained",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "4.3",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "4.4",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "unproved_arithmetic_energy_inputs",
+      "reason": "Actual primitive normalization decay and the quantitative multiplier/energy bounds at the exact 30n lattice are not supplied by spectral positivity or generic transfer.",
+      "required_to_finish": "Independently prove the cited changed-parameter arithmetic inputs, strict rate margins and effective onsets before exponent25687 or ζ5 irrationality.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P04_04.fauzan_multiplier_input",
+        "Experimental.P04_04.fauzan_gram_energy_input",
+        "Experimental.P04_04.negative_node_polynomial_bound"
+      ]
+    },
+    {
+      "item": "4.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "unproved_coupled_arithmetic_inputs",
+      "reason": "Pointwise comparison alone does not supply the actual coupled rational pencil, common denominator multiplier, prime gains, spectral/decay rates and effective threshold.",
+      "required_to_finish": "Prove all those inputs on the same normalization and coefficient cone; then invoke the existing conditional transfer.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P04_05.coupled_density_comparison"
+      ]
+    },
+    {
+      "item": "4.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "reversed_inequality_in_printed_proof",
+      "reason": "The upper estimate for the multiplier rate cannot establish the lower-height conclusion. Finite log conservation cannot replace a missing asymptotic lower rate.",
+      "required_to_finish": "Prove an independent lower multiplier-rate estimate and actual potential/height limits, or state a separate corrected theorem.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P04_06.arcsine_probability_input",
+        "Experimental.P04_06.arcsine_log_potential_input"
+      ]
+    },
+    {
+      "item": "4.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "missing_actual_spectral_determinant_height_bounds",
+      "reason": "Finite cap/average root counting needs an upper spectral cap and a lower log absolute determinant bound for the actual whitened slope, plus height data for separation.",
+      "required_to_finish": "Discharge actual lattice premises from4.4/4.6 and supply squarefree-factor/leading coefficient arithmetic for root separation.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P04_07.weight_five_spectral_cap_input",
+        "Experimental.P04_07.weight_five_determinant_lower_input",
+        "Experimental.P04_07.weight_five_primitive_height_input",
+        "Experimental.P04_07.integer_factor_height_input"
+      ]
+    },
+    {
+      "item": "4.8",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "lower_gap_is_not_upper_cluster",
+      "reason": "The printed argument turns a lower root-distance gap into the upper clustering bound required for rational-root exclusion.",
+      "required_to_finish": "Independently establish actual upper-cluster membership and rational approximation lower bounds; keep finite factor-product bounds separate.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P04_08.weight_five_spectral_cap_input",
+        "Experimental.P04_08.zeta_five_measure_input"
+      ]
+    },
+    {
+      "item": "5.1",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "5.2",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+      "obstacle_type": "false_fixed_K_signed_cone_quantifiers",
+      "reason": "Parts (1) and (2) remain complete. Actual rational coefficient subspaces and the literal Beukers integral now formally imply 2h≤K+1; K=h=2 refutes fixed-K part (3).",
+      "required_to_finish": "Revise the fixed-K cone quantifiers and prove sufficiently-large-degree definite subspaces with valid infinite-tail control.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Repaired rational coefficient independence using explicit matrix determinant-unit equivalence and Rat.cast_det on entrywise casts.",
+        "Constructed actual mixed-monomial integrability and finite polynomial product-integral identification.",
+        "Constructed actual polynomial Mellin-log channels and summable signed-mode interchange.",
+        "Constructed actual kernel MemLp2 proof via density ≤ L^5+L^4, L=-log(xy), and integrable log powers.",
+        "Constructed exact arbitrary real-L² bilinear HasSum identity directly by Hölder and dominated integration; identified the printed positive/negative mode integrals and proved representative independence.",
+        "Formalized the dimension obstruction for the actual rational polynomial form and integral, preserving the manuscript scalar field."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "completed_original_parts": [
+        "5.2(1)",
+        "5.2(2)"
+      ],
+      "historical_experiment_axiom_still_declared": [
+        "Experimental.P05_02.actual_density_memLp_two"
+      ],
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "verified_source_files": [
+        "Zetahyperbolic/Section5/RationalIndependence.lean",
+        "Zetahyperbolic/Section5/BeukersPolynomialIntegral.lean",
+        "Zetahyperbolic/Section5/KreinPolynomialModes.lean",
+        "Zetahyperbolic/Section5/BeukersHilbertSchmidt.lean",
+        "Zetahyperbolic/Section5/KreinL2.lean"
+      ],
+      "verified_prerequisite_matches": {
+        "Experimental.P05_02.actual_density_memLp_two": {
+          "verification": "COMPILER_AND_TRANSITIVE_AXIOM_VERIFIED_ON_PR39",
+          "experiment_source_changed": false,
+          "declaration": "ManuscriptChain.Beukers.actual_density_memLp_two",
+          "verified_source_commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4"
+        }
+      },
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "historical_reviews": [
+        {
+          "reason": "Parts(1) and(2) are fully proved by the combined actual rational-pencil/centered-spectrum declarations and theorem_5_2_l2_krein. The full original remains false with its fixed-K signed-cone quantifiers: both h-dimensional signed cones cannot fit in dimensionK+1 when2h>K+1.",
+          "required_to_finish": "Repair the cone quantifiers, then construct the claimed signed polynomial subspaces with valid infinite-tail control; parts(1)+(2) cannot prove false part(3)."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
+      ]
+    },
+    {
+      "item": "5.3",
+      "status": "completed",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual positive beta(4) density, exact diagonal/off-diagonal moments, actual rational polynomial-family integral pencil, positive coefficient-Gram derivative, exact degree and all-real roots. Rational linear independence and degree bounds are exactly the printed premises.",
+      "required_to_finish": null,
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Transferred the independently verified companion proof to exact destination definitions and existing library APIs, inspected every original quantifier and actual integral identification, then completed destination full-build/transitive-axiom verification."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P05_03.betaFour_modes_integral_norm_summable"
+      ],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "reason": "The β4 counterpart needs actual diagonal/off-diagonal geometric-mode moment integrals and coherent normalization, not replacement of ζ7 labels.",
+          "required_to_finish": "Prove summability/interchange and finite beta rational pencil identification."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+        "job_id": 121600954631,
+        "build_jobs": 8864,
+        "theorems_checked": 2282,
+        "declarations_checked": 2735,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section5/BetaBeukersSpectrum.lean"
+      ],
+      "companion_provenance": {
+        "repository": "randogelist/zetahyperbolic-axiom",
+        "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+        "run_id": 40327942655,
+        "role": "independently certified donor; destination evidence separately recorded"
+      }
+    },
+    {
+      "item": "5.4",
+      "status": "completed",
+      "baseline_register_status": "**A-Tier `!!` — exact**",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "HISTORICAL_COMPLETE_ORIGINAL_RECONFIRMED_IN_FINAL_VERIFIED_GRAPH",
+      "reason": "Preserved prior exact whole-statement certification; no new theorem claimed.",
+      "historical_evidence": {
+        "source": "3b184ba109f065d973957a5735fb590fea4b0e35",
+        "run_id": 40288194429,
+        "scope": "Previously reviewed main build and transitive standard-axiom audit; root must confirm unchanged fingerprint."
+      },
+      "attempts_made": [
+        "Checked baseline register and corresponding current source presence; no reason to alter accepted proof."
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        }
+      ],
+      "main_integration_status": "HISTORICAL_WHOLE_ORIGINAL_INTEGRATED"
+    },
+    {
+      "item": "5.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "unproved_floor_partition_and_valuation",
+      "reason": "The companion now proves the exact outer integral and refutes two printed continuity clauses. The inner-tail bound, prime-sum asymptotics and local q-adic gains remain.",
+      "required_to_finish": "Repair the false continuity clauses, prove the inner-tail bound and surviving-pole valuation ranges; transfer the independently verified outer-integral component before claiming destination integration.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Exact literal outer floor-function integral 453803/288000 and two printed continuity-clause refutations. This component is not destination integration. Inner-tail/prime-sum asymptotics, residue gain and a corrected continuity statement remain required."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P05_06.outerT_integrable",
+        "Experimental.P05_06.inner_tail_integrable"
+      ],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Exact literal outer floor-function integral 453803/288000 and two printed continuity-clause refutations.",
+          "remaining": "Inner-tail/prime-sum asymptotics, residue gain and a corrected continuity statement remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Floor/min/max prime-sum constants require a complete exact partition and tail estimate; rational sign checks alone do not supply local q-adic gains.",
+          "required_to_finish": "Integrate the literal outer function, bound the inner tail and prove actual surviving-pole replacement valuation ranges."
+        }
+      ]
+    },
+    {
+      "item": "5.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "double_pole_residue_identification",
+      "reason": "The displayed tables have not been proved to be the actual order-two partial-fraction coefficients, including endpointk=0; local block valuation is not implemented.",
+      "required_to_finish": "Compute actual residues and endpoint indexing, then prove confluent unit-block congruences and lower-minor estimates.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "6.1",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "EXACT_PARTS_1_2_AND_COMPLETE_CORRECTED_PART_3_AXIOM_AUDITED",
+      "obstacle_type": "false_literal_nonzero_vector_clause",
+      "reason": "The literal nonzero integral-vector conclusion is false: (p,0) cancels the seventh-order leading pole. Exact original parts (1) and (2) and the entire corrected primitive-vector part (3) are now compiled and transitively audited on PR39.",
+      "required_to_finish": "The original cannot be proved as printed. Replace nonzero by primitive; that separately identified correction is fully verified. Main proof integration remains under the no-merge lock.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses. This component is not destination integration. Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required.",
+        "Constructed and compiled exact Mellin fibers, Jacobian, harmonic bounds, actual all-Qp local residue, determinant norm and primitive obstruction; formally refuted the nonzero-vector clause. Final source also identifies both local matrices with the monomial affine pencil."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_01.harmonic_residual_p_integral",
+        "Experimental.P06_01.fiber_integrand_integrable"
+      ],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses.",
+          "remaining": "Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Single-entry harmonic residual integrality does not prove the crossing-index determinant valuation or intrinsic p^-6 barrier.",
+          "required_to_finish": "Prove actual Jacobian/Mellin bridge and local reduction with invertibility; then derive determinant valuation."
+        }
+      ],
+      "corrected_statement_status": "COMPLETED",
+      "original_completion_counted": false,
+      "focused_evidence": {
+        "repository": "randogelist/snditeration",
+        "source_commit": "e56da14673218911252b92790d5fe713aea66e19",
+        "source_tree": "7c9fc0df3bdf22c0f16f6973c29ea2e0817eff6c",
+        "tested_merge_commit": "e3035522db0d3e4ae20589c89c33a4539b9e0643",
+        "run_id": 40336562797,
+        "job_id": 121619608918,
+        "conclusion": "success",
+        "source_dependency_toolchain_workflow_matches_checkout": true,
+        "checkout_differences": "Documentation only",
+        "build_jobs": 8876,
+        "library_modules": 169,
+        "theorems_checked": 2422,
+        "declarations_checked": 2886,
+        "transitive_audit": "ALL_PROJECT_DECLARATIONS",
+        "printed_reports": 748,
+        "observed_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "source_placeholder_scan": "PASS",
+        "local_lean_executed": false,
+        "main_proof_integration": false,
+        "original_whole_count": 13,
+        "main_original_whole_count": 9,
+        "exact_original_parts": [
+          "6.1(1)",
+          "6.1(2)"
+        ],
+        "corrected_complete": "6.1(3): primitive integral vectors replace merely nonzero integral vectors",
+        "literal_original": "REFUTED_NONZERO_VECTOR_CLAUSE",
+        "corrected_whole_theorem": "COMPLETE",
+        "new_modules": 12,
+        "experimental_imports": [],
+        "lean_version": "4.33.0",
+        "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "log_sha256": "91631296ed5cfdbbe1f31f35887da4b2fa5f72bb9927928b33da4f9f91565fbe",
+        "full_log": "THEOREM_6_1_CI_40336562797.log",
+        "verified_source_blobs": {
+          "Zetahyperbolic.lean": "ba1dbff16f147d5f56de84a6da5dabe3233376e8",
+          "Zetahyperbolic/Audit.lean": "a66221b960ba1bbac9798cb7bbff088ba8806c7e",
+          "Zetahyperbolic/Section6/BeukersOuterValuation.lean": "21dd8d89fc67c419d3b0ac92476413e1bd9bce44",
+          "Zetahyperbolic/Section6/MellinFiber.lean": "2216708d9fa748cead8d8cbfa19dcaa538ad7fc8",
+          "Zetahyperbolic/Section6/MellinFiberPolynomial.lean": "38f88f4896de7113dcc9eb4f8850d30752c0662b",
+          "Zetahyperbolic/Section6/MellinFiberWeighted.lean": "2b99133bf716f9efbd13a6aef8c2bec16e7ab1c7",
+          "Zetahyperbolic/Section6/MellinJacobian.lean": "712147b47195d7852f4d25a021a52b23c5bc0aa3",
+          "Zetahyperbolic/Section6/OuterHarmonicBound.lean": "c49106902ac2ed8356ddb521c4d5d5fe0e492cc7",
+          "Zetahyperbolic/Section6/OuterPrimeLocalBlock.lean": "a3a0961c77b47e36809074a747b7b28251758ab4",
+          "Zetahyperbolic/Section6/OuterPrimePadicBlock.lean": "e013ee52b2b1c2d103e1d4a85c63c07b3f9ada84",
+          "Zetahyperbolic/Section6/OuterPrimePadicReduction.lean": "14006f39b71e33960662fc18f148e4d44a549995",
+          "Zetahyperbolic/Section6/OuterPrimePencilIdentification.lean": "7fa249f93347a60e586d111a05b8bb7de736387e",
+          "Zetahyperbolic/Section6/OuterPrimeRationalBlock.lean": "61c4f399bf7f01acdc7ea1c072a95f0f490c7221",
+          "Zetahyperbolic/Section6/Theorem61.lean": "69032ba05dab8191f5177e8862e0765e3938b8a9",
+          "docs/THEOREM_6_1_CORRECTIONS.md": "227d969a24568c29467af2b3ebbd5865a88b3410"
+        },
+        "environment_blobs": {
+          ".github/workflows/lean.yml": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+          "lake-manifest.json": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+          "lakefile.lean": "a12e10e090d3fbe33db143b14764105f108854e0",
+          "lean-toolchain": "025e59548e48cf71f2744154e2890beefe30a258"
+        },
+        "development_runs": [
+          40333840272,
+          40334233198,
+          40334704332,
+          40335293612,
+          40335906969,
+          40336562797
+        ]
+      }
+    },
+    {
+      "item": "6.2",
+      "status": "completed",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "EXACT_WHOLE_ORIGINAL_VERIFIED_ON_PR39",
+      "obstacle_type": null,
+      "reason": "Actual adjacent and extra-denominator Beukers integrals, arbitrary integer polynomial and integer alpha/beta, exact zeta(6)/zeta(7) linear form and printed rational correction, with proved 6*d_K^7 integer clearing.",
+      "required_to_finish": null,
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Transferred the independently verified companion proof to exact destination definitions and existing library APIs, inspected every original quantifier and actual integral identification, then completed destination full-build/transitive-axiom verification."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_02.harmonic_denominator_divides",
+        "Experimental.P06_02.inserted_geometric_integral_norm_summable"
+      ],
+      "historical_reviews": [
+        {
+          "status": "genuinely blocked",
+          "reason": "Separate divided-difference formulas and an lcm bound do not prove the actual simultaneous ζ6/ζ7 integral with zero extra denominator.",
+          "required_to_finish": "Prove actual inserted series interchange, coefficient identity and integralizing multiplier without assumed zero overhead."
+        }
+      ],
+      "remaining_obligation": null,
+      "later_full_graph_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+        "job_id": 121600954631,
+        "build_jobs": 8864,
+        "theorems_checked": 2282,
+        "declarations_checked": 2735,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "verified_source_files": [
+        "https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean"
+      ],
+      "companion_provenance": {
+        "repository": "randogelist/zetahyperbolic-axiom",
+        "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+        "run_id": 40327942655,
+        "role": "independently certified donor; destination evidence separately recorded"
+      }
+    },
+    {
+      "item": "6.3",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "negative_direction_and_independent_q_adic_gap",
+      "reason": "A recorded external rational h=4 negative direction contradicts the printed cone argument; it is not yet a Lean replay. The q-adic part has an independent missing actual local reduction.",
+      "required_to_finish": "Replay the exact certificate or construct a genuinely different restricted cone with certified tails; separately prove actual residue determinant nonvanishing.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_03.upstream_harmonic_residual_p_integral"
+      ]
+    },
+    {
+      "item": "6.4",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "beta_functional_normalization",
+      "reason": "Finite character cancellation is insufficient before the actual secant-kernel functional and its moment/pole calibration are established.",
+      "required_to_finish": "Prove boundary decay, integration by parts and coherent normalization, then actual positivity and rational coefficient identification.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_04.beta_kernel_boundary_decay",
+        "Experimental.P06_04.beta_kernel_derivative_integrable"
+      ]
+    },
+    {
+      "item": "6.5",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "actual_beta_unit_blocks_missing",
+      "reason": "The actual beta pencil and selected-prime reduction are missing; residual integrality is not determinant-unitness.",
+      "required_to_finish": "Use the calibrated6.4 pencil and verify nonzero determinant of its scaled reduction, with scaling valuation explicit.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_05.beta_harmonic_residual_p_integral"
+      ]
+    },
+    {
+      "item": "6.6",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "uniform_mixed_density_comparison",
+      "reason": "A positive coefficient polynomial on integer nodes still requires actual moment summability and two-sided density comparison, with affine identification and derivative nonsingularity.",
+      "required_to_finish": "Prove uniform ratio bounds from the actual limiting highest coefficient, then construct the same polynomial pencil and independent arithmetic rates.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_06.weight_terms_summable",
+        "Experimental.P06_06.normalized_coefficient_ratio_limit"
+      ]
+    },
+    {
+      "item": "6.7",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "multiweight_L2_and_signed_subspaces",
+      "reason": "Finite signed mode algebra does not provide arbitrary-L² convergence, infinite definite subspaces or q-adic nonvanishing.",
+      "required_to_finish": "Calibrate actual multiweight moments and absolute convergence, extend continuously, and separately prove cone and local valuation inputs.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_07.coupled_kernel_square_integrable",
+        "Experimental.P06_07.modes_absolute_integral_summable"
+      ]
+    },
+    {
+      "item": "6.8",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "inherits_unproved_4_5",
+      "reason": "The three-term cone consequence explicitly depends on unproved4.5 irrationality/measure assumptions; a conditional wrapper does not discharge them.",
+      "required_to_finish": "Prove4.5 for the actual fixed pair and independent Apéry input, then transfer with honest effective/existential threshold distinction.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_08.upstream_apery_irrational",
+        "Experimental.P06_08.upstream_4_5_irrational",
+        "Experimental.P06_08.upstream_4_5_measure"
+      ]
+    },
+    {
+      "item": "6.9",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SUCCESSFUL_FULL_GRAPH_AND_ALL_PROJECT_TRANSITIVE_AXIOM_AUDIT_ON_PR39",
+      "obstacle_type": "cancelled_zero_pole",
+      "reason": "For every n≥1 the actual printed rational function is t³ times a continuous factor nonzero at zero; H_(n+1)(0)=(n!)⁶. The claimed leading triple-pole coefficient is therefore false throughout this range.",
+      "required_to_finish": "Recompute the noncancelled pole/residue rows and prove their actual congruences and determinant valuations.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Extended the n=1 counterexample to every positive n and computed the corrected local factor exactly."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "verified_component_evidence": {
+        "repository": "randogelist/snditeration",
+        "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+        "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+        "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+        "job_id": 121566462325,
+        "build_jobs": 8840,
+        "theorems_checked": 1888,
+        "declarations_checked": 2292,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+        "toolchain": "Lean 4.33.0",
+        "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "local_lean_executed": false
+      },
+      "completed_refutation": "ManuscriptChain.TriplePoleCancellation.printed_leading_formula_fails",
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_09.triple_partial_fraction",
+        "Experimental.P06_09.rational_three_jet_interpolation",
+        "Experimental.P06_09.upstream_harmonic_residual_p_integral"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "The verified branch proves an actual n=1 cancellation counterexample to the printed triple-pole leading-coefficient claim. Historical Hermite determinant-unit components do not supply the missing actual triple-pole residue/congruence/valuation transfer.",
+          "required_to_finish": "Repair the cancelled pole order and leading-term statement, recompute actual residue rows, then prove their congruences and determinant valuations."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
+      ]
+    },
+    {
+      "item": "6.10",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR; component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "missing_limits_and_wrong_rate_direction",
+      "reason": "The companion now proves the sharp finite coefficient-Gram Hadamard bound. Actual equilibrium/potential limits and strict reweighting remain open, and a lower decay bound cannot imply the printed >581 ratio.",
+      "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; preserve the verified finite bounds and conditional growth results.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Inspected newly successful companion source and complete transitive audit: Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses. This component is not destination integration. Equilibrium/potential limits and the strict quantitative gap remain required."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [],
+      "later_companion_component_evidence": [
+        {
+          "repository": "randogelist/zetahyperbolic-axiom",
+          "source_commit": "7250b47ba4d20ba934e890966a9b77a559689cfd",
+          "run_id": 40327942655,
+          "job_id": 121589422240,
+          "conclusion": "success",
+          "modules_passed": 260,
+          "reused_matching_audited_modules": 257,
+          "fresh_compilations": 3,
+          "theorems_checked": 3076,
+          "declarations_checked": 3809,
+          "dependency_declarations_checked": 86244,
+          "observed_axioms": [
+            "Quot.sound",
+            "Classical.choice",
+            "propext"
+          ],
+          "audit_method": "INDEPENDENT_VISITED_SET_GRAPH",
+          "audit_regressions": "PASS",
+          "audit_log_sha256": "ee3e94a250f2086542074e6b8e21a9031b6ab2c6a19219e524b5ee464da858d3",
+          "lean_version": "4.33.0",
+          "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "native_windows": "NOT_RUN",
+          "full_manuscript_equivalence": "NOT_CERTIFIED",
+          "whole_original_scope_reviewed": [
+            "3.8",
+            "5.3",
+            "6.2"
+          ],
+          "destination_integration_inferred": false,
+          "component": "Sharp finite coefficient-Gram Hadamard bound under its actual row-rank and entry-height hypotheses.",
+          "remaining": "Equilibrium/potential limits and the strict quantitative gap remain required."
+        }
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Finite conservation and conditional polynomial coefficient-Gram growth do not supply equilibrium limits or strict reweighting. A lower decay bound does not imply the printed >581 ratio.",
+          "required_to_finish": "Prove actual limit identification and an appropriately directed upper decay estimate; retain existing finite and conditional growth lemmas."
+        }
+      ]
+    },
+    {
+      "item": "6.11",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "Euler_convention_and_valuation_gap",
+      "reason": "The finite Euler shift input has not been transferred to the manuscript secant convention and prime-distribution/quotient valuations; strictk=1 growth needs checking.",
+      "required_to_finish": "Prove exact distribution and selected-prime finite valuations with the same normalization before asymptotic growth or dyadic obstruction.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_11.upstream_euler_shift"
+      ]
+    },
+    {
+      "item": "6.12",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "missing_effective_spectral_margin",
+      "reason": "Existence of nearby rationals is not an effective cutoff without an actual positive spectral margin and continuity modulus; beta calibration/q-adic conditions remain separate.",
+      "required_to_finish": "Prove the finite actual Gram margin, explicit perturbation error and real rational selection algorithm plus local residue exclusions.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_12.upstream_beta_four_moments_integrable"
+      ]
+    },
+    {
+      "item": "6.13",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "differentiated_series_sign",
+      "reason": "The printed Laplace series omits a global(-1)^(k-1) factor; finite operator algebra cannot justify differentiated infinite series.",
+      "required_to_finish": "Use corrected sign, prove locally uniform differentiated convergence and actual beta-pencil/root-count identification.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_13.upstream_secant_laplace_expansion"
+      ]
+    },
+    {
+      "item": "6.14",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "inconsistent_scaling_conventions",
+      "reason": "The printed source combines incompatible beta functional scaling and Jacobian/monomial factors, including an internal factor2 correction.",
+      "required_to_finish": "Choose one actual unscaled functional and derive all scaling, pole and moment formulas before coupled density/arithmetic claims.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_14.upstream_sech_cosine_transform"
+      ]
+    },
+    {
+      "item": "6.15",
+      "status": "genuinely blocked",
+      "baseline_register_status": "REPAIR / OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "conditional_series_and_quantitative_asymptotics",
+      "reason": "Actual all-k beta density, integrable even/odd moments, ordered beta/eta limits, eta-zeta identification for k≥1, eta(1)=log 2, arbitrary mixed-minor positivity and rank-one affine slope are verified. Quantitative arithmetic and exterior asymptotics remain unproved.",
+      "required_to_finish": "Prove all-k Euler evaluations and quantitative transcendence/independence bounds, and establish or repair the claimed Pade/Christoffel root asymptotics.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Constructed actual density and square-pushforward measure; proved exact series calibration, all moments, total positivity and affine rank-one slope without analytic premises."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
+        "Experimental.P06_15.upstream_unit_geometric"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "β1 needs ordered-series/integral identification, not unordered real tsum. Qualitative π transcendence does not give effective measure constants; the printed exterior h^-2k asymptotic has an identified repair issue.",
+          "required_to_finish": "Prove actual all-k beta evaluations, correct eta1 removable value, independent quantitative transcendence estimate and repaired Padé/Christoffel asymptotics."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
+      ]
+    },
+    {
+      "item": "6.16",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "inherits_beta_normalization_and_endpoint_gap",
+      "reason": "Actual mixed ζ-beta affine collapse and weight comparison depend on repaired6.14 normalization and positive endpoint limits, not just an abstract compact-ratio lemma.",
+      "required_to_finish": "Build one coherent mixed weight, prove endpoint ratios/nonsingularity and all odd/dyadic multiplier bounds.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    },
+    {
+      "item": "6.17",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; historical companion component `!!`",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "incorrect_odd_harmonic_windows",
+      "reason": "The destination now verifies the q=11/q=41 counterchecks and corrected odd-denominator cutoffs. These refute local proof steps, not the whole determinant statement.",
+      "required_to_finish": "Construct consistently normalized multiweight moments and infinite signed decomposition, then prove actual local determinant nonvanishing with corrected harmonic support.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
+        "Replayed the exact companion counterchecks in the destination graph and proved the all-odd-q denominator membership cutoffs."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": [
+        "Experimental.P06_17.upstream_beta_four_diagonal_moment",
+        "Experimental.P06_17.upstream_beta_four_offdiagonal_moment"
+      ],
+      "historical_reviews": [
+        {
+          "reason": "Recorded q=11 andq=41 exact counterchecks refute two printed local proof steps; finite ζ7 moments do not establish beta/multiweight/L²/cone claims.",
+          "required_to_finish": "Recompute every2j+1 denominator window and local matrix, prove calibrated beta moments and signed-tail/subspace construction independently."
+        }
+      ],
+      "later_component_evidence": [
+        {
+          "repository": "randogelist/snditeration",
+          "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+          "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+          "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+          "job_id": 121592645513,
+          "build_jobs": 8859,
+          "theorems_checked": 2149,
+          "declarations_checked": 2579,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+          "toolchain": "Lean 4.33.0",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "local_lean_executed": false
+        }
+      ]
+    },
+    {
+      "item": "6.18",
+      "status": "genuinely blocked",
+      "baseline_register_status": "OPEN; source partial",
+      "original_statement_unchanged": true,
+      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
+      "obstacle_type": "missing_beta_normalization_and_dyadic_multiplier",
+      "reason": "Polynomial quotient vanishing under a guarded degree threshold does not prove full2-integrality, zero dyadic height loss or effective measures.",
+      "required_to_finish": "Resolve6.14 normalization, nonempty active beta indices and all rational residue/basis factors, then derive multiplier and restricted transfer.",
+      "attempts_made": [
+        "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
+        "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge."
+      ],
+      "exhaustive_mathematical_search_claimed": false,
+      "review_snapshot_references": [
+        {
+          "snapshot": "chain_catalog_review_snapshot",
+          "repository_path": "docs/CHAIN_CATALOG.json"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/PAPER_GAP_REGISTER.md"
+        },
+        {
+          "snapshot": "repository_readonly_snapshot",
+          "repository_path": "docs/MANUSCRIPT_REPAIRS.md"
+        },
+        {
+          "snapshot": "experimental_index_review_snapshot",
+          "repository_path": "docs/EXPERIMENTS.json"
+        }
+      ],
+      "main_integration_status": "NO_WHOLE_ORIGINAL_COMPLETION",
+      "experimental_inputs_without_an_exact_match_recorded_here": []
+    }
+  ],
+  "latest_verified_source": {
+    "repository": "randogelist/snditeration",
+    "commit": "0672896955e5dc7f7f9b9a0f5340c59e69f0890b",
+    "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+    "run": "https://github.com/randogelist/snditeration/actions/runs/40331258877",
+    "job_id": 121600954631,
+    "build_jobs": 8864,
+    "theorems_checked": 2282,
+    "declarations_checked": 2735,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+    "toolchain": "Lean 4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "local_lean_executed": false
+  },
+  "status_counts": {
+    "untouched": 0,
+    "attempted": 0,
+    "under repair": 0,
+    "completed": 13,
+    "genuinely blocked": 32
+  },
+  "schema_version": 2,
+  "initial_review_scan": {
+    "lean_source_files": 117,
+    "declarations_approximate": 1085,
+    "scope": "Initial read-only repository snapshot; not the final compiler/audit declaration count."
+  },
+  "historical_verified_repair_sources": [
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "2f251d22ccec217164437b8a0767500bbad7652e",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40319578590",
+      "job_id": 121560767300,
+      "build_jobs": 8839,
+      "theorems_checked": 1880,
+      "declarations_checked": 2284,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
+    },
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "67c962b74112df9f41afe1eb11f69392e7c84cb4",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40321257752",
+      "job_id": 121566462325,
+      "build_jobs": 8840,
+      "theorems_checked": 1888,
+      "declarations_checked": 2292,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean 4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
+    },
+    {
+      "repository": "randogelist/snditeration",
+      "commit": "cf32aeef35b5f7cb02b042f672ac9b519c56b25d",
+      "pull_request": "https://github.com/randogelist/snditeration/pull/39",
+      "run": "https://github.com/randogelist/snditeration/actions/runs/40328869101",
+      "job_id": 121592645513,
+      "build_jobs": 8859,
+      "theorems_checked": 2149,
+      "declarations_checked": 2579,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "integration": "VERIFIED_PR_SOURCE_NOT_MAIN",
+      "toolchain": "Lean 4.33.0",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "local_lean_executed": false
+    }
+  ],
+  "completion_counts": {
+    "original_proof_items": 45,
+    "whole_originals_verified_on_PR39_source": 13,
+    "whole_originals_integrated_on_main": 9,
+    "whole_originals_remaining": 32,
+    "new_whole_originals_verified_this_work": [
+      "3.3",
+      "3.8",
+      "5.3",
+      "6.2"
+    ],
+    "partial_originals_with_new_complete_clauses": {
+      "5.2": [
+        "5.2(1)",
+        "5.2(2)"
+      ]
+    }
+  },
+  "review_snapshots": {
+    "repository_readonly_snapshot": {
+      "kind": "read_only_review_snapshot",
+      "label": "Repository proof and documentation snapshot",
+      "repository": "randogelist/snditeration",
+      "role": "Text inspection and gap comparison; not an independent compiler certificate."
+    },
+    "chain_catalog_review_snapshot": {
+      "kind": "review_snapshot",
+      "label": "Categorizer preparation snapshot",
+      "repository": "randogelist/snditeration",
+      "repository_path": "docs/CHAIN_CATALOG.json",
+      "role": "Original-item and alternative-chain metadata used during review; compiler evidence is separate."
+    },
+    "experimental_index_review_snapshot": {
+      "kind": "review_snapshot",
+      "label": "Experimental modularization publication/index snapshot",
+      "repository": "randogelist/snditeration",
+      "repository_path": "docs/EXPERIMENTS.json",
+      "role": "Named experimental assumptions and original target metadata. Published custom axioms remain distinct from matching proved library declarations."
+    }
+  },
+  "experimental_prerequisite_note": "Snapshot prerequisite names are review metadata, not a live-branch axiom census. Verified library matches are recorded separately. The experimental source is unchanged unless explicitly stated; consult docs/EXPERIMENTS.json for branch-level evidence and publication receipts.",
+  "next_open_original": {
+    "first_unresolved_numbered_item": "3.4 (false full-degree clause; corrected statement required)",
+    "next_unrefuted_open_original": "3.7",
+    "missing_premise": "Individual intermediate centered coefficients nonzero for the actual arithmetic family."
+  },
+  "active_focus": {
+    "item": "6.1",
+    "status": "COMPLETE_CORRECTED_STATEMENT",
+    "original": "FALSE_AS_PRINTED",
+    "evidence": "docs/receipts/THEOREM_6_1_20261026.json"
+  }
+}

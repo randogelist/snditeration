@@ -158,3 +158,13 @@ import Zetahyperbolic.Section6.OuterPrimePadicReduction
 import Zetahyperbolic.Section6.Theorem61
 
 import Zetahyperbolic.Section6.OuterPrimePencilIdentification
+
+import Zetahyperbolic.Section6.BetaCouplingDerivative
+import Zetahyperbolic.Section6.BetaOddResidueSigns
+import Zetahyperbolic.Section6.SecantOperator
+import Zetahyperbolic.Section6.SecantDecay
+import Zetahyperbolic.Section6.SecantMoments
+import Zetahyperbolic.Section6.SecantGram
+import Zetahyperbolic.Section6.MultiweightHyperbolicity
+import Zetahyperbolic.Section6.CoefficientGramHadamard
+import Zetahyperbolic.Section6.Theorem610CoefficientGrowth
