@@ -206,3 +206,9 @@ run_cmd do
 #print axioms ManuscriptChain.Tau.evenPolePair_cancellation
 #print axioms ManuscriptChain.Tau.evenPolePair_one
 #print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
+
+-- P05.01 actual two-variable ζ(7) Beukers moments
+#print axioms ManuscriptChain.Beukers.integral_logMonomial
+#print axioms ManuscriptChain.Beukers.integral_momentTerm
+#print axioms ManuscriptChain.Beukers.integral_density_moment_series
+#print axioms ManuscriptChain.Beukers.diagonal_moment
