@@ -1,0 +1,38 @@
+{
+  "item": "6.10",
+  "module": "P06_10",
+  "namespace": "Experimental.P06_10",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [],
+  "axiom_names": [],
+  "reused_declarations": [
+    "ManuscriptChain.PotentialGap.manuscript_normalized_log_identity",
+    "ManuscriptChain.PotentialGap.height_decay_ratio_gt_581",
+    "ManuscriptChain.PotentialGap.lower_decay_bound_counterexample",
+    "ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero"
+  ],
+  "dependency_items": [
+    "2.5",
+    "3.1",
+    "4.6",
+    "5.2"
+  ],
+  "input_data": [
+    "NormalizationInput",
+    "CoefficientFamilyInput"
+  ],
+  "typed_coverage": "Concrete admissible-family parameters, positive normalization data, and integral coefficient matrices with row independence and polynomial entry bounds. Existing finite logarithmic conservation and coefficient-Gram growth declarations are imported, not assumed anew.",
+  "missing_domain_interfaces": "Weighted equilibrium measures, logarithmic-energy domains, the existence and identification of potential limits, strict reweighting inequality and an explicit upper decay estimate are not encoded.",
+  "repair_gates": [
+    "The printed >581 deduction cannot use only a lower decay bound. Preserve the existing counterexample and require the corrected upper-decay condition or change the conclusion.",
+    "Do not replace a positive limiting potential gap by the finite identity.",
+    "The imported growth theorem uses a weaker factorial upper bound; do not label it as the literal finite Hadamard bound."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.10",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
