@@ -42,7 +42,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` Exact original content–Gram/Vandermonde-pole log conservation; **K²-rate and direction repair open** |
 | 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` Actual spectral exponent counting (cap/average conditional) and **large exponent ⇒ root within exp(-τ)**; K-uniform bounds open |
 | 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` Exact **dual C Cᵀ nullspace = coefficient left kernel** and iff positive/row separation; 2D Beukers integral open |
+| 22 | ~~5.1~~ ✓ (local) | Two-variable Beukers measure for zeta(7) | `!!` **A-Tier original** | `!!` **LOCAL exact**: positive measurable Beukers ζ7 density, actual double-integral moments for all r,t including both printed cases; PR #24 CI PASS |
 | 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` LOCAL finite rational CCᵀ dual positive slope/degree h/all-real complex roots (PR #25); actual Beukers integral and infinite signed cone open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 25 | ~~5.4~~ ✓ (local) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | `!!` Local all-j even-pole cancellation including j=1 and finite linearity, PR #21 CI PASS 8773 jobs |
@@ -67,9 +67,9 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
 
-**Totals:** Seven fully verified exact printed items across the two audited repositories (seven local, zero companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
+**Totals:** Eight fully verified exact printed items in the canonical repository (eight local, zero companion-only), **37 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
-**Convergence checkpoint (26 October 2026):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **60**, but these phrases are **not** 60 independent or newly compiled Lean proofs. The indexed, hash-matched source-module coverage increased from 18 to **22**. The [historical convergence ledger](docs/CONVERGENCE_TRACKER.md) and [machine-readable 13-checkpoint series](docs/CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
+**Historical evidence-mining checkpoint (before P05.01 merge):** the whole-item count reached **7/45** early and has not increased over the repeated documentation rounds; unfinished rows with at least one certified supporting-claim marker grew **0 → 21 → 23 → 27 → 28** and then stabilized. The number of inline crossed phrases increased to **60**, but these phrases are **not** 60 independent or newly compiled Lean proofs. The indexed, hash-matched source-module coverage increased from 18 to **22**. The [historical convergence ledger](docs/CONVERGENCE_TRACKER.md) and [machine-readable 13-checkpoint series](docs/CONVERGENCE_HISTORY_2026-10-26.json) distinguish genuinely new mathematical evidence from reclassification and documentation saturation.
 
 **Reinference signal:** `∅ REINFERENCE_NO_DELTA` and **`EVIDENCE_SATURATED_FIXED_SOURCE`** were established only **after** four previously existing source modules were newly catalogued and two subsequent, independent unchanged-source passes found zero additional certified theorem or changed mathematical blocker. [Read the bounded saturation receipt](docs/REINFERENCE_SATURATION_2026-10-26.md). This is a stopping rule for repeated cataloguing, not a claim that the manuscript is fully proved.
 
@@ -111,6 +111,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **Integration-lane closure:** [PR #23](https://github.com/randogelist/snditeration/pull/23) (actual Newton/Turán, merge `9f630aef`, [CI 40266691690](https://github.com/randogelist/snditeration/actions/runs/40266691690) and [main CI 40266911494](https://github.com/randogelist/snditeration/actions/runs/40266911494) PASS) and [PR #25](https://github.com/randogelist/snditeration/pull/25) (six-module finite dual spectrum, merge `484e285e`, [CI 40267266192](https://github.com/randogelist/snditeration/actions/runs/40267266192) and [main CI 40267527070](https://github.com/randogelist/snditeration/actions/runs/40267527070) PASS) are merged. Both are exact **supporting** A-Tier components; original full-item count stays **7/45**. The other agent’s active [5.1 PR #24](https://github.com/randogelist/snditeration/pull/24) remains untouched.
 
+**NEW LOCAL A-TIER CLOSURE — Theorem 5.1 (26 October 2026):** actual two-variable positive Beukers density and the full diagonal/offdiagonal integral identities, including `ζ(7)-H_r^(7)`, `(H_r^(6)-H_t^(6))/(6(r-t))`, exact 720 normalization, summability and justified series–integral exchange. [PR #24](https://github.com/randogelist/snditeration/pull/24), [Lean 4.33 CI 40267850777](https://github.com/randogelist/snditeration/actions/runs/40267850777), 8,783 build jobs PASS, standard-only axioms, main `1ae34f2bc30135460c357f4efffe1fdbb93d5009`. The **current** exact original-paper total is **8/45, all eight certified locally**; the historic 7/45 source-mining convergence series below is a **past snapshot**, not the present count. Next possible single-target endpoint: Theorem 5.2(2), not yet started.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
@@ -125,7 +127,7 @@ The pinned [main checkpoint](https://github.com/randogelist/snditeration/blob/c5
 
 See [the frozen local proof ledger](https://github.com/randogelist/snditeration/blob/c521749190cce9981b0f108a8edc8034420f6420/docs/FORMALIZATION_LEDGER.md). These 846 declarations must not be mistaken for 846 complete printed results.
 
-### Already crossed off — 7 of 45 complete printed items (aggregate)
+### Already crossed off — 8 of 45 complete printed items (aggregate)
 
 The following have exact Lean proofs with passing build/transitive axiom evidence in **at least one** of the two repos:
 
@@ -137,9 +139,10 @@ The following have exact Lean proofs with passing build/transitive axiom evidenc
 | ~~Theorem 2.5~~ | **LOCAL PASS** | None for Lagrange pole diagonalization |
 | ~~Theorem 3.1~~ | **LOCAL PASS** | None for exact odd-weight hyperbolicity/sharp finite disk; this is **not** a quantitative ζ5 measure |
 | ~~Proposition 4.3~~ | **LOCAL PASS** (`snditeration/main`, PR #17) | Exact `ℂ_p` norm-preserving disk and primitive-polynomial specialization compiled and audited |
+| ~~Theorem 5.1~~ | **LOCAL PASS** (`snditeration/main`, PR #24) | Exact positive two-variable ζ(7) Beukers integral with diagonal/offdiagonal harmonic moments and 720 normalization; Theorem 5.2 remains separate |
 | ~~Theorem 5.4~~ | **LOCAL PASS** (`snditeration/main`, PR #21) | Exact all-j cancellation, j=1 endpoint and finite rational linearity compiled/audited |
 
-**Aggregate count:** 7/45 complete printed items, comprising **7 certified locally, all previously companion-only proofs now integrated**. All seven are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
+**Aggregate count:** 8/45 complete printed items, comprising **8 certified locally, all previously companion-only proofs now integrated**. All eight are now local `snditeration/main` closures; `CROSS-REPO PASS` does **not** mean locally imported or recompiled.
 
 **More work already finished at subclause level:** corrected Proposition 3.2; all-order Dodgson part of Theorem 3.4; corrected Corollary 3.6; strict Newton components of 3.7; effective *conditional* index selection with explicit onset; `CCᵀ` dual-pencil algebra; `6d_K^7` Beukers denominator; finite central-factorial identities; qualitative odd-beta transcendence; polynomial quotient-degree thresholds. **Do not** cross off their full original printed theorems. Full [source-level cross-branch resolution audit](docs/CROSS_BRANCH_RESOLUTION_AUDIT_2026-10-25.md).
 
