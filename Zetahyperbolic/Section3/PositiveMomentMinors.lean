@@ -8,7 +8,8 @@ import Zetahyperbolic.Section3.MomentProductSupport
 The exact integral determinant identity and generalized Vandermonde signs prove
 strict positivity for unrelated increasing row and column index sequences.
 Atomlessness makes almost every product-measure node vector collision-free.
-This closes the total-positivity clause; measure uniqueness is a separate clause.
+Each application must separately identify its manuscript moments with this
+measure. Measure uniqueness is also a separate conclusion.
 -/
 
 noncomputable section

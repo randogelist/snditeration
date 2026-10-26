@@ -137,3 +137,8 @@ import Zetahyperbolic.Section6.BetaOddEta
 import Zetahyperbolic.Section3.PositiveMomentMinors
 import Zetahyperbolic.Section6.BetaEtaZeta
 import Zetahyperbolic.Section6.BetaOddTotalPositivity
+import Zetahyperbolic.Section5.BetaBeukersMoments
+import Zetahyperbolic.Section5.BetaBeukersSpectrum
+import Zetahyperbolic.Section5.BeukersIntegralPencil
+import Zetahyperbolic.Section6.BeukersDenominator
+import Zetahyperbolic.Section6.BeukersSimultaneous
