@@ -320,3 +320,11 @@ run_cmd do
 #print axioms ManuscriptChain.Tau.dataCoefficient_eq_iteratedDeriv
 #print axioms ManuscriptChain.Tau.partialFractionCoefficient_eq_iteratedDeriv
 #print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_RatFunc_eval
+
+-- P06.10(2) conditional coefficient Gram determinant O(K log K) rate.
+#print axioms ManuscriptChain.CoefficientGramGrowth.map_intGram
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_realGram_eq_int
+#print axioms ManuscriptChain.CoefficientGramGrowth.realGram_posDef
+#print axioms ManuscriptChain.CoefficientGramGrowth.one_le_det
+#print axioms ManuscriptChain.CoefficientGramGrowth.det_upper
+#print axioms ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero
