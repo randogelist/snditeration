@@ -1,0 +1,49 @@
+{
+  "paper_item": "3.8",
+  "alternative_target": "First formulate the pole-kernel spectral identity directly with the inverse of the actual finite Gram matrix. Separately prove the matrix-curve identity d(log det Gτ)/dτ=tr(Gτ⁻¹Gτ′) under differentiability and positive definiteness, then identify Gτ′ by dominated differentiation of the actual Laplace density.",
+  "relation_to_original": "alternative_proof_route",
+  "changes_from_original": "Separate finite matrix identities from orthogonal-polynomial and analytic realization layers; keep X=ξ fixed.",
+  "prerequisites": [
+    "2.5",
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Actual monic orthogonal-polynomial kernel identification.",
+    "τ=1 density identification and all-order domination/differentiation.",
+    "Integral and trace interchange on the actual parameter family."
+  ],
+  "correction_gate": "An arbitrary matrix-curve theorem does not certify the manuscript Laplace family without the identification maps.",
+  "source_paths": [
+    "Experimental/P03_08/Prerequisites.lean",
+    "Experimental/P03_08/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-08_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-08_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-08_construction",
+  "original_snapshot_commit": "8588dce972ddd7ef61906202066965fc1c01d56d",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P03_08/Prerequisites.lean",
+      "commit": "8588dce972ddd7ef61906202066965fc1c01d56d",
+      "url": "https://github.com/randogelist/snditeration/blob/8588dce972ddd7ef61906202066965fc1c01d56d/Experimental/P03_08/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P03_08/Target.md",
+      "commit": "8588dce972ddd7ef61906202066965fc1c01d56d",
+      "url": "https://github.com/randogelist/snditeration/blob/8588dce972ddd7ef61906202066965fc1c01d56d/Experimental/P03_08/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
