@@ -271,3 +271,10 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
+
+-- Independent generic ultrametric norm stability from the frozen PR15 donor.
+#print axioms ManuscriptChain.Ultrametric.norm_eval_le_one
+#print axioms ManuscriptChain.Ultrametric.norm_eval_sub_le
+#print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.eval_ne_zero_of_mem_disk
+#print axioms ManuscriptChain.Ultrametric.padicComplex_zero_free_disk
