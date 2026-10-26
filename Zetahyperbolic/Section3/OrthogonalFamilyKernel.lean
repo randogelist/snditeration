@@ -163,10 +163,10 @@ theorem actual_supplied_family_charpoly (p : Real.Parameters) (hp : Real.Admissi
     (horthog : ∀ i j, i ≠ j → (∫ x, (q i).eval x * (q j).eval x
       ∂PrintedMomentMeasure.printedMeasure p 1) = 0) :
     (Spectral.whitenedMatrix (Real.manuscriptPencil p)).charpoly =
-      (fun a b : Fin p.h => (PoleDiagonalization.poleWeight p a : ℝ) *
+      Matrix.charpoly (fun a b : Fin p.h => (PoleDiagonalization.poleWeight p a : ℝ) *
         ∑ i, (q i).eval (ChristoffelDarboux.actualPoleNode p a) *
           (q i).eval (ChristoffelDarboux.actualPoleNode p b) /
-          (∫ x, ((q i).eval x)^2 ∂PrintedMomentMeasure.printedMeasure p 1)).charpoly := by
+          (∫ x, ((q i).eval x)^2 ∂PrintedMomentMeasure.printedMeasure p 1)) := by
   rw [ChristoffelDarboux.actual_whitened_charpoly_eq_pole p hp]
   congr 1
   ext a b
@@ -189,6 +189,7 @@ theorem laplace_supplied_family_deriv (p : Real.Parameters) {τ : ℝ} (hτ : 0 
   rw [PrintedMomentMeasure.laplace_logDet_deriv p hτ]
   apply setIntegral_congr_fun measurableSet_Ioi
   intro y _
+  dsimp only
   rw [laplace_kernel_eq_canonical p hτ q hmonic hdegree horthog]
 
 end ManuscriptChain.OrthogonalFamilyKernel
