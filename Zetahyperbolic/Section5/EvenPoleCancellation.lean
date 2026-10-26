@@ -28,7 +28,10 @@ theorem evenPolePair_coe (j : ℕ) :
     (evenPolePair j : RatFunc ℚ) =
       (RatFunc.X - RatFunc.C (j : ℚ))⁻¹ -
         (RatFunc.X + RatFunc.C (j : ℚ))⁻¹ := by
-  simp [evenPolePair, rationalDomain_pole_coe, Int.cast_neg, sub_neg_eq_add]
+  simp only [evenPolePair, Submodule.coe_sub]
+  rw [rationalDomain_pole_coe (j : ℤ),
+    rationalDomain_pole_coe (-(j : ℤ))]
+  simp only [Int.cast_neg, map_neg, sub_neg_eq_add]
 
 /-- Actual integer-pole τ, with no exceptional omission at j=1. -/
 theorem evenPolePair_cancellation (k j : ℕ) (hj : 1 ≤ j) :
@@ -49,6 +52,7 @@ theorem evenPolePair_cancellation (k j : ℕ) (hj : 1 ≤ j) :
         -(tauPolePoly k ((j : ℤ) - 1) - tauPolePoly k (j : ℤ)) := by abel
     _ = -(C (-(((j : ℚ) ^ (2 * k + 1))⁻¹))) := by
       rw [tau_difference_pole k (j : ℤ) hj0]
+      simp
     _ = C (((j : ℚ) ^ (2 * k + 1))⁻¹) := by simp
 
 /-- The j=1 endpoint, where the printed proof's intermediate division step fails. -/
