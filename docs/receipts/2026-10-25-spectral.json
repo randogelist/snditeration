@@ -1,0 +1,30 @@
+{
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "mode": "A_TIER_EXECUTION",
+  "checkpoint": "ZETA_HYPERBOLIC_ANCHOR_7",
+  "package_version": "GITHUB_SPECTRAL_v0_1_0",
+  "source_commit": "e64d301c64307703a4384a72cba8ba253b3f505d",
+  "merge_commit": "57ef44a083a6a6e4e40442a9de4203fb89716a8a",
+  "pull_request": 12,
+  "ci_run": 40184648602,
+  "ci_job": 121142753481,
+  "ci_result": "PASS",
+  "lean": "4.33.0",
+  "platform": "GitHub ubuntu-latest x86_64",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorem_declarations_checked": 600,
+  "full_manuscript_closure": false,
+  "unconditional_zeta5_or_zeta7_irrationality": false,
+  "core_endpoints": [
+    "ManuscriptChain.GRAM_POSITIVE",
+    "ManuscriptChain.MAIN_CHAIN_UNCONDITIONAL",
+    "ManuscriptChain.EXACT_ZERO_FREE_DISK",
+    "ManuscriptChain.primitivePolynomial_exact_zero_free_disk",
+    "ManuscriptChain.BasisInvariance.weightFive_primitive_leadingCoeff_sign"
+  ]
+}

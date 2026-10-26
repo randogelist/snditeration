@@ -5,6 +5,16 @@ invalidate the independently proved hyperbolicity and positive Gram theorems.
 The Lean proof ledger must distinguish a corrected statement from the printed
 statement.
 
+## Proposition 3.2: continuous-weight normalization
+
+At an odd integer `s = 2k+1`, the printed continuous density has prefactor
+`(2π)^s/(2Γ(s))`, whereas (3.1) has `2(2π)^(s-1)/Γ(s)`. The former is
+`π/2` times the latter. Thus exact coincidence with the original odd-weight
+pencil does not follow and is false with these literal normalizations.
+The corrected prefactor is `2(2π)^(s-1)/Γ(s)`. Hyperbolicity of the separately
+defined positive pencil is a different assertion and is not refuted by this
+normalization discrepancy.
+
 ## Corollary 3.5: continued fraction
 
 For `t = X - ζ(s)`, the proof uses the resolvent `(I + t T)⁻¹`. Its finite
@@ -58,3 +68,16 @@ distinct Hankel spectrum therefore does not prove its claimed coefficient
 nonvanishing. This observation is not a refutation of normalized Newton
 inequalities themselves; their precise hypotheses and equality cases need
 independent proofs.
+
+## Verified corrected finite-moment endpoint
+
+`Section3/ReciprocalMoments.lean` proves, for the actual spectral roots counted
+with multiplicity, `1 ≤ S_(2r) d_min^(2r) ≤ h` and for r>0
+`h^(-1/(2r)) ≤ S_(2r)^(-1/(2r))/d_min ≤ 1`. Here
+`d_min = 1 / ‖Matrix.toEuclideanCLM B‖` is the already proved sharp radius.
+`Section3/ReciprocalMomentLimit.lean` proves convergence of the ratio to 1
+and of the estimator to d_min. This repairs the reversed approximation bounds;
+it does not rescue the false all-orders strict Hankel-positivity assertion.
+
+PR #14 integrated build and axiom audit: run 40186462123, source
+351f704e8a6b3b942e12c67f5213c011b970af16, 846 project theorem declarations.
