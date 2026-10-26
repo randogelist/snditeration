@@ -1,0 +1,53 @@
+{
+  "paper_item": "3.3",
+  "alternative_target": "Retain the actual positive Gram theorem and verified weight-five leading-sign and inertia/root-side counts as separate clauses; formulate mixed-minor positivity and Stieltjes determinacy as separately conditional extensions with explicit integrability, alternant and factorial-growth inputs.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Do not bundle all-order mixed total positivity and uniqueness with the already verified finite signature components.",
+  "prerequisites": [
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Actual mixed-minor integral identity and strict positivity.",
+    "Actual all-order factorial moment bound and Stieltjes uniqueness transfer."
+  ],
+  "correction_gate": "A generic Carleman criterion does not identify the actual moments or prove uniqueness by itself.",
+  "source_paths": [
+    "Zetahyperbolic/Section3/PrincipalPencils.lean",
+    "Zetahyperbolic/Section3/PoleSigns.lean",
+    "Zetahyperbolic/Section3/SpectralInertia.lean"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-03_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-03_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-03_construction",
+  "original_snapshot_commit": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Zetahyperbolic/Section3/PrincipalPencils.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/PrincipalPencils.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/PoleSigns.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/PoleSigns.lean"
+    },
+    {
+      "path": "Zetahyperbolic/Section3/SpectralInertia.lean",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/Zetahyperbolic/Section3/SpectralInertia.lean"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
