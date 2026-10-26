@@ -12,6 +12,36 @@ open hypotheses, or printed claims requiring repair. These counts are an
 inventory, not a percentage of mathematical work completed. No unconditional
 ζ(5)/ζ(7) irrationality, RH, finite-witness closure, or full-paper completion is claimed.
 
+## Focused result: Theorem 6.1 — corrected completion
+
+**6.1(1) and 6.1(2) are exact original proofs; corrected 6.1(3) is complete, all `!!`.**
+[Source `e56da14673218911252b92790d5fe713aea66e19`](https://github.com/randogelist/snditeration/tree/e56da14673218911252b92790d5fe713aea66e19)
+passed [CI 40336562797](https://github.com/randogelist/snditeration/actions/runs/40336562797): **8,876 build jobs**, **169 library modules**,
+**2,422 theorems / 2,886 declarations** audited transitively using only
+`propext`, `Classical.choice`, and `Quot.sound`. Source-placeholder checks passed.
+The tested merge has identical proof, dependency, toolchain and workflow sources;
+only documentation differs.
+
+The proof includes arbitrary rational-polynomial Mellin fibers against the actual
+Beukers measure and the Jacobian; all outer-window harmonic lower bounds and exact
+off-diagonal valuation -7; the actual local block at every p-integral p-adic X,
+its printed scaled residue matrix, determinant norm p^14, and seventh-order pole
+persistence for every primitive integral coefficient vector. The local block is
+explicitly identified with the existing monomial affine pencil.
+
+**Required correction:** the printed “no nonzero integral combination” is false.
+The nonzero vector (p,0) lowers the pole to order at most six. The valid theorem
+excludes **primitive** vectors, with at least one coefficient a unit; this
+correction and the actual counterexample are both formally proved.
+The complete corrected theorem therefore does **not** increase the **13/45**
+original count or **9/45** main integration count. No global impossibility claim
+for other constructions follows from this local obstruction.
+
+[Correction log](docs/THEOREM_6_1_CORRECTIONS.md) ·
+[immutable receipt and fingerprints](docs/receipts/THEOREM_6_1_20261026.json) ·
+[full compiler/audit log](docs/receipts/THEOREM_6_1_CI_40336562797.log).
+Proofs remain on open PR #39; no branch was merged or deleted.
+
 ## Verified repair branch — later evidence, not main integration
 
 [PR #39](https://github.com/randogelist/snditeration/pull/39) is verified at
@@ -253,7 +283,7 @@ Additional numbered items (outside the 45-proof denominator):
 
 | Item · PDF page | Statement | Tier of whole item / verified component | Exact scope and remaining work | Source |
 | --- | --- | --- | --- | --- |
-| Theorem **6.1** · p.29 | Divided-difference $p$-adic valuation law and intrinsic $p^{-6}$ barrier | OPEN | The companion now proves the actual outer-prime off-diagonal moment valuation -7. The crossing-index determinant leading congruence, Mellin bridge and intrinsic p^-6 barrier remain unproved. Destination integration of this new companion component remains open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_alt_construction) |
+| Theorem **6.1** · p.29 | Divided-difference $p$-adic valuation law and intrinsic $p^{-6}$ barrier | **REPAIR; exact (1)–(2), complete corrected (3) `!!` on PR39** | Actual Mellin/Jacobian bridge, harmonic lower bounds and valuation -7; full p-adic local residue, determinant norm p^14 and primitive-vector obstruction verified. Literal nonzero-vector clause is refuted by (p,0). Complete corrected theorem is separate from the original count and main proof integration. | [correction and evidence](docs/THEOREM_6_1_CORRECTIONS.md); [exact source](https://github.com/randogelist/snditeration/blob/e56da14673218911252b92790d5fe713aea66e19/Zetahyperbolic/Section6/Theorem61.lean); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_alt_construction) |
 | Theorem **6.2** · p.31 | Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead | OPEN in main; **exact `!!` on PR39** | Whole original verified: actual adjacent/extra-denominator integrals, arbitrary integer polynomial and alpha/beta, exact zeta(6)/zeta(7) identity, printed rational correction and proved 6*d_K^7 integer clearing. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-02_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-02_alt_construction); [verified destination source](https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean) |
 | Theorem **6.3** · p.32 | Unconditional $q$-adic non-vanishing and explicit positive-cone approximations for $G_{\mathcal{A}}^{(7)}(X)$ | REPAIR / OPEN | Part (2) has an external rational h=4 negative-direction counterexample, not a Lean replay; independent q-adic part (1) remains open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_alt_construction) |
 | Theorem **6.4** · p.33 | Character–Vandermonde sign cancellation and unconditional hyperbolicity for $\beta(4)$ | OPEN; source partial | Finite character-Vandermonde cancellation and two/three-node Gram models; actual β4 analytic pencil and global arithmetic open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-04_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-04_alt_construction) |

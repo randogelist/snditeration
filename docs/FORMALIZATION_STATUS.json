@@ -1481,14 +1481,15 @@
       "status": "genuinely blocked",
       "baseline_register_status": "OPEN",
       "original_statement_unchanged": true,
-      "verification_this_pass": "SOURCE_REVIEW_WITH_NO_NEW_WHOLE_ORIGINAL_PROOF",
-      "obstacle_type": "residue_to_determinant_gap",
-      "reason": "The companion now proves the actual outer-prime off-diagonal moment valuation -7. The crossing-index determinant leading congruence, Mellin bridge and intrinsic p^-6 barrier remain unproved.",
-      "required_to_finish": "Prove the actual Jacobian/Mellin bridge and invertible local 2-by-2 reduction, then the determinant valuation/barrier; the companion single-entry result remains separate until transferred.",
+      "verification_this_pass": "EXACT_PARTS_1_2_AND_COMPLETE_CORRECTED_PART_3_AXIOM_AUDITED",
+      "obstacle_type": "false_literal_nonzero_vector_clause",
+      "reason": "The literal nonzero integral-vector conclusion is false: (p,0) cancels the seventh-order leading pole. Exact original parts (1) and (2) and the entire corrected primitive-vector part (3) are now compiled and transitively audited on PR39.",
+      "required_to_finish": "The original cannot be proved as printed. Replace nonzero by primitive; that separately identified correction is fully verified. Main proof integration remains under the no-merge lock.",
       "attempts_made": [
         "Reviewed typed-input and repair metadata and separately drafted alternative scope against current gap records; no new complete derivation of this original is claimed.",
         "Inspected active source families and imported vs unimported component boundary; did not treat prerequisite axioms as discharge.",
-        "Inspected newly successful companion source and complete transitive audit: Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses. This component is not destination integration. Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required."
+        "Inspected newly successful companion source and complete transitive audit: Actual outer-prime off-diagonal moment valuation -7 with explicit prime, interval and congruence hypotheses. This component is not destination integration. Actual local 2-by-2 leading congruence, Mellin bridge and intrinsic barrier remain required.",
+        "Constructed and compiled exact Mellin fibers, Jacobian, harmonic bounds, actual all-Qp local residue, determinant norm and primitive obstruction; formally refuted the nonzero-vector clause. Final source also identifies both local matrices with the monomial affine pencil."
       ],
       "exhaustive_mathematical_search_claimed": false,
       "review_snapshot_references": [
@@ -1554,7 +1555,80 @@
           "reason": "Single-entry harmonic residual integrality does not prove the crossing-index determinant valuation or intrinsic p^-6 barrier.",
           "required_to_finish": "Prove actual Jacobian/Mellin bridge and local reduction with invertibility; then derive determinant valuation."
         }
-      ]
+      ],
+      "corrected_statement_status": "COMPLETED",
+      "original_completion_counted": false,
+      "focused_evidence": {
+        "repository": "randogelist/snditeration",
+        "source_commit": "e56da14673218911252b92790d5fe713aea66e19",
+        "source_tree": "7c9fc0df3bdf22c0f16f6973c29ea2e0817eff6c",
+        "tested_merge_commit": "e3035522db0d3e4ae20589c89c33a4539b9e0643",
+        "run_id": 40336562797,
+        "job_id": 121619608918,
+        "conclusion": "success",
+        "source_dependency_toolchain_workflow_matches_checkout": true,
+        "checkout_differences": "Documentation only",
+        "build_jobs": 8876,
+        "library_modules": 169,
+        "theorems_checked": 2422,
+        "declarations_checked": 2886,
+        "transitive_audit": "ALL_PROJECT_DECLARATIONS",
+        "printed_reports": 748,
+        "observed_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "source_placeholder_scan": "PASS",
+        "local_lean_executed": false,
+        "main_proof_integration": false,
+        "original_whole_count": 13,
+        "main_original_whole_count": 9,
+        "exact_original_parts": [
+          "6.1(1)",
+          "6.1(2)"
+        ],
+        "corrected_complete": "6.1(3): primitive integral vectors replace merely nonzero integral vectors",
+        "literal_original": "REFUTED_NONZERO_VECTOR_CLAUSE",
+        "corrected_whole_theorem": "COMPLETE",
+        "new_modules": 12,
+        "experimental_imports": [],
+        "lean_version": "4.33.0",
+        "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "log_sha256": "91631296ed5cfdbbe1f31f35887da4b2fa5f72bb9927928b33da4f9f91565fbe",
+        "full_log": "THEOREM_6_1_CI_40336562797.log",
+        "verified_source_blobs": {
+          "Zetahyperbolic.lean": "ba1dbff16f147d5f56de84a6da5dabe3233376e8",
+          "Zetahyperbolic/Audit.lean": "a66221b960ba1bbac9798cb7bbff088ba8806c7e",
+          "Zetahyperbolic/Section6/BeukersOuterValuation.lean": "21dd8d89fc67c419d3b0ac92476413e1bd9bce44",
+          "Zetahyperbolic/Section6/MellinFiber.lean": "2216708d9fa748cead8d8cbfa19dcaa538ad7fc8",
+          "Zetahyperbolic/Section6/MellinFiberPolynomial.lean": "38f88f4896de7113dcc9eb4f8850d30752c0662b",
+          "Zetahyperbolic/Section6/MellinFiberWeighted.lean": "2b99133bf716f9efbd13a6aef8c2bec16e7ab1c7",
+          "Zetahyperbolic/Section6/MellinJacobian.lean": "712147b47195d7852f4d25a021a52b23c5bc0aa3",
+          "Zetahyperbolic/Section6/OuterHarmonicBound.lean": "c49106902ac2ed8356ddb521c4d5d5fe0e492cc7",
+          "Zetahyperbolic/Section6/OuterPrimeLocalBlock.lean": "a3a0961c77b47e36809074a747b7b28251758ab4",
+          "Zetahyperbolic/Section6/OuterPrimePadicBlock.lean": "e013ee52b2b1c2d103e1d4a85c63c07b3f9ada84",
+          "Zetahyperbolic/Section6/OuterPrimePadicReduction.lean": "14006f39b71e33960662fc18f148e4d44a549995",
+          "Zetahyperbolic/Section6/OuterPrimePencilIdentification.lean": "7fa249f93347a60e586d111a05b8bb7de736387e",
+          "Zetahyperbolic/Section6/OuterPrimeRationalBlock.lean": "61c4f399bf7f01acdc7ea1c072a95f0f490c7221",
+          "Zetahyperbolic/Section6/Theorem61.lean": "69032ba05dab8191f5177e8862e0765e3938b8a9",
+          "docs/THEOREM_6_1_CORRECTIONS.md": "227d969a24568c29467af2b3ebbd5865a88b3410"
+        },
+        "environment_blobs": {
+          ".github/workflows/lean.yml": "db701a1b02ab6589642e8ba217d4daae4a26a696",
+          "lake-manifest.json": "d97833f315c7dc50c158cc4df4509b3bbc445c09",
+          "lakefile.lean": "a12e10e090d3fbe33db143b14764105f108854e0",
+          "lean-toolchain": "025e59548e48cf71f2744154e2890beefe30a258"
+        },
+        "development_runs": [
+          40333840272,
+          40334233198,
+          40334704332,
+          40335293612,
+          40335906969,
+          40336562797
+        ]
+      }
     },
     {
       "item": "6.2",
@@ -2509,5 +2583,11 @@
     "first_unresolved_numbered_item": "3.4 (false full-degree clause; corrected statement required)",
     "next_unrefuted_open_original": "3.7",
     "missing_premise": "Individual intermediate centered coefficients nonzero for the actual arithmetic family."
+  },
+  "active_focus": {
+    "item": "6.1",
+    "status": "COMPLETE_CORRECTED_STATEMENT",
+    "original": "FALSE_AS_PRINTED",
+    "evidence": "docs/receipts/THEOREM_6_1_20261026.json"
   }
 }

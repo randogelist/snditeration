@@ -21,7 +21,7 @@ Completed whole originals: 2.2, 2.3, 2.4, 2.5, 3.1, 3.3, 3.8, 4.2, 4.3, 5.1, 5.3
 | 5.2 | Revise the fixed-K cone quantifiers and prove sufficiently-large-degree definite subspaces with valid infinite-tail control. |
 | 5.6 | Repair the false continuity clauses, prove the inner-tail bound and surviving-pole valuation ranges; transfer the independently verified outer-integral component before claiming destination integration. |
 | 5.7 | Compute actual residues and endpoint indexing, then prove confluent unit-block congruences and lower-minor estimates. |
-| 6.1 | Prove the actual Jacobian/Mellin bridge and invertible local 2-by-2 reduction, then the determinant valuation/barrier; the companion single-entry result remains separate until transferred. |
+| 6.1 | Exact parts (1)–(2) and complete corrected primitive-vector part (3) now verified; the literal nonzero-vector clause is false. See THEOREM_6_1_CORRECTIONS.md and the focused receipt. |
 | 6.3 | Replay the exact certificate or construct a genuinely different restricted cone with certified tails; separately prove actual residue determinant nonvanishing. |
 | 6.4 | Prove boundary decay, integration by parts and coherent normalization, then actual positivity and rational coefficient identification. |
 | 6.5 | Use the calibrated6.4 pencil and verify nonzero determinant of its scaled reduction, with scaling valuation explicit. |
@@ -322,3 +322,34 @@ Destination modules:
 The final `ManuscriptChain.Beukers.theorem_6_2` retains all printed quantifiers and the literal weighted-measure integral. `simultaneousRationalPart_eq_printed` separately proves equality with the manuscript's diagonal harmonic-seven, off-diagonal harmonic-six divided-difference, and linear harmonic-six correction, with the printed signs. `simultaneousRationalPart_denominator` proves membership in the integer image, not an assumed arithmetic premise. No target weakening, axioms, admissions, coefficient restrictions, or fixed-order specialization were introduced.
 
 Final destination verification: full root build 8,864 jobs; all-project audit 2,282 theorem declarations and 2,735 declarations; only propext, Classical.choice and Quot.sound. Root/import and remote source-blob readback checks pass. Whole originals are now 13/45 in verified sources and 9/45 integrated into main; 32 remain unresolved. No local Lean, merge or branch deletion occurred.
+
+## Focused Theorem 6.1 completion — later evidence
+
+**6.1(1) and 6.1(2) are exact original proofs; corrected 6.1(3) is complete, all `!!`.**
+[Source `e56da14673218911252b92790d5fe713aea66e19`](https://github.com/randogelist/snditeration/tree/e56da14673218911252b92790d5fe713aea66e19)
+passed [CI 40336562797](https://github.com/randogelist/snditeration/actions/runs/40336562797): **8,876 build jobs**, **169 library modules**,
+**2,422 theorems / 2,886 declarations** audited transitively using only
+`propext`, `Classical.choice`, and `Quot.sound`. Source-placeholder checks passed.
+The tested merge has identical proof, dependency, toolchain and workflow sources;
+only documentation differs.
+
+The proof includes arbitrary rational-polynomial Mellin fibers against the actual
+Beukers measure and the Jacobian; all outer-window harmonic lower bounds and exact
+off-diagonal valuation -7; the actual local block at every p-integral p-adic X,
+its printed scaled residue matrix, determinant norm p^14, and seventh-order pole
+persistence for every primitive integral coefficient vector. The local block is
+explicitly identified with the existing monomial affine pencil.
+
+**Required correction:** the printed “no nonzero integral combination” is false.
+The nonzero vector (p,0) lowers the pole to order at most six. The valid theorem
+excludes **primitive** vectors, with at least one coefficient a unit; this
+correction and the actual counterexample are both formally proved.
+The complete corrected theorem therefore does **not** increase the **13/45**
+original count or **9/45** main integration count. No global impossibility claim
+for other constructions follows from this local obstruction.
+
+[Correction log](THEOREM_6_1_CORRECTIONS.md) ·
+[immutable receipt and fingerprints](receipts/THEOREM_6_1_20261026.json) ·
+[full compiler/audit log](receipts/THEOREM_6_1_CI_40336562797.log).
+Proofs remain on open PR #39; no branch was merged or deleted.
+
