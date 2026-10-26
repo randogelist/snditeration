@@ -1,0 +1,49 @@
+{
+  "id": "P03_05",
+  "paper_item": "3.5",
+  "branch": "experiment/zetahyperbolic-p03-05_construction",
+  "namespace": "Experimental.P03_05",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "proof_claim": false,
+  "axioms": [
+    {
+      "name": "Experimental.P03_05.lanczosBasisOfCyclic",
+      "meaning": "An explicitly unit, cyclic vector for the actual whitened manuscript matrix admits an orthogonal tridiagonalizing basis with positive adjacent entries.",
+      "dependencies": [
+        "Theorem 3.1 actual symmetric whitened matrix",
+        "finite Gram–Schmidt/Lanczos construction"
+      ],
+      "supports": "Only cyclic tridiagonalization. No determinant ratio, fraction identity, chosen-vector cyclicity or exponential edge bound is assumed."
+    }
+  ],
+  "proved_prerequisite_aliases": [],
+  "original_statement_preserved": true,
+  "original_target_assumed": false,
+  "requires_discharge": [
+    "Experimental.P03_05.lanczosBasisOfCyclic"
+  ],
+  "publication_path": "Experimental/P03_05",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_05.lanczosBasisOfCyclic",
+      "meaning": "An explicitly unit, cyclic vector for the actual whitened manuscript matrix admits an orthogonal tridiagonalizing basis with positive adjacent entries.",
+      "dependencies": [
+        "Theorem 3.1 actual symmetric whitened matrix",
+        "finite Gram–Schmidt/Lanczos construction"
+      ],
+      "supports": "Only cyclic tridiagonalization. No determinant ratio, fraction identity, chosen-vector cyclicity or exponential edge bound is assumed."
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P03_05.lanczosBasisOfCyclic"
+  ],
+  "proved_upstream_aliases": [],
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "full_target_proved": false
+}
