@@ -1,3 +1,8 @@
+> **Experimental prerequisite branch — paper item 3.2.**
+> [Target and repair boundary](Experimental/P03_02/Target.md) · [Typed inputs](Experimental/P03_02/Prerequisites.lean) · [Assumptions](Experimental/P03_02/Assumptions.json) · [Isolation policy](Experimental/README.md).
+> Source only, uncompiled. Named prerequisite axioms: **0**. No new theorem certification.
+> The main-project register below is the inherited baseline, not evidence for this experimental module.
+
 # Zetahyperbolic — manuscript completion and Lean evidence
 
 Formalization of *Spectral Theory and Diophantine Bounds for Hankel Determinants

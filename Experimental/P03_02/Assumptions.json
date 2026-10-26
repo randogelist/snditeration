@@ -1,0 +1,61 @@
+{
+  "id": "P03_02",
+  "paper_item": "3.2",
+  "branch": "experiment/zetahyperbolic-p03-02_construction",
+  "namespace": "Experimental.P03_02",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "proof_claim": false,
+  "axioms": [],
+  "proved_prerequisite_aliases": [
+    {
+      "name": "Experimental.P03_02.correctedGramInput",
+      "source": "ManuscriptChain.ContinuousWeight.gram_posDef",
+      "meaning": "Positive definiteness of the actual corrected continuous-weight Gram matrix for s>0.",
+      "dependencies": [
+        "Definition 2.1 actual parameter geometry",
+        "corrected continuous density positivity and integrability"
+      ]
+    },
+    {
+      "name": "Experimental.P03_02.correctedSlopeInput",
+      "source": "ManuscriptChain.ContinuousWeight.direction_det_ne_zero",
+      "meaning": "Nonsingular actual continuous slope.",
+      "dependencies": [
+        "Theorem 2.5 Vandermonde/pole factorization"
+      ]
+    }
+  ],
+  "original_statement_preserved": true,
+  "original_target_assumed": false,
+  "requires_discharge": [],
+  "publication_path": "Experimental/P03_02",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [],
+  "axiom_names": [],
+  "proved_upstream_aliases": [
+    {
+      "name": "Experimental.P03_02.correctedGramInput",
+      "source": "ManuscriptChain.ContinuousWeight.gram_posDef",
+      "meaning": "Positive definiteness of the actual corrected continuous-weight Gram matrix for s>0.",
+      "dependencies": [
+        "Definition 2.1 actual parameter geometry",
+        "corrected continuous density positivity and integrability"
+      ]
+    },
+    {
+      "name": "Experimental.P03_02.correctedSlopeInput",
+      "source": "ManuscriptChain.ContinuousWeight.direction_det_ne_zero",
+      "meaning": "Nonsingular actual continuous slope.",
+      "dependencies": [
+        "Theorem 2.5 Vandermonde/pole factorization"
+      ]
+    }
+  ],
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "full_target_proved": false
+}
