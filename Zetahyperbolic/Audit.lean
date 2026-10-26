@@ -234,3 +234,8 @@ run_cmd do
 
 #print axioms ManuscriptChain.Beukers.offdiagonal_moment_eq_rat
 #print axioms ManuscriptChain.Beukers.offdiagonal_moment_is_rational
+
+-- Conditional all-complex-root separation comparison, isolated from actual ζ5 rate.
+#print axioms ManuscriptChain.Spectral.comparisonRadius_pos
+#print axioms ManuscriptChain.Section4ComplexComparison.polynomial_comparison
+#print axioms ManuscriptChain.Section4ComplexComparison.integer_comparison

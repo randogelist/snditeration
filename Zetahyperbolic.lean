@@ -68,3 +68,4 @@ import Zetahyperbolic.Section5.BeukersMomentSeries
 import Zetahyperbolic.Section5.BeukersOffDiagonal
 import Zetahyperbolic.Section5.BeukersDensity
 import Zetahyperbolic.Section5.BeukersRationalMoments
+import Zetahyperbolic.Section4.ComplexComparison
