@@ -328,3 +328,15 @@ run_cmd do
 #print axioms ManuscriptChain.CoefficientGramGrowth.one_le_det
 #print axioms ManuscriptChain.CoefficientGramGrowth.det_upper
 #print axioms ManuscriptChain.CoefficientGramGrowth.normalized_log_det_tendsto_zero
+
+-- P03.02 corrected real-parameter hyperbolicity and exact odd-weight alignment.
+#print axioms ManuscriptChain.ContinuousWeight.gram_posDef
+#print axioms ManuscriptChain.ContinuousWeight.gram_integral
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_eq_paper
+#print axioms ManuscriptChain.ContinuousWeight.gram_eq_paper_integral
+#print axioms ManuscriptChain.ContinuousWeight.gram_odd
+#print axioms ManuscriptChain.ContinuousWeight.poleWeight_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_det_ne_zero
+#print axioms ManuscriptChain.ContinuousWeight.direction_odd
+#print axioms ManuscriptChain.ContinuousWeight.pencil_odd
+#print axioms ManuscriptChain.ContinuousWeight.proposition_3_2_corrected
