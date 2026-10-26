@@ -1,0 +1,47 @@
+{
+  "paper_item": "4.1",
+  "alternative_target": "Use the existing effective natural-exponent transfer with explicitly supplied rational rate margins, a numerical onset and the exact family estimates required by that API. Keep the more general real-exponent eventual transfer as a separately non-effective statement until a constructive onset is provided.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Make effective input data explicit; do not claim a computable threshold from bare eventual bounds.",
+  "prerequisites": [
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Construct explicit rate/onset data for a concrete family.",
+    "Extend the effective API to the original real-exponent scope if required."
+  ],
+  "correction_gate": "An assumption record carrying proofs is not a finite raw-data witness checker.",
+  "source_paths": [
+    "Experimental/P04_01/Target.md",
+    "Experimental/P04_01/Prerequisites.lean"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p04-01_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p04-01_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p04-01_construction",
+  "original_snapshot_commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P04_01/Target.md",
+      "commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5",
+      "url": "https://github.com/randogelist/snditeration/blob/5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5/Experimental/P04_01/Target.md"
+    },
+    {
+      "path": "Experimental/P04_01/Prerequisites.lean",
+      "commit": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5",
+      "url": "https://github.com/randogelist/snditeration/blob/5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5/Experimental/P04_01/Prerequisites.lean"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
