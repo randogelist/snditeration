@@ -1,0 +1,60 @@
+{
+  "paper_item": "6.13",
+  "alternative_target": "For every k≥1 prove the finite central-factorial secant operator identity and its differentiated Laplace expansion on z>0 with the required global factor (−1)^(k−1). Build the associated actual combined-β pencil only after local uniform differentiated convergence is established; formulate unilateral root counts with multiplicity and explicit nonsingularity hypotheses.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Restore the missing global sign and distinguish the combined β-value endpoint from individual β irrationality; avoid unjustified strict Newton inequalities.",
+  "prerequisites": [
+    "6.4"
+  ],
+  "retained_open_obligations": [
+    "Prove the base series and uniform convergence of all required differentiated series on compact subsets of z>0.",
+    "Identify the actual combined-β functional and positive weight.",
+    "Prove derivative nonsingularity and any strictness/nondegeneracy condition used for root or Newton claims."
+  ],
+  "correction_gate": "No literal wrong-sign series can be assumed; finite mode annihilation does not itself justify differentiation of the infinite sum.",
+  "source_paths": [
+    "Experimental/P06_13/Target.md",
+    "Experimental/P06_13/Assumptions.json",
+    "Experimental/P06_13/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-13_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-13_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-13_construction",
+  "original_snapshot_commit": "bcdafb328e05802d330c7e96814f22f2b7f90774",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_13/Target.md",
+      "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774",
+      "url": "https://github.com/randogelist/snditeration/blob/bcdafb328e05802d330c7e96814f22f2b7f90774/Experimental/P06_13/Target.md"
+    },
+    {
+      "path": "Experimental/P06_13/Assumptions.json",
+      "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774",
+      "url": "https://github.com/randogelist/snditeration/blob/bcdafb328e05802d330c7e96814f22f2b7f90774/Experimental/P06_13/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_13/Prerequisites.lean",
+      "commit": "bcdafb328e05802d330c7e96814f22f2b7f90774",
+      "url": "https://github.com/randogelist/snditeration/blob/bcdafb328e05802d330c7e96814f22f2b7f90774/Experimental/P06_13/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
