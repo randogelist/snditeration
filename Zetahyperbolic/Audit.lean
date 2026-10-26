@@ -172,3 +172,6 @@ run_cmd do
 #print axioms ManuscriptChain.Tau.coordinateReal_even_derivative
 #print axioms ManuscriptChain.Tau.rationalDomain_coefficient_eq_coordinate_derivative
 #print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_coordinates
+
+#print axioms ManuscriptChain.Tau.normalized_derivative_rationalDomain
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic
