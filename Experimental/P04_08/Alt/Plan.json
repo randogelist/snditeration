@@ -1,0 +1,50 @@
+{
+  "paper_item": "4.8",
+  "alternative_target": "Restrict rational-root exclusion to roots independently known to lie in a specified upper-radius cluster, combined with an explicit rational-approximation lower bound. For actual polynomial factors, prove the finite factor-product degree inequalities with nonzero evaluation, leading coefficient and sign conditions explicit.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Drop blanket small-denominator exclusion inferred from a lower spectral gap; introduce actual upper clustering only through an independently proved earlier result.",
+  "prerequisites": [
+    "3.1",
+    "4.4",
+    "4.7"
+  ],
+  "retained_open_obligations": [
+    "Exact upper-cluster membership for any root to which exclusion is applied.",
+    "Finite factor-product/logarithm inequalities and multiplicity accounting.",
+    "Discharge the actual zeta approximation lower bound."
+  ],
+  "correction_gate": "The spectral cap gives a lower root-distance gap, never an upper cluster radius. No ex-falso use of the printed reversal.",
+  "source_paths": [
+    "Experimental/P04_08/Prerequisites.lean",
+    "Experimental/P04_08/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p04-08_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p04-08_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p04-08_construction",
+  "original_snapshot_commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P04_08/Prerequisites.lean",
+      "commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110",
+      "url": "https://github.com/randogelist/snditeration/blob/221ecd8f613ecf0f39ef7752af1386c4223ab110/Experimental/P04_08/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P04_08/Target.md",
+      "commit": "221ecd8f613ecf0f39ef7752af1386c4223ab110",
+      "url": "https://github.com/randogelist/snditeration/blob/221ecd8f613ecf0f39ef7752af1386c4223ab110/Experimental/P04_08/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
