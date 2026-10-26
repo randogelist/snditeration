@@ -71,7 +71,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 
 **Further five-round audit:** [26 October additional audited crossings](docs/ROUND_AUDIT_2026-10-26_ADDITIONAL_CROSSINGS.md) confirms actual primitive ζ5 positivity/unbounded indexing, the full finite 5.2(1) spectral clause, explicit negative/positive rational rank-one ζ7 channels, exact finite K² potential identities, β character parity and positive derivative reweighting. All remaining analytic and arithmetic conclusions stay open. No new Lean build receipt was claimed for this documentation update.
 
-**Six additional verification rounds:** [centered Taylor, pole-energy, dual-matrix and β(1) audit](docs/ROUND_AUDIT_2026-10-26_MOMENTS_AND_POLES.md). These newly crossed pieces are compiled, axiom-audited *subclaims*, not new complete manuscript items. They include the actual no-two-consecutive-zero Taylor theorem, exact finite pole-energy identities, the dual-pair discriminant criterion, weight-invariant dual slopes, the k=0 beta moment integrals and the η(1) removable-value correction.
+**Seven additional verification rounds:** [source-hashed machine-readable receipts](docs/CROSSINGS_MACHINE_2026-10-26.json) and [centered Taylor, pole-energy, dual-matrix and β(1) audit](docs/ROUND_AUDIT_2026-10-26_MOMENTS_AND_POLES.md). These newly crossed pieces are compiled, axiom-audited *subclaims*, not new complete manuscript items. They include the actual no-two-consecutive-zero Taylor theorem, exact finite pole-energy identities, the dual-pair discriminant criterion, weight-invariant dual slopes, the k=0 beta moment integrals and the η(1) removable-value correction.
 
 ### More completed subclaims uncovered in the 26 October repeat audit
 
