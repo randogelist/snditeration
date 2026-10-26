@@ -1,0 +1,37 @@
+{
+  "item": "6.16",
+  "module": "P06_16",
+  "namespace": "Experimental.P06_16",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [],
+  "axiom_names": [],
+  "reused_declarations": [
+    "ManuscriptChain.Hyperbolic.density_pos",
+    "ManuscriptChain.Real.derivativeMatrix"
+  ],
+  "dependency_items": [
+    "2.2",
+    "2.5",
+    "3.1",
+    "3.3",
+    "6.6",
+    "6.14"
+  ],
+  "input_data": [
+    "CouplingInput"
+  ],
+  "typed_coverage": "Actual integer tuple data, genuine zeta/beta values, finite beta harmonic sums and the common-pole algebraic coefficient. Existing pure-zeta density and derivative APIs are imported. No unverified scaled functional is silently postulated.",
+  "missing_domain_interfaces": "The repaired 6.14 beta functional; exact affine collapse; analytic combined-weight definition and endpoint estimates; uniform comparison; correct signature parity and all prime valuations.",
+  "repair_gates": [
+    "Blocked on the normalization repair in 6.14; no printed conflicting pole/integral identities are axioms.",
+    "Check both boundary ratios and parity hypotheses before importing uniform comparison and signature.",
+    "Odd-prime integrality does not settle the dyadic multiplier."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.16",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
