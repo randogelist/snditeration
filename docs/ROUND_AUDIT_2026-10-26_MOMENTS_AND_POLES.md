@@ -1,4 +1,4 @@
-# Additional multi-round source audit — 2026-10-26 (six passes)
+# Additional multi-round source audit — 2026-10-26 (seven passes)
 
 ## 1. Established proof-tier definitions
 
@@ -28,7 +28,7 @@ All of the following declarations exist at [companion `main@86ca99a`](https://gi
 
 **Zero additional complete printed theorem items are claimed.** The aggregate **7/45** whole-item status remains unchanged. These are additional `!!`-certified **subclauses**, not new proof certificates generated in this documentation task.
 
-## 3. Six independently scoped inspection rounds
+## 3. Seven independently scoped inspection rounds
 
 1. **Current GitHub branches:** checked `snditeration/main` (unchanged `c521749`), `zetahyperbolic-axiom/main` (unchanged `86ca99a`), persistent branches, and all open/merged PRs; no new successful theorem-producing merge.
 2. **Compiler/axiom receipts:** `snditeration` [CI 40186793090 PASS](https://github.com/randogelist/snditeration/actions/runs/40186793090); companion [CI 40188664869 PASS](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40188664869), `validation/linux/summary.json` shows 219 modules passed and zero failed; all above named modules appear in that manifest with `status=PASS`. Standard logical axioms only: `propext`, `Classical.choice`, `Quot.sound`.
@@ -36,6 +36,8 @@ All of the following declarations exist at [companion `main@86ca99a`](https://gi
 4. **§4 actual finite identities:** audited the logarithmic Vandermonde/pole split and adjacent primitive-value ratio. Conditional drift/energy/leading-coefficient inequalities are **input assumptions**, not mathematical decay results.
 5. **§5 dual-pencil determinant geometry:** audited weight-independence, row-change congruence and the explicit condition for **strict** 2×2 discriminant; none silently upgrades all-dimensional root simplicity or infinite Krein positivity.
 6. **§6.15 β(1) analytic endpoint:** audited the real first two moments, logarithmic Mellin integral and the s=1 removable η issue. The broader β family remains open.
+
+7. **Archived-packet challenge against stronger completion claims:** directly enumerated all **25 supplied ZIPs**, inspecting the proof-status/README material in `zeta5-spectral-lean`, both `Zetahyperbolic-general-assembled-lean433` packages, `ZETA5_NATIVE_WITNESS_SEARCH`, `ZETAHYPERBOLIC_ANCHOR_CHAIN_10_STAGES`, `ZETAHYPERBOLIC_PAPER45_TEN_STAGE_LEAN` and `ZETA_HYPERBOLIC_PAPER10_CHAIN_FASTCORE`. The available documents explicitly label the ζ(5) estimate `MultiplierUpper`/`ArchimedeanUpper`/normalized quadratic decay as **unproved premises**, mark `GLOBAL_IRRATIONALITY=NOT_CLAIMED`, or report user-reported compiler receipts rather than fresh GitHub source-hash/audit integration. No **additional entire printed manuscript theorem** can be crossed off on that basis. These remain useful source candidates for selective import, never S-Tier witness admission.
 
 ## 4. Nonpromotions and future action
 
