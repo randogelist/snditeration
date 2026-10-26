@@ -31,19 +31,19 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 8 | 3.4 | Root interlacing and Dodgson condensation | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
 | 9 | 3.5 | Stieltjes J-fraction from interlacing roots | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
 | 10 | 3.6 | Stieltjes reciprocal-root power sums | — **open as printed** | `!!` **corrected theorem only** |
-| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` Turán/Newton and **strict ζ-center Laguerre** subclauses; coefficient nonvanishing still open |
+| 11 | 3.7 | Turanian non-negativity and Newton log-concavity | — **open as printed** | `!!` Derivative Turán/Newton, strict center bound **and no two adjacent centered coefficients vanish**; each individual coefficient nonzero still open |
 | 12 | 3.8 | Christoffel-Darboux pole representation and Jacobi derivative | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 13 | 3.9 | Hurwitz and Dirichlet hyperbolicity | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 14 | 4.1 | Spectral irrationality measure criterion | — **open as printed** | `!!` A-Tier, **conditional only** |
 | 15 | 4.2 | Transfer for algebraic approximations | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 16 | ~~4.3~~ ✓ (cross) | Ultrametric zero-free disk | `!!` **A-Tier original** | — (whole item completed) |
-| 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Actual positive primitive integer ζ5 polynomial and unbounded 30n family; **decay/multiplier still open** |
+| 17 | 4.4 | Spectral bound and irrationality measure for zeta(5) | — **open as printed** | `!!` Positive primitive integer ζ5 polynomial, actual 30n family, finite pole-log and adjacent log-ratio identities; **uniform decay/multiplier missing** |
 | 18 | 4.5 | Irrationality and measure for b*zeta(5)+a*zeta(3) | — **open as printed** | `!!` Finite positive determinant reweighting; coupled ζ5/ζ3 arithmetic open |
-| 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` Finite leading/content–Gram energy laws; quadratic rate and 4.6(2) bound-direction repair open |
+| 19 | 4.6 | Determinant bounds and coefficient heights | — **open as printed** | `!!` Exact original content–Gram/Vandermonde-pole log conservation; **K²-rate and direction repair open** |
 | 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 22 | 5.1 | Two-variable Beukers measure for zeta(7) | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **open as printed** | `!!` **Complete part 5.2(1)**; also **explicit h=1 positive/negative ζ7 rows**; infinite Krein cones open |
+| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **open as printed** | `!!` Complete finite 5.2(1), dual weight-invariant slope/basis congruence, conditional strict 2×2 discriminant and h=1 ±ζ7 channels; infinite Krein cones open |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 25 | ~~5.4~~ ✓ (cross) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | — (whole item completed) |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
@@ -57,12 +57,12 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 34 | 6.7 | Universal multi-weight Beukers Krein decomposition | — **open as printed** | — **no verified positive subtheorem** |
 | 35 | 6.8 | Three-term linear-independence cone | — **open as printed** | — **no verified positive subtheorem** |
 | 36 | 6.9 | Triple-pole and multi-weight determinants | — **open as printed** | `!!` A-Tier, **subclaim only** |
-| 37 | 6.10 | Potential-gap identity and quadratic derivative growth | — **open as printed** | `!!` Exact finite per-K² potential conservation; limiting gap and growth open |
+| 37 | 6.10 | Potential-gap identity and quadratic derivative growth | — **open as printed** | `!!` Finite K²-normalized potential and pole-energy identities; **asymptotic rate/gap open** |
 | 38 | 6.11 | Distribution growth and 2-adic quotient obstruction | — **open as printed** | — **no verified positive subtheorem** |
 | 39 | 6.12 | Full-dimension sign-flip positivity and q-adic nonvanishing | — **open as printed** | — **no verified positive subtheorem** |
 | 40 | 6.13 | Central-factorial secant differential identity | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
 | 41 | 6.14 | Even-pole cosh scaling and coupled pencils | — **open as printed** | — **no verified positive subtheorem** |
-| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | — **open as printed** | `!!` A-Tier, **subclaim**; repair |
+| 42 | 6.15 | Arithmetic transcendence, positive measure and rank-one law | — **open as printed** | `!!` Qualitative odd-beta transcendence, exact k=0 π/4 and log2/2 moments and Mellin integrals; **η(1) removable endpoint and effective-rate repairs remain** |
 | 43 | 6.16 | Generalized multi-weight Zeta-Beta pencil | — **open as printed** | — **no verified positive subtheorem** |
 | 44 | 6.17 | Universal two-variable Zeta-Beta pencil | — **open as printed** | `!!` **Lean counterexamples to proof steps** |
 | 45 | 6.18 | Principal-minor 2-adic integrality and dyadic heights | — **open as printed** | `!!` A-Tier, **subclaim only** |
@@ -70,6 +70,8 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 **Totals:** Seven fully verified exact printed items across the two audited repositories (four local, three companion-only), **38 uncompleted or repair-required**; no paper-wide `!!!` or `!!!!`.
 
 **Further five-round audit:** [26 October additional audited crossings](docs/ROUND_AUDIT_2026-10-26_ADDITIONAL_CROSSINGS.md) confirms actual primitive ζ5 positivity/unbounded indexing, the full finite 5.2(1) spectral clause, explicit negative/positive rational rank-one ζ7 channels, exact finite K² potential identities, β character parity and positive derivative reweighting. All remaining analytic and arithmetic conclusions stay open. No new Lean build receipt was claimed for this documentation update.
+
+**Six additional verification rounds:** [centered Taylor, pole-energy, dual-matrix and β(1) audit](docs/ROUND_AUDIT_2026-10-26_MOMENTS_AND_POLES.md). These newly crossed pieces are compiled, axiom-audited *subclaims*, not new complete manuscript items. They include the actual no-two-consecutive-zero Taylor theorem, exact finite pole-energy identities, the dual-pair discriminant criterion, weight-invariant dual slopes, the k=0 beta moment integrals and the η(1) removable-value correction.
 
 ### More completed subclaims uncovered in the 26 October repeat audit
 
