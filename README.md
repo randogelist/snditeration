@@ -15,6 +15,8 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 
 **Separate workflow controls (not proof tiers):** `B_TIER_DERIVATION`, `A_TIER_EXECUTION`, `A_TIER_PLANNING`. Build name-tags `_construction`, `_subcritical`, `_critical` and `_reasonal_assertion` are progress/recheck labels, never proof certificates. **No item here meets `!!!` or `!!!!`;** no unconditional ζ(5)/ζ(7) irrationality or full-paper certification follows from the present receipts.
 
+**Current proof frontier (26 October 2026):** **8/45 complete printed items, all locally verified**. [PR #29](https://github.com/randogelist/snditeration/pull/29) additionally proved the **finite monomial/polynomial-coefficient** Krein identity inside Theorem 5.2(2) (8,798-job CI and standard-only axiom audit PASS). The full arbitrary-f∈L² decomposition is **not** yet certified. Prior 7/45 figures appearing in dated audit histories are historical checkpoints, not the current count.
+
 ## 2. Manuscript items (45), in printed order
 
 **Whole-item gate** and **component gate** are intentionally separate. A checkmark/strikethrough appears only for an exact original printed item with a passed Lean proof. A `!!` attached to a correction or subclaim certifies **only that narrower statement**, never the unresolved parent. The full [45-item tracker](docs/PAPER_GAP_TRACKER.md) gives source/CI and missing prerequisites.
@@ -43,7 +45,7 @@ Canonical source: `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. Th
 | 20 | 4.7 | Root collapse and separation | — **open as printed** | `!!` Actual spectral exponent counting (cap/average conditional) and **large exponent ⇒ root within exp(-τ)**; K-uniform bounds open |
 | 21 | 4.8 | Rational root exclusion and cluster degree bounds | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 22 | ~~5.1~~ ✓ (local) | Two-variable Beukers measure for zeta(7) | `!!` **A-Tier original** | `!!` **LOCAL exact**: positive measurable Beukers ζ7 density, actual double-integral moments for all r,t including both printed cases; PR #24 (moment integral) and PR #26 (explicit offdiagonal rationality) CI PASS |
-| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` LOCAL finite rational CCᵀ dual positive slope/degree h/all-real complex roots (PR #25); actual Beukers integral and infinite signed cone open |
+| 23 | 5.2 | Dual hyperbolicity and Krein decomposition | — **fixed-K cones impossible as stated** | `!!` LOCAL exact dual finite spectrum (PR #25) and **P05.02(2) actual monomial + rational coefficient Krein forms (PR #29)**, 1/1440 normalization; full arbitrary-L² part (2) and infinite cones (3) remain OPEN |
 | 24 | 5.3 | Beukers measure and dual pencil for beta(4) | — **open as printed** | `!!` A-Tier, **subclaim only** |
 | 25 | ~~5.4~~ ✓ (local) | Higher-zeta cancellation on even pole pairs | `!!` **A-Tier original** | `!!` Local all-j even-pole cancellation including j=1 and finite linearity, PR #21 CI PASS 8773 jobs |
 | 26 | 5.6 | Weight-seven prime-sum evaluation and pole refinement | — **open as printed** | `!!` Rational sign checks only; outer/inner integral and valuations open |
