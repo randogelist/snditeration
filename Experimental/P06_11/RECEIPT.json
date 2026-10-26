@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.11",
+  "module_key": "P06_11",
+  "branch": "experiment/zetahyperbolic-p06-11_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_11.upstream_euler_shift",
+      "meaning": "Euler polynomial shift identity E_n(x+1)+E_n(x)=2x^n on the explicit finite Bernoulli definition; an independent prerequisite for the distribution calculation.",
+      "dependencies": []
+    }
+  ],
+  "axiom_count": 1,
+  "namespace": "Experimental.P06_11",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "75a8accd7d6365d287210b72c5910033d352bfabc46ceab253142c7d68bd10ab",
+    "Assumptions.json": "20b402500a22b3308e0facc59b591a4228abdd9e12cc076279d02fa9ccc049a6",
+    "Target.md": "45bf31efd82729331c4995089cd2339872739cadcd7c1a69114e03ee50707670",
+    "Work.lean": "6bf5ea56972cffc39fc6e5f21385fabb4be58101ef44f98383fcb519f3e5b4cb"
+  },
+  "audit_sha256": "ac482f8ced8d429fb286db30d771a1528cb57578784c065a3fee45cc04fe5ae5",
+  "original_statement_sha256": "619db799ed08917f50c64a4d89e4457ecd87a95779bd5161b0ae550ac6ff8f5b",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}

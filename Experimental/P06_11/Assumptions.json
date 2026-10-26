@@ -1,0 +1,43 @@
+{
+  "item": "6.11",
+  "module": "P06_11",
+  "namespace": "Experimental.P06_11",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_11.upstream_euler_shift",
+      "meaning": "Euler polynomial shift identity E_n(x+1)+E_n(x)=2x^n on the explicit finite Bernoulli definition; an independent prerequisite for the distribution calculation.",
+      "dependency_items": [],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_11.upstream_euler_shift"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.Real.D"
+  ],
+  "dependency_items": [
+    "2.1",
+    "6.4",
+    "6.5"
+  ],
+  "input_data": [
+    "OddPrimeInput"
+  ],
+  "typed_coverage": "Actual finite odd harmonic sums, odd-square denominator, Euclidean polynomial quotient and a concrete Euler-polynomial definition. Only the independent Euler shift identity is assumed.",
+  "missing_domain_interfaces": "No local p-adic functional, Euler-number secant normalization, half-weight sum, limiting prime-sum rate or valuation proof has been encoded.",
+  "repair_gates": [
+    "Prove the p-distribution formula from the finite Euler definition before using the exponent shift.",
+    "Reconcile Euler polynomial coefficients with the manuscript secant Euler-number convention.",
+    "Discharge all quotient and residue valuations on these actual polynomials; do not infer them from scaling alone.",
+    "Check the strict linear-growth formulation at k=1 and all error-term quantifiers before adopting a repaired target."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.11",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run."
+}
