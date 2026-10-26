@@ -1,0 +1,52 @@
+{
+  "item_id": "6.7",
+  "namespace": "Experimental.P06_07",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-07_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Real.dualConstant",
+    "ManuscriptChain.DualSpectral.coefficientSlope_posDef",
+    "ManuscriptChain.Beukers.actual_monomial_krein_bilinear"
+  ],
+  "dependency_ids": [
+    "5.1",
+    "5.2",
+    "6.1",
+    "6.3",
+    "6.6"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_07.coupled_kernel_square_integrable",
+      "meaning": "Square integrability of the explicit coupled kernel on the actual unit square.",
+      "dependency_ids": [
+        "5.1",
+        "5.2"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.1 / 5.2 analytic L2 extension"
+    },
+    {
+      "name": "Experimental.P06_07.modes_absolute_integral_summable",
+      "meaning": "Absolute-integral summability of actual geometric mode terms for given L2 factors.",
+      "dependency_ids": [
+        "5.2"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.2 analytic L2 extension"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "The printed Krein normalization and claimed positive/negative subspaces require independent review. A corrected identity or cone must remain labelled corrected; the literal target is not assumed.",
+  "coverage": "Encodes the actual signed density, mode density, and normalized affine pencil on finite rational coefficient data. Existing finite spectral algebra is imported. The analytic axioms only support justified interchanges.",
+  "remaining": "Discharge kernel/summability bounds, identify generalized moments and the exact signed formula including its constants, and prove real roots from independent coefficients. Infinite signed-subspace existence is a separate open problem; no implication from mode independence is assumed. Establish highest-weight p-adic leading blocks before determinant valuation.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 37,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}

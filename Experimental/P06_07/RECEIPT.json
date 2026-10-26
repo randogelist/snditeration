@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.7",
+  "module_key": "P06_07",
+  "branch": "experiment/zetahyperbolic-p06-07_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_07.coupled_kernel_square_integrable",
+      "meaning": "Square integrability of the explicit coupled kernel on the actual unit square.",
+      "dependencies": [
+        "5.1",
+        "5.2"
+      ]
+    },
+    {
+      "name": "Experimental.P06_07.modes_absolute_integral_summable",
+      "meaning": "Absolute-integral summability of actual geometric mode terms for given L2 factors.",
+      "dependencies": [
+        "5.2"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P06_07",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "0f0860d7078a2e1f5e3cc7fc4616958434bb19b614155ac220491fa2006f1849",
+    "Assumptions.json": "0e3b7760af7ebda795e2b98e7b759acd832db5b420dd2b62b9c30e32e61ccf21",
+    "Target.md": "4eaedc0a330f10b885ab3c52a289c7584899c8ecf83ac74a950ad689feb8a0a4",
+    "Work.lean": "5c1ce3c2050462a4a83259b097237848074f024c42d55b6361b55459e98b79a5"
+  },
+  "audit_sha256": "89acf3b6352ba576516c4304083114d9e9ff6eee17d6b039faa546bbcacb1557",
+  "original_statement_sha256": "48e9f7f2a511bf14fece104cec5995f3630fd15550fa09a3a185320b50400921",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
