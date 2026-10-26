@@ -17,7 +17,7 @@ Integration-only mandate: close already-proved isolated modules without changing
 |---|---|
 | [snditeration #15](https://github.com/randogelist/snditeration/pull/15) | Frozen failed-CI donor: salvage only independently compiled modules into separate new integration branches, never merge/close bulk PR |
 | [snditeration #16](https://github.com/randogelist/snditeration/pull/16) | Inert source-snapshot donor, not compiled in destination; do not merge/close as proof |
-| [snditeration #20](https://github.com/randogelist/snditeration/pull/20) | Integration-only NewtonTuran module, isolated source and seven axiom checks; require fresh [CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) PASS before merging |
+| [snditeration #20](https://github.com/randogelist/snditeration/pull/20) | **INTEGRATED** — isolated NewtonTuran (general real-rooted polynomial hierarchy) merged as `8563380bef3f078dee0c29bc39cc9a40d2cf1030`. [PR CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) PASS, 7 targeted standard-only axiom reports, placeholder scan PASS. **NOT** the complete printed 3.7 |
 | Companion 3.4, 4.2, 5.1, 6.9, 6.10, 6.16 drafts and upcoming snditeration 5.4 | ACTIVE OTHER AGENT: no edits, closures, PR merges or cherry-picks into their branches |
 
 ## Noninterference merge gate
