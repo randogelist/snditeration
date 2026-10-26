@@ -1,17 +1,20 @@
-# Next single-target handoff — following P05.04 local A-Tier PASS
+# Next single-target handoff — following P05.02(2) finite Krein checkpoint
 
-## Completed / frozen
+## Newly completed, PASS-ONCE frozen
 
-- `P02_03_ANALYTIC_DERIVATIVE`: [PR #18](https://github.com/randogelist/snditeration/pull/18), Lean 4.33 [CI 40262441761 PASS](https://github.com/randogelist/snditeration/actions/runs/40262441761). Actual τ-domain analytic normalized derivative proved.
-- `P04_03_COMPLEX_PADIC_ZERO_FREE_DISK`: [PR #17](https://github.com/randogelist/snditeration/pull/17), [CI 40259783326 PASS](https://github.com/randogelist/snditeration/actions/runs/40259783326).
-- `P05_04_EVEN_POLE_CANCELLATION`: [PR #21](https://github.com/randogelist/snditeration/pull/21), [CI 40265986335 PASS](https://github.com/randogelist/snditeration/actions/runs/40265986335), merged `f64b49b9b51b43626abbf09d1cf3821b187ea8b5`; four exact source theorems, 8,773 jobs, 1,011 theorem declarations audited.
+- `P05_02_2_FINITE_KREIN`: actual ζ7 **monomial** double Beukers integral is exactly its signed 1/1440 Krein mode sum. The same exact moments admit a finite rational polynomial coefficient bilinear extension.
+- [PR #29](https://github.com/randogelist/snditeration/pull/29) merged 588230a857acb5a8b74b76ecf99686e79925759c. [Lean 4.33 CI 40271072845](https://github.com/randogelist/snditeration/actions/runs/40271072845) PASS, 8,798 jobs, standard-only axioms in six requested declarations, placeholder scan PASS. Verified source head 372deda8edc77bba6312b8f80137e00e1b75e74f.
+- All preexisting proof modules and Mathlib `.olean` cache assumptions are preserved. Source blobs for both new modules and root/audit entry points match between passing proof head and merged main.
 
-## Candidate next target — NOT YET FROZEN OR STARTED
+## Next mathematical target — NOT STARTED
 
-**Theorem 5.1, actual two-variable ζ(7) Beukers moment identity.** Recommended because finite rational moments, Mellin log-moment integration, and finite dual algebra already exist in the project and companion sources. Missing: an exact positive double-integral identity with the paper's `720` normalization, diagonal tail `ζ(7)-H_r^{(7)}`, and rational off-diagonal divided differences. This requires genuine Fubini, geometric-series and integrability proofs on the **actual manuscript kernel**.
+`P05_02_2_GENERAL_L2_BEUKERS_KREIN`: finish the **original** Theorem 5.2(2), which quantifies over arbitrary f∈L²(0,1), not merely monomials.
 
-Possible alternative single-target closure: Theorem 3.3(1), arbitrary mixed Hankel minors (requires generalized Vandermonde/Andréief and Carleman proof).
+1. Prove finite polynomial expansion equals the **single actual double integral** of f(x1)g(x2) against `Beukers.density` (the frozen `polynomialMomentForm` is currently defined as finite sum of individually integrated monomial moments). Establish integrability and finite integration linearity.
+2. Interchange the finite polynomial coefficients with the **infinite** signed mode sum and show that the mode coefficients equal actual integrals of f(x)x^m(-log x)^ν. All nonnegative/absolute summability premises must be proved, not assumed.
+3. Extend both sides continuously from polynomial functions to arbitrary f∈L²(0,1); prove kernel Hilbert–Schmidt/absolute boundedness and uniform signed-mode norm tails to pass the limit.
+4. Recompile and axiom-audit the exact L² theorem with Lean 4.33 and pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. The infinite positive/negative polynomial cones of 5.2(3) remain a **separate** mathematical problem; do not assume away the Krein negative tail.
 
-Preserve **LEAN_ANCHORINGS/PASS-ONCE**, compile only new/invalidated sources and retain Lean 4.33 + Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assert an actual ζ(5)/ζ(7) irrationality, RH or S-Tier witness.
+Parallel branches and unrelated PRs may run independently, but no extra theorem has been started in this handoff.
 
-**Concurrency:** a later feature branch may be created while another PR is pending. Every merge must still have an integrated destination build and standard-only transitive dependency audit, and source changes must not discard other merged work.
+No claim of ζ7 irrationality, full printed 5.2(2), RH or S-Tier is made.
