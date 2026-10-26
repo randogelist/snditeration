@@ -1,0 +1,50 @@
+{
+  "item": "6.15",
+  "module": "P06_15",
+  "namespace": "Experimental.P06_15",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
+      "meaning": "Nonvanishing of every nonzero rational polynomial at pi (independent Lindemann input); replace with the vetted ExternalPi donor, not a new target axiom.",
+      "dependency_items": [],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    },
+    {
+      "name": "Experimental.P06_15.upstream_unit_geometric",
+      "meaning": "Geometric expansion of (1+u²)^(-1) on (0,1), before moment integration; does not assert beta evaluations, transcendence or Padé asymptotics.",
+      "dependency_items": [],
+      "status": "EXPLICIT_ASSUMPTION_UNDISCHARGED"
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
+    "Experimental.P06_15.upstream_unit_geometric"
+  ],
+  "reused_declarations": [
+    "ManuscriptChain.UnitLogMoments.integral_pow_log",
+    "ManuscriptChain.UnitLogMoments.integrable_pow_log"
+  ],
+  "dependency_items": [
+    "3.8",
+    "5.1"
+  ],
+  "input_data": [],
+  "typed_coverage": "Actual beta-one integral ∫_(0,1) (1+u²)^(-1) du; for s≥2 the absolutely convergent alternating beta series; rational harmonic tails, the odd-beta density formula, eta(1) removable value and existing exact Mellin logarithmic moments. Independent pi nonvanishing and geometric expansion are explicit assumptions. No pi/4 value is included in the beta-one definition.",
+  "missing_domain_interfaces": "Identification of the beta-one integral with the limit of ordered alternating partial sums and the intended Dirichlet beta value; all-k beta evaluation; algebraic-coefficient independence transfer; quantitative pi transcendence measure; Gram/rank-one construction and exterior Christoffel asymptotics.",
+  "repair_gates": [
+    "For s=1, prove the ordered partial-sum limit equals the actual beta-one integral. An unordered real tsum is not the conditionally convergent alternating series and must not be used to represent beta(1). The s=0 branch is outside this item’s target domain.",
+    "Port the vetted ExternalPi/OddBetaValues donor with matching fingerprints rather than leaving the pi axiom as certification.",
+    "At k=0 use eta(1)=log 2; do not substitute into a totalized vanishing product.",
+    "The printed h^(−2k) exterior rate has an identified repair requirement; formalize the corrected asymptotic before any closure.",
+    "Qualitative pi transcendence does not supply effective C_k or exponent 7.10321."
+  ],
+  "original_statement_source": "Attached manuscript, Theorem 6.15",
+  "target_is_not_assumed": true,
+  "own_conclusion_status": "NOT_DECLARED",
+  "validation": "Static source review only; no Lean process, build or axiom audit run.",
+  "beta_one_definition": "Actual set integral over (0,1) of 1/(1+u²); ordered alternating-series/Dirichlet identification remains open."
+}

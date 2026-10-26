@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.15",
+  "module_key": "P06_15",
+  "branch": "experiment/zetahyperbolic-p06-15_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_15.upstream_pi_polynomial_nonvanishing",
+      "meaning": "Nonvanishing of every nonzero rational polynomial at pi (independent Lindemann input); replace with the vetted ExternalPi donor, not a new target axiom.",
+      "dependencies": []
+    },
+    {
+      "name": "Experimental.P06_15.upstream_unit_geometric",
+      "meaning": "Geometric expansion of (1+u²)^(-1) on (0,1), before moment integration; does not assert beta evaluations, transcendence or Padé asymptotics.",
+      "dependencies": []
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P06_15",
+  "paper_reference_items": [],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "19bc224cada27aabc6f1fbe4f4148f59e62bb3b42550f854951ee5caf3d701a7",
+    "Assumptions.json": "bd8f3b9e38ca681bef2bb36198efdc3cb5c422b20962799f4878f660fb5b2727",
+    "Target.md": "3563f027313585b7a8545c8c565c6b651d034790cb8826f0b1b9edf426463fbb",
+    "Work.lean": "be042ebe7326e2386cb7df0717c5310f0fb4d0cd5bdb81a49f3762e0445b7261"
+  },
+  "audit_sha256": "0baaa3c47427e5b715ad6e11a4c70ca3328639c727335626341fff2e477b6ec7",
+  "original_statement_sha256": "d059eb7eec8be2736b8a2d5353454dabf39bbcd7996d682b8f46b1f702ad71b6",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
