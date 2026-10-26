@@ -66,7 +66,8 @@ theorem offdiagonal_moment (r t : ℕ) (hrt : r ≠ t) :
       1 / (((r + n : ℕ) : ℝ) + 1) ^ 6) := by
     simpa only [Nat.cast_add, Nat.cast_one] using
       Real.zeta_tail_summable (s := 6) (by norm_num) r
-  rw [tsum_div_const, tsum_sub ht hr]
+  have hsub := (ht.hasSum.sub hr.hasSum).tsum_eq
+  rw [tsum_div_const, hsub]
   have htailt :
       (∑' n : ℕ, 1 / (((t + n : ℕ) : ℝ) + 1) ^ 6) =
         Real.zeta 6 - (Real.harmonic 6 t : ℝ) := by
