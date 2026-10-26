@@ -272,7 +272,20 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
 #print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
 
--- Independent generic ultrametric norm stability from the frozen PR15 donor.
+-- Finite 6.10 potential identity and a corrected rate-direction counterexample.
+#print axioms ManuscriptChain.PotentialGap.detPolynomial_coeff_dimension
+#print axioms ManuscriptChain.PotentialGap.base_det_mul_whitened_det
+#print axioms ManuscriptChain.PotentialGap.abs_coefficient_eq_center_mul_det
+#print axioms ManuscriptChain.PotentialGap.log_coefficient_sub_log_center
+#print axioms ManuscriptChain.PotentialGap.normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.manuscript_normalized_log_identity
+#print axioms ManuscriptChain.PotentialGap.rate_conservation
+#print axioms ManuscriptChain.PotentialGap.height_decay_ratio_gt_581
+#print axioms ManuscriptChain.PotentialGap.lower_decay_bound_counterexample
+#print axioms ManuscriptChain.PotentialGap.evaluation_upper_gives_rate_lower
+#print axioms ManuscriptChain.PotentialGap.evaluation_lower_gives_rate_upper
+
+-- Generic ultrametric integer-polynomial disk reused from frozen PR15.
 #print axioms ManuscriptChain.Ultrametric.norm_eval_le_one
 #print axioms ManuscriptChain.Ultrametric.norm_eval_sub_le
 #print axioms ManuscriptChain.Ultrametric.norm_eval_eq_of_mem_disk
