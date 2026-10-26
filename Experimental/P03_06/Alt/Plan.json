@@ -1,0 +1,47 @@
+{
+  "paper_item": "3.6",
+  "alternative_target": "For an actual real-rooted polynomial P of degree h≥1, with its h roots listed with multiplicity, and real q0 with P(q0)≠0, set u_j=(r_j−q0)^−2 and S_2r=∑u_j^r. Target positive semidefinite Hankel matrices, strict positivity only up to the number of distinct u_j, vanishing determinants above that rank, and h^(−1/(2r))d_min≤S_2r^(−1/(2r))≤d_min for r≥1.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Replace impossible all-order strict Hankel positivity and reverse the printed finite-rate inequality to its correct direction; audit the logarithmic-derivative sign separately.",
+  "prerequisites": [
+    "3.1"
+  ],
+  "retained_open_obligations": [
+    "Finite Gram rank/distinct-support argument and nearest-distance limit.",
+    "Exact rational power-sum/logarithmic-derivative identification using log|P| on a root-free neighborhood."
+  ],
+  "correction_gate": "Multiplicity of roots and coincident reciprocal-square nodes must be counted separately.",
+  "source_paths": [
+    "Experimental/P03_06/Prerequisites.lean",
+    "Experimental/P03_06/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p03-06_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p03-06_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p03-06_construction",
+  "original_snapshot_commit": "9b56739b36897fbd1564f6cdaea57219320d9e57",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P03_06/Prerequisites.lean",
+      "commit": "9b56739b36897fbd1564f6cdaea57219320d9e57",
+      "url": "https://github.com/randogelist/snditeration/blob/9b56739b36897fbd1564f6cdaea57219320d9e57/Experimental/P03_06/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P03_06/Target.md",
+      "commit": "9b56739b36897fbd1564f6cdaea57219320d9e57",
+      "url": "https://github.com/randogelist/snditeration/blob/9b56739b36897fbd1564f6cdaea57219320d9e57/Experimental/P03_06/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
