@@ -144,3 +144,7 @@ import Zetahyperbolic.Section6.BeukersDenominator
 import Zetahyperbolic.Section6.BeukersSimultaneous
 
 import Zetahyperbolic.Section6.BeukersOuterValuation
+import Zetahyperbolic.Section6.MellinFiber
+import Zetahyperbolic.Section6.MellinFiberWeighted
+import Zetahyperbolic.Section6.MellinJacobian
+import Zetahyperbolic.Section6.OuterPrimeLocalBlock

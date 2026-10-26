@@ -717,5 +717,6 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.simultaneousRationalPart_denominator
 #print axioms ManuscriptChain.Beukers.theorem_6_2
 
-#print axioms ManuscriptChain.Beukers.theorem_6_1_offdiagonal_valuation
 #print axioms ManuscriptChain.Beukers.actual_outer_moment_valuation
+#print axioms ManuscriptChain.Beukers.Mellin.polynomial_mellin_fiber_reduction
+#print axioms ManuscriptChain.Beukers.Mellin.fiberJacobian_abs_det
