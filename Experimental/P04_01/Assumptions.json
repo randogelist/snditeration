@@ -1,0 +1,24 @@
+{
+  "id": "P04_01",
+  "manuscript_id": "4.1",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [],
+  "verified_upstream_refs": [
+    "ManuscriptChain.Section4TransferComplete.spectral_transfer_lattice",
+    "ManuscriptChain.Section4EffectiveBudget.effective_spectral_measure",
+    "ManuscriptChain.Section4EffectiveBudget.denominatorThreshold"
+  ],
+  "dependency_ids": [
+    "P04_01_EFFECTIVE_INPUT_REPAIR"
+  ],
+  "coverage": "The already proved conditional transfer and integer-exponent effective API are imported. The record exposes the known-onset/rational-rate input required by that API, and does not invent an algorithm extracting it from arbitrary eventual estimates.",
+  "repair_or_interface_gates": [
+    "The original real-exponent statement contains effectively computable b₀ without effective representations/onsets. Do not add an axiom claiming arbitrary eventual bounds have a computable onset.",
+    "Keep the printed statement and the effective-data repair separate. The current effective imported API has a natural exponent; the paper quantifies over every real μ above its threshold.",
+    "To connect a concrete family, construct its explicit onset and rational margins, then use the imported theorem. A record with proof fields is an assumption interface, not a finite raw-data witness checker."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}
