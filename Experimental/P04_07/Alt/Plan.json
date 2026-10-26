@@ -1,0 +1,51 @@
+{
+  "paper_item": "4.7",
+  "alternative_target": "Prove a conditional finite cap-and-average root-clustering theorem on the actual family: an explicit spectral cap on the actual whitened slope B and a normalized lower bound for log|det B| (with det B≠0) imply a multiplicity-counted cluster count. Add root separation only under actual polynomial height/leading-coefficient and squarefree-factor data; keep nearest-root decay dependent on a separate small nonzero center evaluation.",
+  "relation_to_original": "conditional",
+  "changes_from_original": "Separate clustering, nearest-root decay and arithmetic separation; retain error constants and onsets rather than treating asymptotic notation as effective data.",
+  "prerequisites": [
+    "3.1",
+    "4.4",
+    "4.6"
+  ],
+  "retained_open_obligations": [
+    "Identify the exact lower bound for log|det B| of the actual whitened slope B; a lower bound for the Gram determinant alone is not this premise.",
+    "Cap-and-average inequality and reciprocal spectral/root transport.",
+    "Actual polynomial factor heights and discriminant separation.",
+    "Small center evaluation and quantified O(K log K) error budget."
+  ],
+  "correction_gate": "A replacement 4.4_alt or 4.6_alt supplies this branch only after an explicit bridge proves the precise input clause used here.",
+  "source_paths": [
+    "Experimental/P04_07/Prerequisites.lean",
+    "Experimental/P04_07/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p04-07_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p04-07_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p04-07_construction",
+  "original_snapshot_commit": "24ead265dee4b6732386e42336df3ec4dc49426a",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P04_07/Prerequisites.lean",
+      "commit": "24ead265dee4b6732386e42336df3ec4dc49426a",
+      "url": "https://github.com/randogelist/snditeration/blob/24ead265dee4b6732386e42336df3ec4dc49426a/Experimental/P04_07/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P04_07/Target.md",
+      "commit": "24ead265dee4b6732386e42336df3ec4dc49426a",
+      "url": "https://github.com/randogelist/snditeration/blob/24ead265dee4b6732386e42336df3ec4dc49426a/Experimental/P04_07/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
