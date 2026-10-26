@@ -215,3 +215,45 @@ branch is tracked separately, without inventing PROP/ALT iteration lineage.
 
 PR #39 advanced to [d336519fa7ef](https://github.com/randogelist/snditeration/tree/d336519fa7ef42cb1cf847849c6e22652e8ca6b1); [CI 40326832707](https://github.com/randogelist/snditeration/actions/runs/40326832707) was building with its audit pending. Its 16 new imported library modules are candidates, not covered by the older successful receipt. The [README continuation](../README.md#unverified-continuation--26-october-2026) records the affected items and exact boundaries. All 108 experimental heads still match publication; 110 live branches and 72 paired attempts remain. No scaffold assumption or downstream bridge is newly discharged, and no catalog iteration is invented for the cross-item repair branch. Companion PR #49 likewise advanced to b1c99c0d25cf94ee2cfbb398f697b7e50c363f89 with CI still running; its previous 40320889232 run failed. Immutable publication and successful historical receipts above remain intact.
 
+
+## Chapter 6 evidence refresh — 26 October 2026
+
+**6.3(1): companion component `!!`; destination transfer not yet certified.**
+For every prime q≥5, the actual rows A_r(x)=x^r+x^(r+q), 0≤r<q,
+give determinant valuation −7q at zero and at every rational a/b with q∤b.
+The coefficient identification, four actual moments, slope 2I and determinant
+evaluation bridge are proved, with no assumed local determinant conclusion.
+[Exact source](https://github.com/randogelist/zetahyperbolic-axiom/blob/cdcb1935aa73a7c7e65006c1c198d114e9dcc6db/src/LeanPaper/BeukersPrimeMatrix.lean)
+passed [CI 40339809027](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40339809027),
+job 121631103447: 263 modules; 3,162 theorems / 3,901 project declarations
+in the transitive audit, using only `propext`, `Classical.choice`, `Quot.sound`.
+The module is explicitly imported and included in the all-project audit.
+[Audit log](https://github.com/randogelist/zetahyperbolic-axiom/blob/b56c8102d25b931a601992c93bf30b19cc7ee103/validation/github/20261026-prime/kernel-audit.log)
+and [source/dependency receipt](https://github.com/randogelist/zetahyperbolic-axiom/blob/b56c8102d25b931a601992c93bf30b19cc7ee103/validation/github/20261026-prime/acceptance.json)
+remain in the companion repository. Companion PRs #49 and #50 are merged;
+its main is `b56c8102d25b931a601992c93bf30b19cc7ee103`, differing from the
+tested `cdcb1935aa73a7c7e65006c1c198d114e9dcc6db` only in documentation/receipts.
+
+The printed intermediate integral-remainder congruence is false at q=7,r=0;
+the proof uses the sufficient normalized remainder of q-adic norm <1.
+This repairs the proof, without weakening the part (1) conclusion.
+**Whole 6.3 remains unresolved:** part (2)'s prescribed positive-cone construction
+still requires correction and valid tail control. No whole-original count changes:
+**13/45 verified on historical PR39 sources; 9/45 integrated into destination main.**
+
+Destination PR39 remains open and unmerged. Its later source
+`009c368e189be6924d23e56643eff008826b7907` failed
+[run 40342577767](https://github.com/randogelist/snditeration/actions/runs/40342577767)
+before the audit and placeholder scan. Failures include beta root convergence,
+partial fractions, pole norms, scaled units and polynomial integrality.
+New Chapter 6 source candidates receive no certification from this failed run.
+Earlier successful immutable certificates remain valid for their recorded states.
+
+The active user focus is Chapter 6. Next gates are destination build/audit of the
+new candidates and exact scope checks; 6.3(2)'s cone repair and 6.8's missing
+arithmetic/decay inputs remain mathematical obstacles. The broader register's
+next unrefuted original, 3.7, still needs actual centered-coefficient nonvanishing.
+All 108 experimental heads match their publication receipts: 110 destination
+branches and 12 companion branches were observed. The 72 paired attempts retain
+their source-only status; no experimental assumption discharge or bridge is inferred.
+

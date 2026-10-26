@@ -12,6 +12,47 @@ open hypotheses, or printed claims requiring repair. These counts are an
 inventory, not a percentage of mathematical work completed. No unconditional
 ζ(5)/ζ(7) irrationality, RH, finite-witness closure, or full-paper completion is claimed.
 
+## Chapter 6 evidence refresh — 26 October 2026
+
+**6.3(1): companion component `!!`; destination transfer not yet certified.**
+For every prime q≥5, the actual rows A_r(x)=x^r+x^(r+q), 0≤r<q,
+give determinant valuation −7q at zero and at every rational a/b with q∤b.
+The coefficient identification, four actual moments, slope 2I and determinant
+evaluation bridge are proved, with no assumed local determinant conclusion.
+[Exact source](https://github.com/randogelist/zetahyperbolic-axiom/blob/cdcb1935aa73a7c7e65006c1c198d114e9dcc6db/src/LeanPaper/BeukersPrimeMatrix.lean)
+passed [CI 40339809027](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40339809027),
+job 121631103447: 263 modules; 3,162 theorems / 3,901 project declarations
+in the transitive audit, using only `propext`, `Classical.choice`, `Quot.sound`.
+The module is explicitly imported and included in the all-project audit.
+[Audit log](https://github.com/randogelist/zetahyperbolic-axiom/blob/b56c8102d25b931a601992c93bf30b19cc7ee103/validation/github/20261026-prime/kernel-audit.log)
+and [source/dependency receipt](https://github.com/randogelist/zetahyperbolic-axiom/blob/b56c8102d25b931a601992c93bf30b19cc7ee103/validation/github/20261026-prime/acceptance.json)
+remain in the companion repository. Companion PRs #49 and #50 are merged;
+its main is `b56c8102d25b931a601992c93bf30b19cc7ee103`, differing from the
+tested `cdcb1935aa73a7c7e65006c1c198d114e9dcc6db` only in documentation/receipts.
+
+The printed intermediate integral-remainder congruence is false at q=7,r=0;
+the proof uses the sufficient normalized remainder of q-adic norm <1.
+This repairs the proof, without weakening the part (1) conclusion.
+**Whole 6.3 remains unresolved:** part (2)'s prescribed positive-cone construction
+still requires correction and valid tail control. No whole-original count changes:
+**13/45 verified on historical PR39 sources; 9/45 integrated into destination main.**
+
+Destination PR39 remains open and unmerged. Its later source
+`009c368e189be6924d23e56643eff008826b7907` failed
+[run 40342577767](https://github.com/randogelist/snditeration/actions/runs/40342577767)
+before the audit and placeholder scan. Failures include beta root convergence,
+partial fractions, pole norms, scaled units and polynomial integrality.
+New Chapter 6 source candidates receive no certification from this failed run.
+Earlier successful immutable certificates remain valid for their recorded states.
+
+The active user focus is Chapter 6. Next gates are destination build/audit of the
+new candidates and exact scope checks; 6.3(2)'s cone repair and 6.8's missing
+arithmetic/decay inputs remain mathematical obstacles. The broader register's
+next unrefuted original, 3.7, still needs actual centered-coefficient nonvanishing.
+All 108 experimental heads match their publication receipts: 110 destination
+branches and 12 companion branches were observed. The 72 paired attempts retain
+their source-only status; no experimental assumption discharge or bridge is inferred.
+
 ## Focused result: Theorem 6.1 — corrected completion
 
 **6.1(1) and 6.1(2) are exact original proofs; corrected 6.1(3) is complete, all `!!`.**
@@ -285,7 +326,7 @@ Additional numbered items (outside the 45-proof denominator):
 | --- | --- | --- | --- | --- |
 | Theorem **6.1** · p.29 | Divided-difference $p$-adic valuation law and intrinsic $p^{-6}$ barrier | **REPAIR; exact (1)–(2), complete corrected (3) `!!` on PR39** | Actual Mellin/Jacobian bridge, harmonic lower bounds and valuation -7; full p-adic local residue, determinant norm p^14 and primitive-vector obstruction verified. Literal nonzero-vector clause is refuted by (p,0). Complete corrected theorem is separate from the original count and main proof integration. | [correction and evidence](docs/THEOREM_6_1_CORRECTIONS.md); [exact source](https://github.com/randogelist/snditeration/blob/e56da14673218911252b92790d5fe713aea66e19/Zetahyperbolic/Section6/Theorem61.lean); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-01_alt_construction) |
 | Theorem **6.2** · p.31 | Simultaneous weight-$(6, 7)$ Beukers functional with zero denominator overhead | OPEN in main; **exact `!!` on PR39** | Whole original verified: actual adjacent/extra-denominator integrals, arbitrary integer polynomial and alpha/beta, exact zeta(6)/zeta(7) identity, printed rational correction and proved 6*d_K^7 integer clearing. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-02_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-02_alt_construction); [verified destination source](https://github.com/randogelist/snditeration/blob/0672896955e5dc7f7f9b9a0f5340c59e69f0890b/Zetahyperbolic/Section6/BeukersSimultaneous.lean) |
-| Theorem **6.3** · p.32 | Unconditional $q$-adic non-vanishing and explicit positive-cone approximations for $G_{\mathcal{A}}^{(7)}(X)$ | REPAIR / OPEN | Part (2) has an external rational h=4 negative-direction counterexample, not a Lean replay; independent q-adic part (1) remains open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_alt_construction) |
+| Theorem **6.3** · p.32 | Unconditional $q$-adic non-vanishing and explicit positive-cone approximations for $G_{\mathcal{A}}^{(7)}(X)$ | REPAIR / OPEN; **companion (1) `!!`** | Part (1) has companion component `!!`: actual two-monomial determinant valuation −7q for all primes q≥5 and q-integral rational inputs; see the later Chapter 6 evidence refresh. Part (2)'s positive-cone claim still requires repair; its earlier external rational h=4 counterexample is not promoted by a failed destination run. Destination transfer remains uncertified. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-03_alt_construction) |
 | Theorem **6.4** · p.33 | Character–Vandermonde sign cancellation and unconditional hyperbolicity for $\beta(4)$ | OPEN; source partial | Finite character-Vandermonde cancellation and two/three-node Gram models; actual β4 analytic pencil and global arithmetic open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-04_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-04_alt_construction) |
 | Theorem **6.5** · p.34 | Unconditional $q$-adic non-vanishing for $\Delta_K^{(\beta(4))}(0)$ | OPEN | Specified q≡1 mod8 determinant valuation and local unit-block proof missing. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-05_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-05_alt_construction) |
 | Theorem **6.6** · p.35 | Generalized multi-weight positive-definite pencil | OPEN; source partial | Finite anchored positive cone, full-degree real spectrum and Turán under matrix assumptions; actual multiweight density/arithmetic inputs open. | [PAPER_GAP_REGISTER](docs/PAPER_GAP_REGISTER.md); [prop](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-06_prop_construction) · [alt](https://github.com/randogelist/snditeration/tree/experiment/zetahyperbolic-p06-06_alt_construction) |
@@ -305,12 +346,12 @@ Additional numbered items (outside the 45-proof denominator):
 ## Separate companion evidence
 
 The companion repository is a source of reusable components, not an automatically
-accepted extension of this repository. Its current `main` is
+accepted extension of this repository. Its historical `main` snapshot was
 [`41674aac3544bf314a53b4302266ad22a30ae707`](https://github.com/randogelist/zetahyperbolic-axiom/tree/41674aac3544bf314a53b4302266ad22a30ae707).
 Only README documentation differs from the prior source snapshot
 `211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80`, which has [failed CI 40281177876](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40281177876).
 Companion [PR #49](https://github.com/randogelist/zetahyperbolic-axiom/pull/49),
-earlier source `bdcbb8bbd54d9837e3230cd50c28358eec37ee42`, has now failed
+earlier source `bdcbb8bbd54d9837e3230cd50c28358eec37ee42`, failed
 [CI 40320889232](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40320889232).
 The later `b1c99c0d25cf94ee2cfbb398f697b7e50c363f89` run [40326559574](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40326559574) also failed. Subsequent source `7250b47ba4d20ba934e890966a9b77a559689cfd` passed [CI 40327942655](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40327942655): 260 modules, 3,076 theorem declarations and 3,809 declarations, with only the three standard axioms. The [separate companion receipt](docs/receipts/COMPANION_20261026_7250.json) records exact reviewed whole-original 3.8, 5.3 and 6.2 scope. The 5.3/6.2 destination transfers have their own later CI certificate above; donor PASS alone does not supply integration. Additional companion components prove the 5.6 outer integral/continuity refutations, the 6.1 outer off-diagonal valuation and the 6.10 finite sharp Hadamard bound. They do not complete those whole originals or change destination source integration.
 The following earlier exact-source receipts were inspected independently; none
@@ -326,7 +367,7 @@ closes the corresponding whole paper item or certifies a new destination import.
 All four cited companion logs contain an independent visited-set all-project
 axiom audit with `AXIOM_AUDIT_ACCEPTED=ALL_PROJECT_DECLARATIONS` and only
 `Quot.sound`, `Classical.choice`, `propext`. Historical success remains attached
-to its source and dependencies; it does not turn the failed current main into PASS.
+to its source and dependencies; it does not turn that failed historical main snapshot into PASS. Later companion main evidence is recorded separately in the Chapter 6 refresh.
 
 ## Source reconciliation and continued checks
 
