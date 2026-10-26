@@ -13,6 +13,14 @@ The source is `YOU_ARE_GOODWORKFLOWFRONTIER_WORKFLOW_DEFINITION_v1_0_15`. These 
 
 A conditional A-Tier supporting lemma never certifies an unconditional parent theorem. A theorem proved only in the companion repo is cross-repo verified, **not** automatically a locally imported `snditeration/main` theorem.
 
+## Latest mathematical update: saturation broken by new A-Tier theorem
+
+On **26 October 2026**, exact printed **Theorem 5.1** passed the destination's [CI 40267850777](https://github.com/randogelist/snditeration/actions/runs/40267850777), **8,783 jobs**, standard-only axiom audit, and [merged via PR #24](https://github.com/randogelist/snditeration/pull/24) at `1ae34f2bc30135460c357f4efffe1fdbb93d5009`.
+
+This is **genuinely newly compiled and certified mathematics**, unlike previous reclassification: the actual positive two-variable Beukers density and the exact diagonal/offdiagonal ζ(7) moment integral are proved for all natural indices. The source-mining plateau previously at **7/45** is therefore superseded by **8/45** (all eight locally A-Tier), leaving **37** unfinished printed items. The `∅ REINFERENCE_NO_DELTA` sign from the earlier fixed-source snapshot no longer applies to the new source. The next separate endpoint is the analytic infinite Krein decomposition in Theorem 5.2(2); no source for that target has been started in this cycle.
+
+**Machine receipt:** [`CONVERGENCE_HISTORY_2026-10-26.json`](CONVERGENCE_HISTORY_2026-10-26.json) now includes a certified `NEW_WHOLE_A_TIER` event with the new source merge commit and CI receipt. Historic earlier `7/45` values remain preserved as timestamps, not as current claims.
+
 ## 2. The measured audit-history sequence
 
 Source of measurements: historical snapshots of [`docs/PAPER_GAP_TRACKER.md`](PAPER_GAP_TRACKER.md) from the *same* [persistent branch](https://github.com/randogelist/snditeration/tree/persistent/zetahyperbolic-paper-gap-tracker). Full, reproducible snapshot metadata: [`CONVERGENCE_HISTORY_2026-10-26.json`](CONVERGENCE_HISTORY_2026-10-26.json).

@@ -196,18 +196,42 @@
       "new_lean_proof_compilations_at_this_tracker_commit": 0,
       "reinference_signal": "∅ REINFERENCE_NO_DELTA",
       "saturation": "EVIDENCE_SATURATED_FIXED_SOURCE"
+    },
+    {
+      "checkpoint_sha": "1ae34f2bc30135460c357f4efffe1fdbb93d5009",
+      "utc_time": "2026-10-26T04:15:41Z",
+      "stage": "NEW_WHOLE_A_TIER — P05.01 actual positive double integral and all ζ7 moments, PR #24 CI 40267850777 PASS",
+      "whole_printed_a_tier": 8,
+      "unresolved_item_rows_with_citation_crosses": 28,
+      "literal_inline_crossout_labels": 61,
+      "independently_indexed_passing_companion_modules": 22,
+      "newly_annotated_unresolved_items": 0,
+      "additional_inline_crossout_labels": 1,
+      "newly_indexed_companion_modules": 0,
+      "new_lean_proof_compilations_at_this_tracker_commit": 3,
+      "new_whole_a_tier": 1,
+      "CI": {
+        "run": 40267850777,
+        "status": "PASS",
+        "build_jobs": 8783,
+        "axiom_guard": "PASS",
+        "source_placeholder_guard": "PASS"
+      },
+      "merge_pr": 24,
+      "source_module_count": 3,
+      "remarks": "Unfinished source-mining inventory is no longer a fixed-source corpus: new Lean declarations prove the exact original Theorem 5.1. Updated 45-item and 64-subobligation tables are authoritative."
     }
   ],
   "latest_summary": {
-    "whole_printed_a_tier": 7,
+    "whole_printed_a_tier": 8,
     "whole_total": 45,
     "unchanged_since": "2026-10-25T21:07:09Z",
-    "unfinished_paper_items": 38,
+    "unfinished_paper_items": 37,
     "unfinished_rows_with_one_or_more_crosses": 28,
-    "literal_inline_crossout_labels": 60,
+    "literal_inline_crossout_labels": 61,
     "pinned_pass_modules": 22,
-    "new_main_lean_proof_builds_during_this_documentation_series": 0,
-    "convergence_classification": "EVIDENCE_SATURATED_FIXED_SOURCE following two no-delta passes after cataloging four existing sources; not mathematical impossibility or a proof completeness assertion.",
+    "new_main_lean_proof_builds_during_this_documentation_series": 3,
+    "convergence_classification": "NEW_WHOLE_A_TIER_EVENT; past fixed-source saturation reset by successful proof merge",
     "remaining_critical_dependency_examples": [
       "4.4 actual-family explicit arithmetic multiplier",
       "4.4 uniform quadratic primitive decay",
@@ -215,7 +239,7 @@
       "5.1 true two-variable Beukers moment integral",
       "5.2 infinite Krein-tail control and all-dimensional cones"
     ],
-    "reinference_signal": "∅ REINFERENCE_NO_DELTA",
+    "reinference_signal": "NO_DELTA_CLEARED_BY_PROOF_SOURCE_UPDATE",
     "last_two_independent_passes": [
       {
         "id": "A",
@@ -233,7 +257,10 @@
         "changed_blockers": 0,
         "source_ci_regressions": 0
       }
-    ]
+    ],
+    "new_successful_proof_ci_run": 40267850777,
+    "new_whole_original_item": "Theorem 5.1",
+    "local_a_tier_items": 8
   },
   "limitations": [
     "All counts are derived from historical markdown snapshots, not independent mathematical proof checks.",
