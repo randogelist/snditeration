@@ -1,0 +1,64 @@
+{
+  "id": "P04_07",
+  "manuscript_id": "4.7",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "axioms": [
+    {
+      "full_name": "Experimental.P04_07.weight_five_spectral_cap_input",
+      "math_meaning": "Earlier 4.4 cap for the actual whitened operator on the exact 30n lattice; no root clustering assumed.",
+      "dependency_ids": [
+        "P04_04"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_07.weight_five_determinant_lower_input",
+      "math_meaning": "Earlier 4.6(1) actual normalized log-determinant lower rate; no finite-count or root-separation conclusion assumed.",
+      "dependency_ids": [
+        "P04_06_PART1"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_07.weight_five_primitive_height_input",
+      "math_meaning": "Earlier 4.6(2) upper naive height for the actual primitive polynomial.",
+      "dependency_ids": [
+        "P04_06_PART2_UPPER"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    },
+    {
+      "full_name": "Experimental.P04_07.integer_factor_height_input",
+      "math_meaning": "Classical integer factor-height bound with a conservative explicit 2^degree sqrt(degree+1) multiplier.",
+      "dependency_ids": [
+        "CLASSICAL_GELFOND_MIGNOTTE_FACTOR_HEIGHT"
+      ],
+      "status": "SOURCE_ONLY_UNCOMPILED"
+    }
+  ],
+  "verified_upstream_refs": [
+    "ManuscriptChain.Spectral.actual_complex_root_iff",
+    "ManuscriptChain.Spectral.actual_complex_root_distance",
+    "ManuscriptChain.primitivePolynomial_root_iff",
+    "ManuscriptChain.ACTUAL_SPECTRAL_FACTORIZATION"
+  ],
+  "dependency_ids": [
+    "P03_01",
+    "P04_04",
+    "P04_06",
+    "CLASSICAL_GELFOND_MIGNOTTE",
+    "CLASSICAL_MAHLER_ROOT_SEPARATION"
+  ],
+  "coverage": "Genuine earlier-item quantitative inputs are explicit on the actual family. The generic factor-height prerequisite covers one arithmetic step only. The final root-count, nearest-root, trace and separation claims are not assumed.",
+  "repair_or_interface_gates": [
+    "Discharge P04_04 and the specified P04_06 clauses on the same definitions and parameter lattice; they are not yet verified estimates.",
+    "Supply the nonzero small primitive-center evaluation needed for the closest-root upper bound; the present scaffold does not assume or derive it.",
+    "Formalize the finite cap-and-average argument, counted root multiplicities, reciprocal trace transport and the exact strict comparison 0.0140h>0.012K.",
+    "Prove the integer-factor bound and a correct Mahler/discriminant separation inequality, including leading-coefficient and height normalization. Do not silently substitute coefficient height for Mahler measure without its extra factor.",
+    "Keep O(K log K) as a quantified error with an explicit constant/onset before claiming the full original separation bound."
+  ],
+  "proof_status": "NO_TARGET_PROOF; EXPERIMENTAL_AXIOMS_NOT_CERTIFICATION"
+}

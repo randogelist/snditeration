@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "paper_item": "4.7",
+  "module_key": "P04_07",
+  "branch": "experiment/zetahyperbolic-p04-07_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P04_07.weight_five_spectral_cap_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P04_04"
+      ]
+    },
+    {
+      "name": "Experimental.P04_07.weight_five_determinant_lower_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P04_06_PART1"
+      ]
+    },
+    {
+      "name": "Experimental.P04_07.weight_five_primitive_height_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "P04_06_PART2_UPPER"
+      ]
+    },
+    {
+      "name": "Experimental.P04_07.integer_factor_height_input",
+      "meaning": "See original item metadata.",
+      "dependencies": [
+        "CLASSICAL_GELFOND_MIGNOTTE_FACTOR_HEIGHT"
+      ]
+    }
+  ],
+  "axiom_count": 4,
+  "namespace": "Experimental.P04_07",
+  "paper_reference_items": [
+    "4.4",
+    "4.6"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "9daa2a80f00df797002ab468c8c31fd0acc6e51c65ebb19e1b730b98faf5b460",
+    "Assumptions.json": "4581ba091058ac445f52922bab70312c71f9cb973f0e3da88e974a06a6947484",
+    "Target.md": "fdf76ca5e84cee9387023607098172a6db649b8aabbe3db77d7ceb3ef1d99a10",
+    "Work.lean": "6a26c9c5f1e89e3a9d6308253c6bab996952945ecf5b6e1f713ceb4bf2361db8"
+  },
+  "audit_sha256": "b8b11fc064fe3124eca10a74f1e7e38a19f0496b224a4f3d61e430820e37983c",
+  "original_statement_sha256": "22615ec022782d39d28a50a382d0b055fdc8decf3813c147b8428c321a2e2087",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
