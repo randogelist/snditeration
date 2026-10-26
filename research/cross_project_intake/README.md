@@ -6,6 +6,13 @@ These 16 byte-preserved companion source snapshots are deliberately stored as .l
 
 Companion provenance: randogelist/zetahyperbolic-axiom at commit 86ca99a23d65cde4880a9005a49076c43e7bc968 (CI PASS 40188664869, standard-only axiom audit). Exact SHA-256 per module in MANIFEST.json.
 
+## Archive admission status (26 October 2026)
+
+This PR closes research-source intake only. It changes no executable Lean imports, does not rebuild the sixteen .lean.txt files, and awards no new A-Tier theorem.
+
+Since the original snapshot, separately compiled destination PRs have already merged for printed 4.3 (PR #17), 2.3 (PR #18), 5.4 (PR #21), finite 5.2(1) (PR #25), and additional independent analytic/Section 4 supports (PRs #19, #20, #22, #23, #27, #28). Their own destination CI receipts establish their status; the staged copies below remain historical provenance.
+
+This source archive remains under research/cross_project_intake and is not an active proof branch. The failed PR #15 and parallel active theorem-development branches are untouched.
 ## Proposed admission waves
 
 | Wave | Manuscript gaps | Candidate imported theorem | Extra work before merger |

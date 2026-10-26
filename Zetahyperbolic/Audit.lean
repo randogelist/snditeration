@@ -153,3 +153,102 @@ run_cmd do
   if checked == 0 then
     throwError "No project theorems found for dependency audit"
   Lean.logInfo m!"GOODWORKFLOWFRONTIER::AXIOM_ALLOWLIST::THEOREMS_CHECKED={checked}"
+
+-- Proposition 4.3: exact ℤ_p, ℚ_p, ℂ_p statements and original integer polynomial.
+#print axioms PaperAdvances.Proposition4_3_PadicDisk.PROPOSITION_4_3_INTEGRAL_QPADIC
+#print axioms PaperAdvances.Proposition4_3_PadicDisk.PROPOSITION_4_3_INTEGER_QPADIC
+#print axioms PaperAdvances.Proposition4_3_IsometricExtension.PROPOSITION_4_3_INTEGRAL_ISOMETRIC_EXTENSION
+#print axioms PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGRAL_COMPLEX_PADIC
+#print axioms PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGER_COMPLEX_PADIC
+#print axioms ManuscriptChain.proposition_4_3_complex_padic_disk
+#print axioms ManuscriptChain.primitivePolynomial_complex_padic_disk
+
+#print axioms ManuscriptChain.Tau.reciprocal_even_derivative
+#print axioms ManuscriptChain.Tau.poleSpan_normalized_derivative
+#print axioms ManuscriptChain.Tau.poleElement_coefficient_eq_analytic
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_poles
+
+#print axioms ManuscriptChain.Tau.polynomialReal_normalized_derivative
+#print axioms ManuscriptChain.Tau.coordinateReal_even_derivative
+#print axioms ManuscriptChain.Tau.rationalDomain_coefficient_eq_coordinate_derivative
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic_coordinates
+
+#print axioms ManuscriptChain.Tau.normalized_derivative_rationalDomain
+#print axioms ManuscriptChain.Tau.rationalFunctional_difference_analytic
+
+-- Independent integration P05.01: Mellin log moments; source copied from PR #15.
+#print axioms ManuscriptChain.UnitLogMoments.image_exp_neg
+#print axioms ManuscriptChain.UnitLogMoments.integral_exp_neg_substitution
+#print axioms ManuscriptChain.UnitLogMoments.integral_pow_log
+#print axioms ManuscriptChain.UnitLogMoments.integrable_pow_log
+
+-- Standalone PR15 Newton/Turan core: audited local integration, not full printed Theorem 3.7.
+#print axioms ManuscriptChain.NewtonTuran.Core.turan_eq_zero_iff_multiple_zero
+#print axioms ManuscriptChain.NewtonTuran.HigherDerivativeTuran.iterated_turan_nonnegative
+#print axioms ManuscriptChain.NewtonTuran.HigherDerivativeTuran.iterated_turan_strict
+#print axioms ManuscriptChain.NewtonTuran.NormalizedNewton.coefficient_newton
+#print axioms ManuscriptChain.NewtonTuran.ConsecutiveDerivativeZeros.consecutive_taylor_nonvanishing
+#print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.coefficient_newton_strict_criterion
+#print axioms ManuscriptChain.NewtonTuran.StrictNormalizedNewton.normalized_shifted_newton_strict
+
+-- Independent P03.02 corrected real-s density/moments; full continuous pencil remains open.
+#print axioms ManuscriptChain.ContinuousWeight.printedPrefactor_eq
+#print axioms ManuscriptChain.ContinuousWeight.density_pos
+#print axioms ManuscriptChain.ContinuousWeight.integral_monomial_density
+#print axioms ManuscriptChain.ContinuousWeight.weightedDensity_pos
+#print axioms ManuscriptChain.ContinuousWeight.weightedMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.momentMeasure_nonzero
+#print axioms ManuscriptChain.ContinuousWeight.integral_momentMeasure
+#print axioms ManuscriptChain.ContinuousWeight.integrableOn_weightedDensity_moment
+
+-- Theorem 5.4: actual rational integer-pole cancellation and endpoint.
+#print axioms ManuscriptChain.Tau.evenPolePair_coe
+#print axioms ManuscriptChain.Tau.evenPolePair_cancellation
+#print axioms ManuscriptChain.Tau.evenPolePair_one
+#print axioms ManuscriptChain.Tau.finite_evenPolePair_cancellation
+
+-- Independent local A-tier support of printed 3.7: exact actual-family declarations.
+#print axioms ManuscriptChain.NewtonTuran.Actual.spectral_polynomial_splits
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_hasDistinctRoots
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_all_derivative_turan_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_primitive_laguerre
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_consecutive_nonvanishing
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_newton_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_laguerre_strict
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_nonnegative
+#print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_strict
+
+#print axioms ManuscriptChain.DualAlgebra.dualSlopeMatrix_eq_CCT
+#print axioms ManuscriptChain.DualSpectral.coefficientSlope_posDef
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_degree
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_zeros_real
+#print axioms ManuscriptChain.Beukers.integral_logMonomial
+#print axioms ManuscriptChain.Beukers.integral_momentTerm
+#print axioms ManuscriptChain.Beukers.integral_density_moment_series
+#print axioms ManuscriptChain.Beukers.diagonal_moment
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment
+#print axioms ManuscriptChain.Beukers.theorem_5_1_exact_moments
+#print axioms ManuscriptChain.Beukers.density_strictly_positive_on_square
+#print axioms ManuscriptChain.Beukers.density_measurable
+
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_eq_rat
+#print axioms ManuscriptChain.Beukers.offdiagonal_moment_is_rational
+
+-- Conditional all-complex-root separation comparison, isolated from actual ζ5 rate.
+#print axioms ManuscriptChain.Spectral.comparisonRadius_pos
+#print axioms ManuscriptChain.Section4ComplexComparison.polynomial_comparison
+#print axioms ManuscriptChain.Section4ComplexComparison.integer_comparison
+
+-- P04.01: exact conditional rate/index transfer, no specific ζ5 decay assumption discharged.
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_bounds
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_tendsto
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_radius_budget
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_denominator_budget
+#print axioms ManuscriptChain.Section4IndexSelection.exists_indexBudget_of_rates
+#print axioms ManuscriptChain.Section4IndexSelection.measure_of_rates
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_real_exponent
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_lattice
+#print axioms ManuscriptChain.Section4EffectiveBudget.explicit_budgets
+#print axioms ManuscriptChain.Section4EffectiveBudget.effective_spectral_measure
+#print axioms ManuscriptChain.Section4EffectiveBudget.manuscript_effective_rate_margins

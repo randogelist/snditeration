@@ -1,0 +1,34 @@
+{
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "target": "P05_04_EVEN_POLE_CANCELLATION",
+  "status": "A_TIER_LOCAL_VERIFIED",
+  "source_branch": "feat/zetahyperbolic-p05-04-even-pole-cancellation",
+  "source_head": "7718761f994929ea81c29e1114e804f2f126f927",
+  "merge_sha": "f64b49b9b51b43626abbf09d1cf3821b187ea8b5",
+  "pull_request": 21,
+  "ci": {
+    "run": 40265986335,
+    "job": 121388419718,
+    "status": "PASS",
+    "jobs": 8773,
+    "project_theorem_declarations_audited": 1011,
+    "placeholder_scan": "PASS"
+  },
+  "source_files": [
+    "Zetahyperbolic/Section5/EvenPoleCancellation.lean"
+  ],
+  "fully_qualified_declarations": [
+    "ManuscriptChain.Tau.evenPolePair_coe",
+    "ManuscriptChain.Tau.evenPolePair_cancellation",
+    "ManuscriptChain.Tau.evenPolePair_one",
+    "ManuscriptChain.Tau.finite_evenPolePair_cancellation"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler": "Lean 4.33.0",
+  "mathlib_sha": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "next_target_started": false
+}
