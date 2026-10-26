@@ -320,7 +320,56 @@
       "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/Section4ManuscriptBridge.lean",
       "verified_receipt_status": "PASS",
       "scope_and_limitation": "An actual admissible odd-zeta Hankel pencil satisfies the finite spectral-count inequality if its pointwise exponent cap and average bound are separately supplied. A root with log(|beta|)>=τ has exact determinant zero and |root-center|<=exp(-τ). The constructed primitive integer polynomial also satisfies the complex p-adic zero-free disk conditional on given center nonzero and small-radius assumptions; no actual-family effective cap, p-adic center valuation, rate, or ζ5 irrationality follows."
+    },
+    {
+      "paper_item": "3.7 root critical points (not principal minor interlacing)",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection3.StrictTuranRolle",
+      "lean_declarations": [
+        "PaperAdvances.Theorem3_7_StrictRolle.THEOREM_3_7_ACTUAL_TURAN_EQUALITY",
+        "PaperAdvances.Theorem3_7_StrictRolle.THEOREM_3_7_ACTUAL_CRITICAL_POINT_SEPARATION"
+      ],
+      "source_sha256": "155ea149cad0a873f6e63270cadccf170808db693e79b41a0ac14759d6e1e5bb",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection3/StrictTuranRolle.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "For actual odd-zeta determinant, first Turan equality iff real multiple root and an actual derivative zero lies strictly between any two distinct real determinant roots. Does not show interlacing between successive principal minors."
+    },
+    {
+      "paper_item": "4.1 integer polynomial comparison",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.Section4ComplexComparison",
+      "lean_declarations": [
+        "LeanPaper.Section4ComplexComparison.polynomial_comparison",
+        "LeanPaper.Section4ComplexComparison.integer_comparison"
+      ],
+      "source_sha256": "f8905f126bdcde6dc882049d69f654d7638804f0cad487fb31e7c69a5eac96fc",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/Section4ComplexComparison.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "If every complex root is separated from ξ by exp(-ρK), an actual integer polynomial P has nonzero evaluation at nearby rationals with factor-two upper comparison under explicit radius. Actual all-root separation and family-specific height rates remain open."
+    },
+    {
+      "paper_item": "5.2(2) abstract summable infinite Krein polarization",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.KreinIdentity",
+      "lean_declarations": [
+        "PaperOrder.PrincipalTheorems.weightSeven_Krein_bilinear",
+        "PaperOrder.PrincipalTheorems.weightSeven_Krein_quadratic",
+        "PaperOrder.PrincipalTheorems.weightSeven_Krein_infinite_modes"
+      ],
+      "source_sha256": "bc04452f1d2cb72e19fbeb29109bea521614bdbba6b67065a9b4dad261e4a237",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/KreinIdentity.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Algebraic weight-seven six-channel pairing equals the normalized positive-minus-negative three-channel pairing; if the mode pairing is summable, tsum identity follows termwise. Does not prove that actual two-variable Beukers integral equals these mode sums, or that infinite cone tails are controlled."
     }
   ],
-  "last_source_audit": "2026-10-26, source-difference round discovered actual-pencils close-root transfer"
+  "last_source_audit": "2026-10-26 second reinference pass: integer root comparison, Rolle and summable Krein identity"
 }
