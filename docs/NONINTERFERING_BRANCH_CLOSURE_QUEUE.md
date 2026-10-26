@@ -14,12 +14,15 @@ Integration-only mandate: close already-proved isolated modules without changing
 | [snditeration #23](https://github.com/randogelist/snditeration/pull/23) | **INTEGRATED** actual Newton/Turán, merge `9f630aef`; [PR CI 40266691690](https://github.com/randogelist/snditeration/actions/runs/40266691690), [main CI 40266911494](https://github.com/randogelist/snditeration/actions/runs/40266911494) PASS. Whole 3.7 open. |
 | [snditeration #25](https://github.com/randogelist/snditeration/pull/25) | **INTEGRATED** six-module finite dual spectrum, merge `484e285e`; [PR CI 40267266192](https://github.com/randogelist/snditeration/actions/runs/40267266192), [main CI 40267527070](https://github.com/randogelist/snditeration/actions/runs/40267527070) PASS. Infinite cones open. |
 
+| [snditeration #27](https://github.com/randogelist/snditeration/pull/27) | **INTEGRATED** conditional complex-root polynomial comparison; merged `c00bb4cf5db3d450449d355a0523a09e68daf351`, [PR CI 40269076009 PASS](https://github.com/randogelist/snditeration/actions/runs/40269076009), [main CI 40269287634 PASS](https://github.com/randogelist/snditeration/actions/runs/40269287634). Does not prove actual ζ5 root gap. |
+
 ## Frozen source donors and protected parallel work
 
 | PR or branch | Restriction |
 |---|---|
 | [snditeration #22](https://github.com/randogelist/snditeration/pull/22) | **INTEGRATED** as `a4509bc59c465ec484406b86972a08ba395347d5`: corrected real-s density/weighted measure, not full printed 3.2. [PR CI 40265703589](https://github.com/randogelist/snditeration/actions/runs/40265703589) PASS, eight exact standard-only axiom checks. Main [CI 40265897434](https://github.com/randogelist/snditeration/actions/runs/40265897434) also **PASS** after merge. Post-merge all three gates (full Lean, transitive axioms, placeholder scan) passed. |
-| [snditeration #24](https://github.com/randogelist/snditeration/pull/24) | **ACTIVE OTHER AGENT** Beukers moment derivation. Do not edit, close or merge. |
+| [snditeration #24](https://github.com/randogelist/snditeration/pull/24) | **MERGED BY PARALLEL AGENT**, actual full Theorem 5.1 Beukers moments. PR CI 40267850777 PASS, merge `1ae34f2b`; offdiagonal rationality also merged as PR #26, CI 40268502325 PASS. |
+| [snditeration #28](https://github.com/randogelist/snditeration/pull/28) | **ACTIVE INTEGRATION CANDIDATE**: conditional logarithmic-index and quantitative transfer (three previously compiled donor modules). Full destination [CI 40269544633](https://github.com/randogelist/snditeration/actions/runs/40269544633) is mandatory before any merge; all actual-family decay and gap hypotheses remain open. |
 | [snditeration #15](https://github.com/randogelist/snditeration/pull/15) | Frozen failed-CI donor: salvage only independently compiled modules into separate new integration branches, never merge/close bulk PR |
 | [snditeration #16](https://github.com/randogelist/snditeration/pull/16) | Inert source-snapshot donor, not compiled in destination; do not merge/close as proof |
 | [snditeration #20](https://github.com/randogelist/snditeration/pull/20) | **INTEGRATED** — isolated NewtonTuran (general real-rooted polynomial hierarchy) merged as `8563380bef3f078dee0c29bc39cc9a40d2cf1030`. [PR CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) PASS, 7 targeted standard-only axiom reports, placeholder scan PASS. **NOT** the complete printed 3.7 |
@@ -35,4 +38,4 @@ Integration-only mandate: close already-proved isolated modules without changing
 5. Verify merged source on main and its separate main CI. Then record exact subclaim closure without inflating whole printed theorem counts.
 6. Branch deletion is distinct from merge and is not implied. Preserve historical branch refs when they serve as proof evidence.
 
-Current complete printed manuscript count: 7/45. Generic A-Tier supporting lemmas do not upgrade their whole parent theorem. This queue may be updated only upon a new independently verified merge or an explicit protected-work status change.
+Current complete printed manuscript count: 8/45 following the parallel agent’s fully certified Theorem 5.1 (PRs #24 and #26). Generic A-Tier supporting lemmas do not upgrade their whole parent theorem. This queue may be updated only upon a new independently verified merge or an explicit protected-work status change.
