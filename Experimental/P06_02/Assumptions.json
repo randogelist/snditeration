@@ -1,0 +1,48 @@
+{
+  "item_id": "6.2",
+  "namespace": "Experimental.P06_02",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-02_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Beukers.theorem_5_1_exact_moments",
+    "ManuscriptChain.Beukers.integral_density_moment_series"
+  ],
+  "dependency_ids": [
+    "5.1"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_02.harmonic_denominator_divides",
+      "meaning": "The denominator of H_r^(s), r≤K, divides d_K^s.",
+      "dependency_ids": [
+        "5.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.1 / finite lcm arithmetic"
+    },
+    {
+      "name": "Experimental.P06_02.inserted_geometric_integral_norm_summable",
+      "meaning": "Absolute-integral summability of the actual extra geometric series.",
+      "dependency_ids": [
+        "5.1"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "5.1"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "No repair is silently substituted for the verbatim target.",
+  "coverage": "Uses the verified density and moments directly; defines the exact lcm and inserted geometric-series terms. No simultaneous linear form evaluation or final denominator overhead is assumed.",
+  "remaining": "Prove both prerequisites, establish the extra geometric expansion and interchange, derive the ζ(6) tail, expand integer polynomial coefficients, and clear the divided-difference denominators. The target formula for R_K is not an axiom.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 31,
+  "source_reference_ids": [
+    "6.1"
+  ],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}

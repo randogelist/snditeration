@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_item": "6.2",
+  "module_key": "P06_02",
+  "branch": "experiment/zetahyperbolic-p06-02_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P06_02.harmonic_denominator_divides",
+      "meaning": "The denominator of H_r^(s), r≤K, divides d_K^s.",
+      "dependencies": [
+        "5.1"
+      ]
+    },
+    {
+      "name": "Experimental.P06_02.inserted_geometric_integral_norm_summable",
+      "meaning": "Absolute-integral summability of the actual extra geometric series.",
+      "dependencies": [
+        "5.1"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P06_02",
+  "paper_reference_items": [
+    "6.1"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "08dbbe70223f26b39529135b3f8adf0c44699a90f0baf2c1b867f663085628f9",
+    "Assumptions.json": "8cbb6e8bb76a3a1e7a52bda57d0c4754e4418f6a5ef7ea3cbfd5f111edd386cd",
+    "Target.md": "8c97481c1925633329edf9dfdad7a0e552cae5569928ab57f4925fe8d6a78d2b",
+    "Work.lean": "c79e6979f7a87fdfa8e02d5bc0ee5088c68c70777e862df22ec980c5e1111d14"
+  },
+  "audit_sha256": "8aeafa0135e558a307bc68cd6a5dd6229b7cd0a889a8e369def1f7e8889b8329",
+  "original_statement_sha256": "25f3423941f2e47409486d28cf33f3322dbf0e6db9dc80237ddf3e865a81a5d4",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
