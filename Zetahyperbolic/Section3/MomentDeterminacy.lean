@@ -67,7 +67,7 @@ theorem measure_eq_of_moments_of_exponential_neighbourhood
     refine ⟨fun n => (xs n : ℂ), ?_, he⟩
     rw [tendsto_nhdsWithin_iff] at hx ⊢
     constructor
-    · rw [Complex.tendsto_ofReal_iff]
+    · rw [Filter.tendsto_ofReal_iff]
       exact hx.1
     · simpa using hx.2
   have heq := AnalyticOnNhd.eqOn_of_preconnected_of_frequently_eq
@@ -76,7 +76,6 @@ theorem measure_eq_of_moments_of_exponential_neighbourhood
   funext t
   rw [← complexMGF_id_mul_I, ← complexMGF_id_mul_I]
   apply heq
-  change (((t : ℂ) * Complex.I).re ∈ _ ∩ _)
-  simpa using And.intro hμ hν
+  simpa [U] using And.intro hμ hν
 
 end ManuscriptChain.MomentDeterminacy

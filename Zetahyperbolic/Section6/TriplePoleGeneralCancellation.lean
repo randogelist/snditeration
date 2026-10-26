@@ -103,7 +103,8 @@ theorem actual_leading_zero (n : ℕ) (hn : 1 ≤ n) :
   have hc : ContinuousAt (fun t : ℝ => t^3 * (t^3 * regularFactor n t)) 0 :=
     (continuousAt_id.pow 3).mul
       ((continuousAt_id.pow 3).mul (regularFactor_continuousAt_zero n))
-  have h := hc.tendsto.mono_left nhdsWithin_le_nhds
+  have h := hc.tendsto.mono_left
+    (show 𝓝[≠] (0 : ℝ) ≤ 𝓝 (0 : ℝ) from nhdsWithin_le_nhds)
   simpa only [printedR_eq_cubic n hn, zero_pow (by decide : 3 ≠ 0),
     zero_mul] using h
 
