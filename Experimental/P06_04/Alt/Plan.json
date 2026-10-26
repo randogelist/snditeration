@@ -1,0 +1,61 @@
+{
+  "paper_item": "6.4",
+  "alternative_target": "For each specified finite family of distinct odd-pole nodes, define the actual β(4) rational functional from a coherent secant-kernel normalization, prove its moment and pole identities, and establish the character–Vandermonde cancellation. Apply a finite positive-Gram spectral theorem only after the actual resulting Gram form is shown positive.",
+  "relation_to_original": "restricted",
+  "changes_from_original": "Begin with actual finite-node functional calibration and spectral transfer, without asserting all-node unconditional hyperbolicity.",
+  "prerequisites": [
+    "2.5",
+    "5.3"
+  ],
+  "retained_open_obligations": [
+    "Prove secant derivative integrability and boundary decay.",
+    "Identify the functional with actual β(4), check constants and signs, and construct odd-pole Lagrange transport.",
+    "Prove Gram positivity for the selected family; uniform all-order coverage remains open."
+  ],
+  "correction_gate": "Do not substitute an abstract positive matrix for the actual β-functional, or assume the unverified printed positive-weight identity.",
+  "source_paths": [
+    "Experimental/P06_04/Target.md",
+    "Experimental/P06_04/Assumptions.json",
+    "Experimental/P06_04/Prerequisites.lean",
+    "README.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_transfer": "A downstream consumer must prove that this exact alternative supplies its required input. This alternative does not automatically replace the original item or discharge any original axiom.",
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p06-04_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p06-04_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p06-04_construction",
+  "original_snapshot_commit": "b78f851a807b4ca2c595ad62e9a252e17690989a",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P06_04/Target.md",
+      "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a",
+      "url": "https://github.com/randogelist/snditeration/blob/b78f851a807b4ca2c595ad62e9a252e17690989a/Experimental/P06_04/Target.md"
+    },
+    {
+      "path": "Experimental/P06_04/Assumptions.json",
+      "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a",
+      "url": "https://github.com/randogelist/snditeration/blob/b78f851a807b4ca2c595ad62e9a252e17690989a/Experimental/P06_04/Assumptions.json"
+    },
+    {
+      "path": "Experimental/P06_04/Prerequisites.lean",
+      "commit": "b78f851a807b4ca2c595ad62e9a252e17690989a",
+      "url": "https://github.com/randogelist/snditeration/blob/b78f851a807b4ca2c595ad62e9a252e17690989a/Experimental/P06_04/Prerequisites.lean"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+      "url": "https://github.com/randogelist/snditeration/blob/a3904c2a97b47b0dc2af41dcc708ca41c968da96/README.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
