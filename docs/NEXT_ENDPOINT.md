@@ -1,44 +1,38 @@
-# Next unfinished endpoint
+# Next single-target handoff
 
-## Lemma 2.3: identify the canonical coefficient with the analytic derivative
+## Target frozen for next execution: Theorem 5.4 — even-pole cancellation
 
-The algebraic finite-difference theorem is `Tau.rationalFunctional_difference`
-in `Section2/RationalDifference.lean`. The remaining bridge is an equality in ℝ:
+As of P02.03 / PR #18, Lemma 2.3's normalized analytic derivative and actual
+rational-domain finite difference are A-Tier verified in the canonical
+unique polynomial/pole-coordinate realization. Existing Section2 source
+files and new proof modules remain PASS-ONCE frozen.
 
-```
-(partialFractionCoefficient (2*k) f : ℝ)
-  = iteratedDeriv (2*k)
-      (fun x => RatFunc.eval (Rat.castHom ℝ) x (f : RatFunc ℚ)) 0
-      / ((2*k).factorial : ℝ)
-```
+The companion `zetahyperbolic-axiom@86ca99a` already compiled
+`LeanPaper.Section2TauLinear.evenPolePair_cancellation`
+for every integer j≥1, including the j=1 exception.
 
-Require `(RatFunc.denom (f : RatFunc ℚ)).eval 0 ≠ 0`. This is proved for the
-square-pole domain by `Mu.rationalDomain_regular_at_zero`; on the integer-pole
-domain, `Tau.eval_denom_zero_ne_zero` supplies it when the coefficient of the
-pole at zero vanishes. Do not replace this with differentiability of a
-rational function that has a pole at the origin.
+## Required P05.04 destination tasks (not started)
 
-Use the unique coordinates from `SimplePole.coordinates`. Prove the analytic
-identity for a polynomial and each supported nonzero simple pole, then use
-finite-sum linearity and regularity to identify the resulting function with
-actual `RatFunc.eval` in a neighborhood of zero. Existing algebraic difference
-and regularity modules are frozen starting points; add a new bridge module.
+1. Use the canonical `Tau.rationalFunctional` and actual `RatFunc`
+   domain objects already in `snditeration/main`.
+2. Express the even pole pair `(x-j)⁻¹-(x+j)⁻¹` for each j≥1 in
+   the correct integer-pole domain.
+3. Prove the exact theorem value `j^(-(2k+1))` for the paper's
+   normalization and weight convention, including j=1.
+4. Print the exact axiom dependencies, run full Lean 4.33 GitHub
+   CI and merge only after PASS; do not transfer the upstream
+   theorem name without proving equality of actual domain objects.
+5. Keep previous source/olean artifacts untouched under PASS-ONCE.
 
-## Larger manuscript endpoints still open
+## Separate optional technical bridge — NOT certified by P02.03
 
-- Theorem 3.3(1): strict positivity of arbitrary mixed Hankel minors, plus
-  moment growth and Carleman/Stieltjes determinacy. Principal positivity alone
-  does not prove total positivity.
-- Theorem 3.4: compatible compressions and full Cauchy interlacing, and the
-  arbitrary-order Dodgson/Jacobi connection. Principal-root reality allows
-  degree loss and does not prove interlacing.
-- Theorem 3.7: precise Newton/Turán inequalities and equality cases. Distinct
-  real roots do not force every intermediate coefficient to be nonzero.
-- Sections 4–6: concrete growth, decay, comparison and index-budget premises
-  for the audited arithmetic transfer. No unconditional irrationality of
-  ζ(5) or ζ(7), RH, or full-manuscript closure has been established.
+For any regular domain element `f`, prove on an open neighborhood of zero
+that the canonical `Tau.analyticRealization f` agrees pointwise with
+Mathlib's `RatFunc.eval (Rat.castHom ℝ) x (f : RatFunc ℚ)`,
+and transport `iteratedDeriv` along that eventual equality.
+The printed finite-pole/span analytic derivative statement and its
+canonical rational-domain form are already proved; this strengthens
+interoperability with Mathlib's totalized evaluation API. Do not treat
+this optional bridge as a theorem that the previous CI checked.
 
-Printed Proposition 3.2 and Corollaries 3.5–3.6 require the repairs recorded in
-`MANUSCRIPT_REPAIRS.md` and `SECTION3_CORRECTIONS.md`. Preserve the proven
-counterexamples and corrected bounds rather than trying to prove the false
-printed statements unchanged.
+No ζ5/ζ7 irrationality or RH result is asserted.
