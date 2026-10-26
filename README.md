@@ -103,6 +103,8 @@ The source collection has a [dedicated draft PR #16](https://github.com/randogel
 
 **Independent integration closure:** [PR #20](https://github.com/randogelist/snditeration/pull/20) merged the standalone Newton/Turán core from failed donor PR #15; [full Lean+axiom PR CI 40265147642](https://github.com/randogelist/snditeration/actions/runs/40265147642) passed. Seven exact axiom reports were standard-only; the source is identical to its donor. This is local A-Tier mathematical **support for printed 3.7**, not proof of the still-open individual centered-coefficient nonvanishing. The original complete printed theorem count remains 7/45.
 
+**Independent local P03.02 support integration:** [PR #22](https://github.com/randogelist/snditeration/pull/22) merged corrected real-weight density and moments (two unchanged, previously individually built PR #15 sources); [CI 40265703589](https://github.com/randogelist/snditeration/actions/runs/40265703589) passed all eight targeted axiom checks. This is **A-Tier partial/corrected support**, *not* proof of the false-as-printed continuous pencil or a new complete manuscript item.
+
 ## 3. Source provenance, outstanding endpoints and maintenance
 
 **Purpose:** a permanent, source-linked inventory of what remains to formalize or repair in the supplied 52-page Zetahyperbolic manuscript. This is documentation, not a second Lean proof implementation. The companion status is *not* automatically imported into `snditeration/main`.
