@@ -525,3 +525,11 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.theorem_5_2_l2_krein
 #print axioms ManuscriptChain.Beukers.l2KreinChannel_congr_ae
 #print axioms ManuscriptChain.Beukers.l2_integral_congr_ae
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.ofFn_coeff_eq
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.congruence_entry_eq_pairing
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.inverse_of_diagonal_congruence
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.kernel_eq_inverseGram
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.actual_kernel_eq_canonical
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.laplace_kernel_eq_canonical
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.actual_supplied_family_charpoly
+#print axioms ManuscriptChain.OrthogonalFamilyKernel.laplace_supplied_family_deriv

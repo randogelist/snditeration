@@ -116,3 +116,4 @@ import Zetahyperbolic.Section6.TriplePoleCancellation
 import Zetahyperbolic.Section5.BeukersHilbertSchmidt
 import Zetahyperbolic.Section3.MomentSquareRoot
 import Zetahyperbolic.Section5.KreinL2
+import Zetahyperbolic.Section3.OrthogonalFamilyKernel
