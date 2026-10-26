@@ -174,6 +174,136 @@
       "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/UnitLogMoments.lean",
       "verified_receipt_status": "PASS",
       "scope_and_limitation": "generic Mellin logarithmic monomial integrals, not actual all-k beta integrals"
+    },
+    {
+      "paper_item": "3.3(1)",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "PaperChain.Stage04PrincipalMinorCenter",
+      "lean_declarations": [
+        "ManuscriptChain.PrincipalMinors.gram_posDef",
+        "ManuscriptChain.PrincipalMinors.determinant_center_pos",
+        "ManuscriptChain.PrincipalMinors.two_index_strict"
+      ],
+      "source_sha256": "f500761d556dcdaf84f5f77a9b5ffaccf35a401e408109383a9413ab9c30cb1f",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/PaperChain/Stage04PrincipalMinorCenter.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Strict actual-ζ principal minors for every injected index subset and every 2x2 principal gap; not nonprincipal mixed minors or Carleman determinate moment sequence."
+    },
+    {
+      "paper_item": "3.6 corrected",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "ProofAdvances.Corollary_3_6_ExactFiniteRank",
+      "lean_declarations": [
+        "PaperAdvances.Corollary3_6_ExactFiniteRank.weighted_det_pos_iff_order_le_support",
+        "PaperAdvances.Corollary3_6_ExactFiniteRank.unweighted_det_pos_iff_order_le_support"
+      ],
+      "source_sha256": "b653ccf2ecc0ed36085df387d02949e4af26b08a702ec0ba4d206c628b237c33",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/ProofAdvances/Corollary_3_6_ExactFiniteRank.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Finite positive weighted Hankel determinant >0 iff n<=h only when h nodes are injective and weights all positive; false printed all-order strictness not repaired verbatim."
+    },
+    {
+      "paper_item": "3.6 corrected",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "ProofAdvances.Corollary_3_6_WeightedCorrected",
+      "lean_declarations": [
+        "PaperAdvances.Corollary3_6_WeightedCorrected.weighted_hankel_posSemidef",
+        "PaperAdvances.Corollary3_6_WeightedCorrected.weighted_hankel_det_zero_above_support"
+      ],
+      "source_sha256": "9d2a04f21bc541c21d34594dc19307e2a9e888310f9d8ade6800481bc5800171",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/ProofAdvances/Corollary_3_6_WeightedCorrected.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Finite weighted-atomic PSD and zero determinant beyond support; no infinite moment sequence claim."
+    },
+    {
+      "paper_item": "3.8(1)",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.SymmetricPoleSpectrum",
+      "lean_declarations": [
+        "LeanPaper.SymmetricPoleSpectrum.actual_symmetric_charpoly_eq_pole",
+        "LeanPaper.SymmetricPoleSpectrum.actual_symmetric_roots_eq_pole"
+      ],
+      "source_sha256": "0c4208e40d1f87bf7b2fe84fca439278b93943dfcae7cb228a3d8b25de0624d7",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/SymmetricPoleSpectrum.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Actual symmetric whitened and finite pole operator share characteristic polynomial and complete root multiset. Orthogonal polynomial Christoffel-Darboux kernel identification not proved."
+    },
+    {
+      "paper_item": "5.1,5.2(1)",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.DualNullspace",
+      "lean_declarations": [
+        "PaperOrder.CoreAlgebra.dualSlopeQuadraticForm_zero_iff",
+        "PaperOrder.CoreAlgebra.dualSlopeQuadraticForm_pos_iff_rowsSeparate"
+      ],
+      "source_sha256": "e7ec0de4231e3913994a8bd5e8d0fd62c29f1721265aecc4c5a36aea1a37c344",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/DualNullspace.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Exact SOS nullspace criterion and iff strict positivity for actual finite rational coefficient matrix. Actual continuous Beukers integral and signed Krein tails not proved."
+    },
+    {
+      "paper_item": "5.2(3) finite only",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedSection56.FiniteKreinCone",
+      "lean_declarations": [
+        "PaperOrder.PrincipalTheorems.finiteKreinGram_posDef",
+        "PaperOrder.PrincipalTheorems.finiteKreinGram_neg_posDef"
+      ],
+      "source_sha256": "fe887a6f8bd5e51cc58ae337e19e4ba46e54596fc071f6811396fa47c133b63b",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedSection56/FiniteKreinCone.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Finite signed Gram strictly positive if ALL negative channel coefficients are zero and positive channels separate, and vice versa. No infinite Krein tail cancellation proved."
+    },
+    {
+      "paper_item": "6.6 finite only",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.ImportedMultiweight.FiniteMultiweightCone",
+      "lean_declarations": [
+        "PaperAdvances.Theorem6_6_FiniteMultiweightCone.FINITE_MULTIWEIGHT_SPECTRAL_HYPERBOLICITY",
+        "PaperAdvances.Theorem6_6_FiniteMultiweightCone.FINITE_MULTIWEIGHT_STRICT_TURAN"
+      ],
+      "source_sha256": "dfb37d5c7f21259b35f66e35e10e193fdba6727423057d099bb27f5828cf04c0",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/ImportedMultiweight/FiniteMultiweightCone.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "For explicit finite positive-definite constituent direction matrices and strictly positive weights, real spectrum/full degree and strict Turan off roots; actual infinite multiweight density and q-adic conclusions open."
+    },
+    {
+      "paper_item": "6.11(2) elementary",
+      "full_printed_item_promoted": false,
+      "proof_tier": "!!",
+      "source_repository": "randogelist/zetahyperbolic-axiom",
+      "source_commit": "86ca99a23d65cde4880a9005a49076c43e7bc968",
+      "module": "LeanPaper.DyadicQuotientThreshold",
+      "lean_declarations": [
+        "LeanPaper.DyadicQuotientThreshold.odd_square_scaling",
+        "LeanPaper.DyadicQuotientThreshold.consecutive_product_even"
+      ],
+      "source_sha256": "675d3f4108f09e02f2047c30f06368e257af785e0ab3db915e681f3feaac2430",
+      "source_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/86ca99a23d65cde4880a9005a49076c43e7bc968/src/LeanPaper/DyadicQuotientThreshold.lean",
+      "verified_receipt_status": "PASS",
+      "scope_and_limitation": "Odd-square variable substitution algebra and evenness of consecutive product only; no distribution valuations, dyadic obstruction or height limit."
     }
-  ]
+  ],
+  "last_source_audit": "2026-10-26, six-round principal/mixed/dual source sweep"
 }
