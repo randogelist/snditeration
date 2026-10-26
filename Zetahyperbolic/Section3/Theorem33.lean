@@ -90,7 +90,9 @@ theorem primitivePolynomial_real_roots (p : Real.Parameters) (hp : Real.Admissib
     (Spectral.actualEigenvalues_ne_zero (Real.manuscriptPencil p) hpos
       (General.derivative_nonsingular p) i)
   simp_rw [hf]
-  exact Multiset.bind_singleton _
+  exact Multiset.bind_singleton (Finset.univ : Finset (Fin p.h)).val
+    (fun i => Real.zeta p.weight -
+      (Spectral.actualEigenvalues (Real.manuscriptPencil p) i)⁻¹)
 
 /-- The manuscript names the coefficient at h, rather than an unspecified
 leading coefficient. The exact-degree theorem identifies these coefficients. -/
