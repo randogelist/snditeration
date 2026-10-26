@@ -1,0 +1,31 @@
+{
+  "checkpoint": "P06_10_FINITE_POTENTIAL_GAP_SUPPORT",
+  "source_donor_commit": "0cee4ea2e32b1f476488f92b476c4eb224285160",
+  "source_file": "Zetahyperbolic/Section6/PotentialGap.lean",
+  "source_git_blob_sha": "b855510b32ecadcf5058c7ff8a0237d0cf02f766",
+  "source_matches_main": true,
+  "integration_head": "7d5cfc56e1334b03208af09ba23707a8f5bb05ed",
+  "merge_commit": "519fdfd6a2d8b5f7855d49fe6ff66c65c77f49a9",
+  "ci": {
+    "pr_run": 40271563975,
+    "main_run": 40271821162,
+    "both": "PASS",
+    "build_jobs": 8799,
+    "target_axiom_reports": 11,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "placeholder_scan": "PASS"
+  },
+  "proof_tier": "A_TIER_LOCAL_SUBCLAUSE_ONLY",
+  "manuscript_item": "Theorem 6.10(1), finite identities and counterexample",
+  "whole_original_theorem_certified": false,
+  "still_open": [
+    "positive asymptotic potential gap",
+    "global quadratic height/decay estimates",
+    "actual ζ5 multiplier/rate conclusion"
+  ],
+  "parallel_branches_edited": false
+}
