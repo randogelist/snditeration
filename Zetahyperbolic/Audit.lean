@@ -153,3 +153,12 @@ run_cmd do
   if checked == 0 then
     throwError "No project theorems found for dependency audit"
   Lean.logInfo m!"GOODWORKFLOWFRONTIER::AXIOM_ALLOWLIST::THEOREMS_CHECKED={checked}"
+
+-- Proposition 4.3: exact ℤ_p, ℚ_p, ℂ_p statements and original integer polynomial.
+#print axioms PaperAdvances.Proposition4_3_PadicDisk.PROPOSITION_4_3_INTEGRAL_QPADIC
+#print axioms PaperAdvances.Proposition4_3_PadicDisk.PROPOSITION_4_3_INTEGER_QPADIC
+#print axioms PaperAdvances.Proposition4_3_IsometricExtension.PROPOSITION_4_3_INTEGRAL_ISOMETRIC_EXTENSION
+#print axioms PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGRAL_COMPLEX_PADIC
+#print axioms PaperAdvances.Proposition4_3_ComplexPadicDisk.PROPOSITION_4_3_INTEGER_COMPLEX_PADIC
+#print axioms ManuscriptChain.proposition_4_3_complex_padic_disk
+#print axioms ManuscriptChain.primitivePolynomial_complex_padic_disk

@@ -52,3 +52,4 @@ import Zetahyperbolic.Section3.SpectralInertia
 import Zetahyperbolic.Section2.RationalRegularity
 import Zetahyperbolic.Section3.ReciprocalMoments
 import Zetahyperbolic.Section3.ReciprocalMomentLimit
+import Zetahyperbolic.Section4.ActualPrimitivePadicDisk
