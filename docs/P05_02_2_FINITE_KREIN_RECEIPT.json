@@ -1,0 +1,39 @@
+{
+  "checkpoint": "P05_02_2_FINITE_KREIN",
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "status": "A_TIER_LOCAL_PARTIAL",
+  "paper": "Theorem 5.2(2)",
+  "whole_printed_theorem_proved": false,
+  "proof_sha": "372deda8edc77bba6312b8f80137e00e1b75e74f",
+  "merge_sha": "588230a857acb5a8b74b76ecf99686e79925759c",
+  "ci_run": 40271072845,
+  "ci_job": 121403806302,
+  "ci_result": "PASS",
+  "total_lean_jobs": 8798,
+  "files": [
+    {
+      "path": "Zetahyperbolic/Section5/KreinMonomial.lean",
+      "git_blob": "9f4e12d26e12e55ad1ab42603d40706eefa88ed7"
+    },
+    {
+      "path": "Zetahyperbolic/Section5/KreinPolynomial.lean",
+      "git_blob": "f420c1fdcd638724c1aa0be1c46957c023d6d172"
+    }
+  ],
+  "declarations": [
+    "ManuscriptChain.Beukers.kreinSix_eq_signed",
+    "ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix",
+    "ManuscriptChain.Beukers.actual_monomial_krein_bilinear",
+    "ManuscriptChain.Beukers.actual_monomial_krein_quadratic",
+    "ManuscriptChain.Beukers.polynomialMomentForm_eq_krein",
+    "ManuscriptChain.Beukers.polynomialMomentForm_quadratic"
+  ],
+  "transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler": "Lean 4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "next_unfinished": "Actual polynomial integral and arbitrary L²(0,1) signed Krein representation with justified summability and continuity; no cone conclusion"
+}
