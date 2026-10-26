@@ -1,0 +1,69 @@
+{
+  "id": "P03_04",
+  "paper_item": "3.4",
+  "branch": "experiment/zetahyperbolic-p03-04_construction",
+  "namespace": "Experimental.P03_04",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "proof_claim": false,
+  "axioms": [
+    {
+      "name": "Experimental.P03_04.actualPrincipalShiftedInertia",
+      "meaning": "The positive index of M_r−tG_r equals the number of actual whitened principal eigenvalues above t, for every real threshold t.",
+      "dependencies": [
+        "Theorem 3.1 positive actual Gram",
+        "Sylvester congruence",
+        "finite spectral theorem for shifted symmetric matrices"
+      ],
+      "supports": "Upstream eigenvalue-count identification; no interlacing inequality, reciprocal root comparison or Dodgson conclusion is assumed."
+    }
+  ],
+  "proved_prerequisite_aliases": [
+    {
+      "name": "Experimental.P03_04.existingPrincipalGramInput",
+      "source": "ManuscriptChain.Principal.principal_base_posDef",
+      "meaning": "Positive actual principal Gram for every injective index map.",
+      "dependencies": [
+        "Theorem 3.1"
+      ]
+    }
+  ],
+  "original_statement_preserved": true,
+  "original_target_assumed": false,
+  "requires_discharge": [
+    "Experimental.P03_04.actualPrincipalShiftedInertia"
+  ],
+  "publication_path": "Experimental/P03_04",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_04.actualPrincipalShiftedInertia",
+      "meaning": "The positive index of M_r−tG_r equals the number of actual whitened principal eigenvalues above t, for every real threshold t.",
+      "dependencies": [
+        "Theorem 3.1 positive actual Gram",
+        "Sylvester congruence",
+        "finite spectral theorem for shifted symmetric matrices"
+      ],
+      "supports": "Upstream eigenvalue-count identification; no interlacing inequality, reciprocal root comparison or Dodgson conclusion is assumed."
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P03_04.actualPrincipalShiftedInertia"
+  ],
+  "proved_upstream_aliases": [
+    {
+      "name": "Experimental.P03_04.existingPrincipalGramInput",
+      "source": "ManuscriptChain.Principal.principal_base_posDef",
+      "meaning": "Positive actual principal Gram for every injective index map.",
+      "dependencies": [
+        "Theorem 3.1"
+      ]
+    }
+  ],
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "full_target_proved": false
+}
