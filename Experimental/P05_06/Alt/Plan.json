@@ -1,0 +1,48 @@
+{
+  "paper_item": "5.6",
+  "alternative_target": "Separate exact integration of the literal outer floor/min/max function from an independently bounded inner tail and from the local q-adic pole-replacement lemma. Accept only constants derived from a complete verified partition and tail estimate; formulate the valuation gain on the actual surviving pole classes and valid replacement ranges.",
+  "relation_to_original": "alternative_proof_route",
+  "changes_from_original": "Do not force printed table constants, continuity assertions or the uniform gain before checking the underlying definitions and classes.",
+  "prerequisites": [
+    "5.4"
+  ],
+  "retained_open_obligations": [
+    "Complete endpoint-aware floor partition and exact integrals.",
+    "Periodic primitive identity with rigorous absolute tail control.",
+    "Actual local basis unimodularity, survivor classes and determinant valuation."
+  ],
+  "correction_gate": "Simple-pole cancellation cannot be extended automatically to higher-order residues or to missing local pole classes.",
+  "source_paths": [
+    "Experimental/P05_06/Prerequisites.lean",
+    "Experimental/P05_06/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p05-06_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p05-06_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p05-06_construction",
+  "original_snapshot_commit": "d41b2d7600892844fa5dde219531439fa86e8258",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P05_06/Prerequisites.lean",
+      "commit": "d41b2d7600892844fa5dde219531439fa86e8258",
+      "url": "https://github.com/randogelist/snditeration/blob/d41b2d7600892844fa5dde219531439fa86e8258/Experimental/P05_06/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P05_06/Target.md",
+      "commit": "d41b2d7600892844fa5dde219531439fa86e8258",
+      "url": "https://github.com/randogelist/snditeration/blob/d41b2d7600892844fa5dde219531439fa86e8258/Experimental/P05_06/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
