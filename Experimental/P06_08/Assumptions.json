@@ -1,0 +1,52 @@
+{
+  "item_id": "6.8",
+  "namespace": "Experimental.P06_08",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "branch": "experiment/zetahyperbolic-p06-08_construction",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "verified_upstream_declarations_or_definitions": [
+    "ManuscriptChain.Real.zeta_eq_riemannZeta_re"
+  ],
+  "dependency_ids": [
+    "4.5"
+  ],
+  "axioms": [
+    {
+      "name": "Experimental.P06_08.upstream_apery_irrational",
+      "meaning": "Apéry irrationality for the actual zeta(3), a named external predecessor.",
+      "dependency_ids": [],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "Apéry theorem / 1"
+    },
+    {
+      "name": "Experimental.P06_08.upstream_4_5_irrational",
+      "meaning": "Exact qualitative 4.5 premise on actual zeta(3),zeta(5) inside the stated cone.",
+      "dependency_ids": [
+        "4.5"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "4.5"
+    },
+    {
+      "name": "Experimental.P06_08.upstream_4_5_measure",
+      "meaning": "Ordinary rational-measure threshold of 4.5; no effective algorithm is claimed.",
+      "dependency_ids": [
+        "4.5"
+      ],
+      "status": "EXPLICIT_UNPROVED_PREREQUISITE",
+      "prerequisite_origin": "4.5"
+    }
+  ],
+  "target_axiomatized": false,
+  "target_proved": false,
+  "full_target_object_layer_encoded": false,
+  "literal_statement_repair_policy": "No repair is silently substituted for the verbatim target.",
+  "coverage": "The actual two-term form and precisely identified upstream Apéry/4.5 statements are typed. Nothing assumes the current nonzero three-term conclusion or its q^(-25686) bound.",
+  "remaining": "Obtain an accepted Apéry import and prove actual Theorem 4.5; normalize the sign of b and handle b=0 and a=0 separately. Derive integer-translate nonvanishing and the raywise bound by multiplying the upstream rational approximation estimate. A concrete computable threshold interface is still needed for the word effectively; the existential axiom does not certify effectivity.",
+  "source_pdf": "project_sources/26-Zetahyperbolic-3-1-1-.pdf",
+  "pdf_page": 38,
+  "source_reference_ids": [],
+  "interface_encoding": "CONCRETE_PARTIAL_PREREQUISITE_INTERFACE_NOT_FULL_TARGET_DECLARATION"
+}
