@@ -1,0 +1,46 @@
+{
+  "paper_item": "5.7",
+  "alternative_target": "Define the functional from the actual order-two partial-fraction coefficients of R_n(t), including k=0, and first prove its finite rational residue/degree identities. Formulate subsequent determinant valuation as a separate conditional block-transfer theorem with explicitly proved actual coefficient congruences and unit blocks.",
+  "relation_to_original": "corrected",
+  "changes_from_original": "Recompute rather than assume the printed A/B residue tables; retain the integer relation aζ5+bζ6=c and b≠0 in any theorem that uses them.",
+  "prerequisites": [],
+  "retained_open_obligations": [
+    "Actual double-pole residue table, endpoint indexing and zero polynomial part.",
+    "Hermite basis and local congruences for the actual rows.",
+    "Exact determinant/minor valuations with zero conventions."
+  ],
+  "correction_gate": "Do not preserve the −36m valuation as an axiom; it must follow from consistent actual residues and a valid local block calculation.",
+  "source_paths": [
+    "Experimental/P05_07/Prerequisites.lean",
+    "Experimental/P05_07/Target.md"
+  ],
+  "status": "DOCUMENTATION_ONLY_CANDIDATE",
+  "downstream_substitution": "No automatic substitution for the original item. Every consumer must identify the exact needed clause and prove an interface implication from this alternative, or revise its own statement.",
+  "local_lean_executed": false,
+  "branch_role": "alt",
+  "branch": "experiment/zetahyperbolic-p05-07_alt_construction",
+  "proposed_branch": "experiment/zetahyperbolic-p05-07_prop_construction",
+  "original_snapshot_branch": "experiment/zetahyperbolic-p05-07_construction",
+  "original_snapshot_commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0",
+  "source_baseline_commit": "a3904c2a97b47b0dc2af41dcc708ca41c968da96",
+  "source_references": [
+    {
+      "path": "Experimental/P05_07/Prerequisites.lean",
+      "commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0",
+      "url": "https://github.com/randogelist/snditeration/blob/15ed09b52e0c3d60de5333df8981684b99f70ba0/Experimental/P05_07/Prerequisites.lean"
+    },
+    {
+      "path": "Experimental/P05_07/Target.md",
+      "commit": "15ed09b52e0c3d60de5333df8981684b99f70ba0",
+      "url": "https://github.com/randogelist/snditeration/blob/15ed09b52e0c3d60de5333df8981684b99f70ba0/Experimental/P05_07/Target.md"
+    }
+  ],
+  "prerequisites_are_candidate_input_locations_not_axioms": true,
+  "typed_alt_interface_created": false,
+  "new_axioms": [],
+  "new_target_proof": false,
+  "new_build_pass": false,
+  "new_tier": null,
+  "downstream_compatibility_status": "EXPLICIT_BRIDGE_REQUIRED",
+  "historical_evidence": "Existing main/companion receipts remain attached to their exact declarations and scope. No fresh certification here."
+}
