@@ -69,3 +69,5 @@ import Zetahyperbolic.Section5.BeukersOffDiagonal
 import Zetahyperbolic.Section5.BeukersDensity
 import Zetahyperbolic.Section5.BeukersRationalMoments
 import Zetahyperbolic.Section4.ComplexComparison
+import Zetahyperbolic.Section4.TransferComplete
+import Zetahyperbolic.Section4.EffectiveBudget

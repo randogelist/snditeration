@@ -239,3 +239,16 @@ run_cmd do
 #print axioms ManuscriptChain.Spectral.comparisonRadius_pos
 #print axioms ManuscriptChain.Section4ComplexComparison.polynomial_comparison
 #print axioms ManuscriptChain.Section4ComplexComparison.integer_comparison
+
+-- P04.01: exact conditional rate/index transfer, no specific ζ5 decay assumption discharged.
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_bounds
+#print axioms ManuscriptChain.Section4IndexSelection.gridIndex_tendsto
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_radius_budget
+#print axioms ManuscriptChain.Section4IndexSelection.eventually_denominator_budget
+#print axioms ManuscriptChain.Section4IndexSelection.exists_indexBudget_of_rates
+#print axioms ManuscriptChain.Section4IndexSelection.measure_of_rates
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_real_exponent
+#print axioms ManuscriptChain.Section4TransferComplete.spectral_transfer_lattice
+#print axioms ManuscriptChain.Section4EffectiveBudget.explicit_budgets
+#print axioms ManuscriptChain.Section4EffectiveBudget.effective_spectral_measure
+#print axioms ManuscriptChain.Section4EffectiveBudget.manuscript_effective_rate_margins
