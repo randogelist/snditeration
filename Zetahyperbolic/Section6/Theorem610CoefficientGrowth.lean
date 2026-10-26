@@ -34,6 +34,7 @@ theorem polynomialCoefficients_independent {h K : ℕ} (P : Fin h → ℤ[X])
       Polynomial.coeff_eq_zero_of_natDegree_lt (lt_of_le_of_lt (hdeg i) (by omega))
     simp [Polynomial.finsetSum_coeff, Polynomial.coeff_smul, hz]
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Independence of integer polynomials supplies the real full-row-rank premise. -/
 theorem polynomialCoefficients_vecMul_injective {h K : ℕ} (P : Fin h → ℤ[X])
     (hdeg : ∀ i, (P i).natDegree ≤ K) (hP : LinearIndependent ℤ P) :
@@ -42,7 +43,7 @@ theorem polynomialCoefficients_vecMul_injective {h K : ℕ} (P : Fin h → ℤ[X
   rw [Matrix.vecMul_injective_iff]
   have hi := polynomialCoefficients_independent P hdeg hP
   have he := (linearIndependent_algebraMap_comp_iff (S := ℝ)).2 hi
-  simpa [Matrix.row, Matrix.map, Function.comp_def] using he
+  simpa [Matrix.row, Matrix.map, Matrix.of, Function.comp_def] using he
 
 /-- This is the slope of the actual rational Beukers pencil, after real embedding. -/
 theorem dualSlope_eq_realGram {h K : ℕ} (C : Matrix (Fin h) (Fin (K + 1)) ℤ) :

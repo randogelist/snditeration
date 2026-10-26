@@ -733,3 +733,17 @@ run_cmd do
 
 #print axioms ManuscriptChain.Beukers.padicLocalMatrix_eq_monomial_pencil
 #print axioms ManuscriptChain.Beukers.rationalLocalMatrix_eq_monomial_pencil
+
+#print axioms ManuscriptChain.Multiweight.theorem_6_7_part_one
+#print axioms ManuscriptChain.CoefficientGramGrowth.theorem_6_10_part_two
+#print axioms ManuscriptChain.CoefficientGramGrowth.dualSlope_eq_realGram
+#print axioms ManuscriptChain.SecantGram.gram_posDef
+#print axioms ManuscriptChain.Beukers.theorem_6_3_part_one
+#print axioms ManuscriptChain.Beukers.theorem_6_3_rational_denominator
+#print axioms ManuscriptChain.Beukers.pairedMonomial_actual_integral
+#print axioms ManuscriptChain.Chapter6ConeDimension.theorem_6_7_fixed_degree_two_impossible
+#print axioms ManuscriptChain.Chapter6ConeDimension.theorem_6_17_fixed_degree_two_impossible
+#print axioms ManuscriptChain.Chapter6HarmonicPrimePower.printed_uniform_harmonic_bound_false
+#print axioms ManuscriptChain.BetaOddRoot.root_unique
+#print axioms ManuscriptChain.BetaOddRoot.root_side
+#print axioms ManuscriptChain.BetaOddPencil.betaPencil_complex_roots_real

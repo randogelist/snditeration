@@ -45,10 +45,13 @@ theorem entry_eval_coupled {k h K : ℕ} (a : Fin k → ℤ)
     Polynomial.eval₂ (Rat.castHom ℝ) (∑ m, (a m : ℝ) * x m) (entry a c i j) =
       ∑ m, (a m : ℝ) * Polynomial.eval₂ (Rat.castHom ℝ) (x m)
         (Real.dualEntry (2*(m.val+1)+1) c i j) := by
-  simp only [entry, constant, dualEntry_affine, Polynomial.eval₂_add,
+  simp only [entry, Polynomial.eval₂_add,
     Polynomial.eval₂_mul, Polynomial.eval₂_C, Polynomial.eval₂_X,
-    map_sum, map_mul, Rat.coe_castHom, Rat.cast_intCast,
-    Finset.mul_sum, Finset.sum_add_distrib]
+    Rat.coe_castHom]
+  simp only [constant, Real.dualEntry, Polynomial.eval₂_add,
+    Polynomial.eval₂_mul, Polynomial.eval₂_C, Polynomial.eval₂_X,
+    Rat.cast_sum, Rat.cast_mul, Rat.cast_intCast, Rat.coe_castHom,
+    mul_add, Finset.mul_sum, Finset.sum_add_distrib]
   congr 1
   apply Finset.sum_congr rfl
   intro m hm
@@ -58,7 +61,7 @@ theorem entry_derivative {k h K : ℕ} (a : Fin k → ℤ)
     (c : Matrix (Fin h) (Fin (K+1)) ℚ) (i j : Fin h) :
     (entry a c i j).derivative =
       C ((c * c.transpose) i j) := by
-  simp [entry, dualSlopeMatrix_eq_CCT, dualCoefficientMatrix]
+  simp [entry, dualSlopeMatrix, Matrix.mul_apply]
 
 def spectralPencil {k h K : ℕ} (a : Fin k → ℤ)
     (c : Matrix (Fin h) (Fin (K+1)) ℚ)
@@ -104,8 +107,8 @@ theorem theorem_6_7_part_one {k h K : ℕ} (a : Fin k → ℤ)
     (polynomialCoefficients_independent A hA hdegree)
   have hs := real_rows_separate_of_rational_injective c hi
   refine ⟨?_, ?_, ?_⟩
-  · rw [dualSlopeMatrix_eq_CCT]
-    simpa [dualCoefficientMatrix, Matrix.conjTranspose_eq_transpose_of_trivial] using
+  · change (c * c.transpose).PosDef
+    simpa only [Matrix.conjTranspose_eq_transpose_of_trivial] using
       Matrix.PosDef.mul_conjTranspose_self c hi
   · have hd := positiveSlopePencil_degree (spectralPencil a c hs)
     rw [spectralPencil_det, Real.realPolynomial, Polynomial.natDegree_map] at hd

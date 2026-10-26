@@ -168,3 +168,11 @@ import Zetahyperbolic.Section6.SecantGram
 import Zetahyperbolic.Section6.MultiweightHyperbolicity
 import Zetahyperbolic.Section6.CoefficientGramHadamard
 import Zetahyperbolic.Section6.Theorem610CoefficientGrowth
+
+import Zetahyperbolic.Section6.BetaOddPencil
+import Zetahyperbolic.Section6.BetaOddPartialFractions
+import Zetahyperbolic.Section6.BetaOddRoot
+import Zetahyperbolic.Section6.Chapter6ConeDimensionObstruction
+import Zetahyperbolic.Section6.Chapter6HarmonicPrimePowerObstruction
+import Zetahyperbolic.Section6.PadicDeterminantDominance
+import Zetahyperbolic.Section6.Theorem63Nonvanishing

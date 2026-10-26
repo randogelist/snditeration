@@ -64,6 +64,7 @@ theorem integrableOn_weighted_moment (k N K m e : ℕ) :
   apply hi.mono' ((measurable_id.pow_const _).mul
     (weightedDensity_measurable k N K m)).aestronglyMeasurable
   filter_upwards [ae_restrict_mem measurableSet_Ioi] with u hu
+  simp only [Pi.mul_apply, id_eq]
   rw [Real.norm_eq_abs, abs_of_nonneg (mul_nonneg (pow_nonneg hu.le _)
     (weightedDensity_pos k N K m hu).le), heval]
   have hN : 0 ≤ Real.evalQ (Real.D N) (u^2) ^ (2*m) := by positivity
