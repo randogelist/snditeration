@@ -257,3 +257,6 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.integral_momentTerm_eq_kreinSix
 #print axioms ManuscriptChain.Beukers.actual_monomial_krein_bilinear
 #print axioms ManuscriptChain.Beukers.actual_monomial_krein_quadratic
+
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_eq_krein
+#print axioms ManuscriptChain.Beukers.polynomialMomentForm_quadratic
