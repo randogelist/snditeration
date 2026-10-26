@@ -39,7 +39,7 @@ theorem map_sq_symmetrize (μ : Measure ℝ) :
     funext x
     simp
   rw [hn, smul_add, ← add_smul]
-  norm_num
+  rw [ENNReal.add_halves, one_smul]
 
 theorem map_sq_lift (μ : Measure ℝ) (hμ : ∀ᵐ t ∂μ, 0 ≤ t) :
     (lift μ).map (fun x : ℝ => x^2) = μ := by
@@ -56,7 +56,8 @@ theorem integral_even_symmetrize (μ : Measure ℝ) (n : ℕ)
     (∫ x : ℝ, x^(2*n) ∂symmetrize μ) = ∫ x : ℝ, x^(2*n) ∂μ := by
   have hn : Integrable (fun x : ℝ => x^(2*n)) (μ.map (fun x : ℝ => -x)) := by
     rw [integrable_map_measure (by fun_prop) (by fun_prop)]
-    simpa only [Function.comp_apply, neg_pow_even] using hi
+    change Integrable (fun x : ℝ => (-x)^(2*n)) μ
+    simpa only [neg_pow_even] using hi
   unfold symmetrize
   rw [integral_smul_measure, integral_add_measure hi hn,
     integral_map (by fun_prop) (by fun_prop)]
@@ -68,7 +69,9 @@ theorem integral_odd_symmetrize (μ : Measure ℝ) (n : ℕ)
     (∫ x : ℝ, x^(2*n+1) ∂symmetrize μ) = 0 := by
   have hn : Integrable (fun x : ℝ => x^(2*n+1)) (μ.map (fun x : ℝ => -x)) := by
     rw [integrable_map_measure (by fun_prop) (by fun_prop)]
-    simpa only [Function.comp_apply, neg_pow_odd] using hi.neg
+    change Integrable (fun x : ℝ => (-x)^(2*n+1)) μ
+    have hh : Integrable (fun x : ℝ => -(x^(2*n+1))) μ := hi.neg
+    simpa only [neg_pow_odd] using hh
   unfold symmetrize
   rw [integral_smul_measure, integral_add_measure hi hn,
     integral_map (by fun_prop) (by fun_prop)]
@@ -116,11 +119,11 @@ theorem lift_moments_eq {μ ν : Measure ℝ} [IsFiniteMeasure μ] [IsFiniteMeas
   rcases Nat.even_or_odd n with he | ho
   · obtain ⟨k, hk⟩ := he
     have hn : n = 2*k := by omega
-    subst n
+    rw [hn]
     rw [integral_even_lift μ hμ k (iμ k), integral_even_lift ν hν k (iν k), hm]
   · obtain ⟨k, hk⟩ := ho
     have hn : n = 2*k+1 := by omega
-    subst n
+    rw [hn]
     rw [integral_odd_lift μ hμ k (iμ _), integral_odd_lift ν hν k (iν _)]
 
 /-- The remaining analytic premise is explicitly an exponential neighbourhood
@@ -152,6 +155,7 @@ theorem lift_exponential_neighbourhood {μ : Measure ℝ}
     rw [integrable_map_measure (by fun_prop) (by fun_prop)]
     apply he.mono' (by fun_prop)
     filter_upwards with t
+    change ‖Real.exp (s * Real.sqrt t)‖ ≤ Real.exp ((1/2 : ℝ) * Real.sqrt t)
     rw [Real.norm_of_nonneg (Real.exp_pos _).le]
     apply Real.exp_le_exp.mpr
     exact mul_le_mul_of_nonneg_right hs.2.le (Real.sqrt_nonneg t)

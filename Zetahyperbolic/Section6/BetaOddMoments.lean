@@ -36,13 +36,15 @@ theorem raw_integrable (k m : ℕ) : Integrable (raw k m) unitMeasure :=
 
 theorem raw_integral (k m : ℕ) :
     (∫ x, raw k m x ∂unitMeasure) = 1 / ((m:ℝ)+1)^(2*k+1) := by
-  rw [raw, integral_div, UnitLogMoments.integral_pow_log]
+  simp only [raw]
+  rw [integral_div, UnitLogMoments.integral_pow_log]
   have hf : ((2*k).factorial : ℝ) ≠ 0 := by positivity
   field_simp [hf]
 
 theorem raw_nonneg (k m : ℕ) {x : ℝ} (hx : x ∈ Ioo 0 1) : 0 ≤ raw k m x := by
+  have hlog : 0 ≤ -Real.log x := neg_nonneg.mpr (Real.log_nonpos hx.1.le hx.2.le)
   unfold raw
-  exact div_nonneg (mul_nonneg (pow_nonneg hx.1.le _) (by positivity)) (by positivity)
+  exact div_nonneg (mul_nonneg (pow_nonneg hx.1.le _) (pow_nonneg hlog _)) (by positivity)
 
 theorem integrand_bounds (k m : ℕ) {x : ℝ} (hx : x ∈ Ioo 0 1) :
     raw k m x / 2 ≤ integrand k m x ∧ integrand k m x ≤ raw k m x := by
@@ -56,7 +58,8 @@ theorem integrand_bounds (k m : ℕ) {x : ℝ} (hx : x ∈ Ioo 0 1) :
   · exact div_le_self hr (by nlinarith [sq_nonneg x])
 
 theorem integrand_integrable (k m : ℕ) : Integrable (integrand k m) unitMeasure := by
-  apply (raw_integrable k m).mono' (by unfold integrand raw; fun_prop)
+  apply (raw_integrable k m).mono'
+    (show Measurable (integrand k m) from by unfold integrand raw; fun_prop).aestronglyMeasurable
   filter_upwards [ae_restrict_mem measurableSet_Ioo] with x hx
   rw [Real.norm_eq_abs, abs_of_nonneg
     (show 0 ≤ integrand k m x from div_nonneg (raw_nonneg k m hx) (by positivity))]
@@ -133,6 +136,7 @@ theorem beta_ordered_limit (k : ℕ) :
     rw [abs_of_pos (moment_pos _ _), abs_mul, hs, one_mul] at h
     rw [Real.norm_eq_abs, abs_sub_comm]
     exact h.symm
-  simpa only [Function.comp_apply, ← he] using hlim
+  change Tendsto (fun r : ℕ => moment k (2*r)) atTop (𝓝 0) at hlim
+  simpa only [← he] using hlim
 
 end ManuscriptChain.BetaOddMoments

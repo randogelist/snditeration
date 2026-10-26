@@ -620,6 +620,11 @@ run_cmd do
 #print axioms ManuscriptChain.PrintedMomentMeasure.printed_stieltjes_measure_unique
 #print axioms ManuscriptChain.theorem_3_3_total_positivity_determinacy_signature
 #print axioms ManuscriptChain.theorem_3_3_weight_five_leading_sign
+#print axioms ManuscriptChain.primitivePolynomial_real_identity
+#print axioms ManuscriptChain.primitivePolynomial_real_roots
+#print axioms ManuscriptChain.theorem_3_3_weight_five_coefficient_sign
+#print axioms ManuscriptChain.theorem_3_3_weight_five_root_multiplicity_counts
+#print axioms ManuscriptChain.theorem_3_3_weight_five
 #print axioms ManuscriptChain.BetaOddMoments.raw_integrable
 #print axioms ManuscriptChain.BetaOddMoments.raw_integral
 #print axioms ManuscriptChain.BetaOddMoments.raw_nonneg
@@ -643,3 +648,6 @@ run_cmd do
 #print axioms ManuscriptChain.BetaOddGram.pencil_affine
 #print axioms ManuscriptChain.BetaOddGram.slope_outer_product
 #print axioms ManuscriptChain.BetaOddGram.slope_rank_one
+#print axioms ManuscriptChain.BetaOddEta.odd_moment
+#print axioms ManuscriptChain.BetaOddEta.eta_ordered_limit
+#print axioms ManuscriptChain.BetaOddEta.etaValue_zero

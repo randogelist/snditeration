@@ -133,3 +133,4 @@ import Zetahyperbolic.Section3.SymmetricSquareRoot
 import Zetahyperbolic.Section3.Theorem33
 import Zetahyperbolic.Section6.BetaOddMoments
 import Zetahyperbolic.Section6.BetaOddGram
+import Zetahyperbolic.Section6.BetaOddEta
