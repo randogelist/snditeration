@@ -25,8 +25,9 @@ def localLeadingMatrix (p : ℕ) : Matrix (Fin 2) (Fin 2) (ZMod p) :=
 
 lemma six_ne_zero_mod (p : ℕ) (hp : 11 ≤ p) : (6 : ZMod p) ≠ 0 := by
   change ((6 : ℕ) : ZMod p) ≠ 0
-  rw [ZMod.natCast_eq_zero_iff]
-  exact Nat.not_dvd_of_pos_of_lt (by norm_num) (by omega)
+  intro hz
+  exact (Nat.not_dvd_of_pos_of_lt (by norm_num : 0 < 6) (by omega : 6 < p))
+    ((ZMod.natCast_eq_zero_iff 6 p).mp hz)
 
 theorem localLeadingMatrix_det (p : ℕ) :
     (localLeadingMatrix p).det = -(6 : ZMod p)⁻¹ ^ 2 := by
@@ -46,10 +47,9 @@ theorem localLeadingMatrix_kernel (p : ℕ) [Fact p.Prime] (hp : 11 ≤ p)
     have h0 := congrFun h 0
     have h1 := congrFun h 1
     simp [localLeadingMatrix, Matrix.mulVec, dotProduct, Fin.sum_univ_two] at h0 h1
-    have hc1 : c 1 = 0 := (mul_eq_zero.mp h0).resolve_left
-      (inv_ne_zero (six_ne_zero_mod p hp))
+    have hc1 : c 1 = 0 := h0.resolve_left (six_ne_zero_mod p hp)
     have hc0 : c 0 = 0 := by
-      rw [hc1, sub_zero] at h1
+      simp only [hc1, neg_zero, add_zero] at h1
       exact (mul_eq_zero.mp h1).resolve_left (inv_ne_zero (six_ne_zero_mod p hp))
     funext i
     fin_cases i <;> assumption

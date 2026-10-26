@@ -717,6 +717,9 @@ run_cmd do
 #print axioms ManuscriptChain.Beukers.simultaneousRationalPart_denominator
 #print axioms ManuscriptChain.Beukers.theorem_6_2
 
-#print axioms ManuscriptChain.Beukers.actual_outer_moment_valuation
-#print axioms ManuscriptChain.Beukers.Mellin.polynomial_mellin_fiber_reduction
+#print axioms ManuscriptChain.Beukers.theorem_6_1_part_two
+#print axioms ManuscriptChain.Beukers.Mellin.theorem_6_1_mellin_identity
 #print axioms ManuscriptChain.Beukers.Mellin.fiberJacobian_abs_det
+#print axioms ManuscriptChain.Beukers.rationalLocalMatrix_det_valuation
+#print axioms ManuscriptChain.Beukers.rationalLocalMatrix_primitive_pole
+#print axioms ManuscriptChain.Beukers.integral_local_kernel_iff

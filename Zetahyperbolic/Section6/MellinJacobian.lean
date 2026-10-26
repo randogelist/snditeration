@@ -18,9 +18,10 @@ theorem fiberJacobian_eq {u : ℝ} (hu : 0 < u) (y : ℝ) :
   have h₂ := ((hasDerivAt_id y).const_rpow hu).deriv
   have h₃ := (Real.hasDerivAt_rpow_const (x := u) (p := 1-y) (Or.inl (ne_of_gt hu))).deriv
   have h₄ := (((hasDerivAt_id y).const_sub 1).const_rpow hu).deriv
+  simp only [id_eq, mul_one] at h₂ h₄
   have he : (1-y)-1 = -y := by ring
-  simp only [fiberJacobian, h₁, h₂, h₃, h₄, he, mul_one]
-  congr 2 <;> ring
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [fiberJacobian, h₁, h₂, h₃, h₄, he] <;> ring
 
 theorem fiberJacobian_det {u : ℝ} (hu : 0 < u) (y : ℝ) :
     (fiberJacobian u y).det = -Real.log u := by
@@ -28,8 +29,8 @@ theorem fiberJacobian_det {u : ℝ} (hu : 0 < u) (y : ℝ) :
     rw [← Real.rpow_add hu, show y-1+(1-y) = 0 by ring, Real.rpow_zero]
   have h₂ : u^y * u^(-y) = 1 := by
     rw [← Real.rpow_add hu, add_neg_cancel, Real.rpow_zero]
-  rw [fiberJacobian_eq hu, Matrix.det_fin_two]
-  simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_fin_one]
+  simp only [fiberJacobian_eq hu, Matrix.det_fin_two,
+    Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_fin_one]
   calc
     y*u^(y-1) * -(u^(1-y)*Real.log u) -
         u^y*Real.log u*((1-y)*u^(-y)) =

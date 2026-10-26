@@ -45,7 +45,7 @@ lemma integral_exp_affine {c : ℝ} (hc : c ≠ 0) (d : ℝ) :
   have hd (y : ℝ) : HasDerivAt (fun z : ℝ => Real.exp (c*z+d)/c)
       (Real.exp (c*y+d)) y := by
     have h := ((((hasDerivAt_id y).const_mul c).add_const d).exp).div_const c
-    simpa only [mul_one, mul_div_cancel_right₀ _ hc] using h
+    simpa only [id_eq, mul_one, mul_div_cancel_right₀ _ hc] using! h
   have hi := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (a := (0 : ℝ)) (b := 1) (fun y _ => hd y)
     ((show Continuous (fun y : ℝ => Real.exp (c*y+d)) by fun_prop).intervalIntegrable 0 1)
