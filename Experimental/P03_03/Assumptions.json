@@ -1,0 +1,87 @@
+{
+  "id": "P03_03",
+  "paper_item": "3.3",
+  "branch": "experiment/zetahyperbolic-p03-03_construction",
+  "namespace": "Experimental.P03_03",
+  "imports": [
+    "Zetahyperbolic"
+  ],
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "proof_claim": false,
+  "axioms": [
+    {
+      "name": "Experimental.P03_03.actualMomentFactorialMajorant",
+      "meaning": "For each admissible actual manuscript measure, one positive constant and one fixed factorial offset bound every moment.",
+      "dependencies": [
+        "Theorem 3.1 actual moment measure identification",
+        "odd-weight monomial integral formula",
+        "polynomial numerator/positive denominator bounds"
+      ],
+      "supports": "Only the analytic growth input to a Stieltjes Carleman argument; not measure uniqueness."
+    },
+    {
+      "name": "Experimental.P03_03.generalizedVandermondePositive",
+      "meaning": "Generalized Vandermonde determinants are positive on strictly increasing positive nodes and strictly increasing natural exponents.",
+      "dependencies": [
+        "finite real polynomial/alternant algebra"
+      ],
+      "supports": "Only pointwise integrand sign for mixed minors after an independently proved Andreief identity."
+    }
+  ],
+  "proved_prerequisite_aliases": [
+    {
+      "name": "Experimental.P03_03.existingActualGramInput",
+      "source": "ManuscriptChain.GRAM_POSITIVE",
+      "meaning": "Actual positive-definite Gram, already proved.",
+      "dependencies": [
+        "Theorem 3.1"
+      ]
+    }
+  ],
+  "original_statement_preserved": true,
+  "original_target_assumed": false,
+  "requires_discharge": [
+    "Experimental.P03_03.actualMomentFactorialMajorant",
+    "Experimental.P03_03.generalizedVandermondePositive"
+  ],
+  "publication_path": "Experimental/P03_03",
+  "ready_status": "SOURCE_ONLY_UNCOMPILED",
+  "new_axioms": [
+    {
+      "name": "Experimental.P03_03.actualMomentFactorialMajorant",
+      "meaning": "For each admissible actual manuscript measure, one positive constant and one fixed factorial offset bound every moment.",
+      "dependencies": [
+        "Theorem 3.1 actual moment measure identification",
+        "odd-weight monomial integral formula",
+        "polynomial numerator/positive denominator bounds"
+      ],
+      "supports": "Only the analytic growth input to a Stieltjes Carleman argument; not measure uniqueness."
+    },
+    {
+      "name": "Experimental.P03_03.generalizedVandermondePositive",
+      "meaning": "Generalized Vandermonde determinants are positive on strictly increasing positive nodes and strictly increasing natural exponents.",
+      "dependencies": [
+        "finite real polynomial/alternant algebra"
+      ],
+      "supports": "Only pointwise integrand sign for mixed minors after an independently proved Andreief identity."
+    }
+  ],
+  "axiom_names": [
+    "Experimental.P03_03.actualMomentFactorialMajorant",
+    "Experimental.P03_03.generalizedVandermondePositive"
+  ],
+  "proved_upstream_aliases": [
+    {
+      "name": "Experimental.P03_03.existingActualGramInput",
+      "source": "ManuscriptChain.GRAM_POSITIVE",
+      "meaning": "Actual positive-definite Gram, already proved.",
+      "dependencies": [
+        "Theorem 3.1"
+      ]
+    }
+  ],
+  "baseline_source_sha": "3b184ba109f065d973957a5735fb590fea4b0e35",
+  "baseline_ci_run": 40288194429,
+  "baseline_ci_does_not_certify_new_files": true,
+  "full_target_proved": false
+}

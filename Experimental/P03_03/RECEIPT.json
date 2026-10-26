@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "paper_item": "3.3",
+  "module_key": "P03_03",
+  "branch": "experiment/zetahyperbolic-p03-03_construction",
+  "baseline_commit": "00c635cf99744d9fd336369c2382aede5d6c1f99",
+  "status": "SOURCE_ONLY_UNCOMPILED",
+  "local_lean_executed": false,
+  "new_build_pass": false,
+  "target_proved": false,
+  "new_tier": null,
+  "axioms": [
+    {
+      "name": "Experimental.P03_03.actualMomentFactorialMajorant",
+      "meaning": "For each admissible actual manuscript measure, one positive constant and one fixed factorial offset bound every moment.",
+      "dependencies": [
+        "Theorem 3.1 actual moment measure identification",
+        "odd-weight monomial integral formula",
+        "polynomial numerator/positive denominator bounds"
+      ]
+    },
+    {
+      "name": "Experimental.P03_03.generalizedVandermondePositive",
+      "meaning": "Generalized Vandermonde determinants are positive on strictly increasing positive nodes and strictly increasing natural exponents.",
+      "dependencies": [
+        "finite real polynomial/alternant algebra"
+      ]
+    }
+  ],
+  "axiom_count": 2,
+  "namespace": "Experimental.P03_03",
+  "paper_reference_items": [
+    "2.5"
+  ],
+  "paper_references_are_not_automatically_dependencies": true,
+  "typed_interface_coverage": "See Target.md and Assumptions.json; not all paper objects/interfaces are necessarily encoded.",
+  "source_sha256": {
+    "Prerequisites.lean": "cfc5dc9153dee2357a4f382aa5673e83465ca37b6bed5a046c828916777a8825",
+    "Assumptions.json": "0d6cf6cae3c078e0c6dabbbba3957cf63b8b2989cf1b68a4e1b1389f15419cbc",
+    "Target.md": "f7bcede53ca820679ca70866f4916b1fc973b00e93dfb8f6b5f10ab6da65f0fc",
+    "Work.lean": "4552240df9066ad7ecb4375b622d84fbda82a68dcd0c906d75629b7d0555446a"
+  },
+  "audit_sha256": "d1bac9a5e5b2c854f8a5f68bcd7f7d0acdad3ed22d51e135063dd250813b6d77",
+  "original_statement_sha256": "e2923e6ddd19b60a6b3c2e21ae707cb15556d1c657c0b894e9bfd322bce34e01",
+  "certified_root_imports_unchanged": true,
+  "experimental_files_registered_in_default_build": false,
+  "assumption_discharge_required": true
+}
