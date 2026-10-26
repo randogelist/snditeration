@@ -218,3 +218,8 @@ run_cmd do
 #print axioms ManuscriptChain.NewtonTuran.Actual.actual_centered_laguerre_strict
 #print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_nonnegative
 #print axioms ManuscriptChain.NewtonTuran.Actual.actual_analytic_turan_strict
+
+#print axioms ManuscriptChain.DualAlgebra.dualSlopeMatrix_eq_CCT
+#print axioms ManuscriptChain.DualSpectral.coefficientSlope_posDef
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_degree
+#print axioms ManuscriptChain.Section5DualSpectrum.actual_dual_zeros_real
