@@ -12,6 +12,43 @@ open hypotheses, or printed claims requiring repair. These counts are an
 inventory, not a percentage of mathematical work completed. No unconditional
 ζ(5)/ζ(7) irrationality, RH, finite-witness closure, or full-paper completion is claimed.
 
+## Evidence watch — 28 October 2026
+
+**Active user focus: Chapter 3.** The historical Chapter 6 campaign below remains preserved.
+Chapter 3 retains **3/9 whole originals in verified PR39 source (3.1, 3.3, 3.8)**,
+**1/9 integrated on main**, and corrected 3.2/3.6 separately.
+Next unrefuted original: **3.7**, requiring nonvanishing of every intermediate
+centered coefficient for the actual family. The false degree clause of 3.4 needs
+a separately stated correction; 3.5 needs normalized cyclic/no-breakdown and
+spectral-edge statements; 3.9 needs actual Hurwitz/Dirichlet moment identification
+and positivity. No new Chapter 3 completion is asserted.
+
+Destination PR39 remains open at `3989d955e6190ab8fabc0720fad136b7e265e074`;
+its already-recorded [successful run 40343849640](https://github.com/randogelist/snditeration/actions/runs/40343849640)
+is still the latest destination run. Whole-original counts remain **13/45 verified
+in PR sources; 9/45 integrated on main**. No new proof tier is granted.
+
+Companion [PR51](https://github.com/randogelist/zetahyperbolic-axiom/pull/51)
+is open at [`9adef7299961`](https://github.com/randogelist/zetahyperbolic-axiom/tree/9adef72999618ac4e63783ee8e2bff27dbcdd65d),
+one commit beyond companion main `b56c8102d25b931a601992c93bf30b19cc7ee103`.
+[Run 40345952106](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40345952106),
+[job 121652794270](https://github.com/randogelist/zetahyperbolic-axiom/actions/runs/40345952106/job/121652794270),
+failed all five added modules: `ActualMixedAndreief`, `ActualMixedTwoMinors`,
+`Section4RootMean`, `BetaOddMeasureActual`, and `CentralFactorialSeries`.
+The log's `SUBSET_AXIOM_AUDIT=PASS` does **not** certify these failed modules or
+the enlarged import graph. Elaboration-error output for `mixed_andreief` includes
+`sorryAx`; it is not an accepted proof. These remain source candidates with failed
+compiler evidence, not new certified components or destination integration.
+Historical successful companion receipts remain intact.
+
+The refreshed inventory contains **110 destination branches and 13 companion
+branches**. All **108 experimental heads** exactly match their immutable
+publication commits; the 72 PROP/ALT registrations, 51 prerequisite axioms and
+consumption/compatibility gates are unchanged. The companion archive ref remains
+`a241aa883da18eb1eb3ec027cbb971694bc7e3bf`; archive-source claims in PR51's
+documentation do not confer certification on its failed new modules.
+No proof source, branch target, mode/target lock or historical receipt is changed.
+
 ## Chapter 6 proof campaign — verified clauses and explicit repairs
 
 **New exact clauses `!!`: 6.3(1), 6.7(1), and all of 6.10(2).** Further verified results cover the finite odd-square beta pencil, corrected secant Gram positivity in every order, the odd-beta rational root and its convergence, and repaired prime-cutoff estimates. New refutations identify fixed-degree cone, odd-prime-unit and unrestricted harmonic-bound errors. The h=4 counterexample to 6.3(2) was independently replayed with exact fractions; that replay is separate from Lean certification.

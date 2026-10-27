@@ -14066,6 +14066,477 @@
       "assumption_discharge_not_inferred": true,
       "partial_input_coverage_note": "6.5 pole norms cover weight 4; the published all-weight prerequisite is not thereby discharged. New source results need an exact consumption bridge before scaffold assumptions can be removed.",
       "new_catalog_iterations": 0
+    },
+    {
+      "date_local": "2026-10-28",
+      "timezone": "Europe/Berlin",
+      "main_source": "35218ba6ee152774ff4e1fb778e530c1752acfd6",
+      "live_branch_count": 110,
+      "companion_live_branch_count": 13,
+      "all_108_experimental_heads_match_publication": true,
+      "experimental_heads": [
+        {
+          "branch": "experiment/zetahyperbolic-p03-02_alt_construction",
+          "actual": "07e6123dd17cdcb08ef4c7983cc1dc1ffaed7798"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-02_construction",
+          "actual": "7d55c45aa7facaf52a46968405db33d27d208d11"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-02_prop_construction",
+          "actual": "d434e64c45887df036a632eddffe0da9a6c5a671"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-03_alt_construction",
+          "actual": "44ed30e15cca4232a43d2cec8c6ff408f64b9dc4"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-03_construction",
+          "actual": "22d0edbb8bc80ad891202f6d35cb1258b1e39ffb"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-03_prop_construction",
+          "actual": "958dea22228b725871233c3b30e9d73ed1740329"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-04_alt_construction",
+          "actual": "b688ba03f0398e343a7f41722cb2140875be58ea"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-04_construction",
+          "actual": "06efc463a549f07db26b8e38f565276e8854d476"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-04_prop_construction",
+          "actual": "0b4465418217e2ce22df916c35d6580c84340681"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-05_alt_construction",
+          "actual": "0eec3ac44e15b0d7e1a23f2dffcd4290ea9b69a9"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-05_construction",
+          "actual": "9b1900bd9effd5d660061d3d4ce356acbda72342"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-05_prop_construction",
+          "actual": "dc5e43ffc5d7442c2a33c66b830e90ce87f833e9"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-06_alt_construction",
+          "actual": "05dd8627087ac0d5b78efecbab66116b024aa2b6"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-06_construction",
+          "actual": "9b56739b36897fbd1564f6cdaea57219320d9e57"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-06_prop_construction",
+          "actual": "2d3a7ebff285780e966853070200f1128c56b738"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-07_alt_construction",
+          "actual": "d8dd2ae70d9e7d6fa8f5b85037bf14c868ea4249"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-07_construction",
+          "actual": "422e9ecc2d9a43f7aa598d9340fa724efed30257"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-07_prop_construction",
+          "actual": "db45f506e54543c2928b828183e27adf4f35684f"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-08_alt_construction",
+          "actual": "12fb1c46b679b2e0a24e420556bebba7b7ca3bae"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-08_construction",
+          "actual": "8588dce972ddd7ef61906202066965fc1c01d56d"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-08_prop_construction",
+          "actual": "537b8bf9df9eb92a570f923b0bb85f07c80c5bc6"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-09_alt_construction",
+          "actual": "c62c3a6e1ea60803763786a06323198983c6ce44"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-09_construction",
+          "actual": "b361758244315c7a9a3b5d5ef555122cdddf3bf3"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p03-09_prop_construction",
+          "actual": "47159dd4d872edd575c087e958b2fbb16081250d"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-01_alt_construction",
+          "actual": "3cbf038fd7e58d6987fd23ac1f380be65aca1a4c"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-01_construction",
+          "actual": "5ee48f46cb8dbe3e86012f2c3f2ef061d9a166c5"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-01_prop_construction",
+          "actual": "2792f9d12943eecef474af501a949a7bb3c99d54"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-04_alt_construction",
+          "actual": "b97babd716832cae434caae07aec39f0dfa0f71a"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-04_construction",
+          "actual": "5fe9a327926560bd3e049690b0fe626bc3a1ce9b"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-04_prop_construction",
+          "actual": "dab0a8997fa8d318a1f79174771f0ad38327739d"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-05_alt_construction",
+          "actual": "a9944a4d0cb5519e739fd74fac1d1790614a7c74"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-05_construction",
+          "actual": "05272ea512e9ae8f855b03acdf7670249d8110cc"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-05_prop_construction",
+          "actual": "9699371fbaa3fb334c8b3eb065fa5410dae71e58"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-06_alt_construction",
+          "actual": "a4350652c15a5c19f1da7acaa66037f9277cd640"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-06_construction",
+          "actual": "c34d02d7e75cc06166469695c64862dd3af4b04f"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-06_prop_construction",
+          "actual": "e55ebbc6868a7e0343879b0bc67693939435af24"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-07_alt_construction",
+          "actual": "ff9db1741c255afa1cc918d62bf054d4ce60a02d"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-07_construction",
+          "actual": "24ead265dee4b6732386e42336df3ec4dc49426a"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-07_prop_construction",
+          "actual": "0e685512dd9b5019f04d8f25a116cdba5ecf2ff0"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-08_alt_construction",
+          "actual": "c53ea35e0c8aa60a5f1cbef2b25d52a4ffd61907"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-08_construction",
+          "actual": "221ecd8f613ecf0f39ef7752af1386c4223ab110"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p04-08_prop_construction",
+          "actual": "0288afd84a03ebd1b3b04e04db4943268adf8a51"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-02_alt_construction",
+          "actual": "33aa75af04494b342e1be0e95e6deb00206d9eb9"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-02_construction",
+          "actual": "444e95ad3dc59db98f2f6e0c37fec3105e0b2ce1"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-02_prop_construction",
+          "actual": "013cb8e4aa6e106e2c1ee08be19ed1b2bb9152c3"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-03_alt_construction",
+          "actual": "05c048a84c1bf0264ad1719e955dbae743eb4278"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-03_construction",
+          "actual": "665d06df47be601fa7c2a42a806b293f4dae4ff3"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-03_prop_construction",
+          "actual": "616215f4fa645d85e5dc99e85d72b5036e070152"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-06_alt_construction",
+          "actual": "850d7402c2f99409e0835605615266ccdd21ce98"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-06_construction",
+          "actual": "d41b2d7600892844fa5dde219531439fa86e8258"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-06_prop_construction",
+          "actual": "32610e1b7a9856768cf2696e77670666a3a9cef7"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-07_alt_construction",
+          "actual": "817b6df92c87c46084ba88fad5d194243df48b57"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-07_construction",
+          "actual": "15ed09b52e0c3d60de5333df8981684b99f70ba0"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p05-07_prop_construction",
+          "actual": "267e159024b78ff174cb4e3526e3f64429b5f9e8"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-01_alt_construction",
+          "actual": "e38ec263ec1f27e38f5ff25a19d679c422c51d51"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-01_construction",
+          "actual": "e2191a109269528cd9ee98ea75e64e3612d48dfc"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-01_prop_construction",
+          "actual": "51308ecd609f911d5dd8d60f54206e7742d0e10c"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-02_alt_construction",
+          "actual": "d9ea407687703e80936a80db7934373309d03c58"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-02_construction",
+          "actual": "55b16e37db5162ee268a47468ea40c360cf9d412"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-02_prop_construction",
+          "actual": "623a02ccb05a93bf9d3a241b074eb08435f243a6"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-03_alt_construction",
+          "actual": "aa6e863938be812cfe7a127af4ba8a1ae15f419b"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-03_construction",
+          "actual": "dacd3e795557421827f2f6a658c9a76c0c26b0f5"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-03_prop_construction",
+          "actual": "72280986985d69a823baf1e03c9f427e9c6e8080"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-04_alt_construction",
+          "actual": "f4361d16f8cc643c3ac21312d619df67552faa3c"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-04_construction",
+          "actual": "b78f851a807b4ca2c595ad62e9a252e17690989a"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-04_prop_construction",
+          "actual": "f1be029f8abd6025162c6940f208c85b7d1bfcae"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-05_alt_construction",
+          "actual": "1ef80acfca3427d9aaae87326dfa31f16667abea"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-05_construction",
+          "actual": "6509755298b6f5163b2d565b0a59b39010b26210"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-05_prop_construction",
+          "actual": "ca78de4253ee4746cbc027a834f45b68bb712bc6"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-06_alt_construction",
+          "actual": "ff43ec4bb2443320770395b966d7d0d3bcde1f64"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-06_construction",
+          "actual": "08ecc99cf133d6f5c1a9398ecffd07605b2b6269"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-06_prop_construction",
+          "actual": "bee07a3a6623afeadf26254f41a030491a9d408c"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-07_alt_construction",
+          "actual": "fd935e0458c94c118a8d9f20277b6a12cc558e98"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-07_construction",
+          "actual": "a6550cd1a91690ee77b3590964f035a8073344a0"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-07_prop_construction",
+          "actual": "3f8c37dbbf616439a521e1eb5b85c285e8cc8881"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-08_alt_construction",
+          "actual": "5d6515eea9d7c85438a2076d2ceadb5f1bb77547"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-08_construction",
+          "actual": "acdc24d724974e6d4f4b4846f24b2a42516a56c5"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-08_prop_construction",
+          "actual": "f6baa3134ea33988983154e6b41d0c74cabbfaa1"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-09_alt_construction",
+          "actual": "dce38250d06d8275e6ac8ad0a1a76eee13a1ed47"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-09_construction",
+          "actual": "c88ecbb039e08e8355065b5e9649183e1f934e2e"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-09_prop_construction",
+          "actual": "84f8d09b4961f0d97c45df857c53b691e5164385"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-10_alt_construction",
+          "actual": "a39b6e76ff25d96a661c0128da8b6da06b41d778"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-10_construction",
+          "actual": "42275211433ab64ce66452b341ae210c90f391c8"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-10_prop_construction",
+          "actual": "853364b81d3ed3361e3d90eb2837d67cc972f169"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-11_alt_construction",
+          "actual": "f4446131975e15815e6feb9bd1392de4a7472d7e"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-11_construction",
+          "actual": "46bf5efa083d392c53ed582ebcff76cd3f59b02a"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-11_prop_construction",
+          "actual": "d4f252fe49f89bf267475aaf8f9905615a69dfe6"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-12_alt_construction",
+          "actual": "43093c2dacf020e1510d6188ee79d0bde099a6de"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-12_construction",
+          "actual": "6020e884f4dc9e4466c85452601c529e10393ab0"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-12_prop_construction",
+          "actual": "abee72b20f84e11bcd8dc28c91992c9551628c74"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-13_alt_construction",
+          "actual": "e060f0d40571ba95e03a6b132adced725f884262"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-13_construction",
+          "actual": "bcdafb328e05802d330c7e96814f22f2b7f90774"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-13_prop_construction",
+          "actual": "37565f6ebcb56243fa8415cfd3419bbcbf5e8fdc"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-14_alt_construction",
+          "actual": "73ea839fb5c547141f51506c698c40c3c627bdea"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-14_construction",
+          "actual": "675ed3292458d7b25c84ba47047b2f0ad95faba1"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-14_prop_construction",
+          "actual": "aa555c759f5703c9cbf68a43320bb3c85d19acc8"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-15_alt_construction",
+          "actual": "19303e5152d761369c15c2eea004a9ecbf27f994"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-15_construction",
+          "actual": "70c77e8d18dfe091e5771b57beee867f474116d8"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-15_prop_construction",
+          "actual": "43e543e2ad8981440ebb5b938cd8d6141d6fff06"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-16_alt_construction",
+          "actual": "c0f4dbf333321157763b93b15e0fe8ed7ce9ec55"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-16_construction",
+          "actual": "bb2692e70ebcb844af2432f3c3a42134e80fa8dd"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-16_prop_construction",
+          "actual": "5568e83bcfcd9c20ee0916d9c4ba8942015db94b"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-17_alt_construction",
+          "actual": "229f01232d02b13b08b8cd12cd2b083630aafe66"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-17_construction",
+          "actual": "3680423885c8141c523e4e1d5154703085962aad"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-17_prop_construction",
+          "actual": "2f1d4f939154b71b152230ea1b5d408f48255439"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-18_alt_construction",
+          "actual": "bd7db5b1400ebcea8afe4c33f1a4248db3bc44e3"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-18_construction",
+          "actual": "0ae60ed1f7cd11f3af98894d34be78fe604f5b8a"
+        },
+        {
+          "branch": "experiment/zetahyperbolic-p06-18_prop_construction",
+          "actual": "991b098f0f7f4cb949a8a9b29f11c76bd376e1c2"
+        }
+      ],
+      "active_user_focus": "Chapter 3",
+      "next_unrefuted_original": "3.7",
+      "missing_premise": "Individual nonvanishing of every intermediate centered coefficient for the actual family",
+      "companion_observation": {
+        "branch": "repair/actual-endpoints-construction",
+        "source": "9adef72999618ac4e63783ee8e2bff27dbcdd65d",
+        "pr": 51,
+        "run_id": 40345952106,
+        "job_id": 121652794270,
+        "conclusion": "failure",
+        "failed_modules": [
+          "LeanPaper.ActualMixedAndreief",
+          "LeanPaper.ActualMixedTwoMinors",
+          "LeanPaper.Section4RootMean",
+          "LeanPaper.BetaOddMeasureActual",
+          "LeanPaper.CentralFactorialSeries"
+        ],
+        "subset_audit_does_not_certify_failed_modules": true,
+        "destination_integration": false,
+        "new_tiers": []
+      },
+      "whole_original_counts": {
+        "verified_pr_source": 13,
+        "integrated_main": 9,
+        "total": 45
+      },
+      "assumption_discharge_changed": false,
+      "local_lean_executed": false,
+      "build_triggered": false
     }
   ]
 }
