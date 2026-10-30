@@ -14537,6 +14537,78 @@
       "assumption_discharge_changed": false,
       "local_lean_executed": false,
       "build_triggered": false
+    },
+    {
+      "date_local": "2026-10-30",
+      "timezone": "Europe/Berlin",
+      "main_source": "b37d3e38e62177a1b99482336e3e6a1fe8fd7294",
+      "live_branch_count": 110,
+      "companion_live_branch_count": 17,
+      "all_108_experimental_heads_match_publication": true,
+      "companion_explorations": [
+        {
+          "branch": "explore/mo271-cofinal-certificate-engine",
+          "source": "10c84183ed677c6e1ec891822a238c0404081108",
+          "url": "https://github.com/randogelist/zetahyperbolic-axiom/tree/10c84183ed677c6e1ec891822a238c0404081108",
+          "files": [
+            "docs/explorations/MO271_COFINAL_CERTIFICATE_ENGINE.md"
+          ],
+          "exact_head_actions_runs": 0,
+          "status": "DOCUMENTATION_ONLY",
+          "destination_integration": false
+        },
+        {
+          "branch": "explore/mo271-criterion-bridge",
+          "source": "c8e6d8e5503ffcfdb20079041c84ea5f75273034",
+          "url": "https://github.com/randogelist/zetahyperbolic-axiom/tree/c8e6d8e5503ffcfdb20079041c84ea5f75273034",
+          "files": [
+            "docs/explorations/MO271_CRITERION_BRIDGE.md"
+          ],
+          "exact_head_actions_runs": 0,
+          "status": "DOCUMENTATION_ONLY",
+          "destination_integration": false
+        },
+        {
+          "branch": "explore/mo271-normalization-bridge",
+          "source": "9eeefa7907b1d0e96d99b2c523fd5cdcdae7dea3",
+          "url": "https://github.com/randogelist/zetahyperbolic-axiom/tree/9eeefa7907b1d0e96d99b2c523fd5cdcdae7dea3",
+          "files": [
+            "docs/explorations/MO271_EXACT_WEIGHT5_IDENTITY.md",
+            "docs/explorations/MO271_NORMALIZATION_BRIDGE.md"
+          ],
+          "exact_head_actions_runs": 0,
+          "status": "DOCUMENTATION_ONLY",
+          "destination_integration": false
+        },
+        {
+          "branch": "explore/mo271-zeta5-to-zeta7-jumper",
+          "source": "5d7e6ee68d043d0bb93f3fb9e8f007507f692fd7",
+          "url": "https://github.com/randogelist/zetahyperbolic-axiom/tree/5d7e6ee68d043d0bb93f3fb9e8f007507f692fd7",
+          "files": [
+            "docs/explorations/MO271_JUMPER_REDUCTION.md",
+            "docs/explorations/MO271_ZETA5_TO_ZETA7_JUMPER.md",
+            "src/Explorations/MO271Jumper57.lean"
+          ],
+          "exact_head_actions_runs": 0,
+          "status": "SOURCE_ONLY_UNCOMPILED",
+          "destination_integration": false
+        }
+      ],
+      "jumper_dependency": "USPDCore absent from repository tree and declared package list; candidate absent from unchanged roots/audit inventory",
+      "open_premises": [
+        "MO271Seed5 degree bound and weight-five decay",
+        "Transfer57 degree bound and eventual subquadratic comparison for every positive eta",
+        "Exact upstream determinant/moment/residue/normalization compatibility"
+      ],
+      "whole_original_counts": {
+        "verified_pr_source": 13,
+        "integrated_main": 9,
+        "total": 45
+      },
+      "assumption_discharge_changed": false,
+      "new_tiers": [],
+      "local_lean_executed": false,
+      "build_triggered": false
     }
   ]
 }

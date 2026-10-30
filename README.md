@@ -12,6 +12,52 @@ open hypotheses, or printed claims requiring repair. These counts are an
 inventory, not a percentage of mathematical work completed. No unconditional
 ζ(5)/ζ(7) irrationality, RH, finite-witness closure, or full-paper completion is claimed.
 
+## Evidence watch — 30 October 2026
+
+Four new companion exploration branches increase the live inventory to **17 companion
+branches; destination remains 110**. All 108 destination experimental heads still
+match publication; the 72 paired attempts and immutable receipts are unchanged.
+
+| Companion branch | Inspected head | Scope |
+| --- | --- | --- |
+| [explore/mo271-cofinal-certificate-engine](https://github.com/randogelist/zetahyperbolic-axiom/tree/explore/mo271-cofinal-certificate-engine) | [`10c84183ed677c6e1ec891822a238c0404081108`](https://github.com/randogelist/zetahyperbolic-axiom/tree/10c84183ed677c6e1ec891822a238c0404081108) | Documentation-only cofinal certificate engine plan; eventual family and exact upstream-to-ZH identification still need compiled bridges. |
+| [explore/mo271-criterion-bridge](https://github.com/randogelist/zetahyperbolic-axiom/tree/explore/mo271-criterion-bridge) | [`c8e6d8e5503ffcfdb20079041c84ea5f75273034`](https://github.com/randogelist/zetahyperbolic-axiom/tree/c8e6d8e5503ffcfdb20079041c84ea5f75273034) | Documentation-only criterion transport plan; exact determinant identification and normalized-decay transport remain unproved. |
+| [explore/mo271-normalization-bridge](https://github.com/randogelist/zetahyperbolic-axiom/tree/explore/mo271-normalization-bridge) | [`9eeefa7907b1d0e96d99b2c523fd5cdcdae7dea3`](https://github.com/randogelist/zetahyperbolic-axiom/tree/9eeefa7907b1d0e96d99b2c523fd5cdcdae7dea3) | Documentation-only normalization and weight-five identity derivation; proposed identities are not compiled equality theorems. |
+| [explore/mo271-zeta5-to-zeta7-jumper](https://github.com/randogelist/zetahyperbolic-axiom/tree/explore/mo271-zeta5-to-zeta7-jumper) | [`5d7e6ee68d043d0bb93f3fb9e8f007507f692fd7`](https://github.com/randogelist/zetahyperbolic-axiom/tree/5d7e6ee68d043d0bb93f3fb9e8f007507f692fd7) | Conditional Lean candidate; assumes MO271Seed5 (degree bound and decay) and Transfer57 (degree bound and all-positive-eta subquadratic transfer). |
+
+The comparisons against companion main `b56c8102d25b931a601992c93bf30b19cc7ee103`
+contain six new Markdown documents and one Lean file, with no changes to existing
+proofs, toolchain, dependencies, roots or audit inventories. Exact-head Actions
+queries returned **zero runs for each new head**; no matching native compiler/audit
+receipt was supplied with these additions.
+
+The [jumper source](https://github.com/randogelist/zetahyperbolic-axiom/blob/5d7e6ee68d043d0bb93f3fb9e8f007507f692fd7/src/Explorations/MO271Jumper57.lean)
+remains **SOURCE_ONLY_UNCOMPILED**, with an unresolved dependency: `import USPDCore`
+has no source in the inspected repository tree and no declared package supplying
+it. `Explorations.MO271Jumper57` is absent from the unchanged Lake roots and audit
+inventory; unchanged certified modules cannot import the newly added file.
+The workflow's complete-source-plan gate would also require an updated module
+plan. Historical root builds do not certify this candidate.
+
+Its conclusion is conditional on degree bounds, weight-five decay and a
+weight-seven comparison for every positive loss parameter, eventually in the
+index. The source does not construct either hypothesis. The proposed exact
+weight-five determinant, moment, residue and normalization identifications with
+the cited upstream revision remain documentation derivations, not verified
+cross-repository compatibility implications. No upstream theorem is imported by
+this addition, and this watch does not certify the documents' upstream claims.
+No all-odd-weight result, finite-witness admission or unconditional new endpoint
+follows. In particular, this is not completion of printed 4.5 or 6.8.
+
+**No proof tier, original/alternative completion, assumption discharge, downstream
+bridge or destination integration changes:** 13/45 whole originals in verified PR
+sources; 9/45 integrated. PR39 and PR51 retain their recorded heads and run outcomes.
+These cross-repository exploration locations are indexed separately without
+inventing PROP/ALT iterations or supersession. Chapter 3 remains active: next
+unrefuted original **3.7** still needs actual intermediate centered-coefficient
+nonvanishing; 3.4/3.5 repair gates and 3.9 moment identification/positivity remain open.
+The earlier dated observations below are historical and remain intact.
+
 ## Evidence watch — 28 October 2026
 
 **Active user focus: Chapter 3.** The historical Chapter 6 campaign below remains preserved.
